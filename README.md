@@ -1,117 +1,209 @@
-# 📚 SmoothReader - Free Books Library
+# 📚 Kindle Book Reader
 
-A modern, responsive web-based PDF reader that provides a Kindle-like reading experience in your browser. Built with vanilla JavaScript, it features smooth page-flipping animations, text-to-speech capabilities, and a beautiful library interface.
+A modern, mobile-first web application for reading PDF books organized by class. Built with vanilla JavaScript, PDF.js, and StPageFlip for smooth 3D page turning.
 
 ## ✨ Features
 
-- **📖 PDF Library**: Access to 30+ classic public domain books
-- **🔄 Smooth Page Flipping**: St.PageFlip integration for realistic book animations
-- **🎵 Text-to-Speech**: Built-in TTS with play/pause/resume functionality
-- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
-- **⚡ Progressive Rendering**: Fast initial loading with background quality enhancement
-- **🎨 Modern UI**: Beautiful dark theme with smooth animations
-- **🔍 Smart Navigation**: Page slider, keyboard shortcuts, and intuitive controls
+- **Class-based Organization**: Books are grouped by class (Class 6-12) in a clean, organized layout
+- **Mobile-First Design**: Responsive design that works perfectly on all devices
+- **3D Page Flipping**: Smooth, realistic page turning using StPageFlip
+- **Text-to-Speech**: Built-in TTS with play/pause/resume and auto-continue to next page
+- **Touch Support**: Swipe gestures for mobile devices
+- **Keyboard Navigation**: Arrow keys, spacebar, and escape key support
+- **Optimized Rendering**: Progressive page rendering with pre-loading of current/next/prev pages
+- **No Backend Required**: Runs entirely in the browser with static hosting support
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- Modern web browser with JavaScript enabled
-- Internet connection (for loading external PDFs and covers)
+### Option 1: Local Development Server
 
-### Installation
-1. Clone this repository:
+1. **Python 3** (recommended):
    ```bash
-   git clone https://github.com/susanto68/kindle-book.git
-   cd kindle-book
-   ```
-
-2. Open `index.html` in your browser, or serve locally:
-   ```bash
-   # Using Python
    python -m http.server 8000
-   
-   # Using Node.js
-   npx http-server -p 8000
    ```
 
-3. Navigate to `http://localhost:8000` in your browser
+2. **Node.js**:
+   ```bash
+   npx http-server
+   ```
 
-## 📚 Available Books
+3. **PHP**:
+   ```bash
+   php -S localhost:8000
+   ```
 
-The library includes classic literature such as:
-- **Pride and Prejudice** by Jane Austen
-- **Moby Dick** by Herman Melville
-- **Frankenstein** by Mary Shelley
-- **Alice's Adventures in Wonderland** by Lewis Carroll
-- **War and Peace** by Leo Tolstoy
-- And 25+ more classic works
+4. **VS Code Live Server**: Install the "Live Server" extension and right-click `index.html`
 
-## 🎮 Controls
+### Option 2: Deploy to Static Hosting
+
+- **Vercel**: Drag and drop the folder to [vercel.com](https://vercel.com)
+- **GitHub Pages**: Push to a GitHub repository and enable Pages
+- **Netlify**: Drag and drop the folder to [netlify.com](https://netlify.com)
+
+## 📁 Project Structure
+
+```
+kindle_book/
+├── index.html          # Main HTML file
+├── style.css           # Styles and responsive design
+├── app.js              # Main application logic
+├── books.json          # Book manifest organized by class
+├── books/              # PDF files organized by class
+│   ├── class 6/
+│   ├── class 7/
+│   ├── class 8/
+│   ├── class 9/
+│   ├── class 10/
+│   └── class 12/
+├── favicon.svg         # App icon
+└── README.md           # This file
+```
+
+## 📖 Usage
 
 ### Library View
-- Click any book card to open the reader
-- Use the reload button to refresh the book manifest
+- Browse books organized by class
+- Click on any book card to open it in the reader
+- Each book shows a generated cover with title and author
 
-### Reader Controls
-- **Navigation**: Previous/Next buttons or arrow keys
-- **Page Jump**: Use the slider to jump to specific pages
-- **Text-to-Speech**: Play/Pause/Stop buttons
-- **Keyboard Shortcuts**:
-  - `←` / `→`: Previous/Next page
-  - `Spacebar`: Toggle TTS
+### Reader View
+- **Navigation**: Use arrow buttons, arrow keys, or swipe gestures
+- **Page Jump**: Use the slider on desktop to jump to specific pages
+- **Text-to-Speech**: Click play button to start reading aloud
+- **Auto-continue**: TTS automatically moves to the next page when finished
+- **Resume**: TTS remembers where you paused and resumes from that point
 
-## 🛠️ Technical Details
+### Controls
 
-### Built With
-- **Frontend**: Vanilla JavaScript (ES6+)
-- **PDF Processing**: PDF.js for rendering and text extraction
-- **Page Flipping**: St.PageFlip for smooth animations
-- **Styling**: Modern CSS with Grid, Flexbox, and CSS Variables
-- **External APIs**: OpenLibrary for book covers, Archive.org for PDFs
+#### Mobile
+- **Bottom Controls**: Previous, Play/Pause, Stop, Next buttons
+- **Swipe**: Left/right swipe to turn pages
+- **Touch**: Tap buttons for navigation
 
-### Architecture
-- **Progressive Rendering**: Quick previews followed by high-quality images
-- **Lazy Loading**: Images load only when visible
-- **Memory Management**: Efficient page caching and cleanup
-- **Error Handling**: Graceful fallbacks for missing resources
+#### Desktop
+- **Centered Controls**: Large navigation buttons with page slider
+- **Keyboard**: 
+  - `←` `→` Arrow keys for page navigation
+  - `Spacebar` for TTS play/pause
+  - `Escape` to return to library
+
+## 🔧 Configuration
+
+### Adding New Books
+
+1. Place PDF files in the appropriate class folder under `books/`
+2. Update `books.json` with the new book information:
+
+```json
+{
+  "class": "Class 10",
+  "books": [
+    {
+      "title": "New Book Title",
+      "file": "books/class 10/newbook.pdf",
+      "author": "Author Name",
+      "year": "2025"
+    }
+  ]
+}
+```
+
+### Customizing Classes
+
+Edit the class order in `books.json`. The current order (top to bottom) is:
+1. Class 12
+2. Class 10  
+3. Class 9
+4. Class 8
+5. Class 7
+6. Class 6
+
+## 🎨 Customization
+
+### Colors
+The app uses a beautiful gradient theme. To customize colors, edit the CSS variables in `style.css`:
+
+```css
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+```
+
+### Rendering Quality
+Adjust the rendering scale in `app.js`:
+
+```javascript
+const RENDER_SCALE = 1.5; // Increase for higher quality, decrease for performance
+```
+
+### Preload Pages
+Modify the number of pages to pre-render:
+
+```javascript
+const PRELOAD_PAGES = 3; // More pages = faster initial experience, more memory usage
+```
 
 ## 🌐 Browser Support
 
-- **Chrome/Edge**: Full support
-- **Firefox**: Full support
-- **Safari**: Full support
-- **Mobile Browsers**: Responsive design with touch support
+- **Modern Browsers**: Chrome 80+, Firefox 75+, Safari 13+, Edge 80+
+- **Mobile**: iOS Safari 13+, Chrome Mobile 80+, Samsung Internet 10+
+- **Features**:
+  - PDF.js: All modern browsers
+  - StPageFlip: All modern browsers
+  - Text-to-Speech: Most modern browsers (varies by OS)
+  - Touch/Swipe: All touch devices
 
-## 📱 Deployment
+## 📱 Mobile Optimization
 
-This project is ready to deploy to:
-- **GitHub Pages**: Push to main branch
-- **Vercel**: Connect your GitHub repository
-- **Netlify**: Drag and drop deployment
-- **Any static hosting service**
+- **Responsive Design**: Adapts to all screen sizes
+- **Touch Gestures**: Swipe left/right to turn pages
+- **Bottom Controls**: Easy thumb access on mobile devices
+- **Progressive Loading**: Optimized for slower mobile connections
+- **Viewport Optimization**: Proper mobile viewport settings
+
+## 🚀 Performance Features
+
+- **Progressive Rendering**: Pages render as needed
+- **Background Processing**: Non-blocking page rendering
+- **Memory Management**: Automatic cleanup of rendered pages
+- **CDN Resources**: PDF.js and StPageFlip loaded from CDN
+- **Optimized Images**: JPEG compression for faster loading
+
+## 🔒 Security & Privacy
+
+- **No Data Collection**: App runs entirely in your browser
+- **Local Processing**: PDFs are processed locally, not uploaded
+- **CORS Safe**: Uses relative paths to avoid cross-origin issues
+- **No Tracking**: No analytics or external tracking
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **PDFs won't load**: Ensure PDFs are in the correct folder structure
+2. **TTS not working**: Check browser permissions for speech synthesis
+3. **Slow rendering**: Reduce `RENDER_SCALE` in `app.js`
+4. **Mobile issues**: Ensure proper viewport meta tag is present
+
+### Debug Mode
+
+Open browser console (F12) to see detailed error messages and performance information.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+This is a personal project, but suggestions and improvements are welcome! The code is clean, well-commented, and follows modern JavaScript best practices.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
 - **PDF.js**: Mozilla's PDF rendering library
-- **St.PageFlip**: Smooth page-flipping animations
-- **OpenLibrary**: Book cover images
-- **Archive.org**: Public domain PDF sources
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-1. Check the browser console for error messages
-2. Ensure all external resources are accessible
-3. Try refreshing the page or clearing browser cache
+- **StPageFlip**: Beautiful 3D page flipping library
+- **Modern CSS**: Uses cutting-edge CSS features for beautiful design
+- **Vanilla JavaScript**: No frameworks, just pure web standards
 
 ---
 
-**Happy Reading! 📖✨**
+**Happy Reading! 📚✨**

@@ -1,342 +1,723 @@
-/* app.js
-   - Loads books.json
-   - Builds library grid (shows cover if available; if cover fails, displays bold title on card)
-   - Opens book in fullscreen reader with St.PageFlip
-   - Progressive page rendering: quick small images for first pages, background batches for rest
-   - TTS: Play / Pause / Resume (resumes where paused)
+/* Kindle Book Reader App
+   - Mobile-first design with class-based organization
+   - PDF rendering using PDF.js with PageFlip for 3D page flipping
+   - Text-to-speech with auto-continue and resume functionality
+   - Optimized rendering with pre-rendering of current/next/prev pages
+   - Responsive controls for mobile and desktop
 */
 
-/* Config */
-const MANIFEST = 'books.json';
+// Configuration
+const MANIFEST_URL = 'books.json';
 const PRELOAD_PAGES = 3;
-const BATCH_RENDER = 4;
-const BATCH_DELAY = 180;
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://unpkg.com/pdfjs-dist@4.5.136/build/pdf.worker.min.js';
+const RENDER_SCALE = 1.5;
+const BATCH_RENDER_DELAY = 100;
 
-/* DOM */
-const libraryEl = document.getElementById('library');
-const readerSection = document.getElementById('reader');
-const flipbookEl = document.getElementById('flipbook');
-const backBtn = document.getElementById('backBtn');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const pageCounter = document.getElementById('pageCounter');
-const pageRange = document.getElementById('pageRange');
-const ttsBtn = document.getElementById('ttsBtn');
-const ttsStop = document.getElementById('ttsStop');
-const toastEl = document.getElementById('toast');
-const reloadManifest = document.getElementById('reloadManifest');
+// PDF.js worker configuration - check if library is loaded
+if (window.pdfjsLib) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+}
 
-/* State */
+// DOM Elements - will be initialized after DOM loads
+let libraryEl, classGridEl, loadingEl, errorEl, readerEl, flipbookEl, loadingOverlayEl, toastEl;
+let backBtn, bookTitleEl, bookAuthorEl, pageCounterEl, pageCounterDesktopEl, pageRangeEl;
+let prevBtn, nextBtn, prevBtnDesktop, nextBtnDesktop, ttsBtn, ttsStop, ttsBtnDesktop, ttsStopDesktop;
+
+// State variables
 let manifest = [];
+let currentBook = null;
 let pdfDoc = null;
 let pageFlip = null;
 let totalPages = 0;
 let currentPage = 1;
-let rendered = new Map(); // page -> dataURL
+let renderedPages = new Map(); // page -> dataURL
 let renderQueue = [];
 let backgroundRendering = false;
 let pageTextCache = new Map();
 
-/* TTS state */
-let speaking = false, paused = false, utterance = null, speakIndex = 0;
+// TTS state
+let speaking = false;
+let paused = false;
+let utterance = null;
+let speakIndex = 0;
+let currentPageText = '';
 
-/* Helpers */
-function showToast(msg) {
-  toastEl.textContent = msg;
-  toastEl.classList.add('show');
-  setTimeout(()=> toastEl.classList.remove('show'), 1600);
-}
-
-async function fetchJSON(url) {
-  const r = await fetch(url, {cache:'no-cache'});
-  if(!r.ok) throw new Error('Failed to fetch ' + url);
-  return r.json();
-}
-
-/* Library */
-async function buildLibrary(){
-  libraryEl.innerHTML = '';
-  try{
-    manifest = await fetchJSON(MANIFEST);
-  }catch(err){
-    libraryEl.innerHTML = `<div style="grid-column:1/-1;padding:20px;color:#9fb0d0">books.json not found or invalid. Put <code>books.json</code> at site root.</div>`;
-    console.error(err);
-    return;
-  }
-  if(!Array.isArray(manifest) || manifest.length===0){
-    libraryEl.innerHTML = `<div style="grid-column:1/-1;padding:20px;color:#9fb0d0">No books in manifest.</div>`;
-    return;
-  }
-
-  const io = new IntersectionObserver((entries, obs)=>{
-    for(const e of entries){
-      if(e.isIntersecting){
-        const img = e.target.querySelector('img[data-src]');
-        if(img){ img.src = img.dataset.src; img.removeAttribute('data-src'); }
-        obs.unobserve(e.target);
-      }
+// Utility functions
+function showToast(message, duration = 3000) {
+    if (toastEl) {
+        toastEl.textContent = message;
+        toastEl.classList.add('show');
+        setTimeout(() => toastEl.classList.remove('show'), duration);
     }
-  }, {rootMargin:'400px'});
+}
 
-  for(const book of manifest){
-    const card = document.createElement('article');
-    card.className = 'card';
-    const cover = book.cover || '';
-    card.innerHTML = `
-      <div class="cover">
-        ${cover ? `<img data-src="${cover}" alt="${escapeHtml(book.title)} cover" crossorigin="anonymous">` : ''}
-        <div class="fallback">${escapeHtml(book.title)}</div>
-      </div>
-      <div class="meta">
-        <h3>${escapeHtml(book.title)}</h3>
-        <p>${book.author ? escapeHtml(book.author) : ''} ${book.year ? '• ' + escapeHtml(book.year) : ''}</p>
-      </div>
-    `;
-    // If cover image exists, make fallback hidden until needed
-    const img = card.querySelector('img');
-    const fallback = card.querySelector('.fallback');
-    if(img){
-      img.addEventListener('load', ()=> { fallback.style.display = 'none'; });
-      img.addEventListener('error', ()=> { img.remove(); fallback.style.display = 'grid'; });
-    } else {
-      fallback.style.display = 'grid';
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Generate cover placeholder using Canvas
+function generateCoverPlaceholder(title, author) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = 300;
+    canvas.height = 400;
+    
+    // Background gradient
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, '#667eea');
+    gradient.addColorStop(1, '#764ba2');
+    
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Text styling
+    ctx.fillStyle = 'white';
+    ctx.textAlign = 'center';
+    ctx.font = 'bold 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    
+    // Draw title (wrapped)
+    const words = title.split(' ');
+    let line = '';
+    let y = 180;
+    
+    for (let word of words) {
+        const testLine = line + word + ' ';
+        const metrics = ctx.measureText(testLine);
+        
+        if (metrics.width > canvas.width - 40) {
+            ctx.fillText(line, canvas.width / 2, y);
+            line = word + ' ';
+            y += 35;
+        } else {
+            line = testLine;
+        }
     }
-
-    card.addEventListener('click', ()=> openBook(book));
-    libraryEl.appendChild(card);
-    io.observe(card);
-  }
+    ctx.fillText(line, canvas.width / 2, y);
+    
+    // Draw author
+    ctx.font = '18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    ctx.fillText(author, canvas.width / 2, y + 50);
+    
+    return canvas.toDataURL('image/jpeg', 0.9);
 }
 
-/* Escape small helper */
-function escapeHtml(s){
-  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Library functions
+async function loadManifest() {
+    try {
+        const response = await fetch(MANIFEST_URL);
+        if (!response.ok) throw new Error('Failed to fetch manifest');
+        manifest = await response.json();
+        return true;
+    } catch (error) {
+        console.error('Failed to load manifest:', error);
+        return false;
+    }
 }
 
-/* Reader: open book */
-async function openBook(book){
-  try{
-    showToast('Loading: ' + book.title);
-    // reset
-    rendered.clear(); renderQueue = []; pageTextCache.clear(); speakIndex=0; speaking=false; paused=false;
-
-    // destroy previous
-    if(pageFlip){ try{ pageFlip.destroy(); }catch(e){} pageFlip = null; flipbookEl.innerHTML = ''; }
-
-    // load PDF
-    pdfDoc = await pdfjsLib.getDocument({ url: book.file }).promise;
-    totalPages = pdfDoc.numPages;
-    pageRange.max = String(totalPages); pageRange.value = '1';
-    pageCounter.textContent = `1 / ${totalPages}`;
-
-    // create pageFlip
-    pageFlip = new St.PageFlip(flipbookEl, {
-      width: 720, height: 920, size: "stretch", maxShadowOpacity:0.45,
-      flippingTime:520, usePortrait:true, showCover:true, autoSize:true, drawShadow:true
+function buildLibrary() {
+    if (!manifest || manifest.length === 0) {
+        if (errorEl) errorEl.style.display = 'block';
+        if (loadingEl) loadingEl.style.display = 'none';
+        return;
+    }
+    
+    if (loadingEl) loadingEl.style.display = 'none';
+    if (errorEl) errorEl.style.display = 'none';
+    
+    if (classGridEl) classGridEl.innerHTML = '';
+    
+    manifest.forEach(classData => {
+        const classSection = document.createElement('div');
+        classSection.className = 'class-section';
+        
+        const classTitle = document.createElement('h2');
+        classTitle.className = 'class-title';
+        classTitle.textContent = classData.class;
+        
+        const booksGrid = document.createElement('div');
+        booksGrid.className = 'books-grid';
+        
+        classData.books.forEach(book => {
+            const bookCard = createBookCard(book);
+            booksGrid.appendChild(bookCard);
+        });
+        
+        classSection.appendChild(classTitle);
+        classSection.appendChild(booksGrid);
+        if (classGridEl) classGridEl.appendChild(classSection);
     });
+}
 
-    // preload first few pages quickly
-    const initial = Math.min(totalPages, PRELOAD_PAGES);
-    const pagesArr = [];
-    for(let i=1;i<=initial;i++){
-      const small = await renderPageToDataURL(i, 0.8);
-      rendered.set(i, small);
-      pagesArr.push({ type:'html', html:`<img src="${small}" style="width:100%;height:100%;object-fit:contain">` });
-    }
-    for(let i=initial+1;i<=totalPages;i++){
-      pagesArr.push({ type:'html', html:`<div style="width:100%;height:100%;display:grid;place-items:center;color:#9fb0d0">Rendering page ${i}…</div>` });
-      renderQueue.push(i);
-    }
+function createBookCard(book) {
+    const card = document.createElement('div');
+    card.className = 'book-card';
+    
+    const cover = document.createElement('div');
+    cover.className = 'book-cover';
+    
+    // Generate placeholder cover
+    const placeholderDataUrl = generateCoverPlaceholder(book.title, book.author);
+    const placeholder = document.createElement('div');
+    placeholder.className = 'cover-placeholder';
+    placeholder.textContent = book.title;
+    cover.appendChild(placeholder);
+    
+    const info = document.createElement('div');
+    info.className = 'book-info';
+    
+    const title = document.createElement('h3');
+    title.className = 'book-title';
+    title.textContent = book.title;
+    
+    const meta = document.createElement('p');
+    meta.className = 'book-meta';
+    meta.textContent = `${book.author} • ${book.year}`;
+    
+    info.appendChild(title);
+    info.appendChild(meta);
+    
+    card.appendChild(cover);
+    card.appendChild(info);
+    
+    card.addEventListener('click', () => openBook(book));
+    
+    return card;
+}
 
-    pageFlip.loadFromHTML(pagesArr);
+// Reader functions
+async function openBook(book) {
+    try {
+        // Check if PDF.js is loaded
+        if (!window.pdfjsLib) {
+            throw new Error('PDF.js library not loaded. Please refresh the page.');
+        }
+        
+        currentBook = book;
+        showReader();
+        showLoadingOverlay();
+        
+        // Update book info
+        if (bookTitleEl) bookTitleEl.textContent = book.title;
+        if (bookAuthorEl) bookAuthorEl.textContent = book.author;
+        
+        // Load PDF
+        pdfDoc = await pdfjsLib.getDocument(book.file).promise;
+        totalPages = pdfDoc.numPages;
+        
+        // Update page controls
+        if (pageRangeEl) {
+            pageRangeEl.max = totalPages;
+            pageRangeEl.value = '1';
+        }
+        updatePageCounter(1);
+        
+        // Initialize page flip
+        await initializePageFlip();
+        
+        // Pre-render initial pages
+        await preloadInitialPages();
+        
+        hideLoadingOverlay();
+        
+    } catch (error) {
+        console.error('Failed to open book:', error);
+        showToast('Failed to open book: ' + error.message);
+        hideLoadingOverlay();
+    }
+}
+
+function showReader() {
+    if (libraryEl) libraryEl.style.display = 'none';
+    if (readerEl) readerEl.style.display = 'flex';
+    if (readerEl) readerEl.setAttribute('aria-hidden', 'false');
+}
+
+function hideReader() {
+    if (readerEl) readerEl.style.display = 'none';
+    if (libraryEl) libraryEl.style.display = 'block';
+    if (readerEl) readerEl.setAttribute('aria-hidden', 'true');
+    
+    // Cleanup
+    if (pageFlip) {
+        try {
+            pageFlip.destroy();
+        } catch (e) {
+            console.warn('Error destroying pageFlip:', e);
+        }
+        pageFlip = null;
+    }
+    
+    // Stop TTS
+    stopTTS();
+    
+    // Clear state
+    currentBook = null;
+    pdfDoc = null;
+    renderedPages.clear();
+    renderQueue = [];
+    pageTextCache.clear();
     currentPage = 1;
-    showReader();
+    speaking = false;
+    paused = false;
+    utterance = null;
+    speakIndex = 0;
+}
 
-    // upgrade first pages to higher quality
-    for(let p=1;p<=initial;p++){
-      const hi = await renderPageToDataURL(p, 1.4);
-      rendered.set(p, hi);
-      replacePageImageInFlip(p, hi);
+function showLoadingOverlay() {
+    if (loadingOverlayEl) loadingOverlayEl.style.display = 'flex';
+}
+
+function hideLoadingOverlay() {
+    if (loadingOverlayEl) loadingOverlayEl.style.display = 'none';
+}
+
+async function initializePageFlip() {
+    // Check if PageFlip is loaded
+    if (!window.St) {
+        throw new Error('PageFlip library not loaded. Please refresh the page.');
     }
-    // ensure neighbor pages for crisp flips
-    await ensureRenderedNeighbors(1);
-    backgroundRenderLoop();
-
-    pageFlip.on('flip', async (e)=>{
-      const leftIndex = e.data;
-      currentPage = Math.min(totalPages, leftIndex + 1);
-      pageRange.value = String(currentPage);
-      pageCounter.textContent = `${currentPage} / ${totalPages}`;
-      await ensureRenderedNeighbors(currentPage);
-      if(speaking && !paused) startTTSForPage(currentPage, 0);
+    
+    // Clear previous content
+    if (flipbookEl) flipbookEl.innerHTML = '';
+    
+    // Create placeholder pages
+    const pages = [];
+    for (let i = 1; i <= totalPages; i++) {
+        pages.push({
+            type: 'html',
+            html: `<div style="width:100%;height:100%;display:grid;place-items:center;color:#9fb0d0;font-size:18px;">Loading page ${i}...</div>`
+        });
+    }
+    
+    // Create page flip instance using St.PageFlip (from page-flip library)
+    pageFlip = new St.PageFlip(flipbookEl, {
+        width: 720,
+        height: 920,
+        size: "stretch",
+        maxShadowOpacity: 0.45,
+        flippingTime: 520,
+        usePortrait: true,
+        showCover: true,
+        autoSize: true,
+        drawShadow: true
     });
-  }catch(err){
-    console.error('Open book error', err);
-    showToast('Failed to open: ' + (err.message || err));
-  }
+    
+    pageFlip.loadFromHTML(pages);
+    
+    // Set up event listeners
+    pageFlip.on('flip', async (e) => {
+        const leftIndex = e.data;
+        currentPage = Math.min(totalPages, leftIndex + 1);
+        updatePageCounter(currentPage);
+        if (pageRangeEl) pageRangeEl.value = currentPage;
+        
+        // Ensure current and neighbor pages are rendered
+        await ensurePagesRendered(currentPage);
+        
+        // Continue TTS if speaking
+        if (speaking && !paused) {
+            await startTTSForPage(currentPage, 0);
+        }
+    });
 }
 
-/* Show/hide reader */
-function showReader(){
-  document.getElementById('library').style.display = 'none';
-  readerSection.style.display = 'block';
-  readerSection.setAttribute('aria-hidden','false');
-}
-function hideReader(){
-  readerSection.style.display = 'none';
-  readerSection.setAttribute('aria-hidden','true');
-  document.getElementById('library').style.display = '';
-}
-
-/* Render page to dataURL */
-async function renderPageToDataURL(pageNum, qualityScale=1.0){
-  // If already rendered hi-res, return it
-  if(rendered.has(pageNum) && qualityScale <= 1.2) return rendered.get(pageNum);
-  const page = await pdfDoc.getPage(pageNum);
-  const baseScale = 1.2;
-  const viewport = page.getViewport({ scale: baseScale * qualityScale });
-  const canvas = document.createElement('canvas');
-  canvas.width = Math.floor(viewport.width);
-  canvas.height = Math.floor(viewport.height);
-  const ctx = canvas.getContext('2d', {alpha:false});
-  await page.render({ canvasContext: ctx, viewport }).promise;
-  try{ page.cleanup(); }catch(e){}
-  return canvas.toDataURL('image/jpeg', 0.9);
-}
-
-/* Replace page image inside pageFlip — 1-based pageNum */
-function replacePageImageInFlip(pageNum, dataURL){
-  try{
-    const pages = flipbookEl.querySelectorAll('.page');
-    const idx = pageNum - 1;
-    if(pages && pages[idx]){
-      const img = pages[idx].querySelector('img');
-      if(img) img.src = dataURL;
-      else pages[idx].innerHTML = `<img src="${dataURL}" style="width:100%;height:100%;object-fit:contain">`;
+async function preloadInitialPages() {
+    const initialPages = Math.min(totalPages, PRELOAD_PAGES);
+    
+    // Render first few pages quickly
+    for (let i = 1; i <= initialPages; i++) {
+        await renderPage(i);
     }
-  }catch(e){}
+    
+    // Start background rendering for remaining pages
+    startBackgroundRendering();
 }
 
-/* Ensure neighbor pages are rendered */
-async function ensureRenderedNeighbors(center){
-  const toDo = [];
-  for(let d=-1; d<=1; d++){
-    const p = center + d;
-    if(p>=1 && p<=totalPages && !rendered.has(p)) toDo.push(p);
-  }
-  for(const p of toDo){
-    const data = await renderPageToDataURL(p, 1.25);
-    rendered.set(p, data);
-    replacePageImageInFlip(p, data);
-  }
+async function renderPage(pageNum) {
+    if (renderedPages.has(pageNum)) {
+        return renderedPages.get(pageNum);
+    }
+    
+    try {
+        const page = await pdfDoc.getPage(pageNum);
+        const viewport = page.getViewport({ scale: RENDER_SCALE });
+        
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d', { alpha: false });
+        
+        canvas.width = Math.floor(viewport.width);
+        canvas.height = Math.floor(viewport.height);
+        
+        await page.render({
+            canvasContext: ctx,
+            viewport: viewport
+        }).promise;
+        
+        const dataURL = canvas.toDataURL('image/jpeg', 0.9);
+        renderedPages.set(pageNum, dataURL);
+        
+        // Update page in flipbook
+        updatePageInFlipbook(pageNum, dataURL);
+        
+        // Cleanup
+        try {
+            page.cleanup();
+        } catch (e) {
+            console.warn('Page cleanup failed:', e);
+        }
+        
+        return dataURL;
+    } catch (error) {
+        console.error(`Failed to render page ${pageNum}:`, error);
+        return null;
+    }
 }
 
-/* Background batch rendering */
-async function backgroundRenderLoop(){
-  if(backgroundRendering) return;
-  backgroundRendering = true;
-  while(renderQueue.length){
-    const batch = renderQueue.splice(0, BATCH_RENDER);
-    await Promise.all(batch.map(async (p)=>{
-      if(rendered.has(p)) return;
-      try{
-        const data = await renderPageToDataURL(p, 1.0);
-        rendered.set(p, data);
-        replacePageImageInFlip(p, data);
-      }catch(e){ console.warn('Background render failed', p, e); }
-    }));
-    await new Promise(r=>setTimeout(r, BATCH_DELAY));
-  }
-  backgroundRendering = false;
+function updatePageInFlipbook(pageNum, dataURL) {
+    if (!pageFlip || !flipbookEl) return;
+    
+    try {
+        const pages = flipbookEl.querySelectorAll('.page');
+        const pageIndex = pageNum - 1;
+        
+        if (pages[pageIndex]) {
+            const page = pages[pageIndex];
+            page.innerHTML = `<img src="${dataURL}" style="width:100%;height:100%;object-fit:contain" alt="Page ${pageNum}">`;
+        }
+    } catch (error) {
+        console.error('Failed to update page in flipbook:', error);
+    }
 }
 
-/* Text extraction & TTS */
-async function extractPageText(p){
-  if(pageTextCache.has(p)) return pageTextCache.get(p);
-  const page = await pdfDoc.getPage(p);
-  const txt = await page.getTextContent();
-  const text = txt.items.map(i => i.str).join(' ').replace(/\s+/g,' ').trim();
-  pageTextCache.set(p, text);
-  return text;
+async function ensurePagesRendered(centerPage) {
+    const pagesToRender = [];
+    
+    // Current page and neighbors
+    for (let i = Math.max(1, centerPage - 1); i <= Math.min(totalPages, centerPage + 1); i++) {
+        if (!renderedPages.has(i)) {
+            pagesToRender.push(i);
+        }
+    }
+    
+    // Render pages in parallel
+    await Promise.all(pagesToRender.map(pageNum => renderPage(pageNum)));
 }
 
-function ensureSpeech(){
-  if(!('speechSynthesis' in window)){
-    showToast('Speech Synthesis not supported in this browser');
-    return false;
-  }
-  return true;
+function startBackgroundRendering() {
+    if (backgroundRendering) return;
+    
+    backgroundRendering = true;
+    
+    const renderNextBatch = async () => {
+        if (renderQueue.length === 0) {
+            backgroundRendering = false;
+            return;
+        }
+        
+        const batch = renderQueue.splice(0, 3);
+        await Promise.all(batch.map(pageNum => renderPage(pageNum)));
+        
+        if (renderQueue.length > 0) {
+            setTimeout(renderNextBatch, BATCH_RENDER_DELAY);
+        } else {
+            backgroundRendering = false;
+        }
+    };
+    
+    // Add remaining pages to queue
+    for (let i = PRELOAD_PAGES + 1; i <= totalPages; i++) {
+        renderQueue.push(i);
+    }
+    
+    renderNextBatch();
 }
 
-async function startTTSForPage(p, startIdx=0){
-  if(!ensureSpeech()) return;
-  const text = await extractPageText(p);
-  const remaining = text.slice(startIdx);
-  if(!remaining){
-    if(p < totalPages){ pageFlip.flipNext(); await new Promise(r=>setTimeout(r,600)); startTTSForPage(p+1,0); }
-    return;
-  }
-  speechSynthesis.cancel();
-  utterance = new SpeechSynthesisUtterance(remaining);
-  const voices = speechSynthesis.getVoices();
-  const v = voices.find(x=>x.lang && x.lang.toLowerCase().startsWith('en')) || voices[0];
-  if(v) utterance.voice = v;
-  utterance.rate = 1.0; utterance.pitch = 1.0;
-  utterance.onboundary = (ev)=>{ if(ev && (ev.name==='word' || ev.charIndex>=0)){ speakIndex = startIdx + (ev.charIndex || 0); } };
-  utterance.onend = async ()=>{ if(paused) return; speaking=false; paused=false; updateTTS(); if(currentPage < totalPages){ pageFlip.flipNext(); await new Promise(r=>setTimeout(r,650)); startTTSForPage(currentPage+1,0); } };
-  utterance.onerror = ()=>{ speaking=false; paused=false; updateTTS(); showToast('TTS error'); };
-  speaking = true; paused = false; updateTTS();
-  speechSynthesis.speak(utterance);
+function updatePageCounter(page) {
+    const text = `${page} / ${totalPages}`;
+    if (pageCounterEl) pageCounterEl.textContent = text;
+    if (pageCounterDesktopEl) pageCounterDesktopEl.textContent = text;
 }
 
-function updateTTS(){
-  ttsBtn.textContent = (!speaking || paused) ? '▶ Play' : '⏸ Pause';
+// TTS Functions
+function ensureSpeech() {
+    if (!('speechSynthesis' in window)) {
+        showToast('Speech Synthesis not supported in this browser');
+        return false;
+    }
+    return true;
 }
 
-function toggleTTS(){
-  if(!ensureSpeech()) return;
-  if(!speaking){ startTTSForPage(currentPage, speakIndex); }
-  else if(speaking && !paused){ speechSynthesis.pause(); paused=true; updateTTS(); }
-  else { if(speechSynthesis.paused) speechSynthesis.resume(); else startTTSForPage(currentPage, speakIndex); paused=false; updateTTS(); }
+async function extractPageText(pageNum) {
+    if (pageTextCache.has(pageNum)) {
+        return pageTextCache.get(pageNum);
+    }
+    
+    try {
+        const page = await pdfDoc.getPage(pageNum);
+        const textContent = await page.getTextContent();
+        const text = textContent.items.map(item => item.str).join(' ').replace(/\s+/g, ' ').trim();
+        
+        pageTextCache.set(pageNum, text);
+        return text;
+    } catch (error) {
+        console.error(`Failed to extract text from page ${pageNum}:`, error);
+        return '';
+    }
 }
 
-function stopTTS(silent=false){
-  if(!('speechSynthesis' in window)) return;
-  speechSynthesis.cancel();
-  speaking=false; paused=false; speakIndex=0;
-  if(!silent) updateTTS();
+async function startTTSForPage(pageNum, startIndex = 0) {
+    if (!ensureSpeech()) return;
+    
+    const text = await extractPageText(pageNum);
+    if (!text) {
+        showToast('No text found on this page');
+        return;
+    }
+    
+    const remainingText = text.slice(startIndex);
+    if (!remainingText) {
+        // Move to next page if available
+        if (pageNum < totalPages && pageFlip) {
+            pageFlip.flipNext();
+            setTimeout(() => startTTSForPage(pageNum + 1, 0), 600);
+        }
+        return;
+    }
+    
+    // Cancel any existing speech
+    speechSynthesis.cancel();
+    
+    // Create new utterance
+    utterance = new SpeechSynthesisUtterance(remainingText);
+    
+    // Set voice preferences
+    const voices = speechSynthesis.getVoices();
+    const englishVoice = voices.find(voice => voice.lang && voice.lang.toLowerCase().startsWith('en')) || voices[0];
+    if (englishVoice) utterance.voice = englishVoice;
+    
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+    
+    // Event handlers
+    utterance.onboundary = (event) => {
+        if (event && (event.name === 'word' || event.charIndex >= 0)) {
+            speakIndex = startIndex + (event.charIndex || 0);
+        }
+    };
+    
+    utterance.onend = async () => {
+        if (paused) return;
+        
+        speaking = false;
+        paused = false;
+        updateTTSButtons();
+        
+        // Continue to next page
+        if (pageNum < totalPages && pageFlip) {
+            pageFlip.flipNext();
+            setTimeout(() => startTTSForPage(pageNum + 1, 0), 650);
+        }
+    };
+    
+    utterance.onerror = () => {
+        speaking = false;
+        paused = false;
+        updateTTSButtons();
+        showToast('TTS error occurred');
+    };
+    
+    // Start speaking
+    speaking = true;
+    paused = false;
+    updateTTSButtons();
+    speechSynthesis.speak(utterance);
 }
 
-/* Controls wiring */
-backBtn.addEventListener('click', ()=>{
-  hideReader();
-  stopTTS(true);
-  try{ pageFlip.destroy(); pageFlip = null; flipbookEl.innerHTML = ''; }catch(e){}
-});
-prevBtn.addEventListener('click', ()=> pageFlip && pageFlip.flipPrev());
-nextBtn.addEventListener('click', ()=> pageFlip && pageFlip.flipNext());
-pageRange.addEventListener('input', (e)=>{
-  const t = Number(e.target.value);
-  if(pageFlip) pageFlip.flip(Math.max(0, t-1));
-});
-ttsBtn.addEventListener('click', ()=> toggleTTS());
-ttsStop.addEventListener('click', ()=> stopTTS());
-reloadManifest.addEventListener('click', ()=> buildLibrary());
+function toggleTTS() {
+    if (!ensureSpeech()) return;
+    
+    if (!speaking) {
+        startTTSForPage(currentPage, speakIndex);
+    } else if (speaking && !paused) {
+        speechSynthesis.pause();
+        paused = true;
+        updateTTSButtons();
+    } else {
+        if (speechSynthesis.paused) {
+            speechSynthesis.resume();
+        } else {
+            startTTSForPage(currentPage, speakIndex);
+        }
+        paused = false;
+        updateTTSButtons();
+    }
+}
 
-document.addEventListener('keydown', (e)=>{
-  if(readerSection.style.display !== 'block') return;
-  if(e.key === 'ArrowRight') pageFlip && pageFlip.flipNext();
-  if(e.key === 'ArrowLeft') pageFlip && pageFlip.flipPrev();
-  if(e.key === ' ') { e.preventDefault(); toggleTTS(); }
-});
+function stopTTS() {
+    if (!('speechSynthesis' in window)) return;
+    
+    speechSynthesis.cancel();
+    speaking = false;
+    paused = false;
+    speakIndex = 0;
+    updateTTSButtons();
+}
 
-/* Init */
-(async function init(){
-  try{
-    await buildLibrary();
-  }catch(e){
-    console.error('Init failed', e);
-    showToast('Init error');
-  }
-})();
+function updateTTSButtons() {
+    const playText = (!speaking || paused) ? '▶ Play' : '⏸ Pause';
+    if (ttsBtn) ttsBtn.textContent = playText;
+    if (ttsBtnDesktop) ttsBtnDesktop.textContent = playText;
+}
+
+// Initialize DOM elements and event listeners
+function initializeDOM() {
+    // Get all DOM elements
+    libraryEl = document.getElementById('library');
+    classGridEl = document.getElementById('classGrid');
+    loadingEl = document.getElementById('loading');
+    errorEl = document.getElementById('error');
+    readerEl = document.getElementById('reader');
+    flipbookEl = document.getElementById('flipbook');
+    loadingOverlayEl = document.getElementById('loadingOverlay');
+    toastEl = document.getElementById('toast');
+
+    // Reader elements
+    backBtn = document.getElementById('backBtn');
+    bookTitleEl = document.getElementById('bookTitle');
+    bookAuthorEl = document.getElementById('bookAuthor');
+    pageCounterEl = document.getElementById('pageCounter');
+    pageCounterDesktopEl = document.getElementById('pageCounterDesktop');
+    pageRangeEl = document.getElementById('pageRange');
+
+    // Control buttons
+    prevBtn = document.getElementById('prevBtn');
+    nextBtn = document.getElementById('nextBtn');
+    prevBtnDesktop = document.getElementById('prevBtnDesktop');
+    nextBtnDesktop = document.getElementById('nextBtnDesktop');
+    ttsBtn = document.getElementById('ttsBtn');
+    ttsStop = document.getElementById('ttsStop');
+    ttsBtnDesktop = document.getElementById('ttsBtnDesktop');
+    ttsStopDesktop = document.getElementById('ttsStopDesktop');
+
+    // Add event listeners only if elements exist
+    if (backBtn) backBtn.addEventListener('click', hideReader);
+
+    // Mobile controls
+    if (prevBtn) prevBtn.addEventListener('click', () => pageFlip && pageFlip.flipPrev());
+    if (nextBtn) nextBtn.addEventListener('click', () => pageFlip && pageFlip.flipNext());
+    if (ttsBtn) ttsBtn.addEventListener('click', toggleTTS);
+    if (ttsStop) ttsStop.addEventListener('click', stopTTS);
+
+    // Desktop controls
+    if (prevBtnDesktop) prevBtnDesktop.addEventListener('click', () => pageFlip && pageFlip.flipPrev());
+    if (nextBtnDesktop) nextBtnDesktop.addEventListener('click', () => pageFlip && pageFlip.flipNext());
+    if (ttsBtnDesktop) ttsBtnDesktop.addEventListener('click', toggleTTS);
+    if (ttsStopDesktop) ttsStopDesktop.addEventListener('click', stopTTS);
+
+    // Page range input
+    if (pageRangeEl) {
+        pageRangeEl.addEventListener('input', (e) => {
+            const targetPage = parseInt(e.target.value);
+            if (pageFlip && targetPage >= 1 && targetPage <= totalPages) {
+                pageFlip.flip(Math.max(0, targetPage - 1));
+            }
+        });
+    }
+
+    // Touch/swipe support for mobile
+    if (flipbookEl) {
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        flipbookEl.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        });
+
+        flipbookEl.addEventListener('touchend', (e) => {
+            if (!pageFlip) return;
+            
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            
+            const deltaX = touchStartX - touchEndX;
+            const deltaY = touchStartY - touchEndY;
+            
+            // Minimum swipe distance
+            const minSwipeDistance = 50;
+            
+            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+                if (deltaX > 0) {
+                    pageFlip.flipNext();
+                } else {
+                    pageFlip.flipPrev();
+                }
+            }
+        });
+    }
+}
+
+// Keyboard navigation
+function setupKeyboardNavigation() {
+    document.addEventListener('keydown', (e) => {
+        if (!readerEl || readerEl.style.display === 'none') return;
+        
+        switch (e.key) {
+            case 'ArrowLeft':
+                e.preventDefault();
+                pageFlip && pageFlip.flipPrev();
+                break;
+            case 'ArrowRight':
+                e.preventDefault();
+                pageFlip && pageFlip.flipNext();
+                break;
+            case ' ':
+                e.preventDefault();
+                toggleTTS();
+                break;
+            case 'Escape':
+                hideReader();
+                break;
+        }
+    });
+}
+
+// Initialize app
+async function init() {
+    try {
+        // Initialize DOM elements first
+        initializeDOM();
+        
+        // Setup keyboard navigation
+        setupKeyboardNavigation();
+        
+        // Wait a bit for libraries to load
+        await new Promise(resolve => setTimeout(resolve, 100));
+        
+        // Check if required libraries are loaded
+        if (!window.pdfjsLib) {
+            throw new Error('PDF.js library failed to load');
+        }
+        if (!window.St) {
+            throw new Error('PageFlip library failed to load');
+        }
+        
+        const success = await loadManifest();
+        if (success) {
+            buildLibrary();
+        } else {
+            if (errorEl) errorEl.style.display = 'block';
+            if (loadingEl) loadingEl.style.display = 'none';
+        }
+    } catch (error) {
+        console.error('Initialization failed:', error);
+        if (errorEl) errorEl.style.display = 'block';
+        if (loadingEl) loadingEl.style.display = 'none';
+        showToast('Failed to load required libraries. Please refresh the page.');
+    }
+}
+
+// Start the app when DOM is loaded
+document.addEventListener('DOMContentLoaded', init);

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Test</title>
+</head>
+<body>
+    <h1>Library Loading Test</h1>
+    <div id="status"></div>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+    
+    <script>
+        const status = document.getElementById('status');
+        
+        function checkLibrary(name, globalVar) {
+            if (window[globalVar]) {
+                status.innerHTML += `<p>✅ ${name} loaded successfully</p>`;
+                return true;
+            } else {
+                status.innerHTML += `<p>❌ ${name} failed to load</p>`;
+                return false;
+            }
+        }
+        
+        // Wait for libraries to load
+        setTimeout(() => {
+            status.innerHTML = '<h2>Library Status:</h2>';
+            
+            const pdfjs = checkLibrary('PDF.js', 'pdfjsLib');
+            const pageflip = checkLibrary('PageFlip', 'St');
+            
+            if (pdfjs && pageflip) {
+                status.innerHTML += '<p>🎉 All libraries loaded! Your app should work now.</p>';
+                status.innerHTML += '<p><a href="index.html">Go to Main App</a></p>';
+            } else {
+                status.innerHTML += '<p>⚠️ Some libraries failed to load. Check your internet connection.</p>';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

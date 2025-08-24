@@ -1,68 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SmoothReader — Free Books Library</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
-
-  <!-- StPageFlip CSS (CDN) -->
-  <link rel="stylesheet" href="https://unpkg.com/st-pageflip/dist/css/page-flip.min.css">
-
-  <!-- App styles -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle Book Reader</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <!-- PageFlip CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip/dist/css/page-flip.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">📚 SmoothReader</div>
-    <div class="spacer"></div>
-    <button id="reloadManifest" class="btn">🔄 Reload</button>
-  </header>
+    <!-- Library Screen -->
+    <main id="library" class="library">
+        <header class="header">
+            <h1>📚 Kindle Book Reader</h1>
+            <p>Your digital library organized by class</p>
+        </header>
+        
+        <div class="class-grid" id="classGrid">
+            <!-- Classes will be populated here -->
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading your library...</p>
+        </div>
+        
+        <div class="error" id="error" style="display: none;">
+            <p>Failed to load library. Please refresh the page.</p>
+        </div>
+    </main>
 
-  <main class="container">
-    <!-- Library grid -->
-    <section id="library" class="grid" aria-live="polite"></section>
+    <!-- Reader Screen -->
+    <section id="reader" class="reader" style="display: none;" aria-hidden="true">
+        <header class="reader-header">
+            <button id="backBtn" class="back-btn" aria-label="Back to library">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Library</span>
+            </button>
+            <div class="book-info">
+                <h2 id="bookTitle">Book Title</h2>
+                <p id="bookAuthor">Author</p>
+            </div>
+        </header>
 
-    <!-- Reader (fullscreen replacement) -->
-    <section id="reader" class="reader" aria-hidden="true">
-      <div class="reader-bar">
-        <button id="backBtn" class="btn">← Library</button>
-        <div class="reader-controls">
-          <button id="prevBtn" class="btn">⟵ Prev</button>
-          <button id="nextBtn" class="btn primary">Next ⟶</button>
+        <div class="reader-content">
+            <div id="flipbook" class="flipbook"></div>
         </div>
 
-        <div class="spacer"></div>
-
-        <div class="reader-status">
-          <div id="pageCounter" class="counter">— / —</div>
-          <input id="pageRange" type="range" min="1" max="1" value="1" class="slider" />
-          <div class="tts-controls">
-            <button id="ttsBtn" class="btn">▶ Play</button>
-            <button id="ttsStop" class="btn">⏹ Stop</button>
-          </div>
+        <!-- Mobile Controls (bottom sticky) -->
+        <div class="mobile-controls">
+            <div class="page-info">
+                <span id="pageCounter">1 / 1</span>
+            </div>
+            <div class="control-buttons">
+                <button id="prevBtn" class="control-btn" aria-label="Previous page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button id="ttsBtn" class="control-btn tts-btn" aria-label="Play text-to-speech">
+                    ▶ Play
+                </button>
+                <button id="ttsStop" class="control-btn tts-stop" aria-label="Stop text-to-speech">
+                    ⏹ Stop
+                </button>
+                <button id="nextBtn" class="control-btn" aria-label="Next page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
 
-      <div id="flipbookWrap" class="flip-wrap" aria-live="polite">
-        <div id="flipbook" class="flipbook"></div>
-      </div>
+        <!-- Desktop Controls (centered) -->
+        <div class="desktop-controls">
+            <div class="control-group">
+                <button id="prevBtnDesktop" class="control-btn large" aria-label="Previous page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="page-controls">
+                    <input type="range" id="pageRange" class="page-range" min="1" max="1" value="1" aria-label="Page navigation">
+                    <span id="pageCounterDesktop">1 / 1</span>
+                </div>
+                <button id="nextBtnDesktop" class="control-btn large" aria-label="Next page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="tts-controls">
+                <button id="ttsBtnDesktop" class="control-btn tts-btn large" aria-label="Play text-to-speech">
+                    ▶ Play
+                </button>
+                <button id="ttsStopDesktop" class="control-btn tts-stop large" aria-label="Stop text-to-speech">
+                    ⏹ Stop
+                </button>
+            </div>
+        </div>
+
+        <!-- Loading overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <p>Loading book...</p>
+        </div>
     </section>
-  </main>
 
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <footer class="footer">Deploy to Vercel / GitHub Pages. All PDFs are public domain links. If a link breaks I’ll replace it — tell me the title.</footer>
+    <!-- Toast notifications -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <!-- PDF.js -->
-  <script src="https://unpkg.com/pdfjs-dist@4.5.136/build/pdf.min.js"></script>
-  <!-- StPageFlip -->
-  <script src="https://unpkg.com/st-pageflip/dist/js/page-flip.browser.min.js"></script>
-
-  <!-- App -->
-  <script type="module" src="app.js"></script>
+    <!-- Scripts - Load in correct order -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
