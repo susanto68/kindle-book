@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmoothReader — Free Books Library</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+  <!-- StPageFlip CSS (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/st-pageflip/dist/css/page-flip.min.css">
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">📚 SmoothReader</div>
+    <div class="spacer"></div>
+    <button id="reloadManifest" class="btn">🔄 Reload</button>
+  </header>
+
+  <main class="container">
+    <!-- Library grid -->
+    <section id="library" class="grid" aria-live="polite"></section>
+
+    <!-- Reader (fullscreen replacement) -->
+    <section id="reader" class="reader" aria-hidden="true">
+      <div class="reader-bar">
+        <button id="backBtn" class="btn">← Library</button>
+        <div class="reader-controls">
+          <button id="prevBtn" class="btn">⟵ Prev</button>
+          <button id="nextBtn" class="btn primary">Next ⟶</button>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="reader-status">
+          <div id="pageCounter" class="counter">— / —</div>
+          <input id="pageRange" type="range" min="1" max="1" value="1" class="slider" />
+          <div class="tts-controls">
+            <button id="ttsBtn" class="btn">▶ Play</button>
+            <button id="ttsStop" class="btn">⏹ Stop</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="flipbookWrap" class="flip-wrap" aria-live="polite">
+        <div id="flipbook" class="flipbook"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer class="footer">Deploy to Vercel / GitHub Pages. All PDFs are public domain links. If a link breaks I’ll replace it — tell me the title.</footer>
+
+  <!-- PDF.js -->
+  <script src="https://unpkg.com/pdfjs-dist@4.5.136/build/pdf.min.js"></script>
+  <!-- StPageFlip -->
+  <script src="https://unpkg.com/st-pageflip/dist/js/page-flip.browser.min.js"></script>
+
+  <!-- App -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
