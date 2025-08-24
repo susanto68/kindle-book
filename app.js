@@ -282,13 +282,12 @@ async function initializePageFlip() {
     // Clear previous content
     if (flipbookEl) flipbookEl.innerHTML = '';
     
-    // Create placeholder pages
-    const pages = [];
+    // Create actual DOM elements for pages
     for (let i = 1; i <= totalPages; i++) {
-        pages.push({
-            type: 'html',
-            html: `<div style="width:100%;height:100%;display:grid;place-items:center;color:#9fb0d0;font-size:18px;">Loading page ${i}...</div>`
-        });
+        const pageDiv = document.createElement('div');
+        pageDiv.className = 'page';
+        pageDiv.innerHTML = `<div style="width:100%;height:100%;display:grid;place-items:center;color:#9fb0d0;font-size:18px;">Loading page ${i}...</div>`;
+        flipbookEl.appendChild(pageDiv);
     }
     
     // Create page flip instance using St.PageFlip (from page-flip library)
@@ -304,7 +303,8 @@ async function initializePageFlip() {
         drawShadow: true
     });
     
-    pageFlip.loadFromHTML(pages);
+    // Load from the HTML elements we just created
+    pageFlip.loadFromHTML(flipbookEl.querySelectorAll('.page'));
     
     // Set up event listeners
     pageFlip.on('flip', async (e) => {
