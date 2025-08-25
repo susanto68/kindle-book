@@ -376,6 +376,23 @@ async function initializePageFlip() {
         throw error;
     }
     
+    // Additional mobile optimizations before PageFlip initialization
+    if (isMobile) {
+        // Pre-optimize the flipbook element to reduce touch conflicts
+        if (flipbookEl) {
+            // Add more aggressive touch optimizations
+            flipbookEl.style.pointerEvents = 'auto';
+            flipbookEl.style.touchAction = 'pan-x pan-y';
+            flipbookEl.style.webkitTouchCallout = 'none';
+            flipbookEl.style.webkitUserSelect = 'none';
+            flipbookEl.style.userSelect = 'none';
+            
+            // Add data attributes that might help PageFlip
+            flipbookEl.setAttribute('data-touch-action', 'pan-x pan-y');
+            flipbookEl.setAttribute('data-user-select', 'none');
+        }
+    }
+    
     // Load from the HTML elements we just created
     pageFlip.loadFromHTML(flipbookEl.querySelectorAll('.page'));
     
@@ -396,6 +413,42 @@ async function initializePageFlip() {
                     usePortrait: true
                 });
             }
+            
+            // Try to access and optimize internal PageFlip elements
+            setTimeout(() => {
+                try {
+                    // Look for PageFlip's internal elements and optimize them
+                    const pageFlipElements = flipbookEl.querySelectorAll('[class*="stf"], [class*="page-flip"]');
+                    pageFlipElements.forEach(el => {
+                        if (el.style) {
+                            el.style.touchAction = 'pan-x pan-y';
+                            el.style.webkitTouchCallout = 'none';
+                            el.style.webkitUserSelect = 'none';
+                            el.style.userSelect = 'none';
+                        }
+                    });
+                    
+                    // Also try to optimize any dynamically created elements
+                    const observer = new MutationObserver((mutations) => {
+                        mutations.forEach((mutation) => {
+                            mutation.addedNodes.forEach((node) => {
+                                if (node.nodeType === 1 && node.style) { // Element node
+                                    node.style.touchAction = 'pan-x pan-y';
+                                    node.style.webkitTouchCallout = 'none';
+                                    node.style.webkitUserSelect = 'none';
+                                    node.style.userSelect = 'none';
+                                }
+                            });
+                        });
+                    });
+                    
+                    observer.observe(flipbookEl, { childList: true, subtree: true });
+                    
+                } catch (e) {
+                    console.log('PageFlip internal optimization failed:', e);
+                }
+            }, 100);
+            
         } catch (e) {
             console.log('PageFlip optimization options not available:', e);
         }
@@ -430,10 +483,40 @@ async function initializePageFlip() {
             flipbookEl.style.webkitUserSelect = 'none';
             flipbookEl.style.mozUserSelect = 'none';
             flipbookEl.style.msUserSelect = 'none';
+            flipbookEl.style.webkitTouchCallout = 'none';
+            flipbookEl.style.pointerEvents = 'auto';
         }
         
         // Add CSS class for mobile-specific styling
         flipbookEl.classList.add('mobile-flipbook');
+        
+        // Try to override PageFlip's internal touch handling
+        try {
+            // Override addEventListener to add passive option to touch events
+            const originalAddEventListener = flipbookEl.addEventListener;
+            flipbookEl.addEventListener = function(type, listener, options) {
+                if (type === 'touchstart' || type === 'touchend' || type === 'touchmove') {
+                    // Force passive for touch events
+                    const newOptions = { ...options, passive: true };
+                    return originalAddEventListener.call(this, type, listener, newOptions);
+                }
+                return originalAddEventListener.call(this, type, listener, options);
+            };
+            
+            // Also try to override on the prototype
+            if (flipbookEl.__proto__ && flipbookEl.__proto__.addEventListener) {
+                const protoAddEventListener = flipbookEl.__proto__.addEventListener;
+                flipbookEl.__proto__.addEventListener = function(type, listener, options) {
+                    if (type === 'touchstart' || type === 'touchend' || type === 'touchmove') {
+                        const newOptions = { ...options, passive: true };
+                        return protoAddEventListener.call(this, type, listener, newOptions);
+                    }
+                    return protoAddEventListener.call(this, type, listener, options);
+                };
+            }
+        } catch (e) {
+            console.log('Touch event override failed:', e);
+        }
     }
 }
 
