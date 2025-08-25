@@ -250,10 +250,15 @@ async function openBook(book) {
 function showReader() {
     if (libraryEl) libraryEl.style.display = 'none';
     if (readerEl) readerEl.style.display = 'flex';
-    if (readerEl) readerEl.setAttribute('aria-hidden', 'false');
+    if (readerEl) readerEl.removeAttribute('aria-hidden');
     
     // Ensure UI is properly set for current layout mode
     updateUIForLayout();
+    
+    // Focus the back button for accessibility
+    if (backBtn) {
+        setTimeout(() => backBtn.focus(), 100);
+    }
 }
 
 function hideReader() {
@@ -285,6 +290,11 @@ function hideReader() {
     paused = false;
     utterance = null;
     speakIndex = 0;
+    
+    // Return focus to library for accessibility
+    if (libraryEl) {
+        setTimeout(() => libraryEl.focus(), 100);
+    }
 }
 
 function showLoadingOverlay() {
@@ -390,6 +400,35 @@ async function initializePageFlip() {
             // Add data attributes that might help PageFlip
             flipbookEl.setAttribute('data-touch-action', 'pan-x pan-y');
             flipbookEl.setAttribute('data-user-select', 'none');
+        }
+    }
+    
+    // Try to intercept PageFlip's internal touch event handling before loadFromHTML
+    if (isMobile && flipbookEl) {
+        try {
+            // Override the flipbook element's addEventListener to force passive touch events
+            const originalAddEventListener = flipbookEl.addEventListener;
+            flipbookEl.addEventListener = function(type, listener, options) {
+                if (type === 'touchstart' || type === 'touchend' || type === 'touchmove') {
+                    const newOptions = { ...options, passive: true };
+                    return originalAddEventListener.call(this, type, listener, newOptions);
+                }
+                return originalAddEventListener.call(this, type, listener, options);
+            };
+            
+            // Also try to override on the prototype level
+            if (flipbookEl.__proto__ && flipbookEl.__proto__.addEventListener) {
+                const protoAddEventListener = flipbookEl.__proto__.addEventListener;
+                flipbookEl.__proto__.addEventListener = function(type, listener, options) {
+                    if (type === 'touchstart' || type === 'touchend' || type === 'touchmove') {
+                        const newOptions = { ...options, passive: true };
+                        return protoAddEventListener.call(this, type, listener, newOptions);
+                    }
+                    return protoAddEventListener.call(this, type, listener, options);
+                };
+            }
+        } catch (e) {
+            console.log('Touch event override failed:', e);
         }
     }
     
@@ -969,19 +1008,29 @@ function setupKeyboardNavigation() {
         }
     }, { passive: false });
     
-    // Add responsive resize listener
-    window.addEventListener('resize', reinitializeFlipbookOnResize, { passive: true });
+    // Add responsive resize listener with better debouncing
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            if (pageFlip && currentBook) {
+                reinitializeFlipbookOnResize();
+            }
+        }, 300);
+    }, { passive: true });
     
     // Handle orientation changes on mobile devices
     if ('onorientationchange' in window) {
+        let orientationTimeout;
         window.addEventListener('orientationchange', () => {
+            clearTimeout(orientationTimeout);
             // Wait for orientation change to complete
-            setTimeout(() => {
+            orientationTimeout = setTimeout(() => {
                 if (hasLayoutChanged()) {
                     console.log('Orientation changed, updating layout');
                     updateUIForLayout();
-                    // Reinitialize flipbook if it exists
-                    if (pageFlip && currentBook) {
+                    // Only reinitialize if necessary
+                    if (pageFlip && currentBook && !pageFlip.isFlipping()) {
                         reinitializeFlipbookOnResize();
                     }
                 }
@@ -1002,6 +1051,25 @@ async function init() {
         
         // Setup keyboard navigation
         setupKeyboardNavigation();
+        
+        // Try to intercept PageFlip's global touch event handling
+        if (currentLayoutMode === 'mobile') {
+            try {
+                // Override global addEventListener to force passive touch events for PageFlip
+                const originalAddEventListener = Element.prototype.addEventListener;
+                Element.prototype.addEventListener = function(type, listener, options) {
+                    if (type === 'touchstart' || type === 'touchend' || type === 'touchmove') {
+                        // Force passive for touch events to prevent warnings
+                        const newOptions = { ...options, passive: true };
+                        return originalAddEventListener.call(this, type, listener, newOptions);
+                    }
+                    return originalAddEventListener.call(this, type, listener, options);
+                };
+                console.log('Global touch event override applied');
+            } catch (e) {
+                console.log('Global touch event override failed:', e);
+            }
+        }
         
         // Wait a bit for libraries to load
         await new Promise(resolve => setTimeout(resolve, 100));
