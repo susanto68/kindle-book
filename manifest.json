@@ -1,0 +1,21 @@
+{
+  "name": "Kindle Book Reader",
+  "short_name": "Kindle Reader",
+  "description": "A modern, mobile-friendly PDF book reader with class-based organization",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "books", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

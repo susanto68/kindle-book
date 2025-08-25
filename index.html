@@ -1,122 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Kindle Book Reader</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
-    <!-- PageFlip CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip/dist/css/page-flip.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e3c72">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Kindle Book Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/page-flip/2.20.0/page-flip.browser.min.js"></script>
 </head>
 <body>
-    <!-- Library Screen -->
-    <main id="library" class="library">
-        <header class="header">
-            <h1>📚 Kindle Book Reader</h1>
-            <p>Your digital library organized by class</p>
-        </header>
-        
-        <div class="class-grid" id="classGrid">
-            <!-- Classes will be populated here -->
-        </div>
-        
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Loading your library...</p>
-        </div>
-        
-        <div class="error" id="error" style="display: none;">
-            <p>Failed to load library. Please refresh the page.</p>
-        </div>
-    </main>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p>Loading your library...</p>
+  </div>
 
-    <!-- Reader Screen -->
-    <section id="reader" class="reader" style="display: none;" aria-hidden="true">
-        <header class="reader-header">
-            <button id="backBtn" class="back-btn" aria-label="Back to library">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
-                <span>Library</span>
-            </button>
-            <div class="book-info">
-                <h2 id="bookTitle">Book Title</h2>
-                <p id="bookAuthor">Author</p>
-            </div>
-        </header>
+  <!-- Header -->
+  <header class="reader-header">
+    <div class="header-content">
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+      <h1 id="bookTitle">📚 My Library</h1>
+      <button id="searchBtn" class="search-btn" aria-label="Search">🔍</button>
+    </div>
+    
+    <!-- Search Bar -->
+    <div id="searchBar" class="search-bar" style="display: none;">
+      <input type="text" id="searchInput" placeholder="Search books..." aria-label="Search books">
+      <button id="closeSearch" aria-label="Close search">✕</button>
+    </div>
+  </header>
 
-        <div class="reader-content">
-            <div id="flipbook" class="flipbook"></div>
-        </div>
+  <!-- Main Content -->
+  <main class="reader">
+    <!-- Library View -->
+    <div id="library" class="book-library">
+      <div class="library-header">
+        <h2>📖 Available Books</h2>
+        <p>Select a book to start reading</p>
+      </div>
+      <div id="bookGrid" class="book-grid"></div>
+    </div>
 
-        <!-- Mobile Controls (bottom sticky) -->
-        <div class="mobile-controls">
-            <div class="page-info">
-                <span id="pageCounter">1 / 1</span>
-            </div>
-            <div class="control-buttons">
-                <button id="prevBtn" class="control-btn" aria-label="Previous page">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6"/>
-                    </svg>
-                </button>
-                <button id="ttsBtn" class="control-btn tts-btn" aria-label="Play text-to-speech">
-                    ▶ Play
-                </button>
-                <button id="ttsStop" class="control-btn tts-stop" aria-label="Stop text-to-speech">
-                    ⏹ Stop
-                </button>
-                <button id="nextBtn" class="control-btn" aria-label="Next page">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                </button>
-            </div>
+    <!-- Reader View -->
+    <section id="reader" class="reader-view" style="display:none;">
+      <div class="reader-toolbar">
+        <div class="toolbar-left">
+          <span id="pageInfo" class="page-info">Page 1 of 1</span>
         </div>
-
-        <!-- Desktop Controls (centered) -->
-        <div class="desktop-controls">
-            <div class="control-group">
-                <button id="prevBtnDesktop" class="control-btn large" aria-label="Previous page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6"/>
-                    </svg>
-                </button>
-                <div class="page-controls">
-                    <input type="range" id="pageRange" class="page-range" min="1" max="1" value="1" aria-label="Page navigation">
-                    <span id="pageCounterDesktop">1 / 1</span>
-                </div>
-                <button id="nextBtnDesktop" class="control-btn large" aria-label="Next page">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="tts-controls">
-                <button id="ttsBtnDesktop" class="control-btn tts-btn large" aria-label="Play text-to-speech">
-                    ▶ Play
-                </button>
-                <button id="ttsStopDesktop" class="control-btn tts-stop large" aria-label="Stop text-to-speech">
-                    ⏹ Stop
-                </button>
-            </div>
+        <div class="toolbar-center">
+          <button id="zoomOut" class="zoom-btn" aria-label="Zoom out">🔍-</button>
+          <button id="zoomIn" class="zoom-btn" aria-label="Zoom in">🔍+</button>
         </div>
-
-        <!-- Loading overlay -->
-        <div class="loading-overlay" id="loadingOverlay">
-            <div class="spinner"></div>
-            <p>Loading book...</p>
+        <div class="toolbar-right">
+          <button id="fullscreenBtn" class="fullscreen-btn" aria-label="Fullscreen">⛶</button>
         </div>
+      </div>
+      
+      <div id="flipbook" class="flipbook-container"></div>
     </section>
+  </main>
 
-    <!-- Toast notifications -->
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <!-- Footer Navigation -->
+  <footer class="reader-footer">
+    <div class="footer-buttons">
+      <button id="backBtn" class="nav-btn back-btn">
+        <span class="btn-icon">⬅️</span>
+        <span class="btn-text">Back</span>
+      </button>
+      
+      <div class="page-controls">
+        <button id="prevPage" class="nav-btn page-btn" aria-label="Previous page">
+          <span class="btn-icon">⬅️</span>
+          <span class="btn-text">Prev</span>
+        </button>
+        
+        <button id="playPause" class="nav-btn play-btn" aria-label="Play/Pause reading">
+          <span class="btn-icon">🔊</span>
+          <span class="btn-text">Play</span>
+        </button>
+        
+        <button id="nextPage" class="nav-btn page-btn" aria-label="Next page">
+          <span class="btn-icon">➡️</span>
+          <span class="btn-text">Next</span>
+        </button>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Scripts - Load in correct order -->
-    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
-    <script src="app.js"></script>
+  <!-- Book Details Modal -->
+  <div id="bookModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Book Title</h3>
+        <button id="closeModal" class="close-btn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="book-info">
+          <p><strong>Author:</strong> <span id="modalAuthor">-</span></p>
+          <p><strong>Year:</strong> <span id="modalYear">-</span></p>
+          <p><strong>Class:</strong> <span id="modalClass">-</span></p>
+        </div>
+        <div class="modal-actions">
+          <button id="readBook" class="primary-btn">📖 Read Book</button>
+          <button id="downloadBook" class="secondary-btn">⬇️ Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
