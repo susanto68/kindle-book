@@ -4,6 +4,7 @@
    - Text-to-speech with auto-continue and resume functionality
    - Optimized rendering with pre-rendering of current/next/prev pages
    - Responsive controls for mobile and desktop
+   - Dynamic layout switching between single (mobile) and double (desktop) page modes
 */
 
 // Configuration
@@ -11,6 +12,7 @@ const MANIFEST_URL = 'books.json';
 const PRELOAD_PAGES = 3;
 const RENDER_SCALE = 1.5;
 const BATCH_RENDER_DELAY = 100;
+const MOBILE_BREAKPOINT = 768;
 
 // PDF.js worker configuration - check if library is loaded
 if (window.pdfjsLib) {
@@ -33,6 +35,7 @@ let renderedPages = new Map(); // page -> dataURL
 let renderQueue = [];
 let backgroundRendering = false;
 let pageTextCache = new Map();
+let currentLayoutMode = 'desktop'; // 'mobile' or 'desktop'
 
 // TTS state
 let speaking = false;
@@ -54,6 +57,22 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// Detect current layout mode based on screen size
+function detectLayoutMode() {
+    const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+    return isMobile ? 'mobile' : 'desktop';
+}
+
+// Check if layout mode has changed
+function hasLayoutChanged() {
+    const newMode = detectLayoutMode();
+    if (newMode !== currentLayoutMode) {
+        currentLayoutMode = newMode;
+        return true;
+    }
+    return false;
 }
 
 // Generate cover placeholder using Canvas
@@ -232,6 +251,9 @@ function showReader() {
     if (libraryEl) libraryEl.style.display = 'none';
     if (readerEl) readerEl.style.display = 'flex';
     if (readerEl) readerEl.setAttribute('aria-hidden', 'false');
+    
+    // Ensure UI is properly set for current layout mode
+    updateUIForLayout();
 }
 
 function hideReader() {
@@ -282,19 +304,24 @@ async function initializePageFlip() {
     // Clear previous content
     if (flipbookEl) flipbookEl.innerHTML = '';
     
-    // Detect screen size and set appropriate display mode
-    const isMobile = window.innerWidth <= 768;
+    // Detect current layout mode
+    const isMobile = currentLayoutMode === 'mobile';
     const displayMode = isMobile ? "single" : "double";
     
-    // Set flipbook dimensions based on screen size
+    // Set flipbook dimensions based on layout mode
     let flipbookWidth, flipbookHeight;
     
     if (isMobile) {
-        // Mobile: full screen minus header and controls
+        // Mobile: full screen minus slim header and slim controls
         flipbookWidth = window.innerWidth;
-        flipbookHeight = window.innerHeight - 110; // Account for header + controls
+        flipbookHeight = window.innerHeight - 100; // Account for slim header (45px) + slim controls (55px)
+        
+        // Ensure minimum dimensions for readability
+        if (flipbookHeight < 400) {
+            flipbookHeight = 400;
+        }
     } else {
-        // Desktop: standard book size
+        // Desktop: standard book size with two-page spread
         flipbookWidth = 800;
         flipbookHeight = 600;
     }
@@ -323,8 +350,14 @@ async function initializePageFlip() {
         showCover: true,
         autoSize: true,
         drawShadow: true,
-        // Set display mode based on screen size
-        display: displayMode
+        // Set display mode based on layout mode
+        display: displayMode,
+        // Enhanced 3D effects for mobile
+        flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
+        maxShadowOpacity: isMobile ? 0.35 : 0.45, // Slightly less shadow on mobile
+        drawShadow: true,
+        usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
+        autoSize: true
     });
     
     // Load from the HTML elements we just created
@@ -345,6 +378,15 @@ async function initializePageFlip() {
             await startTTSForPage(currentPage, 0);
         }
     });
+    
+    // Additional mobile-specific optimizations
+    if (isMobile) {
+        // Ensure smooth scrolling on mobile
+        if (flipbookEl) {
+            flipbookEl.style.webkitOverflowScrolling = 'touch';
+            flipbookEl.style.overflow = 'hidden';
+        }
+    }
 }
 
 async function preloadInitialPages() {
@@ -602,13 +644,23 @@ function reinitializeFlipbookOnResize() {
         clearTimeout(window.resizeTimeout);
         window.resizeTimeout = setTimeout(async () => {
             try {
+                // Check if layout mode has changed
+                const layoutChanged = hasLayoutChanged();
+                
+                if (layoutChanged) {
+                    console.log(`Layout mode changed to: ${currentLayoutMode}`);
+                    
+                    // Update UI elements based on new layout
+                    updateUIForLayout();
+                }
+                
                 // Destroy current instance
                 if (pageFlip) {
                     pageFlip.destroy();
                     pageFlip = null;
                 }
                 
-                // Reinitialize with new dimensions
+                // Reinitialize with new dimensions and layout mode
                 await initializePageFlip();
                 
                 // Re-render current page
@@ -616,11 +668,61 @@ function reinitializeFlipbookOnResize() {
                     await ensurePagesRendered(currentPage);
                 }
                 
-                console.log('Flipbook reinitialized for new screen size');
+                console.log(`Flipbook reinitialized for ${currentLayoutMode} mode`);
             } catch (error) {
                 console.error('Failed to reinitialize flipbook:', error);
             }
         }, 250); // 250ms debounce
+    }
+}
+
+// Update UI elements based on current layout mode
+function updateUIForLayout() {
+    const isMobile = currentLayoutMode === 'mobile';
+    
+    // Update header styling
+    if (readerEl) {
+        const header = readerEl.querySelector('.reader-header');
+        if (header) {
+            if (isMobile) {
+                header.style.minHeight = '45px';
+                header.style.maxHeight = '45px';
+            } else {
+                header.style.minHeight = '';
+                header.style.maxHeight = '';
+            }
+        }
+    }
+    
+    // Update controls visibility and positioning
+    if (readerEl) {
+        const mobileControls = readerEl.querySelector('.mobile-controls');
+        const desktopControls = readerEl.querySelector('.desktop-controls');
+        
+        if (mobileControls && desktopControls) {
+            if (isMobile) {
+                mobileControls.style.display = 'block';
+                desktopControls.style.display = 'none';
+            } else {
+                mobileControls.style.display = 'none';
+                desktopControls.style.display = 'block';
+            }
+        }
+    }
+    
+    // Update flipbook container styling
+    if (flipbookEl) {
+        if (isMobile) {
+            flipbookEl.style.width = '100%';
+            flipbookEl.style.height = '100%';
+            flipbookEl.style.maxWidth = 'none';
+            flipbookEl.style.maxHeight = 'none';
+        } else {
+            flipbookEl.style.width = '800px';
+            flipbookEl.style.height = '600px';
+            flipbookEl.style.maxWidth = '800px';
+            flipbookEl.style.maxHeight = '600px';
+        }
     }
 }
 
@@ -738,6 +840,23 @@ function setupKeyboardNavigation() {
     
     // Add responsive resize listener
     window.addEventListener('resize', reinitializeFlipbookOnResize);
+    
+    // Handle orientation changes on mobile devices
+    if ('onorientationchange' in window) {
+        window.addEventListener('orientationchange', () => {
+            // Wait for orientation change to complete
+            setTimeout(() => {
+                if (hasLayoutChanged()) {
+                    console.log('Orientation changed, updating layout');
+                    updateUIForLayout();
+                    // Reinitialize flipbook if it exists
+                    if (pageFlip && currentBook) {
+                        reinitializeFlipbookOnResize();
+                    }
+                }
+            }, 500);
+        });
+    }
 }
 
 // Initialize app
@@ -745,6 +864,10 @@ async function init() {
     try {
         // Initialize DOM elements first
         initializeDOM();
+        
+        // Set initial layout mode
+        currentLayoutMode = detectLayoutMode();
+        console.log(`Initial layout mode: ${currentLayoutMode}`);
         
         // Setup keyboard navigation
         setupKeyboardNavigation();
