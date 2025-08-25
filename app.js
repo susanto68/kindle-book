@@ -327,20 +327,12 @@ async function initializePageFlip() {
     let flipbookWidth, flipbookHeight;
     
     if (isMobile) {
-        // Mobile: full screen minus slim header and slim controls
+        // Mobile: TRUE full screen - use entire viewport
         flipbookWidth = window.innerWidth;
-        flipbookHeight = window.innerHeight - 100; // Account for slim header (45px) + slim controls (55px)
-        
-        // Ensure minimum dimensions for readability
-        if (flipbookHeight < 400) {
-            flipbookHeight = 400;
-        }
-        
-        // Force viewport units for mobile
-        flipbookWidth = window.innerWidth;
-        flipbookHeight = Math.max(400, window.innerHeight - 100);
+        flipbookHeight = window.innerHeight;
         
         console.log(`Mobile dimensions: ${flipbookWidth}x${flipbookHeight}`);
+        console.log(`Full screen mode enabled for mobile`);
     } else {
         // Desktop: standard book size with two-page spread
         flipbookWidth = 800;
@@ -366,21 +358,27 @@ async function initializePageFlip() {
             width: flipbookWidth,
             height: flipbookHeight,
             size: "stretch",
-            maxShadowOpacity: isMobile ? 0.35 : 0.45,
-            flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
+            maxShadowOpacity: isMobile ? 0.25 : 0.45, // Lower shadow for mobile
+            flippingTime: isMobile ? 300 : 520, // Much faster flips on mobile
             usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
             showCover: true,
             autoSize: true,
             drawShadow: true,
             // Force single page display on mobile
             display: displayMode,
-            // Additional mobile optimizations
-            disableFlipByClick: isMobile, // Disable click flipping on mobile to prevent conflicts
-            flippingTime: isMobile ? 400 : 520,
-            maxShadowOpacity: isMobile ? 0.35 : 0.45
+            // Mobile-specific optimizations
+            disableFlipByClick: isMobile, // Disable click flipping on mobile
+            flippingTime: isMobile ? 300 : 520,
+            maxShadowOpacity: isMobile ? 0.25 : 0.45,
+            // Enhanced mobile settings
+            usePortrait: isMobile ? true : false,
+            showCover: isMobile ? false : true, // Hide cover on mobile for more space
+            autoSize: isMobile ? false : true, // Disable auto-size on mobile for better control
+            drawShadow: isMobile ? false : true // Disable shadow on mobile for performance
         });
         
         console.log('PageFlip instance created successfully');
+        console.log(`Mobile optimizations: ${isMobile ? 'Enabled' : 'Disabled'}`);
     } catch (error) {
         console.error('Failed to create PageFlip instance:', error);
         throw error;
@@ -509,27 +507,41 @@ async function initializePageFlip() {
         }
     });
     
-    // Additional mobile-specific optimizations
+    // Enhanced mobile-specific optimizations for full-screen experience
     if (isMobile) {
-        // Ensure smooth scrolling on mobile
+        // Ensure TRUE full-screen layout on mobile
         if (flipbookEl) {
+            // Force full viewport dimensions
+            flipbookEl.style.width = '100vw';
+            flipbookEl.style.height = '100vh';
+            flipbookEl.style.maxWidth = '100vw';
+            flipbookEl.style.maxHeight = '100vh';
+            flipbookEl.style.position = 'fixed';
+            flipbookEl.style.top = '0';
+            flipbookEl.style.left = '0';
+            flipbookEl.style.zIndex = '5';
+            
+            // Enhanced touch optimizations
             flipbookEl.style.webkitOverflowScrolling = 'touch';
             flipbookEl.style.overflow = 'hidden';
-            // Add touch-action for better mobile performance
             flipbookEl.style.touchAction = 'pan-x pan-y';
-            // Disable default touch behaviors that might conflict with PageFlip
             flipbookEl.style.userSelect = 'none';
             flipbookEl.style.webkitUserSelect = 'none';
             flipbookEl.style.mozUserSelect = 'none';
             flipbookEl.style.msUserSelect = 'none';
             flipbookEl.style.webkitTouchCallout = 'none';
             flipbookEl.style.pointerEvents = 'auto';
+            flipbookEl.style.webkitTapHighlightColor = 'transparent';
+            
+            // Ensure proper mobile scaling
+            flipbookEl.style.transform = 'translateZ(0)';
+            flipbookEl.style.webkitTransform = 'translateZ(0)';
         }
         
         // Add CSS class for mobile-specific styling
         flipbookEl.classList.add('mobile-flipbook');
         
-        // Try to override PageFlip's internal touch handling
+        // Enhanced touch event handling for mobile
         try {
             // Override addEventListener to add passive option to touch events
             const originalAddEventListener = flipbookEl.addEventListener;
@@ -553,6 +565,8 @@ async function initializePageFlip() {
                     return protoAddEventListener.call(this, type, listener, options);
                 };
             }
+            
+            console.log('Enhanced mobile touch handling enabled');
         } catch (e) {
             console.log('Touch event override failed:', e);
         }
@@ -951,36 +965,66 @@ function initializeDOM() {
         });
     }
 
-    // Touch/swipe support for mobile
+    // Enhanced touch/swipe support for mobile with better gesture detection
     if (flipbookEl) {
         let touchStartX = 0;
         let touchStartY = 0;
+        let touchStartTime = 0;
+        let isSwiping = false;
 
         flipbookEl.addEventListener('touchstart', (e) => {
             touchStartX = e.touches[0].clientX;
             touchStartY = e.touches[0].clientY;
+            touchStartTime = Date.now();
+            isSwiping = false;
+        }, { passive: true });
+
+        flipbookEl.addEventListener('touchmove', (e) => {
+            if (!pageFlip) return;
+            
+            const touchCurrentX = e.touches[0].clientX;
+            const touchCurrentY = e.touches[0].clientY;
+            
+            const deltaX = Math.abs(touchStartX - touchCurrentX);
+            const deltaY = Math.abs(touchStartY - touchCurrentY);
+            
+            // Start swiping if horizontal movement is significant
+            if (deltaX > 20 && deltaX > deltaY) {
+                isSwiping = true;
+            }
         }, { passive: true });
 
         flipbookEl.addEventListener('touchend', (e) => {
-            if (!pageFlip) return;
+            if (!pageFlip || !isSwiping) return;
             
             const touchEndX = e.changedTouches[0].clientX;
             const touchEndY = e.changedTouches[0].clientY;
+            const touchEndTime = Date.now();
             
             const deltaX = touchStartX - touchEndX;
             const deltaY = touchStartY - touchEndY;
             
-            // Minimum swipe distance
-            const minSwipeDistance = 50;
+            // Enhanced swipe detection
+            const minSwipeDistance = 40; // Reduced for better responsiveness
+            const maxSwipeTime = 500; // Maximum time for a swipe gesture
             
-            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeDistance) {
+            if (Math.abs(deltaX) > Math.abs(deltaY) && 
+                Math.abs(deltaX) > minSwipeDistance && 
+                (touchEndTime - touchStartTime) < maxSwipeTime) {
+                
                 if (deltaX > 0) {
+                    console.log('Swipe left - Next page');
                     pageFlip.flipNext();
                 } else {
+                    console.log('Swipe right - Previous page');
                     pageFlip.flipPrev();
                 }
             }
+            
+            isSwiping = false;
         }, { passive: true });
+        
+        console.log('Enhanced mobile touch handling enabled');
     }
 }
 
