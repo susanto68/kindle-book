@@ -282,6 +282,28 @@ async function initializePageFlip() {
     // Clear previous content
     if (flipbookEl) flipbookEl.innerHTML = '';
     
+    // Detect screen size and set appropriate display mode
+    const isMobile = window.innerWidth <= 768;
+    const displayMode = isMobile ? "single" : "double";
+    
+    // Set flipbook dimensions based on screen size
+    let flipbookWidth, flipbookHeight;
+    
+    if (isMobile) {
+        // Mobile: full screen minus header and controls
+        flipbookWidth = window.innerWidth;
+        flipbookHeight = window.innerHeight - 110; // Account for header + controls
+    } else {
+        // Desktop: standard book size
+        flipbookWidth = 800;
+        flipbookHeight = 600;
+    }
+    
+    console.log(`Initializing flipbook: ${isMobile ? 'Mobile' : 'Desktop'} mode`);
+    console.log(`Display mode: ${displayMode}`);
+    console.log(`Dimensions: ${flipbookWidth}x${flipbookHeight}`);
+    console.log(`Screen size: ${window.innerWidth}x${window.innerHeight}`);
+    
     // Create actual DOM elements for pages
     for (let i = 1; i <= totalPages; i++) {
         const pageDiv = document.createElement('div');
@@ -292,15 +314,17 @@ async function initializePageFlip() {
     
     // Create page flip instance using St.PageFlip (from page-flip library)
     pageFlip = new St.PageFlip(flipbookEl, {
-        width: 720,
-        height: 920,
+        width: flipbookWidth,
+        height: flipbookHeight,
         size: "stretch",
         maxShadowOpacity: 0.45,
         flippingTime: 520,
         usePortrait: true,
         showCover: true,
         autoSize: true,
-        drawShadow: true
+        drawShadow: true,
+        // Set display mode based on screen size
+        display: displayMode
     });
     
     // Load from the HTML elements we just created
@@ -571,6 +595,35 @@ function updateTTSButtons() {
     if (ttsBtnDesktop) ttsBtnDesktop.textContent = playText;
 }
 
+// Add responsive reinitialization function
+function reinitializeFlipbookOnResize() {
+    if (pageFlip && currentBook) {
+        // Debounce resize events
+        clearTimeout(window.resizeTimeout);
+        window.resizeTimeout = setTimeout(async () => {
+            try {
+                // Destroy current instance
+                if (pageFlip) {
+                    pageFlip.destroy();
+                    pageFlip = null;
+                }
+                
+                // Reinitialize with new dimensions
+                await initializePageFlip();
+                
+                // Re-render current page
+                if (currentPage > 0) {
+                    await ensurePagesRendered(currentPage);
+                }
+                
+                console.log('Flipbook reinitialized for new screen size');
+            } catch (error) {
+                console.error('Failed to reinitialize flipbook:', error);
+            }
+        }, 250); // 250ms debounce
+    }
+}
+
 // Initialize DOM elements and event listeners
 function initializeDOM() {
     // Get all DOM elements
@@ -682,6 +735,9 @@ function setupKeyboardNavigation() {
                 break;
         }
     });
+    
+    // Add responsive resize listener
+    window.addEventListener('resize', reinitializeFlipbookOnResize);
 }
 
 // Initialize app

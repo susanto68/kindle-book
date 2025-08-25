@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flipbook Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .screen-size {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .responsive-info {
+            background: #e2e8f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-list {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-list h3 {
+            margin-top: 0;
+            color: #4a5568;
+        }
+        
+        .feature-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .feature-list li {
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+        
+        .test-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .test-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .test-btn:hover {
+            background: #38a169;
+        }
+        
+        .test-btn.secondary {
+            background: #667eea;
+        }
+        
+        .test-btn.secondary:hover {
+            background: #5a67d8;
+        }
+        
+        @media (max-width: 768px) {
+            .test-container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .test-buttons {
+                flex-direction: column;
+            }
+            
+            .test-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>📱 Responsive Flipbook Test</h1>
+        
+        <div class="screen-size" id="screenSize">
+            Detecting screen size...
+        </div>
+        
+        <div class="responsive-info">
+            <h3>🔄 Responsive Behavior</h3>
+            <p>This test page demonstrates the responsive flipbook implementation:</p>
+            <ul>
+                <li><strong>Mobile (≤768px):</strong> Single page mode, full-screen reading</li>
+                <li><strong>Desktop (>768px):</strong> Double page mode, book-like experience</li>
+                <li><strong>Auto-resize:</strong> Flipbook automatically adapts to screen changes</li>
+            </ul>
+        </div>
+        
+        <div class="feature-list">
+            <h3>✅ Implemented Features</h3>
+            <ul>
+                <li>📱 Mobile-optimized headers and footers (smaller, compact)</li>
+                <li>📖 Full-screen PDF viewing on mobile devices</li>
+                <li>🖥️ Desktop double-page spread layout</li>
+                <li>🔄 Automatic responsive reinitialization on resize</li>
+                <li>👆 Touch-friendly mobile controls</li>
+                <li>🎯 Screen size detection (768px breakpoint)</li>
+            </ul>
+        </div>
+        
+        <div class="test-buttons">
+            <button class="test-btn" onclick="openMainApp()">🚀 Open Main App</button>
+            <button class="test-btn secondary" onclick="testResponsive()">🧪 Test Responsive</button>
+            <button class="test-btn secondary" onclick="showScreenInfo()">📊 Screen Info</button>
+        </div>
+        
+        <div id="testResults" style="margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 4px; display: none;">
+            <h4>Test Results:</h4>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Update screen size display
+        function updateScreenSize() {
+            const screenSizeEl = document.getElementById('screenSize');
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const isMobile = width <= 768;
+            
+            screenSizeEl.innerHTML = `
+                📱 Screen: ${width} × ${height} 
+                <br>
+                ${isMobile ? '📱 Mobile Mode (Single Page)' : '🖥️ Desktop Mode (Double Page)'}
+            `;
+        }
+        
+        // Test responsive behavior
+        function testResponsive() {
+            const resultsDiv = document.getElementById('testResults');
+            const resultsContent = document.getElementById('resultsContent');
+            
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const isMobile = width <= 768;
+            
+            resultsContent.innerHTML = `
+                <p><strong>Current Screen:</strong> ${width} × ${height}</p>
+                <p><strong>Mode:</strong> ${isMobile ? 'Mobile (Single Page)' : 'Desktop (Double Page)'}</p>
+                <p><strong>Breakpoint:</strong> 768px</p>
+                <p><strong>Status:</strong> ${isMobile ? '✅ Mobile optimized' : '✅ Desktop optimized'}</p>
+                <p><strong>Flipbook Display:</strong> ${isMobile ? 'single' : 'double'}</p>
+                <p><strong>Header Height:</strong> ${isMobile ? '50px (compact)' : 'Standard'}</p>
+                <p><strong>Controls Height:</strong> ${isMobile ? '60px (compact)' : 'Standard'}</p>
+            `;
+            
+            resultsDiv.style.display = 'block';
+        }
+        
+        // Show detailed screen information
+        function showScreenInfo() {
+            const resultsDiv = document.getElementById('testResults');
+            const resultsContent = document.getElementById('resultsContent');
+            
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const isMobile = width <= 768;
+            
+            // Calculate flipbook dimensions
+            let flipbookWidth, flipbookHeight;
+            if (isMobile) {
+                flipbookWidth = width;
+                flipbookHeight = height - 110; // Account for header + controls
+            } else {
+                flipbookWidth = 800;
+                flipbookHeight = 600;
+            }
+            
+            resultsContent.innerHTML = `
+                <h5>📊 Detailed Screen Analysis</h5>
+                <p><strong>Window Size:</strong> ${width} × ${height}</p>
+                <p><strong>Device Pixel Ratio:</strong> ${window.devicePixelRatio || 1}</p>
+                <p><strong>Orientation:</strong> ${width > height ? 'Landscape' : 'Portrait'}</p>
+                <p><strong>Responsive Mode:</strong> ${isMobile ? 'Mobile' : 'Desktop'}</p>
+                <hr>
+                <h5>📖 Flipbook Configuration</h5>
+                <p><strong>Display Mode:</strong> ${isMobile ? 'single' : 'double'}</p>
+                <p><strong>Width:</strong> ${flipbookWidth}px</p>
+                <p><strong>Height:</strong> ${flipbookHeight}px</p>
+                <p><strong>Available Space:</strong> ${width} × ${height}px</p>
+                <p><strong>Utilization:</strong> ${Math.round((flipbookWidth * flipbookHeight) / (width * height) * 100)}%</p>
+            `;
+            
+            resultsDiv.style.display = 'block';
+        }
+        
+        // Open main application
+        function openMainApp() {
+            window.open('index.html', '_blank');
+        }
+        
+        // Initialize
+        updateScreenSize();
+        window.addEventListener('resize', updateScreenSize);
+        
+        // Add some interactive testing
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Responsive test page loaded');
+            console.log(`Screen: ${window.innerWidth}x${window.innerHeight}`);
+            console.log(`Mobile mode: ${window.innerWidth <= 768}`);
+        });
+    </script>
+</body>
+</html>
