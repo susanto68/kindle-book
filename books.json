@@ -1,34 +1,129 @@
-{
-  "Class 12": [
-    { "title": "Chapter 1 - Boolean Algebra", "file": "books/class12/CLASS12-CH1.pdf", "author": "Class 12", "year": "2025" },
-    { "title": "Chapter 2 - Computer Hardware", "file": "books/class12/CLASS12-CH2.pdf", "author": "Class 12", "year": "2025" },
-    { "title": "Chapter 3 - Java Revision Tour", "file": "books/class12/CLASS12-CH3.pdf", "author": "Class 12", "year": "2025" },
-    { "title": "Chapter 4", "file": "books/class12/CLASS12-CH4.pdf", "author": "Class 12", "year": "2025" },
-    { "title": "Chapter 5", "file": "books/class12/CLASS12-CH5.pdf", "author": "Class 12", "year": "2025" },
-    { "title": "Syllabus 2025-26", "file": "books/class12/Syllabus-Class12-2025-26.pdf", "author": "Class 12", "year": "2025" }
-  ],
-  "Class 10": [
-    { "title": "Chapter 1 - Introduction to OOP", "file": "books/class10/CLASS10-CH1.pdf", "author": "Class 10", "year": "2025" },
-    { "title": "Chapter 2 - Objects and Classes", "file": "books/class10/CLASS10-CH2.pdf", "author": "Class 10", "year": "2025" },
-    { "title": "Chapter 3 - Values and Types", "file": "books/class10/CLASS10-CH3.pdf", "author": "Class 10", "year": "2025" },
-    { "title": "Chapter 4 - Operators in Java", "file": "books/class10/CLASS10-CH4.pdf", "author": "Class 10", "year": "2025" },
-    { "title": "Chapter 5", "file": "books/class10/CLASS10-CH5.pdf", "author": "Class 10", "year": "2025" },
-    { "title": "Syllabus 2025-26", "file": "books/class10/Syllabus-Class10-2025-26.pdf", "author": "Class 10", "year": "2025" }
-  ],
-  "Class 9": [
-    { "title": "Chapter 1 - Principles of OOP", "file": "books/class9/CLASS9-CH1.pdf", "author": "Class 9", "year": "2025" },
-    { "title": "Chapter 2 - Introduction to Java", "file": "books/class9/CLASS9-CH2.pdf", "author": "Class 9", "year": "2025" },
-    { "title": "Chapter 3 - Objects and Classes", "file": "books/class9/CLASS9-CH3.pdf", "author": "Class 9", "year": "2025" },
-    { "title": "Syllabus 2025-26", "file": "books/class9/Syllabus-Class9-2025-26.pdf", "author": "Class 9", "year": "2025" }
-  ],
-  "Class 8": [
-    { "title": "Chapter 1 - Operating System and GUI", "file": "books/class8/CLASS8-CH1.pdf", "author": "Class 8", "year": "2025" },
-    { "title": "Chapter 2 - MS Excel Formulas and Functions", "file": "books/class8/CLASS8-CH2.pdf", "author": "Class 8", "year": "2025" },
-    { "title": "Syllabus 2025-26", "file": "books/class8/Syllabus-Class8-2025-26.pdf", "author": "Class 8", "year": "2025" }
-  ],
-  "Class 6": [
-    { "title": "Math Chapter 3", "file": "books/class6/CLASS6-MATH-CH3.pdf", "author": "Class 6", "year": "2025" },
-    { "title": "Math Chapter 6", "file": "books/class6/CLASS6-MATH-CH6.pdf", "author": "Class 6", "year": "2025" },
-    { "title": "Syllabus 2025-26", "file": "books/class6/Syllabus-Class6-2025-26.pdf", "author": "Class 6", "year": "2025" }
-  ]
-}
+[
+  {
+    "class": "Class 12",
+    "books": [
+      {
+        "title": "Class 12 Chapter 1 - Boolean Algebra",
+        "file": "books/class 12/CLASS 12 CH-1.pdf",
+        "author": "Class 12",
+        "year": "2025"
+      },
+      {
+        "title": "Class 12 Chapter 2 - Computer Hardware",
+        "file": "books/class 12/CLASS 12 CH-2.pdf",
+        "author": "Class 12",
+        "year": "2025"
+      },
+      {
+        "title": "Class 12 Chapter 3 - Java Revision Tour",
+        "file": "books/class 12/CLASS 12 CH-3.pdf",
+        "author": "Class 12",
+        "year": "2025"
+      },
+      {
+        "title": "Class 12 Chapter 4",
+        "file": "books/class 12/CLASS 12 CH-4.pdf",
+        "author": "Class 12",
+        "year": "2025"
+      },
+      {
+        "title": "Class 12 Chapter 5",
+        "file": "books/class 12/CLASS 12 CH-5.pdf",
+        "author": "Class 12",
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "class": "Class 10",
+    "books": [
+      {
+        "title": "Class 10 Chapter 1 - Introduction to OOP",
+        "file": "books/class 10/CLASS 10 CH-1.pdf",
+        "author": "Class 10",
+        "year": "2025"
+      },
+      {
+        "title": "Class 10 Chapter 2 - Objects and Classes",
+        "file": "books/class 10/CLASS 10 CH-2.pdf",
+        "author": "Class 10",
+        "year": "2025"
+      },
+      {
+        "title": "Class 10 Chapter 3 - Values and Types",
+        "file": "books/class 10/CLASS 10 CH-3.pdf",
+        "author": "Class 10",
+        "year": "2025"
+      },
+      {
+        "title": "Class 10 Chapter 4 - Operators in Java",
+        "file": "books/class 10/CLASS 10 CH-4.pdf",
+        "author": "Class 10",
+        "year": "2025"
+      },
+      {
+        "title": "Class 10 Chapter 5",
+        "file": "books/class 10/CLASS 10 CH-5.pdf",
+        "author": "Class 10",
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "class": "Class 9",
+    "books": [
+      {
+        "title": "Class 9 Chapter 1 - Principles of OOP",
+        "file": "books/class 9/Class 9 ch-1 _ Principles of object oriented programming.pdf",
+        "author": "Class 9",
+        "year": "2025"
+      },
+      {
+        "title": "Class 9 Chapter 2 - Introduction to Java",
+        "file": "books/class 9/Class 9 ch-2 _ Introduction to Java.pdf",
+        "author": "Class 9",
+        "year": "2025"
+      },
+      {
+        "title": "Class 9 Chapter 3 - Objects and Classes",
+        "file": "books/class 9/Class 9 ch-3 _ Elementary concept of object and class.pdf",
+        "author": "Class 9",
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "class": "Class 8",
+    "books": [
+      {
+        "title": "Class 8 Chapter 1 - Operating System and GUI",
+        "file": "books/class 8/Class 8 ch-1 _Operating system and GUI.pdf",
+        "author": "Class 8",
+        "year": "2025"
+      },
+      {
+        "title": "Class 8 Chapter 2 - MS Excel Formulas and Functions",
+        "file": "books/class 8/Class 8 ch-2 _ Ms Excel formula and functions I.pdf",
+        "author": "Class 8",
+        "year": "2025"
+      }
+    ]
+  },
+  {
+    "class": "Class 6",
+    "books": [
+      {
+        "title": "Class 6 Math Chapter 3",
+        "file": "books/class 6/class 6 math ch-3.pdf",
+        "author": "Class 6",
+        "year": "2025"
+      },
+      {
+        "title": "Class 6 Math Chapter 6",
+        "file": "books/class 6/class 6 math ch-6.pdf",
+        "author": "Class 6",
+        "year": "2025"
+      }
+    ]
+  }
+]
