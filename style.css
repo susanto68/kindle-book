@@ -878,6 +878,22 @@ body {
         overflow: hidden !important;
         position: relative !important;
     }
+    
+    /* Additional mobile touch optimizations */
+    .mobile-flipbook {
+        touch-action: pan-x pan-y !important;
+        -webkit-overflow-scrolling: touch !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+    }
+    
+    /* Ensure PageFlip internal elements don't interfere */
+    .mobile-flipbook * {
+        touch-action: pan-x pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 /* 3D corner flip animation enhancements for mobile */
@@ -904,6 +920,28 @@ body {
         will-change: transform;
         transform: translateZ(0);
         -webkit-transform: translateZ(0);
+    }
+    
+    /* Mobile-specific flipbook optimizations */
+    .mobile-flipbook {
+        touch-action: pan-x pan-y;
+        -webkit-overflow-scrolling: touch;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    /* Reduce touch event conflicts */
+    .mobile-flipbook .page {
+        pointer-events: auto;
+        touch-action: pan-x pan-y;
+    }
+    
+    /* Optimize PageFlip internal touch handling */
+    .mobile-flipbook .stf__parent {
+        touch-action: pan-x pan-y;
+        -webkit-overflow-scrolling: touch;
     }
 }
 

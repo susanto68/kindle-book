@@ -363,7 +363,11 @@ async function initializePageFlip() {
             autoSize: true,
             drawShadow: true,
             // Force single page display on mobile
-            display: displayMode
+            display: displayMode,
+            // Additional mobile optimizations
+            disableFlipByClick: isMobile, // Disable click flipping on mobile to prevent conflicts
+            flippingTime: isMobile ? 400 : 520,
+            maxShadowOpacity: isMobile ? 0.35 : 0.45
         });
         
         console.log('PageFlip instance created successfully');
@@ -374,6 +378,28 @@ async function initializePageFlip() {
     
     // Load from the HTML elements we just created
     pageFlip.loadFromHTML(flipbookEl.querySelectorAll('.page'));
+    
+    // Additional mobile optimizations after PageFlip initialization
+    if (isMobile) {
+        // Try to optimize PageFlip's internal touch handling
+        try {
+            // Disable some internal PageFlip features that might cause touch conflicts
+            if (pageFlip.disableFlipByClick !== undefined) {
+                pageFlip.disableFlipByClick(true);
+            }
+            
+            // Set mobile-specific options if available
+            if (pageFlip.setOptions) {
+                pageFlip.setOptions({
+                    flippingTime: 400,
+                    maxShadowOpacity: 0.35,
+                    usePortrait: true
+                });
+            }
+        } catch (e) {
+            console.log('PageFlip optimization options not available:', e);
+        }
+    }
     
     // Set up event listeners
     pageFlip.on('flip', async (e) => {
@@ -399,7 +425,15 @@ async function initializePageFlip() {
             flipbookEl.style.overflow = 'hidden';
             // Add touch-action for better mobile performance
             flipbookEl.style.touchAction = 'pan-x pan-y';
+            // Disable default touch behaviors that might conflict with PageFlip
+            flipbookEl.style.userSelect = 'none';
+            flipbookEl.style.webkitUserSelect = 'none';
+            flipbookEl.style.mozUserSelect = 'none';
+            flipbookEl.style.msUserSelect = 'none';
         }
+        
+        // Add CSS class for mobile-specific styling
+        flipbookEl.classList.add('mobile-flipbook');
     }
 }
 
