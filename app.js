@@ -351,22 +351,26 @@ async function initializePageFlip() {
     }
     
     // Create page flip instance using St.PageFlip (from page-flip library)
-    pageFlip = new St.PageFlip(flipbookEl, {
-        width: flipbookWidth,
-        height: flipbookHeight,
-        size: "stretch",
-        maxShadowOpacity: isMobile ? 0.35 : 0.45,
-        flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
-        usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
-        showCover: true,
-        autoSize: true,
-        drawShadow: true,
-        // Force single page display on mobile
-        display: displayMode,
-        // Ensure proper page flipping behavior
-        flippingTime: isMobile ? 400 : 520,
-        maxShadowOpacity: isMobile ? 0.35 : 0.45
-    });
+    try {
+        pageFlip = new St.PageFlip(flipbookEl, {
+            width: flipbookWidth,
+            height: flipbookHeight,
+            size: "stretch",
+            maxShadowOpacity: isMobile ? 0.35 : 0.45,
+            flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
+            usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
+            showCover: true,
+            autoSize: true,
+            drawShadow: true,
+            // Force single page display on mobile
+            display: displayMode
+        });
+        
+        console.log('PageFlip instance created successfully');
+    } catch (error) {
+        console.error('Failed to create PageFlip instance:', error);
+        throw error;
+    }
     
     // Load from the HTML elements we just created
     pageFlip.loadFromHTML(flipbookEl.querySelectorAll('.page'));
@@ -393,6 +397,8 @@ async function initializePageFlip() {
         if (flipbookEl) {
             flipbookEl.style.webkitOverflowScrolling = 'touch';
             flipbookEl.style.overflow = 'hidden';
+            // Add touch-action for better mobile performance
+            flipbookEl.style.touchAction = 'pan-x pan-y';
         }
     }
 }
@@ -797,7 +803,7 @@ function initializeDOM() {
         flipbookEl.addEventListener('touchstart', (e) => {
             touchStartX = e.touches[0].clientX;
             touchStartY = e.touches[0].clientY;
-        });
+        }, { passive: true });
 
         flipbookEl.addEventListener('touchend', (e) => {
             if (!pageFlip) return;
@@ -818,7 +824,7 @@ function initializeDOM() {
                     pageFlip.flipPrev();
                 }
             }
-        });
+        }, { passive: true });
     }
 }
 
@@ -844,10 +850,10 @@ function setupKeyboardNavigation() {
                 hideReader();
                 break;
         }
-    });
+    }, { passive: false });
     
     // Add responsive resize listener
-    window.addEventListener('resize', reinitializeFlipbookOnResize);
+    window.addEventListener('resize', reinitializeFlipbookOnResize, { passive: true });
     
     // Handle orientation changes on mobile devices
     if ('onorientationchange' in window) {
@@ -863,7 +869,7 @@ function setupKeyboardNavigation() {
                     }
                 }
             }, 500);
-        });
+        }, { passive: true });
     }
 }
 
