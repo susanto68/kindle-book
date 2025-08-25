@@ -304,9 +304,14 @@ async function initializePageFlip() {
     // Clear previous content
     if (flipbookEl) flipbookEl.innerHTML = '';
     
-    // Detect current layout mode
+    // Detect current layout mode and force mobile behavior
     const isMobile = currentLayoutMode === 'mobile';
     const displayMode = isMobile ? "single" : "double";
+    
+    // Force single page mode on mobile for better reading experience
+    if (isMobile) {
+        console.log('Forcing single page mode for mobile device');
+    }
     
     // Set flipbook dimensions based on layout mode
     let flipbookWidth, flipbookHeight;
@@ -320,6 +325,12 @@ async function initializePageFlip() {
         if (flipbookHeight < 400) {
             flipbookHeight = 400;
         }
+        
+        // Force viewport units for mobile
+        flipbookWidth = window.innerWidth;
+        flipbookHeight = Math.max(400, window.innerHeight - 100);
+        
+        console.log(`Mobile dimensions: ${flipbookWidth}x${flipbookHeight}`);
     } else {
         // Desktop: standard book size with two-page spread
         flipbookWidth = 800;
@@ -344,20 +355,17 @@ async function initializePageFlip() {
         width: flipbookWidth,
         height: flipbookHeight,
         size: "stretch",
-        maxShadowOpacity: 0.45,
-        flippingTime: 520,
-        usePortrait: true,
+        maxShadowOpacity: isMobile ? 0.35 : 0.45,
+        flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
+        usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
         showCover: true,
         autoSize: true,
         drawShadow: true,
-        // Set display mode based on layout mode
+        // Force single page display on mobile
         display: displayMode,
-        // Enhanced 3D effects for mobile
-        flippingTime: isMobile ? 400 : 520, // Faster flips on mobile
-        maxShadowOpacity: isMobile ? 0.35 : 0.45, // Slightly less shadow on mobile
-        drawShadow: true,
-        usePortrait: isMobile ? true : false, // Force portrait on mobile for better reading
-        autoSize: true
+        // Ensure proper page flipping behavior
+        flippingTime: isMobile ? 400 : 520,
+        maxShadowOpacity: isMobile ? 0.35 : 0.45
     });
     
     // Load from the HTML elements we just created
