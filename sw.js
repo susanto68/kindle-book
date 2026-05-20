@@ -1,9 +1,12 @@
-const CACHE_NAME = 'kindle-reader-v1';
+const CACHE_NAME = 'kindle-reader-v13-premium';
 const urlsToCache = [
   '/',
   '/index.html',
   '/style.css',
   '/app.js',
+  '/vendor/pdf.min.js',
+  '/vendor/pdf.worker.min.js',
+  '/vendor/page-flip.browser.min.js',
   '/books.json',
   '/favicon.svg'
 ];

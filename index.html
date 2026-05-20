@@ -2,103 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1e3c72">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe5">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Kindle Book Reader</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=13">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/page-flip/2.20.0/page-flip.browser.min.js"></script>
+  <script src="vendor/pdf.min.js"></script>
+  <script src="vendor/page-flip.browser.min.js"></script>
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div id="loadingScreen" class="loading-screen">
-    <div class="loading-spinner"></div>
-    <p>Loading your library...</p>
+  <div id="loadingScreen" class="loading-screen" aria-live="polite">
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <p>Preparing your library...</p>
   </div>
 
-  <!-- Header -->
-  <header class="reader-header">
+  <header id="appHeader" class="app-header">
     <div class="header-content">
-      <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
-      <h1 id="bookTitle">📚 My Library</h1>
-      <button id="searchBtn" class="search-btn" aria-label="Search">🔍</button>
+      <button id="backBtn" class="icon-btn header-back" type="button" aria-label="Back to library">Back</button>
+      <div class="title-wrap">
+        <p id="headerEyebrow" class="eyebrow">Kindle Library</p>
+        <h1 id="bookTitle">My Books</h1>
+      </div>
+      <div class="header-actions">
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">Theme</button>
+        <button id="searchBtn" class="icon-btn search-btn" type="button" aria-label="Search books">Search</button>
+      </div>
     </div>
-    
-    <!-- Search Bar -->
-    <div id="searchBar" class="search-bar" style="display: none;">
-      <input type="text" id="searchInput" placeholder="Search books..." aria-label="Search books">
-      <button id="closeSearch" aria-label="Close search">✕</button>
+
+    <div id="searchBar" class="search-bar" hidden>
+      <input type="search" id="searchInput" placeholder="Search books, classes, authors..." aria-label="Search books">
+      <button id="closeSearch" class="icon-btn" type="button" aria-label="Close search">Close</button>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="reader">
-    <!-- Library View -->
-    <div id="library" class="book-library">
-      <div class="library-header">
-        <h2>📖 Available Books</h2>
-        <p>Select a book to start reading</p>
+  <main class="app-shell">
+    <section id="library" class="library-view" aria-label="Book library">
+      <div class="library-hero">
+        <div>
+          <p class="eyebrow">Premium reading room</p>
+          <h2>Choose a book and start from page one.</h2>
+        </div>
+        <p class="hero-copy">A calm, Kindle-style shelf for your class notes, chapters, and syllabi.</p>
       </div>
-      <div id="bookGrid" class="book-grid"></div>
-    </div>
 
-    <!-- Reader View -->
-    <section id="reader" class="reader-view" style="display:none;">
-      <div class="reader-toolbar">
-        <div class="toolbar-left">
-          <span id="pageInfo" class="page-info">Page 1 of 1</span>
+      <section id="continueSection" class="shelf-section" hidden>
+        <div class="section-heading">
+          <h3>Continue Reading</h3>
+          <span id="continueCount"></span>
         </div>
-        <div class="toolbar-center">
-          <button id="zoomOut" class="zoom-btn" aria-label="Zoom out">🔍-</button>
-          <button id="zoomIn" class="zoom-btn" aria-label="Zoom in">🔍+</button>
+        <div id="continueGrid" class="book-row"></div>
+      </section>
+
+      <section id="recentSection" class="shelf-section" hidden>
+        <div class="section-heading">
+          <h3>Recently Read</h3>
         </div>
-        <div class="toolbar-right">
-          <button id="fullscreenBtn" class="fullscreen-btn" aria-label="Fullscreen">⛶</button>
+        <div id="recentGrid" class="book-row"></div>
+      </section>
+
+      <section class="shelf-section">
+        <div class="section-heading">
+          <h3>Library</h3>
+          <span id="libraryCount"></span>
         </div>
+        <div id="bookGrid" class="library-shelves"></div>
+      </section>
+    </section>
+
+    <section id="reader" class="reader-view" aria-label="Book reader" hidden>
+      <div id="readerStage" class="reader-stage">
+        <div id="flipbook" class="flipbook-container" aria-live="polite"></div>
+        <div id="readerMessage" class="reader-message" hidden></div>
       </div>
-      
-      <div id="flipbook" class="flipbook-container"></div>
+
+      <div id="readerControls" class="reader-controls" aria-label="Reader controls">
+        <button id="indexBtn" class="pill-btn" type="button">Index</button>
+        <button id="goToBtn" class="pill-btn" type="button">Go To</button>
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+        <button id="prevPage" class="pill-btn reader-hidden-control" type="button" aria-label="Previous page" hidden>Prev</button>
+        <button id="playPause" class="pill-btn reader-hidden-control" type="button" aria-label="Play or pause speech" hidden>Play</button>
+        <button id="fullscreenBtn" class="pill-btn reader-hidden-control" type="button" aria-label="Toggle fullscreen" hidden>Full</button>
+        <button id="nextPage" class="pill-btn reader-hidden-control" type="button" aria-label="Next page" hidden>Next</button>
+      </div>
     </section>
   </main>
 
-  <!-- Footer Navigation -->
-  <footer class="reader-footer">
-    <div class="footer-buttons">
-      <button id="backBtn" class="nav-btn back-btn">
-        <span class="btn-icon">⬅️</span>
-        <span class="btn-text">Back</span>
-      </button>
-      
-      <div class="page-controls">
-        <button id="prevPage" class="nav-btn page-btn" aria-label="Previous page">
-          <span class="btn-icon">⬅️</span>
-          <span class="btn-text">Prev</span>
-        </button>
-        
-        <button id="playPause" class="nav-btn play-btn" aria-label="Play/Pause reading">
-          <span class="btn-icon">🔊</span>
-          <span class="btn-text">Play</span>
-        </button>
-        
-        <button id="nextPage" class="nav-btn page-btn" aria-label="Next page">
-          <span class="btn-icon">➡️</span>
-          <span class="btn-text">Next</span>
-        </button>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Book Details Modal -->
-  <div id="bookModal" class="modal" style="display: none;">
-    <div class="modal-content">
+  <div id="bookModal" class="modal" hidden>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal-header">
         <h3 id="modalTitle">Book Title</h3>
-        <button id="closeModal" class="close-btn">✕</button>
+        <button id="closeModal" class="icon-btn" type="button" aria-label="Close book details">Close</button>
       </div>
       <div class="modal-body">
         <div class="book-info">
@@ -107,13 +104,38 @@
           <p><strong>Class:</strong> <span id="modalClass">-</span></p>
         </div>
         <div class="modal-actions">
-          <button id="readBook" class="primary-btn">📖 Read Book</button>
-          <button id="downloadBook" class="secondary-btn">⬇️ Download</button>
+          <button id="readBook" class="primary-btn" type="button">Read from Start</button>
+          <button id="downloadBook" class="secondary-btn" type="button">Download</button>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <div id="indexModal" class="modal" hidden>
+    <div class="modal-content compact-modal" role="dialog" aria-modal="true" aria-labelledby="indexTitle">
+      <div class="modal-header">
+        <h3 id="indexTitle">Index</h3>
+        <button id="closeIndex" class="icon-btn" type="button" aria-label="Close index">Close</button>
+      </div>
+      <div id="indexList" class="index-list"></div>
+    </div>
+  </div>
+
+  <div id="goToModal" class="modal" hidden>
+    <div class="modal-content compact-modal" role="dialog" aria-modal="true" aria-labelledby="goToTitle">
+      <div class="modal-header">
+        <h3 id="goToTitle">Go To Page</h3>
+        <button id="closeGoTo" class="icon-btn" type="button" aria-label="Close go to page">Close</button>
+      </div>
+      <form id="goToForm" class="go-to-form" novalidate>
+        <label for="goToInput">Page number</label>
+        <input id="goToInput" type="number" inputmode="numeric" min="1" step="1" autocomplete="off">
+        <p id="goToHint" class="form-hint">Enter a page number.</p>
+        <button class="primary-btn" type="submit">Jump</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js?v=13"></script>
 </body>
 </html>
