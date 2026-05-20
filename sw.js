@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v13-premium';
+const CACHE_NAME = 'kindle-reader-v15-premium';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -24,6 +24,29 @@ self.addEventListener('install', (event) => {
 
 // Fetch event - serve from cache when offline
 self.addEventListener('fetch', (event) => {
+  const requestUrl = new URL(event.request.url);
+  const networkFirstPaths = new Set([
+    '/',
+    '/index.html',
+    '/books.json',
+    '/app.js',
+    '/style.css',
+    '/sw.js'
+  ]);
+
+  if (networkFirstPaths.has(requestUrl.pathname)) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {

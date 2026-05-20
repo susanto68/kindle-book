@@ -125,5 +125,56 @@
         "year": "2025"
       }
     ]
+  },
+  {
+    "class": "C++ Books",
+    "books": [
+      {
+        "title": "C++",
+        "file": "books/C++ Books/C++.pdf",
+        "author": "C++ Books",
+        "year": ""
+      },
+      {
+        "title": "Modern C++ Handbooks",
+        "file": "books/C++ Books/Modern C++ Handbooks.pdf",
+        "author": "C++ Books",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "class": "Java Books",
+    "books": [
+      {
+        "title": "100+ Java Programs with Output Useful collection of Java Programs",
+        "file": "books/Java Books/100+ Java Programs with Output_ Useful collection of Java Programs ( PDFDrive ).pdf",
+        "author": "Java Books",
+        "year": ""
+      },
+      {
+        "title": "Java A Beginner's Guide, 6th Edition",
+        "file": "books/Java Books/Java A Beginner's Guide, 6th Edition (PDF).pdf",
+        "author": "Java Books",
+        "year": ""
+      },
+      {
+        "title": "Java Programming Exercises With Solutions",
+        "file": "books/Java Books/Java Programming Exercises With Solutions (PDF).pdf",
+        "author": "Java Books",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "class": "Python Books",
+    "books": [
+      {
+        "title": "Introduction to Python Programming WEB",
+        "file": "books/Python Books/Introduction_to_Python_Programming_-_WEB.pdf",
+        "author": "Python Books",
+        "year": ""
+      }
+    ]
   }
 ]

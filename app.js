@@ -194,9 +194,72 @@ async function discoverTopLevelPdfFolders(configuredLibrary) {
 
     return groups;
   } catch (error) {
-    console.info("Automatic PDF folder discovery is unavailable on this server.", error);
+    console.info("Directory PDF folder discovery is unavailable; trying GitHub API fallback.", error);
+    return discoverGithubPdfFolders(knownTopFolders);
+  }
+}
+
+async function discoverGithubPdfFolders(knownTopFolders) {
+  try {
+    const rootItems = await fetchGithubContents("books");
+    const folders = rootItems.filter((item) => item.type === "dir" && !knownTopFolders.has(item.name.toLowerCase()));
+    const groups = [];
+
+    for (const folder of folders) {
+      const pdfFiles = await collectGithubPdfFiles(folder.path, 0, 3);
+      if (!pdfFiles.length) {
+        continue;
+      }
+
+      groups.push({
+        class: cleanFolderName(folder.name),
+        books: pdfFiles.map((file) => ({
+          title: titleFromFilePath(file.path),
+          file: file.path,
+          author: cleanFolderName(folder.name),
+          year: ""
+        }))
+      });
+    }
+
+    return groups;
+  } catch (error) {
+    console.info("GitHub PDF folder discovery is unavailable.", error);
     return [];
   }
+}
+
+async function collectGithubPdfFiles(path, depth, maxDepth) {
+  if (depth > maxDepth) {
+    return [];
+  }
+
+  const items = await fetchGithubContents(path);
+  const files = [];
+
+  for (const item of items) {
+    if (item.type === "dir") {
+      files.push(...await collectGithubPdfFiles(item.path, depth + 1, maxDepth));
+    } else if (item.type === "file" && item.name.toLowerCase().endsWith(".pdf")) {
+      files.push({ path: item.path });
+    }
+  }
+
+  return files.sort((a, b) => a.path.localeCompare(b.path));
+}
+
+async function fetchGithubContents(path) {
+  const response = await fetch(
+    `https://api.github.com/repos/susanto68/kindle-book/contents/${encodeURIComponent(path).replace(/%2F/g, "/")}?ref=master`,
+    { cache: "no-cache" }
+  );
+
+  if (!response.ok) {
+    throw new Error(`GitHub contents request failed: ${path}`);
+  }
+
+  const data = await response.json();
+  return Array.isArray(data) ? data : [];
 }
 
 async function collectPdfFiles(directoryUrl, depth, maxDepth) {
