@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v34-gutenberg-fallback-reader';
+const CACHE_NAME = 'kindle-reader-v35-auto-gutenberg';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -10,6 +10,7 @@ const urlsToCache = [
   '/vendor/jszip.min.js',
   '/vendor/epub.min.js',
   '/books.json',
+  '/books.gutenberg.json',
   '/favicon.svg'
 ];
 
@@ -31,6 +32,7 @@ self.addEventListener('fetch', (event) => {
     '/',
     '/index.html',
     '/books.json',
+    '/books.gutenberg.json',
     '/app.js',
     '/style.css',
     '/sw.js'

@@ -1,0 +1,49 @@
+name: Update Gutenberg Library
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_per_category:
+        description: "Maximum new books to download per category"
+        default: "1"
+        required: false
+      max_total:
+        description: "Maximum new books to download in this run"
+        default: "20"
+        required: false
+  schedule:
+    # Daily at midnight UTC. Vercel redeploys automatically after this workflow pushes.
+    - cron: "0 0 * * *"
+    # Weekly Sunday refresh.
+    - cron: "30 0 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gutenberg-library-update
+  cancel-in-progress: false
+
+jobs:
+  update-library:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Download new Gutenberg books
+        env:
+          GUTENBERG_MAX_PER_CATEGORY: ${{ github.event.inputs.max_per_category || '1' }}
+          GUTENBERG_MAX_TOTAL: ${{ github.event.inputs.max_total || '20' }}
+        run: node tools/gutendex_downloader.mjs
+
+      - name: Commit library update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Gutenberg library"
+          file_pattern: "books/Gutenberg/** books/.gutenberg-cache.json books.gutenberg.json"

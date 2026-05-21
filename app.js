@@ -190,7 +190,8 @@ async function init() {
     }
 
     const configuredLibrary = await response.json();
-    state.rawLibrary = await mergeDiscoveredPdfFolders(configuredLibrary);
+    const generatedLibrary = await fetchOptionalLibrary("books.gutenberg.json");
+    state.rawLibrary = await mergeDiscoveredPdfFolders([...configuredLibrary, ...generatedLibrary]);
     flattenLibrary(state.rawLibrary);
     renderLibrary();
     hideLoadingScreen();
@@ -208,6 +209,21 @@ function configurePdfJs() {
 
   pdfjsLib.GlobalWorkerOptions.workerSrc =
     "vendor/pdf.worker.min.js";
+}
+
+async function fetchOptionalLibrary(path) {
+  try {
+    const response = await fetch(path, { cache: "no-cache" });
+    if (!response.ok) {
+      return [];
+    }
+
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.info(`${path} is not available yet.`, error);
+    return [];
+  }
 }
 
 function flattenLibrary(groups) {
