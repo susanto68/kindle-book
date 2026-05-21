@@ -3,6 +3,50 @@
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
+        "title": "Delay in Transit",
+        "file": "books/Gutenberg/Artificial_Intelligence/50998-delay-in-transit.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/50998-delay-in-transit.jpg",
+        "author": "Wallace, F. L. (Floyd L.)",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50998,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Interstellar travel -- Fiction",
+          "Inventions -- Fiction",
+          "Science fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:58.273Z"
+      },
+      {
+        "title": "The angry house",
+        "file": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.jpg",
+        "author": "Smith, Richard Rein",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69211,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Burglars -- Fiction",
+          "Dwellings -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:58.135Z"
+      },
+      {
         "title": "The Brain",
         "file": "books/Gutenberg/Artificial_Intelligence/32498-the-brain.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/32498-the-brain.jpg",
@@ -23,6 +67,26 @@
         "downloadedAt": "2026-05-21T13:18:50.774Z"
       },
       {
+        "title": "The Cyberene",
+        "file": "books/Gutenberg/Artificial_Intelligence/66163-the-cyberene.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/66163-the-cyberene.jpg",
+        "author": "Phillips, Rog",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 66163,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction",
+          "Time travel -- Fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:58.414Z"
+      },
+      {
         "title": "The Fourth \"R\"",
         "file": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.jpg",
@@ -41,6 +105,47 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:06.609Z"
+      },
+      {
+        "title": "The metal horde",
+        "file": "books/Gutenberg/Artificial_Intelligence/73679-the-metal-horde.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/73679-the-metal-horde.jpg",
+        "author": "Campbell, John W., Jr. (John Wood)",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 73679,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction",
+          "War stories",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:57.744Z"
+      },
+      {
+        "title": "The programmed people",
+        "file": "books/Gutenberg/Artificial_Intelligence/72565-the-programmed-people.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/72565-the-programmed-people.jpg",
+        "author": "Sharkey, Jack",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 72565,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Revolutions -- Fiction",
+          "Science fiction",
+          "Totalitarianism -- Fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:57.997Z"
       }
     ]
   },
@@ -69,6 +174,46 @@
         "downloadedAt": "2026-05-21T13:20:57.067Z"
       },
       {
+        "title": "Jesus the Christ: A Study of the Messiah and His Mission According to Holy; Scriptures Both Ancient and Modern",
+        "file": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.jpg",
+        "author": "Talmage, James E. (James Edward)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22542,
+        "subjects": [
+          "Christian biography -- Palestine",
+          "Jesus Christ -- Biography",
+          "Jesus Christ -- Mormon interpretations",
+          "Category: Religion/Spirituality",
+          "Christianity",
+          "Latter Day Saints"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:03.340Z"
+      },
+      {
+        "title": "Roman Stoicism: being lectures on the history of the Stoic philosophy with special reference to its development within the Roman Empire",
+        "file": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.jpg",
+        "author": "Arnold, Edward Vernon",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64488,
+        "subjects": [
+          "Stoics",
+          "Category: History - Ancient",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:03.214Z"
+      },
+      {
         "title": "The Confessions of St. Augustine",
         "file": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.jpg",
@@ -93,12 +238,91 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:57.383Z"
+      },
+      {
+        "title": "The Great Controversy Between Christ and Satan",
+        "file": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.jpg",
+        "author": "White, Ellen Gould Harmon",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25833,
+        "subjects": [
+          "Good and evil",
+          "Seventh-Day Adventists -- Doctrines",
+          "Spiritual direction",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:03.087Z"
+      },
+      {
+        "title": "The lesser Key of Solomon, Goetia, the book of evil spirits : $b contains two hundred diagrams and seals for invocation and convocation of spirits, necromancy, witchcraft and black art",
+        "file": "books/Gutenberg/Bhagavad_Gita/72679-the-lesser-key-of-solomon-goetia-the-book-of-evil-spirits-b-contains-two.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/72679-the-lesser-key-of-solomon-goetia-the-book-of-evil-spirits-b-contains-two.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 72679,
+        "subjects": [
+          "Magic",
+          "Occultism",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:02.957Z"
+      },
+      {
+        "title": "The Works of Mr. George Gillespie (Vol. 1 of 2)",
+        "file": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.jpg",
+        "author": "Gillespie, George",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26849,
+        "subjects": [
+          "Church of Scotland -- History",
+          "Gillespie, George, 1613-1648",
+          "Category: History - British",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:02.563Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Biology",
     "books": [
+      {
+        "title": "Life and Letters of Charles Darwin — Volume 1",
+        "file": "books/Gutenberg/Biology/2087-life-and-letters-of-charles-darwin-volume-1.epub",
+        "cover": "books/Gutenberg/Biology/2087-life-and-letters-of-charles-darwin-volume-1.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2087,
+        "subjects": [
+          "Darwin, Charles, 1809-1882",
+          "Naturalists -- Great Britain -- Biography",
+          "Naturalists -- Great Britain -- Correspondence",
+          "Category: Biographies",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:27.445Z"
+      },
       {
         "title": "Pharmacographia: A history of the principal drugs of vegetable origin, met with in Great Britain and British India",
         "file": "books/Gutenberg/Biology/67691-pharmacographia-a-history-of-the-principal-drugs-of-vegetable-origin-met.epub",
@@ -122,6 +346,47 @@
         "downloadedAt": "2026-05-21T13:09:27.152Z"
       },
       {
+        "title": "Studies of American Fungi. Mushrooms, Edible, Poisonous, etc.",
+        "file": "books/Gutenberg/Biology/26492-studies-of-american-fungi-mushrooms-edible-poisonous-etc.epub",
+        "cover": "books/Gutenberg/Biology/26492-studies-of-american-fungi-mushrooms-edible-poisonous-etc.jpg",
+        "author": "Atkinson, George Francis",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26492,
+        "subjects": [
+          "Cooking (Mushrooms)",
+          "Fungi -- United States",
+          "Mushrooms",
+          "Category: How To ...",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:26.714Z"
+      },
+      {
+        "title": "The Elements of Bacteriological Technique: A Laboratory Guide for Medical, Dental, and Technical Students. Second Edition Rewritten and Enlarged.",
+        "file": "books/Gutenberg/Biology/27713-the-elements-of-bacteriological-technique-a-laboratory-guide-for-medical.epub",
+        "cover": "books/Gutenberg/Biology/27713-the-elements-of-bacteriological-technique-a-laboratory-guide-for-medical.jpg",
+        "author": "Eyre, J. W. H. (John William Henry)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27713,
+        "subjects": [
+          "Bacteriology -- Technique",
+          "Category: How To ...",
+          "Category: Science - Biology",
+          "Microbiology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:27.305Z"
+      },
+      {
         "title": "The Natural History of Pliny, Volume 3 (of 6)",
         "file": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.epub",
         "cover": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.jpg",
@@ -140,12 +405,69 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:37.922Z"
+      },
+      {
+        "title": "The Natural History of Pliny, Volume 5 (of 6)",
+        "file": "books/Gutenberg/Biology/60688-the-natural-history-of-pliny-volume-5-of-6.epub",
+        "cover": "books/Gutenberg/Biology/60688-the-natural-history-of-pliny-volume-5-of-6.jpg",
+        "author": "Pliny, the Elder",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60688,
+        "subjects": [
+          "Natural history -- Pre-Linnean works",
+          "Category: History - Ancient",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:26.849Z"
+      },
+      {
+        "title": "Vegetable Teratology: An Account of the Principal Deviations from the Usual Construction of Plants",
+        "file": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.epub",
+        "cover": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.jpg",
+        "author": "Masters, Maxwell T. (Maxwell Tylden)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23354,
+        "subjects": [
+          "Plants -- Abnormalities",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:27.120Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Career Guidance",
     "books": [
+      {
+        "title": "\"Honest Abe\": A Study in Integrity Based on the Early Life of Abraham Lincoln",
+        "file": "books/Gutenberg/Career_Guidance/49679-honest-abe-a-study-in-integrity-based-on-the-early-life-of-abraham-linco.epub",
+        "cover": "books/Gutenberg/Career_Guidance/49679-honest-abe-a-study-in-integrity-based-on-the-early-life-of-abraham-linco.jpg",
+        "author": "Rothschild, Alonzo",
+        "year": "Public domain",
+        "category": "Career Guidance",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 49679,
+        "subjects": [
+          "Lincoln, Abraham, 1809-1865",
+          "Lincoln, Abraham, 1809-1865 -- Childhood and youth",
+          "Lincoln, Abraham, 1809-1865 -- Ethics",
+          "Lincoln, Abraham, 1809-1865 -- Political career before 1861",
+          "Category: Biographies",
+          "Category: History - American"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:40.375Z"
+      },
       {
         "title": "General Washington's spies on Long Island and in New York",
         "file": "books/Gutenberg/Career_Guidance/70129-general-washingtons-spies-on-long-island-and-in-new-york.epub",
@@ -200,6 +522,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:22:24.380Z"
+      },
+      {
+        "title": "Only a farm boy; or, Dan Hardy's rise in life",
+        "file": "books/Gutenberg/Career_Guidance/68436-only-a-farm-boy-or-dan-hardys-rise-in-life.epub",
+        "cover": "books/Gutenberg/Career_Guidance/68436-only-a-farm-boy-or-dan-hardys-rise-in-life.jpg",
+        "author": "Webster, Frank V.",
+        "year": "Public domain",
+        "category": "Career Guidance",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68436,
+        "subjects": [
+          "Adventure stories",
+          "Boys -- Juvenile fiction",
+          "Burglary -- Juvenile fiction",
+          "Career development -- Juvenile fiction",
+          "Farm life -- Juvenile fiction",
+          "Trials -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:40.549Z"
       }
     ]
   },
@@ -225,6 +571,83 @@
         "downloadedAt": "2026-05-21T13:09:23.323Z"
       },
       {
+        "title": "Elements of Agricultural Chemistry",
+        "file": "books/Gutenberg/Chemistry/24931-elements-of-agricultural-chemistry.epub",
+        "cover": "books/Gutenberg/Chemistry/24931-elements-of-agricultural-chemistry.jpg",
+        "author": "Anderson, Thomas",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24931,
+        "subjects": [
+          "Agricultural chemistry",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:19.263Z"
+      },
+      {
+        "title": "Of Natural and Supernatural Things: Also of the first Tincture, Root, and Spirit of Metals and Minerals, how the same are Conceived, Generated, Brought forth, Changed, and Augmented.",
+        "file": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.epub",
+        "cover": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.jpg",
+        "author": "Basilius Valentinus",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26340,
+        "subjects": [
+          "Alchemy -- Early works to 1800",
+          "Antimony -- Therapeutic use -- Early works to 1800",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:19.385Z"
+      },
+      {
+        "title": "The Principles of Chemistry, Volume I",
+        "file": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.epub",
+        "cover": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.jpg",
+        "author": "Mendeleyev, Dmitry Ivanovich",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51326,
+        "subjects": [
+          "Argon",
+          "Chemistry",
+          "Periodic law",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:18.977Z"
+      },
+      {
+        "title": "The Principles of Chemistry, Volume II",
+        "file": "books/Gutenberg/Chemistry/54210-the-principles-of-chemistry-volume-ii.epub",
+        "cover": "books/Gutenberg/Chemistry/54210-the-principles-of-chemistry-volume-ii.jpg",
+        "author": "Mendeleyev, Dmitry Ivanovich",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54210,
+        "subjects": [
+          "Argon",
+          "Chemistry",
+          "Periodic law",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:19.138Z"
+      },
+      {
         "title": "The Sceptical Chymist: or Chymico-Physical Doubts & Paradoxes, Touching the Spagyrist's Principles Commonly call'd Hypostatical; As they are wont to be Propos'd and Defended by the Generality of Alchymists. Whereunto is præmis'd Part of another Discourse relating to the same Subject.",
         "file": "books/Gutenberg/Chemistry/22914-the-sceptical-chymist-or-chymico-physical-doubts-paradoxes-touching-the-.epub",
         "cover": "books/Gutenberg/Chemistry/22914-the-sceptical-chymist-or-chymico-physical-doubts-paradoxes-touching-the-.jpg",
@@ -244,12 +667,66 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:31.307Z"
+      },
+      {
+        "title": "The Stock-Feeder's Manual: the chemistry of food in relation to the breeding and feeding of live stock",
+        "file": "books/Gutenberg/Chemistry/25520-the-stock-feeders-manual-the-chemistry-of-food-in-relation-to-the-breedi.epub",
+        "cover": "books/Gutenberg/Chemistry/25520-the-stock-feeders-manual-the-chemistry-of-food-in-relation-to-the-breedi.jpg",
+        "author": "Cameron, Charles Alexander, Sir",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25520,
+        "subjects": [
+          "Feeds",
+          "Livestock",
+          "Category: Nutrition",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:19.512Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Children Books",
     "books": [
+      {
+        "title": "Adventures of Huckleberry Finn",
+        "file": "books/Gutenberg/Children_Books/76-adventures-of-huckleberry-finn.epub",
+        "cover": "books/Gutenberg/Children_Books/76-adventures-of-huckleberry-finn.jpg",
+        "author": "Twain, Mark",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76,
+        "subjects": [
+          "Adventure stories",
+          "Bildungsromans",
+          "Boys -- Fiction",
+          "Finn, Huckleberry (Fictitious character) -- Fiction",
+          "Fugitive slaves -- Fiction",
+          "Humorous stories",
+          "Male friendship -- Fiction",
+          "Mississippi River -- Fiction",
+          "Missouri -- Fiction",
+          "Race relations -- Fiction",
+          "Runaway children -- Fiction",
+          "Banned Books List from the American Library Association",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:30.667Z"
+      },
       {
         "title": "Alice's Adventures in Wonderland",
         "file": "books/Gutenberg/Children_Books/11-alices-adventures-in-wonderland.epub",
@@ -273,6 +750,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:26.730Z"
+      },
+      {
+        "title": "Grimms' Fairy Tales",
+        "file": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.epub",
+        "cover": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.jpg",
+        "author": "Grimm, Jacob, Grimm, Wilhelm",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2591,
+        "subjects": [
+          "Fairy tales -- Germany",
+          "Category: Children & Young Adult Reading",
+          "Category: German Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:31.207Z"
       },
       {
         "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
@@ -301,6 +798,88 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:21:45.003Z"
+      },
+      {
+        "title": "The Adventures of Tom Sawyer, Complete",
+        "file": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.epub",
+        "cover": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.jpg",
+        "author": "Twain, Mark",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74,
+        "subjects": [
+          "Adventure stories",
+          "Bildungsromans",
+          "Boys -- Fiction",
+          "Child witnesses -- Fiction",
+          "Humorous stories",
+          "Male friendship -- Fiction",
+          "Mississippi River Valley -- Fiction",
+          "Missouri -- Fiction",
+          "Runaway children -- Fiction",
+          "Sawyer, Tom (Fictitious character) -- Fiction",
+          "Banned Books List from the American Library Association",
+          "Banned Books from Anne Haight's list",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:31.084Z"
+      },
+      {
+        "title": "The Two Magics: The Turn of the Screw, Covering End",
+        "file": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.epub",
+        "cover": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.jpg",
+        "author": "James, Henry",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42486,
+        "subjects": [
+          "Children -- Fiction",
+          "Country homes -- Fiction",
+          "Courtship -- Fiction",
+          "England -- Fiction",
+          "Governesses -- Fiction",
+          "Mortgages -- Fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:30.791Z"
+      },
+      {
+        "title": "Treasure Island",
+        "file": "books/Gutenberg/Children_Books/120-treasure-island.epub",
+        "cover": "books/Gutenberg/Children_Books/120-treasure-island.jpg",
+        "author": "Stevenson, Robert Louis",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 120,
+        "subjects": [
+          "Pirates -- Fiction",
+          "Sea stories",
+          "Treasure Island (Imaginary place) -- Fiction",
+          "Treasure troves -- Fiction",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature",
+          "Historical Fiction",
+          "Pirates, Buccaneers, Corsairs, etc."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:31.868Z"
       }
     ]
   },
@@ -355,6 +934,46 @@
     "class": "Gutenberg - Computer Science",
     "books": [
       {
+        "title": "Children's Internet Protection Act (CIPA) Ruling",
+        "file": "books/Gutenberg/Computer_Science/5180-childrens-internet-protection-act-cipa-ruling.epub",
+        "cover": "books/Gutenberg/Computer_Science/5180-childrens-internet-protection-act-cipa-ruling.jpg",
+        "author": "United States District Court for the Eastern District of Pennsylvania",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5180,
+        "subjects": [
+          "Computer networks -- Law and legislation -- United States",
+          "Computers -- Access control -- United States",
+          "Internet and children -- United States",
+          "Obscenity (Law) -- United States",
+          "Category: Law & Criminology",
+          "Category: Politics",
+          "Noteworthy Trials(Bookshelf)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:48.285Z"
+      },
+      {
+        "title": "Computers—the machines we think with",
+        "file": "books/Gutenberg/Computer_Science/72572-computersthe-machines-we-think-with.epub",
+        "cover": "books/Gutenberg/Computer_Science/72572-computersthe-machines-we-think-with.jpg",
+        "author": "Halacy, D. S. (Daniel Stephen)",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 72572,
+        "subjects": [
+          "Computers -- Popular works",
+          "Electronic data processing -- Popular works",
+          "Category: Engineering & Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:48.003Z"
+      },
+      {
         "title": "Giant brains; or, Machines that think",
         "file": "books/Gutenberg/Computer_Science/68991-giant-brains-or-machines-that-think.epub",
         "cover": "books/Gutenberg/Computer_Science/68991-giant-brains-or-machines-that-think.jpg",
@@ -371,6 +990,48 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:44.342Z"
+      },
+      {
+        "title": "The 64-Square Madhouse",
+        "file": "books/Gutenberg/Computer_Science/61213-the-64-square-madhouse.epub",
+        "cover": "books/Gutenberg/Computer_Science/61213-the-64-square-madhouse.jpg",
+        "author": "Leiber, Fritz",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61213,
+        "subjects": [
+          "Chess -- Tournaments -- Fiction",
+          "Computers -- Fiction",
+          "Journalists -- Fiction",
+          "Science fiction",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:48.410Z"
+      },
+      {
+        "title": "The Jargon File, Version 2.9.10, 01 Jul 1992",
+        "file": "books/Gutenberg/Computer_Science/38-the-jargon-file-version-2910-01-jul-1992.epub",
+        "cover": "books/Gutenberg/Computer_Science/38-the-jargon-file-version-2910-01-jul-1992.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38,
+        "subjects": [
+          "Computers -- Humor",
+          "Computers -- Slang -- Dictionaries",
+          "Electronic data processing -- Terminology -- Humor",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Engineering & Technology",
+          "Category: Humour",
+          "Category: Journalism/Media/Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:47.561Z"
       },
       {
         "title": "The Jargon File, Version 4.2.2, 20 Aug 2000",
@@ -392,12 +1053,133 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:01.675Z"
+      },
+      {
+        "title": "Workshop on Electronic Texts: Proceedings, 9-10 June 1992",
+        "file": "books/Gutenberg/Computer_Science/53-workshop-on-electronic-texts-proceedings-9-10-june-1992.epub",
+        "cover": "books/Gutenberg/Computer_Science/53-workshop-on-electronic-texts-proceedings-9-10-june-1992.jpg",
+        "author": "Library of Congress",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53,
+        "subjects": [
+          "Electronic books",
+          "Electronic publishing -- Congresses",
+          "Text processing (Computer science) -- Congresses",
+          "Category: Engineering & Technology",
+          "Category: Reports & Conference Proceedings"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:48.160Z"
       }
     ]
   },
   {
     "class": "Gutenberg - General Knowledge",
     "books": [
+      {
+        "title": "A System of Logic, Ratiocinative and Inductive (Vol. 1 of 2)",
+        "file": "books/Gutenberg/General_Knowledge/26495-a-system-of-logic-ratiocinative-and-inductive-vol-1-of-2.epub",
+        "cover": "books/Gutenberg/General_Knowledge/26495-a-system-of-logic-ratiocinative-and-inductive-vol-1-of-2.jpg",
+        "author": "Mill, John Stuart",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26495,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Logic",
+          "Science -- Methodology",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:21.041Z"
+      },
+      {
+        "title": "An Enquiry Concerning Human Understanding",
+        "file": "books/Gutenberg/General_Knowledge/9662-an-enquiry-concerning-human-understanding.epub",
+        "cover": "books/Gutenberg/General_Knowledge/9662-an-enquiry-concerning-human-understanding.jpg",
+        "author": "Hume, David",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 9662,
+        "subjects": [
+          "Ethics",
+          "Knowledge, Theory of",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:21.344Z"
+      },
+      {
+        "title": "An Essay Concerning Humane Understanding, Volume 1: MDCXC, Based on the 2nd Edition, Books 1 and 2",
+        "file": "books/Gutenberg/General_Knowledge/10615-an-essay-concerning-humane-understanding-volume-1-mdcxc-based-on-the-2nd.epub",
+        "cover": "books/Gutenberg/General_Knowledge/10615-an-essay-concerning-humane-understanding-volume-1-mdcxc-based-on-the-2nd.jpg",
+        "author": "Locke, John",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10615,
+        "subjects": [
+          "Knowledge, Theory of -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:21.212Z"
+      },
+      {
+        "title": "Dante and the early astronomers",
+        "file": "books/Gutenberg/General_Knowledge/64489-dante-and-the-early-astronomers.epub",
+        "cover": "books/Gutenberg/General_Knowledge/64489-dante-and-the-early-astronomers.jpg",
+        "author": "Orr, M. A. (Mary Acworth)",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64489,
+        "subjects": [
+          "Astronomy, Ancient",
+          "Astronomy, Medieval",
+          "Dante Alighieri, 1265-1321 -- Knowledge -- Astronomy",
+          "Early maps",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:21.639Z"
+      },
+      {
+        "title": "Our Knowledge of the External World as a Field for Scientific Method in Philosophy",
+        "file": "books/Gutenberg/General_Knowledge/37090-our-knowledge-of-the-external-world-as-a-field-for-scientific-method-in-.epub",
+        "cover": "books/Gutenberg/General_Knowledge/37090-our-knowledge-of-the-external-world-as-a-field-for-scientific-method-in-.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37090,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Logical atomism",
+          "Category: Philosophy & Ethics",
+          "Nobel Prizes in Literature",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:21.771Z"
+      },
       {
         "title": "The Critique of Pure Reason",
         "file": "books/Gutenberg/General_Knowledge/4280-the-critique-of-pure-reason.epub",
@@ -446,6 +1228,27 @@
     "class": "Gutenberg - Geography",
     "books": [
       {
+        "title": "Influences of Geographic Environment: On the Basis of Ratzel's System of Anthropo-Geography",
+        "file": "books/Gutenberg/Geography/15293-influences-of-geographic-environment-on-the-basis-of-ratzels-system-of-a.epub",
+        "cover": "books/Gutenberg/Geography/15293-influences-of-geographic-environment-on-the-basis-of-ratzels-system-of-a.jpg",
+        "author": "Semple, Ellen Churchill",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15293,
+        "subjects": [
+          "Human beings -- Effect of environment on",
+          "Human geography",
+          "Anthropology",
+          "Category: Archaeology & Anthropology",
+          "Category: Environmental Issues",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:45.619Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -486,12 +1289,121 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:52.845Z"
+      },
+      {
+        "title": "The 2010 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/35830-the-2010-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/35830-the-2010-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35830,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:45.898Z"
+      },
+      {
+        "title": "The Earth and its inhabitants, Volume 1: Europe.: Greece, Turkey in Europe, Rumania, Servia, Montenegro, Italy, Spain, and Portugal.",
+        "file": "books/Gutenberg/Geography/54760-the-earth-and-its-inhabitants-volume-1-europe-greece-turkey-in-europe-ru.epub",
+        "cover": "books/Gutenberg/Geography/54760-the-earth-and-its-inhabitants-volume-1-europe-greece-turkey-in-europe-ru.jpg",
+        "author": "Reclus, Elisée",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54760,
+        "subjects": [
+          "Europe -- Description and travel",
+          "Geography",
+          "Category: Archaeology & Anthropology",
+          "Category: Environmental Issues",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:47.068Z"
+      },
+      {
+        "title": "The Geography of Strabo, Volume 1 (of 3): Literally Translated, with Notes",
+        "file": "books/Gutenberg/Geography/44884-the-geography-of-strabo-volume-1-of-3-literally-translated-with-notes.epub",
+        "cover": "books/Gutenberg/Geography/44884-the-geography-of-strabo-volume-1-of-3-literally-translated-with-notes.jpg",
+        "author": "Strabo",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44884,
+        "subjects": [
+          "Geography -- Early works to 1800",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Ancient"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:47.196Z"
+      },
+      {
+        "title": "Views of nature: or Contemplations on the sublime phenomena of creation: with scientific illustrations",
+        "file": "books/Gutenberg/Geography/67684-views-of-nature-or-contemplations-on-the-sublime-phenomena-of-creation-w.epub",
+        "cover": "books/Gutenberg/Geography/67684-views-of-nature-or-contemplations-on-the-sublime-phenomena-of-creation-w.jpg",
+        "author": "Humboldt, Alexander von",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67684,
+        "subjects": [
+          "Physical geography",
+          "Plant morphology",
+          "Science",
+          "South America -- Description and travel",
+          "Category: Environmental Issues",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:46.027Z"
       }
     ]
   },
   {
     "class": "Gutenberg - History",
     "books": [
+      {
+        "title": "A Tale of Two Cities",
+        "file": "books/Gutenberg/History/98-a-tale-of-two-cities.epub",
+        "cover": "books/Gutenberg/History/98-a-tale-of-two-cities.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 98,
+        "subjects": [
+          "British -- France -- Paris -- Fiction",
+          "Executions and executioners -- Fiction",
+          "France -- History -- Revolution, 1789-1799 -- Fiction",
+          "French -- England -- London -- Fiction",
+          "Historical fiction",
+          "London (England) -- History -- 18th century -- Fiction",
+          "Lookalikes -- Fiction",
+          "Paris (France) -- History -- 1789-1799 -- Fiction",
+          "War stories",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Historical Novels",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:41.304Z"
+      },
       {
         "title": "Charles Bradlaugh: a Record of His Life and Work, Volume 1 (of 2): With an Account of his Parliamentary Struggle, Politics and Teachings. Seventh Edition",
         "file": "books/Gutenberg/History/45130-charles-bradlaugh-a-record-of-his-life-and-work-volume-1-of-2-with-an-ac.epub",
@@ -509,6 +1421,50 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
+      {
+        "title": "Report of the President's Commission on the Assassination of President John F. Kennedy",
+        "file": "books/Gutenberg/History/58031-report-of-the-presidents-commission-on-the-assassination-of-president-jo.epub",
+        "cover": "books/Gutenberg/History/58031-report-of-the-presidents-commission-on-the-assassination-of-president-jo.jpg",
+        "author": "United States. Warren Commission",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58031,
+        "subjects": [
+          "Kennedy, John F. (John Fitzgerald), 1917-1963 -- Assassination",
+          "Oswald, Lee Harvey",
+          "Category: History - American",
+          "Category: History - Modern (1750+)",
+          "Category: Reports & Conference Proceedings"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:40.996Z"
+      },
+      {
+        "title": "The Blue Castle: a novel",
+        "file": "books/Gutenberg/History/67979-the-blue-castle-a-novel.epub",
+        "cover": "books/Gutenberg/History/67979-the-blue-castle-a-novel.jpg",
+        "author": "Montgomery, L. M. (Lucy Maud)",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67979,
+        "subjects": [
+          "Canada -- History -- 1914-1945 -- Fiction",
+          "Choice (Psychology) -- Fiction",
+          "Love -- Fiction",
+          "Romance fiction",
+          "Self-actualization (Psychology) -- Fiction",
+          "Single women -- Fiction",
+          "Young adult fiction",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:40.703Z"
       },
       {
         "title": "The City of God, Volume I",
@@ -529,12 +1485,106 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:35.986Z"
+      },
+      {
+        "title": "The Count of Monte Cristo",
+        "file": "books/Gutenberg/History/1184-the-count-of-monte-cristo.epub",
+        "cover": "books/Gutenberg/History/1184-the-count-of-monte-cristo.jpg",
+        "author": "Dumas, Alexandre, Maquet, Auguste",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1184,
+        "subjects": [
+          "Adventure stories",
+          "Dantès, Edmond (Fictitious character) -- Fiction",
+          "France -- History -- 19th century -- Fiction",
+          "Historical fiction",
+          "Pirates -- Fiction",
+          "Prisoners -- Fiction",
+          "Revenge -- Fiction",
+          "Adventure",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:40.576Z"
+      },
+      {
+        "title": "Twenty years after",
+        "file": "books/Gutenberg/History/1259-twenty-years-after.epub",
+        "cover": "books/Gutenberg/History/1259-twenty-years-after.jpg",
+        "author": "Dumas, Alexandre, Maquet, Auguste",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1259,
+        "subjects": [
+          "France -- History -- Louis XIV, 1643-1715 -- Fiction",
+          "Adventure",
+          "Category: Adventure",
+          "Category: French Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Historical Fiction",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:41.123Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Interview Preparation",
     "books": [
+      {
+        "title": "Art",
+        "file": "books/Gutenberg/Interview_Preparation/59799-art.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/59799-art.jpg",
+        "author": "Rodin, Auguste",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59799,
+        "subjects": [
+          "Art",
+          "Artists",
+          "Artists -- France -- Interviews",
+          "Sculpture",
+          "Category: Art",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:14.742Z"
+      },
+      {
+        "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume IX, Mississippi Narratives",
+        "file": "books/Gutenberg/Interview_Preparation/12055-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/12055-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.jpg",
+        "author": "United States. Work Projects Administration",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 12055,
+        "subjects": [
+          "African Americans -- Biography",
+          "African Americans -- Mississippi -- Interviews",
+          "Enslaved persons -- Mississippi -- Biography",
+          "Mississippi -- Biography",
+          "Category: Biographies",
+          "Category: History - American",
+          "Slavery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:15.405Z"
+      },
       {
         "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume XIII, Oklahoma Narratives",
         "file": "books/Gutenberg/Interview_Preparation/20785-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
@@ -578,12 +1628,110 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:13.853Z"
+      },
+      {
+        "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume XVI, Texas Narratives, Part 2",
+        "file": "books/Gutenberg/Interview_Preparation/30967-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/30967-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.jpg",
+        "author": "United States. Work Projects Administration",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30967,
+        "subjects": [
+          "African Americans -- Texas -- History -- Sources",
+          "African Americans -- Texas -- Interviews",
+          "Enslaved persons -- Texas -- Biography",
+          "Texas -- Biography",
+          "Category: Biographies",
+          "Category: History - American",
+          "Slavery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:15.143Z"
+      },
+      {
+        "title": "Specimens of the Table Talk of Samuel Taylor Coleridge",
+        "file": "books/Gutenberg/Interview_Preparation/8489-specimens-of-the-table-talk-of-samuel-taylor-coleridge.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/8489-specimens-of-the-table-talk-of-samuel-taylor-coleridge.jpg",
+        "author": "Coleridge, Samuel Taylor",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8489,
+        "subjects": [
+          "Coleridge, Samuel Taylor, 1772-1834 -- Interviews",
+          "Coleridge, Samuel Taylor, 1772-1834 -- Quotations",
+          "Critics -- Great Britain -- Interviews",
+          "England -- Intellectual life -- 19th century",
+          "Poetry -- Authorship",
+          "Poets, English -- 19th century -- Interviews",
+          "Quotations, English",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:15.274Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Literature",
     "books": [
+      {
+        "title": "A Room with a View",
+        "file": "books/Gutenberg/Literature/2641-a-room-with-a-view.epub",
+        "cover": "books/Gutenberg/Literature/2641-a-room-with-a-view.jpg",
+        "author": "Forster, E. M. (Edward Morgan)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2641,
+        "subjects": [
+          "British -- Italy -- Fiction",
+          "England -- Fiction",
+          "Florence (Italy) -- Fiction",
+          "Humorous stories",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance",
+          "Italy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:17.104Z"
+      },
+      {
+        "title": "Crime and Punishment",
+        "file": "books/Gutenberg/Literature/2554-crime-and-punishment.epub",
+        "cover": "books/Gutenberg/Literature/2554-crime-and-punishment.jpg",
+        "author": "Dostoyevsky, Fyodor",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2554,
+        "subjects": [
+          "Crime -- Psychological aspects -- Fiction",
+          "Detective and mystery stories",
+          "Murder -- Fiction",
+          "Psychological fiction",
+          "Saint Petersburg (Russia) -- Fiction",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Russian Literature",
+          "Crime Fiction",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:14.742Z"
+      },
       {
         "title": "Frankenstein; or, the modern prometheus",
         "file": "books/Gutenberg/Literature/84-frankenstein-or-the-modern-prometheus.epub",
@@ -642,12 +1790,131 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:19.822Z"
+      },
+      {
+        "title": "Pride and Prejudice",
+        "file": "books/Gutenberg/Literature/1342-pride-and-prejudice.epub",
+        "cover": "books/Gutenberg/Literature/1342-pride-and-prejudice.jpg",
+        "author": "Austen, Jane",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1342,
+        "subjects": [
+          "Courtship -- Fiction",
+          "Domestic fiction",
+          "England -- Fiction",
+          "Love stories",
+          "Sisters -- Fiction",
+          "Social classes -- Fiction",
+          "Young women -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:14.136Z"
+      },
+      {
+        "title": "Romeo and Juliet",
+        "file": "books/Gutenberg/Literature/1513-romeo-and-juliet.epub",
+        "cover": "books/Gutenberg/Literature/1513-romeo-and-juliet.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1513,
+        "subjects": [
+          "Conflict of generations -- Drama",
+          "Juliet (Fictitious character) -- Drama",
+          "Romeo (Fictitious character) -- Drama",
+          "Tragedies (Drama)",
+          "Vendetta -- Drama",
+          "Verona (Italy) -- Drama",
+          "Youth -- Drama",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:15.315Z"
+      },
+      {
+        "title": "The Complete Works of William Shakespeare",
+        "file": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.epub",
+        "cover": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 100,
+        "subjects": [
+          "English drama -- Early modern and Elizabethan, 1500-1600",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Poetry",
+          "Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:17.318Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Mathematics",
     "books": [
+      {
+        "title": "A Budget of Paradoxes, Volume II",
+        "file": "books/Gutenberg/Mathematics/26408-a-budget-of-paradoxes-volume-ii.epub",
+        "cover": "books/Gutenberg/Mathematics/26408-a-budget-of-paradoxes-volume-ii.jpg",
+        "author": "De Morgan, Augustus",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26408,
+        "subjects": [
+          "Circle-squaring",
+          "Perpetual motion",
+          "Science -- Miscellanea",
+          "Trisection of angle",
+          "Category: Humour",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:04.876Z"
+      },
+      {
+        "title": "Mysticism and Logic and Other Essays",
+        "file": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.epub",
+        "cover": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25447,
+        "subjects": [
+          "Mathematics",
+          "Philosophy",
+          "Science",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics",
+          "Nobel Prizes in Literature",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:05.648Z"
+      },
       {
         "title": "On Growth and Form",
         "file": "books/Gutenberg/Mathematics/55264-on-growth-and-form.epub",
@@ -669,6 +1936,24 @@
         "downloadedAt": "2026-05-21T13:09:13.454Z"
       },
       {
+        "title": "The Canterbury Puzzles, and Other Curious Problems",
+        "file": "books/Gutenberg/Mathematics/27635-the-canterbury-puzzles-and-other-curious-problems.epub",
+        "cover": "books/Gutenberg/Mathematics/27635-the-canterbury-puzzles-and-other-curious-problems.jpg",
+        "author": "Dudeney, Henry Ernest",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27635,
+        "subjects": [
+          "Puzzles",
+          "Riddles",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:05.523Z"
+      },
+      {
         "title": "The First Six Books of the Elements of Euclid",
         "file": "books/Gutenberg/Mathematics/21076-the-first-six-books-of-the-elements-of-euclid.epub",
         "cover": "books/Gutenberg/Mathematics/21076-the-first-six-books-of-the-elements-of-euclid.jpg",
@@ -685,12 +1970,105 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:56.900Z"
+      },
+      {
+        "title": "The Hindu-Arabic Numerals",
+        "file": "books/Gutenberg/Mathematics/22599-the-hindu-arabic-numerals.epub",
+        "cover": "books/Gutenberg/Mathematics/22599-the-hindu-arabic-numerals.jpg",
+        "author": "Smith, David Eugene, Karpinski, Louis Charles",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22599,
+        "subjects": [
+          "Numerals",
+          "Category: History - Other",
+          "Category: Mathematics",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:05.361Z"
+      },
+      {
+        "title": "The Way To Geometry",
+        "file": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.epub",
+        "cover": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.jpg",
+        "author": "Ramus, Petrus",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26752,
+        "subjects": [
+          "Geometry -- Early works to 1800",
+          "Mathematics -- Early works to 1800",
+          "Category: How To ...",
+          "Category: Mathematics",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:05.230Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Motivation",
     "books": [
+      {
+        "title": "Bleak House",
+        "file": "books/Gutenberg/Motivation/1023-bleak-house.epub",
+        "cover": "books/Gutenberg/Motivation/1023-bleak-house.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1023,
+        "subjects": [
+          "Bildungsromans",
+          "Domestic fiction",
+          "Guardian and ward -- Fiction",
+          "Illegitimate children -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Legal stories",
+          "London (England) -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:56.870Z"
+      },
+      {
+        "title": "Hamlet",
+        "file": "books/Gutenberg/Motivation/1524-hamlet.epub",
+        "cover": "books/Gutenberg/Motivation/1524-hamlet.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1524,
+        "subjects": [
+          "Denmark -- Drama",
+          "Fathers -- Death -- Drama",
+          "Hamlet (Legendary character) -- Drama",
+          "Kings and rulers -- Succession -- Drama",
+          "Murder victims' families -- Drama",
+          "Princes -- Drama",
+          "Revenge -- Drama",
+          "Tragedies (Drama)",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:57.174Z"
+      },
       {
         "title": "Sense and Sensibility",
         "file": "books/Gutenberg/Motivation/161-sense-and-sensibility.epub",
@@ -722,6 +2100,52 @@
         "downloadedAt": "2026-05-21T13:09:53.798Z"
       },
       {
+        "title": "The Castle of Otranto",
+        "file": "books/Gutenberg/Motivation/696-the-castle-of-otranto.epub",
+        "cover": "books/Gutenberg/Motivation/696-the-castle-of-otranto.jpg",
+        "author": "Walpole, Horace",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 696,
+        "subjects": [
+          "Gothic fiction",
+          "Horror tales",
+          "Inheritance and succession -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Gothic Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:57.307Z"
+      },
+      {
+        "title": "The Missing Will",
+        "file": "books/Gutenberg/Motivation/67173-the-missing-will.epub",
+        "cover": "books/Gutenberg/Motivation/67173-the-missing-will.jpg",
+        "author": "Christie, Agatha",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67173,
+        "subjects": [
+          "Detective and mystery stories",
+          "Inheritance and succession -- Fiction",
+          "Poirot, Hercule (Fictitious character) -- Fiction",
+          "Private investigators -- England -- Fiction",
+          "Short stories",
+          "Wills -- Fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:57.441Z"
+      },
+      {
         "title": "The Mysteries of Udolpho",
         "file": "books/Gutenberg/Motivation/3268-the-mysteries-of-udolpho.epub",
         "cover": "books/Gutenberg/Motivation/3268-the-mysteries-of-udolpho.jpg",
@@ -750,12 +2174,106 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:20:37.248Z"
+      },
+      {
+        "title": "The Woman in White",
+        "file": "books/Gutenberg/Motivation/583-the-woman-in-white.epub",
+        "cover": "books/Gutenberg/Motivation/583-the-woman-in-white.jpg",
+        "author": "Collins, Wilkie",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 583,
+        "subjects": [
+          "Art teachers -- Fiction",
+          "Country homes -- Fiction",
+          "Deception -- Fiction",
+          "England -- Fiction",
+          "Gothic fiction",
+          "Inheritance and succession -- Fiction",
+          "Love stories",
+          "Nobility -- Fiction",
+          "Psychiatric hospital patients -- Fiction",
+          "Psychological fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:57.041Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Philosophy",
     "books": [
+      {
+        "title": "Beyond Good and Evil",
+        "file": "books/Gutenberg/Philosophy/4363-beyond-good-and-evil.epub",
+        "cover": "books/Gutenberg/Philosophy/4363-beyond-good-and-evil.jpg",
+        "author": "Nietzsche, Friedrich Wilhelm",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4363,
+        "subjects": [
+          "Ethics",
+          "Philosophy, German",
+          "Atheism",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:09.804Z"
+      },
+      {
+        "title": "Meditations",
+        "file": "books/Gutenberg/Philosophy/2680-meditations.epub",
+        "cover": "books/Gutenberg/Philosophy/2680-meditations.jpg",
+        "author": "Marcus Aurelius, Emperor of Rome",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2680,
+        "subjects": [
+          "Ethics",
+          "Life",
+          "Stoics",
+          "Category: Biographies",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:09.157Z"
+      },
+      {
+        "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
+        "file": "books/Gutenberg/Philosophy/27827-the-kama-sutra-of-vatsyayana-translated-from-the-sanscrit-in-seven-parts.epub",
+        "cover": "books/Gutenberg/Philosophy/27827-the-kama-sutra-of-vatsyayana-translated-from-the-sanscrit-in-seven-parts.jpg",
+        "author": "Vatsyayana",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27827,
+        "subjects": [
+          "Love",
+          "Sex",
+          "Banned Books from Anne Haight's list",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Philosophy & Ethics",
+          "Category: Sexuality & Erotica",
+          "Erotic Fiction",
+          "Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:09.673Z"
+      },
       {
         "title": "The origin and development of the moral ideas",
         "file": "books/Gutenberg/Philosophy/52106-the-origin-and-development-of-the-moral-ideas.epub",
@@ -804,6 +2322,53 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:21:01.213Z"
+      },
+      {
+        "title": "Thus Spake Zarathustra: A Book for All and None",
+        "file": "books/Gutenberg/Philosophy/1998-thus-spake-zarathustra-a-book-for-all-and-none.epub",
+        "cover": "books/Gutenberg/Philosophy/1998-thus-spake-zarathustra-a-book-for-all-and-none.jpg",
+        "author": "Nietzsche, Friedrich Wilhelm",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1998,
+        "subjects": [
+          "Philosophy, German",
+          "Superman (Philosophical concept)",
+          "Category: Classics of Literature",
+          "Category: German Literature",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:09.367Z"
+      },
+      {
+        "title": "Walden, and On The Duty Of Civil Disobedience",
+        "file": "books/Gutenberg/Philosophy/205-walden-and-on-the-duty-of-civil-disobedience.epub",
+        "cover": "books/Gutenberg/Philosophy/205-walden-and-on-the-duty-of-civil-disobedience.jpg",
+        "author": "Thoreau, Henry David",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 205,
+        "subjects": [
+          "Authors, American -- 19th century -- Biography",
+          "Civil disobedience",
+          "Government, Resistance to",
+          "Natural history -- Massachusetts -- Walden Woods",
+          "Solitude",
+          "Thoreau, Henry David, 1817-1862 -- Homes and haunts -- Massachusetts -- Walden Woods",
+          "Walden Woods (Mass.) -- Social life and customs",
+          "Wilderness areas -- Massachusetts -- Walden Woods",
+          "Category: American Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:59:09.538Z"
       }
     ]
   },
@@ -833,6 +2398,45 @@
         "downloadedAt": "2026-05-21T13:19:06.185Z"
       },
       {
+        "title": "Astronomy for Amateurs",
+        "file": "books/Gutenberg/Physics/25267-astronomy-for-amateurs.epub",
+        "cover": "books/Gutenberg/Physics/25267-astronomy-for-amateurs.jpg",
+        "author": "Flammarion, Camille",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25267,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:12.716Z"
+      },
+      {
+        "title": "Creative Evolution",
+        "file": "books/Gutenberg/Physics/26163-creative-evolution.epub",
+        "cover": "books/Gutenberg/Physics/26163-creative-evolution.jpg",
+        "author": "Bergson, Henri",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26163,
+        "subjects": [
+          "Evolution",
+          "Life",
+          "Metaphysics",
+          "Bestsellers, American, 1895-1923",
+          "Category: Philosophy & Ethics",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:12.854Z"
+      },
+      {
         "title": "History of the inductive sciences, from the earliest to the present time",
         "file": "books/Gutenberg/Physics/68693-history-of-the-inductive-sciences-from-the-earliest-to-the-present-time.epub",
         "cover": "books/Gutenberg/Physics/68693-history-of-the-inductive-sciences-from-the-earliest-to-the-present-time.jpg",
@@ -849,6 +2453,69 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:17.186Z"
+      },
+      {
+        "title": "Myths and Marvels of Astronomy",
+        "file": "books/Gutenberg/Physics/26556-myths-and-marvels-of-astronomy.epub",
+        "cover": "books/Gutenberg/Physics/26556-myths-and-marvels-of-astronomy.jpg",
+        "author": "Proctor, Richard A. (Richard Anthony)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26556,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Other",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:13.126Z"
+      },
+      {
+        "title": "The Notebooks of Leonardo Da Vinci — Complete",
+        "file": "books/Gutenberg/Physics/5000-the-notebooks-of-leonardo-da-vinci-complete.epub",
+        "cover": "books/Gutenberg/Physics/5000-the-notebooks-of-leonardo-da-vinci-complete.jpg",
+        "author": "Leonardo, da Vinci",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5000,
+        "subjects": [
+          "Leonardo, da Vinci, 1452-1519 -- Notebooks, sketchbooks, etc.",
+          "Art",
+          "Category: Art",
+          "Category: Biographies",
+          "Category: Engineering & Technology",
+          "Category: Essays, Letters & Speeches",
+          "Category: Science - Biology",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:12.991Z"
+      },
+      {
+        "title": "The Story of the Heavens",
+        "file": "books/Gutenberg/Physics/27378-the-story-of-the-heavens.epub",
+        "cover": "books/Gutenberg/Physics/27378-the-story-of-the-heavens.jpg",
+        "author": "Ball, Robert S. (Robert Stawell)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27378,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: History - Other",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:58:13.340Z"
       }
     ]
   },
@@ -880,6 +2547,85 @@
     "class": "Gutenberg - Science",
     "books": [
       {
+        "title": "Dracula",
+        "file": "books/Gutenberg/Science/345-dracula.epub",
+        "cover": "books/Gutenberg/Science/345-dracula.jpg",
+        "author": "Stoker, Bram",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 345,
+        "subjects": [
+          "Dracula, Count (Fictitious character) -- Fiction",
+          "Epistolary fiction",
+          "Gothic fiction",
+          "Horror tales",
+          "Transylvania (Romania) -- Fiction",
+          "Vampires -- Fiction",
+          "Whitby (England) -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Gothic Fiction",
+          "Horror",
+          "Movie Books",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:43.269Z"
+      },
+      {
+        "title": "Gulliver's Travels into Several Remote Nations of the World",
+        "file": "books/Gutenberg/Science/829-gullivers-travels-into-several-remote-nations-of-the-world.epub",
+        "cover": "books/Gutenberg/Science/829-gullivers-travels-into-several-remote-nations-of-the-world.jpg",
+        "author": "Swift, Jonathan",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 829,
+        "subjects": [
+          "Fantasy fiction",
+          "Gulliver, Lemuel (Fictitious character) -- Fiction",
+          "Satire",
+          "Travelers -- Fiction",
+          "Voyages, Imaginary -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:43.756Z"
+      },
+      {
+        "title": "Leviathan",
+        "file": "books/Gutenberg/Science/3207-leviathan.epub",
+        "cover": "books/Gutenberg/Science/3207-leviathan.jpg",
+        "author": "Hobbes, Thomas",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3207,
+        "subjects": [
+          "Political science -- Early works to 1800",
+          "State, The -- Early works to 1800",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics",
+          "Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
         "title": "The King in Yellow",
         "file": "books/Gutenberg/Science/8492-the-king-in-yellow.epub",
         "cover": "books/Gutenberg/Science/8492-the-king-in-yellow.jpg",
@@ -901,6 +2647,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:36.877Z"
+      },
+      {
+        "title": "The Prince",
+        "file": "books/Gutenberg/Science/1232-the-prince.epub",
+        "cover": "books/Gutenberg/Science/1232-the-prince.jpg",
+        "author": "Machiavelli, Niccolò",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1232,
+        "subjects": [
+          "Political ethics -- Early works to 1800",
+          "Political science -- Philosophy -- Early works to 1800",
+          "State, The -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Category: Politics",
+          "Harvard Classics",
+          "Philosophy",
+          "Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:43.393Z"
       },
       {
         "title": "The strange case of Dr. Jekyll and Mr. Hyde",
@@ -930,6 +2701,41 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:08:57.705Z"
+      },
+      {
+        "title": "The Wonderful Wizard of Oz",
+        "file": "books/Gutenberg/Science/55-the-wonderful-wizard-of-oz.epub",
+        "cover": "books/Gutenberg/Science/55-the-wonderful-wizard-of-oz.jpg",
+        "author": "Baum, L. Frank (Lyman Frank)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55,
+        "subjects": [
+          "Courage -- Juvenile fiction",
+          "Cowardly Lion (Fictitious character) -- Juvenile fiction",
+          "Cyclones -- Juvenile fiction",
+          "Dreams -- Juvenile fiction",
+          "Fantasy literature",
+          "Gale, Dorothy (Fictitious character) -- Juvenile fiction",
+          "Good and evil -- Juvenile fiction",
+          "Home -- Juvenile fiction",
+          "Oz (Imaginary place) -- Juvenile fiction",
+          "Scarecrow (Fictitious character from Baum) -- Juvenile fiction",
+          "Tin Woodman (Fictitious character) -- Juvenile fiction",
+          "Toto (Fictitious character) -- Juvenile fiction",
+          "Witches -- Juvenile fiction",
+          "Wizard of Oz (Fictitious character) -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Science-Fiction & Fantasy",
+          "Children's Literature",
+          "Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:57:43.879Z"
       }
     ]
   }
