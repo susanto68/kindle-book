@@ -343,6 +343,24 @@ function urlToBookPath(fileUrl) {
   return decodeURIComponent(url.pathname.replace(/^\/+/, ""));
 }
 
+function toAssetUrl(filePath) {
+  const value = String(filePath || "").replace(/\\/g, "/");
+  if (!value || /^(https?:|data:|blob:)/i.test(value)) {
+    return value;
+  }
+
+  return value
+    .split("/")
+    .map((segment) => {
+      try {
+        return encodeURIComponent(decodeURIComponent(segment));
+      } catch {
+        return encodeURIComponent(segment);
+      }
+    })
+    .join("/");
+}
+
 function cleanFolderName(name) {
   return decodeURIComponent(String(name || "Books"))
     .replace(/([a-z])([A-Z])/g, "$1 $2")
@@ -598,7 +616,7 @@ function createBookCard(book, options = {}) {
     coverImage.alt = "";
     coverImage.loading = "lazy";
     coverImage.decoding = "async";
-    coverImage.src = book.cover;
+    coverImage.src = toAssetUrl(book.cover);
     coverImage.addEventListener("error", () => coverImage.remove(), { once: true });
     cover.appendChild(coverImage);
   }
@@ -758,7 +776,7 @@ function processCoverQueue() {
 
 async function renderCover(bookId, container) {
   const book = state.booksById.get(bookId);
-  if (!book || !window.pdfjsLib) {
+  if (!book || !window.pdfjsLib || getBookFormat(book.file) !== "pdf") {
     container.classList.remove("cover-loading");
     return;
   }
@@ -768,7 +786,7 @@ async function renderCover(bookId, container) {
   }
 
   try {
-    const pdf = await pdfjsLib.getDocument({ url: book.file }).promise;
+    const pdf = await pdfjsLib.getDocument({ url: toAssetUrl(book.file) }).promise;
     const page = await pdf.getPage(1);
     const baseViewport = page.getViewport({ scale: 1 });
     const scale = Math.min(1.2, 180 / baseViewport.width);
@@ -864,7 +882,7 @@ async function openPdfBook(book) {
   dom.epubReader.hidden = true;
   ensureFlipbookElement();
   dom.flipbook.hidden = false;
-  state.pdfDocument = await pdfjsLib.getDocument({ url: book.file }).promise;
+  state.pdfDocument = await pdfjsLib.getDocument({ url: toAssetUrl(book.file) }).promise;
   state.totalPages = state.pdfDocument.numPages;
   await updatePdfPageRatio();
   state.currentPageIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
@@ -882,7 +900,7 @@ async function openEpubBook(book) {
   dom.epubReader.hidden = false;
   dom.epubReader.replaceChildren();
 
-  state.epubBook = ePub(book.file);
+  state.epubBook = ePub(toAssetUrl(book.file), { openAs: "epub" });
   state.epubRendition = state.epubBook.renderTo(dom.epubReader, {
     width: "100%",
     height: "100%",
@@ -1030,6 +1048,13 @@ function getPageSize() {
   const isReading = document.body.classList.contains("reader-open");
   const headerHeight = isReading ? 0 : (dom.appHeader.getBoundingClientRect().height || 70);
   const isMobilePdf = isReading && state.currentFormat === "pdf" && window.innerWidth <= 760;
+  if (isMobilePdf) {
+    return {
+      width: Math.floor(window.visualViewport?.width || window.innerWidth),
+      height: Math.floor(window.visualViewport?.height || window.innerHeight)
+    };
+  }
+
   const edgePadding = isMobilePdf ? 0 : 8;
   const availableWidth = Math.max(260, window.innerWidth - edgePadding);
   const availableHeight = Math.max(320, window.innerHeight - headerHeight - edgePadding);
@@ -1094,12 +1119,15 @@ function renderPdfPage(pageIndex) {
 
     const pdfPage = await state.pdfDocument.getPage(pageIndex + 1);
     const size = getPageSize();
-    const padding = window.innerWidth <= 760 ? 8 : 14;
+    const isMobilePdf = document.body.classList.contains("reader-pdf") && window.innerWidth <= 760;
+    const padding = isMobilePdf ? 0 : 14;
     const targetWidth = Math.max(180, size.width - padding);
     const targetHeight = Math.max(260, size.height - padding);
     const baseViewport = pdfPage.getViewport({ scale: 1 });
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const fitScale = Math.min(targetWidth / baseViewport.width, targetHeight / baseViewport.height);
+    const fitScale = isMobilePdf
+      ? Math.max(targetWidth / baseViewport.width, targetHeight / baseViewport.height)
+      : Math.min(targetWidth / baseViewport.width, targetHeight / baseViewport.height);
     const viewport = pdfPage.getViewport({ scale: fitScale * dpr });
     const cssViewport = pdfPage.getViewport({ scale: fitScale });
     const canvas = document.createElement("canvas");
@@ -1108,8 +1136,8 @@ function renderPdfPage(pageIndex) {
     canvas.className = "pdf-canvas";
     canvas.width = Math.floor(viewport.width);
     canvas.height = Math.floor(viewport.height);
-    canvas.style.width = `${Math.floor(cssViewport.width)}px`;
-    canvas.style.height = `${Math.floor(cssViewport.height)}px`;
+    canvas.style.width = `${Math.floor(isMobilePdf ? targetWidth : cssViewport.width)}px`;
+    canvas.style.height = `${Math.floor(isMobilePdf ? targetHeight : cssViewport.height)}px`;
 
     await pdfPage.render({ canvasContext: context, viewport }).promise;
     pageElement.replaceChildren(canvas);
@@ -1447,7 +1475,7 @@ function closeBookModal() {
 function downloadBook(book) {
   const link = document.createElement("a");
   const extension = getBookFormat(book.file) === "epub" ? "epub" : "pdf";
-  link.href = book.file;
+  link.href = toAssetUrl(book.file);
   link.download = `${book.title}.${extension}`;
   document.body.appendChild(link);
   link.click();

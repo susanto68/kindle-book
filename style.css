@@ -545,7 +545,11 @@ body.reader-open .header-back {
 }
 
 body.reader-pdf .reader-view {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
   background: var(--paper);
+  overflow: hidden;
 }
 
 .reader-stage {
@@ -559,7 +563,13 @@ body.reader-pdf .reader-view {
 }
 
 body.reader-pdf .reader-stage {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   align-items: start;
+  justify-items: stretch;
   padding: 0;
   background: var(--paper);
 }
@@ -575,6 +585,17 @@ body.reader-pdf .reader-stage {
 
 body.reader-pdf .flipbook-container {
   align-self: start;
+  justify-self: stretch;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+}
+
+body.reader-pdf .flipbook-container .stf__wrapper,
+body.reader-pdf .flipbook-container .stf__block {
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
 }
 
 .flipbook-container .stf__wrapper.--portrait .stf__block {
@@ -603,6 +624,13 @@ body.reader-pdf .page-shell {
   max-height: 100%;
 }
 
+body.reader-pdf .pdf-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  max-height: none;
+}
+
 .epub-reader {
   width: 100vw;
   height: 100vh;
@@ -620,6 +648,41 @@ body.reader-pdf .page-shell {
 .epub-reader .epub-container {
   max-width: 100% !important;
   max-height: 100% !important;
+}
+
+body.reader-epub .reader-view {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+body.reader-epub .reader-stage {
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
+  padding: 0;
+  align-items: stretch;
+  justify-items: stretch;
+  background: var(--paper);
+}
+
+body.reader-epub .epub-reader {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  padding: clamp(14px, 3vw, 40px) clamp(12px, 5vw, 72px) max(74px, calc(74px + env(safe-area-inset-bottom)));
+  box-shadow: none;
+}
+
+body.reader-epub .epub-reader iframe,
+body.reader-epub .epub-reader .epub-container {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
 }
 
 .reader-stage.turn-next .epub-reader,
@@ -1255,8 +1318,8 @@ body.reader-pdf #themeBtn {
     font-size: 12px;
   }
 
-  .epub-reader {
-    padding: 18px 16px 70px;
+  body.reader-epub .epub-reader {
+    padding: 10px 10px max(70px, calc(70px + env(safe-area-inset-bottom)));
   }
 
   .reader-controls {
