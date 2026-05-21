@@ -3,6 +3,26 @@
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
+        "title": "The Brain",
+        "file": "books/Gutenberg/Artificial_Intelligence/32498-the-brain.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/32498-the-brain.jpg",
+        "author": "Hauser, Heinrich",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32498,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:18:50.774Z"
+      },
+      {
         "title": "The Fourth \"R\"",
         "file": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.jpg",
@@ -27,6 +47,27 @@
   {
     "class": "Gutenberg - Bhagavad Gita & Spiritual Wisdom",
     "books": [
+      {
+        "title": "A History of Magic and Experimental Science, Volume 1 (of 2): During the First Thirteen Centuries of Our Era",
+        "file": "books/Gutenberg/Bhagavad_Gita/67792-a-history-of-magic-and-experimental-science-volume-1-of-2-during-the-fir.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/67792-a-history-of-magic-and-experimental-science-volume-1-of-2-during-the-fir.jpg",
+        "author": "Thorndike, Lynn",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67792,
+        "subjects": [
+          "Magic -- History",
+          "Science -- History",
+          "Category: History - Ancient",
+          "Category: History - Medieval/Middle Ages",
+          "Category: History - Other",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:20:57.067Z"
+      },
       {
         "title": "The Confessions of St. Augustine",
         "file": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.epub",
@@ -79,6 +120,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:27.152Z"
+      },
+      {
+        "title": "The Natural History of Pliny, Volume 3 (of 6)",
+        "file": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.epub",
+        "cover": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.jpg",
+        "author": "Pliny, the Elder",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59131,
+        "subjects": [
+          "Natural history -- Pre-Linnean works",
+          "Category: Classics of Literature",
+          "Category: History - Ancient",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:37.922Z"
       }
     ]
   },
@@ -109,6 +170,36 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:34.472Z"
+      },
+      {
+        "title": "Hospital Sketches",
+        "file": "books/Gutenberg/Career_Guidance/3837-hospital-sketches.epub",
+        "cover": "books/Gutenberg/Career_Guidance/3837-hospital-sketches.jpg",
+        "author": "Alcott, Louisa May",
+        "year": "Public domain",
+        "category": "Career Guidance",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3837,
+        "subjects": [
+          "Alcott, Louisa May, 1832-1888 -- Career in nursing",
+          "Georgetown (Washington, D.C.) -- History -- 19th century",
+          "Military hospitals -- Washington (D.C.) -- History -- 19th century",
+          "Military nursing -- United States -- History -- 19th century",
+          "Nurses -- United States -- Biography",
+          "United States -- History -- Civil War, 1861-1865 -- Hospitals",
+          "United States -- History -- Civil War, 1861-1865 -- Medical care",
+          "United States -- History -- Civil War, 1861-1865 -- Personal narratives",
+          "United States -- History -- Civil War, 1861-1865 -- Women",
+          "Washington (D.C.) -- History -- 19th century",
+          "Category: Biographies",
+          "Category: Health & Medicine",
+          "Category: History - American",
+          "Category: History - Modern (1750+)",
+          "US Civil War"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:22:24.380Z"
       }
     ]
   },
@@ -132,6 +223,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:23.323Z"
+      },
+      {
+        "title": "The Sceptical Chymist: or Chymico-Physical Doubts & Paradoxes, Touching the Spagyrist's Principles Commonly call'd Hypostatical; As they are wont to be Propos'd and Defended by the Generality of Alchymists. Whereunto is præmis'd Part of another Discourse relating to the same Subject.",
+        "file": "books/Gutenberg/Chemistry/22914-the-sceptical-chymist-or-chymico-physical-doubts-paradoxes-touching-the-.epub",
+        "cover": "books/Gutenberg/Chemistry/22914-the-sceptical-chymist-or-chymico-physical-doubts-paradoxes-touching-the-.jpg",
+        "author": "Boyle, Robert",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22914,
+        "subjects": [
+          "Chemistry -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:31.307Z"
       }
     ]
   },
@@ -161,6 +273,34 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:26.730Z"
+      },
+      {
+        "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
+        "file": "books/Gutenberg/Children_Books/37106-little-women-or-meg-jo-beth-and-amy.epub",
+        "cover": "books/Gutenberg/Children_Books/37106-little-women-or-meg-jo-beth-and-amy.jpg",
+        "author": "Alcott, Louisa May",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37106,
+        "subjects": [
+          "Autobiographical fiction",
+          "Bildungsromans",
+          "Domestic fiction",
+          "Family life -- New England -- Fiction",
+          "March family (Fictitious characters) -- Fiction",
+          "Mothers and daughters -- Fiction",
+          "New England -- Fiction",
+          "Sisters -- Fiction",
+          "Young women -- Fiction",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:21:45.003Z"
       }
     ]
   },
@@ -189,12 +329,49 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:49.824Z"
+      },
+      {
+        "title": "Civics: as Applied Sociology",
+        "file": "books/Gutenberg/Civics/13205-civics-as-applied-sociology.epub",
+        "cover": "books/Gutenberg/Civics/13205-civics-as-applied-sociology.jpg",
+        "author": "Geddes, Patrick, Sir",
+        "year": "Public domain",
+        "category": "Civics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 13205,
+        "subjects": [
+          "Cities and towns",
+          "Civics",
+          "Sociology, Urban",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:57.254Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Computer Science",
     "books": [
+      {
+        "title": "Giant brains; or, Machines that think",
+        "file": "books/Gutenberg/Computer_Science/68991-giant-brains-or-machines-that-think.epub",
+        "cover": "books/Gutenberg/Computer_Science/68991-giant-brains-or-machines-that-think.jpg",
+        "author": "Berkeley, Edmund Callis",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68991,
+        "subjects": [
+          "Computers -- Popular works",
+          "Category: Engineering & Technology",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:18:44.342Z"
+      },
       {
         "title": "The Jargon File, Version 4.2.2, 20 Aug 2000",
         "file": "books/Gutenberg/Computer_Science/3008-the-jargon-file-version-422-20-aug-2000.epub",
@@ -241,6 +418,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:19.645Z"
+      },
+      {
+        "title": "The Problems of Philosophy",
+        "file": "books/Gutenberg/General_Knowledge/5827-the-problems-of-philosophy.epub",
+        "cover": "books/Gutenberg/General_Knowledge/5827-the-problems-of-philosophy.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5827,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Metaphysics",
+          "Philosophy -- Introductions",
+          "Category: Philosophy & Ethics",
+          "Nobel Prizes in Literature",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:21:27.512Z"
       }
     ]
   },
@@ -267,12 +465,51 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:44.646Z"
+      },
+      {
+        "title": "The 2006 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27509,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:52.845Z"
       }
     ]
   },
   {
     "class": "Gutenberg - History",
     "books": [
+      {
+        "title": "Charles Bradlaugh: a Record of His Life and Work, Volume 1 (of 2): With an Account of his Parliamentary Struggle, Politics and Teachings. Seventh Edition",
+        "file": "books/Gutenberg/History/45130-charles-bradlaugh-a-record-of-his-life-and-work-volume-1-of-2-with-an-ac.epub",
+        "cover": "books/Gutenberg/History/45130-charles-bradlaugh-a-record-of-his-life-and-work-volume-1-of-2-with-an-ac.jpg",
+        "author": "Robertson, J. M. (John Mackinnon), Bonner, Hypatia Bradlaugh",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45130,
+        "subjects": [
+          "Bradlaugh, Charles, 1833-1891",
+          "Category: Biographies",
+          "Category: History - British"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
       {
         "title": "The City of God, Volume I",
         "file": "books/Gutenberg/History/45304-the-city-of-god-volume-i.epub",
@@ -298,6 +535,28 @@
   {
     "class": "Gutenberg - Interview Preparation",
     "books": [
+      {
+        "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume XIII, Oklahoma Narratives",
+        "file": "books/Gutenberg/Interview_Preparation/20785-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/20785-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.jpg",
+        "author": "United States. Work Projects Administration",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20785,
+        "subjects": [
+          "African Americans -- Oklahoma -- History -- Sources",
+          "African Americans -- Oklahoma -- Interviews",
+          "Enslaved persons -- Southern States -- Biography",
+          "Oklahoma -- Biography",
+          "Category: Biographies",
+          "Category: History - American",
+          "Slavery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:21:22.144Z"
+      },
       {
         "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume XVI, Texas Narratives, Part 1",
         "file": "books/Gutenberg/Interview_Preparation/30576-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
@@ -354,6 +613,35 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:08:43.059Z"
+      },
+      {
+        "title": "Moby Dick; Or, The Whale",
+        "file": "books/Gutenberg/Literature/2701-moby-dick-or-the-whale.epub",
+        "cover": "books/Gutenberg/Literature/2701-moby-dick-or-the-whale.jpg",
+        "author": "Melville, Herman",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2701,
+        "subjects": [
+          "Adventure stories",
+          "Ahab, Captain (Fictitious character) -- Fiction",
+          "Mentally ill -- Fiction",
+          "Psychological fiction",
+          "Sea stories",
+          "Ship captains -- Fiction",
+          "Whales -- Fiction",
+          "Whaling -- Fiction",
+          "Whaling ships -- Fiction",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:18:19.822Z"
       }
     ]
   },
@@ -379,6 +667,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:13.454Z"
+      },
+      {
+        "title": "The First Six Books of the Elements of Euclid",
+        "file": "books/Gutenberg/Mathematics/21076-the-first-six-books-of-the-elements-of-euclid.epub",
+        "cover": "books/Gutenberg/Mathematics/21076-the-first-six-books-of-the-elements-of-euclid.jpg",
+        "author": "Euclid, Casey, John",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21076,
+        "subjects": [
+          "Euclid's Elements",
+          "Mathematics, Greek",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:18:56.900Z"
       }
     ]
   },
@@ -414,6 +720,36 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:53.798Z"
+      },
+      {
+        "title": "The Mysteries of Udolpho",
+        "file": "books/Gutenberg/Motivation/3268-the-mysteries-of-udolpho.epub",
+        "cover": "books/Gutenberg/Motivation/3268-the-mysteries-of-udolpho.jpg",
+        "author": "Radcliffe, Ann Ward",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3268,
+        "subjects": [
+          "Castles -- Fiction",
+          "Gothic fiction",
+          "Guardian and ward -- Fiction",
+          "Horror tales",
+          "Inheritance and succession -- Fiction",
+          "Italy -- Fiction",
+          "Orphans -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Romance",
+          "Gothic Fiction",
+          "Italy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:20:37.248Z"
       }
     ]
   },
@@ -440,12 +776,62 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:02.008Z"
+      },
+      {
+        "title": "The Picture of Dorian Gray",
+        "file": "books/Gutenberg/Philosophy/174-the-picture-of-dorian-gray.epub",
+        "cover": "books/Gutenberg/Philosophy/174-the-picture-of-dorian-gray.jpg",
+        "author": "Wilde, Oscar",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 174,
+        "subjects": [
+          "Appearance (Philosophy) -- Fiction",
+          "Conduct of life -- Fiction",
+          "Didactic fiction",
+          "Great Britain -- History -- Victoria, 1837-1901 -- Fiction",
+          "London (England) -- History -- 1800-1950 -- Fiction",
+          "Paranormal fiction",
+          "Portraits -- Fiction",
+          "Supernatural -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Gothic Fiction",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:21:01.213Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Physics",
     "books": [
+      {
+        "title": "A Budget of Paradoxes, Volume I",
+        "file": "books/Gutenberg/Physics/23100-a-budget-of-paradoxes-volume-i.epub",
+        "cover": "books/Gutenberg/Physics/23100-a-budget-of-paradoxes-volume-i.jpg",
+        "author": "De Morgan, Augustus",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23100,
+        "subjects": [
+          "Circle-squaring",
+          "Perpetual motion",
+          "Science -- Miscellanea",
+          "Trisection of angle",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:19:06.185Z"
+      },
       {
         "title": "History of the inductive sciences, from the earliest to the present time",
         "file": "books/Gutenberg/Physics/68693-history-of-the-inductive-sciences-from-the-earliest-to-the-present-time.epub",
@@ -493,6 +879,29 @@
   {
     "class": "Gutenberg - Science",
     "books": [
+      {
+        "title": "The King in Yellow",
+        "file": "books/Gutenberg/Science/8492-the-king-in-yellow.epub",
+        "cover": "books/Gutenberg/Science/8492-the-king-in-yellow.jpg",
+        "author": "Chambers, Robert W. (Robert William)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8492,
+        "subjects": [
+          "Horror tales, American",
+          "Short stories, American",
+          "United States -- Social life and customs -- 19th century -- Fiction",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories",
+          "Horror"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:18:36.877Z"
+      },
       {
         "title": "The strange case of Dr. Jekyll and Mr. Hyde",
         "file": "books/Gutenberg/Science/43-the-strange-case-of-dr-jekyll-and-mr-hyde.epub",
