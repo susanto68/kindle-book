@@ -7,12 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Kindle Book Reader</title>
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=16">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
   <script src="vendor/pdf.min.js"></script>
   <script src="vendor/page-flip.browser.min.js"></script>
+  <script src="vendor/jszip.min.js"></script>
+  <script src="vendor/epub.min.js"></script>
 </head>
 <body>
   <div id="loadingScreen" class="loading-screen" aria-live="polite">
@@ -49,6 +51,34 @@
         <p class="hero-copy">A calm, Kindle-style shelf for your class notes, chapters, and syllabi.</p>
       </div>
 
+      <section id="categorySection" class="category-section" aria-label="Book categories">
+        <button class="category-card" type="button" data-category="Computer Science">
+          <span>CS</span>
+          <strong>Computer Science</strong>
+          <small>Programming, hardware, notes</small>
+        </button>
+        <button class="category-card" type="button" data-category="Motivation">
+          <span>Rise</span>
+          <strong>Motivation</strong>
+          <small>Focus and self growth</small>
+        </button>
+        <button class="category-card" type="button" data-category="Bhagavad Gita">
+          <span>Gita</span>
+          <strong>Bhagavad Gita</strong>
+          <small>Wisdom and reflection</small>
+        </button>
+        <button class="category-card" type="button" data-category="School Notes">
+          <span>Notes</span>
+          <strong>School Notes</strong>
+          <small>Class chapters and syllabus</small>
+        </button>
+        <button class="category-card" type="button" data-category="AI & Technology">
+          <span>AI</span>
+          <strong>AI & Technology</strong>
+          <small>Modern computing books</small>
+        </button>
+      </section>
+
       <section id="continueSection" class="shelf-section" hidden>
         <div class="section-heading">
           <h3>Continue Reading</h3>
@@ -66,9 +96,10 @@
 
       <section class="shelf-section">
         <div class="section-heading">
-          <h3>Library</h3>
+          <h3 id="bookshelfTitle">Library</h3>
           <span id="libraryCount"></span>
         </div>
+        <button id="allCategoriesBtn" class="small-link all-categories-btn" type="button" hidden>All categories</button>
         <div id="bookGrid" class="library-shelves"></div>
       </section>
     </section>
@@ -76,12 +107,25 @@
     <section id="reader" class="reader-view" aria-label="Book reader" hidden>
       <div id="readerStage" class="reader-stage">
         <div id="flipbook" class="flipbook-container" aria-live="polite"></div>
+        <div id="epubReader" class="epub-reader" aria-live="polite" hidden></div>
         <div id="readerMessage" class="reader-message" hidden></div>
+        <div id="readerTutorial" class="reader-tutorial" hidden>
+          <div class="tutorial-card">
+            <div class="tutorial-pages" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+            <strong>Swipe to turn pages</strong>
+            <p>Drag the page corner like a real book.</p>
+            <button id="tutorialDismiss" class="primary-btn" type="button">Start Reading</button>
+          </div>
+        </div>
       </div>
 
       <div id="readerControls" class="reader-controls" aria-label="Reader controls">
         <button id="indexBtn" class="pill-btn" type="button">Index</button>
         <button id="goToBtn" class="pill-btn" type="button">Go To</button>
+        <button id="soundBtn" class="pill-btn" type="button" aria-label="Toggle page sound">Sound</button>
         <span id="pageInfo" class="page-info">Page 1 of 1</span>
         <button id="prevPage" class="pill-btn reader-hidden-control" type="button" aria-label="Previous page" hidden>Prev</button>
         <button id="playPause" class="pill-btn reader-hidden-control" type="button" aria-label="Play or pause speech" hidden>Play</button>
@@ -136,6 +180,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=15"></script>
+  <script src="app.js?v=16"></script>
 </body>
 </html>

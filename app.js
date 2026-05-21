@@ -6,11 +6,18 @@
 const STORAGE_KEYS = {
   theme: "kindleReader.theme",
   recent: "kindleReader.recentBooks",
-  progress: "kindleReader.progressByBook"
+  progress: "kindleReader.progressByBook",
+  tutorialSeen: "kindleReader.readerTutorialSeen",
+  soundMuted: "kindleReader.soundMuted"
 };
 
 const RENDER_RADIUS = 2;
 const MAX_COVER_CACHE = 80;
+const SUPPORTED_BOOK_FORMATS = [".epub", ".pdf"];
+const FORMAT_PRIORITY = {
+  epub: 2,
+  pdf: 1
+};
 
 const dom = {
   loadingScreen: document.getElementById("loadingScreen"),
@@ -30,6 +37,9 @@ const dom = {
   recentSection: document.getElementById("recentSection"),
   recentGrid: document.getElementById("recentGrid"),
   libraryCount: document.getElementById("libraryCount"),
+  categorySection: document.getElementById("categorySection"),
+  bookshelfTitle: document.getElementById("bookshelfTitle"),
+  allCategoriesBtn: document.getElementById("allCategoriesBtn"),
   searchBtn: document.getElementById("searchBtn"),
   searchBar: document.getElementById("searchBar"),
   searchInput: document.getElementById("searchInput"),
@@ -40,6 +50,10 @@ const dom = {
   backBtn: document.getElementById("backBtn"),
   pageInfo: document.getElementById("pageInfo"),
   fullscreenBtn: document.getElementById("fullscreenBtn"),
+  soundBtn: document.getElementById("soundBtn"),
+  epubReader: document.getElementById("epubReader"),
+  readerTutorial: document.getElementById("readerTutorial"),
+  tutorialDismiss: document.getElementById("tutorialDismiss"),
   themeBtn: document.getElementById("themeBtn"),
   indexBtn: document.getElementById("indexBtn"),
   goToBtn: document.getElementById("goToBtn"),
@@ -69,7 +83,13 @@ const state = {
   coverCache: new Map(),
   activeDetailsBookId: null,
   currentBook: null,
+  currentFormat: "pdf",
   pdfDocument: null,
+  epubBook: null,
+  epubRendition: null,
+  epubLocation: null,
+  epubToc: [],
+  epubTotalLocations: 0,
   pageFlip: null,
   pageElements: [],
   pageRatio: 0.72,
@@ -84,7 +104,11 @@ const state = {
   coverObserver: null,
   coverQueue: [],
   queuedCoverIds: new Set(),
-  activeCoverRenders: 0
+  activeCoverRenders: 0,
+  activeCategory: null,
+  soundMuted: true,
+  audioContext: null,
+  touchStart: null
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -92,6 +116,7 @@ document.addEventListener("DOMContentLoaded", init);
 async function init() {
   configurePdfJs();
   applyInitialTheme();
+  applyInitialSoundPreference();
   setupEventListeners();
 
   try {
@@ -125,31 +150,45 @@ function flattenLibrary(groups) {
   state.books = [];
   state.booksById.clear();
   state.booksByClass.clear();
+  const bestByKey = new Map();
 
   groups.forEach((group, groupIndex) => {
     const className = group.class || `Shelf ${groupIndex + 1}`;
-    const classBooks = [];
 
     (group.books || []).forEach((book, index) => {
       const normalized = {
         ...book,
+        format: getBookFormat(book.file),
+        cover: book.cover || findLikelyCoverPath(book.file),
+        category: book.category || inferCategory({ ...book, className }),
         id: createBookId(book.file),
         className,
         classIndex: groupIndex,
         orderInClass: index
       };
 
-      state.books.push(normalized);
-      state.booksById.set(normalized.id, normalized);
-      classBooks.push(normalized);
+      const key = createBookKey(normalized);
+      const existing = bestByKey.get(key);
+      if (!existing || getFormatPriority(normalized) > getFormatPriority(existing)) {
+        bestByKey.set(key, normalized);
+      }
     });
+  });
 
-    state.booksByClass.set(className, classBooks);
+  state.books = Array.from(bestByKey.values())
+    .sort((a, b) => a.classIndex - b.classIndex || a.orderInClass - b.orderInClass || a.title.localeCompare(b.title));
+
+  state.books.forEach((book) => {
+    state.booksById.set(book.id, book);
+    if (!state.booksByClass.has(book.className)) {
+      state.booksByClass.set(book.className, []);
+    }
+    state.booksByClass.get(book.className).push(book);
   });
 }
 
 async function mergeDiscoveredPdfFolders(configuredLibrary) {
-  const discoveredGroups = await discoverTopLevelPdfFolders(configuredLibrary);
+  const discoveredGroups = await discoverTopLevelBookFolders(configuredLibrary);
   if (!discoveredGroups.length) {
     return configuredLibrary;
   }
@@ -157,79 +196,48 @@ async function mergeDiscoveredPdfFolders(configuredLibrary) {
   return [...configuredLibrary, ...discoveredGroups];
 }
 
-async function discoverTopLevelPdfFolders(configuredLibrary) {
-  const knownTopFolders = new Set();
-
-  configuredLibrary.forEach((group) => {
-    (group.books || []).forEach((book) => {
-      const parts = String(book.file || "").split("/");
-      if (parts[0] === "books" && parts[1]) {
-        knownTopFolders.add(parts[1].toLowerCase());
-      }
-    });
-  });
+async function discoverTopLevelBookFolders(configuredLibrary) {
+  const scanFolder = "C++ Books";
 
   try {
-    const rootUrl = new URL("books/", window.location.href);
-    const rootLinks = await fetchDirectoryLinks(rootUrl.href);
-    const folders = rootLinks.filter((link) => link.isDirectory && !knownTopFolders.has(link.name.toLowerCase()));
-    const groups = [];
-
-    for (const folder of folders) {
-      const pdfFiles = await collectPdfFiles(folder.url, 0, 3);
-      if (!pdfFiles.length) {
-        continue;
-      }
-
-      groups.push({
-        class: cleanFolderName(folder.name),
-        books: pdfFiles.map((file) => ({
-          title: titleFromFilePath(file.path),
-          file: file.path,
-          author: cleanFolderName(folder.name),
-          year: ""
-        }))
-      });
-    }
-
-    return groups;
+    const folderUrl = new URL(`books/${encodeURIComponent(scanFolder)}/`, window.location.href);
+    const bookFiles = preferBestFormats(await collectBookFiles(folderUrl.href, 0, 5));
+    return createDiscoveredGroup(scanFolder, bookFiles);
   } catch (error) {
     console.info("Directory PDF folder discovery is unavailable; trying GitHub API fallback.", error);
-    return discoverGithubPdfFolders(knownTopFolders);
+    return discoverGithubBookFolders(scanFolder);
   }
 }
 
-async function discoverGithubPdfFolders(knownTopFolders) {
+async function discoverGithubBookFolders(scanFolder) {
   try {
-    const rootItems = await fetchGithubContents("books");
-    const folders = rootItems.filter((item) => item.type === "dir" && !knownTopFolders.has(item.name.toLowerCase()));
-    const groups = [];
-
-    for (const folder of folders) {
-      const pdfFiles = await collectGithubPdfFiles(folder.path, 0, 3);
-      if (!pdfFiles.length) {
-        continue;
-      }
-
-      groups.push({
-        class: cleanFolderName(folder.name),
-        books: pdfFiles.map((file) => ({
-          title: titleFromFilePath(file.path),
-          file: file.path,
-          author: cleanFolderName(folder.name),
-          year: ""
-        }))
-      });
-    }
-
-    return groups;
+    const bookFiles = preferBestFormats(await collectGithubBookFiles(`books/${scanFolder}`, 0, 5));
+    return createDiscoveredGroup(scanFolder, bookFiles);
   } catch (error) {
     console.info("GitHub PDF folder discovery is unavailable.", error);
     return [];
   }
 }
 
-async function collectGithubPdfFiles(path, depth, maxDepth) {
+function createDiscoveredGroup(folderName, bookFiles) {
+  if (!bookFiles.length) {
+    return [];
+  }
+
+  return [{
+    class: cleanFolderName(folderName),
+    books: bookFiles.map((file) => ({
+      title: titleFromFilePath(file.path),
+      file: file.path,
+      format: getBookFormat(file.path),
+      cover: file.cover || findLikelyCoverPath(file.path),
+      author: cleanFolderName(folderName),
+      year: ""
+    }))
+  }];
+}
+
+async function collectGithubBookFiles(path, depth, maxDepth) {
   if (depth > maxDepth) {
     return [];
   }
@@ -239,9 +247,9 @@ async function collectGithubPdfFiles(path, depth, maxDepth) {
 
   for (const item of items) {
     if (item.type === "dir") {
-      files.push(...await collectGithubPdfFiles(item.path, depth + 1, maxDepth));
-    } else if (item.type === "file" && item.name.toLowerCase().endsWith(".pdf")) {
-      files.push({ path: item.path });
+      files.push(...await collectGithubBookFiles(item.path, depth + 1, maxDepth));
+    } else if (item.type === "file" && isSupportedBookFile(item.name)) {
+      files.push({ path: item.path, cover: findLikelyCoverPath(item.path) });
     }
   }
 
@@ -262,7 +270,7 @@ async function fetchGithubContents(path) {
   return Array.isArray(data) ? data : [];
 }
 
-async function collectPdfFiles(directoryUrl, depth, maxDepth) {
+async function collectBookFiles(directoryUrl, depth, maxDepth) {
   if (depth > maxDepth) {
     return [];
   }
@@ -272,10 +280,11 @@ async function collectPdfFiles(directoryUrl, depth, maxDepth) {
 
   for (const link of links) {
     if (link.isDirectory) {
-      files.push(...await collectPdfFiles(link.url, depth + 1, maxDepth));
-    } else if (link.name.toLowerCase().endsWith(".pdf")) {
+      files.push(...await collectBookFiles(link.url, depth + 1, maxDepth));
+    } else if (isSupportedBookFile(link.name)) {
       files.push({
-        path: urlToBookPath(link.url)
+        path: urlToBookPath(link.url),
+        cover: findLikelyCoverPath(urlToBookPath(link.url))
       });
     }
   }
@@ -331,12 +340,63 @@ function cleanFolderName(name) {
 function titleFromFilePath(filePath) {
   const fileName = decodeURIComponent(String(filePath).split("/").pop() || "Book");
   return fileName
-    .replace(/\.pdf$/i, "")
+    .replace(/\.(pdf|epub)$/i, "")
     .replace(/\s*\(\s*PDFDrive\s*\)\s*/gi, "")
     .replace(/\s*\(PDF\)\s*/gi, "")
     .replace(/[_-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function isSupportedBookFile(fileName) {
+  const lower = String(fileName || "").toLowerCase();
+  return SUPPORTED_BOOK_FORMATS.some((ext) => lower.endsWith(ext));
+}
+
+function getBookFormat(filePath) {
+  return String(filePath || "").toLowerCase().endsWith(".epub") ? "epub" : "pdf";
+}
+
+function getFormatPriority(book) {
+  return FORMAT_PRIORITY[book.format || getBookFormat(book.file)] || 0;
+}
+
+function createBookKey(book) {
+  return `${book.className || ""}:${titleFromFilePath(book.file || book.title).toLowerCase().replace(/[^a-z0-9]+/g, "")}`;
+}
+
+function preferBestFormats(files) {
+  const best = new Map();
+
+  files.forEach((file) => {
+    const className = file.path.split("/").slice(0, 2).join("/");
+    const key = `${className}:${titleFromFilePath(file.path).toLowerCase().replace(/[^a-z0-9]+/g, "")}`;
+    const existing = best.get(key);
+    const candidate = { ...file, format: getBookFormat(file.path) };
+    if (!existing || getFormatPriority(candidate) > getFormatPriority(existing)) {
+      best.set(key, candidate);
+    }
+  });
+
+  return Array.from(best.values());
+}
+
+function findLikelyCoverPath(filePath) {
+  const normalized = String(filePath || "");
+  if (!normalized) {
+    return "";
+  }
+  return normalized.replace(/\.(pdf|epub)$/i, ".jpg");
+}
+
+function inferCategory(book) {
+  const text = `${book.title || ""} ${book.file || ""} ${book.className || ""}`.toLowerCase();
+
+  if (text.includes("gita") || text.includes("bhagavad")) return "Bhagavad Gita";
+  if (text.includes("motivation") || text.includes("success") || text.includes("mindset")) return "Motivation";
+  if (text.includes("ai") || text.includes("technology") || text.includes("machine learning")) return "AI & Technology";
+  if (text.includes("class ") || text.includes("syllabus") || text.includes("chapter") || text.includes("notes")) return "School Notes";
+  return "Computer Science";
 }
 
 function createBookId(filePath) {
@@ -355,9 +415,15 @@ function setupEventListeners() {
   dom.nextBtn.addEventListener("click", () => flipRelative(1));
   dom.playPauseBtn.addEventListener("click", toggleTextToSpeech);
   dom.fullscreenBtn.addEventListener("click", toggleFullscreen);
+  dom.soundBtn.addEventListener("click", toggleSound);
   dom.themeBtn.addEventListener("click", toggleTheme);
   dom.indexBtn.addEventListener("click", openIndexModal);
   dom.goToBtn.addEventListener("click", openGoToModal);
+  dom.allCategoriesBtn.addEventListener("click", showAllCategories);
+  dom.tutorialDismiss.addEventListener("click", hideReaderTutorial);
+  dom.categorySection.querySelectorAll("[data-category]").forEach((button) => {
+    button.addEventListener("click", () => openCategory(button.dataset.category));
+  });
   dom.closeModal.addEventListener("click", closeBookModal);
   dom.closeIndex.addEventListener("click", closeIndexModal);
   dom.closeGoTo.addEventListener("click", closeGoToModal);
@@ -368,6 +434,10 @@ function setupEventListeners() {
   dom.goToModal.addEventListener("click", closeOnBackdrop);
 
   document.addEventListener("keydown", handleKeyboardShortcuts);
+  dom.readerStage.addEventListener("touchstart", handleReaderTouchStart, { passive: true });
+  dom.readerStage.addEventListener("touchend", handleReaderTouchEnd, { passive: true });
+  dom.readerStage.addEventListener("pointerdown", handleReaderPointerDown);
+  dom.readerStage.addEventListener("pointerup", handleReaderPointerUp);
   window.addEventListener("resize", scheduleReaderResize);
   window.addEventListener("orientationchange", scheduleReaderResize);
 
@@ -378,17 +448,33 @@ function setupEventListeners() {
 
 function renderLibrary(query = "") {
   const cleanQuery = query.trim().toLowerCase();
-  const filteredGroups = state.rawLibrary
-    .map((group) => ({
-      ...group,
-      books: (group.books || []).filter((book) => {
-        const haystack = `${book.title} ${book.author} ${book.year} ${group.class}`.toLowerCase();
-        return !cleanQuery || haystack.includes(cleanQuery);
-      })
-    }))
-    .filter((group) => group.books.length > 0);
+  const selectedCategory = state.activeCategory;
+  const groupMap = new Map();
+
+  state.books.forEach((book) => {
+    const haystack = `${book.title} ${book.author} ${book.year} ${book.className} ${book.format}`.toLowerCase();
+    const matchesSearch = !cleanQuery || haystack.includes(cleanQuery);
+    const matchesCategory = !selectedCategory || book.category === selectedCategory;
+
+    if (!matchesSearch || !matchesCategory) {
+      return;
+    }
+
+    if (!groupMap.has(book.className)) {
+      groupMap.set(book.className, {
+        class: book.className,
+        books: []
+      });
+    }
+    groupMap.get(book.className).books.push(book);
+  });
+
+  const filteredGroups = Array.from(groupMap.values());
 
   dom.bookGrid.replaceChildren();
+  dom.categorySection.hidden = Boolean(selectedCategory || cleanQuery);
+  dom.allCategoriesBtn.hidden = !selectedCategory && !cleanQuery;
+  dom.bookshelfTitle.textContent = selectedCategory || (cleanQuery ? "Search Results" : "Library");
   filteredGroups.forEach((group) => {
     const shelf = document.createElement("section");
     shelf.className = "class-shelf";
@@ -401,17 +487,36 @@ function renderLibrary(query = "") {
     row.className = "class-books";
 
     group.books.forEach((book) => {
-      row.appendChild(createBookCard(state.booksById.get(createBookId(book.file)), { compact: false }));
+      row.appendChild(createBookCard(book, { compact: false }));
     });
 
     shelf.append(title, row);
     dom.bookGrid.appendChild(shelf);
   });
 
-  dom.libraryCount.textContent = `${state.books.length} books`;
-  dom.continueSection.hidden = true;
-  dom.recentSection.hidden = true;
+  const visibleCount = filteredGroups.reduce((total, group) => total + group.books.length, 0);
+  dom.libraryCount.textContent = `${visibleCount} books`;
+
+  if (!selectedCategory && !cleanQuery) {
+    renderContinueAndRecent();
+  } else {
+    dom.continueSection.hidden = true;
+    dom.recentSection.hidden = true;
+  }
   setupCoverObserver();
+}
+
+function openCategory(category) {
+  state.activeCategory = category;
+  dom.searchInput.value = "";
+  renderLibrary();
+  dom.bookGrid.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function showAllCategories() {
+  state.activeCategory = null;
+  dom.searchInput.value = "";
+  renderLibrary();
 }
 
 function renderContinueAndRecent(refreshCovers = false) {
@@ -454,6 +559,15 @@ function createBookCard(book, options = {}) {
   cover.style.setProperty("--cover-a", colors[0]);
   cover.style.setProperty("--cover-b", colors[1]);
   cover.appendChild(createCoverFallback(book));
+  if (book.cover) {
+    const coverImage = document.createElement("img");
+    coverImage.alt = "";
+    coverImage.loading = "lazy";
+    coverImage.decoding = "async";
+    coverImage.src = book.cover;
+    coverImage.addEventListener("error", () => coverImage.remove(), { once: true });
+    cover.appendChild(coverImage);
+  }
 
   const title = document.createElement("h5");
   title.className = "book-title";
@@ -461,7 +575,7 @@ function createBookCard(book, options = {}) {
 
   const meta = document.createElement("p");
   meta.className = "book-meta";
-  meta.textContent = `${book.author || "Unknown"} | ${book.className} | ${book.year || ""}`;
+  meta.textContent = `${book.author || "Unknown"} | ${book.className} | ${book.format?.toUpperCase() || ""}`;
 
   const actions = document.createElement("div");
   actions.className = "book-card-actions";
@@ -687,25 +801,92 @@ async function openBook(bookId, pageNumber = 1) {
   dom.bookTitle.textContent = book.title;
   dom.headerEyebrow.textContent = book.className;
   state.currentBook = book;
+  state.currentFormat = book.format || getBookFormat(book.file);
   updateRecent(book.id);
 
   try {
     await cleanupReader({ keepCurrentBook: true });
     state.currentPageIndex = Math.max(0, pageNumber - 1);
-    state.pdfDocument = await pdfjsLib.getDocument({ url: book.file }).promise;
-    state.totalPages = state.pdfDocument.numPages;
-    await updatePdfPageRatio();
-    state.currentPageIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
-    await buildPageFlip(state.currentPageIndex);
+    if (state.currentFormat === "epub") {
+      await openEpubBook(book);
+    } else {
+      await openPdfBook(book);
+    }
     saveCurrentProgress();
     dom.continueSection.hidden = true;
     dom.recentSection.hidden = true;
     clearReaderLoading();
     wakeReaderControls();
+    maybeShowReaderTutorial();
   } catch (error) {
     console.error(error);
-    setReaderLoading("This PDF could not be opened. Please try another book.", true);
+    setReaderLoading("This book could not be opened. Please try another book.", true);
   }
+}
+
+async function openPdfBook(book) {
+  dom.epubReader.hidden = true;
+  ensureFlipbookElement();
+  dom.flipbook.hidden = false;
+  state.pdfDocument = await pdfjsLib.getDocument({ url: book.file }).promise;
+  state.totalPages = state.pdfDocument.numPages;
+  await updatePdfPageRatio();
+  state.currentPageIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
+  await buildPageFlip(state.currentPageIndex);
+}
+
+async function openEpubBook(book) {
+  if (!window.ePub) {
+    throw new Error("EPUB.js is not available.");
+  }
+
+  const initialIndex = Math.max(0, state.currentPageIndex || 0);
+  destroyPageFlip();
+  dom.flipbook.hidden = true;
+  dom.epubReader.hidden = false;
+  dom.epubReader.replaceChildren();
+
+  state.epubBook = ePub(book.file);
+  state.epubRendition = state.epubBook.renderTo(dom.epubReader, {
+    width: "100%",
+    height: "100%",
+    flow: "paginated",
+    spread: "none",
+    manager: "default"
+  });
+
+  applyEpubTheme();
+
+  state.epubBook.loaded.navigation.then((navigation) => {
+    state.epubToc = navigation?.toc || [];
+  }).catch(() => {
+    state.epubToc = [];
+  });
+
+  try {
+    await state.epubBook.ready;
+    await state.epubBook.locations.generate(900);
+    state.epubTotalLocations = state.epubBook.locations.length() || 1;
+  } catch (error) {
+    console.info("EPUB location generation skipped.", error);
+    state.epubTotalLocations = 1;
+  }
+
+  state.epubRendition.on("relocated", (location) => {
+    state.epubLocation = location;
+    state.currentPageIndex = getEpubLocationIndex(location);
+    state.totalPages = Math.max(1, state.epubTotalLocations);
+    updateReaderStatus();
+    saveCurrentProgress();
+  });
+  state.epubRendition.on("rendered", () => {
+    updateReaderStatus();
+  });
+  state.totalPages = Math.max(1, state.epubTotalLocations);
+  state.currentPageIndex = clamp(initialIndex, 0, state.totalPages - 1);
+  const initialTarget = getEpubCfiForIndex(state.currentPageIndex);
+  await state.epubRendition.display(initialTarget || undefined);
+  updateReaderStatus();
 }
 
 async function buildPageFlip(startIndex = 0) {
@@ -777,16 +958,15 @@ function createPageElements(totalPages) {
 function getPageSize() {
   const isReading = document.body.classList.contains("reader-open");
   const headerHeight = isReading ? 0 : (dom.appHeader.getBoundingClientRect().height || 70);
-  const controlsReserve = window.innerWidth <= 760 ? 96 : 72;
-  const availableWidth = Math.max(260, window.innerWidth - 16);
-  const availableHeight = Math.max(320, window.innerHeight - headerHeight - controlsReserve - 10);
+  const availableWidth = Math.max(260, window.innerWidth - 8);
+  const availableHeight = Math.max(320, window.innerHeight - headerHeight - 8);
   const ratio = state.pageRatio || 0.72;
 
-  let height = Math.min(availableHeight, 920);
+  let height = Math.min(availableHeight, 1240);
   let width = Math.round(height * ratio);
 
   if (width > availableWidth) {
-    width = Math.min(availableWidth, 720);
+    width = Math.min(availableWidth, 980);
     height = Math.round(width / ratio);
   }
 
@@ -841,7 +1021,7 @@ function renderPdfPage(pageIndex) {
 
     const pdfPage = await state.pdfDocument.getPage(pageIndex + 1);
     const size = getPageSize();
-    const padding = window.innerWidth <= 760 ? 18 : 28;
+    const padding = window.innerWidth <= 760 ? 8 : 14;
     const targetWidth = Math.max(180, size.width - padding);
     const targetHeight = Math.max(260, size.height - padding);
     const baseViewport = pdfPage.getViewport({ scale: 1 });
@@ -877,7 +1057,41 @@ function renderPdfPage(pageIndex) {
   return renderTask;
 }
 
-function flipRelative(direction) {
+async function flipRelative(direction) {
+  if (!state.currentBook) {
+    return;
+  }
+
+  markReaderInteracted();
+  wakeReaderControls();
+
+  if (direction < 0 && state.currentPageIndex <= 0) {
+    return;
+  }
+
+  if (state.totalPages && direction > 0 && state.currentPageIndex >= state.totalPages - 1) {
+    return;
+  }
+
+  playPageSound();
+  animatePageTurn(direction);
+
+  if (state.currentFormat === "epub") {
+    if (!state.epubRendition) {
+      return;
+    }
+    try {
+      if (direction < 0) {
+        await state.epubRendition.prev();
+      } else {
+        await state.epubRendition.next();
+      }
+    } catch (error) {
+      console.warn("EPUB page turn failed", error);
+    }
+    return;
+  }
+
   if (!state.pageFlip) {
     return;
   }
@@ -887,8 +1101,6 @@ function flipRelative(direction) {
   } else {
     state.pageFlip.flipNext("bottom");
   }
-
-  wakeReaderControls();
 }
 
 function getEventPageIndex(event) {
@@ -903,16 +1115,168 @@ function getEventPageIndex(event) {
   return state.currentPageIndex;
 }
 
+function getEpubLocationIndex(location) {
+  if (!state.epubBook?.locations) {
+    return 0;
+  }
+
+  const total = Math.max(1, state.epubBook.locations.length() || state.epubTotalLocations || 1);
+  const cfi = location?.start?.cfi || location?.cfi || "";
+
+  if (cfi && typeof state.epubBook.locations.locationFromCfi === "function") {
+    const locationIndex = state.epubBook.locations.locationFromCfi(cfi);
+    if (Number.isFinite(locationIndex)) {
+      return clamp(locationIndex, 0, total - 1);
+    }
+  }
+
+  const percentage = Number(location?.start?.percentage ?? location?.percentage ?? 0);
+  if (Number.isFinite(percentage) && percentage > 0) {
+    return clamp(Math.round(percentage * (total - 1)), 0, total - 1);
+  }
+
+  return clamp(state.currentPageIndex || 0, 0, total - 1);
+}
+
+function getEpubCfiForIndex(index) {
+  if (!state.epubBook?.locations || typeof state.epubBook.locations.cfiFromLocation !== "function") {
+    return null;
+  }
+
+  const total = Math.max(1, state.epubBook.locations.length() || state.epubTotalLocations || 1);
+  const safeIndex = clamp(index, 0, total - 1);
+  return state.epubBook.locations.cfiFromLocation(safeIndex);
+}
+
 function updateReaderStatus() {
   const current = state.currentPageIndex + 1;
   const total = Math.max(1, state.totalPages);
-  dom.pageInfo.textContent = `Page ${current} of ${total}`;
+  dom.pageInfo.textContent = state.currentFormat === "epub"
+    ? `Loc ${current} of ${total}`
+    : `Page ${current} of ${total}`;
   dom.prevBtn.disabled = state.currentPageIndex <= 0;
   dom.nextBtn.disabled = state.currentPageIndex >= total - 1;
   dom.goToInput.max = String(total);
   dom.goToInput.placeholder = `1-${total}`;
-  dom.goToHint.textContent = `Enter a page from 1 to ${total}.`;
+  dom.goToHint.textContent = state.currentFormat === "epub"
+    ? `Enter a reading location from 1 to ${total}.`
+    : `Enter a page from 1 to ${total}.`;
   dom.goToHint.classList.remove("error");
+}
+
+function animatePageTurn(direction) {
+  dom.readerStage.classList.remove("turn-next", "turn-prev");
+  void dom.readerStage.offsetWidth;
+  dom.readerStage.classList.add(direction < 0 ? "turn-prev" : "turn-next");
+  setTimeout(() => {
+    dom.readerStage.classList.remove("turn-next", "turn-prev");
+  }, 420);
+}
+
+function applyInitialSoundPreference() {
+  state.soundMuted = localStorage.getItem(STORAGE_KEYS.soundMuted) === "true";
+  updateSoundButton();
+}
+
+function toggleSound() {
+  state.soundMuted = !state.soundMuted;
+  localStorage.setItem(STORAGE_KEYS.soundMuted, String(state.soundMuted));
+  updateSoundButton();
+
+  if (!state.soundMuted) {
+    playPageSound();
+  }
+}
+
+function updateSoundButton() {
+  dom.soundBtn.textContent = state.soundMuted ? "Muted" : "Sound";
+  dom.soundBtn.setAttribute("aria-pressed", String(!state.soundMuted));
+}
+
+function getAudioContext() {
+  if (state.audioContext) {
+    return state.audioContext;
+  }
+
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) {
+    return null;
+  }
+
+  state.audioContext = new AudioContextClass();
+  return state.audioContext;
+}
+
+function playPageSound() {
+  if (state.soundMuted) {
+    return;
+  }
+
+  const audioContext = getAudioContext();
+  if (!audioContext) {
+    return;
+  }
+
+  if (audioContext.state === "suspended") {
+    audioContext.resume().catch(() => {});
+  }
+
+  const duration = 0.17;
+  const sampleRate = audioContext.sampleRate;
+  const buffer = audioContext.createBuffer(1, Math.floor(sampleRate * duration), sampleRate);
+  const data = buffer.getChannelData(0);
+
+  for (let index = 0; index < data.length; index += 1) {
+    const fade = 1 - index / data.length;
+    data[index] = (Math.random() * 2 - 1) * 0.12 * fade;
+  }
+
+  const source = audioContext.createBufferSource();
+  const filter = audioContext.createBiquadFilter();
+  const gain = audioContext.createGain();
+
+  filter.type = "bandpass";
+  filter.frequency.value = 850;
+  filter.Q.value = 0.7;
+  gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.055, audioContext.currentTime + 0.025);
+  gain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + duration);
+
+  source.buffer = buffer;
+  source.connect(filter);
+  filter.connect(gain);
+  gain.connect(audioContext.destination);
+  source.start();
+  source.stop(audioContext.currentTime + duration);
+}
+
+function maybeShowReaderTutorial() {
+  if (localStorage.getItem(STORAGE_KEYS.tutorialSeen) === "true") {
+    return;
+  }
+
+  dom.readerTutorial.hidden = false;
+  requestAnimationFrame(() => {
+    dom.readerTutorial.classList.add("is-active");
+  });
+
+  if (!state.soundMuted) {
+    setTimeout(playPageSound, 360);
+  }
+}
+
+function hideReaderTutorial() {
+  dom.readerTutorial.classList.remove("is-active");
+  dom.readerTutorial.hidden = true;
+  localStorage.setItem(STORAGE_KEYS.tutorialSeen, "true");
+}
+
+function markReaderInteracted() {
+  if (!dom.readerTutorial.hidden) {
+    hideReaderTutorial();
+  } else if (localStorage.getItem(STORAGE_KEYS.tutorialSeen) !== "true") {
+    localStorage.setItem(STORAGE_KEYS.tutorialSeen, "true");
+  }
 }
 
 function openSearch() {
@@ -936,7 +1300,7 @@ function showBookDetails(bookId) {
   dom.modalTitle.textContent = book.title;
   dom.modalAuthor.textContent = book.author || "-";
   dom.modalYear.textContent = book.year || "-";
-  dom.modalClass.textContent = book.className;
+  dom.modalClass.textContent = `${book.className} (${(book.format || getBookFormat(book.file)).toUpperCase()})`;
 
   dom.readBook.onclick = () => openBook(bookId, 1);
   dom.downloadBook.onclick = () => downloadBook(book);
@@ -950,8 +1314,9 @@ function closeBookModal() {
 
 function downloadBook(book) {
   const link = document.createElement("a");
+  const extension = getBookFormat(book.file) === "epub" ? "epub" : "pdf";
   link.href = book.file;
-  link.download = `${book.title}.pdf`;
+  link.download = `${book.title}.${extension}`;
   document.body.appendChild(link);
   link.click();
   link.remove();
@@ -962,9 +1327,37 @@ function openIndexModal() {
     return;
   }
 
-  const classBooks = state.booksByClass.get(state.currentBook.className) || [];
   dom.indexList.replaceChildren();
 
+  if (state.currentFormat === "epub" && state.epubToc.length) {
+    flattenToc(state.epubToc).forEach((chapter, index) => {
+      const item = document.createElement("button");
+      item.type = "button";
+      item.className = "index-item";
+
+      const title = document.createElement("strong");
+      title.textContent = chapter.label || `Chapter ${index + 1}`;
+
+      const meta = document.createElement("span");
+      meta.textContent = `EPUB chapter ${index + 1}`;
+
+      item.append(title, meta);
+      item.addEventListener("click", async () => {
+        closeIndexModal();
+        markReaderInteracted();
+        playPageSound();
+        animatePageTurn(1);
+        await state.epubRendition.display(chapter.href);
+        wakeReaderControls();
+      });
+      dom.indexList.appendChild(item);
+    });
+
+    dom.indexModal.hidden = false;
+    return;
+  }
+
+  const classBooks = state.booksByClass.get(state.currentBook.className) || [];
   classBooks.forEach((book, index) => {
     const item = document.createElement("button");
     item.type = "button";
@@ -977,11 +1370,23 @@ function openIndexModal() {
     meta.textContent = `Chapter ${index + 1} | ${book.year || book.className}`;
 
     item.append(title, meta);
-    item.addEventListener("click", () => openBook(book.id, 1));
+    item.addEventListener("click", () => {
+      markReaderInteracted();
+      openBook(book.id, 1);
+    });
     dom.indexList.appendChild(item);
   });
 
   dom.indexModal.hidden = false;
+}
+
+function flattenToc(items, depth = 0) {
+  return (items || []).flatMap((item) => {
+    const label = `${depth ? "  ".repeat(depth) : ""}${item.label || item.title || "Chapter"}`.trim();
+    const current = [{ ...item, label }];
+    const children = flattenToc(item.subitems || item.children || [], depth + 1);
+    return current.concat(children);
+  });
 }
 
 function closeIndexModal() {
@@ -1015,7 +1420,22 @@ async function handleGoToSubmit(event) {
 
   const pageIndex = target - 1;
   closeGoToModal();
+  markReaderInteracted();
+  playPageSound();
+  animatePageTurn(pageIndex >= state.currentPageIndex ? 1 : -1);
   state.currentPageIndex = pageIndex;
+
+  if (state.currentFormat === "epub") {
+    const cfi = getEpubCfiForIndex(pageIndex);
+    if (state.epubRendition) {
+      await state.epubRendition.display(cfi || undefined);
+    }
+    updateReaderStatus();
+    saveCurrentProgress();
+    wakeReaderControls();
+    return;
+  }
+
   await renderVisiblePages(pageIndex);
   state.pageFlip.turnToPage(pageIndex);
   updateReaderStatus();
@@ -1037,6 +1457,9 @@ function closeOnBackdrop(event) {
 
 async function closeReader() {
   stopSpeech();
+  if (!dom.readerTutorial.hidden) {
+    hideReaderTutorial();
+  }
   await cleanupReader();
   document.body.classList.remove("reader-open");
   dom.reader.hidden = true;
@@ -1066,6 +1489,29 @@ async function cleanupReader(options = {}) {
   }
 
   state.pdfDocument = null;
+  if (state.epubRendition) {
+    try {
+      state.epubRendition.destroy();
+    } catch (error) {
+      console.warn("EPUB rendition cleanup failed", error);
+    }
+  }
+
+  if (state.epubBook) {
+    try {
+      state.epubBook.destroy();
+    } catch (error) {
+      console.warn("EPUB cleanup failed", error);
+    }
+  }
+
+  state.epubBook = null;
+  state.epubRendition = null;
+  state.epubLocation = null;
+  state.epubToc = [];
+  state.epubTotalLocations = 0;
+  dom.epubReader.replaceChildren();
+  dom.epubReader.hidden = true;
   if (!options.keepCurrentBook) {
     state.currentBook = null;
   }
@@ -1114,7 +1560,8 @@ function toggleTextToSpeech() {
     return;
   }
 
-  const text = `Reading ${state.currentBook.title}. Page ${state.currentPageIndex + 1} of ${state.totalPages}.`;
+  const placeLabel = state.currentFormat === "epub" ? "location" : "page";
+  const text = `Reading ${state.currentBook.title}. ${placeLabel} ${state.currentPageIndex + 1} of ${state.totalPages}.`;
   state.speech = new SpeechSynthesisUtterance(text);
   state.speech.rate = 0.86;
   state.speech.pitch = 0.92;
@@ -1239,12 +1686,26 @@ function handleKeyboardShortcuts(event) {
 }
 
 function scheduleReaderResize() {
-  if (dom.reader.hidden || !state.currentBook || !state.pdfDocument) {
+  if (dom.reader.hidden || !state.currentBook) {
     return;
   }
 
   clearTimeout(state.resizeTimer);
   state.resizeTimer = setTimeout(async () => {
+    if (state.currentFormat === "epub") {
+      try {
+        state.epubRendition?.resize("100%", "100%");
+        updateReaderStatus();
+      } catch (error) {
+        console.warn("EPUB resize failed", error);
+      }
+      return;
+    }
+
+    if (!state.pdfDocument) {
+      return;
+    }
+
     const startIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
     setReaderLoading("Refitting page...");
     try {
@@ -1255,6 +1716,63 @@ function scheduleReaderResize() {
       setReaderLoading("Could not refit this page.", true);
     }
   }, 260);
+}
+
+function handleReaderTouchStart(event) {
+  const point = event.changedTouches?.[0];
+  if (!point || !dom.readerTutorial.hidden) {
+    return;
+  }
+
+  state.touchStart = {
+    x: point.clientX,
+    y: point.clientY,
+    time: Date.now(),
+    pointerType: "touch"
+  };
+}
+
+function handleReaderTouchEnd(event) {
+  const point = event.changedTouches?.[0];
+  handleReaderGestureEnd(point);
+}
+
+function handleReaderPointerDown(event) {
+  if (event.pointerType === "touch" || !dom.readerTutorial.hidden) {
+    return;
+  }
+
+  state.touchStart = {
+    x: event.clientX,
+    y: event.clientY,
+    time: Date.now(),
+    pointerType: event.pointerType || "mouse"
+  };
+}
+
+function handleReaderPointerUp(event) {
+  if (event.pointerType === "touch") {
+    return;
+  }
+  handleReaderGestureEnd(event);
+}
+
+function handleReaderGestureEnd(point) {
+  if (!point || !state.touchStart || dom.reader.hidden) {
+    state.touchStart = null;
+    return;
+  }
+
+  const dx = point.clientX - state.touchStart.x;
+  const dy = point.clientY - state.touchStart.y;
+  const elapsed = Date.now() - state.touchStart.time;
+  state.touchStart = null;
+
+  if (Math.abs(dx) < 46 || Math.abs(dx) < Math.abs(dy) * 1.2 || elapsed > 1600) {
+    return;
+  }
+
+  flipRelative(dx < 0 ? 1 : -1);
 }
 
 function wakeReaderControls() {
@@ -1289,6 +1807,31 @@ function applyTheme(theme) {
     "content",
     nextTheme === "dark" ? "#151514" : "#f4efe5"
   );
+  applyEpubTheme();
+}
+
+function applyEpubTheme() {
+  if (!state.epubRendition?.themes) {
+    return;
+  }
+
+  const isDark = document.documentElement.dataset.theme === "dark";
+  state.epubRendition.themes.default({
+    body: {
+      background: "transparent !important",
+      color: `${isDark ? "#f4efe5" : "#24211b"} !important`,
+      "font-family": "Georgia, serif",
+      "line-height": "1.55",
+      "font-size": "112%",
+      margin: "0 !important"
+    },
+    p: {
+      "line-height": "1.55"
+    },
+    a: {
+      color: `${isDark ? "#f0c99b" : "#7a4f2b"} !important`
+    }
+  });
 }
 
 function readRecentIds() {
@@ -1323,6 +1866,8 @@ function saveCurrentProgress() {
   progress[state.currentBook.id] = {
     page: state.currentPageIndex + 1,
     totalPages: state.totalPages,
+    format: state.currentFormat,
+    cfi: state.epubLocation?.start?.cfi || "",
     updatedAt: Date.now()
   };
   localStorage.setItem(STORAGE_KEYS.progress, JSON.stringify(progress));

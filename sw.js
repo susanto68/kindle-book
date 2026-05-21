@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v15-premium';
+const CACHE_NAME = 'kindle-reader-v16-epub-first';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ const urlsToCache = [
   '/vendor/pdf.min.js',
   '/vendor/pdf.worker.min.js',
   '/vendor/page-flip.browser.min.js',
+  '/vendor/jszip.min.js',
+  '/vendor/epub.min.js',
   '/books.json',
   '/favicon.svg'
 ];
