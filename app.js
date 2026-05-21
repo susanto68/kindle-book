@@ -9,7 +9,7 @@ const STORAGE_KEYS = {
   progress: "kindleReader.progressByBook",
   tutorialSeen: "kindleReader.readerTutorialSeen",
   soundMuted: "kindleReader.soundMuted",
-  gutenbergCache: "kindleReader.gutendexCache"
+  gutenbergCache: "kindleReader.gutendexCache.v2"
 };
 
 const RENDER_RADIUS = 1;
@@ -159,6 +159,7 @@ const state = {
   resizeTimer: null,
   loadingTimer: null,
   loadingStartedAt: 0,
+  loadingStageStartedAt: 0,
   loadingEstimateMs: 4500,
   loadingProgress: 0,
   loadingStage: "",
@@ -615,13 +616,13 @@ function normalizeGutenbergBook(item, category) {
   const epubUrl = findFormatUrl(formats, "application/epub+zip");
   const htmlUrl = findFormatUrl(formats, "text/html");
   const textUrl = findFormatUrl(formats, "text/plain");
-  const file = epubUrl || htmlUrl || textUrl;
+  const file = textUrl || htmlUrl || epubUrl;
 
   if (!file || item.copyright === true) {
     return null;
   }
 
-  const format = epubUrl ? "epub" : (htmlUrl ? "html" : "text");
+  const format = textUrl ? "text" : (htmlUrl ? "html" : "epub");
   const author = Array.isArray(item.authors) && item.authors.length
     ? item.authors.map((person) => person.name).join(", ")
     : "Project Gutenberg";
@@ -634,6 +635,9 @@ function normalizeGutenbergBook(item, category) {
     title: item.title || "Untitled Gutenberg Book",
     file,
     format,
+    epubFile: epubUrl,
+    htmlFile: htmlUrl,
+    textFile: textUrl,
     cover: findFormatUrl(formats, "image/jpeg"),
     author,
     year: "Public domain",
@@ -716,7 +720,9 @@ function rememberGutendexCache(category) {
         languages: ["en"],
         copyright: false,
         formats: {
-          [book.format === "epub" ? "application/epub+zip" : book.format === "html" ? "text/html" : "text/plain"]: book.file,
+          ...(book.epubFile ? { "application/epub+zip": book.epubFile } : {}),
+          ...(book.htmlFile ? { "text/html": book.htmlFile } : {}),
+          ...(book.textFile || book.format === "text" ? { "text/plain": book.textFile || book.file } : {}),
           ...(book.cover ? { "image/jpeg": book.cover } : {})
         },
         download_count: book.downloads || 0
@@ -993,6 +999,91 @@ function scheduleIdleTask(callback, timeout = 900) {
     return;
   }
   setTimeout(callback, 80);
+}
+
+function withTimeout(promise, timeoutMs, message) {
+  let timeoutId;
+  const timeout = new Promise((_, reject) => {
+    timeoutId = setTimeout(() => reject(new Error(message)), timeoutMs);
+  });
+
+  return Promise.race([promise, timeout]).finally(() => clearTimeout(timeoutId));
+}
+
+async function fetchTextResource(url, timeoutMs = 9000) {
+  const controller = "AbortController" in window ? new AbortController() : null;
+  const timeoutId = controller ? setTimeout(() => controller.abort(), timeoutMs) : null;
+
+  try {
+    const response = await fetch(toAssetUrl(url), {
+      cache: "default",
+      signal: controller?.signal
+    });
+    if (!response.ok) {
+      throw new Error(`Text reader request failed with ${response.status}`);
+    }
+    return await response.text();
+  } finally {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  }
+}
+
+async function fetchTextPreview(url, previewChars, timeoutMs = 8000) {
+  const controller = "AbortController" in window ? new AbortController() : null;
+  const timeoutId = controller ? setTimeout(() => controller.abort(), timeoutMs) : null;
+  const response = await fetch(toAssetUrl(url), {
+    cache: "default",
+    signal: controller?.signal
+  });
+
+  if (!response.ok) {
+    throw new Error(`Text preview request failed with ${response.status}`);
+  }
+
+  if (!response.body || !window.TextDecoder) {
+    const text = await response.text();
+    if (timeoutId) clearTimeout(timeoutId);
+    return {
+      previewText: text,
+      fullTextPromise: Promise.resolve(text)
+    };
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder("utf-8");
+  let text = "";
+  let done = false;
+
+  while (!done && text.length < previewChars) {
+    const chunk = await reader.read();
+    done = chunk.done;
+    if (chunk.value) {
+      text += decoder.decode(chunk.value, { stream: !done });
+    }
+  }
+
+  if (timeoutId) {
+    clearTimeout(timeoutId);
+  }
+
+  const fullTextPromise = (async () => {
+    while (!done) {
+      const chunk = await reader.read();
+      done = chunk.done;
+      if (chunk.value) {
+        text += decoder.decode(chunk.value, { stream: !done });
+      }
+    }
+    text += decoder.decode();
+    return text;
+  })();
+
+  return {
+    previewText: text || "Loading readable text...",
+    fullTextPromise
+  };
 }
 
 function openCategory(category) {
@@ -1327,22 +1418,34 @@ async function openPdfBook(book) {
   dom.epubReader.hidden = true;
   ensureFlipbookElement();
   dom.flipbook.hidden = false;
-  const loadingTask = pdfjsLib.getDocument({ url: toAssetUrl(book.file) });
+  const loadingTask = pdfjsLib.getDocument({
+    url: toAssetUrl(book.file),
+    disableAutoFetch: true,
+    disableStream: false,
+    rangeChunkSize: 65536
+  });
   loadingTask.onProgress = (progress) => {
     if (progress?.total) {
       const ratio = clamp(progress.loaded / progress.total, 0, 1);
-      setReaderLoading("Fetching Book...", false, { progress: 0.14 + ratio * 0.28, estimateMs: 5200 });
+      setReaderLoading("Fetching Book...", false, { progress: 0.14 + ratio * 0.22, estimateMs: 3600 });
     }
   };
   state.pdfDocument = await loadingTask.promise;
-  setReaderLoading("Preparing Reader...", false, { progress: 0.48, estimateMs: 3600 });
+  setReaderLoading("Preparing Reader...", false, { progress: 0.42, estimateMs: 1800 });
   await yieldToBrowser();
   state.totalPages = state.pdfDocument.numPages;
   await updatePdfPageRatio();
   state.currentPageIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
-  setReaderLoading("Loading First Page...", false, { progress: 0.68, estimateMs: 2200 });
+  state.pageElements = createPageElements(state.totalPages);
+  state.renderedPages.clear();
+  state.renderingPages.clear();
+  setReaderLoading("Loading First Page...", false, { progress: 0.72, estimateMs: 1800 });
   await yieldToBrowser();
-  await buildPageFlip(state.currentPageIndex);
+  await renderPdfPage(state.currentPageIndex);
+  showFastFirstPdfPage(state.currentPageIndex);
+  setReaderLoading("Optimizing Page Turn...", false, { progress: 0.9, estimateMs: 900 });
+  await yieldToBrowser();
+  await buildPageFlip(state.currentPageIndex, state.pageElements);
 }
 
 async function openEpubBook(book) {
@@ -1391,7 +1494,7 @@ async function openEpubBook(book) {
   state.totalPages = 100;
   state.currentPageIndex = initialIndex > 0 ? clamp(initialIndex, 0, 99) : 0;
   setReaderLoading("Loading First Pages...", false, { progress: 0.68, estimateMs: 2400 });
-  await state.epubRendition.display();
+  await withTimeout(state.epubRendition.display(), book.source === "gutendex" ? 9000 : 22000, "EPUB first page took too long.");
   setReaderLoading("Optimizing Content...", false, { progress: 0.86, estimateMs: 1600 });
   generateEpubLocationsInBackground(initialIndex);
   updateReaderStatus();
@@ -1402,24 +1505,71 @@ async function openTextBook(book) {
   ensureFlipbookElement();
   dom.flipbook.hidden = false;
 
-  setReaderLoading("Fetching Book...", false, { progress: 0.18, estimateMs: 5200 });
-  const response = await fetch(toAssetUrl(book.file), { cache: "default" });
-  if (!response.ok) {
-    throw new Error(`Text reader request failed with ${response.status}`);
+  const readUrl = book.textFile || book.htmlFile || book.file;
+  setReaderLoading("Fetching Book...", false, { progress: 0.18, estimateMs: book.source === "gutendex" ? 3200 : 5200 });
+  state.currentFormat = readUrl === book.htmlFile ? "html" : "text";
+  document.body.classList.toggle("reader-text", true);
+  document.body.classList.toggle("reader-epub", false);
+
+  if (book.source === "gutendex" && state.currentFormat === "text") {
+    await openStreamingTextBook(book, readUrl);
+    return;
   }
 
-  setReaderLoading("Preparing Reader...", false, { progress: 0.42, estimateMs: 3600 });
-  const raw = await response.text();
+  const raw = await fetchTextResource(readUrl, book.source === "gutendex" ? 8500 : 18000);
+  setReaderLoading("Preparing Reader...", false, { progress: 0.52, estimateMs: 1400 });
   await yieldToBrowser();
   const readableText = state.currentFormat === "html" ? extractReadableText(raw) : raw;
-  setReaderLoading("Optimizing Content...", false, { progress: 0.62, estimateMs: 2400 });
+  setReaderLoading("Optimizing Content...", false, { progress: 0.72, estimateMs: 1200 });
   state.textPages = await paginateTextAsync(readableText, getTextPageLength());
   state.totalPages = Math.max(1, state.textPages.length);
   state.currentPageIndex = clamp(state.currentPageIndex, 0, state.totalPages - 1);
-  setReaderLoading("Loading First Pages...", false, { progress: 0.82, estimateMs: 1500 });
+  setReaderLoading("Loading First Page...", false, { progress: 0.88, estimateMs: 700 });
   await yieldToBrowser();
   state.pageElements = createTextPageElements(state.textPages, book);
   await buildPageFlip(state.currentPageIndex, state.pageElements);
+}
+
+async function openStreamingTextBook(book, readUrl) {
+  const pageLength = getTextPageLength();
+  setReaderLoading("Loading First Pages...", false, { progress: 0.42, estimateMs: 1600 });
+  const { previewText, fullTextPromise } = await fetchTextPreview(readUrl, pageLength * 4, 7500);
+
+  setReaderLoading("Preparing First Pages...", false, { progress: 0.72, estimateMs: 900 });
+  await yieldToBrowser();
+  state.textPages = await paginateTextAsync(previewText, pageLength);
+  state.totalPages = Math.max(1, state.textPages.length);
+  state.currentPageIndex = clamp(state.currentPageIndex, 0, state.totalPages - 1);
+  state.pageElements = createTextPageElements(state.textPages, book);
+  await buildPageFlip(state.currentPageIndex, state.pageElements);
+  loadRemainingTextPages(fullTextPromise, book, pageLength);
+}
+
+function loadRemainingTextPages(fullTextPromise, book, pageLength) {
+  fullTextPromise
+    .then((fullText) => {
+      scheduleIdleTask(async () => {
+        if (state.currentBook?.id !== book.id || state.currentFormat !== "text") {
+          return;
+        }
+
+        const fullPages = await paginateTextAsync(fullText, pageLength);
+        if (fullPages.length <= state.textPages.length) {
+          return;
+        }
+
+        const currentIndex = clamp(state.currentPageIndex, 0, fullPages.length - 1);
+        state.textPages = fullPages;
+        state.totalPages = fullPages.length;
+        await buildPageFlip(currentIndex, createTextPageElements(state.textPages, book));
+        state.currentPageIndex = currentIndex;
+        updateReaderStatus();
+        saveCurrentProgress();
+      }, 1500);
+    })
+    .catch((error) => {
+      console.info("Remaining Gutenberg text will load later.", error);
+    });
 }
 
 function extractReadableText(html) {
@@ -1564,7 +1714,9 @@ async function buildPageFlip(startIndex = 0, providedPages = null) {
   destroyPageFlip();
   ensureFlipbookElement();
   state.pageElements = providedPages || createPageElements(state.totalPages);
-  state.renderedPages.clear();
+  if (!providedPages) {
+    state.renderedPages.clear();
+  }
   state.renderingPages.clear();
 
   state.pageElements.forEach((page) => dom.flipbook.appendChild(page));
@@ -1629,6 +1781,16 @@ function createPageElements(totalPages) {
   }
 
   return pages;
+}
+
+function showFastFirstPdfPage(pageIndex) {
+  const pageElement = state.pageElements[pageIndex];
+  if (!pageElement || !pageElement.isConnected) {
+    const size = getPageSize();
+    dom.flipbook.replaceChildren(pageElement);
+    dom.flipbook.style.width = `${size.width}px`;
+    dom.flipbook.style.height = `${size.height}px`;
+  }
 }
 
 function getPageSize() {
@@ -2091,9 +2253,9 @@ function closeBookModal() {
 
 function downloadBook(book) {
   const link = document.createElement("a");
-  const format = book.format || getBookFormat(book.file);
+  const format = book.epubFile ? "epub" : (book.format || getBookFormat(book.file));
   const extension = format === "epub" ? "epub" : format === "html" ? "html" : format === "text" ? "txt" : "pdf";
-  link.href = toAssetUrl(book.file);
+  link.href = toAssetUrl(book.epubFile || book.file);
   link.download = `${book.title}.${extension}`;
   document.body.appendChild(link);
   link.click();
@@ -2691,6 +2853,9 @@ function setReaderLoading(message, isError = false, options = {}) {
   if (!state.loadingStartedAt) {
     state.loadingStartedAt = Date.now();
   }
+  if (state.loadingStage !== message) {
+    state.loadingStageStartedAt = Date.now();
+  }
 
   state.loadingEstimateMs = options.estimateMs || state.loadingEstimateMs || 4500;
   state.loadingStage = message;
@@ -2711,6 +2876,7 @@ function clearReaderLoading() {
   dom.readerMessage.style.borderColor = "";
   dom.readerMessage.classList.remove("is-error", "is-loading");
   state.loadingStartedAt = 0;
+  state.loadingStageStartedAt = 0;
   state.loadingProgress = 0;
   state.loadingStage = "";
 }
@@ -2735,12 +2901,10 @@ function stopLoadingTimer() {
 }
 
 function renderLoadingMessage(message) {
-  const elapsed = Date.now() - (state.loadingStartedAt || Date.now());
+  const elapsed = Date.now() - (state.loadingStageStartedAt || state.loadingStartedAt || Date.now());
   const progress = clamp(state.loadingProgress || 0.08, 0.04, 1);
   const estimateMs = state.loadingEstimateMs || 4500;
-  const remainingMs = progress > 0.08
-    ? Math.max(0, elapsed * (1 - progress) / progress)
-    : Math.max(0, estimateMs - elapsed);
+  const remainingMs = Math.max(0, estimateMs - elapsed);
 
   const card = document.createElement("div");
   card.className = "reader-loading-card";
