@@ -1,1 +1,527 @@
-[]
+[
+  {
+    "class": "Gutenberg - Artificial Intelligence",
+    "books": [
+      {
+        "title": "The Fourth \"R\"",
+        "file": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.jpg",
+        "author": "Smith, George O. (George Oliver)",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18602,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:06.609Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Bhagavad Gita & Spiritual Wisdom",
+    "books": [
+      {
+        "title": "The Confessions of St. Augustine",
+        "file": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.jpg",
+        "author": "Augustine, of Hippo, Saint",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3296,
+        "subjects": [
+          "Augustine, of Hippo, Saint, 354-430",
+          "Bishops -- Algeria -- Hippo (Extinct city) -- Biography",
+          "Catholic Church -- Bishops -- Biography",
+          "Christian saints -- Algeria -- Hippo (Extinct city) -- Biography",
+          "Category: Biographies",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Christianity",
+          "Classical Antiquity",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:57.383Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Biology",
+    "books": [
+      {
+        "title": "Pharmacographia: A history of the principal drugs of vegetable origin, met with in Great Britain and British India",
+        "file": "books/Gutenberg/Biology/67691-pharmacographia-a-history-of-the-principal-drugs-of-vegetable-origin-met.epub",
+        "cover": "books/Gutenberg/Biology/67691-pharmacographia-a-history-of-the-principal-drugs-of-vegetable-origin-met.jpg",
+        "author": "Flückiger, Friedrich A. (Friedrich August), Hanbury, Daniel",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67691,
+        "subjects": [
+          "Botany, Medical",
+          "Materia medica, Vegetable",
+          "Materia medica, Vegetable -- Great Britain",
+          "Materia medica, Vegetable -- India",
+          "Category: Drugs/Alcohol/Pharmacology",
+          "Category: History - Other",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:27.152Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Career Guidance",
+    "books": [
+      {
+        "title": "General Washington's spies on Long Island and in New York",
+        "file": "books/Gutenberg/Career_Guidance/70129-general-washingtons-spies-on-long-island-and-in-new-york.epub",
+        "cover": "books/Gutenberg/Career_Guidance/70129-general-washingtons-spies-on-long-island-and-in-new-york.jpg",
+        "author": "Pennypacker, Morton",
+        "year": "Public domain",
+        "category": "Career Guidance",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70129,
+        "subjects": [
+          "Espionage -- New York (State) -- History -- 18th century",
+          "Long Island (N.Y.) -- History -- Revolution, 1775-1783",
+          "New York (N.Y.) -- History -- Revolution, 1775-1783",
+          "New York (State) -- History -- Revolution, 1775-1783 -- Secret service",
+          "Spies -- New York (State) -- History -- 18th century",
+          "United States -- History -- Revolution, 1775-1783 -- Secret service",
+          "Washington, George, 1732-1799 -- Career in espionage",
+          "Category: History - American",
+          "Category: History - Modern (1750+)",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:34.472Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Chemistry",
+    "books": [
+      {
+        "title": "An Elementary Study of Chemistry",
+        "file": "books/Gutenberg/Chemistry/20848-an-elementary-study-of-chemistry.epub",
+        "cover": "books/Gutenberg/Chemistry/20848-an-elementary-study-of-chemistry.jpg",
+        "author": "McPherson, William, Henderson, William Edwards",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20848,
+        "subjects": [
+          "Chemistry",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:23.323Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Children Books",
+    "books": [
+      {
+        "title": "Alice's Adventures in Wonderland",
+        "file": "books/Gutenberg/Children_Books/11-alices-adventures-in-wonderland.epub",
+        "cover": "books/Gutenberg/Children_Books/11-alices-adventures-in-wonderland.jpg",
+        "author": "Carroll, Lewis",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 11,
+        "subjects": [
+          "Alice (Fictitious character from Carroll) -- Juvenile fiction",
+          "Children's stories",
+          "Fantasy fiction",
+          "Imaginary places -- Juvenile fiction",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:26.730Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Civics",
+    "books": [
+      {
+        "title": "Americans by Choice",
+        "file": "books/Gutenberg/Civics/60576-americans-by-choice.epub",
+        "cover": "books/Gutenberg/Civics/60576-americans-by-choice.jpg",
+        "author": "Gavit, John Palmer",
+        "year": "Public domain",
+        "category": "Civics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60576,
+        "subjects": [
+          "Americanization",
+          "Civics",
+          "Immigrants -- United States",
+          "Naturalization -- United States",
+          "Noncitizens -- United States",
+          "Category: History - American",
+          "Category: Politics",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:49.824Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Computer Science",
+    "books": [
+      {
+        "title": "The Jargon File, Version 4.2.2, 20 Aug 2000",
+        "file": "books/Gutenberg/Computer_Science/3008-the-jargon-file-version-422-20-aug-2000.epub",
+        "cover": "books/Gutenberg/Computer_Science/3008-the-jargon-file-version-422-20-aug-2000.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3008,
+        "subjects": [
+          "Computers -- Humor",
+          "Computers -- Slang -- Dictionaries",
+          "Electronic data processing -- Terminology -- Humor",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Journalism/Media/Writing",
+          "Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:01.675Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - General Knowledge",
+    "books": [
+      {
+        "title": "The Critique of Pure Reason",
+        "file": "books/Gutenberg/General_Knowledge/4280-the-critique-of-pure-reason.epub",
+        "cover": "books/Gutenberg/General_Knowledge/4280-the-critique-of-pure-reason.jpg",
+        "author": "Kant, Immanuel",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4280,
+        "subjects": [
+          "Causation",
+          "Knowledge, Theory of",
+          "Philosophy, German",
+          "Reason",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:19.645Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Geography",
+    "books": [
+      {
+        "title": "The 2003 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27558,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:44.646Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - History",
+    "books": [
+      {
+        "title": "The City of God, Volume I",
+        "file": "books/Gutenberg/History/45304-the-city-of-god-volume-i.epub",
+        "cover": "books/Gutenberg/History/45304-the-city-of-god-volume-i.jpg",
+        "author": "Augustine, of Hippo, Saint",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45304,
+        "subjects": [
+          "Apologetics -- Early works to 1800",
+          "Kingdom of God -- Early works to 1800",
+          "Category: History - Ancient",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:35.986Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Interview Preparation",
+    "books": [
+      {
+        "title": "Slave Narratives: A Folk History of Slavery in the United States from Interviews with Former Slaves, Volume XVI, Texas Narratives, Part 1",
+        "file": "books/Gutenberg/Interview_Preparation/30576-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.epub",
+        "cover": "books/Gutenberg/Interview_Preparation/30576-slave-narratives-a-folk-history-of-slavery-in-the-united-states-from-int.jpg",
+        "author": "United States. Work Projects Administration",
+        "year": "Public domain",
+        "category": "Interview Preparation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30576,
+        "subjects": [
+          "African Americans -- Texas -- History -- Sources",
+          "African Americans -- Texas -- Interviews",
+          "Enslaved persons -- Texas -- Biography",
+          "Texas -- Biography",
+          "Category: Biographies",
+          "Category: History - American",
+          "Slavery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:13.853Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Literature",
+    "books": [
+      {
+        "title": "Frankenstein; or, the modern prometheus",
+        "file": "books/Gutenberg/Literature/84-frankenstein-or-the-modern-prometheus.epub",
+        "cover": "books/Gutenberg/Literature/84-frankenstein-or-the-modern-prometheus.jpg",
+        "author": "Shelley, Mary Wollstonecraft",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 84,
+        "subjects": [
+          "Frankenstein's monster (Fictitious character) -- Fiction",
+          "Frankenstein, Victor (Fictitious character) -- Fiction",
+          "Gothic fiction",
+          "Horror tales",
+          "Monsters -- Fiction",
+          "Science fiction",
+          "Scientists -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Gothic Fiction",
+          "Movie Books",
+          "Precursors of Science Fiction",
+          "Science Fiction by Women"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:08:43.059Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Mathematics",
+    "books": [
+      {
+        "title": "On Growth and Form",
+        "file": "books/Gutenberg/Mathematics/55264-on-growth-and-form.epub",
+        "cover": "books/Gutenberg/Mathematics/55264-on-growth-and-form.jpg",
+        "author": "Thompson, D'Arcy Wentworth",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55264,
+        "subjects": [
+          "Growth",
+          "Morphology (Animals)",
+          "Category: Mathematics",
+          "Category: Science - Biology",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:13.454Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Motivation",
+    "books": [
+      {
+        "title": "Sense and Sensibility",
+        "file": "books/Gutenberg/Motivation/161-sense-and-sensibility.epub",
+        "cover": "books/Gutenberg/Motivation/161-sense-and-sensibility.jpg",
+        "author": "Austen, Jane",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 161,
+        "subjects": [
+          "Domestic fiction",
+          "England -- Fiction",
+          "England -- Social life and customs -- 19th century -- Fiction",
+          "Gentry -- England -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Love stories",
+          "Mate selection -- Fiction",
+          "Regency fiction",
+          "Sisters -- Fiction",
+          "Social classes -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:53.798Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Philosophy",
+    "books": [
+      {
+        "title": "The origin and development of the moral ideas",
+        "file": "books/Gutenberg/Philosophy/52106-the-origin-and-development-of-the-moral-ideas.epub",
+        "cover": "books/Gutenberg/Philosophy/52106-the-origin-and-development-of-the-moral-ideas.jpg",
+        "author": "Westermarck, Edward",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52106,
+        "subjects": [
+          "Ethics",
+          "Ethics -- History",
+          "Prehistoric peoples",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:02.008Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Physics",
+    "books": [
+      {
+        "title": "History of the inductive sciences, from the earliest to the present time",
+        "file": "books/Gutenberg/Physics/68693-history-of-the-inductive-sciences-from-the-earliest-to-the-present-time.epub",
+        "cover": "books/Gutenberg/Physics/68693-history-of-the-inductive-sciences-from-the-earliest-to-the-present-time.jpg",
+        "author": "Whewell, William",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68693,
+        "subjects": [
+          "Science -- History",
+          "Category: History - Other",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:09:17.186Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Programming",
+    "books": [
+      {
+        "title": "IBM 1401 Programming Systems",
+        "file": "books/Gutenberg/Programming/27468-ibm-1401-programming-systems.epub",
+        "cover": "books/Gutenberg/Programming/27468-ibm-1401-programming-systems.jpg",
+        "author": "Anonymous",
+        "year": "Public domain",
+        "category": "Programming",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27468,
+        "subjects": [
+          "IBM 1401 (Computer) -- Programming",
+          "Category: Business/Management",
+          "Category: Engineering & Technology",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:10:29.672Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Science",
+    "books": [
+      {
+        "title": "The strange case of Dr. Jekyll and Mr. Hyde",
+        "file": "books/Gutenberg/Science/43-the-strange-case-of-dr-jekyll-and-mr-hyde.epub",
+        "cover": "books/Gutenberg/Science/43-the-strange-case-of-dr-jekyll-and-mr-hyde.jpg",
+        "author": "Stevenson, Robert Louis",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43,
+        "subjects": [
+          "Horror tales",
+          "London (England) -- Fiction",
+          "Multiple personality -- Fiction",
+          "Physicians -- Fiction",
+          "Psychological fiction",
+          "Science fiction",
+          "Self-experimentation in medicine -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Horror",
+          "Movie Books",
+          "Precursors of Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-21T13:08:57.705Z"
+      }
+    ]
+  }
+]
