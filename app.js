@@ -11,9 +11,10 @@ const STORAGE_KEYS = {
   soundMuted: "kindleReader.soundMuted"
 };
 
-const RENDER_RADIUS = 2;
+const RENDER_RADIUS = 1;
 const MAX_COVER_CACHE = 80;
 const SUPPORTED_BOOK_FORMATS = [".epub", ".pdf"];
+const DISCOVERY_FOLDERS = ["C++ Books", "ShreeMadBhagawadGeeta"];
 const FORMAT_PRIORITY = {
   epub: 2,
   pdf: 1
@@ -29,6 +30,9 @@ const dom = {
   flipbook: document.getElementById("flipbook"),
   readerMessage: document.getElementById("readerMessage"),
   readerControls: document.getElementById("readerControls"),
+  pageTurnHint: document.getElementById("pageTurnHint"),
+  cornerPrevBtn: document.getElementById("cornerPrevPage"),
+  cornerNextBtn: document.getElementById("cornerNextPage"),
   bookTitle: document.getElementById("bookTitle"),
   bookGrid: document.getElementById("bookGrid"),
   continueSection: document.getElementById("continueSection"),
@@ -90,6 +94,8 @@ const state = {
   epubLocation: null,
   epubToc: [],
   epubTotalLocations: 0,
+  epubLocationsReady: false,
+  epubLocationsTask: null,
   pageFlip: null,
   pageElements: [],
   pageRatio: 0.72,
@@ -101,6 +107,7 @@ const state = {
   speech: null,
   idleTimer: null,
   resizeTimer: null,
+  lastCornerFlipAt: 0,
   coverObserver: null,
   coverQueue: [],
   queuedCoverIds: new Set(),
@@ -197,16 +204,20 @@ async function mergeDiscoveredPdfFolders(configuredLibrary) {
 }
 
 async function discoverTopLevelBookFolders(configuredLibrary) {
-  const scanFolder = "C++ Books";
+  const groups = [];
 
-  try {
-    const folderUrl = new URL(`books/${encodeURIComponent(scanFolder)}/`, window.location.href);
-    const bookFiles = preferBestFormats(await collectBookFiles(folderUrl.href, 0, 5));
-    return createDiscoveredGroup(scanFolder, bookFiles);
-  } catch (error) {
-    console.info("Directory PDF folder discovery is unavailable; trying GitHub API fallback.", error);
-    return discoverGithubBookFolders(scanFolder);
+  for (const scanFolder of DISCOVERY_FOLDERS) {
+    try {
+      const folderUrl = new URL(`books/${encodeURIComponent(scanFolder)}/`, window.location.href);
+      const bookFiles = preferBestFormats(await collectBookFiles(folderUrl.href, 0, 5));
+      groups.push(...createDiscoveredGroup(scanFolder, bookFiles));
+    } catch (error) {
+      console.info(`Directory book discovery is unavailable for ${scanFolder}; trying GitHub API fallback.`, error);
+      groups.push(...await discoverGithubBookFolders(scanFolder));
+    }
   }
+
+  return groups;
 }
 
 async function discoverGithubBookFolders(scanFolder) {
@@ -224,15 +235,18 @@ function createDiscoveredGroup(folderName, bookFiles) {
     return [];
   }
 
+  const isGeetaFolder = normalizeText(folderName).includes("shreemadbhagawadgeeta");
+  const className = cleanFolderName(folderName);
   return [{
-    class: cleanFolderName(folderName),
+    class: className,
     books: bookFiles.map((file) => ({
-      title: titleFromFilePath(file.path),
+      title: isGeetaFolder ? "Shreemad Bhagawad Geeta" : titleFromFilePath(file.path),
       file: file.path,
       format: getBookFormat(file.path),
-      cover: file.cover || findLikelyCoverPath(file.path),
-      author: cleanFolderName(folderName),
-      year: ""
+      cover: isGeetaFolder ? "books/ShreeMadBhagawadGeeta/bg_krishnaji_portrait_chariot.webp" : (file.cover || findLikelyCoverPath(file.path)),
+      author: isGeetaFolder ? "Spiritual Learning" : className,
+      year: "",
+      category: isGeetaFolder ? "Bhagavad Gita" : undefined
     }))
   }];
 }
@@ -331,6 +345,7 @@ function urlToBookPath(fileUrl) {
 
 function cleanFolderName(name) {
   return decodeURIComponent(String(name || "Books"))
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(/[-_]+/g, " ")
     .replace(/\s+/g, " ")
     .trim()
@@ -343,6 +358,8 @@ function titleFromFilePath(filePath) {
     .replace(/\.(pdf|epub)$/i, "")
     .replace(/\s*\(\s*PDFDrive\s*\)\s*/gi, "")
     .replace(/\s*\(PDF\)\s*/gi, "")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/bhagawad\s*geeta/gi, "Bhagawad Geeta")
     .replace(/[_-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -359,6 +376,10 @@ function getBookFormat(filePath) {
 
 function getFormatPriority(book) {
   return FORMAT_PRIORITY[book.format || getBookFormat(book.file)] || 0;
+}
+
+function normalizeText(value) {
+  return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
 }
 
 function createBookKey(book) {
@@ -392,7 +413,7 @@ function findLikelyCoverPath(filePath) {
 function inferCategory(book) {
   const text = `${book.title || ""} ${book.file || ""} ${book.className || ""}`.toLowerCase();
 
-  if (text.includes("gita") || text.includes("bhagavad")) return "Bhagavad Gita";
+  if (text.includes("gita") || text.includes("geeta") || text.includes("bhagavad") || text.includes("bhagawad") || text.includes("spiritual") || text.includes("krishna")) return "Bhagavad Gita";
   if (text.includes("motivation") || text.includes("success") || text.includes("mindset")) return "Motivation";
   if (text.includes("ai") || text.includes("technology") || text.includes("machine learning")) return "AI & Technology";
   if (text.includes("class ") || text.includes("syllabus") || text.includes("chapter") || text.includes("notes")) return "School Notes";
@@ -413,6 +434,11 @@ function setupEventListeners() {
   dom.backBtn.addEventListener("click", closeReader);
   dom.prevBtn.addEventListener("click", () => flipRelative(-1));
   dom.nextBtn.addEventListener("click", () => flipRelative(1));
+  setupCornerArrow(dom.cornerPrevBtn, -1);
+  setupCornerArrow(dom.cornerNextBtn, 1);
+  dom.pageTurnHint.addEventListener("click", () => {
+    flipRelative(dom.pageTurnHint.dataset.direction === "prev" ? -1 : 1);
+  });
   dom.playPauseBtn.addEventListener("click", toggleTextToSpeech);
   dom.fullscreenBtn.addEventListener("click", toggleFullscreen);
   dom.soundBtn.addEventListener("click", toggleSound);
@@ -443,6 +469,14 @@ function setupEventListeners() {
 
   ["mousemove", "touchstart", "pointerdown", "keydown"].forEach((eventName) => {
     document.addEventListener(eventName, wakeReaderControls, { passive: true });
+  });
+}
+
+function setupCornerArrow(button, direction) {
+  button.addEventListener("pointerdown", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    flipFromCornerArrow(direction);
   });
 }
 
@@ -802,6 +836,8 @@ async function openBook(bookId, pageNumber = 1) {
   dom.headerEyebrow.textContent = book.className;
   state.currentBook = book;
   state.currentFormat = book.format || getBookFormat(book.file);
+  document.body.classList.toggle("reader-pdf", state.currentFormat === "pdf");
+  document.body.classList.toggle("reader-epub", state.currentFormat === "epub");
   updateRecent(book.id);
 
   try {
@@ -863,15 +899,6 @@ async function openEpubBook(book) {
     state.epubToc = [];
   });
 
-  try {
-    await state.epubBook.ready;
-    await state.epubBook.locations.generate(900);
-    state.epubTotalLocations = state.epubBook.locations.length() || 1;
-  } catch (error) {
-    console.info("EPUB location generation skipped.", error);
-    state.epubTotalLocations = 1;
-  }
-
   state.epubRendition.on("relocated", (location) => {
     state.epubLocation = location;
     state.currentPageIndex = getEpubLocationIndex(location);
@@ -882,11 +909,54 @@ async function openEpubBook(book) {
   state.epubRendition.on("rendered", () => {
     updateReaderStatus();
   });
-  state.totalPages = Math.max(1, state.epubTotalLocations);
-  state.currentPageIndex = clamp(initialIndex, 0, state.totalPages - 1);
-  const initialTarget = getEpubCfiForIndex(state.currentPageIndex);
-  await state.epubRendition.display(initialTarget || undefined);
+
+  state.epubLocationsReady = false;
+  state.epubTotalLocations = 100;
+  state.totalPages = 100;
+  state.currentPageIndex = initialIndex > 0 ? clamp(initialIndex, 0, 99) : 0;
+  await state.epubRendition.display();
+  generateEpubLocationsInBackground(initialIndex);
   updateReaderStatus();
+}
+
+function generateEpubLocationsInBackground(preferredIndex = 0) {
+  const epubBook = state.epubBook;
+  const epubRendition = state.epubRendition;
+  const bookId = state.currentBook?.id;
+
+  state.epubLocationsTask = (async () => {
+    try {
+      await epubBook.ready;
+      await epubBook.locations.generate(520);
+
+      if (state.epubBook !== epubBook || state.epubRendition !== epubRendition || state.currentBook?.id !== bookId) {
+        return;
+      }
+
+      state.epubLocationsReady = true;
+      state.epubTotalLocations = Math.max(1, epubBook.locations.length() || 1);
+      state.totalPages = state.epubTotalLocations;
+
+      if (preferredIndex > 0) {
+        const targetCfi = getEpubCfiForIndex(preferredIndex);
+        if (targetCfi) {
+          await epubRendition.display(targetCfi);
+        }
+      }
+
+      state.currentPageIndex = getEpubLocationIndex(state.epubLocation);
+      updateReaderStatus();
+      saveCurrentProgress();
+    } catch (error) {
+      console.info("EPUB locations will remain approximate for this book.", error);
+      if (state.epubBook === epubBook) {
+        state.epubLocationsReady = false;
+        state.epubTotalLocations = Math.max(1, state.epubTotalLocations || 100);
+        state.totalPages = state.epubTotalLocations;
+        updateReaderStatus();
+      }
+    }
+  })();
 }
 
 async function buildPageFlip(startIndex = 0) {
@@ -934,7 +1004,8 @@ async function buildPageFlip(startIndex = 0) {
   state.pageFlip.on("changeState", wakeReaderControls);
   state.pageFlip.turnToPage(startIndex);
   updateReaderStatus();
-  await renderVisiblePages(startIndex);
+  await renderPdfPage(startIndex);
+  renderVisiblePages(startIndex);
 }
 
 function createPageElements(totalPages) {
@@ -958,8 +1029,10 @@ function createPageElements(totalPages) {
 function getPageSize() {
   const isReading = document.body.classList.contains("reader-open");
   const headerHeight = isReading ? 0 : (dom.appHeader.getBoundingClientRect().height || 70);
-  const availableWidth = Math.max(260, window.innerWidth - 8);
-  const availableHeight = Math.max(320, window.innerHeight - headerHeight - 8);
+  const isMobilePdf = isReading && state.currentFormat === "pdf" && window.innerWidth <= 760;
+  const edgePadding = isMobilePdf ? 0 : 8;
+  const availableWidth = Math.max(260, window.innerWidth - edgePadding);
+  const availableHeight = Math.max(320, window.innerHeight - headerHeight - edgePadding);
   const ratio = state.pageRatio || 0.72;
 
   let height = Math.min(availableHeight, 1240);
@@ -1103,6 +1176,44 @@ async function flipRelative(direction) {
   }
 }
 
+async function flipFromCornerArrow(direction) {
+  if (!state.currentBook) {
+    return;
+  }
+
+  const now = Date.now();
+  if (now - state.lastCornerFlipAt < 260) {
+    return;
+  }
+  state.lastCornerFlipAt = now;
+
+  if (state.currentFormat === "epub") {
+    await flipRelative(direction);
+    return;
+  }
+
+  const targetIndex = clamp(state.currentPageIndex + direction, 0, Math.max(0, state.totalPages - 1));
+  if (targetIndex === state.currentPageIndex) {
+    return;
+  }
+
+  markReaderInteracted();
+  wakeReaderControls();
+  playPageSound();
+  animatePageTurn(direction);
+  state.currentPageIndex = targetIndex;
+  await renderVisiblePages(targetIndex);
+
+  if (state.pageFlip) {
+    state.pageFlip.turnToPage(targetIndex);
+  }
+
+  updateReaderStatus();
+  saveCurrentProgress();
+}
+
+window.flipFromCornerArrow = flipFromCornerArrow;
+
 function getEventPageIndex(event) {
   if (typeof event?.data === "number") {
     return event.data;
@@ -1152,7 +1263,7 @@ function updateReaderStatus() {
   const current = state.currentPageIndex + 1;
   const total = Math.max(1, state.totalPages);
   dom.pageInfo.textContent = state.currentFormat === "epub"
-    ? `Loc ${current} of ${total}`
+    ? `${state.epubLocationsReady ? "Loc" : "Loading"} ${current} of ${total}`
     : `Page ${current} of ${total}`;
   dom.prevBtn.disabled = state.currentPageIndex <= 0;
   dom.nextBtn.disabled = state.currentPageIndex >= total - 1;
@@ -1162,6 +1273,27 @@ function updateReaderStatus() {
     ? `Enter a reading location from 1 to ${total}.`
     : `Enter a page from 1 to ${total}.`;
   dom.goToHint.classList.remove("error");
+  updatePageTurnHint(current, total);
+}
+
+function updatePageTurnHint(current, total) {
+  if (!dom.pageTurnHint) {
+    return;
+  }
+
+  const isLastPage = total > 1 && current >= total;
+  dom.pageTurnHint.hidden = total <= 1;
+  dom.pageTurnHint.dataset.direction = isLastPage ? "prev" : "next";
+  dom.pageTurnHint.querySelector(".hint-arrow").textContent = isLastPage ? "‹" : "›";
+  dom.pageTurnHint.querySelector(".hint-text").textContent = isLastPage ? "Swipe back" : "Swipe or tap corner";
+
+  const hasMultiplePages = total > 1;
+  dom.cornerPrevBtn.hidden = !hasMultiplePages;
+  dom.cornerNextBtn.hidden = !hasMultiplePages;
+  dom.cornerPrevBtn.disabled = current <= 1;
+  dom.cornerNextBtn.disabled = current >= total;
+  dom.cornerPrevBtn.classList.toggle("is-disabled", current <= 1);
+  dom.cornerNextBtn.classList.toggle("is-disabled", current >= total);
 }
 
 function animatePageTurn(direction) {
@@ -1428,7 +1560,15 @@ async function handleGoToSubmit(event) {
   if (state.currentFormat === "epub") {
     const cfi = getEpubCfiForIndex(pageIndex);
     if (state.epubRendition) {
-      await state.epubRendition.display(cfi || undefined);
+      if (cfi) {
+        await state.epubRendition.display(cfi);
+      } else if (state.epubBook?.locations && typeof state.epubBook.locations.cfiFromPercentage === "function") {
+        const percentage = pageIndex / Math.max(1, state.totalPages - 1);
+        const percentageCfi = state.epubBook.locations.cfiFromPercentage(percentage);
+        await state.epubRendition.display(percentageCfi || undefined);
+      } else {
+        await state.epubRendition.display();
+      }
     }
     updateReaderStatus();
     saveCurrentProgress();
@@ -1461,11 +1601,11 @@ async function closeReader() {
     hideReaderTutorial();
   }
   await cleanupReader();
-  document.body.classList.remove("reader-open");
+  document.body.classList.remove("reader-open", "reader-pdf", "reader-epub");
   dom.reader.hidden = true;
   dom.library.hidden = false;
-  dom.bookTitle.textContent = "My Books";
-  dom.headerEyebrow.textContent = "Kindle Library";
+  dom.bookTitle.textContent = "Read • Learn • Evolve";
+  dom.headerEyebrow.textContent = "SIR GANGULY DIGITAL LIBRARY";
   dom.readerMessage.hidden = true;
   state.currentBook = null;
   dom.continueSection.hidden = true;
@@ -1510,6 +1650,8 @@ async function cleanupReader(options = {}) {
   state.epubLocation = null;
   state.epubToc = [];
   state.epubTotalLocations = 0;
+  state.epubLocationsReady = false;
+  state.epubLocationsTask = null;
   dom.epubReader.replaceChildren();
   dom.epubReader.hidden = true;
   if (!options.keepCurrentBook) {

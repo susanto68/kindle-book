@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v16-epub-first';
+const CACHE_NAME = 'kindle-reader-v26-geeta-book';
 const urlsToCache = [
   '/',
   '/index.html',

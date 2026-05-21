@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Kindle Book Reader</title>
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=26">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
@@ -26,8 +26,9 @@
     <div class="header-content">
       <button id="backBtn" class="icon-btn header-back" type="button" aria-label="Back to library">Back</button>
       <div class="title-wrap">
-        <p id="headerEyebrow" class="eyebrow">Kindle Library</p>
-        <h1 id="bookTitle">My Books</h1>
+        <p id="headerEyebrow" class="eyebrow">SIR GANGULY DIGITAL LIBRARY</p>
+        <h1 id="bookTitle">Read &bull; Learn &bull; Evolve</h1>
+        <p class="header-tagline">Knowledge Without Limits</p>
       </div>
       <div class="header-actions">
         <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">Theme</button>
@@ -109,6 +110,19 @@
         <div id="flipbook" class="flipbook-container" aria-live="polite"></div>
         <div id="epubReader" class="epub-reader" aria-live="polite" hidden></div>
         <div id="readerMessage" class="reader-message" hidden></div>
+        <button id="pageTurnHint" class="page-turn-hint" type="button" aria-label="Turn page">
+          <span class="corner-curl" aria-hidden="true"></span>
+          <span class="hint-arrow" aria-hidden="true">›</span>
+          <span class="hint-text">Swipe or tap corner</span>
+        </button>
+        <button id="cornerPrevPage" class="corner-page-btn corner-page-btn-left" type="button" aria-label="Turn to previous page" onpointerdown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onmousedown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" ontouchstart="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onclick="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)">
+          <span class="corner-page-fold" aria-hidden="true"></span>
+          <span class="corner-page-arrow" aria-hidden="true">&lsaquo;</span>
+        </button>
+        <button id="cornerNextPage" class="corner-page-btn corner-page-btn-right" type="button" aria-label="Turn to next page" onpointerdown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" onmousedown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" ontouchstart="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" onclick="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)">
+          <span class="corner-page-fold" aria-hidden="true"></span>
+          <span class="corner-page-arrow" aria-hidden="true">&rsaquo;</span>
+        </button>
         <div id="readerTutorial" class="reader-tutorial" hidden>
           <div class="tutorial-card">
             <div class="tutorial-pages" aria-hidden="true">
@@ -180,6 +194,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=16"></script>
+  <script src="app.js?v=26"></script>
 </body>
 </html>
