@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v33-gutenberg-streaming-preview';
+const CACHE_NAME = 'kindle-reader-v34-gutenberg-fallback-reader';
 const urlsToCache = [
   '/',
   '/index.html',

@@ -1511,8 +1511,8 @@ async function openTextBook(book) {
   document.body.classList.toggle("reader-text", true);
   document.body.classList.toggle("reader-epub", false);
 
-  if (book.source === "gutendex" && state.currentFormat === "text") {
-    await openStreamingTextBook(book, readUrl);
+  if (book.source === "gutendex") {
+    await openGutenbergReadableBook(book, readUrl);
     return;
   }
 
@@ -1530,6 +1530,32 @@ async function openTextBook(book) {
   await buildPageFlip(state.currentPageIndex, state.pageElements);
 }
 
+async function openGutenbergReadableBook(book, readUrl) {
+  if (state.currentFormat === "text") {
+    try {
+      await openStreamingTextBook(book, readUrl);
+      return;
+    } catch (error) {
+      console.warn("Fast Gutenberg text stream failed; trying HTML reader fallback.", error);
+    }
+  }
+
+  if (book.htmlFile) {
+    await openGutenbergFrameBook(book, book.htmlFile);
+    return;
+  }
+
+  if (book.epubFile) {
+    state.currentFormat = "epub";
+    document.body.classList.toggle("reader-text", false);
+    document.body.classList.toggle("reader-epub", true);
+    await openEpubBook({ ...book, file: book.epubFile, format: "epub" });
+    return;
+  }
+
+  throw new Error("No readable Gutenberg format is available.");
+}
+
 async function openStreamingTextBook(book, readUrl) {
   const pageLength = getTextPageLength();
   setReaderLoading("Loading First Pages...", false, { progress: 0.42, estimateMs: 1600 });
@@ -1543,6 +1569,37 @@ async function openStreamingTextBook(book, readUrl) {
   state.pageElements = createTextPageElements(state.textPages, book);
   await buildPageFlip(state.currentPageIndex, state.pageElements);
   loadRemainingTextPages(fullTextPromise, book, pageLength);
+}
+
+async function openGutenbergFrameBook(book, htmlUrl) {
+  destroyPageFlip();
+  dom.flipbook.hidden = true;
+  dom.epubReader.hidden = false;
+  dom.epubReader.replaceChildren();
+  state.currentFormat = "html";
+  state.currentPageIndex = 0;
+  state.totalPages = 1;
+
+  const frame = document.createElement("iframe");
+  frame.className = "gutenberg-reader-frame";
+  frame.title = book.title;
+  frame.loading = "eager";
+  frame.referrerPolicy = "no-referrer";
+  frame.src = htmlUrl;
+
+  dom.epubReader.appendChild(frame);
+  setReaderLoading("Opening Online Reader...", false, { progress: 0.76, estimateMs: 1200 });
+
+  try {
+    await withTimeout(new Promise((resolve, reject) => {
+      frame.addEventListener("load", resolve, { once: true });
+      frame.addEventListener("error", reject, { once: true });
+    }), 5000, "Gutenberg HTML reader is slow.");
+  } catch (error) {
+    console.info("Gutenberg frame is still loading in the background.", error);
+  }
+
+  updateReaderStatus();
 }
 
 function loadRemainingTextPages(fullTextPromise, book, pageLength) {
