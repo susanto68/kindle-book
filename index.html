@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#f4efe5">
+  <meta name="theme-color" content="#f7ead0">
+  <meta name="description" content="A premium modern Kindle-style educational digital library with immersive reading experience.">
+  <meta property="og:title" content="Sir Ganguly Digital Library">
+  <meta property="og:description" content="A premium modern Kindle-style educational digital library with immersive reading experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-library.svg">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Kindle Book Reader</title>
-  <link rel="stylesheet" href="style.css?v=35">
+  <title>Sir Ganguly Digital Library</title>
+  <link rel="stylesheet" href="style.css?v=36">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
@@ -25,6 +30,9 @@
   <header id="appHeader" class="app-header">
     <div class="header-content">
       <button id="backBtn" class="icon-btn header-back" type="button" aria-label="Back to library">Back</button>
+      <div class="profile-avatar" aria-label="Sir Ganguly profile">
+        <img src="profile-avatar.png" alt="Sir Ganguly">
+      </div>
       <div class="title-wrap">
         <p id="headerEyebrow" class="eyebrow">SIR GANGULY DIGITAL LIBRARY</p>
         <h1 id="bookTitle">Read &bull; Learn &bull; Evolve</h1>
@@ -48,8 +56,19 @@
         <div>
           <p class="eyebrow">Free student digital library</p>
           <h2>Discover, learn, and read without limits.</h2>
+          <div class="hero-actions" aria-label="Library highlights">
+            <span>Kindle style</span>
+            <span>Gutenberg powered</span>
+            <span>Student first</span>
+          </div>
         </div>
         <p class="hero-copy">Your local books plus public-domain classics from Project Gutenberg, organized for every learner.</p>
+        <div class="hero-visual" aria-hidden="true">
+          <span class="floating-book book-one"></span>
+          <span class="floating-book book-two"></span>
+          <span class="floating-book book-three"></span>
+          <span class="hero-orbit"></span>
+        </div>
       </div>
 
       <section id="categorySection" class="category-section" aria-label="Book categories">
@@ -194,6 +213,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=35"></script>
+  <script src="app.js?v=36"></script>
 </body>
 </html>
