@@ -8,7 +8,8 @@ const STORAGE_KEYS = {
   recent: "kindleReader.recentBooks",
   progress: "kindleReader.progressByBook",
   tutorialSeen: "kindleReader.readerTutorialSeen",
-  soundMuted: "kindleReader.soundMuted"
+  soundMuted: "kindleReader.soundMuted",
+  gutenbergCache: "kindleReader.gutendexCache"
 };
 
 const RENDER_RADIUS = 1;
@@ -16,9 +17,49 @@ const MAX_COVER_CACHE = 80;
 const SUPPORTED_BOOK_FORMATS = [".epub", ".pdf"];
 const DISCOVERY_FOLDERS = ["C++ Books", "ShreeMadBhagawadGeeta"];
 const FORMAT_PRIORITY = {
-  epub: 2,
+  epub: 4,
+  html: 3,
+  text: 2,
   pdf: 1
 };
+const GUTENDEX_API = "https://gutendex.com/books/";
+const GUTENDEX_CACHE_TTL = 1000 * 60 * 60 * 6;
+const STUDENT_CATEGORIES = [
+  { name: "Literature", icon: "Lit", desc: "Classic novels, poems, drama", topic: "literature", search: "classic literature" },
+  { name: "English Language", icon: "Eng", desc: "Grammar, vocabulary, reading", topic: "english language", search: "english grammar language" },
+  { name: "Science", icon: "Sci", desc: "Nature, discovery, experiments", topic: "science", search: "science" },
+  { name: "Computer Science", icon: "CS", desc: "Computing and digital logic", topic: "computer", search: "computer science" },
+  { name: "Artificial Intelligence", icon: "AI", desc: "Thinking machines and logic", topic: "artificial intelligence", search: "artificial intelligence" },
+  { name: "Programming", icon: "Code", desc: "Coding and problem solving", topic: "programming", search: "computer programming" },
+  { name: "Mathematics", icon: "Math", desc: "Numbers, algebra, geometry", topic: "mathematics", search: "mathematics" },
+  { name: "Physics", icon: "Phy", desc: "Motion, light, electricity", topic: "physics", search: "physics" },
+  { name: "Chemistry", icon: "Chem", desc: "Matter, elements, reactions", topic: "chemistry", search: "chemistry" },
+  { name: "Biology", icon: "Bio", desc: "Life, plants, animals", topic: "biology", search: "biology" },
+  { name: "General Knowledge", icon: "GK", desc: "Facts, culture, awareness", topic: "knowledge", search: "general knowledge" },
+  { name: "History", icon: "Hist", desc: "People, empires, events", topic: "history", search: "history" },
+  { name: "Civics", icon: "Civ", desc: "Government and citizenship", topic: "civics", search: "civics government" },
+  { name: "Geography", icon: "Geo", desc: "Earth, maps, places", topic: "geography", search: "geography" },
+  { name: "Motivation", icon: "Rise", desc: "Focus, courage, discipline", topic: "success", search: "motivation success" },
+  { name: "Self Development", icon: "Grow", desc: "Habits and inner growth", topic: "self development", search: "self help" },
+  { name: "Interview Preparation", icon: "Job", desc: "Confidence and readiness", topic: "interview", search: "interview career" },
+  { name: "Career Guidance", icon: "Path", desc: "Work, skill, direction", topic: "career", search: "career guidance" },
+  { name: "Bhagavad Gita & Spiritual Wisdom", icon: "Gita", desc: "Wisdom and reflection", topic: "religion", search: "bhagavad gita spiritual wisdom" },
+  { name: "Philosophy", icon: "Phil", desc: "Ideas, ethics, meaning", topic: "philosophy", search: "philosophy" },
+  { name: "Communication Skills", icon: "Talk", desc: "Clear expression and writing", topic: "communication", search: "communication skills" },
+  { name: "Public Speaking", icon: "Speak", desc: "Speech and presentation", topic: "public speaking", search: "public speaking" },
+  { name: "Children Books", icon: "Kids", desc: "Easy reading for young learners", topic: "children", search: "children books" },
+  { name: "Stories for Kids", icon: "Story", desc: "Fairy tales and morals", topic: "children stories", search: "children stories fairy tales" },
+  { name: "College Learning", icon: "Uni", desc: "Higher study foundations", topic: "education", search: "college education" },
+  { name: "Future Technology", icon: "Tech", desc: "Inventions and engineering", topic: "technology", search: "future technology invention" },
+  { name: "Robotics", icon: "Bot", desc: "Machines and automation", topic: "robot", search: "robotics robot" },
+  { name: "Machine Learning", icon: "ML", desc: "Patterns, data, prediction", topic: "machine learning", search: "machine learning" },
+  { name: "Study Skills", icon: "Study", desc: "Learning methods and exams", topic: "study", search: "study skills" },
+  { name: "Productivity", icon: "Do", desc: "Time, planning, achievement", topic: "productivity", search: "productivity efficiency" }
+];
+const CATEGORY_ALIASES = new Map([
+  ["Bhagavad Gita", "Bhagavad Gita & Spiritual Wisdom"],
+  ["AI & Technology", "Future Technology"]
+]);
 
 const dom = {
   loadingScreen: document.getElementById("loadingScreen"),
@@ -84,6 +125,14 @@ const state = {
   books: [],
   booksById: new Map(),
   booksByClass: new Map(),
+  gutenbergByCategory: new Map(),
+  gutenbergNextByCategory: new Map(),
+  gutenbergLoadingByCategory: new Set(),
+  gutenbergLoadedByCategory: new Set(),
+  gutenbergSearchRequest: null,
+  gutenbergSearchBooks: [],
+  searchTimer: null,
+  categoryCardsReady: false,
   coverCache: new Map(),
   activeDetailsBookId: null,
   currentBook: null,
@@ -98,6 +147,7 @@ const state = {
   epubLocationsTask: null,
   pageFlip: null,
   pageElements: [],
+  textPages: [],
   pageRatio: 0.72,
   renderedPages: new Set(),
   renderingPages: new Map(),
@@ -107,6 +157,11 @@ const state = {
   speech: null,
   idleTimer: null,
   resizeTimer: null,
+  loadingTimer: null,
+  loadingStartedAt: 0,
+  loadingEstimateMs: 4500,
+  loadingProgress: 0,
+  loadingStage: "",
   lastCornerFlipAt: 0,
   coverObserver: null,
   coverQueue: [],
@@ -124,6 +179,7 @@ async function init() {
   configurePdfJs();
   applyInitialTheme();
   applyInitialSoundPreference();
+  renderCategoryCards();
   setupEventListeners();
 
   try {
@@ -167,7 +223,7 @@ function flattenLibrary(groups) {
         ...book,
         format: getBookFormat(book.file),
         cover: book.cover || findLikelyCoverPath(book.file),
-        category: book.category || inferCategory({ ...book, className }),
+        category: canonicalCategory(book.category || inferCategory({ ...book, className })),
         id: createBookId(book.file),
         className,
         classIndex: groupIndex,
@@ -246,7 +302,7 @@ function createDiscoveredGroup(folderName, bookFiles) {
       cover: isGeetaFolder ? "books/ShreeMadBhagawadGeeta/bg_krishnaji_portrait_chariot.webp" : (file.cover || findLikelyCoverPath(file.path)),
       author: isGeetaFolder ? "Spiritual Learning" : className,
       year: "",
-      category: isGeetaFolder ? "Bhagavad Gita" : undefined
+      category: isGeetaFolder ? "Bhagavad Gita & Spiritual Wisdom" : undefined
     }))
   }];
 }
@@ -389,7 +445,11 @@ function isSupportedBookFile(fileName) {
 }
 
 function getBookFormat(filePath) {
-  return String(filePath || "").toLowerCase().endsWith(".epub") ? "epub" : "pdf";
+  const lower = String(filePath || "").toLowerCase();
+  if (lower.endsWith(".html") || lower.endsWith(".htm") || lower.includes("text/html")) return "html";
+  if (lower.endsWith(".txt") || lower.includes("text/plain")) return "text";
+  if (lower.endsWith(".epub") || lower.includes(".epub") || lower.includes("application/epub")) return "epub";
+  return "pdf";
 }
 
 function getFormatPriority(book) {
@@ -420,6 +480,256 @@ function preferBestFormats(files) {
   return Array.from(best.values());
 }
 
+function buildGutendexUrl(category, pageUrl = "") {
+  if (pageUrl) {
+    return pageUrl.replace(/^http:\/\//i, "https://");
+  }
+
+  const config = getCategoryConfig(category);
+  const params = new URLSearchParams({
+    languages: "en",
+    mime_type: "application/epub+zip",
+    sort: "popular"
+  });
+
+  if (config.topic) {
+    params.set("topic", config.topic);
+  } else {
+    params.set("search", config.search || config.name);
+  }
+
+  return `${GUTENDEX_API}?${params.toString()}`;
+}
+
+async function ensureGutenbergCategoryLoaded(category, options = {}) {
+  const safeCategory = canonicalCategory(category);
+  if (!safeCategory || state.gutenbergLoadingByCategory.has(safeCategory)) {
+    return;
+  }
+
+  const hasLoaded = state.gutenbergLoadedByCategory.has(safeCategory);
+  if (hasLoaded && !options.loadMore) {
+    return;
+  }
+
+  state.gutenbergLoadingByCategory.add(safeCategory);
+  renderLibrary(dom.searchInput.value);
+
+  try {
+    const nextUrl = options.loadMore ? state.gutenbergNextByCategory.get(safeCategory) : "";
+    if (options.loadMore && !nextUrl) {
+      return;
+    }
+
+    const data = await fetchGutendexPage(safeCategory, nextUrl);
+    const existing = state.gutenbergByCategory.get(safeCategory) || [];
+    const existingIds = new Set(existing.map((book) => book.id));
+    const incoming = data.results
+      .map((item) => normalizeGutenbergBook(item, safeCategory))
+      .filter(Boolean)
+      .filter((book) => {
+        if (existingIds.has(book.id)) {
+          return false;
+        }
+        existingIds.add(book.id);
+        return true;
+      });
+
+    state.gutenbergByCategory.set(safeCategory, [...existing, ...incoming]);
+    state.gutenbergNextByCategory.set(safeCategory, data.next || "");
+    state.gutenbergLoadedByCategory.add(safeCategory);
+    rememberGutendexCache(safeCategory);
+  } catch (error) {
+    console.warn(`Gutendex load failed for ${safeCategory}`, error);
+    showInlineShelfMessage(`Free online books for ${safeCategory} are not available right now. Your local books still work.`);
+  } finally {
+    state.gutenbergLoadingByCategory.delete(safeCategory);
+    renderLibrary(dom.searchInput.value);
+  }
+}
+
+async function fetchGutendexPage(category, pageUrl = "") {
+  const cached = !pageUrl ? readGutendexCache(category) : null;
+  if (cached) {
+    return cached;
+  }
+
+  const response = await fetch(buildGutendexUrl(category, pageUrl), { cache: "default" });
+  if (!response.ok) {
+    throw new Error(`Gutendex request failed with ${response.status}`);
+  }
+
+  let data = await response.json();
+  if (!pageUrl && (!Array.isArray(data.results) || data.results.length === 0)) {
+    const config = getCategoryConfig(category);
+    const fallbackParams = new URLSearchParams({
+      languages: "en",
+      mime_type: "application/epub+zip",
+      search: config.search || config.name,
+      sort: "popular"
+    });
+    const fallbackResponse = await fetch(`${GUTENDEX_API}?${fallbackParams.toString()}`, { cache: "default" });
+    if (fallbackResponse.ok) {
+      data = await fallbackResponse.json();
+    }
+  }
+
+  return {
+    count: Number(data.count || 0),
+    next: data.next || "",
+    previous: data.previous || "",
+    results: Array.isArray(data.results) ? data.results : []
+  };
+}
+
+async function fetchGutendexSearch(query) {
+  const requestId = `${Date.now()}-${query}`;
+  state.gutenbergSearchRequest = requestId;
+  const params = new URLSearchParams({
+    languages: "en",
+    mime_type: "application/epub+zip",
+    search: query,
+    sort: "popular"
+  });
+
+  try {
+    const response = await fetch(`${GUTENDEX_API}?${params.toString()}`, { cache: "default" });
+    if (!response.ok) {
+      throw new Error(`Gutendex search failed with ${response.status}`);
+    }
+    const data = await response.json();
+    if (state.gutenbergSearchRequest !== requestId) {
+      return;
+    }
+    state.gutenbergSearchBooks = (Array.isArray(data.results) ? data.results : [])
+      .map((item) => normalizeGutenbergBook(item, "Literature"))
+      .filter(Boolean);
+    renderLibrary(dom.searchInput.value);
+  } catch (error) {
+    console.warn("Gutendex search failed", error);
+  }
+}
+
+function normalizeGutenbergBook(item, category) {
+  const formats = item?.formats || {};
+  const epubUrl = findFormatUrl(formats, "application/epub+zip");
+  const htmlUrl = findFormatUrl(formats, "text/html");
+  const textUrl = findFormatUrl(formats, "text/plain");
+  const file = epubUrl || htmlUrl || textUrl;
+
+  if (!file || item.copyright === true) {
+    return null;
+  }
+
+  const format = epubUrl ? "epub" : (htmlUrl ? "html" : "text");
+  const author = Array.isArray(item.authors) && item.authors.length
+    ? item.authors.map((person) => person.name).join(", ")
+    : "Project Gutenberg";
+  const subjects = [...(item.subjects || []), ...(item.bookshelves || [])].filter(Boolean);
+
+  return {
+    id: `gutendex-${item.id}`,
+    source: "gutendex",
+    gutendexId: item.id,
+    title: item.title || "Untitled Gutenberg Book",
+    file,
+    format,
+    cover: findFormatUrl(formats, "image/jpeg"),
+    author,
+    year: "Public domain",
+    className: "Project Gutenberg",
+    category: mapGutenbergCategory(subjects, category),
+    subjects,
+    downloads: item.download_count || 0,
+    canDownload: true
+  };
+}
+
+function findFormatUrl(formats, mimeStart) {
+  const entry = Object.entries(formats || {}).find(([mime, url]) => (
+    mime.toLowerCase().startsWith(mimeStart.toLowerCase()) && typeof url === "string" && !url.endsWith(".zip")
+  ));
+  return entry ? entry[1] : "";
+}
+
+function mapGutenbergCategory(subjects, fallbackCategory) {
+  const text = `${subjects.join(" ")} ${fallbackCategory}`.toLowerCase();
+  const rules = [
+    ["Artificial Intelligence", ["artificial intelligence"]],
+    ["Machine Learning", ["machine learning", "pattern recognition"]],
+    ["Programming", ["programming", "computer programming", "software"]],
+    ["Computer Science", ["computer", "computing", "data processing"]],
+    ["Robotics", ["robot", "automation"]],
+    ["Future Technology", ["technology", "invention", "engineering"]],
+    ["Children Books", ["children", "juvenile"]],
+    ["Stories for Kids", ["fairy tales", "children stories", "folklore"]],
+    ["Bhagavad Gita & Spiritual Wisdom", ["bhagavad", "gita", "religion", "spiritual", "hindu"]],
+    ["Philosophy", ["philosophy", "ethics", "logic"]],
+    ["Science", ["science", "natural history"]],
+    ["Mathematics", ["mathematics", "algebra", "geometry"]],
+    ["Physics", ["physics", "electricity", "mechanics"]],
+    ["Chemistry", ["chemistry"]],
+    ["Biology", ["biology", "botany", "zoology", "medicine"]],
+    ["History", ["history", "biography"]],
+    ["Geography", ["geography", "travel"]],
+    ["Civics", ["government", "politics", "citizenship", "law"]],
+    ["English Language", ["english language", "grammar", "dictionaries"]],
+    ["Communication Skills", ["communication", "letter writing", "rhetoric"]],
+    ["Public Speaking", ["public speaking", "oratory", "speech"]],
+    ["Self Development", ["self-help", "conduct of life"]],
+    ["Motivation", ["success", "inspiration", "perseverance"]],
+    ["Study Skills", ["study", "education"]],
+    ["Productivity", ["efficiency", "time management"]],
+    ["Literature", ["fiction", "poetry", "drama", "literature"]]
+  ];
+
+  const match = rules.find(([, keywords]) => keywords.some((keyword) => text.includes(keyword)));
+  return match ? match[0] : canonicalCategory(fallbackCategory);
+}
+
+function readGutendexCache(category) {
+  try {
+    const cache = JSON.parse(localStorage.getItem(STORAGE_KEYS.gutenbergCache) || "{}");
+    const entry = cache[category];
+    if (!entry || Date.now() - entry.savedAt > GUTENDEX_CACHE_TTL) {
+      return null;
+    }
+    return entry.data;
+  } catch {
+    return null;
+  }
+}
+
+function rememberGutendexCache(category) {
+  try {
+    const books = state.gutenbergByCategory.get(category) || [];
+    const data = {
+      count: books.length,
+      next: state.gutenbergNextByCategory.get(category) || "",
+      previous: "",
+      results: books.map((book) => ({
+        id: book.gutendexId,
+        title: book.title,
+        authors: [{ name: book.author }],
+        subjects: book.subjects || [],
+        bookshelves: [],
+        languages: ["en"],
+        copyright: false,
+        formats: {
+          [book.format === "epub" ? "application/epub+zip" : book.format === "html" ? "text/html" : "text/plain"]: book.file,
+          ...(book.cover ? { "image/jpeg": book.cover } : {})
+        },
+        download_count: book.downloads || 0
+      }))
+    };
+    const cache = JSON.parse(localStorage.getItem(STORAGE_KEYS.gutenbergCache) || "{}");
+    cache[category] = { savedAt: Date.now(), data };
+    localStorage.setItem(STORAGE_KEYS.gutenbergCache, JSON.stringify(cache));
+  } catch {
+    // Storage can be full or unavailable; the live API path still works.
+  }
+}
+
 function findLikelyCoverPath(filePath) {
   const normalized = String(filePath || "");
   if (!normalized) {
@@ -431,11 +741,52 @@ function findLikelyCoverPath(filePath) {
 function inferCategory(book) {
   const text = `${book.title || ""} ${book.file || ""} ${book.className || ""}`.toLowerCase();
 
-  if (text.includes("gita") || text.includes("geeta") || text.includes("bhagavad") || text.includes("bhagawad") || text.includes("spiritual") || text.includes("krishna")) return "Bhagavad Gita";
+  if (text.includes("gita") || text.includes("geeta") || text.includes("bhagavad") || text.includes("bhagawad") || text.includes("spiritual") || text.includes("krishna")) return "Bhagavad Gita & Spiritual Wisdom";
   if (text.includes("motivation") || text.includes("success") || text.includes("mindset")) return "Motivation";
-  if (text.includes("ai") || text.includes("technology") || text.includes("machine learning")) return "AI & Technology";
+  if (text.includes("machine learning")) return "Machine Learning";
+  if (text.includes("ai") || text.includes("technology")) return "Future Technology";
+  if (text.includes("java") || text.includes("python") || text.includes("c++") || text.includes("programming")) return "Programming";
   if (text.includes("class ") || text.includes("syllabus") || text.includes("chapter") || text.includes("notes")) return "School Notes";
   return "Computer Science";
+}
+
+function canonicalCategory(category) {
+  return CATEGORY_ALIASES.get(category) || category;
+}
+
+function getCategoryConfig(category) {
+  const safeCategory = canonicalCategory(category);
+  return STUDENT_CATEGORIES.find((item) => item.name === safeCategory) || {
+    name: safeCategory,
+    icon: safeCategory.slice(0, 3),
+    desc: "Curated learning shelf",
+    topic: safeCategory,
+    search: safeCategory
+  };
+}
+
+function renderCategoryCards() {
+  dom.categorySection.replaceChildren();
+  STUDENT_CATEGORIES.forEach((category, index) => {
+    const button = document.createElement("button");
+    button.className = "category-card";
+    button.type = "button";
+    button.dataset.category = category.name;
+    button.style.setProperty("--card-index", String(index));
+
+    const icon = document.createElement("span");
+    icon.textContent = category.icon;
+
+    const title = document.createElement("strong");
+    title.textContent = category.name;
+
+    const desc = document.createElement("small");
+    desc.textContent = category.desc;
+
+    button.append(icon, title, desc);
+    dom.categorySection.appendChild(button);
+  });
+  state.categoryCardsReady = true;
 }
 
 function createBookId(filePath) {
@@ -448,7 +799,7 @@ function createBookId(filePath) {
 function setupEventListeners() {
   dom.searchBtn.addEventListener("click", openSearch);
   dom.closeSearch.addEventListener("click", closeSearch);
-  dom.searchInput.addEventListener("input", () => renderLibrary(dom.searchInput.value));
+  dom.searchInput.addEventListener("input", handleSearchInput);
   dom.backBtn.addEventListener("click", closeReader);
   dom.prevBtn.addEventListener("click", () => flipRelative(-1));
   dom.nextBtn.addEventListener("click", () => flipRelative(1));
@@ -465,8 +816,11 @@ function setupEventListeners() {
   dom.goToBtn.addEventListener("click", openGoToModal);
   dom.allCategoriesBtn.addEventListener("click", showAllCategories);
   dom.tutorialDismiss.addEventListener("click", hideReaderTutorial);
-  dom.categorySection.querySelectorAll("[data-category]").forEach((button) => {
-    button.addEventListener("click", () => openCategory(button.dataset.category));
+  dom.categorySection.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-category]");
+    if (button) {
+      openCategory(button.dataset.category);
+    }
   });
   dom.closeModal.addEventListener("click", closeBookModal);
   dom.closeIndex.addEventListener("click", closeIndexModal);
@@ -500,13 +854,15 @@ function setupCornerArrow(button, direction) {
 
 function renderLibrary(query = "") {
   const cleanQuery = query.trim().toLowerCase();
-  const selectedCategory = state.activeCategory;
+  const selectedCategory = canonicalCategory(state.activeCategory);
   const groupMap = new Map();
+  const remoteBooks = getVisibleGutenbergBooks(selectedCategory, cleanQuery);
 
-  state.books.forEach((book) => {
-    const haystack = `${book.title} ${book.author} ${book.year} ${book.className} ${book.format}`.toLowerCase();
+  [...state.books, ...remoteBooks].forEach((book) => {
+    state.booksById.set(book.id, book);
+    const haystack = `${book.title} ${book.author} ${book.year} ${book.className} ${book.category} ${book.format} ${(book.subjects || []).join(" ")}`.toLowerCase();
     const matchesSearch = !cleanQuery || haystack.includes(cleanQuery);
-    const matchesCategory = !selectedCategory || book.category === selectedCategory;
+    const matchesCategory = !selectedCategory || canonicalCategory(book.category) === selectedCategory;
 
     if (!matchesSearch || !matchesCategory) {
       return;
@@ -547,7 +903,13 @@ function renderLibrary(query = "") {
   });
 
   const visibleCount = filteredGroups.reduce((total, group) => total + group.books.length, 0);
-  dom.libraryCount.textContent = `${visibleCount} books`;
+  const loadingRemote = selectedCategory && state.gutenbergLoadingByCategory.has(selectedCategory);
+  const hasMoreRemote = selectedCategory && state.gutenbergNextByCategory.get(selectedCategory);
+  dom.libraryCount.textContent = loadingRemote
+    ? `${visibleCount} books • loading free books...`
+    : `${visibleCount} books`;
+
+  renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote, loadingRemote);
 
   if (!selectedCategory && !cleanQuery) {
     renderContinueAndRecent();
@@ -558,10 +920,86 @@ function renderLibrary(query = "") {
   setupCoverObserver();
 }
 
+function getVisibleGutenbergBooks(selectedCategory, cleanQuery) {
+  if (cleanQuery) {
+    const loaded = Array.from(state.gutenbergByCategory.values()).flat();
+    const merged = [...loaded, ...state.gutenbergSearchBooks];
+    const seen = new Set();
+    return merged.filter((book) => {
+      if (seen.has(book.id)) {
+        return false;
+      }
+      seen.add(book.id);
+      return true;
+    });
+  }
+
+  if (!selectedCategory) {
+    return [];
+  }
+
+  return state.gutenbergByCategory.get(selectedCategory) || [];
+}
+
+function renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote, loadingRemote) {
+  const oldFooter = dom.bookGrid.querySelector(".gutenberg-footer");
+  oldFooter?.remove();
+
+  if (!selectedCategory && !cleanQuery) {
+    return;
+  }
+
+  const footer = document.createElement("div");
+  footer.className = "gutenberg-footer";
+
+  if (loadingRemote) {
+    footer.textContent = "Fetching free public-domain books...";
+  } else if (hasMoreRemote) {
+    const button = document.createElement("button");
+    button.className = "primary-btn";
+    button.type = "button";
+    button.textContent = "Load more free books";
+    button.addEventListener("click", () => ensureGutenbergCategoryLoaded(selectedCategory, { loadMore: true }));
+    footer.appendChild(button);
+  } else if (selectedCategory && state.gutenbergLoadedByCategory.has(selectedCategory)) {
+    footer.textContent = "End of this free-books shelf for now.";
+  } else if (cleanQuery && cleanQuery.length < 3) {
+    footer.textContent = "Type at least 3 letters to search free Gutenberg books online.";
+  }
+
+  if (footer.childNodes.length) {
+    dom.bookGrid.appendChild(footer);
+  }
+}
+
+function showInlineShelfMessage(message) {
+  const note = document.createElement("div");
+  note.className = "shelf-note";
+  note.textContent = message;
+  dom.bookGrid.prepend(note);
+}
+
+function yieldToBrowser() {
+  return new Promise((resolve) => {
+    requestAnimationFrame(() => {
+      setTimeout(resolve, 0);
+    });
+  });
+}
+
+function scheduleIdleTask(callback, timeout = 900) {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout });
+    return;
+  }
+  setTimeout(callback, 80);
+}
+
 function openCategory(category) {
-  state.activeCategory = category;
+  state.activeCategory = canonicalCategory(category);
   dom.searchInput.value = "";
   renderLibrary();
+  ensureGutenbergCategoryLoaded(state.activeCategory);
   dom.bookGrid.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -844,7 +1282,7 @@ async function openBook(bookId, pageNumber = 1) {
   closeBookModal();
   closeIndexModal();
   closeGoToModal();
-  setReaderLoading(`Opening ${book.title}...`);
+  setReaderLoading("Preparing Reader...", false, { progress: 0.06, estimateMs: 5200 });
   stopCoverQueue();
 
   document.body.classList.add("reader-open");
@@ -856,19 +1294,26 @@ async function openBook(bookId, pageNumber = 1) {
   state.currentFormat = book.format || getBookFormat(book.file);
   document.body.classList.toggle("reader-pdf", state.currentFormat === "pdf");
   document.body.classList.toggle("reader-epub", state.currentFormat === "epub");
+  document.body.classList.toggle("reader-text", state.currentFormat === "html" || state.currentFormat === "text");
   updateRecent(book.id);
 
   try {
+    await yieldToBrowser();
     await cleanupReader({ keepCurrentBook: true });
+    setReaderLoading("Fetching Book...", false, { progress: 0.14, estimateMs: 5200 });
+    await yieldToBrowser();
     state.currentPageIndex = Math.max(0, pageNumber - 1);
     if (state.currentFormat === "epub") {
       await openEpubBook(book);
+    } else if (state.currentFormat === "html" || state.currentFormat === "text") {
+      await openTextBook(book);
     } else {
       await openPdfBook(book);
     }
     saveCurrentProgress();
     dom.continueSection.hidden = true;
     dom.recentSection.hidden = true;
+    setReaderLoading("Ready to Read", false, { progress: 1, estimateMs: 800 });
     clearReaderLoading();
     wakeReaderControls();
     maybeShowReaderTutorial();
@@ -882,10 +1327,21 @@ async function openPdfBook(book) {
   dom.epubReader.hidden = true;
   ensureFlipbookElement();
   dom.flipbook.hidden = false;
-  state.pdfDocument = await pdfjsLib.getDocument({ url: toAssetUrl(book.file) }).promise;
+  const loadingTask = pdfjsLib.getDocument({ url: toAssetUrl(book.file) });
+  loadingTask.onProgress = (progress) => {
+    if (progress?.total) {
+      const ratio = clamp(progress.loaded / progress.total, 0, 1);
+      setReaderLoading("Fetching Book...", false, { progress: 0.14 + ratio * 0.28, estimateMs: 5200 });
+    }
+  };
+  state.pdfDocument = await loadingTask.promise;
+  setReaderLoading("Preparing Reader...", false, { progress: 0.48, estimateMs: 3600 });
+  await yieldToBrowser();
   state.totalPages = state.pdfDocument.numPages;
   await updatePdfPageRatio();
   state.currentPageIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
+  setReaderLoading("Loading First Page...", false, { progress: 0.68, estimateMs: 2200 });
+  await yieldToBrowser();
   await buildPageFlip(state.currentPageIndex);
 }
 
@@ -899,6 +1355,8 @@ async function openEpubBook(book) {
   dom.flipbook.hidden = true;
   dom.epubReader.hidden = false;
   dom.epubReader.replaceChildren();
+  setReaderLoading("Preparing Reader...", false, { progress: 0.28, estimateMs: 4200 });
+  await yieldToBrowser();
 
   state.epubBook = ePub(toAssetUrl(book.file), { openAs: "epub" });
   state.epubRendition = state.epubBook.renderTo(dom.epubReader, {
@@ -932,9 +1390,132 @@ async function openEpubBook(book) {
   state.epubTotalLocations = 100;
   state.totalPages = 100;
   state.currentPageIndex = initialIndex > 0 ? clamp(initialIndex, 0, 99) : 0;
+  setReaderLoading("Loading First Pages...", false, { progress: 0.68, estimateMs: 2400 });
   await state.epubRendition.display();
+  setReaderLoading("Optimizing Content...", false, { progress: 0.86, estimateMs: 1600 });
   generateEpubLocationsInBackground(initialIndex);
   updateReaderStatus();
+}
+
+async function openTextBook(book) {
+  dom.epubReader.hidden = true;
+  ensureFlipbookElement();
+  dom.flipbook.hidden = false;
+
+  setReaderLoading("Fetching Book...", false, { progress: 0.18, estimateMs: 5200 });
+  const response = await fetch(toAssetUrl(book.file), { cache: "default" });
+  if (!response.ok) {
+    throw new Error(`Text reader request failed with ${response.status}`);
+  }
+
+  setReaderLoading("Preparing Reader...", false, { progress: 0.42, estimateMs: 3600 });
+  const raw = await response.text();
+  await yieldToBrowser();
+  const readableText = state.currentFormat === "html" ? extractReadableText(raw) : raw;
+  setReaderLoading("Optimizing Content...", false, { progress: 0.62, estimateMs: 2400 });
+  state.textPages = await paginateTextAsync(readableText, getTextPageLength());
+  state.totalPages = Math.max(1, state.textPages.length);
+  state.currentPageIndex = clamp(state.currentPageIndex, 0, state.totalPages - 1);
+  setReaderLoading("Loading First Pages...", false, { progress: 0.82, estimateMs: 1500 });
+  await yieldToBrowser();
+  state.pageElements = createTextPageElements(state.textPages, book);
+  await buildPageFlip(state.currentPageIndex, state.pageElements);
+}
+
+function extractReadableText(html) {
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  doc.querySelectorAll("script, style, nav, header, footer, form").forEach((node) => node.remove());
+  return (doc.body?.innerText || doc.documentElement?.innerText || "")
+    .replace(/\n{4,}/g, "\n\n")
+    .trim();
+}
+
+function getTextPageLength() {
+  const width = window.visualViewport?.width || window.innerWidth;
+  if (width <= 420) return 1350;
+  if (width <= 760) return 1800;
+  return 2600;
+}
+
+function paginateText(text, maxLength) {
+  const paragraphs = String(text || "This book has no readable text available.")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+  const pages = [];
+  let current = "";
+
+  paragraphs.forEach((paragraph) => {
+    if ((current + "\n\n" + paragraph).length > maxLength && current) {
+      pages.push(current);
+      current = paragraph;
+    } else {
+      current = current ? `${current}\n\n${paragraph}` : paragraph;
+    }
+  });
+
+  if (current) {
+    pages.push(current);
+  }
+
+  return pages.length ? pages : ["This book has no readable text available."];
+}
+
+async function paginateTextAsync(text, maxLength) {
+  const paragraphs = String(text || "This book has no readable text available.")
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+  const pages = [];
+  let current = "";
+
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    const paragraph = paragraphs[index];
+    if ((current + "\n\n" + paragraph).length > maxLength && current) {
+      pages.push(current);
+      current = paragraph;
+    } else {
+      current = current ? `${current}\n\n${paragraph}` : paragraph;
+    }
+
+    if (index > 0 && index % 30 === 0) {
+      const ratio = index / Math.max(1, paragraphs.length);
+      setReaderLoading("Optimizing Content...", false, { progress: 0.62 + ratio * 0.18, estimateMs: 2400 });
+      await yieldToBrowser();
+    }
+  }
+
+  if (current) {
+    pages.push(current);
+  }
+
+  return pages.length ? pages : ["This book has no readable text available."];
+}
+
+function createTextPageElements(pages, book) {
+  return pages.map((text, index) => {
+    const page = document.createElement("div");
+    page.className = "page-shell text-page-shell";
+    page.dataset.pageIndex = String(index);
+
+    const article = document.createElement("article");
+    article.className = "text-page";
+
+    const heading = document.createElement("h2");
+    heading.textContent = index === 0 ? book.title : `${book.title} (${index + 1})`;
+
+    const body = document.createElement("div");
+    body.className = "text-page-body";
+    text.split(/\n{2,}/).forEach((paragraph) => {
+      const p = document.createElement("p");
+      p.textContent = paragraph;
+      body.appendChild(p);
+    });
+
+    article.append(heading, body);
+    page.appendChild(article);
+    return page;
+  });
 }
 
 function generateEpubLocationsInBackground(preferredIndex = 0) {
@@ -944,8 +1525,10 @@ function generateEpubLocationsInBackground(preferredIndex = 0) {
 
   state.epubLocationsTask = (async () => {
     try {
+      await new Promise((resolve) => scheduleIdleTask(resolve, 1400));
       await epubBook.ready;
-      await epubBook.locations.generate(520);
+      const locationTarget = window.innerWidth <= 760 ? 260 : 520;
+      await epubBook.locations.generate(locationTarget);
 
       if (state.epubBook !== epubBook || state.epubRendition !== epubRendition || state.currentBook?.id !== bookId) {
         return;
@@ -977,10 +1560,10 @@ function generateEpubLocationsInBackground(preferredIndex = 0) {
   })();
 }
 
-async function buildPageFlip(startIndex = 0) {
+async function buildPageFlip(startIndex = 0, providedPages = null) {
   destroyPageFlip();
   ensureFlipbookElement();
-  state.pageElements = createPageElements(state.totalPages);
+  state.pageElements = providedPages || createPageElements(state.totalPages);
   state.renderedPages.clear();
   state.renderingPages.clear();
 
@@ -1015,15 +1598,19 @@ async function buildPageFlip(startIndex = 0) {
     const pageIndex = getEventPageIndex(event);
     state.currentPageIndex = clamp(pageIndex, 0, state.totalPages - 1);
     updateReaderStatus();
-    renderVisiblePages(state.currentPageIndex);
+    if (state.currentFormat === "pdf") {
+      preloadNearbyPages(state.currentPageIndex);
+    }
     saveCurrentProgress();
   });
 
   state.pageFlip.on("changeState", wakeReaderControls);
   state.pageFlip.turnToPage(startIndex);
   updateReaderStatus();
-  await renderPdfPage(startIndex);
-  renderVisiblePages(startIndex);
+  if (state.currentFormat === "pdf") {
+    await renderPdfPage(startIndex);
+    preloadNearbyPages(startIndex);
+  }
 }
 
 function createPageElements(totalPages) {
@@ -1048,7 +1635,8 @@ function getPageSize() {
   const isReading = document.body.classList.contains("reader-open");
   const headerHeight = isReading ? 0 : (dom.appHeader.getBoundingClientRect().height || 70);
   const isMobilePdf = isReading && state.currentFormat === "pdf" && window.innerWidth <= 760;
-  if (isMobilePdf) {
+  const isMobileImmersive = isReading && ["pdf", "html", "text"].includes(state.currentFormat) && window.innerWidth <= 760;
+  if (isMobileImmersive) {
     return {
       width: Math.floor(window.visualViewport?.width || window.innerWidth),
       height: Math.floor(window.visualViewport?.height || window.innerHeight)
@@ -1100,6 +1688,16 @@ async function renderVisiblePages(centerIndex) {
   }
 
   await Promise.allSettled(renders);
+}
+
+function preloadNearbyPages(centerIndex) {
+  if (state.currentFormat !== "pdf" || !state.pdfDocument) {
+    return;
+  }
+
+  scheduleIdleTask(() => {
+    renderVisiblePages(centerIndex);
+  }, 1200);
 }
 
 function renderPdfPage(pageIndex) {
@@ -1230,7 +1828,8 @@ async function flipFromCornerArrow(direction) {
   playPageSound();
   animatePageTurn(direction);
   state.currentPageIndex = targetIndex;
-  await renderVisiblePages(targetIndex);
+  await renderPdfPage(targetIndex);
+  preloadNearbyPages(targetIndex);
 
   if (state.pageFlip) {
     state.pageFlip.turnToPage(targetIndex);
@@ -1292,14 +1891,14 @@ function updateReaderStatus() {
   const total = Math.max(1, state.totalPages);
   dom.pageInfo.textContent = state.currentFormat === "epub"
     ? `${state.epubLocationsReady ? "Loc" : "Loading"} ${current} of ${total}`
-    : `Page ${current} of ${total}`;
+    : `${state.currentFormat === "html" || state.currentFormat === "text" ? "Section" : "Page"} ${current} of ${total}`;
   dom.prevBtn.disabled = state.currentPageIndex <= 0;
   dom.nextBtn.disabled = state.currentPageIndex >= total - 1;
   dom.goToInput.max = String(total);
   dom.goToInput.placeholder = `1-${total}`;
   dom.goToHint.textContent = state.currentFormat === "epub"
     ? `Enter a reading location from 1 to ${total}.`
-    : `Enter a page from 1 to ${total}.`;
+    : `Enter a ${state.currentFormat === "html" || state.currentFormat === "text" ? "section" : "page"} from 1 to ${total}.`;
   dom.goToHint.classList.remove("error");
   updatePageTurnHint(current, total);
 }
@@ -1444,9 +2043,27 @@ function openSearch() {
   dom.searchInput.focus();
 }
 
+function handleSearchInput() {
+  const query = dom.searchInput.value.trim();
+  renderLibrary(query);
+  clearTimeout(state.searchTimer);
+
+  if (query.length < 3) {
+    state.gutenbergSearchRequest = null;
+    state.gutenbergSearchBooks = [];
+    return;
+  }
+
+  state.searchTimer = setTimeout(() => {
+    fetchGutendexSearch(query);
+  }, 520);
+}
+
 function closeSearch() {
   dom.searchBar.hidden = true;
   dom.searchInput.value = "";
+  state.gutenbergSearchRequest = null;
+  state.gutenbergSearchBooks = [];
   renderLibrary();
 }
 
@@ -1474,7 +2091,8 @@ function closeBookModal() {
 
 function downloadBook(book) {
   const link = document.createElement("a");
-  const extension = getBookFormat(book.file) === "epub" ? "epub" : "pdf";
+  const format = book.format || getBookFormat(book.file);
+  const extension = format === "epub" ? "epub" : format === "html" ? "html" : format === "text" ? "txt" : "pdf";
   link.href = toAssetUrl(book.file);
   link.download = `${book.title}.${extension}`;
   document.body.appendChild(link);
@@ -1517,7 +2135,9 @@ function openIndexModal() {
     return;
   }
 
-  const classBooks = state.booksByClass.get(state.currentBook.className) || [];
+  const classBooks = state.currentBook.source === "gutendex"
+    ? (state.gutenbergByCategory.get(state.currentBook.category) || [])
+    : (state.booksByClass.get(state.currentBook.className) || []);
   classBooks.forEach((book, index) => {
     const item = document.createElement("button");
     item.type = "button";
@@ -1604,7 +2224,8 @@ async function handleGoToSubmit(event) {
     return;
   }
 
-  await renderVisiblePages(pageIndex);
+  await renderPdfPage(pageIndex);
+  preloadNearbyPages(pageIndex);
   state.pageFlip.turnToPage(pageIndex);
   updateReaderStatus();
   saveCurrentProgress();
@@ -1629,7 +2250,7 @@ async function closeReader() {
     hideReaderTutorial();
   }
   await cleanupReader();
-  document.body.classList.remove("reader-open", "reader-pdf", "reader-epub");
+  document.body.classList.remove("reader-open", "reader-pdf", "reader-epub", "reader-text");
   dom.reader.hidden = true;
   dom.library.hidden = false;
   dom.bookTitle.textContent = "Read • Learn • Evolve";
@@ -1645,6 +2266,7 @@ async function cleanupReader(options = {}) {
   state.renderedPages.clear();
   state.renderingPages.clear();
   state.pageElements = [];
+  state.textPages = [];
   state.totalPages = 0;
   state.currentPageIndex = 0;
 
@@ -1872,6 +2494,17 @@ function scheduleReaderResize() {
       return;
     }
 
+    if (state.currentFormat === "html" || state.currentFormat === "text") {
+      const startIndex = clamp(state.currentPageIndex, 0, Math.max(0, state.totalPages - 1));
+      try {
+        await buildPageFlip(startIndex, createTextPageElements(state.textPages, state.currentBook));
+        updateReaderStatus();
+      } catch (error) {
+        console.warn("Text reader resize failed", error);
+      }
+      return;
+    }
+
     if (!state.pdfDocument) {
       return;
     }
@@ -2043,16 +2676,107 @@ function saveCurrentProgress() {
   localStorage.setItem(STORAGE_KEYS.progress, JSON.stringify(progress));
 }
 
-function setReaderLoading(message, isError = false) {
+function setReaderLoading(message, isError = false, options = {}) {
   dom.readerMessage.hidden = false;
-  dom.readerMessage.textContent = message;
+  dom.readerMessage.classList.toggle("is-error", Boolean(isError));
+  dom.readerMessage.classList.toggle("is-loading", !isError);
   dom.readerMessage.style.borderColor = isError ? "#b33b2e" : "";
+
+  if (isError) {
+    stopLoadingTimer();
+    dom.readerMessage.textContent = message;
+    return;
+  }
+
+  if (!state.loadingStartedAt) {
+    state.loadingStartedAt = Date.now();
+  }
+
+  state.loadingEstimateMs = options.estimateMs || state.loadingEstimateMs || 4500;
+  state.loadingStage = message;
+  state.loadingProgress = clamp(
+    Number.isFinite(options.progress) ? options.progress : Math.max(state.loadingProgress || 0, 0.08),
+    0.04,
+    1
+  );
+
+  renderLoadingMessage(message);
+  startLoadingTimer();
 }
 
 function clearReaderLoading() {
+  stopLoadingTimer();
   dom.readerMessage.hidden = true;
-  dom.readerMessage.textContent = "";
+  dom.readerMessage.replaceChildren();
   dom.readerMessage.style.borderColor = "";
+  dom.readerMessage.classList.remove("is-error", "is-loading");
+  state.loadingStartedAt = 0;
+  state.loadingProgress = 0;
+  state.loadingStage = "";
+}
+
+function startLoadingTimer() {
+  if (state.loadingTimer) {
+    return;
+  }
+
+  state.loadingTimer = setInterval(() => {
+    if (!dom.readerMessage.hidden) {
+      renderLoadingMessage(state.loadingStage || "Preparing Reader...");
+    }
+  }, 250);
+}
+
+function stopLoadingTimer() {
+  if (state.loadingTimer) {
+    clearInterval(state.loadingTimer);
+    state.loadingTimer = null;
+  }
+}
+
+function renderLoadingMessage(message) {
+  const elapsed = Date.now() - (state.loadingStartedAt || Date.now());
+  const progress = clamp(state.loadingProgress || 0.08, 0.04, 1);
+  const estimateMs = state.loadingEstimateMs || 4500;
+  const remainingMs = progress > 0.08
+    ? Math.max(0, elapsed * (1 - progress) / progress)
+    : Math.max(0, estimateMs - elapsed);
+
+  const card = document.createElement("div");
+  card.className = "reader-loading-card";
+
+  const ring = document.createElement("div");
+  ring.className = "reader-loading-ring";
+  ring.setAttribute("aria-hidden", "true");
+  ring.style.setProperty("--progress", `${Math.round(progress * 360)}deg`);
+
+  const copy = document.createElement("div");
+  copy.className = "reader-loading-copy";
+
+  const strong = document.createElement("strong");
+  strong.textContent = message;
+
+  const timer = document.createElement("span");
+  timer.textContent = `${message.includes("Ready") ? "Ready" : "Estimated Time"}: ${formatDuration(remainingMs)}`;
+
+  const bar = document.createElement("div");
+  bar.className = "reader-progress";
+  const fill = document.createElement("span");
+  fill.style.width = `${Math.round(progress * 100)}%`;
+  bar.appendChild(fill);
+
+  copy.append(strong, timer, bar);
+  card.append(ring, copy);
+  dom.readerMessage.replaceChildren(card);
+}
+
+function formatDuration(ms) {
+  const totalSeconds = Math.max(0, Math.ceil(ms / 1000));
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  const two = (value) => String(value).padStart(2, "0");
+  return hours > 0 ? `${two(hours)}:${two(minutes)}:${two(seconds)}` : `${two(minutes)}:${two(seconds)}`;
 }
 
 function showMessage(message, isError = false) {

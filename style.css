@@ -256,13 +256,13 @@ body.reader-open .header-back {
 
 .category-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
   gap: 14px;
   margin: 10px 0 34px;
 }
 
 .category-card {
-  min-height: 152px;
+  min-height: 146px;
   display: grid;
   align-content: end;
   gap: 8px;
@@ -280,20 +280,28 @@ body.reader-open .header-back {
   transition: transform 190ms ease, box-shadow 190ms ease;
 }
 
-.category-card:nth-child(2) {
+.category-card:nth-child(6n + 2) {
   background: linear-gradient(145deg, #bc4749, #f2c078);
 }
 
-.category-card:nth-child(3) {
+.category-card:nth-child(6n + 3) {
   background: linear-gradient(145deg, #386641, #e9c46a);
 }
 
-.category-card:nth-child(4) {
+.category-card:nth-child(6n + 4) {
   background: linear-gradient(145deg, #345995, #8fd8d2);
 }
 
-.category-card:nth-child(5) {
+.category-card:nth-child(6n + 5) {
   background: linear-gradient(145deg, #5a189a, #ffafcc);
+}
+
+.category-card:nth-child(6n) {
+  background: linear-gradient(145deg, #006d77, #83c5be);
+}
+
+.category-card:nth-child(6n + 1) {
+  background: linear-gradient(145deg, #5f0f40, #fb8b24);
 }
 
 .category-card:hover,
@@ -521,6 +529,25 @@ body.reader-open .header-back {
   font: 600 12px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+.gutenberg-footer,
+.shelf-note {
+  display: grid;
+  place-items: center;
+  min-height: 62px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface-solid) 78%, transparent);
+  color: var(--muted);
+  text-align: center;
+  padding: 16px;
+  font: 700 13px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.shelf-note {
+  border-style: solid;
+  margin-bottom: 18px;
+}
+
 .book-card-actions {
   display: flex;
   gap: 8px;
@@ -552,6 +579,14 @@ body.reader-pdf .reader-view {
   overflow: hidden;
 }
 
+body.reader-text .reader-view {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--paper);
+  overflow: hidden;
+}
+
 .reader-stage {
   min-height: 100vh;
   min-height: 100dvh;
@@ -574,6 +609,16 @@ body.reader-pdf .reader-stage {
   background: var(--paper);
 }
 
+body.reader-text .reader-stage {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0;
+  background: var(--paper);
+}
+
 .flipbook-container {
   display: grid;
   place-items: center;
@@ -589,6 +634,18 @@ body.reader-pdf .flipbook-container {
   width: 100vw !important;
   height: 100vh !important;
   height: 100dvh !important;
+}
+
+body.reader-text .flipbook-container {
+  width: min(100vw, 980px) !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+}
+
+@media (max-width: 760px) {
+  body.reader-text .flipbook-container {
+    width: 100vw !important;
+  }
 }
 
 body.reader-pdf .flipbook-container .stf__wrapper,
@@ -616,6 +673,38 @@ body.reader-pdf .flipbook-container .stf__block {
 body.reader-pdf .page-shell {
   border: 0;
   box-shadow: none;
+}
+
+body.reader-text .page-shell {
+  border: 0;
+  box-shadow: none;
+}
+
+.text-page-shell {
+  background: var(--paper);
+}
+
+.text-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: clamp(24px, 5vw, 64px);
+  background: var(--paper);
+  color: var(--text);
+}
+
+.text-page h2 {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font: 800 clamp(18px, 4vw, 30px)/1.16 Georgia, "Times New Roman", serif;
+}
+
+.text-page-body {
+  font: 500 clamp(17px, 2.8vw, 23px)/1.68 Georgia, "Times New Roman", serif;
+}
+
+.text-page-body p {
+  margin: 0 0 1em;
 }
 
 .pdf-canvas {
@@ -745,6 +834,69 @@ body.reader-epub .epub-reader .epub-container {
   padding: 10px 16px;
   text-align: center;
   font: 700 13px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.reader-message.is-loading {
+  width: min(92vw, 420px);
+  border-radius: 18px;
+  padding: 12px;
+  backdrop-filter: blur(18px);
+}
+
+.reader-message.is-error {
+  border-radius: 12px;
+  background: color-mix(in srgb, #b33b2e 14%, var(--surface-solid));
+}
+
+.reader-loading-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.reader-loading-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background:
+    conic-gradient(var(--accent) var(--progress, 20deg), rgba(120, 108, 92, 0.2) 0),
+    radial-gradient(circle, var(--surface-solid) 58%, transparent 60%);
+  transform: translateZ(0);
+}
+
+.reader-loading-copy {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.reader-loading-copy strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.reader-loading-copy span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.reader-progress {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(120, 108, 92, 0.18);
+}
+
+.reader-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+  transition: width 220ms ease;
 }
 
 .page-turn-hint {

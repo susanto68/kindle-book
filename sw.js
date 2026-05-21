@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v28-epub-mobile-scale';
+const CACHE_NAME = 'kindle-reader-v30-fast-loading';
 const urlsToCache = [
   '/',
   '/index.html',
