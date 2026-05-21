@@ -2856,15 +2856,28 @@ function applyEpubTheme() {
   const isDark = document.documentElement.dataset.theme === "dark";
   state.epubRendition.themes.default({
     body: {
-      background: "transparent !important",
-      color: `${isDark ? "#f4efe5" : "#24211b"} !important`,
+      background: "#f5ecd9 !important",
+      color: "#18110a !important",
       "font-family": "Georgia, serif",
       "line-height": "1.55",
       "font-size": "112%",
       margin: "0 !important"
     },
     p: {
+      color: "#18110a !important",
       "line-height": "1.55"
+    },
+    li: {
+      color: "#18110a !important"
+    },
+    h1: {
+      color: "#18110a !important"
+    },
+    h2: {
+      color: "#18110a !important"
+    },
+    h3: {
+      color: "#18110a !important"
     },
     a: {
       color: `${isDark ? "#f0c99b" : "#7a4f2b"} !important`

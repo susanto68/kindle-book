@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v35-auto-gutenberg';
+const CACHE_NAME = 'kindle-reader-v36-premium-ui';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -11,7 +11,9 @@ const urlsToCache = [
   '/vendor/epub.min.js',
   '/books.json',
   '/books.gutenberg.json',
-  '/favicon.svg'
+  '/favicon.svg',
+  '/profile-avatar.png',
+  '/og-library.svg'
 ];
 
 // Install event - cache resources
