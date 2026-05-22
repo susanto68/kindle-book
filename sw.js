@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v36-premium-ui';
+const CACHE_NAME = 'kindle-reader-v37-ui-polish';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -13,7 +13,8 @@ const urlsToCache = [
   '/books.gutenberg.json',
   '/favicon.svg',
   '/profile-avatar.png',
-  '/og-library.svg'
+  '/og-library.svg',
+  '/hero-library.svg'
 ];
 
 // Install event - cache resources

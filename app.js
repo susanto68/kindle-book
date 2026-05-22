@@ -805,7 +805,11 @@ function renderCategoryCards() {
     const desc = document.createElement("small");
     desc.textContent = category.desc;
 
-    button.append(icon, title, desc);
+    const cta = document.createElement("em");
+    cta.className = "category-cta";
+    cta.textContent = "Explore";
+
+    button.append(icon, title, desc, cta);
     dom.categorySection.appendChild(button);
   });
   state.categoryCardsReady = true;

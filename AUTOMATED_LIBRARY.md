@@ -4,18 +4,21 @@ This project can grow the bookshelf automatically with public-domain books from 
 
 ## What Runs
 
-- `.github/workflows/update-gutenberg-library.yml` runs daily and weekly.
+- `.github/workflows/update-gutenberg-library.yml` runs once every hour.
 - `tools/gutendex_downloader.mjs` fetches Gutendex metadata, downloads EPUB files, downloads cover images, and updates `books.gutenberg.json`.
 - Vercel redeploys automatically after GitHub receives the workflow commit.
 
 ## Safety Limits
 
-The workflow is intentionally conservative:
+The workflow is intentionally conservative and mobile-friendly:
 
 - `GUTENBERG_MAX_PER_CATEGORY=1`
-- `GUTENBERG_MAX_TOTAL=20`
+- `GUTENBERG_MAX_TOTAL=2`
+- `GUTENBERG_MIN_TOTAL_BOOKS=50`
 
-This prevents the repository from suddenly downloading thousands of books in one run. Use the manual workflow inputs to increase these limits when needed.
+This grows the library gently by two books per hour while keeping a 50-book target visible in logs. Use the manual workflow inputs to increase these limits when needed.
+
+Manual books can still be uploaded safely. The automation only writes to `books/Gutenberg/**`, `books.gutenberg.json`, and `books/.gutenberg-cache.json`, so manually added books in other folders are not overwritten.
 
 ## Generated Files
 
@@ -26,11 +29,11 @@ This prevents the repository from suddenly downloading thousands of books in one
 ## Local Dry Run
 
 ```bash
-node tools/gutendex_downloader.mjs --dry-run --max-per-category=1 --max-total=5
+node tools/gutendex_downloader.mjs --dry-run --max-per-category=1 --max-total=2
 ```
 
 ## Local Download
 
 ```bash
-node tools/gutendex_downloader.mjs --max-per-category=1 --max-total=5
+node tools/gutendex_downloader.mjs --max-per-category=1 --max-total=2
 ```
