@@ -1946,6 +1946,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T06:51:42.834Z"
+      },
+      {
+        "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+        "file": "books/Gutenberg/Literature/844-the-importance-of-being-earnest-a-trivial-comedy-for-serious-people.epub",
+        "cover": "books/Gutenberg/Literature/844-the-importance-of-being-earnest-a-trivial-comedy-for-serious-people.jpg",
+        "author": "Wilde, Oscar",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 844,
+        "subjects": [
+          "Comedy plays",
+          "England -- Drama",
+          "Foundlings -- Drama",
+          "Identity (Psychology) -- Drama",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T13:33:52.121Z"
       }
     ]
   },
@@ -2627,6 +2649,27 @@
   {
     "class": "Gutenberg - Science",
     "books": [
+      {
+        "title": "A Honeymoon in Space",
+        "file": "books/Gutenberg/Science/19476-a-honeymoon-in-space.epub",
+        "cover": "books/Gutenberg/Science/19476-a-honeymoon-in-space.jpg",
+        "author": "Griffith, George Chetwynd",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 19476,
+        "subjects": [
+          "Science fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T13:34:34.737Z"
+      },
       {
         "title": "Color Images from Mars Rovers: Spirit and Opportunity",
         "file": "books/Gutenberg/Science/12082-color-images-from-mars-rovers-spirit-and-opportunity.epub",
