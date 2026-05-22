@@ -1763,6 +1763,36 @@
         "downloadedAt": "2026-05-21T13:08:43.059Z"
       },
       {
+        "title": "Jane Eyre: An Autobiography",
+        "file": "books/Gutenberg/Literature/1260-jane-eyre-an-autobiography.epub",
+        "cover": "books/Gutenberg/Literature/1260-jane-eyre-an-autobiography.jpg",
+        "author": "Brontë, Charlotte",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1260,
+        "subjects": [
+          "Bildungsromans",
+          "Charity-schools -- Fiction",
+          "Country homes -- Fiction",
+          "England -- Fiction",
+          "Fathers and daughters -- Fiction",
+          "Governesses -- Fiction",
+          "Love stories",
+          "Married people -- Fiction",
+          "Mentally ill women -- Fiction",
+          "Orphans -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T10:26:37.979Z"
+      },
+      {
         "title": "Middlemarch",
         "file": "books/Gutenberg/Literature/145-middlemarch.epub",
         "cover": "books/Gutenberg/Literature/145-middlemarch.jpg",
@@ -2693,6 +2723,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
+        "title": "Second Treatise of Government",
+        "file": "books/Gutenberg/Science/7370-second-treatise-of-government.epub",
+        "cover": "books/Gutenberg/Science/7370-second-treatise-of-government.jpg",
+        "author": "Locke, John",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 7370,
+        "subjects": [
+          "Liberty -- Early works to 1800",
+          "Political science -- Early works to 1800",
+          "Toleration -- Early works to 1800",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Category: Politics",
+          "Philosophy",
+          "Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T10:27:38.185Z"
       },
       {
         "title": "The King in Yellow",
