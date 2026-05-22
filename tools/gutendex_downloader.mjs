@@ -8,7 +8,8 @@ const GUTENDEX_API = "https://gutendex.com/books/";
 const METADATA_PATH = path.join(ROOT, "books.gutenberg.json");
 const CACHE_PATH = path.join(ROOT, "books", ".gutenberg-cache.json");
 const DEFAULT_MAX_PER_CATEGORY = Number.parseInt(process.env.GUTENBERG_MAX_PER_CATEGORY || "1", 10);
-const DEFAULT_MAX_TOTAL = Number.parseInt(process.env.GUTENBERG_MAX_TOTAL || "20", 10);
+const DEFAULT_MAX_TOTAL = Number.parseInt(process.env.GUTENBERG_MAX_TOTAL || "2", 10);
+const DEFAULT_MIN_TOTAL_BOOKS = Number.parseInt(process.env.GUTENBERG_MIN_TOTAL_BOOKS || "50", 10);
 
 const CATEGORIES = [
   { name: "Literature", folder: "Literature", topic: "literature", search: "classic literature" },
@@ -40,7 +41,8 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 const options = {
   dryRun: args.get("dry-run") === "true",
   maxPerCategory: Number.parseInt(args.get("max-per-category") || String(DEFAULT_MAX_PER_CATEGORY), 10),
-  maxTotal: Number.parseInt(args.get("max-total") || String(DEFAULT_MAX_TOTAL), 10)
+  maxTotal: Number.parseInt(args.get("max-total") || String(DEFAULT_MAX_TOTAL), 10),
+  minTotalBooks: Number.parseInt(args.get("min-total-books") || String(DEFAULT_MIN_TOTAL_BOOKS), 10)
 };
 
 async function main() {
@@ -55,6 +57,9 @@ async function main() {
       knownTitles.add(normalizeKey(book.title));
     });
   });
+
+  const currentBookCount = countMetadataBooks(metadata);
+  console.log(`Gutenberg metadata contains ${currentBookCount} books. Target minimum: ${options.minTotalBooks}.`);
 
   let downloaded = 0;
   for (const category of CATEGORIES) {
@@ -74,6 +79,10 @@ async function main() {
   }
 
   console.log(`Gutenberg update complete. New books: ${downloaded}. Dry run: ${options.dryRun}`);
+}
+
+function countMetadataBooks(metadata) {
+  return metadata.reduce((total, group) => total + ((group.books || []).length), 0);
 }
 
 async function updateCategory(category, metadata, cache, knownIds, knownTitles, maxNew) {

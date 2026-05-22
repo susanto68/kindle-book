@@ -9,13 +9,15 @@ on:
         required: false
       max_total:
         description: "Maximum new books to download in this run"
-        default: "20"
+        default: "2"
+        required: false
+      min_total_books:
+        description: "Target minimum Gutenberg library size to maintain over time"
+        default: "50"
         required: false
   schedule:
-    # Daily at midnight UTC. Vercel redeploys automatically after this workflow pushes.
-    - cron: "0 0 * * *"
-    # Weekly Sunday refresh.
-    - cron: "30 0 * * 0"
+    # Hourly gentle growth. Vercel redeploys automatically after this workflow pushes.
+    - cron: "0 * * * *"
 
 permissions:
   contents: write
@@ -39,7 +41,8 @@ jobs:
       - name: Download new Gutenberg books
         env:
           GUTENBERG_MAX_PER_CATEGORY: ${{ github.event.inputs.max_per_category || '1' }}
-          GUTENBERG_MAX_TOTAL: ${{ github.event.inputs.max_total || '20' }}
+          GUTENBERG_MAX_TOTAL: ${{ github.event.inputs.max_total || '2' }}
+          GUTENBERG_MIN_TOTAL_BOOKS: ${{ github.event.inputs.min_total_books || '50' }}
         run: node tools/gutendex_downloader.mjs
 
       - name: Commit library update

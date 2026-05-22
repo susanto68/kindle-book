@@ -12,7 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Sir Ganguly Digital Library</title>
-  <link rel="stylesheet" href="style.css?v=36">
+  <link rel="stylesheet" href="style.css?v=37">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
@@ -55,7 +55,7 @@
       <div class="library-hero">
         <div>
           <p class="eyebrow">Free student digital library</p>
-          <h2>Discover, learn, and read without limits.</h2>
+          <h2>Discover, learn, and read <span>without limits.</span></h2>
           <div class="hero-actions" aria-label="Library highlights">
             <span>Kindle style</span>
             <span>Gutenberg powered</span>
@@ -64,11 +64,13 @@
         </div>
         <p class="hero-copy">Your local books plus public-domain classics from Project Gutenberg, organized for every learner.</p>
         <div class="hero-visual" aria-hidden="true">
-          <span class="floating-book book-one"></span>
-          <span class="floating-book book-two"></span>
-          <span class="floating-book book-three"></span>
-          <span class="hero-orbit"></span>
+          <img src="hero-library.svg" alt="">
         </div>
+      </div>
+
+      <div class="category-heading" aria-hidden="true">
+        <span class="category-heading-icon"></span>
+        <h2>Explore Categories</h2>
       </div>
 
       <section id="categorySection" class="category-section" aria-label="Book categories">
@@ -213,6 +215,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=36"></script>
+  <script src="app.js?v=37"></script>
 </body>
 </html>
