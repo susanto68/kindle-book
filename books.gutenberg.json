@@ -1763,6 +1763,34 @@
         "downloadedAt": "2026-05-21T13:08:43.059Z"
       },
       {
+        "title": "Middlemarch",
+        "file": "books/Gutenberg/Literature/145-middlemarch.epub",
+        "cover": "books/Gutenberg/Literature/145-middlemarch.jpg",
+        "author": "Eliot, George",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 145,
+        "subjects": [
+          "Bildungsromans",
+          "City and town life -- Fiction",
+          "Didactic fiction",
+          "Domestic fiction",
+          "England -- Fiction",
+          "Love stories",
+          "Married people -- Fiction",
+          "Young women -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T05:04:47.017Z"
+      },
+      {
         "title": "Moby Dick; Or, The Whale",
         "file": "books/Gutenberg/Literature/2701-moby-dick-or-the-whale.epub",
         "cover": "books/Gutenberg/Literature/2701-moby-dick-or-the-whale.jpg",
@@ -2546,6 +2574,24 @@
   {
     "class": "Gutenberg - Science",
     "books": [
+      {
+        "title": "Color Images from Mars Rovers: Spirit and Opportunity",
+        "file": "books/Gutenberg/Science/12082-color-images-from-mars-rovers-spirit-and-opportunity.epub",
+        "cover": "books/Gutenberg/Science/12082-color-images-from-mars-rovers-spirit-and-opportunity.jpg",
+        "author": "Webster, Bob",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 12082,
+        "subjects": [
+          "Mars (Planet) -- Pictorial works",
+          "Category: Engineering & Technology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T05:05:54.555Z"
+      },
       {
         "title": "Dracula",
         "file": "books/Gutenberg/Science/345-dracula.epub",
