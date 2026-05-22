@@ -1968,6 +1968,37 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T13:33:52.121Z"
+      },
+      {
+        "title": "Wuthering Heights",
+        "file": "books/Gutenberg/Literature/768-wuthering-heights.epub",
+        "cover": "books/Gutenberg/Literature/768-wuthering-heights.jpg",
+        "author": "Brontë, Emily",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 768,
+        "subjects": [
+          "Domestic fiction",
+          "Foundlings -- Fiction",
+          "Heathcliff (Fictitious character : Brontë) -- Fiction",
+          "Love stories",
+          "Psychological fiction",
+          "Rejection (Psychology) -- Fiction",
+          "Revenge -- Fiction",
+          "Rural families -- Fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Yorkshire (England) -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Gothic Fiction",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T16:28:05.001Z"
       }
     ]
   },
@@ -2812,6 +2843,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:36.877Z"
+      },
+      {
+        "title": "The Misplaced Battleship",
+        "file": "books/Gutenberg/Science/22541-the-misplaced-battleship.epub",
+        "cover": "books/Gutenberg/Science/22541-the-misplaced-battleship.jpg",
+        "author": "Harrison, Harry",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22541,
+        "subjects": [
+          "Criminals -- Fiction",
+          "DiGriz, James Bolivar (Fictitious character) -- Fiction",
+          "Police -- Fiction",
+          "Science fiction",
+          "Space ships -- Fiction",
+          "Category: Adventure",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T16:28:39.778Z"
       },
       {
         "title": "The Natural History of Pliny, Volume 2 (of 6)",
