@@ -1925,6 +1925,29 @@
         "downloadedAt": "2026-05-21T13:57:17.318Z"
       },
       {
+        "title": "The Enchanted April",
+        "file": "books/Gutenberg/Literature/16389-the-enchanted-april.epub",
+        "cover": "books/Gutenberg/Literature/16389-the-enchanted-april.jpg",
+        "author": "Von Arnim, Elizabeth",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16389,
+        "subjects": [
+          "British -- Italy -- Fiction",
+          "Domestic fiction",
+          "Female friendship -- Fiction",
+          "Italy -- Fiction",
+          "Love stories",
+          "Bestsellers, American, 1895-1923",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T18:56:27.302Z"
+      },
+      {
         "title": "The Great Gatsby",
         "file": "books/Gutenberg/Literature/64317-the-great-gatsby.epub",
         "cover": "books/Gutenberg/Literature/64317-the-great-gatsby.jpg",
@@ -2680,6 +2703,36 @@
   {
     "class": "Gutenberg - Science",
     "books": [
+      {
+        "title": "A Connecticut Yankee in King Arthur's Court",
+        "file": "books/Gutenberg/Science/86-a-connecticut-yankee-in-king-arthurs-court.epub",
+        "cover": "books/Gutenberg/Science/86-a-connecticut-yankee-in-king-arthurs-court.jpg",
+        "author": "Twain, Mark",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 86,
+        "subjects": [
+          "Americans -- Great Britain -- Fiction",
+          "Arthurian romances -- Adaptations",
+          "Britons -- Fiction",
+          "Fantasy fiction",
+          "Kings and rulers -- Fiction",
+          "Knights and knighthood -- Fiction",
+          "Satire",
+          "Time travel -- Fiction",
+          "Arthurian Legends",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Precursors of Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T18:56:34.304Z"
+      },
       {
         "title": "A Honeymoon in Space",
         "file": "books/Gutenberg/Science/19476-a-honeymoon-in-space.epub",
