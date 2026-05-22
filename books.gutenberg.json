@@ -1928,6 +1928,29 @@
         "downloadedAt": "2026-05-22T20:45:12.249Z"
       },
       {
+        "title": "The Brothers Karamazov",
+        "file": "books/Gutenberg/Literature/28054-the-brothers-karamazov.epub",
+        "cover": "books/Gutenberg/Literature/28054-the-brothers-karamazov.jpg",
+        "author": "Dostoyevsky, Fyodor",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28054,
+        "subjects": [
+          "Brothers -- Fiction",
+          "Didactic fiction",
+          "Fathers and sons -- Fiction",
+          "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Russian Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T22:11:14.262Z"
+      },
+      {
         "title": "The Complete Works of William Shakespeare",
         "file": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.epub",
         "cover": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.jpg",
@@ -2990,6 +3013,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.393Z"
+      },
+      {
+        "title": "The Sex Life of the Gods",
+        "file": "books/Gutenberg/Science/40284-the-sex-life-of-the-gods.epub",
+        "cover": "books/Gutenberg/Science/40284-the-sex-life-of-the-gods.jpg",
+        "author": "Knerr, M. E. (Michael E.)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40284,
+        "subjects": [
+          "Extraterrestrial beings -- Fiction",
+          "Science fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T22:11:51.578Z"
       },
       {
         "title": "The strange case of Dr. Jekyll and Mr. Hyde",
