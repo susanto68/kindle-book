@@ -1904,6 +1904,30 @@
         "downloadedAt": "2026-05-21T13:57:15.315Z"
       },
       {
+        "title": "The Adventures of Sherlock Holmes",
+        "file": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.epub",
+        "cover": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.jpg",
+        "author": "Doyle, Arthur Conan",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1661,
+        "subjects": [
+          "Detective and mystery stories, English",
+          "Holmes, Sherlock (Fictitious character) -- Fiction",
+          "Private investigators -- England -- Fiction",
+          "Banned Books from Anne Haight's list",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Short Stories",
+          "Contemporary Reviews",
+          "Detective Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T20:45:12.249Z"
+      },
+      {
         "title": "The Complete Works of William Shakespeare",
         "file": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.epub",
         "cover": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.jpg",
@@ -3030,6 +3054,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.879Z"
+      },
+      {
+        "title": "Thuvia, maid of Mars",
+        "file": "books/Gutenberg/Science/72-thuvia-maid-of-mars.epub",
+        "cover": "books/Gutenberg/Science/72-thuvia-maid-of-mars.jpg",
+        "author": "Burroughs, Edgar Rice",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 72,
+        "subjects": [
+          "Mars (Planet) -- Fiction",
+          "Martians -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T20:46:11.881Z"
       }
     ]
   }
