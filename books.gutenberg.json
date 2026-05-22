@@ -1893,6 +1893,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:17.318Z"
+      },
+      {
+        "title": "The Great Gatsby",
+        "file": "books/Gutenberg/Literature/64317-the-great-gatsby.epub",
+        "cover": "books/Gutenberg/Literature/64317-the-great-gatsby.jpg",
+        "author": "Fitzgerald, F. Scott (Francis Scott)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64317,
+        "subjects": [
+          "First loves -- Fiction",
+          "Long Island (N.Y.) -- Fiction",
+          "Married women -- Fiction",
+          "Psychological fiction",
+          "Rich people -- Fiction",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T06:51:42.834Z"
       }
     ]
   },
@@ -2693,6 +2716,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:36.877Z"
+      },
+      {
+        "title": "The Natural History of Pliny, Volume 2 (of 6)",
+        "file": "books/Gutenberg/Science/60230-the-natural-history-of-pliny-volume-2-of-6.epub",
+        "cover": "books/Gutenberg/Science/60230-the-natural-history-of-pliny-volume-2-of-6.jpg",
+        "author": "Pliny, the Elder",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60230,
+        "subjects": [
+          "Natural history -- Pre-Linnean works",
+          "Category: Archaeology & Anthropology",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - Ancient",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-22T06:52:20.256Z"
       },
       {
         "title": "The Prince",
