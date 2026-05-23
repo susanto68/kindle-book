@@ -1728,6 +1728,29 @@
         "downloadedAt": "2026-05-21T13:57:17.104Z"
       },
       {
+        "title": "Cranford",
+        "file": "books/Gutenberg/Literature/394-cranford.epub",
+        "cover": "books/Gutenberg/Literature/394-cranford.jpg",
+        "author": "Gaskell, Elizabeth Cleghorn",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 394,
+        "subjects": [
+          "England -- Fiction",
+          "Female friendship -- Fiction",
+          "Older women -- Fiction",
+          "Pastoral fiction",
+          "Sisters -- Fiction",
+          "Villages -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T09:55:50.606Z"
+      },
+      {
         "title": "Crime and Punishment",
         "file": "books/Gutenberg/Literature/2554-crime-and-punishment.epub",
         "cover": "books/Gutenberg/Literature/2554-crime-and-punishment.jpg",
@@ -2894,6 +2917,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T00:10:14.698Z"
+      },
+      {
+        "title": "A Midsummer Night's Dream",
+        "file": "books/Gutenberg/Science/1514-a-midsummer-nights-dream.epub",
+        "cover": "books/Gutenberg/Science/1514-a-midsummer-nights-dream.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1514,
+        "subjects": [
+          "Athens (Greece) -- Drama",
+          "Comedy plays",
+          "Courtship -- Drama",
+          "Fairy plays",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Humour",
+          "Category: Plays/Films/Dramas",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T09:56:01.115Z"
       },
       {
         "title": "Color Images from Mars Rovers: Spirit and Opportunity",
