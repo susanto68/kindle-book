@@ -2037,6 +2037,32 @@
         "downloadedAt": "2026-05-22T18:56:27.302Z"
       },
       {
+        "title": "The Expedition of Humphry Clinker",
+        "file": "books/Gutenberg/Literature/2160-the-expedition-of-humphry-clinker.epub",
+        "cover": "books/Gutenberg/Literature/2160-the-expedition-of-humphry-clinker.jpg",
+        "author": "Smollett, T. (Tobias)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2160,
+        "subjects": [
+          "Epistolary fiction",
+          "Great Britain -- Fiction",
+          "Travelers -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Travel Writing",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T07:34:10.882Z"
+      },
+      {
         "title": "The Great Gatsby",
         "file": "books/Gutenberg/Literature/64317-the-great-gatsby.epub",
         "cover": "books/Gutenberg/Literature/64317-the-great-gatsby.jpg",
@@ -3081,6 +3107,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.393Z"
+      },
+      {
+        "title": "The Republic",
+        "file": "books/Gutenberg/Science/1497-the-republic.epub",
+        "cover": "books/Gutenberg/Science/1497-the-republic.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1497,
+        "subjects": [
+          "Classical literature",
+          "Justice -- Early works to 1800",
+          "Political science -- Early works to 1800",
+          "Utopias -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T07:35:04.237Z"
       },
       {
         "title": "The Sex Life of the Gods",
