@@ -1997,6 +1997,33 @@
         "downloadedAt": "2026-05-23T05:11:24.097Z"
       },
       {
+        "title": "The Adventures of Roderick Random",
+        "file": "books/Gutenberg/Literature/4085-the-adventures-of-roderick-random.epub",
+        "cover": "books/Gutenberg/Literature/4085-the-adventures-of-roderick-random.jpg",
+        "author": "Smollett, T. (Tobias)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4085,
+        "subjects": [
+          "England -- Fiction",
+          "Impressment -- Fiction",
+          "Picaresque literature",
+          "Rogues and vagabonds -- Fiction",
+          "Sailors -- Fiction",
+          "Scots -- England -- Fiction",
+          "Sea stories",
+          "Warships -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Novels",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T13:38:49.824Z"
+      },
+      {
         "title": "The Adventures of Sherlock Holmes",
         "file": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.epub",
         "cover": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.jpg",
@@ -3090,6 +3117,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T10:27:38.185Z"
+      },
+      {
+        "title": "The Dunwich horror",
+        "file": "books/Gutenberg/Science/50133-the-dunwich-horror.epub",
+        "cover": "books/Gutenberg/Science/50133-the-dunwich-horror.jpg",
+        "author": "Lovecraft, H. P. (Howard Phillips)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50133,
+        "subjects": [
+          "American fiction -- 20th century",
+          "Fantasy fiction",
+          "Horror tales",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T13:39:04.132Z"
       },
       {
         "title": "The King in Yellow",
