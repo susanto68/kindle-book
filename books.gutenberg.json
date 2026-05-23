@@ -1682,6 +1682,28 @@
     "class": "Gutenberg - Literature",
     "books": [
       {
+        "title": "A Doll's House : a play",
+        "file": "books/Gutenberg/Literature/2542-a-dolls-house-a-play.epub",
+        "cover": "books/Gutenberg/Literature/2542-a-dolls-house-a-play.jpg",
+        "author": "Ibsen, Henrik",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2542,
+        "subjects": [
+          "Man-woman relationships -- Drama",
+          "Marriage -- Drama",
+          "Norwegian drama -- Translations into English",
+          "Wives -- Drama",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T00:09:27.755Z"
+      },
+      {
         "title": "A Room with a View",
         "file": "books/Gutenberg/Literature/2641-a-room-with-a-view.epub",
         "cover": "books/Gutenberg/Literature/2641-a-room-with-a-view.jpg",
@@ -2800,6 +2822,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T13:34:34.737Z"
+      },
+      {
+        "title": "A Journey to the Centre of the Earth",
+        "file": "books/Gutenberg/Science/18857-a-journey-to-the-centre-of-the-earth.epub",
+        "cover": "books/Gutenberg/Science/18857-a-journey-to-the-centre-of-the-earth.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18857,
+        "subjects": [
+          "Adventure stories",
+          "Earth (Planet) -- Core -- Fiction",
+          "Science fiction",
+          "Voyages, Imaginary -- Fiction",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Movie Books",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T00:10:14.698Z"
       },
       {
         "title": "Color Images from Mars Rovers: Spirit and Opportunity",
