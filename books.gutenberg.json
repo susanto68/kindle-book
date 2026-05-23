@@ -25,6 +25,29 @@
         "downloadedAt": "2026-05-21T13:57:58.273Z"
       },
       {
+        "title": "Man in a Sewing Machine",
+        "file": "books/Gutenberg/Artificial_Intelligence/50936-man-in-a-sewing-machine.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/50936-man-in-a-sewing-machine.jpg",
+        "author": "Stecher, L. J., Jr.",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50936,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Computers -- Fiction",
+          "Questions and answers -- Fiction",
+          "Science fiction",
+          "Spouses -- Fiction",
+          "Category: Humour",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T15:06:55.198Z"
+      },
+      {
         "title": "The angry house",
         "file": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.jpg",
@@ -990,6 +1013,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:44.342Z"
+      },
+      {
+        "title": "Preliminary Specifications: Programmed Data Processor Model Three (PDP-3): October, 1960",
+        "file": "books/Gutenberg/Computer_Science/29461-preliminary-specifications-programmed-data-processor-model-three-pdp-3-o.epub",
+        "cover": "books/Gutenberg/Computer_Science/29461-preliminary-specifications-programmed-data-processor-model-three-pdp-3-o.jpg",
+        "author": "Digital Equipment Corporation",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29461,
+        "subjects": [
+          "Electronic digital computers",
+          "PDP-3 (Computer)",
+          "Category: Engineering & Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T15:06:10.832Z"
       },
       {
         "title": "The 64-Square Madhouse",
