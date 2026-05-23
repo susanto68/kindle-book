@@ -1808,6 +1808,34 @@
         "downloadedAt": "2026-05-21T13:08:43.059Z"
       },
       {
+        "title": "History of Tom Jones, a Foundling",
+        "file": "books/Gutenberg/Literature/6593-history-of-tom-jones-a-foundling.epub",
+        "cover": "books/Gutenberg/Literature/6593-history-of-tom-jones-a-foundling.jpg",
+        "author": "Fielding, Henry",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6593,
+        "subjects": [
+          "Bildungsromans",
+          "England -- Fiction",
+          "Foundlings -- Fiction",
+          "Humorous stories",
+          "Identity (Psychology) -- Fiction",
+          "Young men -- Fiction",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Harvard Classics",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T11:14:42.486Z"
+      },
+      {
         "title": "Jane Eyre: An Autobiography",
         "file": "books/Gutenberg/Literature/1260-jane-eyre-an-autobiography.epub",
         "cover": "books/Gutenberg/Literature/1260-jane-eyre-an-autobiography.jpg",
@@ -3130,6 +3158,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T06:52:20.256Z"
+      },
+      {
+        "title": "The Natural History of Pliny, Volume 4 (of 6)",
+        "file": "books/Gutenberg/Science/61113-the-natural-history-of-pliny-volume-4-of-6.epub",
+        "cover": "books/Gutenberg/Science/61113-the-natural-history-of-pliny-volume-4-of-6.jpg",
+        "author": "Pliny, the Elder",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61113,
+        "subjects": [
+          "Natural history -- Pre-Linnean works",
+          "Category: History - Ancient",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T11:14:56.442Z"
       },
       {
         "title": "The Prince",
