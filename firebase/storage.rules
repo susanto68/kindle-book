@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    match /books/{language}/{category}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin()
+        && request.resource.size < 150 * 1024 * 1024
+        && request.resource.contentType.matches('(application/epub\\+zip|application/pdf|text/html.*|text/plain.*)');
+    }
+
+    match /covers/{language}/{category}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin()
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /audio/{language}/{category}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin()
+        && request.resource.size < 200 * 1024 * 1024
+        && request.resource.contentType.matches('audio/.*');
+    }
+
+    match /videos/{language}/{category}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin()
+        && request.resource.size < 500 * 1024 * 1024
+        && request.resource.contentType.matches('video/.*');
+    }
+
+    match /metadata/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin()
+        && request.resource.size < 1024 * 1024
+        && request.resource.contentType.matches('application/json.*');
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

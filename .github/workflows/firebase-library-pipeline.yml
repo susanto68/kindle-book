@@ -1,0 +1,52 @@
+name: Firebase Multilingual Library Pipeline
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max_books:
+        description: "Maximum new books to process in this run"
+        required: false
+        default: "25"
+      dry_run:
+        description: "Run without uploading to Firebase"
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+
+jobs:
+  sync-library:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+      FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
+      FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
+      FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      LIBRARY_MAX_BOOKS_PER_RUN: ${{ inputs.max_books || '25' }}
+      LIBRARY_BOOKS_PER_SOURCE: "3"
+      LIBRARY_LANGUAGES: "english,hindi,bengali,sanskrit,tamil,urdu,marathi"
+      LIBRARY_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install automation dependencies
+        run: npm install
+
+      - name: Sync legal free books to Firebase
+        run: npm run library:sync -- --max=${{ inputs.max_books || '25' }}
+
+      - name: Refresh recommendation documents
+        if: success() && env.LIBRARY_DRY_RUN != 'true'
+        run: npm run library:recommendations
