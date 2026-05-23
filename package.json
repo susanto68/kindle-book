@@ -1,0 +1,25 @@
+{
+  "name": "sir-ganguly-digital-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static Kindle-style digital library plus Firebase automation pipeline.",
+  "scripts": {
+    "library:sync": "tsx src/library-pipeline/sync.ts",
+    "library:dry-run": "tsx src/library-pipeline/sync.ts --dry-run",
+    "library:migrate-github": "tsx src/library-pipeline/migrate-github-books.ts --dry-run",
+    "library:recommendations": "tsx src/library-pipeline/recommendations.ts",
+    "library:videos": "tsx src/library-pipeline/videos.ts"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}

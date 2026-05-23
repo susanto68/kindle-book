@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Library Automation Admin</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="firebase-config.js"></script>
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p>Sir Ganguly Digital Library</p>
+        <h1>Automation Dashboard</h1>
+      </div>
+      <a href="index.html">Open Library</a>
+    </header>
+
+    <section id="adminNotice" class="notice" hidden></section>
+
+    <section class="metric-grid" aria-label="Automation metrics">
+      <article>
+        <span>Total Books</span>
+        <strong id="totalBooks">-</strong>
+      </article>
+      <article>
+        <span>Recent Uploads</span>
+        <strong id="recentUploads">-</strong>
+      </article>
+      <article>
+        <span>Trending Searches</span>
+        <strong id="trendingCount">-</strong>
+      </article>
+      <article>
+        <span>Last Automation</span>
+        <strong id="lastAutomation">-</strong>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <h2>Recent Uploads</h2>
+        <div id="recentBooks" class="list"></div>
+      </article>
+      <article class="panel">
+        <h2>Automation Logs</h2>
+        <div id="automationLogs" class="list"></div>
+      </article>
+      <article class="panel">
+        <h2>Trending Searches</h2>
+        <div id="trendingSearches" class="chips"></div>
+      </article>
+      <article class="panel">
+        <h2>Source Statistics</h2>
+        <div id="sourceStats" class="chips"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

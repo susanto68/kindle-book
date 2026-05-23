@@ -1,9 +1,10 @@
-const CACHE_NAME = 'kindle-reader-v37-ui-polish';
+const CACHE_NAME = 'kindle-reader-v38-firebase-ai-library';
 const urlsToCache = [
   '/',
   '/index.html',
   '/style.css',
   '/app.js',
+  '/firebase-library.js',
   '/vendor/pdf.min.js',
   '/vendor/pdf.worker.min.js',
   '/vendor/page-flip.browser.min.js',
@@ -37,6 +38,7 @@ self.addEventListener('fetch', (event) => {
     '/books.json',
     '/books.gutenberg.json',
     '/app.js',
+    '/firebase-library.js',
     '/style.css',
     '/sw.js'
   ]);

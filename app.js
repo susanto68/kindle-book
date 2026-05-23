@@ -190,8 +190,9 @@ async function init() {
     }
 
     const configuredLibrary = await response.json();
+    const firebaseLibrary = await fetchFirebaseLibrary();
     const generatedLibrary = await fetchOptionalLibrary("books.gutenberg.json");
-    state.rawLibrary = await mergeDiscoveredPdfFolders([...configuredLibrary, ...generatedLibrary]);
+    state.rawLibrary = await mergeDiscoveredPdfFolders([...firebaseLibrary, ...configuredLibrary, ...generatedLibrary]);
     flattenLibrary(state.rawLibrary);
     renderLibrary();
     hideLoadingScreen();
@@ -222,6 +223,20 @@ async function fetchOptionalLibrary(path) {
     return Array.isArray(data) ? data : [];
   } catch (error) {
     console.info(`${path} is not available yet.`, error);
+    return [];
+  }
+}
+
+async function fetchFirebaseLibrary() {
+  try {
+    if (!window.kindleFirebaseLibrary?.loadBooks) {
+      return [];
+    }
+
+    const data = await window.kindleFirebaseLibrary.loadBooks();
+    return Array.isArray(data) ? data : [];
+  } catch (error) {
+    console.info("Firebase library is not available yet; using GitHub catalog fallback.", error);
     return [];
   }
 }
@@ -2293,9 +2308,18 @@ function handleSearchInput() {
     return;
   }
 
+  trackSearchTerm(query);
   state.searchTimer = setTimeout(() => {
     fetchGutendexSearch(query);
   }, 520);
+}
+
+function trackSearchTerm(query) {
+  try {
+    window.kindleFirebaseLibrary?.trackSearch?.(query, state.activeCategory);
+  } catch (error) {
+    console.info("Search trend tracking skipped.", error);
+  }
 }
 
 function closeSearch() {
