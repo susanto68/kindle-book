@@ -71,6 +71,32 @@
         "downloadedAt": "2026-05-23T15:06:55.198Z"
       },
       {
+        "title": "Perfect Answer",
+        "file": "books/Gutenberg/Artificial_Intelligence/51482-perfect-answer.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/51482-perfect-answer.jpg",
+        "author": "Stecher, L. J., Jr.",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51482,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Computers -- Fiction",
+          "Explorers -- Fiction",
+          "Human-alien encounters -- Fiction",
+          "Interstellar travel -- Fiction",
+          "Questions and answers -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T21:59:37.713Z"
+      },
+      {
         "title": "The angry house",
         "file": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/69211-the-angry-house.jpg",
@@ -1097,6 +1123,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T15:06:10.832Z"
+      },
+      {
+        "title": "Radio Shack TRS-80 Expansion Interface: Operator's Manual: Catalog Numbers: 26-1140, 26-1141, 26-1142",
+        "file": "books/Gutenberg/Computer_Science/27469-radio-shack-trs-80-expansion-interface-operators-manual-catalog-numbers-.epub",
+        "cover": "books/Gutenberg/Computer_Science/27469-radio-shack-trs-80-expansion-interface-operators-manual-catalog-numbers-.jpg",
+        "author": "Anonymous",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27469,
+        "subjects": [
+          "TRS-80 computers -- Handbooks, manuals, etc.",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T21:59:07.970Z"
       },
       {
         "title": "The 64-Square Madhouse",
