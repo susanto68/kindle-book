@@ -25,6 +25,29 @@
         "downloadedAt": "2026-05-21T13:57:58.273Z"
       },
       {
+        "title": "Eddie",
+        "file": "books/Gutenberg/Artificial_Intelligence/60443-eddie.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/60443-eddie.jpg",
+        "author": "Riley, Frank",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60443,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "California, Southern -- Fiction",
+          "Cold War -- Fiction",
+          "Science fiction",
+          "Spy stories",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T17:04:24.974Z"
+      },
+      {
         "title": "Man in a Sewing Machine",
         "file": "books/Gutenberg/Artificial_Intelligence/50936-man-in-a-sewing-machine.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/50936-man-in-a-sewing-machine.jpg",
@@ -977,6 +1000,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:48.285Z"
+      },
+      {
+        "title": "Computers on the Farm: Farm Uses for Computers, How to Select Software and Hardware, and Online Information Sources in Agriculture",
+        "file": "books/Gutenberg/Computer_Science/59316-computers-on-the-farm-farm-uses-for-computers-how-to-select-software-and.epub",
+        "cover": "books/Gutenberg/Computer_Science/59316-computers-on-the-farm-farm-uses-for-computers-how-to-select-software-and.jpg",
+        "author": "Smith, Deborah Takiff",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59316,
+        "subjects": [
+          "Farms -- United States",
+          "Information storage and retrieval systems -- Agriculture",
+          "Microcomputers",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T17:04:02.977Z"
       },
       {
         "title": "Computers—the machines we think with",
