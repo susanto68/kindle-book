@@ -113,6 +113,28 @@
         "downloadedAt": "2026-05-21T13:18:50.774Z"
       },
       {
+        "title": "The Cyber and Justice Holmes",
+        "file": "books/Gutenberg/Artificial_Intelligence/59148-the-cyber-and-justice-holmes.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/59148-the-cyber-and-justice-holmes.jpg",
+        "author": "Riley, Frank",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59148,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Judges -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Trials -- Fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T20:59:16.441Z"
+      },
+      {
         "title": "The Cyberene",
         "file": "books/Gutenberg/Artificial_Intelligence/66163-the-cyberene.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/66163-the-cyberene.jpg",
@@ -1117,6 +1139,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:47.561Z"
+      },
+      {
+        "title": "The Jargon File, Version 4.0.0, 24 Jul 1996",
+        "file": "books/Gutenberg/Computer_Science/817-the-jargon-file-version-400-24-jul-1996.epub",
+        "cover": "books/Gutenberg/Computer_Science/817-the-jargon-file-version-400-24-jul-1996.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 817,
+        "subjects": [
+          "Computers -- Humor",
+          "Computers -- Slang -- Dictionaries",
+          "Electronic data processing -- Terminology -- Humor",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Journalism/Media/Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T20:58:18.441Z"
       },
       {
         "title": "The Jargon File, Version 4.2.2, 20 Aug 2000",
