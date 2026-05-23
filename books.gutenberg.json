@@ -1926,6 +1926,26 @@
         "downloadedAt": "2026-05-21T13:57:15.315Z"
       },
       {
+        "title": "The Adventures of Ferdinand Count Fathom — Complete",
+        "file": "books/Gutenberg/Literature/6761-the-adventures-of-ferdinand-count-fathom-complete.epub",
+        "cover": "books/Gutenberg/Literature/6761-the-adventures-of-ferdinand-count-fathom-complete.jpg",
+        "author": "Smollett, T. (Tobias)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6761,
+        "subjects": [
+          "Adventure stories",
+          "Gothic fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T05:11:24.097Z"
+      },
+      {
         "title": "The Adventures of Sherlock Holmes",
         "file": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.epub",
         "cover": "books/Gutenberg/Literature/1661-the-adventures-of-sherlock-holmes.jpg",
@@ -3169,6 +3189,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T20:46:11.881Z"
+      },
+      {
+        "title": "Twenty Thousand Leagues under the Sea",
+        "file": "books/Gutenberg/Science/164-twenty-thousand-leagues-under-the-sea.epub",
+        "cover": "books/Gutenberg/Science/164-twenty-thousand-leagues-under-the-sea.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 164,
+        "subjects": [
+          "Adventure stories",
+          "Science fiction",
+          "Sea stories",
+          "Submarines (Ships) -- Fiction",
+          "Underwater exploration -- Fiction",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-23T05:11:46.685Z"
       }
     ]
   }
