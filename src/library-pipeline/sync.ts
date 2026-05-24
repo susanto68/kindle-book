@@ -118,6 +118,12 @@ async function main(): Promise<void> {
     seeds
   };
 
+  if (!context.dryRun && !hasFirebaseAdminConfig()) {
+    throw new Error(
+      "Firebase Admin config is missing. Add FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY, and FIREBASE_STORAGE_BUCKET as GitHub Actions secrets, or run with --dry-run."
+    );
+  }
+
   await logAutomation("started", {
     dryRun: context.dryRun,
     maxBooks: context.maxBooks,
