@@ -3,6 +3,29 @@
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
+        "title": "Assignment in the Dawn",
+        "file": "books/Gutenberg/Artificial_Intelligence/64293-assignment-in-the-dawn.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/64293-assignment-in-the-dawn.jpg",
+        "author": "Walton, Bryce",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64293,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Man-woman relationships -- Fiction",
+          "Psychological fiction",
+          "Revolutionaries -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T08:36:20.555Z"
+      },
+      {
         "title": "Delay in Transit",
         "file": "books/Gutenberg/Artificial_Intelligence/50998-delay-in-transit.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/50998-delay-in-transit.jpg",
@@ -2585,6 +2608,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:13.454Z"
+      },
+      {
+        "title": "Palace and Mosque at Ukhaidir: A Study in Early Mohammadan Architecture",
+        "file": "books/Gutenberg/Mathematics/51664-palace-and-mosque-at-ukhaidir-a-study-in-early-mohammadan-architecture.epub",
+        "cover": "books/Gutenberg/Mathematics/51664-palace-and-mosque-at-ukhaidir-a-study-in-early-mohammadan-architecture.jpg",
+        "author": "Bell, Gertrude Lowthian",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51664,
+        "subjects": [
+          "Iraq -- Antiquities",
+          "Mosques",
+          "Ukheidar",
+          "Category: Architecture",
+          "Category: History - Ancient",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T08:37:13.229Z"
       },
       {
         "title": "The Canterbury Puzzles, and Other Curious Problems",
