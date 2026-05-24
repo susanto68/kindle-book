@@ -334,6 +334,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T05:07:28.688Z"
+      },
+      {
+        "title": "Witness",
+        "file": "books/Gutenberg/Artificial_Intelligence/59242-witness.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/59242-witness.jpg",
+        "author": "Smith, George H. (George Henry)",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59242,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Murder -- Investigation -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T10:47:22.592Z"
       }
     ]
   },
@@ -1277,6 +1299,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:48.410Z"
+      },
+      {
+        "title": "The Immortals",
+        "file": "books/Gutenberg/Computer_Science/51801-the-immortals.epub",
+        "cover": "books/Gutenberg/Computer_Science/51801-the-immortals.jpg",
+        "author": "Duncan, David",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51801,
+        "subjects": [
+          "Computers -- Fiction",
+          "Immortality -- Fiction",
+          "Science fiction",
+          "Scientists -- Fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T10:46:20.270Z"
       },
       {
         "title": "The Jargon File, Version 2.9.10, 01 Jul 1992",
