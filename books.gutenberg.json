@@ -2809,6 +2809,27 @@
         "downloadedAt": "2026-05-21T13:58:05.361Z"
       },
       {
+        "title": "The Romance of Mathematics: Being the Original Researches of a Lady Professor of Girtham College in Polemical Science, with some Account of the Social Properties of a Conic; Equations to Brain Waves; Social Forces; and the Laws of Political Motion.",
+        "file": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.epub",
+        "cover": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.jpg",
+        "author": "Ditchfield, P. H. (Peter Hampson)",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26481,
+        "subjects": [
+          "Satire, English",
+          "Women -- Education -- Great Britain",
+          "Category: Mathematics",
+          "Category: Politics",
+          "Category: Sociology",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T19:41:30.815Z"
+      },
+      {
         "title": "The Way To Geometry",
         "file": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.epub",
         "cover": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.jpg",
@@ -3292,6 +3313,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:13.126Z"
+      },
+      {
+        "title": "Steam, Its Generation and Use",
+        "file": "books/Gutenberg/Physics/22657-steam-its-generation-and-use.epub",
+        "cover": "books/Gutenberg/Physics/22657-steam-its-generation-and-use.jpg",
+        "author": "Babcock & Wilcox Company",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22657,
+        "subjects": [
+          "Steam-boilers, Water-tube",
+          "Category: Engineering & Technology",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Physics",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T19:42:29.926Z"
       },
       {
         "title": "The Notebooks of Leonardo Da Vinci — Complete",
