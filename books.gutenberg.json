@@ -272,6 +272,27 @@
         "downloadedAt": "2026-05-21T13:57:58.414Z"
       },
       {
+        "title": "The deadly thinkers",
+        "file": "books/Gutenberg/Artificial_Intelligence/70623-the-deadly-thinkers.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/70623-the-deadly-thinkers.jpg",
+        "author": "Beyer, William Gray",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70623,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Computers -- Fiction",
+          "Psychic ability -- Fiction",
+          "Science fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T18:04:17.887Z"
+      },
+      {
         "title": "The Fourth \"R\"",
         "file": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/18602-the-fourth-r.jpg",
@@ -2632,6 +2653,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T14:31:27.846Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Equation\" to \"Ethics\": Volume 9, Slice 7",
+        "file": "books/Gutenberg/Mathematics/35398-encyclopaedia-britannica-11th-edition-equation-to-ethics-volume-9-slice-.epub",
+        "cover": "books/Gutenberg/Mathematics/35398-encyclopaedia-britannica-11th-edition-equation-to-ethics-volume-9-slice-.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35398,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T18:05:38.878Z"
       },
       {
         "title": "Encyclopaedia Britannica, 11th Edition, \"Groups, Theory of\" to \"Gwyniad\": Volume 12, Slice 6",
