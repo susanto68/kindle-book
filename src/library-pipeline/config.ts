@@ -75,6 +75,7 @@ export const PIPELINE_CONFIG = {
   maxBooksPerRun: Number(process.env.LIBRARY_MAX_BOOKS_PER_RUN || 25),
   booksPerSource: Number(process.env.LIBRARY_BOOKS_PER_SOURCE || 3),
   enableDliConnector: process.env.ENABLE_DLI_CONNECTOR === "true",
+  metadataOnly: process.env.LIBRARY_METADATA_ONLY !== "false",
   languages: envLanguages.length ? envLanguages : SUPPORTED_LANGUAGES
 };
 
@@ -82,7 +83,10 @@ export function hasFirebaseAdminConfig(): boolean {
   return Boolean(
     PIPELINE_CONFIG.projectId &&
       PIPELINE_CONFIG.clientEmail &&
-      PIPELINE_CONFIG.privateKey &&
-      PIPELINE_CONFIG.storageBucket
+      PIPELINE_CONFIG.privateKey
   );
+}
+
+export function hasFirebaseStorageConfig(): boolean {
+  return Boolean(PIPELINE_CONFIG.storageBucket && !PIPELINE_CONFIG.metadataOnly);
 }

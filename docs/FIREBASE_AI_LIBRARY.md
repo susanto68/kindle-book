@@ -1,11 +1,12 @@
 # Firebase AI Digital Library Pipeline
 
-This extension keeps the existing static Kindle reader, GitHub deployment, Vercel hosting, PWA service worker, and current Gutenberg automation intact. It adds a separate Firebase-first library pipeline so the repository can stay lightweight while the library grows in Firebase Storage and Firestore.
+This extension keeps the existing static Kindle reader, GitHub deployment, Vercel hosting, PWA service worker, and current Gutenberg automation intact. It adds a separate Firebase-first library pipeline so the repository can stay lightweight while the library grows in Firestore. On Firebase Spark/free plan, the pipeline stores metadata and public source URLs only. Firebase Storage uploads are optional and should stay disabled unless you move to Blaze.
 
 ## What It Adds
 
 - Multi-source legal book discovery modules for Project Gutenberg, Internet Archive, Open Library, Wikisource, Sacred Texts Archive, Digital Library of India placeholder, Gita Supersite, OpenStax, and DOAB.
-- Firebase Storage uploads under `books/`, `covers/`, `audio/`, `videos/`, and `metadata/`.
+- Spark/free plan metadata-only mode using Firestore plus original public EPUB/PDF/cover URLs.
+- Optional Firebase Storage uploads under `books/`, `covers/`, `audio/`, `videos/`, and `metadata/` when `LIBRARY_METADATA_ONLY=false` and a Storage bucket is configured.
 - Firestore metadata under `books`, `authors`, `categories`, `trending_searches`, `user_history`, `recommendations`, and `automation_logs`.
 - Duplicate detection by source id, title/author key, and checksum.
 - Optional AI summaries through `OPENAI_API_KEY`; otherwise summaries are generated from source descriptions.
@@ -43,17 +44,18 @@ created_at, updated_at
 
 ## GitHub Secrets
 
-Add these repository secrets before enabling the workflow:
+Add these repository secrets before enabling the workflow on the Spark/free plan:
 
 ```text
 FIREBASE_PROJECT_ID
 FIREBASE_CLIENT_EMAIL
 FIREBASE_PRIVATE_KEY
-FIREBASE_STORAGE_BUCKET
 OPENAI_API_KEY
 ```
 
 `OPENAI_API_KEY` is optional. Without it, the pipeline still runs and stores simple summaries.
+
+`FIREBASE_STORAGE_BUCKET` is optional and should be left unused on Spark/free plan. New Firebase Storage buckets require the Blaze plan, so the default workflow uses `LIBRARY_METADATA_ONLY=true`.
 
 ## GitHub Actions
 
@@ -62,7 +64,8 @@ The new workflow is `.github/workflows/firebase-library-pipeline.yml`.
 - Runs every 6 hours.
 - Can be run manually with `workflow_dispatch`.
 - Downloads books temporarily during the job.
-- Uploads EPUB/PDF/covers/metadata to Firebase Storage.
+- Saves EPUB/PDF/cover public source URLs into Firestore in Spark/free mode.
+- Uploads EPUB/PDF/covers/metadata to Firebase Storage only when metadata-only mode is disabled.
 - Saves metadata to Firestore.
 - Does not commit downloaded books back into GitHub.
 
@@ -82,7 +85,7 @@ Dry-run discovery:
 npm run library:dry-run
 ```
 
-Run with Firebase upload:
+Run with Firestore metadata writes:
 
 ```bash
 npm run library:sync -- --max=25
@@ -102,13 +105,13 @@ npm run library:migrate-github
 
 ## Firebase Rules
 
-Deploy the included rules:
+Deploy the included rules only if you use Firebase Storage or want to manage Firestore rules from this repo:
 
 ```bash
 firebase deploy --only firestore:rules,storage
 ```
 
-The rules allow public reads for library content and require admin claims for writes.
+The rules allow public reads for library content and require admin claims for writes. Firestore itself must be created/enabled in the Firebase Console first.
 
 ## Frontend Integration
 

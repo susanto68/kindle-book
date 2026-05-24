@@ -120,7 +120,7 @@ async function main(): Promise<void> {
 
   if (!context.dryRun && !hasFirebaseAdminConfig()) {
     throw new Error(
-      "Firebase Admin config is missing. Add FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY, and FIREBASE_STORAGE_BUCKET as GitHub Actions secrets, or run with --dry-run."
+      "Firebase Admin config is missing. Add FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY as GitHub Actions secrets, or run with --dry-run."
     );
   }
 

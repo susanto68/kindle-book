@@ -1,7 +1,7 @@
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { FieldValue, Firestore, getFirestore } from "firebase-admin/firestore";
 import { getStorage } from "firebase-admin/storage";
-import { PIPELINE_CONFIG, hasFirebaseAdminConfig } from "./config.js";
+import { PIPELINE_CONFIG, hasFirebaseAdminConfig, hasFirebaseStorageConfig } from "./config.js";
 import type { NormalizedBook, PipelineRunResult, SourceCandidate } from "./types.js";
 import {
   contentTypeForExtension,
@@ -15,9 +15,9 @@ let dbInstance: Firestore | null = null;
 type StorageBucket = ReturnType<ReturnType<typeof getStorage>["bucket"]>;
 let bucketInstance: StorageBucket | null = null;
 
-export function getFirebaseServices(): { db: Firestore; bucket: StorageBucket } {
+export function getFirebaseServices(): { db: Firestore; bucket?: StorageBucket } {
   if (!hasFirebaseAdminConfig()) {
-    throw new Error("Firebase Admin config is missing. Set FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY, and FIREBASE_STORAGE_BUCKET.");
+    throw new Error("Firebase Admin config is missing. Set FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY.");
   }
 
   if (!getApps().length) {
@@ -27,17 +27,25 @@ export function getFirebaseServices(): { db: Firestore; bucket: StorageBucket } 
         clientEmail: PIPELINE_CONFIG.clientEmail,
         privateKey: PIPELINE_CONFIG.privateKey
       }),
-      storageBucket: PIPELINE_CONFIG.storageBucket
+      ...(PIPELINE_CONFIG.storageBucket ? { storageBucket: PIPELINE_CONFIG.storageBucket } : {})
     });
   }
 
   dbInstance ||= getFirestore();
-  bucketInstance ||= getStorage().bucket();
-  return { db: dbInstance, bucket: bucketInstance };
+  if (hasFirebaseStorageConfig()) {
+    bucketInstance ||= getStorage().bucket();
+  }
+  return { db: dbInstance, bucket: bucketInstance || undefined };
 }
 
 async function uploadPublicBuffer(path: string, buffer: Buffer, contentType: string): Promise<string> {
+  if (!hasFirebaseStorageConfig()) {
+    throw new Error("Firebase Storage upload requested while LIBRARY_METADATA_ONLY is enabled or FIREBASE_STORAGE_BUCKET is missing.");
+  }
   const { bucket } = getFirebaseServices();
+  if (!bucket) {
+    throw new Error("Firebase Storage bucket is not configured.");
+  }
   const file = bucket.file(path);
   await file.save(buffer, {
     resumable: false,
@@ -74,6 +82,15 @@ export async function findDuplicate(book: NormalizedBook): Promise<string | null
 export async function uploadBookAssets(book: NormalizedBook, candidate: SourceCandidate): Promise<NormalizedBook> {
   const updated = { ...book };
   const readableUrl = candidate.epubUrl || candidate.pdfUrl || candidate.htmlUrl || candidate.textUrl;
+
+  if (PIPELINE_CONFIG.metadataOnly || !hasFirebaseStorageConfig()) {
+    updated.epub_url = candidate.epubUrl || updated.epub_url;
+    updated.pdf_url = candidate.pdfUrl || updated.pdf_url;
+    updated.html_url = candidate.htmlUrl || updated.html_url;
+    updated.text_url = candidate.textUrl || updated.text_url;
+    updated.cover_url = candidate.coverUrl || updated.cover_url;
+    return updated;
+  }
 
   if (candidate.epubUrl || candidate.pdfUrl) {
     const url = candidate.epubUrl || candidate.pdfUrl || "";
