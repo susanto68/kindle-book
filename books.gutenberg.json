@@ -2712,6 +2712,28 @@
         "downloadedAt": "2026-05-24T21:04:52.779Z"
       },
       {
+        "title": "German Science Reader: An Introduction to Scientific German, for Students of Physics, Chemistry and Engineering",
+        "file": "books/Gutenberg/Mathematics/22627-german-science-reader-an-introduction-to-scientific-german-for-students-.epub",
+        "cover": "books/Gutenberg/Mathematics/22627-german-science-reader-an-introduction-to-scientific-german-for-students-.jpg",
+        "author": "Kroeh, Charles Frederick",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22627,
+        "subjects": [
+          "German language -- Readers -- Science",
+          "Category: Engineering & Technology",
+          "Category: Language & Communication",
+          "Category: Mathematics",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics",
+          "Language Education"
+        ],
+        "language": "de",
+        "downloadedAt": "2026-05-24T22:08:00.747Z"
+      },
+      {
         "title": "Mysticism and Logic and Other Essays",
         "file": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.epub",
         "cover": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.jpg",
@@ -3274,6 +3296,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:12.716Z"
+      },
+      {
+        "title": "Bibliographical history of electricity & magnetism, chronologically arranged",
+        "file": "books/Gutenberg/Physics/74764-bibliographical-history-of-electricity-magnetism-chronologically-arrange.epub",
+        "cover": "books/Gutenberg/Physics/74764-bibliographical-history-of-electricity-magnetism-chronologically-arrange.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74764,
+        "subjects": [
+          "Electricity -- History",
+          "Electricity -- History -- Bibliography",
+          "Magnetism -- History",
+          "Magnetism -- History -- Bibliography",
+          "Science, Medieval",
+          "Category: History - Other",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T22:08:41.533Z"
       },
       {
         "title": "Creative Evolution",
