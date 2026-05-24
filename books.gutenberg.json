@@ -288,6 +288,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:57.997Z"
+      },
+      {
+        "title": "The Upside-Down Captain",
+        "file": "books/Gutenberg/Artificial_Intelligence/60829-the-upside-down-captain.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/60829-the-upside-down-captain.jpg",
+        "author": "Harmon, Jim",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60829,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Outer space -- Exploration -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Space ships -- Fiction",
+          "Category: Humour",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T05:07:28.688Z"
       }
     ]
   },
@@ -2502,6 +2525,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T00:07:30.288Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Groups, Theory of\" to \"Gwyniad\": Volume 12, Slice 6",
+        "file": "books/Gutenberg/Mathematics/38304-encyclopaedia-britannica-11th-edition-groups-theory-of-to-gwyniad-volume.epub",
+        "cover": "books/Gutenberg/Mathematics/38304-encyclopaedia-britannica-11th-edition-groups-theory-of-to-gwyniad-volume.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38304,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T05:08:32.867Z"
       },
       {
         "title": "Mysticism and Logic and Other Essays",
