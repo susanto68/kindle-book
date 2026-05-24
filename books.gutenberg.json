@@ -3,6 +3,26 @@
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
+        "title": "After Ixmal",
+        "file": "books/Gutenberg/Artificial_Intelligence/72266-after-ixmal.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/72266-after-ixmal.jpg",
+        "author": "Sutton, Jeff",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 72266,
+        "subjects": [
+          "Apocalyptic fiction",
+          "Artificial intelligence -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T14:30:18.474Z"
+      },
+      {
         "title": "Assignment in the Dawn",
         "file": "books/Gutenberg/Artificial_Intelligence/64293-assignment-in-the-dawn.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/64293-assignment-in-the-dawn.jpg",
@@ -2592,6 +2612,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T00:07:30.288Z"
+      },
+      {
+        "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 3 (of 3)",
+        "file": "books/Gutenberg/Mathematics/65228-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-3-of.epub",
+        "cover": "books/Gutenberg/Mathematics/65228-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-3-of.jpg",
+        "author": "Shelley, Mary Wollstonecraft, Montgomery, James",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65228,
+        "subjects": [
+          "Authors -- Biography",
+          "Scientists -- Biography",
+          "Category: Biographies",
+          "Category: History - European",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T14:31:27.846Z"
       },
       {
         "title": "Encyclopaedia Britannica, 11th Edition, \"Groups, Theory of\" to \"Gwyniad\": Volume 12, Slice 6",
