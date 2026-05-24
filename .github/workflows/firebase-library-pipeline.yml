@@ -44,6 +44,20 @@ jobs:
       - name: Install automation dependencies
         run: npm install
 
+      - name: Verify Firebase secrets
+        run: |
+          missing=0
+          for name in FIREBASE_PROJECT_ID FIREBASE_CLIENT_EMAIL FIREBASE_PRIVATE_KEY FIREBASE_STORAGE_BUCKET; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing GitHub Actions secret: ${name}"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "Add the missing Firebase secrets in GitHub repo Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
       - name: Sync legal free books to Firebase
         run: npm run library:sync -- --max=${{ inputs.max_books || '25' }}
 
