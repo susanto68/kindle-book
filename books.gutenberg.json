@@ -2691,6 +2691,27 @@
         "downloadedAt": "2026-05-24T05:08:32.867Z"
       },
       {
+        "title": "Flatland: A Romance of Many Dimensions",
+        "file": "books/Gutenberg/Mathematics/201-flatland-a-romance-of-many-dimensions.epub",
+        "cover": "books/Gutenberg/Mathematics/201-flatland-a-romance-of-many-dimensions.jpg",
+        "author": "Abbott, Edwin Abbott",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 201,
+        "subjects": [
+          "Fourth dimension",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Mathematics",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T21:04:52.779Z"
+      },
+      {
         "title": "Mysticism and Logic and Other Essays",
         "file": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.epub",
         "cover": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.jpg",
@@ -3356,6 +3377,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:12.991Z"
+      },
+      {
+        "title": "The principles of science : $b a treatise on logic and scientific method",
+        "file": "books/Gutenberg/Physics/74864-the-principles-of-science-b-a-treatise-on-logic-and-scientific-method.epub",
+        "cover": "books/Gutenberg/Physics/74864-the-principles-of-science-b-a-treatise-on-logic-and-scientific-method.jpg",
+        "author": "Jevons, William Stanley",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74864,
+        "subjects": [
+          "Logic",
+          "Science -- Methodology",
+          "Category: Philosophy & Ethics",
+          "Category: Research Methods/Statistics/Information Sys",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-24T21:06:01.824Z"
       },
       {
         "title": "The Story of the Heavens",
