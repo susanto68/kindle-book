@@ -2932,6 +2932,27 @@
         "downloadedAt": "2026-05-21T13:18:56.900Z"
       },
       {
+        "title": "The Foundations of Science: Science and Hypothesis, The Value of Science, Science and Method",
+        "file": "books/Gutenberg/Mathematics/39713-the-foundations-of-science-science-and-hypothesis-the-value-of-science-s.epub",
+        "cover": "books/Gutenberg/Mathematics/39713-the-foundations-of-science-science-and-hypothesis-the-value-of-science-s.jpg",
+        "author": "Poincaré, Henri",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39713,
+        "subjects": [
+          "Mathematics -- Philosophy",
+          "Science -- Methodology",
+          "Science -- Philosophy",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T23:08:08.273Z"
+      },
+      {
         "title": "The Hindu-Arabic Numerals",
         "file": "books/Gutenberg/Mathematics/22599-the-hindu-arabic-numerals.epub",
         "cover": "books/Gutenberg/Mathematics/22599-the-hindu-arabic-numerals.jpg",
@@ -3404,6 +3425,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:06.185Z"
+      },
+      {
+        "title": "A Popular History of Astronomy During the Nineteenth Century: Fourth Edition",
+        "file": "books/Gutenberg/Physics/28247-a-popular-history-of-astronomy-during-the-nineteenth-century-fourth-edit.epub",
+        "cover": "books/Gutenberg/Physics/28247-a-popular-history-of-astronomy-during-the-nineteenth-century-fourth-edit.jpg",
+        "author": "Clerke, Agnes M. (Agnes Mary)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28247,
+        "subjects": [
+          "Astronomy -- History -- 19th century",
+          "Astronomy",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T23:08:34.032Z"
       },
       {
         "title": "Astronomy for Amateurs",
