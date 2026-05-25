@@ -2852,6 +2852,33 @@
         "downloadedAt": "2026-05-21T13:58:05.361Z"
       },
       {
+        "title": "The Life and Letters of Lewis Carroll (Rev. C. L. Dodgson)",
+        "file": "books/Gutenberg/Mathematics/11483-the-life-and-letters-of-lewis-carroll-rev-c-l-dodgson.epub",
+        "cover": "books/Gutenberg/Mathematics/11483-the-life-and-letters-of-lewis-carroll-rev-c-l-dodgson.jpg",
+        "author": "Collingwood, Stuart Dodgson",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 11483,
+        "subjects": [
+          "Authors, English -- 19th century -- Biography",
+          "Carroll, Lewis, 1832-1898",
+          "Children -- Books and reading -- Great Britain -- History -- 19th century",
+          "Children's literature -- Authorship",
+          "Fantasy literature -- Authorship",
+          "Mathematicians -- Great Britain -- Biography",
+          "Mathematics teachers -- Great Britain -- Biography",
+          "Oxford (England) -- Biography",
+          "Photographers -- Great Britain -- Biography",
+          "Category: Biographies",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T00:05:53.004Z"
+      },
+      {
         "title": "The Romance of Mathematics: Being the Original Researches of a Lady Professor of Girtham College in Polemical Science, with some Account of the Social Properties of a Conic; Equations to Brain Waves; Social Forces; and the Laws of Political Motion.",
         "file": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.epub",
         "cover": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.jpg",
@@ -3339,6 +3366,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:12.854Z"
+      },
+      {
+        "title": "Galileo Galilei and the Roman Curia: From Authentic Sources",
+        "file": "books/Gutenberg/Physics/60215-galileo-galilei-and-the-roman-curia-from-authentic-sources.epub",
+        "cover": "books/Gutenberg/Physics/60215-galileo-galilei-and-the-roman-curia-from-authentic-sources.jpg",
+        "author": "Gebler, Karl von",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60215,
+        "subjects": [
+          "Astronomers -- Italy -- Biography",
+          "Catholic Church. Curia romana",
+          "Galilei, Galileo, 1564-1642",
+          "Religion and science -- History",
+          "Category: Biographies",
+          "Category: History - Modern (1750+)",
+          "Category: Religion/Spirituality",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T00:06:54.912Z"
       },
       {
         "title": "History of the inductive sciences, from the earliest to the present time",
