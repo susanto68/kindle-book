@@ -2734,6 +2734,25 @@
         "downloadedAt": "2026-05-24T22:08:00.747Z"
       },
       {
+        "title": "Lives of the most eminent literary and scientific men of France, Vol. 1 (of 2)",
+        "file": "books/Gutenberg/Mathematics/65317-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-1-of.epub",
+        "cover": "books/Gutenberg/Mathematics/65317-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-1-of.jpg",
+        "author": "Shelley, Mary Wollstonecraft",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65317,
+        "subjects": [
+          "Authors, French -- Biography",
+          "Category: Biographies",
+          "Category: French Literature",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T10:14:42.373Z"
+      },
+      {
         "title": "Mysticism and Logic and Other Essays",
         "file": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.epub",
         "cover": "books/Gutenberg/Mathematics/25447-mysticism-and-logic-and-other-essays.jpg",
@@ -3449,6 +3468,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T19:42:29.926Z"
+      },
+      {
+        "title": "The Astronomy of Milton's 'Paradise Lost'",
+        "file": "books/Gutenberg/Physics/28434-the-astronomy-of-miltons-paradise-lost.epub",
+        "cover": "books/Gutenberg/Physics/28434-the-astronomy-of-miltons-paradise-lost.jpg",
+        "author": "Orchard, Thomas Nathaniel",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28434,
+        "subjects": [
+          "Astronomy in literature",
+          "Epic poetry, English -- History and criticism",
+          "Milton, John, 1608-1674 -- Knowledge -- Astronomy",
+          "Milton, John, 1608-1674. Paradise lost",
+          "Astronomy",
+          "Category: Classics of Literature",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T10:15:38.650Z"
       },
       {
         "title": "The Notebooks of Leonardo Da Vinci — Complete",
