@@ -2656,6 +2656,26 @@
         "downloadedAt": "2026-05-24T00:07:30.288Z"
       },
       {
+        "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3)",
+        "file": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.epub",
+        "cover": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.jpg",
+        "author": "Shelley, Mary Wollstonecraft, Montgomery, James",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65030,
+        "subjects": [
+          "Authors -- Biography",
+          "Scientists -- Biography",
+          "Category: Biographies",
+          "Category: History - European",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T21:13:33.049Z"
+      },
+      {
         "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 3 (of 3)",
         "file": "books/Gutenberg/Mathematics/65228-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-3-of.epub",
         "cover": "books/Gutenberg/Mathematics/65228-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-3-of.jpg",
@@ -3550,6 +3570,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-25T10:15:38.650Z"
+      },
+      {
+        "title": "The Martyrs of Science, or, The lives of Galileo, Tycho Brahe, and Kepler",
+        "file": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.epub",
+        "cover": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.jpg",
+        "author": "Brewster, David",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25992,
+        "subjects": [
+          "Brahe, Tycho, 1546-1601",
+          "Galilei, Galileo, 1564-1642",
+          "Kepler, Johannes, 1571-1630",
+          "Scientists -- Biography",
+          "Astronomy",
+          "Category: Biographies",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T21:14:06.454Z"
       },
       {
         "title": "The Notebooks of Leonardo Da Vinci — Complete",
