@@ -2837,6 +2837,25 @@
         "downloadedAt": "2026-05-24T08:37:13.229Z"
       },
       {
+        "title": "Physical Geography",
+        "file": "books/Gutenberg/Mathematics/61652-physical-geography.epub",
+        "cover": "books/Gutenberg/Mathematics/61652-physical-geography.jpg",
+        "author": "Somerville, Mary",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61652,
+        "subjects": [
+          "Biogeography",
+          "Physical geography",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T19:47:19.697Z"
+      },
+      {
         "title": "Stellar atmospheres : $b A contribution to the observational study of high temperature in the reversing layers of stars",
         "file": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.epub",
         "cover": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.jpg",
@@ -3870,6 +3889,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T10:27:38.185Z"
+      },
+      {
+        "title": "The Art of War",
+        "file": "books/Gutenberg/Science/132-the-art-of-war.epub",
+        "cover": "books/Gutenberg/Science/132-the-art-of-war.jpg",
+        "author": "Sunzi, active 6th century B.C.",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 132,
+        "subjects": [
+          "Military art and science -- Early works to 1800",
+          "War -- Early works to 1800",
+          "Category: History - Ancient",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T19:44:42.252Z"
       },
       {
         "title": "The Crack of Doom",
