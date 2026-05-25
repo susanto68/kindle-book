@@ -2837,6 +2837,26 @@
         "downloadedAt": "2026-05-24T08:37:13.229Z"
       },
       {
+        "title": "Stellar atmospheres : $b A contribution to the observational study of high temperature in the reversing layers of stars",
+        "file": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.epub",
+        "cover": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.jpg",
+        "author": "Payne-Gaposchkin, Cecilia",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 73996,
+        "subjects": [
+          "Astrophysics",
+          "Stars -- Spectra",
+          "Stars -- Temperature",
+          "Thesis (Ph. D.)",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T17:13:48.262Z"
+      },
+      {
         "title": "The Canterbury Puzzles, and Other Curious Problems",
         "file": "books/Gutenberg/Mathematics/27635-the-canterbury-puzzles-and-other-curious-problems.epub",
         "cover": "books/Gutenberg/Mathematics/27635-the-canterbury-puzzles-and-other-curious-problems.jpg",
@@ -3780,6 +3800,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.756Z"
+      },
+      {
+        "title": "Gulliver's Travels into Several Remote Regions of the World",
+        "file": "books/Gutenberg/Science/17157-gullivers-travels-into-several-remote-regions-of-the-world.epub",
+        "cover": "books/Gutenberg/Science/17157-gullivers-travels-into-several-remote-regions-of-the-world.jpg",
+        "author": "Swift, Jonathan",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 17157,
+        "subjects": [
+          "Fantasy fiction",
+          "Gulliver, Lemuel (Fictitious character) -- Fiction",
+          "Satire",
+          "Travelers -- Fiction",
+          "Voyages, Imaginary -- Early works to 1800",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T17:10:00.551Z"
       },
       {
         "title": "Leviathan",
