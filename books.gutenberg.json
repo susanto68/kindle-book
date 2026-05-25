@@ -1342,6 +1342,27 @@
         "downloadedAt": "2026-05-21T13:57:48.410Z"
       },
       {
+        "title": "The Ambassador",
+        "file": "books/Gutenberg/Computer_Science/32587-the-ambassador.epub",
+        "cover": "books/Gutenberg/Computer_Science/32587-the-ambassador.jpg",
+        "author": "Merwin, Sam, Jr.",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32587,
+        "subjects": [
+          "Ambassadors -- Fiction",
+          "Computers -- Fiction",
+          "Science fiction",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T14:11:52.358Z"
+      },
+      {
         "title": "The Immortals",
         "file": "books/Gutenberg/Computer_Science/51801-the-immortals.epub",
         "cover": "books/Gutenberg/Computer_Science/51801-the-immortals.jpg",
@@ -3803,6 +3824,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T10:27:38.185Z"
+      },
+      {
+        "title": "The Crack of Doom",
+        "file": "books/Gutenberg/Science/26563-the-crack-of-doom.epub",
+        "cover": "books/Gutenberg/Science/26563-the-crack-of-doom.jpg",
+        "author": "Cromie, Robert",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26563,
+        "subjects": [
+          "Nuclear explosions -- Fiction",
+          "Paranormal fiction",
+          "Science fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-25T14:11:07.149Z"
       },
       {
         "title": "The Dunwich horror",
