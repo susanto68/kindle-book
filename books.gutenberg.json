@@ -2775,6 +2775,27 @@
         "downloadedAt": "2026-05-24T22:08:00.747Z"
       },
       {
+        "title": "Jerome Cardan: A Biographical Study",
+        "file": "books/Gutenberg/Mathematics/19600-jerome-cardan-a-biographical-study.epub",
+        "cover": "books/Gutenberg/Mathematics/19600-jerome-cardan-a-biographical-study.jpg",
+        "author": "Waters, W. G. (William George)",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 19600,
+        "subjects": [
+          "Cardano, Girolamo, 1501-1576",
+          "Mathematicians -- Biography",
+          "Category: Biographies",
+          "Category: Health & Medicine",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-26T07:22:14.600Z"
+      },
+      {
         "title": "Lives of the most eminent literary and scientific men of France, Vol. 1 (of 2)",
         "file": "books/Gutenberg/Mathematics/65317-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-1-of.epub",
         "cover": "books/Gutenberg/Mathematics/65317-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-1-of.jpg",
@@ -3529,6 +3550,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-25T00:06:54.912Z"
+      },
+      {
+        "title": "Goethe's Theory of Colours",
+        "file": "books/Gutenberg/Physics/50572-goethes-theory-of-colours.epub",
+        "cover": "books/Gutenberg/Physics/50572-goethes-theory-of-colours.jpg",
+        "author": "Goethe, Johann Wolfgang von",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50572,
+        "subjects": [
+          "Color",
+          "Category: Art",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-26T07:23:18.497Z"
       },
       {
         "title": "History of the inductive sciences, from the earliest to the present time",
