@@ -2815,6 +2815,25 @@
         "downloadedAt": "2026-05-25T10:14:42.373Z"
       },
       {
+        "title": "Logic: Deductive and Inductive",
+        "file": "books/Gutenberg/Mathematics/18440-logic-deductive-and-inductive.epub",
+        "cover": "books/Gutenberg/Mathematics/18440-logic-deductive-and-inductive.jpg",
+        "author": "Read, Carveth",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18440,
+        "subjects": [
+          "Logic",
+          "Category: Philosophy & Ethics",
+          "Mathematics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T18:41:41.401Z"
+      },
+      {
         "title": "Memorabilia Mathematica; or, the Philomath's Quotation-Book",
         "file": "books/Gutenberg/Mathematics/44730-memorabilia-mathematica-or-the-philomaths-quotation-book.epub",
         "cover": "books/Gutenberg/Mathematics/44730-memorabilia-mathematica-or-the-philomaths-quotation-book.jpg",
@@ -3886,6 +3905,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T09:56:01.115Z"
+      },
+      {
+        "title": "At the mountains of madness",
+        "file": "books/Gutenberg/Science/70652-at-the-mountains-of-madness.epub",
+        "cover": "books/Gutenberg/Science/70652-at-the-mountains-of-madness.jpg",
+        "author": "Lovecraft, H. P. (Howard Phillips)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70652,
+        "subjects": [
+          "Antarctica -- Fiction",
+          "Fantasy fiction",
+          "Fossils -- Collection and preservation -- Fiction",
+          "Horror tales",
+          "Scientific expeditions -- Fiction",
+          "Stone carving -- Fiction",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T18:37:58.201Z"
       },
       {
         "title": "Color Images from Mars Rovers: Spirit and Opportunity",
