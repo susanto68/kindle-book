@@ -3100,6 +3100,24 @@
         "downloadedAt": "2026-05-24T19:41:30.815Z"
       },
       {
+        "title": "The Teaching of Geometry",
+        "file": "books/Gutenberg/Mathematics/37681-the-teaching-of-geometry.epub",
+        "cover": "books/Gutenberg/Mathematics/37681-the-teaching-of-geometry.jpg",
+        "author": "Smith, David Eugene",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37681,
+        "subjects": [
+          "Geometry -- Study and teaching",
+          "Category: Mathematics",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T23:19:33.611Z"
+      },
+      {
         "title": "The Way To Geometry",
         "file": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.epub",
         "cover": "books/Gutenberg/Mathematics/26752-the-way-to-geometry.jpg",
@@ -4470,6 +4488,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-29T21:12:27.499Z"
+      },
+      {
+        "title": "Weird Tales, Volume 1, Number 4, June, 1923: The unique magazine",
+        "file": "books/Gutenberg/Science/69608-weird-tales-volume-1-number-4-june-1923-the-unique-magazine.epub",
+        "cover": "books/Gutenberg/Science/69608-weird-tales-volume-1-number-4-june-1923-the-unique-magazine.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69608,
+        "subjects": [
+          "Adventure stories -- Periodicals",
+          "Fantasy literature, American -- Periodicals",
+          "Fantasy literature, English -- Periodicals",
+          "Horror tales, American -- Periodicals",
+          "Horror tales, English -- Periodicals",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T23:16:52.123Z"
       }
     ]
   }
