@@ -2876,6 +2876,26 @@
         "downloadedAt": "2026-05-21T13:58:05.648Z"
       },
       {
+        "title": "Notes on Nursing: What It Is, and What It Is Not",
+        "file": "books/Gutenberg/Mathematics/17366-notes-on-nursing-what-it-is-and-what-it-is-not.epub",
+        "cover": "books/Gutenberg/Mathematics/17366-notes-on-nursing-what-it-is-and-what-it-is-not.jpg",
+        "author": "Nightingale, Florence",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 17366,
+        "subjects": [
+          "Nursing",
+          "Category: Health & Medicine",
+          "Category: How To ...",
+          "Medicine",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T21:15:21.875Z"
+      },
+      {
         "title": "On Growth and Form",
         "file": "books/Gutenberg/Mathematics/55264-on-growth-and-form.epub",
         "cover": "books/Gutenberg/Mathematics/55264-on-growth-and-form.jpg",
@@ -4427,6 +4447,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T05:11:46.685Z"
+      },
+      {
+        "title": "Weird Tales, Volume 1, Number 1, March 1923: The unique magazine",
+        "file": "books/Gutenberg/Science/68957-weird-tales-volume-1-number-1-march-1923-the-unique-magazine.epub",
+        "cover": "books/Gutenberg/Science/68957-weird-tales-volume-1-number-1-march-1923-the-unique-magazine.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68957,
+        "subjects": [
+          "Adventure stories -- Periodicals",
+          "Fantasy literature, American -- Periodicals",
+          "Fantasy literature, English -- Periodicals",
+          "Horror tales, American -- Periodicals",
+          "Horror tales, English -- Periodicals",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-29T21:12:27.499Z"
       }
     ]
   }
