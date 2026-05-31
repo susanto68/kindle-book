@@ -3141,6 +3141,26 @@
         "downloadedAt": "2026-05-31T16:17:43.287Z"
       },
       {
+        "title": "The Red Cross in Peace and War",
+        "file": "books/Gutenberg/Mathematics/44202-the-red-cross-in-peace-and-war.epub",
+        "cover": "books/Gutenberg/Mathematics/44202-the-red-cross-in-peace-and-war.jpg",
+        "author": "Barton, Clara",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44202,
+        "subjects": [
+          "American National Red Cross",
+          "Red Cross and Red Crescent",
+          "Category: History - Modern (1750+)",
+          "Category: History - Warfare",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T20:14:53.446Z"
+      },
+      {
         "title": "The Romance of Mathematics: Being the Original Researches of a Lady Professor of Girtham College in Polemical Science, with some Account of the Social Properties of a Conic; Equations to Brain Waves; Social Forces; and the Laws of Political Motion.",
         "file": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.epub",
         "cover": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.jpg",
@@ -3767,6 +3787,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T18:10:08.519Z"
+      },
+      {
+        "title": "Kant's Prolegomena to Any Future Metaphysics",
+        "file": "books/Gutenberg/Physics/52821-kants-prolegomena-to-any-future-metaphysics.epub",
+        "cover": "books/Gutenberg/Physics/52821-kants-prolegomena-to-any-future-metaphysics.jpg",
+        "author": "Kant, Immanuel",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52821,
+        "subjects": [
+          "Knowledge, Theory of -- Early works to 1800",
+          "Metaphysics -- Early works to 1800",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T20:15:29.716Z"
       },
       {
         "title": "Myths and Marvels of Astronomy",
