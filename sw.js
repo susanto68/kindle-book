@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v56-gutenberg-cors-iframe-fix';
+const CACHE_NAME = 'kindle-reader-v57-block-vercel-toolbar';
 const urlsToCache = [
   '/',
   '/index.html',

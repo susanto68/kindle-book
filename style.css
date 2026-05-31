@@ -2198,3 +2198,25 @@ body.reader-pdf #themeBtn {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ==========================================================================
+   Vercel Toolbar Prevention & Hiding Rules
+   ========================================================================== */
+vercel-live-feedback,
+vercel-live,
+#vercel-live-feedback,
+.vercel-live-feedback-root,
+#vercel-live-feedback-root,
+[data-vercel-live-feedback],
+[class*="vercel"],
+[id*="vercel"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}

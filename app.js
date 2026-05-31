@@ -3,6 +3,25 @@
    StPageFlip for the supported HTML page-flip animation path.
 */
 
+/* Prevent Vercel Toolbar Injection dynamically */
+(function() {
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          const tag = node.tagName.toLowerCase();
+          const id = node.id || '';
+          const cls = typeof node.className === 'string' ? node.className : '';
+          if (tag.includes('vercel') || id.includes('vercel') || cls.includes('vercel')) {
+            node.remove();
+          }
+        }
+      }
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+})();
+
 const STORAGE_KEYS = {
   theme: "kindleReader.theme",
   recent: "kindleReader.recentBooks",
