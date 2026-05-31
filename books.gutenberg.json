@@ -2656,6 +2656,23 @@
         "downloadedAt": "2026-05-24T00:07:30.288Z"
       },
       {
+        "title": "Curiosa mathematica, Part 1 : $b A new theory of parallels",
+        "file": "books/Gutenberg/Mathematics/78586-curiosa-mathematica-part-1-b-a-new-theory-of-parallels.epub",
+        "cover": "books/Gutenberg/Mathematics/78586-curiosa-mathematica-part-1-b-a-new-theory-of-parallels.jpg",
+        "author": "Carroll, Lewis",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78586,
+        "subjects": [
+          "Mathematics -- Problems, exercises, etc.",
+          "Parallels (Geometry)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T22:05:27.935Z"
+      },
+      {
         "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3)",
         "file": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.epub",
         "cover": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.jpg",
@@ -3844,6 +3861,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T16:18:45.276Z"
+      },
+      {
+        "title": "Rollo's Experiments",
+        "file": "books/Gutenberg/Physics/24993-rollos-experiments.epub",
+        "cover": "books/Gutenberg/Physics/24993-rollos-experiments.jpg",
+        "author": "Abbott, Jacob",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24993,
+        "subjects": [
+          "Natural history -- Juvenile literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Science - Biology",
+          "Category: Science - Physics",
+          "Children's Book Series"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T22:06:06.535Z"
       },
       {
         "title": "Steam, Its Generation and Use",
