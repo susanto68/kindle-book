@@ -3079,6 +3079,27 @@
         "downloadedAt": "2026-05-25T00:05:53.004Z"
       },
       {
+        "title": "The Number Concept: Its Origin and Development",
+        "file": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.epub",
+        "cover": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.jpg",
+        "author": "Conant, Levi L. (Levi Leonard)",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16449,
+        "subjects": [
+          "Number concept",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Other",
+          "Category: Language & Communication",
+          "Category: Mathematics",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T14:52:12.462Z"
+      },
+      {
         "title": "The Romance of Mathematics: Being the Original Researches of a Lady Professor of Girtham College in Polemical Science, with some Account of the Social Properties of a Conic; Equations to Brain Waves; Social Forces; and the Laws of Political Motion.",
         "file": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.epub",
         "cover": "books/Gutenberg/Mathematics/26481-the-romance-of-mathematics-being-the-original-researches-of-a-lady-profe.jpg",
@@ -3523,6 +3544,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:06.185Z"
+      },
+      {
+        "title": "A Color Notation: A measured color system, based on the three qualities Hue, Value and Chroma",
+        "file": "books/Gutenberg/Physics/26054-a-color-notation-a-measured-color-system-based-on-the-three-qualities-hu.epub",
+        "cover": "books/Gutenberg/Physics/26054-a-color-notation-a-measured-color-system-based-on-the-three-qualities-hu.jpg",
+        "author": "Munsell, A. H. (Albert Henry)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26054,
+        "subjects": [
+          "Color",
+          "Category: Art",
+          "Category: Science - Physics",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T14:53:14.417Z"
       },
       {
         "title": "A Popular History of Astronomy During the Nineteenth Century: Fourth Edition",
