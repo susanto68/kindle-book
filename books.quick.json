@@ -1,0 +1,417 @@
+[
+  {
+    "class": "Quick Access - Stories for Kids",
+    "books": [
+      {
+        "id": "quick-gutenberg-11",
+        "title": "Alice's Adventures in Wonderland",
+        "author": "Carroll, Lewis",
+        "file": "https://www.gutenberg.org/ebooks/11.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/11.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/11.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Stories for Kids",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/11",
+        "gutenbergId": 11,
+        "subjects": [
+          "Children's stories",
+          "Fantasy fiction"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-2591",
+        "title": "Grimms' Fairy Tales",
+        "author": "Grimm, Jacob; Grimm, Wilhelm",
+        "file": "https://www.gutenberg.org/ebooks/2591.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/2591.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/2591.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/2591/pg2591.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Stories for Kids",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2591",
+        "gutenbergId": 2591,
+        "subjects": [
+          "Fairy tales",
+          "Folklore"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-120",
+        "title": "Treasure Island",
+        "author": "Stevenson, Robert Louis",
+        "file": "https://www.gutenberg.org/ebooks/120.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/120.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/120.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/120/pg120.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Stories for Kids",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/120",
+        "gutenbergId": 120,
+        "subjects": [
+          "Adventure stories",
+          "Juvenile fiction"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - College Learning",
+    "books": [
+      {
+        "id": "quick-gutenberg-1497",
+        "title": "The Republic",
+        "author": "Plato",
+        "file": "https://www.gutenberg.org/ebooks/1497.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/1497.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/1497.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/1497/pg1497.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "College Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1497",
+        "gutenbergId": 1497,
+        "subjects": [
+          "Political science",
+          "Philosophy"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-3207",
+        "title": "Leviathan",
+        "author": "Hobbes, Thomas",
+        "file": "https://www.gutenberg.org/ebooks/3207.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/3207.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/3207.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/3207/pg3207.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "College Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/3207",
+        "gutenbergId": 3207,
+        "subjects": [
+          "Political science",
+          "State"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-7370",
+        "title": "Second Treatise of Government",
+        "author": "Locke, John",
+        "file": "https://www.gutenberg.org/ebooks/7370.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/7370.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/7370.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/7370/pg7370.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "College Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/7370",
+        "gutenbergId": 7370,
+        "subjects": [
+          "Civil government",
+          "Political science"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - Future Technology",
+    "books": [
+      {
+        "id": "quick-gutenberg-72572",
+        "title": "Computers: The Machines We Think With",
+        "author": "Berkeley, Edmund C.",
+        "file": "https://www.gutenberg.org/ebooks/72572.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/72572.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/72572.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/72572/pg72572.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Future Technology",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/72572",
+        "gutenbergId": 72572,
+        "subjects": [
+          "Computers",
+          "Technology"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-68991",
+        "title": "Giant Brains; or, Machines That Think",
+        "author": "Berkeley, Edmund C.",
+        "file": "https://www.gutenberg.org/ebooks/68991.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/68991.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/68991.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/68991/pg68991.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Future Technology",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/68991",
+        "gutenbergId": 68991,
+        "subjects": [
+          "Computers",
+          "Artificial intelligence"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-27468",
+        "title": "IBM 1401 Programming Systems",
+        "author": "International Business Machines Corporation",
+        "file": "https://www.gutenberg.org/ebooks/27468.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/27468.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/27468.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/27468/pg27468.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Future Technology",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/27468",
+        "gutenbergId": 27468,
+        "subjects": [
+          "Programming",
+          "Computers"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - Robotics",
+    "books": [
+      {
+        "id": "quick-gutenberg-63821",
+        "title": "Love Among the Robots",
+        "author": "Emshwiller, Carol",
+        "file": "https://www.gutenberg.org/ebooks/63821.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/63821.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/63821.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/63821/pg63821.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Robotics",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/63821",
+        "gutenbergId": 63821,
+        "subjects": [
+          "Robots -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-72565",
+        "title": "The Programmed People",
+        "author": "Sharkey, Jack",
+        "file": "https://www.gutenberg.org/ebooks/72565.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/72565.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/72565.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/72565/pg72565.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Robotics",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/72565",
+        "gutenbergId": 72565,
+        "subjects": [
+          "Automation -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-66163",
+        "title": "The Cyberene",
+        "author": "Phillips, Rog",
+        "file": "https://www.gutenberg.org/ebooks/66163.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/66163.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/66163.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/66163/pg66163.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Robotics",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/66163",
+        "gutenbergId": 66163,
+        "subjects": [
+          "Cybernetics -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - Machine Learning",
+    "books": [
+      {
+        "id": "quick-gutenberg-32498",
+        "title": "The Brain",
+        "author": "Blade, Alexander",
+        "file": "https://www.gutenberg.org/ebooks/32498.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/32498.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/32498.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/32498/pg32498.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Machine Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/32498",
+        "gutenbergId": 32498,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-18602",
+        "title": "The Fourth R",
+        "author": "Smith, George O.",
+        "file": "https://www.gutenberg.org/ebooks/18602.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/18602.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/18602.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/18602/pg18602.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Machine Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/18602",
+        "gutenbergId": 18602,
+        "subjects": [
+          "Learning -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-51482",
+        "title": "Perfect Answer",
+        "author": "de Camp, L. Sprague",
+        "file": "https://www.gutenberg.org/ebooks/51482.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/51482.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/51482.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/51482/pg51482.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Machine Learning",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/51482",
+        "gutenbergId": 51482,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Science fiction"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - Study Skills",
+    "books": [
+      {
+        "id": "quick-gutenberg-1228",
+        "title": "On the Improvement of Understanding",
+        "author": "Spinoza, Benedictus de",
+        "file": "https://www.gutenberg.org/ebooks/1228.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/1228.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/1228.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/1228/pg1228.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Study Skills",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1228",
+        "gutenbergId": 1228,
+        "subjects": [
+          "Knowledge",
+          "Methodology"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-205",
+        "title": "Walden, and On The Duty Of Civil Disobedience",
+        "author": "Thoreau, Henry David",
+        "file": "https://www.gutenberg.org/ebooks/205.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/205.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/205.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/205/pg205.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Study Skills",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/205",
+        "gutenbergId": 205,
+        "subjects": [
+          "Self-culture",
+          "Conduct of life"
+        ],
+        "canDownload": true
+      }
+    ]
+  },
+  {
+    "class": "Quick Access - Productivity",
+    "books": [
+      {
+        "id": "quick-gutenberg-2274",
+        "title": "How to Live on 24 Hours a Day",
+        "author": "Bennett, Arnold",
+        "file": "https://www.gutenberg.org/ebooks/2274.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/2274.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/2274.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/2274/pg2274.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Productivity",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2274",
+        "gutenbergId": 2274,
+        "subjects": [
+          "Time management",
+          "Conduct of life"
+        ],
+        "canDownload": true
+      },
+      {
+        "id": "quick-gutenberg-8581",
+        "title": "The Art of Money Getting",
+        "author": "Barnum, P. T.",
+        "file": "https://www.gutenberg.org/ebooks/8581.html.images",
+        "epubFile": "https://www.gutenberg.org/ebooks/8581.epub.noimages",
+        "htmlFile": "https://www.gutenberg.org/ebooks/8581.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/8581/pg8581.cover.medium.jpg",
+        "year": "Public domain",
+        "category": "Productivity",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/8581",
+        "gutenbergId": 8581,
+        "subjects": [
+          "Success",
+          "Business"
+        ],
+        "canDownload": true
+      }
+    ]
+  }
+]

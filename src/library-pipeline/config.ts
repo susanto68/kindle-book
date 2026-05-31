@@ -72,6 +72,12 @@ export const PIPELINE_CONFIG = {
   privateKey: (process.env.FIREBASE_PRIVATE_KEY || "").replace(/\\n/g, "\n"),
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET || "",
   openAiApiKey: process.env.OPENAI_API_KEY || "",
+  geminiApiKey: process.env.GEMINI_API_KEY || "",
+  geminiModel: process.env.GEMINI_MODEL || "gemini-1.5-flash",
+  groqApiKey: process.env.GROQ_API_KEY || "",
+  groqFallbackModels: splitList(process.env.GROQ_FALLBACK_MODELS).length
+    ? splitList(process.env.GROQ_FALLBACK_MODELS)
+    : ["llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"],
   maxBooksPerRun: Number(process.env.LIBRARY_MAX_BOOKS_PER_RUN || 25),
   booksPerSource: Number(process.env.LIBRARY_BOOKS_PER_SOURCE || 3),
   enableDliConnector: process.env.ENABLE_DLI_CONNECTOR === "true",

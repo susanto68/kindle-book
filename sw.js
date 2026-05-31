@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v38-firebase-ai-library';
+const CACHE_NAME = 'kindle-reader-v56-gutenberg-cors-iframe-fix';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -11,9 +11,13 @@ const urlsToCache = [
   '/vendor/jszip.min.js',
   '/vendor/epub.min.js',
   '/books.json',
+  '/books.quick.json',
   '/books.gutenberg.json',
   '/favicon.svg',
   '/profile-avatar.png',
+  '/icons/library-icon-180.png',
+  '/icons/library-icon-192.png',
+  '/icons/library-icon-512.png',
   '/og-library.svg',
   '/hero-library.svg'
 ];

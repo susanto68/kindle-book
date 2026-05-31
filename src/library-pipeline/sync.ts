@@ -41,7 +41,13 @@ async function processCandidate(candidate: SourceCandidate, context: PipelineRun
     return "skipped";
   }
 
-  const summary = await generateAISummary(candidate, PIPELINE_CONFIG.openAiApiKey);
+  const summary = await generateAISummary(candidate, {
+    openAiApiKey: PIPELINE_CONFIG.openAiApiKey,
+    geminiApiKey: PIPELINE_CONFIG.geminiApiKey,
+    geminiModel: PIPELINE_CONFIG.geminiModel,
+    groqApiKey: PIPELINE_CONFIG.groqApiKey,
+    groqFallbackModels: PIPELINE_CONFIG.groqFallbackModels
+  });
   const normalized = normalizeBook(candidate, summary);
 
   if (!context.languages.includes(normalized.language)) {
