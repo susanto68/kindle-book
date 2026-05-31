@@ -2815,6 +2815,25 @@
         "downloadedAt": "2026-05-25T10:14:42.373Z"
       },
       {
+        "title": "Lives of the most eminent literary and scientific men of France, Vol. 2 (of 2)",
+        "file": "books/Gutenberg/Mathematics/65361-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-2-of.epub",
+        "cover": "books/Gutenberg/Mathematics/65361-lives-of-the-most-eminent-literary-and-scientific-men-of-france-vol-2-of.jpg",
+        "author": "Shelley, Mary Wollstonecraft",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65361,
+        "subjects": [
+          "Authors, French -- Biography",
+          "Category: Biographies",
+          "Category: French Literature",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T18:09:18.870Z"
+      },
+      {
         "title": "Logic: Deductive and Inductive",
         "file": "books/Gutenberg/Mathematics/18440-logic-deductive-and-inductive.epub",
         "cover": "books/Gutenberg/Mathematics/18440-logic-deductive-and-inductive.jpg",
@@ -3726,6 +3745,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:17.186Z"
+      },
+      {
+        "title": "How it Works: Dealing in simple language with steam, electricity, light, heat, sound, hydraulics, optics, etc., and with their applications to apparatus in common use",
+        "file": "books/Gutenberg/Physics/28553-how-it-works-dealing-in-simple-language-with-steam-electricity-light-hea.epub",
+        "cover": "books/Gutenberg/Physics/28553-how-it-works-dealing-in-simple-language-with-steam-electricity-light-hea.jpg",
+        "author": "Williams, Archibald",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28553,
+        "subjects": [
+          "Science -- Juvenile literature",
+          "Technology -- Juvenile literature",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Category: Science - Physics",
+          "Manufacturing",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-05-31T18:10:08.519Z"
       },
       {
         "title": "Myths and Marvels of Astronomy",
