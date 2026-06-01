@@ -2992,6 +2992,27 @@
         "downloadedAt": "2026-05-25T19:47:19.697Z"
       },
       {
+        "title": "Pierre Curie",
+        "file": "books/Gutenberg/Mathematics/69617-pierre-curie.epub",
+        "cover": "books/Gutenberg/Mathematics/69617-pierre-curie.jpg",
+        "author": "Curie, Marie",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69617,
+        "subjects": [
+          "Chemists -- France -- Biography",
+          "Curie, Pierre, 1859-1906",
+          "Physicists -- France -- Biography",
+          "Category: Biographies",
+          "Category: Science - Physics",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T06:10:31.468Z"
+      },
+      {
         "title": "Stellar atmospheres : $b A contribution to the observational study of high temperature in the reversing layers of stars",
         "file": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.epub",
         "cover": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.jpg",
@@ -3884,6 +3905,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:13.126Z"
+      },
+      {
+        "title": "Novum organum : $b or, True suggestions for the interpretation of nature",
+        "file": "books/Gutenberg/Physics/45988-novum-organum-b-or-true-suggestions-for-the-interpretation-of-nature.epub",
+        "cover": "books/Gutenberg/Physics/45988-novum-organum-b-or-true-suggestions-for-the-interpretation-of-nature.jpg",
+        "author": "Bacon, Francis",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45988,
+        "subjects": [
+          "Induction (Logic) -- Early works to 1800",
+          "Science -- Methodology -- Early works to 1800",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T06:11:44.783Z"
       },
       {
         "title": "Opticks : $b or, A treatise of the reflections, refractions, inflections and colours of light",
