@@ -354,6 +354,24 @@
         "downloadedAt": "2026-05-21T13:57:57.997Z"
       },
       {
+        "title": "The thinking machine",
+        "file": "books/Gutenberg/Artificial_Intelligence/78681-the-thinking-machine.epub",
+        "cover": "books/Gutenberg/Artificial_Intelligence/78681-the-thinking-machine.jpg",
+        "author": "Jones, Raymond F.",
+        "year": "Public domain",
+        "category": "Artificial Intelligence",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78681,
+        "subjects": [
+          "Artificial intelligence -- Fiction",
+          "Mate selection -- Fiction",
+          "Science fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T22:16:26.810Z"
+      },
+      {
         "title": "The Upside-Down Captain",
         "file": "books/Gutenberg/Artificial_Intelligence/60829-the-upside-down-captain.epub",
         "cover": "books/Gutenberg/Artificial_Intelligence/60829-the-upside-down-captain.jpg",
@@ -2766,6 +2784,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T05:08:32.867Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Logarithm\" to \"Lord Advocate\": Volume 16, Slice 8",
+        "file": "books/Gutenberg/Mathematics/42342-encyclopaedia-britannica-11th-edition-logarithm-to-lord-advocate-volume-.epub",
+        "cover": "books/Gutenberg/Mathematics/42342-encyclopaedia-britannica-11th-edition-logarithm-to-lord-advocate-volume-.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42342,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T22:17:34.322Z"
       },
       {
         "title": "Flatland: A Romance of Many Dimensions",
