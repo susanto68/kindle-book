@@ -41,7 +41,13 @@ async function processCandidate(candidate: SourceCandidate, context: PipelineRun
     return "skipped";
   }
 
-  const summary = await generateAISummary(candidate, PIPELINE_CONFIG.openAiApiKey);
+  const summary = await generateAISummary(candidate, {
+    openAiApiKey: PIPELINE_CONFIG.openAiApiKey,
+    geminiApiKey: PIPELINE_CONFIG.geminiApiKey,
+    geminiModel: PIPELINE_CONFIG.geminiModel,
+    groqApiKey: PIPELINE_CONFIG.groqApiKey,
+    groqFallbackModels: PIPELINE_CONFIG.groqFallbackModels
+  });
   const normalized = normalizeBook(candidate, summary);
 
   if (!context.languages.includes(normalized.language)) {
@@ -120,7 +126,7 @@ async function main(): Promise<void> {
 
   if (!context.dryRun && !hasFirebaseAdminConfig()) {
     throw new Error(
-      "Firebase Admin config is missing. Add FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY, and FIREBASE_STORAGE_BUCKET as GitHub Actions secrets, or run with --dry-run."
+      "Firebase Admin config is missing. Add FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY as GitHub Actions secrets, or run with --dry-run."
     );
   }
 

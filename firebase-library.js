@@ -7,7 +7,7 @@
   }
 
   async function loadFirebaseModules() {
-    const [{ initializeApp, getApps }, { getFirestore, collection, getDocs, limit, orderBy, query, addDoc, serverTimestamp }] =
+    const [{ initializeApp, getApps }, { getFirestore, collection, getDocs, limit, orderBy, query, addDoc, serverTimestamp, doc, getDoc, setDoc, updateDoc, increment }] =
       await Promise.all([
         import(`${FIREBASE_CDN}/firebase-app.js`),
         import(`${FIREBASE_CDN}/firebase-firestore.js`)
@@ -15,7 +15,7 @@
 
     const app = getApps().length ? getApps()[0] : initializeApp(window.KINDLE_FIREBASE_CONFIG);
     const db = getFirestore(app);
-    return { db, collection, getDocs, limit, orderBy, query, addDoc, serverTimestamp };
+    return { db, collection, getDocs, limit, orderBy, query, addDoc, serverTimestamp, doc, getDoc, setDoc, updateDoc, increment };
   }
 
   function pickReadableUrl(book) {
@@ -107,8 +107,39 @@
     }, 900);
   }
 
+  async function trackVisitors() {
+    if (!hasConfig()) {
+      return null;
+    }
+    try {
+      const firebase = await loadFirebaseModules();
+      const docRef = firebase.doc(firebase.db, "counters", "visitors");
+      
+      const sessionKey = "kindleReader.visitedThisSession";
+      if (!sessionStorage.getItem(sessionKey)) {
+        try {
+          await firebase.updateDoc(docRef, { count: firebase.increment(1) });
+        } catch (e) {
+          // Document might not exist, initialize it
+          await firebase.setDoc(docRef, { count: 1 });
+        }
+        sessionStorage.setItem(sessionKey, "true");
+      }
+      
+      const docSnap = await firebase.getDoc(docRef);
+      if (docSnap.exists()) {
+        return docSnap.data().count || 1;
+      }
+      return 1;
+    } catch (error) {
+      console.info("Firebase visitor tracking failed or is blocked by Firestore rules.", error);
+      return null;
+    }
+  }
+
   window.kindleFirebaseLibrary = {
     loadBooks,
-    trackSearch
+    trackSearch,
+    trackVisitors
   };
 })();

@@ -124,32 +124,145 @@ export function buildSearchKeywords(book: Pick<NormalizedBook, "title" | "author
   return Array.from(words).slice(0, 80);
 }
 
-export async function generateAISummary(candidate: SourceCandidate, openAiApiKey?: string): Promise<string> {
-  const fallback = candidate.description?.replace(/\s+/g, " ").trim().slice(0, 600);
-  if (!openAiApiKey) {
-    return fallback || `${candidate.title} is a legally free ${candidate.categoryHint || "learning"} book for digital library readers.`;
-  }
+type AISummaryOptions = {
+  openAiApiKey?: string;
+  geminiApiKey?: string;
+  geminiModel?: string;
+  groqApiKey?: string;
+  groqFallbackModels?: string[];
+};
 
-  try {
-    const response = await fetch("https://api.openai.com/v1/responses", {
+function buildSummaryPrompt(candidate: SourceCandidate): string {
+  return `Write a 2 sentence student-friendly summary for this public-domain/open-access book. Title: ${candidate.title}. Author: ${candidate.author || "Unknown"}. Subjects: ${(candidate.subjects || []).join(", ")}. Description: ${candidate.description || ""}`;
+}
+
+async function summarizeWithGemini(candidate: SourceCandidate, apiKey: string, model: string): Promise<string> {
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`,
+    {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${openAiApiKey}`
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "gpt-4.1-mini",
-        input: `Write a 2 sentence student-friendly summary for this public-domain/open-access book. Title: ${candidate.title}. Author: ${candidate.author || "Unknown"}. Subjects: ${(candidate.subjects || []).join(", ")}. Description: ${candidate.description || ""}`
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: buildSummaryPrompt(candidate) }]
+          }
+        ],
+        generationConfig: {
+          temperature: 0.35,
+          maxOutputTokens: 180
+        }
       })
-    });
-    if (!response.ok) {
-      return fallback || "";
     }
-    const json = (await response.json()) as { output_text?: string };
-    return json.output_text?.trim().slice(0, 900) || fallback || "";
-  } catch {
-    return fallback || "";
+  );
+  if (!response.ok) {
+    throw new Error(`Gemini summary failed with ${response.status}`);
   }
+  const json = (await response.json()) as {
+    candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
+  };
+  return json.candidates?.[0]?.content?.parts?.map((part) => part.text || "").join(" ").trim().slice(0, 900) || "";
+}
+
+async function summarizeWithGroq(candidate: SourceCandidate, apiKey: string, model: string): Promise<string> {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model,
+      messages: [
+        {
+          role: "user",
+          content: buildSummaryPrompt(candidate)
+        }
+      ],
+      temperature: 0.35,
+      max_tokens: 180
+    })
+  });
+  if (!response.ok) {
+    throw new Error(`Groq summary failed with ${response.status}`);
+  }
+  const json = (await response.json()) as {
+    choices?: Array<{ message?: { content?: string } }>;
+  };
+  return json.choices?.[0]?.message?.content?.trim().slice(0, 900) || "";
+}
+
+async function summarizeWithOpenAI(candidate: SourceCandidate, apiKey: string): Promise<string> {
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model: "gpt-4.1-mini",
+      input: buildSummaryPrompt(candidate)
+    })
+  });
+  if (!response.ok) {
+    throw new Error(`OpenAI summary failed with ${response.status}`);
+  }
+  const json = (await response.json()) as { output_text?: string };
+  return json.output_text?.trim().slice(0, 900) || "";
+}
+
+function normalizeAISummaryOptions(options?: AISummaryOptions | string): AISummaryOptions {
+  if (typeof options === "string") {
+    return { openAiApiKey: options };
+  }
+  return options || {};
+}
+
+export async function generateAISummary(candidate: SourceCandidate, options?: AISummaryOptions | string): Promise<string> {
+  const aiOptions = normalizeAISummaryOptions(options);
+  const fallback = candidate.description?.replace(/\s+/g, " ").trim().slice(0, 600);
+  const deterministicSummary =
+    fallback || `${candidate.title} is a legally free ${candidate.categoryHint || "learning"} book for digital library readers.`;
+
+  if (aiOptions.geminiApiKey) {
+    try {
+      const summary = await summarizeWithGemini(candidate, aiOptions.geminiApiKey, aiOptions.geminiModel || "gemini-1.5-flash");
+      if (summary) {
+        return summary;
+      }
+    } catch (error) {
+      console.warn(`Gemini summary failed for ${candidate.title}; trying Groq fallback.`, error);
+    }
+  }
+
+  if (aiOptions.groqApiKey) {
+    for (const model of aiOptions.groqFallbackModels || ["llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]) {
+      try {
+        const summary = await summarizeWithGroq(candidate, aiOptions.groqApiKey, model);
+        if (summary) {
+          return summary;
+        }
+      } catch (error) {
+        console.warn(`Groq summary failed for ${candidate.title} with ${model}.`, error);
+      }
+    }
+  }
+
+  if (aiOptions.openAiApiKey) {
+    try {
+      const summary = await summarizeWithOpenAI(candidate, aiOptions.openAiApiKey);
+      if (summary) {
+        return summary;
+      }
+    } catch (error) {
+      console.warn(`OpenAI summary failed for ${candidate.title}; using deterministic summary.`, error);
+    }
+  }
+
+  return deterministicSummary;
 }
 
 export function normalizeBook(candidate: SourceCandidate, openAiSummary: string): NormalizedBook {

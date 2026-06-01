@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="og-library.svg">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Sir Ganguly Digital Library</title>
   <link rel="stylesheet" href="style.css?v=38">
@@ -28,6 +29,26 @@
   </div>
 
   <header id="appHeader" class="app-header">
+    <div id="visitorCounter" class="visitor-panel" aria-label="Visitor Stats Dashboard" hidden>
+      <div class="visitor-stat">
+        <span class="stat-label">Visitors</span>
+        <span class="stat-val" id="visitorCountVal">0</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="visitor-stat">
+        <span class="stat-label">Active</span>
+        <span class="stat-val active-val">
+          <span class="pulse-dot"></span>
+          <span id="activeCountVal">8</span>
+        </span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="visitor-stat">
+        <span class="stat-label">In India</span>
+        <span class="stat-val" id="indiaCountVal">0</span>
+      </div>
+    </div>
+
     <div class="header-content">
       <button id="backBtn" class="icon-btn header-back" type="button" aria-label="Back to library">Back</button>
       <div class="profile-avatar" aria-label="Sir Ganguly profile">
@@ -36,7 +57,7 @@
       <div class="title-wrap">
         <p id="headerEyebrow" class="eyebrow">SIR GANGULY DIGITAL LIBRARY</p>
         <h1 id="bookTitle">Read &bull; Learn &bull; Evolve</h1>
-        <p class="header-tagline">Knowledge Without Limits</p>
+        <p class="header-tagline">Free Knowledge Without Limits</p>
       </div>
       <div class="header-actions">
         <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">Theme</button>
@@ -131,11 +152,7 @@
         <div id="flipbook" class="flipbook-container" aria-live="polite"></div>
         <div id="epubReader" class="epub-reader" aria-live="polite" hidden></div>
         <div id="readerMessage" class="reader-message" hidden></div>
-        <button id="pageTurnHint" class="page-turn-hint" type="button" aria-label="Turn page">
-          <span class="corner-curl" aria-hidden="true"></span>
-          <span class="hint-arrow" aria-hidden="true">›</span>
-          <span class="hint-text">Swipe or tap corner</span>
-        </button>
+
         <button id="cornerPrevPage" class="corner-page-btn corner-page-btn-left" type="button" aria-label="Turn to previous page" onpointerdown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onmousedown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" ontouchstart="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onclick="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)">
           <span class="corner-page-fold" aria-hidden="true"></span>
           <span class="corner-page-arrow" aria-hidden="true">&lsaquo;</span>

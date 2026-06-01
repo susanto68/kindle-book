@@ -30,6 +30,7 @@ jobs:
       LIBRARY_MAX_BOOKS_PER_RUN: ${{ inputs.max_books || '25' }}
       LIBRARY_BOOKS_PER_SOURCE: "3"
       LIBRARY_LANGUAGES: "english,hindi,bengali,sanskrit,tamil,urdu,marathi"
+      LIBRARY_METADATA_ONLY: "true"
       LIBRARY_DRY_RUN: ${{ inputs.dry_run || 'false' }}
 
     steps:
@@ -47,12 +48,16 @@ jobs:
       - name: Verify Firebase secrets
         run: |
           missing=0
-          for name in FIREBASE_PROJECT_ID FIREBASE_CLIENT_EMAIL FIREBASE_PRIVATE_KEY FIREBASE_STORAGE_BUCKET; do
+          for name in FIREBASE_PROJECT_ID FIREBASE_CLIENT_EMAIL FIREBASE_PRIVATE_KEY; do
             if [ -z "${!name}" ]; then
               echo "::error::Missing GitHub Actions secret: ${name}"
               missing=1
             fi
           done
+          if [ "$LIBRARY_METADATA_ONLY" != "true" ] && [ -z "$FIREBASE_STORAGE_BUCKET" ]; then
+            echo "::error::Missing GitHub Actions secret: FIREBASE_STORAGE_BUCKET"
+            missing=1
+          fi
           if [ "$missing" -ne 0 ]; then
             echo "Add the missing Firebase secrets in GitHub repo Settings > Secrets and variables > Actions."
             exit 1
