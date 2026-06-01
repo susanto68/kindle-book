@@ -3115,6 +3115,29 @@
         "downloadedAt": "2026-05-25T00:05:53.004Z"
       },
       {
+        "title": "The Logic of Chance, 3rd edition: An Essay on the Foundations and Province of the Theory of Probability, With Especial Reference to Its Logical Bearings and Its Application to Moral and Social Science and to Statistics",
+        "file": "books/Gutenberg/Mathematics/57359-the-logic-of-chance-3rd-edition-an-essay-on-the-foundations-and-province.epub",
+        "cover": "books/Gutenberg/Mathematics/57359-the-logic-of-chance-3rd-edition-an-essay-on-the-foundations-and-province.jpg",
+        "author": "Venn, John",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57359,
+        "subjects": [
+          "Chance",
+          "Logic, Symbolic and mathematical",
+          "Probabilities",
+          "Science -- Methodology",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics",
+          "Category: Research Methods/Statistics/Information Sys",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T00:10:20.472Z"
+      },
+      {
         "title": "The Number Concept: Its Origin and Development",
         "file": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.epub",
         "cover": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.jpg",
@@ -3721,6 +3744,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:12.854Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Electrostatics\" to \"Engis\": Volume 9, Slice 3",
+        "file": "books/Gutenberg/Physics/35169-encyclopaedia-britannica-11th-edition-electrostatics-to-engis-volume-9-s.epub",
+        "cover": "books/Gutenberg/Physics/35169-encyclopaedia-britannica-11th-edition-electrostatics-to-engis-volume-9-s.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35169,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T00:10:46.896Z"
       },
       {
         "title": "Galileo Galilei and the Roman Curia: From Authentic Sources",
