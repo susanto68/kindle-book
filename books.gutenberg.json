@@ -2731,6 +2731,25 @@
         "downloadedAt": "2026-05-24T18:05:38.878Z"
       },
       {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Geodesy\" to \"Geometry\": Volume 11, Slice 6",
+        "file": "books/Gutenberg/Mathematics/37461-encyclopaedia-britannica-11th-edition-geodesy-to-geometry-volume-11-slic.epub",
+        "cover": "books/Gutenberg/Mathematics/37461-encyclopaedia-britannica-11th-edition-geodesy-to-geometry-volume-11-slic.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37461,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Mathematics",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T12:46:08.589Z"
+      },
+      {
         "title": "Encyclopaedia Britannica, 11th Edition, \"Groups, Theory of\" to \"Gwyniad\": Volume 12, Slice 6",
         "file": "books/Gutenberg/Mathematics/38304-encyclopaedia-britannica-11th-edition-groups-theory-of-to-gwyniad-volume.epub",
         "cover": "books/Gutenberg/Mathematics/38304-encyclopaedia-britannica-11th-edition-groups-theory-of-to-gwyniad-volume.jpg",
@@ -4089,6 +4108,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:13.340Z"
+      },
+      {
+        "title": "Woman in Science: With an Introductory Chapter on Woman's Long Struggle for Things of the Mind",
+        "file": "books/Gutenberg/Physics/34912-woman-in-science-with-an-introductory-chapter-on-womans-long-struggle-fo.epub",
+        "cover": "books/Gutenberg/Physics/34912-woman-in-science-with-an-introductory-chapter-on-womans-long-struggle-fo.jpg",
+        "author": "Zahm, J. A. (John Augustine)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34912,
+        "subjects": [
+          "Women -- History",
+          "Women scientists",
+          "Category: Gender & Sexuality Studies",
+          "Category: History - Other",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-01T12:47:24.665Z"
       }
     ]
   },
