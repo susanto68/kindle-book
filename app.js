@@ -1501,7 +1501,7 @@ function rememberCover(bookId, dataUrl) {
 
 function applyCoverImage(container, dataUrl) {
   container.classList.remove("cover-loading");
-  const fallback = container.querySelector(".cover-fallback");
+  container.classList.add("has-loaded-cover");
   container.replaceChildren();
 
   const img = document.createElement("img");
@@ -1509,10 +1509,6 @@ function applyCoverImage(container, dataUrl) {
   img.loading = "lazy";
   img.decoding = "async";
   img.src = dataUrl;
-  if (fallback) {
-    fallback.classList.add("with-preview");
-    container.appendChild(fallback);
-  }
   container.appendChild(img);
 }
 
