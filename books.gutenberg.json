@@ -2655,6 +2655,26 @@
         "downloadedAt": "2026-05-21T13:58:04.876Z"
       },
       {
+        "title": "A Tangled Tale",
+        "file": "books/Gutenberg/Mathematics/29042-a-tangled-tale.epub",
+        "cover": "books/Gutenberg/Mathematics/29042-a-tangled-tale.jpg",
+        "author": "Carroll, Lewis",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29042,
+        "subjects": [
+          "Mathematical recreations",
+          "Category: British Literature",
+          "Category: Mathematics",
+          "Category: Short Stories",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T00:20:33.907Z"
+      },
+      {
         "title": "Amusements in Mathematics",
         "file": "books/Gutenberg/Mathematics/16713-amusements-in-mathematics.epub",
         "cover": "books/Gutenberg/Mathematics/16713-amusements-in-mathematics.jpg",
@@ -3997,6 +4017,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T16:18:45.276Z"
+      },
+      {
+        "title": "Relativity : the Special and General Theory",
+        "file": "books/Gutenberg/Physics/5001-relativity-the-special-and-general-theory.epub",
+        "cover": "books/Gutenberg/Physics/5001-relativity-the-special-and-general-theory.jpg",
+        "author": "Einstein, Albert",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5001,
+        "subjects": [
+          "Relativity (Physics)",
+          "Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T00:21:44.824Z"
       },
       {
         "title": "Rollo's Experiments",
