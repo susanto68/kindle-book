@@ -2277,6 +2277,30 @@
         "downloadedAt": "2026-05-22T10:26:37.979Z"
       },
       {
+        "title": "Life on the Mississippi",
+        "file": "books/Gutenberg/Literature/245-life-on-the-mississippi.epub",
+        "cover": "books/Gutenberg/Literature/245-life-on-the-mississippi.jpg",
+        "author": "Twain, Mark",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 245,
+        "subjects": [
+          "Authors, American -- 19th century -- Biography",
+          "Mississippi River -- Description and travel",
+          "Mississippi River Valley -- Social life and customs -- 19th century",
+          "Pilots and pilotage -- Mississippi River",
+          "Twain, Mark, 1835-1910 -- Travel -- Mississippi River",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: History - American",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T05:51:40.402Z"
+      },
+      {
         "title": "Middlemarch",
         "file": "books/Gutenberg/Literature/145-middlemarch.epub",
         "cover": "books/Gutenberg/Literature/145-middlemarch.jpg",
@@ -2692,6 +2716,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T00:07:30.288Z"
+      },
+      {
+        "title": "Archimedes",
+        "file": "books/Gutenberg/Mathematics/35550-archimedes.epub",
+        "cover": "books/Gutenberg/Mathematics/35550-archimedes.jpg",
+        "author": "Heath, Thomas Little, Sir",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35550,
+        "subjects": [
+          "Archimedes",
+          "Category: Biographies",
+          "Category: History - Ancient",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T05:55:25.396Z"
       },
       {
         "title": "Curiosa mathematica, Part 1 : $b A new theory of parallels",
