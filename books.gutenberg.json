@@ -879,6 +879,27 @@
         "downloadedAt": "2026-05-21T13:58:19.385Z"
       },
       {
+        "title": "The Dyeing of Cotton Fabrics: A Practical Handbook for the Dyer and Student",
+        "file": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.epub",
+        "cover": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.jpg",
+        "author": "Beech, Franklin",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21224,
+        "subjects": [
+          "Dyes and dyeing -- Cotton",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Crafts",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T10:36:11.951Z"
+      },
+      {
         "title": "The Principles of Chemistry, Volume I",
         "file": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.epub",
         "cover": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.jpg",
@@ -3901,6 +3922,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-01T00:10:46.896Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Magnetite\" to \"Malt\": Volume 17, Slice 4",
+        "file": "books/Gutenberg/Physics/42854-encyclopaedia-britannica-11th-edition-magnetite-to-malt-volume-17-slice-.epub",
+        "cover": "books/Gutenberg/Physics/42854-encyclopaedia-britannica-11th-edition-magnetite-to-malt-volume-17-slice-.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42854,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-02T10:34:51.835Z"
       },
       {
         "title": "Galileo Galilei and the Roman Curia: From Authentic Sources",
