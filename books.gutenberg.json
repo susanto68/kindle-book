@@ -859,6 +859,25 @@
         "downloadedAt": "2026-05-21T13:58:19.263Z"
       },
       {
+        "title": "Henley's Twentieth Century Formulas, Recipes and Processes",
+        "file": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.epub",
+        "cover": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53143,
+        "subjects": [
+          "Chemistry, Technical",
+          "Formulas, recipes, etc.",
+          "Industrial arts",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T23:51:06.376Z"
+      },
+      {
         "title": "Of Natural and Supernatural Things: Also of the first Tincture, Root, and Spirit of Metals and Minerals, how the same are Conceived, Generated, Brought forth, Changed, and Augmented.",
         "file": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.epub",
         "cover": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.jpg",
@@ -4258,6 +4277,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T22:06:06.535Z"
+      },
+      {
+        "title": "Scientific American, Volume 56, No. 9, February 26, 1887",
+        "file": "books/Gutenberg/Physics/48300-scientific-american-volume-56-no-9-february-26-1887.epub",
+        "cover": "books/Gutenberg/Physics/48300-scientific-american-volume-56-no-9-february-26-1887.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 48300,
+        "subjects": [
+          "Science -- Periodicals",
+          "Technology -- Periodicals",
+          "Category: Engineering & Technology",
+          "Category: Journals",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T23:50:24.114Z"
       },
       {
         "title": "Steam, Its Generation and Use",
