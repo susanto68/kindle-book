@@ -918,6 +918,28 @@
         "downloadedAt": "2026-06-02T10:36:11.951Z"
       },
       {
+        "title": "The handbook of soap manufacture",
+        "file": "books/Gutenberg/Chemistry/21724-the-handbook-of-soap-manufacture.epub",
+        "cover": "books/Gutenberg/Chemistry/21724-the-handbook-of-soap-manufacture.jpg",
+        "author": "Simmons, W. H. (William Herbert), Appleton, H. A.",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21724,
+        "subjects": [
+          "Soap",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry",
+          "Crafts",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T14:54:27.238Z"
+      },
+      {
         "title": "The Principles of Chemistry, Volume I",
         "file": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.epub",
         "cover": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.jpg",
@@ -3981,6 +4003,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-02T10:34:51.835Z"
+      },
+      {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Matter\" to \"Mecklenburg\": Volume 17, Slice 8",
+        "file": "books/Gutenberg/Physics/42473-encyclopaedia-britannica-11th-edition-matter-to-mecklenburg-volume-17-sl.epub",
+        "cover": "books/Gutenberg/Physics/42473-encyclopaedia-britannica-11th-edition-matter-to-mecklenburg-volume-17-sl.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42473,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T14:52:33.902Z"
       },
       {
         "title": "Galileo Galilei and the Roman Curia: From Authentic Sources",
