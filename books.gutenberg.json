@@ -879,6 +879,26 @@
         "downloadedAt": "2026-05-21T13:58:19.385Z"
       },
       {
+        "title": "Peat and its Uses as Fertilizer and Fuel",
+        "file": "books/Gutenberg/Chemistry/26142-peat-and-its-uses-as-fertilizer-and-fuel.epub",
+        "cover": "books/Gutenberg/Chemistry/26142-peat-and-its-uses-as-fertilizer-and-fuel.jpg",
+        "author": "Johnson, Samuel W. (Samuel William)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26142,
+        "subjects": [
+          "Fertilizers",
+          "Fuel",
+          "Peat",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T21:58:00.328Z"
+      },
+      {
         "title": "Researches on Cellulose, 1895-1900",
         "file": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.epub",
         "cover": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.jpg",
@@ -4165,6 +4185,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-01T06:11:44.783Z"
+      },
+      {
+        "title": "On the magnet, magnetick bodies also, and on the great magnet the earth: a new physiology, demonstrated by many arguments & experiments",
+        "file": "books/Gutenberg/Physics/33810-on-the-magnet-magnetick-bodies-also-and-on-the-great-magnet-the-earth-a-.epub",
+        "cover": "books/Gutenberg/Physics/33810-on-the-magnet-magnetick-bodies-also-and-on-the-great-magnet-the-earth-a-.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33810,
+        "subjects": [
+          "Magnetism -- Early works to 1800",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T21:57:02.720Z"
       },
       {
         "title": "Opticks : $b or, A treatise of the reflections, refractions, inflections and colours of light",
