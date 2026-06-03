@@ -879,6 +879,24 @@
         "downloadedAt": "2026-05-21T13:58:19.385Z"
       },
       {
+        "title": "Researches on Cellulose, 1895-1900",
+        "file": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.epub",
+        "cover": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.jpg",
+        "author": "Cross, C. F. (Charles Frederick), Bevan, E. J. (Edward John)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22620,
+        "subjects": [
+          "Cellulose",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T09:37:36.791Z"
+      },
+      {
         "title": "The Dyeing of Cotton Fabrics: A Practical Handbook for the Dyer and Student",
         "file": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.epub",
         "cover": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.jpg",
@@ -3883,6 +3901,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T22:08:41.533Z"
+      },
+      {
+        "title": "Biographies of distinguished scientific men. First series",
+        "file": "books/Gutenberg/Physics/16775-biographies-of-distinguished-scientific-men-first-series.epub",
+        "cover": "books/Gutenberg/Physics/16775-biographies-of-distinguished-scientific-men-first-series.jpg",
+        "author": "Arago, F. (François)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16775,
+        "subjects": [
+          "Scientists -- Biography",
+          "Category: Biographies",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-03T09:36:07.947Z"
       },
       {
         "title": "Creative Evolution",
