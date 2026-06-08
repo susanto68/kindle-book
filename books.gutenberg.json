@@ -3231,6 +3231,24 @@
         "downloadedAt": "2026-06-01T06:10:31.468Z"
       },
       {
+        "title": "Principia mathematica, vol. 1 (of 3)",
+        "file": "books/Gutenberg/Mathematics/78050-principia-mathematica-vol-1-of-3.epub",
+        "cover": "books/Gutenberg/Mathematics/78050-principia-mathematica-vol-1-of-3.jpg",
+        "author": "Russell, Bertrand, Whitehead, Alfred North",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78050,
+        "subjects": [
+          "Logic, Symbolic and mathematical",
+          "Mathematics",
+          "Mathematics -- Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-08T09:32:13.932Z"
+      },
+      {
         "title": "Stellar atmospheres : $b A contribution to the observational study of high temperature in the reversing layers of stars",
         "file": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.epub",
         "cover": "books/Gutenberg/Mathematics/73996-stellar-atmospheres-b-a-contribution-to-the-observational-study-of-high-.jpg",
@@ -4727,6 +4745,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
+        "title": "Plague Ship",
+        "file": "books/Gutenberg/Science/16921-plague-ship.epub",
+        "cover": "books/Gutenberg/Science/16921-plague-ship.jpg",
+        "author": "Norton, Andre",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16921,
+        "subjects": [
+          "Life on other planets -- Fiction",
+          "Science fiction",
+          "Solar Queen (Imaginary space vehicle) -- Fiction",
+          "Space ships -- Fiction",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Pirates, Buccaneers, Corsairs, etc.",
+          "Science Fiction",
+          "Science Fiction by Women"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-08T09:27:16.719Z"
       },
       {
         "title": "Second Treatise of Government",
