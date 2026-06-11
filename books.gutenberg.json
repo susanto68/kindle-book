@@ -2239,6 +2239,28 @@
         "downloadedAt": "2026-05-21T13:57:17.104Z"
       },
       {
+        "title": "Bidwell's Travels, from Wall Street to London Prison: Fifteen Years in Solitude",
+        "file": "books/Gutenberg/Literature/24739-bidwells-travels-from-wall-street-to-london-prison-fifteen-years-in-soli.epub",
+        "cover": "books/Gutenberg/Literature/24739-bidwells-travels-from-wall-street-to-london-prison-fifteen-years-in-soli.jpg",
+        "author": "Bidwell, Austin",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24739,
+        "subjects": [
+          "Bank fraud -- England",
+          "Bank of England",
+          "Bidwell, Austin",
+          "Criminals -- Biography",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: Crime, Thrillers and Mystery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-11T10:30:52.817Z"
+      },
+      {
         "title": "Cranford",
         "file": "books/Gutenberg/Literature/394-cranford.epub",
         "cover": "books/Gutenberg/Literature/394-cranford.jpg",
@@ -4745,6 +4767,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
+        "title": "On the Trail of the Space Pirates",
+        "file": "books/Gutenberg/Science/21092-on-the-trail-of-the-space-pirates.epub",
+        "cover": "books/Gutenberg/Science/21092-on-the-trail-of-the-space-pirates.jpg",
+        "author": "Rockwell, Carey",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21092,
+        "subjects": [
+          "Astronauts -- Juvenile fiction",
+          "Corbett, Tom (Fictitious character) -- Juvenile fiction",
+          "Interplanetary voyages -- Juvenile fiction",
+          "Science fiction",
+          "Space pirates -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Pirates, Buccaneers, Corsairs, etc.",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-06-11T10:32:53.249Z"
       },
       {
         "title": "Plague Ship",
