@@ -10,6 +10,10 @@ const CACHE_PATH = path.join(ROOT, "books", ".gutenberg-cache.json");
 const DEFAULT_MAX_PER_CATEGORY = Number.parseInt(process.env.GUTENBERG_MAX_PER_CATEGORY || "1", 10);
 const DEFAULT_MAX_TOTAL = Number.parseInt(process.env.GUTENBERG_MAX_TOTAL || "2", 10);
 const DEFAULT_MIN_TOTAL_BOOKS = Number.parseInt(process.env.GUTENBERG_MIN_TOTAL_BOOKS || "50", 10);
+const REQUEST_HEADERS = {
+  accept: "application/json",
+  "user-agent": "SirGangulyDigitalLibrary/1.0 (+https://books.sirganguly.com)"
+};
 
 const CATEGORIES = [
   { name: "Literature", folder: "Literature", topic: "literature", search: "classic literature" },
@@ -143,9 +147,15 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
 }
 
 async function fetchCategoryBooks(category) {
-  const primary = await fetchGutendexResults(category.topic, "topic");
+  const primary = await fetchGutendexResults(category.topic, "topic").catch((error) => {
+    console.warn(`Skipping primary Gutendex topic "${category.topic}": ${error.message}`);
+    return [];
+  });
   if (primary.length) return primary;
-  return fetchGutendexResults(category.search || category.name, "search");
+  return fetchGutendexResults(category.search || category.name, "search").catch((error) => {
+    console.warn(`Skipping fallback Gutendex search "${category.search || category.name}": ${error.message}`);
+    return [];
+  });
 }
 
 async function fetchGutendexResults(value, mode) {
@@ -160,11 +170,23 @@ async function fetchGutendexResults(value, mode) {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url, { headers: { accept: "application/json" } });
-  if (!response.ok) {
-    throw new Error(`Request failed ${response.status}: ${url}`);
+  const maxAttempts = 3;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    const response = await fetch(url, { headers: REQUEST_HEADERS });
+    if (response.ok) {
+      return response.json();
+    }
+
+    const shouldRetry = [403, 429, 500, 502, 503, 504].includes(response.status);
+    if (!shouldRetry || attempt === maxAttempts) {
+      throw new Error(`Request failed ${response.status}: ${url}`);
+    }
+
+    const delayMs = 1000 * attempt;
+    console.warn(`Gutendex request returned ${response.status}; retrying in ${delayMs}ms (${attempt}/${maxAttempts})`);
+    await sleep(delayMs);
   }
-  return response.json();
+  throw new Error(`Request failed: ${url}`);
 }
 
 async function downloadFile(url, targetPath) {
@@ -175,7 +197,7 @@ async function downloadFile(url, targetPath) {
 
   const tmpPath = `${targetPath}.part`;
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { headers: REQUEST_HEADERS });
     if (!response.ok || !response.body) {
       throw new Error(`Download failed ${response.status}: ${url}`);
     }
@@ -185,6 +207,10 @@ async function downloadFile(url, targetPath) {
     await unlink(tmpPath).catch(() => {});
     throw error;
   }
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function hasUsableFile(filePath) {
