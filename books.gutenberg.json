@@ -2261,6 +2261,28 @@
         "downloadedAt": "2026-06-11T10:30:52.817Z"
       },
       {
+        "title": "Carmen",
+        "file": "books/Gutenberg/Literature/2465-carmen.epub",
+        "cover": "books/Gutenberg/Literature/2465-carmen.jpg",
+        "author": "Mérimée, Prosper",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2465,
+        "subjects": [
+          "Carmen (Fictitious character) -- Fiction",
+          "Spain -- Social life and customs -- 19th century -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Romance",
+          "Opera"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-05T18:28:36.424Z"
+      },
+      {
         "title": "Cranford",
         "file": "books/Gutenberg/Literature/394-cranford.epub",
         "cover": "books/Gutenberg/Literature/394-cranford.jpg",
