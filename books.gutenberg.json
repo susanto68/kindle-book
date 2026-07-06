@@ -2720,6 +2720,31 @@
         "downloadedAt": "2026-05-23T07:34:10.882Z"
       },
       {
+        "title": "The Extraordinary Adventures of Arsène Lupin, Gentleman-Burglar",
+        "file": "books/Gutenberg/Literature/6133-the-extraordinary-adventures-of-arsene-lupin-gentleman-burglar.epub",
+        "cover": "books/Gutenberg/Literature/6133-the-extraordinary-adventures-of-arsene-lupin-gentleman-burglar.jpg",
+        "author": "Leblanc, Maurice",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6133,
+        "subjects": [
+          "Adventure stories, French -- Translations into English",
+          "Burglars -- Fiction",
+          "Lupin, Arsène (Fictitious character) -- Fiction",
+          "Mystery and detective stories",
+          "Short stories",
+          "Category: Adventure",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: French Literature",
+          "Category: Novels",
+          "Crime Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T14:28:23.493Z"
+      },
+      {
         "title": "The Great Gatsby",
         "file": "books/Gutenberg/Literature/64317-the-great-gatsby.epub",
         "cover": "books/Gutenberg/Literature/64317-the-great-gatsby.jpg",
@@ -4968,6 +4993,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T13:39:04.132Z"
+      },
+      {
+        "title": "The House on the Borderland",
+        "file": "books/Gutenberg/Science/10002-the-house-on-the-borderland.epub",
+        "cover": "books/Gutenberg/Science/10002-the-house-on-the-borderland.jpg",
+        "author": "Hodgson, William Hope",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10002,
+        "subjects": [
+          "Science fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Fantasy",
+          "Horror",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T14:29:02.335Z"
       },
       {
         "title": "The King in Yellow",
