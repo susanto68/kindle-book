@@ -2765,6 +2765,29 @@
         "downloadedAt": "2026-05-22T13:33:52.121Z"
       },
       {
+        "title": "The Secret of Chimneys",
+        "file": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.epub",
+        "cover": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.jpg",
+        "author": "Christie, Agatha",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65238,
+        "subjects": [
+          "Battle, Superintendent (Fictitious character) -- Fiction",
+          "Detective and mystery stories",
+          "Police -- England -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T10:26:34.034Z"
+      },
+      {
         "title": "Wuthering Heights",
         "file": "books/Gutenberg/Literature/768-wuthering-heights.epub",
         "cover": "books/Gutenberg/Literature/768-wuthering-heights.jpg",
@@ -5211,6 +5234,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T05:11:46.685Z"
+      },
+      {
+        "title": "Undine",
+        "file": "books/Gutenberg/Science/2825-undine.epub",
+        "cover": "books/Gutenberg/Science/2825-undine.jpg",
+        "author": "La Motte-Fouqué, Friedrich Heinrich Karl, Freiherr de",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2825,
+        "subjects": [
+          "Fairy tales -- Germany",
+          "Fantasy fiction",
+          "Knights and knighthood -- Fiction",
+          "Love stories",
+          "Romances -- Translations into English",
+          "Water spirits -- Fiction",
+          "Category: German Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Novels",
+          "Category: Romance",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T10:27:33.629Z"
       },
       {
         "title": "Weird Tales, Volume 1, Number 1, March 1923: The unique magazine",
