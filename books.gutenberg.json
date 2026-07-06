@@ -2790,6 +2790,28 @@
         "downloadedAt": "2026-05-22T13:33:52.121Z"
       },
       {
+        "title": "The Lady of the Lake",
+        "file": "books/Gutenberg/Literature/3011-the-lady-of-the-lake.epub",
+        "cover": "books/Gutenberg/Literature/3011-the-lady-of-the-lake.jpg",
+        "author": "Scott, Walter",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3011,
+        "subjects": [
+          "Arthurian romances",
+          "Lady of the Lake (Legendary character) -- Romances",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Poetry",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T17:45:16.927Z"
+      },
+      {
         "title": "The Secret of Chimneys",
         "file": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.epub",
         "cover": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.jpg",
@@ -4837,6 +4859,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
+        "title": "More Letters of Charles Darwin — Volume 1: A Record of His Work in a Series of Hitherto Unpublished Letters",
+        "file": "books/Gutenberg/Science/2739-more-letters-of-charles-darwin-volume-1-a-record-of-his-work-in-a-series.epub",
+        "cover": "books/Gutenberg/Science/2739-more-letters-of-charles-darwin-volume-1-a-record-of-his-work-in-a-series.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2739,
+        "subjects": [
+          "Darwin, Charles, 1809-1882 -- Correspondence",
+          "Evolution (Biology)",
+          "Naturalists -- Great Britain -- Correspondence",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-06T17:45:32.706Z"
       },
       {
         "title": "On the Trail of the Space Pirates",
