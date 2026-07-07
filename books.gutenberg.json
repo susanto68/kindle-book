@@ -2333,6 +2333,33 @@
         "downloadedAt": "2026-05-21T13:57:14.742Z"
       },
       {
+        "title": "Four Arthurian Romances",
+        "file": "books/Gutenberg/Literature/831-four-arthurian-romances.epub",
+        "cover": "books/Gutenberg/Literature/831-four-arthurian-romances.jpg",
+        "author": "Chrétien, de Troyes, active 12th century",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 831,
+        "subjects": [
+          "Arthurian romances",
+          "Chrétien, de Troyes, active 12th century",
+          "Romances -- Translations into English",
+          "Tales, Medieval",
+          "Arthurian Legends",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Historical Novels",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Romance",
+          "Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T10:59:39.367Z"
+      },
+      {
         "title": "Frankenstein; or, the modern prometheus",
         "file": "books/Gutenberg/Literature/84-frankenstein-or-the-modern-prometheus.epub",
         "cover": "books/Gutenberg/Literature/84-frankenstein-or-the-modern-prometheus.jpg",
@@ -3312,6 +3339,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-29T21:15:21.875Z"
+      },
+      {
+        "title": "Of the Just Shaping of Letters",
+        "file": "books/Gutenberg/Mathematics/37103-of-the-just-shaping-of-letters.epub",
+        "cover": "books/Gutenberg/Mathematics/37103-of-the-just-shaping-of-letters.jpg",
+        "author": "Dürer, Albrecht",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37103,
+        "subjects": [
+          "Alphabets",
+          "Lettering",
+          "Roman capitals (Lettering)",
+          "Category: Art",
+          "Category: How To ...",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T11:03:29.494Z"
       },
       {
         "title": "On Growth and Form",
