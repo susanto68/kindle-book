@@ -918,6 +918,26 @@
         "downloadedAt": "2026-06-03T21:58:00.328Z"
       },
       {
+        "title": "Poisons, Their Effects and Detection: A Manual for the Use of Analytical Chemists and Experts",
+        "file": "books/Gutenberg/Chemistry/42709-poisons-their-effects-and-detection-a-manual-for-the-use-of-analytical-c.epub",
+        "cover": "books/Gutenberg/Chemistry/42709-poisons-their-effects-and-detection-a-manual-for-the-use-of-analytical-c.jpg",
+        "author": "Blyth, Alexander Wynter",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42709,
+        "subjects": [
+          "Poisons",
+          "Category: Drugs/Alcohol/Pharmacology",
+          "Category: Health & Medicine",
+          "Category: Law & Criminology",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T21:27:42.211Z"
+      },
+      {
         "title": "Researches on Cellulose, 1895-1900",
         "file": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.epub",
         "cover": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.jpg",
@@ -4458,6 +4478,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T20:15:29.716Z"
+      },
+      {
+        "title": "Mysterious Psychic Forces: An Account of the Author's Investigations in Psychical Research, Together with Those of Other European Savants",
+        "file": "books/Gutenberg/Physics/39279-mysterious-psychic-forces-an-account-of-the-authors-investigations-in-ps.epub",
+        "cover": "books/Gutenberg/Physics/39279-mysterious-psychic-forces-an-account-of-the-authors-investigations-in-ps.jpg",
+        "author": "Flammarion, Camille",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39279,
+        "subjects": [
+          "Parapsychology -- Investigation",
+          "Spiritualism",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T21:27:23.474Z"
       },
       {
         "title": "Myths and Marvels of Astronomy",
