@@ -2866,6 +2866,31 @@
         "downloadedAt": "2026-07-06T21:44:30.998Z"
       },
       {
+        "title": "The Monk: A Romance",
+        "file": "books/Gutenberg/Literature/601-the-monk-a-romance.epub",
+        "cover": "books/Gutenberg/Literature/601-the-monk-a-romance.jpg",
+        "author": "Lewis, M. G. (Matthew Gregory)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 601,
+        "subjects": [
+          "Gothic fiction",
+          "Horror tales",
+          "Madrid (Spain) -- Fiction",
+          "Monks -- Fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance",
+          "Gothic Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T13:25:32.698Z"
+      },
+      {
         "title": "The Secret of Chimneys",
         "file": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.epub",
         "cover": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.jpg",
@@ -3536,6 +3561,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-25T23:08:08.273Z"
+      },
+      {
+        "title": "The Game of Logic",
+        "file": "books/Gutenberg/Mathematics/4763-the-game-of-logic.epub",
+        "cover": "books/Gutenberg/Mathematics/4763-the-game-of-logic.jpg",
+        "author": "Carroll, Lewis",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4763,
+        "subjects": [
+          "Logic -- Juvenile literature",
+          "Logic, Symbolic and mathematical",
+          "Category: Mathematics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-07T13:28:21.312Z"
       },
       {
         "title": "The Hindu-Arabic Numerals",
