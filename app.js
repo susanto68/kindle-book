@@ -955,8 +955,8 @@ function setupEventListeners() {
   dom.closeSearch.addEventListener("click", closeSearch);
   dom.searchInput.addEventListener("input", handleSearchInput);
   dom.backBtn.addEventListener("click", closeReader);
-  dom.prevBtn.addEventListener("click", () => flipRelative(-1));
-  dom.nextBtn.addEventListener("click", () => flipRelative(1));
+  dom.prevBtn?.addEventListener("click", () => flipRelative(-1));
+  dom.nextBtn?.addEventListener("click", () => flipRelative(1));
   setupCornerArrow(dom.cornerPrevBtn, -1);
   setupCornerArrow(dom.cornerNextBtn, 1);
   if (dom.pageTurnHint) {
@@ -1001,6 +1001,10 @@ function setupEventListeners() {
 }
 
 function setupCornerArrow(button, direction) {
+  if (!button) {
+    return;
+  }
+
   button.addEventListener("pointerdown", (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -2204,16 +2208,20 @@ async function flipFromCornerArrow(direction) {
   wakeReaderControls();
   playPageSound();
   animatePageTurn(direction);
-  state.currentPageIndex = targetIndex;
   await renderPdfPage(targetIndex);
   preloadNearbyPages(targetIndex);
 
   if (state.pageFlip) {
-    state.pageFlip.turnToPage(targetIndex);
+    if (direction < 0) {
+      state.pageFlip.flipPrev("bottom");
+    } else {
+      state.pageFlip.flipNext("bottom");
+    }
+  } else {
+    state.currentPageIndex = targetIndex;
+    updateReaderStatus();
+    saveCurrentProgress();
   }
-
-  updateReaderStatus();
-  saveCurrentProgress();
 }
 
 window.flipFromCornerArrow = flipFromCornerArrow;
@@ -2269,8 +2277,12 @@ function updateReaderStatus() {
   dom.pageInfo.textContent = state.currentFormat === "epub"
     ? `${state.epubLocationsReady ? "Loc" : "Loading"} ${current} of ${total}`
     : `${state.currentFormat === "html" || state.currentFormat === "text" ? "Section" : "Page"} ${current} of ${total}`;
-  dom.prevBtn.disabled = state.currentPageIndex <= 0;
-  dom.nextBtn.disabled = state.currentPageIndex >= total - 1;
+  if (dom.prevBtn) {
+    dom.prevBtn.disabled = state.currentPageIndex <= 0;
+  }
+  if (dom.nextBtn) {
+    dom.nextBtn.disabled = state.currentPageIndex >= total - 1;
+  }
   dom.goToInput.max = String(total);
   dom.goToInput.placeholder = `1-${total}`;
   dom.goToHint.textContent = state.currentFormat === "epub"
@@ -2292,12 +2304,16 @@ function updatePageTurnHint(current, total) {
   dom.pageTurnHint.querySelector(".hint-text").textContent = isLastPage ? "Swipe back" : "Swipe or tap corner";
 
   const hasMultiplePages = total > 1;
-  dom.cornerPrevBtn.hidden = !hasMultiplePages;
-  dom.cornerNextBtn.hidden = !hasMultiplePages;
-  dom.cornerPrevBtn.disabled = current <= 1;
-  dom.cornerNextBtn.disabled = current >= total;
-  dom.cornerPrevBtn.classList.toggle("is-disabled", current <= 1);
-  dom.cornerNextBtn.classList.toggle("is-disabled", current >= total);
+  if (dom.cornerPrevBtn) {
+    dom.cornerPrevBtn.hidden = !hasMultiplePages;
+    dom.cornerPrevBtn.disabled = current <= 1;
+    dom.cornerPrevBtn.classList.toggle("is-disabled", current <= 1);
+  }
+  if (dom.cornerNextBtn) {
+    dom.cornerNextBtn.hidden = !hasMultiplePages;
+    dom.cornerNextBtn.disabled = current >= total;
+    dom.cornerNextBtn.classList.toggle("is-disabled", current >= total);
+  }
 }
 
 function animatePageTurn(direction) {

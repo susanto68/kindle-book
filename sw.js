@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v57-block-vercel-toolbar';
+const CACHE_NAME = 'kindle-reader-v58-reader-turn-polish';
 const urlsToCache = [
   '/',
   '/index.html',

@@ -13,7 +13,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Sir Ganguly Digital Library</title>
-  <link rel="stylesheet" href="style.css?v=38">
+  <link rel="stylesheet" href="style.css?v=39">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
@@ -153,11 +153,11 @@
         <div id="epubReader" class="epub-reader" aria-live="polite" hidden></div>
         <div id="readerMessage" class="reader-message" hidden></div>
 
-        <button id="cornerPrevPage" class="corner-page-btn corner-page-btn-left" type="button" aria-label="Turn to previous page" onpointerdown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onmousedown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" ontouchstart="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)" onclick="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(-1)">
+        <button id="cornerPrevPage" class="corner-page-btn corner-page-btn-left" type="button" aria-label="Turn to previous page">
           <span class="corner-page-fold" aria-hidden="true"></span>
           <span class="corner-page-arrow" aria-hidden="true">&lsaquo;</span>
         </button>
-        <button id="cornerNextPage" class="corner-page-btn corner-page-btn-right" type="button" aria-label="Turn to next page" onpointerdown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" onmousedown="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" ontouchstart="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)" onclick="event.preventDefault(); event.stopPropagation(); window.flipFromCornerArrow(1)">
+        <button id="cornerNextPage" class="corner-page-btn corner-page-btn-right" type="button" aria-label="Turn to next page">
           <span class="corner-page-fold" aria-hidden="true"></span>
           <span class="corner-page-arrow" aria-hidden="true">&rsaquo;</span>
         </button>
@@ -233,7 +233,7 @@
   </div>
 
   <script src="firebase-config.js"></script>
-  <script src="firebase-library.js?v=38"></script>
-  <script src="app.js?v=38"></script>
+  <script src="firebase-library.js?v=39"></script>
+  <script src="app.js?v=39"></script>
 </body>
 </html>
