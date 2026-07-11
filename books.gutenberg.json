@@ -2815,6 +2815,31 @@
         "downloadedAt": "2026-05-22T06:51:42.834Z"
       },
       {
+        "title": "The History of Sir Richard Calmady: A Romance",
+        "file": "books/Gutenberg/Literature/23784-the-history-of-sir-richard-calmady-a-romance.epub",
+        "cover": "books/Gutenberg/Literature/23784-the-history-of-sir-richard-calmady-a-romance.jpg",
+        "author": "Malet, Lucas",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23784,
+        "subjects": [
+          "Cousins -- Fiction",
+          "Lesbians -- Fiction",
+          "Mothers and sons -- Fiction",
+          "People with disabilities -- Fiction",
+          "Psychological fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Bestsellers, American, 1895-1923",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-11T06:15:44.354Z"
+      },
+      {
         "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
         "file": "books/Gutenberg/Literature/844-the-importance-of-being-earnest-a-trivial-comedy-for-serious-people.epub",
         "cover": "books/Gutenberg/Literature/844-the-importance-of-being-earnest-a-trivial-comedy-for-serious-people.jpg",
@@ -5061,6 +5086,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:43.629Z"
+      },
+      {
+        "title": "Lone Star Planet",
+        "file": "books/Gutenberg/Science/20121-lone-star-planet.epub",
+        "cover": "books/Gutenberg/Science/20121-lone-star-planet.jpg",
+        "author": "Piper, H. Beam, McGuire, John J. (John Joseph)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20121,
+        "subjects": [
+          "Science fiction",
+          "Space colonies -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-11T06:16:38.165Z"
       },
       {
         "title": "More Letters of Charles Darwin — Volume 1: A Record of His Work in a Series of Hitherto Unpublished Letters",
