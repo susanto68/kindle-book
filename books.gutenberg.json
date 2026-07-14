@@ -4742,6 +4742,26 @@
         "downloadedAt": "2026-05-25T10:15:38.650Z"
       },
       {
+        "title": "The Astronomy of the Bible: An Elementary Commentary on the Astronomical References of Holy Scripture",
+        "file": "books/Gutenberg/Physics/28536-the-astronomy-of-the-bible-an-elementary-commentary-on-the-astronomical-.epub",
+        "cover": "books/Gutenberg/Physics/28536-the-astronomy-of-the-bible-an-elementary-commentary-on-the-astronomical-.jpg",
+        "author": "Maunder, E. Walter (Edward Walter)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28536,
+        "subjects": [
+          "Astronomy in the Bible",
+          "Constellations",
+          "Astronomy",
+          "Category: Religion/Spirituality",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T12:15:15.207Z"
+      },
+      {
         "title": "The Martyrs of Science, or, The lives of Galileo, Tycho Brahe, and Kepler",
         "file": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.epub",
         "cover": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.jpg",
@@ -5305,6 +5325,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-25T19:44:42.252Z"
+      },
+      {
+        "title": "The Big Fix",
+        "file": "books/Gutenberg/Science/23599-the-big-fix.epub",
+        "cover": "books/Gutenberg/Science/23599-the-big-fix.jpg",
+        "author": "Smith, George O. (George Oliver)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23599,
+        "subjects": [
+          "Horse racing -- Fiction",
+          "Psychic ability -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Telepathy -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T12:14:15.667Z"
       },
       {
         "title": "The call of Cthulhu",
