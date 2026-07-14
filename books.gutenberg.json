@@ -2697,6 +2697,27 @@
         "downloadedAt": "2026-05-22T22:11:14.262Z"
       },
       {
+        "title": "The Complete Project Gutenberg Works of Jane Austen: A Linked Index of all PG Editions of Jane Austen",
+        "file": "books/Gutenberg/Literature/31100-the-complete-project-gutenberg-works-of-jane-austen-a-linked-index-of-al.epub",
+        "cover": "books/Gutenberg/Literature/31100-the-complete-project-gutenberg-works-of-jane-austen-a-linked-index-of-al.jpg",
+        "author": "Austen, Jane",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31100,
+        "subjects": [
+          "England -- Social life and customs -- Fiction",
+          "Love stories, English",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T08:08:56.572Z"
+      },
+      {
         "title": "The Complete Works of William Shakespeare",
         "file": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.epub",
         "cover": "books/Gutenberg/Literature/100-the-complete-works-of-william-shakespeare.jpg",
@@ -5485,6 +5506,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T22:11:51.578Z"
+      },
+      {
+        "title": "The Shunned House",
+        "file": "books/Gutenberg/Science/31469-the-shunned-house.epub",
+        "cover": "books/Gutenberg/Science/31469-the-shunned-house.jpg",
+        "author": "Lovecraft, H. P. (Howard Phillips)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31469,
+        "subjects": [
+          "Haunted houses -- Fiction",
+          "Horror tales, American",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Short Stories",
+          "Horror",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T08:10:05.519Z"
       },
       {
         "title": "The strange case of Dr. Jekyll and Mr. Hyde",
