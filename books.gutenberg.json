@@ -3717,6 +3717,25 @@
         "downloadedAt": "2026-06-01T00:10:20.472Z"
       },
       {
+        "title": "The Mathematicall Praeface to Elements of Geometrie of Euclid of Megara",
+        "file": "books/Gutenberg/Mathematics/22062-the-mathematicall-praeface-to-elements-of-geometrie-of-euclid-of-megara.epub",
+        "cover": "books/Gutenberg/Mathematics/22062-the-mathematicall-praeface-to-elements-of-geometrie-of-euclid-of-megara.jpg",
+        "author": "Dee, John",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22062,
+        "subjects": [
+          "Geometry -- Early works to 1800",
+          "Mathematics -- Early works to 1800",
+          "Philosophy -- Early works to 1800",
+          "Category: Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T10:52:10.821Z"
+      },
+      {
         "title": "The Number Concept: Its Origin and Development",
         "file": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.epub",
         "cover": "books/Gutenberg/Mathematics/16449-the-number-concept-its-origin-and-development.jpg",
@@ -5149,6 +5168,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-06T17:45:32.706Z"
+      },
+      {
+        "title": "Occasion ... for Disaster",
+        "file": "books/Gutenberg/Science/30434-occasion-for-disaster.epub",
+        "cover": "books/Gutenberg/Science/30434-occasion-for-disaster.jpg",
+        "author": "Garrett, Randall, Janifer, Laurence M.",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30434,
+        "subjects": [
+          "Psychic ability -- Fiction",
+          "Science fiction",
+          "Telepathy -- Fiction",
+          "United States. Federal Bureau of Investigation -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Humour",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-14T10:49:29.387Z"
       },
       {
         "title": "On the Trail of the Space Pirates",
