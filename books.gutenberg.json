@@ -2905,6 +2905,30 @@
         "downloadedAt": "2026-07-06T17:45:16.927Z"
       },
       {
+        "title": "The Love Letters of Mary Wollstonecraft to Gilbert Imlay",
+        "file": "books/Gutenberg/Literature/34413-the-love-letters-of-mary-wollstonecraft-to-gilbert-imlay.epub",
+        "cover": "books/Gutenberg/Literature/34413-the-love-letters-of-mary-wollstonecraft-to-gilbert-imlay.jpg",
+        "author": "Wollstonecraft, Mary",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34413,
+        "subjects": [
+          "Authors, English -- 18th century -- Correspondence",
+          "Feminists -- Great Britain -- Correspondence",
+          "Imlay, Gilbert, 1754?-1828? -- Correspondence",
+          "Love-letters",
+          "Wollstonecraft, Mary, 1759-1797 -- Correspondence",
+          "Category: Biographies",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-15T08:13:26.792Z"
+      },
+      {
         "title": "The Man Who Was Thursday: A Nightmare",
         "file": "books/Gutenberg/Literature/1695-the-man-who-was-thursday-a-nightmare.epub",
         "cover": "books/Gutenberg/Literature/1695-the-man-who-was-thursday-a-nightmare.jpg",
@@ -5306,6 +5330,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-06T21:45:13.507Z"
+      },
+      {
+        "title": "The Ambulance Made Two Trips",
+        "file": "books/Gutenberg/Science/24149-the-ambulance-made-two-trips.epub",
+        "cover": "books/Gutenberg/Science/24149-the-ambulance-made-two-trips.jpg",
+        "author": "Leinster, Murray",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24149,
+        "subjects": [
+          "Gangsters -- Fiction",
+          "Luck -- Fiction",
+          "Police -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-15T08:14:08.277Z"
       },
       {
         "title": "The Art of War",
