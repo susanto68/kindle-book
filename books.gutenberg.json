@@ -2468,6 +2468,28 @@
         "downloadedAt": "2026-05-22T10:26:37.979Z"
       },
       {
+        "title": "King Arthur and the Knights of the Round Table",
+        "file": "books/Gutenberg/Literature/36462-king-arthur-and-the-knights-of-the-round-table.epub",
+        "cover": "books/Gutenberg/Literature/36462-king-arthur-and-the-knights-of-the-round-table.jpg",
+        "author": "Malory, Thomas, Sir",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 36462,
+        "subjects": [
+          "Arthurian romances",
+          "Arthurian Legends",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-16T09:16:11.086Z"
+      },
+      {
         "title": "Life on the Mississippi",
         "file": "books/Gutenberg/Literature/245-life-on-the-mississippi.epub",
         "cover": "books/Gutenberg/Literature/245-life-on-the-mississippi.jpg",
@@ -5749,6 +5771,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T20:46:11.881Z"
+      },
+      {
+        "title": "Time Crime",
+        "file": "books/Gutenberg/Science/18151-time-crime.epub",
+        "cover": "books/Gutenberg/Science/18151-time-crime.jpg",
+        "author": "Piper, H. Beam",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18151,
+        "subjects": [
+          "Science fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-16T09:16:53.129Z"
       },
       {
         "title": "Twenty Thousand Leagues under the Sea",
