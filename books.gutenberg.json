@@ -3540,6 +3540,26 @@
         "downloadedAt": "2026-05-24T08:37:13.229Z"
       },
       {
+        "title": "Pascal",
+        "file": "books/Gutenberg/Mathematics/26726-pascal.epub",
+        "cover": "books/Gutenberg/Mathematics/26726-pascal.jpg",
+        "author": "Tulloch, John",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26726,
+        "subjects": [
+          "Pascal, Blaise, 1623-1662",
+          "Category: Biographies",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-18T11:09:18.100Z"
+      },
+      {
         "title": "Physical Geography",
         "file": "books/Gutenberg/Mathematics/61652-physical-geography.epub",
         "cover": "books/Gutenberg/Mathematics/61652-physical-geography.jpg",
@@ -5352,6 +5372,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-06T21:45:13.507Z"
+      },
+      {
+        "title": "The Air Pirate",
+        "file": "books/Gutenberg/Science/40361-the-air-pirate.epub",
+        "cover": "books/Gutenberg/Science/40361-the-air-pirate.jpg",
+        "author": "Thorne, Guy",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40361,
+        "subjects": [
+          "Aeronautics -- Fiction",
+          "England -- Fiction",
+          "Pirates -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-18T11:07:17.597Z"
       },
       {
         "title": "The Ambulance Made Two Trips",
