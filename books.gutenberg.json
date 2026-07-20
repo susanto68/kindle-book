@@ -2571,6 +2571,31 @@
         "downloadedAt": "2026-05-21T13:18:19.822Z"
       },
       {
+        "title": "Oliver Twist, Vol. 2 (of 3)",
+        "file": "books/Gutenberg/Literature/47530-oliver-twist-vol-2-of-3.epub",
+        "cover": "books/Gutenberg/Literature/47530-oliver-twist-vol-2-of-3.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47530,
+        "subjects": [
+          "Bildungsromans",
+          "Boys -- Fiction",
+          "Criminals -- Fiction",
+          "Kidnapping victims -- Fiction",
+          "London (England) -- Fiction",
+          "Orphans -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-20T10:13:29.712Z"
+      },
+      {
         "title": "Pride and Prejudice",
         "file": "books/Gutenberg/Literature/1342-pride-and-prejudice.epub",
         "cover": "books/Gutenberg/Literature/1342-pride-and-prejudice.jpg",
@@ -3558,6 +3583,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-18T11:09:18.100Z"
+      },
+      {
+        "title": "Philosophical Letters: or, modest Reflections upon some Opinions in Natural Philosophy",
+        "file": "books/Gutenberg/Mathematics/53679-philosophical-letters-or-modest-reflections-upon-some-opinions-in-natura.epub",
+        "cover": "books/Gutenberg/Mathematics/53679-philosophical-letters-or-modest-reflections-upon-some-opinions-in-natura.jpg",
+        "author": "Newcastle, Margaret Cavendish, Duchess of",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53679,
+        "subjects": [
+          "Newcastle, William Cavendish, Duke of, 1592-1676",
+          "Philosophy",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-20T10:16:44.014Z"
       },
       {
         "title": "Physical Geography",
