@@ -1586,6 +1586,24 @@
         "downloadedAt": "2026-05-21T13:09:01.675Z"
       },
       {
+        "title": "The Oak Ridge ALGOL Compiler for the Control Data Corporation 1604: Preliminary Programmer's Manual",
+        "file": "books/Gutenberg/Computer_Science/50468-the-oak-ridge-algol-compiler-for-the-control-data-corporation-1604-preli.epub",
+        "cover": "books/Gutenberg/Computer_Science/50468-the-oak-ridge-algol-compiler-for-the-control-data-corporation-1604-preli.jpg",
+        "author": "Bumgarner, L. L.",
+        "year": "Public domain",
+        "category": "Computer Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50468,
+        "subjects": [
+          "ALGOL (Computer program language)",
+          "Category: Engineering & Technology",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-21T08:34:00.293Z"
+      },
+      {
         "title": "Workshop on Electronic Texts: Proceedings, 9-10 June 1992",
         "file": "books/Gutenberg/Computer_Science/53-workshop-on-electronic-texts-proceedings-9-10-june-1992.epub",
         "cover": "books/Gutenberg/Computer_Science/53-workshop-on-electronic-texts-proceedings-9-10-june-1992.jpg",
@@ -5418,6 +5436,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-06T21:45:13.507Z"
+      },
+      {
+        "title": "Space Station 1",
+        "file": "books/Gutenberg/Science/50290-space-station-1.epub",
+        "cover": "books/Gutenberg/Science/50290-space-station-1.jpg",
+        "author": "Long, Frank Belknap",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50290,
+        "subjects": [
+          "Impostors and imposture -- Fiction",
+          "Love stories",
+          "Science fiction",
+          "Space stations -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-21T08:33:17.820Z"
       },
       {
         "title": "The Air Pirate",
