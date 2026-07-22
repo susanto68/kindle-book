@@ -2739,6 +2739,27 @@
         "downloadedAt": "2026-05-22T20:45:12.249Z"
       },
       {
+        "title": "The Book of the Thousand Nights and a Night — Volume 01 (of 10)",
+        "file": "books/Gutenberg/Literature/51252-the-book-of-the-thousand-nights-and-a-night-volume-01-of-10.epub",
+        "cover": "books/Gutenberg/Literature/51252-the-book-of-the-thousand-nights-and-a-night-volume-01-of-10.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51252,
+        "subjects": [
+          "Fairy tales -- Arab countries",
+          "Folklore -- Arab countries",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-22T11:49:34.940Z"
+      },
+      {
         "title": "The Brothers Karamazov",
         "file": "books/Gutenberg/Literature/28054-the-brothers-karamazov.epub",
         "cover": "books/Gutenberg/Literature/28054-the-brothers-karamazov.jpg",
@@ -3187,6 +3208,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T00:07:30.288Z"
+      },
+      {
+        "title": "An essay on the foundations of geometry",
+        "file": "books/Gutenberg/Mathematics/52091-an-essay-on-the-foundations-of-geometry.epub",
+        "cover": "books/Gutenberg/Mathematics/52091-an-essay-on-the-foundations-of-geometry.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52091,
+        "subjects": [
+          "Geometry -- Foundations",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-22T11:53:23.382Z"
       },
       {
         "title": "Archimedes",
