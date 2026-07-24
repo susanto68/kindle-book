@@ -3113,6 +3113,25 @@
         "downloadedAt": "2026-07-07T07:41:32.344Z"
       },
       {
+        "title": "Under the Red Dragon: A Novel",
+        "file": "books/Gutenberg/Literature/53874-under-the-red-dragon-a-novel.epub",
+        "cover": "books/Gutenberg/Literature/53874-under-the-red-dragon-a-novel.jpg",
+        "author": "Grant, James",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53874,
+        "subjects": [
+          "Crimean War, 1853-1856 -- Fiction",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-24T16:44:55.632Z"
+      },
+      {
         "title": "Wuthering Heights",
         "file": "books/Gutenberg/Literature/768-wuthering-heights.epub",
         "cover": "books/Gutenberg/Literature/768-wuthering-heights.jpg",
@@ -4673,6 +4692,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:17.186Z"
+      },
+      {
+        "title": "History of the Transformer",
+        "file": "books/Gutenberg/Physics/56365-history-of-the-transformer.epub",
+        "cover": "books/Gutenberg/Physics/56365-history-of-the-transformer.jpg",
+        "author": "Uppenborn, Friedrich",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 56365,
+        "subjects": [
+          "Electric transformers -- History",
+          "Category: Engineering & Technology",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-24T16:49:13.217Z"
       },
       {
         "title": "How it Works: Dealing in simple language with steam, electricity, light, heat, sound, hydraulics, optics, etc., and with their applications to apparatus in common use",
