@@ -3090,6 +3090,33 @@
         "downloadedAt": "2026-07-06T10:26:34.034Z"
       },
       {
+        "title": "The Turn of the Screw",
+        "file": "books/Gutenberg/Literature/209-the-turn-of-the-screw.epub",
+        "cover": "books/Gutenberg/Literature/209-the-turn-of-the-screw.jpg",
+        "author": "James, Henry",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 209,
+        "subjects": [
+          "Children -- Fiction",
+          "England -- Fiction",
+          "Ghost stories",
+          "Governesses -- Fiction",
+          "Psychological fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Gothic Fiction",
+          "Horror",
+          "Opera"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-27T07:34:14.897Z"
+      },
+      {
         "title": "The Yeoman Adventurer",
         "file": "books/Gutenberg/Literature/7326-the-yeoman-adventurer.epub",
         "cover": "books/Gutenberg/Literature/7326-the-yeoman-adventurer.jpg",
@@ -5693,6 +5720,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T13:39:04.132Z"
+      },
+      {
+        "title": "The gods of Mars",
+        "file": "books/Gutenberg/Science/64-the-gods-of-mars.epub",
+        "cover": "books/Gutenberg/Science/64-the-gods-of-mars.jpg",
+        "author": "Burroughs, Edgar Rice",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64,
+        "subjects": [
+          "Carter, John (Fictitious character) -- Fiction",
+          "Dejah Thoris (Fictitious character) -- Fiction",
+          "Life on other planets -- Fiction",
+          "Mars (Planet) -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-27T07:35:00.663Z"
       },
       {
         "title": "The House on the Borderland",
