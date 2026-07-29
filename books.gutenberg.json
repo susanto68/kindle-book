@@ -961,6 +961,27 @@
         "downloadedAt": "2026-07-07T21:27:42.211Z"
       },
       {
+        "title": "Reports of Trials for Murder by Poisoning;: by Prussic Acid, Strychnia, Antimony, Arsenic, and Aconita. Including the trials of Tawell, W. Palmer, Dove, Madeline Smith, Dr. Pritchard, Smethurst, and Dr. Lamson, with chemical introduction and notes on the poisons used",
+        "file": "books/Gutenberg/Chemistry/50636-reports-of-trials-for-murder-by-poisoning-by-prussic-acid-strychnia-anti.epub",
+        "cover": "books/Gutenberg/Chemistry/50636-reports-of-trials-for-murder-by-poisoning-by-prussic-acid-strychnia-anti.jpg",
+        "author": "Browne, G. Lathom (George Lathom), Stewart, C. G. (Charles G.), active 19th century",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50636,
+        "subjects": [
+          "Medical jurisprudence -- Great Britain",
+          "Poisons",
+          "Trials (Murder) -- Great Britain",
+          "Trials (Poisoning) -- Great Britain",
+          "Category: Law & Criminology",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T20:18:52.141Z"
+      },
+      {
         "title": "Researches on Cellulose, 1895-1900",
         "file": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.epub",
         "cover": "books/Gutenberg/Chemistry/22620-researches-on-cellulose-1895-1900.jpg",
@@ -4657,6 +4678,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:12.854Z"
+      },
+      {
+        "title": "Elements of metaphysics",
+        "file": "books/Gutenberg/Physics/71885-elements-of-metaphysics.epub",
+        "cover": "books/Gutenberg/Physics/71885-elements-of-metaphysics.jpg",
+        "author": "Taylor, A. E. (Alfred Edward)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 71885,
+        "subjects": [
+          "Metaphysics",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T20:18:33.135Z"
       },
       {
         "title": "Encyclopaedia Britannica, 11th Edition, \"Electrostatics\" to \"Engis\": Volume 9, Slice 3",
