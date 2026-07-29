@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v59-large-library';
+const CACHE_NAME = 'kindle-reader-v60-single-page-reader';
 const urlsToCache = [
   '/',
   '/index.html',

@@ -1088,6 +1088,7 @@ body.reader-text .reader-view {
   min-height: 100dvh;
   display: grid;
   place-items: center;
+  box-sizing: border-box;
   padding: 4px;
   overflow: hidden;
   perspective: 1600px;
@@ -1095,12 +1096,12 @@ body.reader-text .reader-view {
 
 body.reader-pdf .reader-stage {
   width: 100vw;
-  height: calc(100vh - max(88px, calc(88px + env(safe-area-inset-bottom))));
-  height: calc(100dvh - max(88px, calc(88px + env(safe-area-inset-bottom))));
+  height: 100vh;
+  height: 100dvh;
   min-height: 0;
-  align-items: start;
-  justify-items: stretch;
-  padding: max(10px, env(safe-area-inset-top)) 0 max(88px, calc(88px + env(safe-area-inset-bottom)));
+  align-items: center;
+  justify-items: center;
+  padding: max(12px, env(safe-area-inset-top)) 0 max(92px, calc(92px + env(safe-area-inset-bottom)));
   background: var(--paper);
 }
 
@@ -1124,32 +1125,25 @@ body.reader-text .reader-stage {
 }
 
 body.reader-pdf .flipbook-container {
-  align-self: start;
-  justify-self: stretch;
-  width: 100vw !important;
-  height: calc(100vh - max(88px, calc(88px + env(safe-area-inset-bottom)))) !important;
-  height: calc(100dvh - max(88px, calc(88px + env(safe-area-inset-bottom)))) !important;
+  align-self: center;
+  justify-self: center;
 }
 
 body.reader-text .flipbook-container {
-  width: min(100vw, 980px) !important;
-  height: calc(100vh - var(--reader-top-control-space, max(76px, calc(62px + env(safe-area-inset-top)))) - var(--reader-bottom-control-space, max(112px, calc(112px + env(safe-area-inset-bottom))))) !important;
-  height: calc(100dvh - var(--reader-top-control-space, max(76px, calc(62px + env(safe-area-inset-top)))) - var(--reader-bottom-control-space, max(112px, calc(112px + env(safe-area-inset-bottom))))) !important;
+  align-self: center;
+  justify-self: center;
 }
 
 @media (max-width: 760px) {
   body.reader-text .flipbook-container {
-    width: 100vw !important;
-    height: calc(100vh - var(--reader-top-control-space, max(68px, calc(56px + env(safe-area-inset-top)))) - var(--reader-bottom-control-space, max(108px, calc(108px + env(safe-area-inset-bottom))))) !important;
-    height: calc(100dvh - var(--reader-top-control-space, max(68px, calc(56px + env(safe-area-inset-top)))) - var(--reader-bottom-control-space, max(108px, calc(108px + env(safe-area-inset-bottom))))) !important;
+    max-width: 100vw;
   }
 }
 
 body.reader-pdf .flipbook-container .stf__wrapper,
 body.reader-pdf .flipbook-container .stf__block {
-  width: 100vw !important;
-  height: calc(100vh - max(88px, calc(88px + env(safe-area-inset-bottom)))) !important;
-  height: calc(100dvh - max(88px, calc(88px + env(safe-area-inset-bottom)))) !important;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .flipbook-container .stf__wrapper.--portrait .stf__block {
@@ -1189,6 +1183,7 @@ body.reader-pdf .flipbook-container .stf__block {
 body.reader-pdf .page-shell {
   border: 0;
   box-shadow: none;
+  background: #fff;
 }
 
 body.reader-text .page-shell {
@@ -1204,7 +1199,8 @@ body.reader-text .page-shell {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: clamp(24px, 5vw, 64px) clamp(24px, 5vw, 64px) max(112px, calc(112px + env(safe-area-inset-bottom)));
+  box-sizing: border-box;
+  padding: clamp(24px, 4vw, 48px) clamp(22px, 4.5vw, 54px) clamp(30px, 5vh, 58px);
   background: transparent;
   color: var(--reader-ink);
 }
@@ -1217,24 +1213,24 @@ body.reader-text .page-shell {
 
 .text-page-body {
   color: var(--reader-ink);
-  font: 600 clamp(18px, 2.8vw, 24px)/1.72 Georgia, "Times New Roman", serif;
+  font: 600 clamp(17px, 2.2vw, 20px)/1.62 Georgia, "Times New Roman", serif;
+  text-align: justify;
 }
 
 .text-page-body p {
   margin: 0 0 1em;
+  text-indent: 1.25em;
 }
 
 .pdf-canvas {
   display: block;
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
 body.reader-pdf .pdf-canvas {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none;
-  max-height: none;
+  background: #fff;
 }
 
 .epub-reader {

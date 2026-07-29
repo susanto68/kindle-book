@@ -1746,6 +1746,7 @@ async function openTextBook(book) {
   dom.epubReader.hidden = true;
   ensureFlipbookElement();
   dom.flipbook.hidden = false;
+  state.pageRatio = 0.72;
 
   const readUrl = book.textFile || book.htmlFile || book.file;
   setReaderLoading("Fetching Book...", false, { progress: 0.18, estimateMs: book.source === "gutendex" ? 3200 : 5200 });
@@ -1881,9 +1882,16 @@ function extractReadableText(html) {
 
 function getTextPageLength() {
   const width = window.visualViewport?.width || window.innerWidth;
-  if (width <= 420) return 1350;
-  if (width <= 760) return 1800;
-  return 2600;
+  const size = getPageSize();
+  const fontSize = width <= 420 ? 17 : width <= 760 ? 18 : 20;
+  const horizontalPadding = width <= 760 ? 44 : 72;
+  const verticalReserve = width <= 760 ? 190 : 230;
+  const lineHeight = fontSize * 1.62;
+  const usableWidth = Math.max(180, size.width - horizontalPadding);
+  const usableHeight = Math.max(180, size.height - verticalReserve);
+  const charsPerLine = Math.max(24, Math.floor(usableWidth / (fontSize * 0.54)));
+  const linesPerPage = Math.max(8, Math.floor(usableHeight / lineHeight));
+  return clamp(Math.floor(charsPerLine * linesPerPage * 0.82), 520, 1800);
 }
 
 function paginateText(text, maxLength) {
@@ -2095,18 +2103,18 @@ function showFastFirstPdfPage(pageIndex) {
 function getPageSize() {
   const isReading = document.body.classList.contains("reader-open");
   const headerHeight = isReading ? 0 : (dom.appHeader.getBoundingClientRect().height || 70);
-  const isMobilePdf = isReading && state.currentFormat === "pdf" && window.innerWidth <= 760;
   const isMobileImmersive = isReading && ["pdf", "html", "text"].includes(state.currentFormat) && window.innerWidth <= 760;
+  const stageSize = getReaderStageContentSize();
   if (isMobileImmersive) {
     return {
-      width: Math.floor(window.visualViewport?.width || window.innerWidth),
-      height: Math.floor(window.visualViewport?.height || window.innerHeight)
+      width: Math.floor(stageSize.width),
+      height: Math.floor(stageSize.height)
     };
   }
 
-  const edgePadding = isMobilePdf ? 0 : 8;
-  const availableWidth = Math.max(260, window.innerWidth - edgePadding);
-  const availableHeight = Math.max(320, window.innerHeight - headerHeight - edgePadding);
+  const edgePadding = isReading ? 0 : 8;
+  const availableWidth = Math.max(260, (isReading ? stageSize.width : window.innerWidth - edgePadding));
+  const availableHeight = Math.max(320, (isReading ? stageSize.height : window.innerHeight - headerHeight - edgePadding));
   const ratio = state.pageRatio || 0.72;
 
   let height = Math.min(availableHeight, 1240);
@@ -2120,6 +2128,27 @@ function getPageSize() {
   return {
     width: Math.floor(width),
     height: Math.floor(height)
+  };
+}
+
+function getReaderStageContentSize() {
+  if (!dom.readerStage || dom.reader.hidden) {
+    return {
+      width: Math.max(260, window.visualViewport?.width || window.innerWidth),
+      height: Math.max(320, window.visualViewport?.height || window.innerHeight)
+    };
+  }
+
+  const rect = dom.readerStage.getBoundingClientRect();
+  const styles = window.getComputedStyle(dom.readerStage);
+  const horizontalPadding =
+    parseFloat(styles.paddingLeft || "0") + parseFloat(styles.paddingRight || "0");
+  const verticalPadding =
+    parseFloat(styles.paddingTop || "0") + parseFloat(styles.paddingBottom || "0");
+
+  return {
+    width: Math.max(260, rect.width - horizontalPadding),
+    height: Math.max(320, rect.height - verticalPadding)
   };
 }
 
@@ -2179,14 +2208,12 @@ function renderPdfPage(pageIndex) {
     const pdfPage = await state.pdfDocument.getPage(pageIndex + 1);
     const size = getPageSize();
     const isMobilePdf = document.body.classList.contains("reader-pdf") && window.innerWidth <= 760;
-    const padding = isMobilePdf ? 0 : 14;
+    const padding = isMobilePdf ? 8 : 18;
     const targetWidth = Math.max(180, size.width - padding);
     const targetHeight = Math.max(260, size.height - padding);
     const baseViewport = pdfPage.getViewport({ scale: 1 });
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const fitScale = isMobilePdf
-      ? Math.max(targetWidth / baseViewport.width, targetHeight / baseViewport.height)
-      : Math.min(targetWidth / baseViewport.width, targetHeight / baseViewport.height);
+    const fitScale = Math.min(targetWidth / baseViewport.width, targetHeight / baseViewport.height);
     const viewport = pdfPage.getViewport({ scale: fitScale * dpr });
     const cssViewport = pdfPage.getViewport({ scale: fitScale });
     const canvas = document.createElement("canvas");
@@ -3137,7 +3164,10 @@ function applyEpubTheme() {
     },
     p: {
       color: `${color} !important`,
-      "line-height": "1.55"
+      "line-height": "1.62",
+      margin: "0 0 0.9em !important",
+      "text-align": "justify",
+      "text-indent": "1.25em"
     },
     li: {
       color: `${color} !important`
