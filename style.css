@@ -797,7 +797,10 @@ body.reader-open .visitor-panel {
 
 .book-card {
   display: grid;
-  gap: 12px;
+  grid-template-rows: auto minmax(3.75em, auto) minmax(3.25em, auto) auto;
+  align-content: start;
+  gap: 10px;
+  height: 100%;
   min-width: 0;
   border: 0;
   background: transparent;
@@ -830,6 +833,15 @@ body.reader-open .visitor-panel {
   transform-style: preserve-3d;
   transition: transform 240ms cubic-bezier(.2,.75,.25,1), box-shadow 240ms ease, filter 240ms ease;
   will-change: transform;
+}
+
+.book-cover-wrap.is-online-cover {
+  box-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.48) inset,
+    0 -26px 44px rgba(13, 6, 1, 0.2) inset,
+    0 18px 38px rgba(41, 27, 14, 0.18),
+    0 0 0 1px color-mix(in srgb, var(--accent) 32%, transparent),
+    0 34px 72px rgba(41, 27, 14, 0.16);
 }
 
 .book-card:hover .book-cover-wrap,
@@ -897,6 +909,21 @@ body.reader-open .visitor-panel {
   transition: opacity 280ms ease, transform 280ms ease, filter 280ms ease;
 }
 
+.book-source-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 6;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(23, 16, 10, 0.68);
+  color: #fff7e6;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+  padding: 5px 8px;
+  font: 900 10px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
 .book-cover-wrap.has-loaded-cover img {
   opacity: 1;
 }
@@ -928,6 +955,13 @@ body.reader-open .visitor-panel {
     radial-gradient(circle at 50% 16%, rgba(255, 255, 255, 0.2), transparent 28%);
 }
 
+.cover-fallback.is-online-fallback {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 32%),
+    radial-gradient(circle at 50% 16%, rgba(255, 255, 255, 0.22), transparent 28%),
+    linear-gradient(140deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.08));
+}
+
 .cover-fallback.with-preview {
   align-content: start;
   gap: 8px;
@@ -956,7 +990,7 @@ body.reader-open .visitor-panel {
     0 2px 0 rgba(255, 255, 255, 0.44) inset,
     0 14px 28px rgba(0, 0, 0, 0.2);
   font: 900 17px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -968,7 +1002,7 @@ body.reader-open .visitor-panel {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(18px, 4.5vw, 25px);
   line-height: 1.08;
-  letter-spacing: -0.035em;
+  letter-spacing: 0;
   text-shadow:
     0 2px 7px rgba(0, 0, 0, 0.38),
     0 0 24px rgba(255, 255, 255, 0.18);
@@ -1014,15 +1048,23 @@ body.reader-open .visitor-panel {
 }
 
 .book-title {
+  display: -webkit-box;
   margin: 0;
   font-size: 16px;
   line-height: 1.25;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .book-meta {
+  display: -webkit-box;
   margin: -6px 0 0;
   color: var(--muted);
   font: 600 12px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .gutenberg-footer,
@@ -1047,6 +1089,8 @@ body.reader-open .visitor-panel {
 .book-card-actions {
   display: flex;
   gap: 8px;
+  align-self: end;
+  min-height: 18px;
 }
 
 .small-link {
@@ -1234,6 +1278,8 @@ body.reader-pdf .pdf-canvas {
 }
 
 .epub-reader {
+  position: relative;
+  isolation: isolate;
   width: 100vw;
   height: 100vh;
   height: 100dvh;
@@ -1243,7 +1289,42 @@ body.reader-pdf .pdf-canvas {
   box-shadow: inset 0 0 0 1px var(--paper-edge);
   overflow: hidden;
   touch-action: pan-y;
+  transform-style: preserve-3d;
   transition: transform 360ms ease, filter 360ms ease;
+}
+
+.epub-reader::before,
+.epub-reader::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.epub-reader::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 54%;
+  z-index: 8;
+  border-left: 1px solid rgba(95, 61, 30, 0.18);
+  background:
+    linear-gradient(90deg, rgba(97, 63, 25, 0.18), rgba(255, 252, 240, 0.84) 10%, rgba(245, 236, 217, 0.98) 54%, rgba(220, 200, 166, 0.74)),
+    radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.5), transparent 24%);
+  box-shadow:
+    -24px 0 34px rgba(58, 36, 17, 0.22),
+    inset 12px 0 24px rgba(255, 255, 255, 0.28),
+    inset -20px 0 38px rgba(72, 43, 18, 0.16);
+  transform: perspective(1400px) rotateY(0deg);
+  transform-origin: left center;
+}
+
+.epub-reader::after {
+  inset: 0;
+  z-index: 7;
+  background:
+    linear-gradient(90deg, transparent 0 44%, rgba(54, 31, 9, 0.16) 50%, transparent 58%),
+    radial-gradient(circle at 50% 50%, transparent 0 58%, rgba(49, 28, 12, 0.12) 100%);
 }
 
 .epub-reader iframe,
@@ -1299,14 +1380,35 @@ body.reader-epub .epub-reader .epub-container {
   background: var(--paper);
 }
 
-.reader-stage.turn-next .epub-reader,
 .reader-stage.turn-next .flipbook-container {
   animation: pageNudgeNext 360ms ease;
 }
 
-.reader-stage.turn-prev .epub-reader,
 .reader-stage.turn-prev .flipbook-container {
   animation: pageNudgePrev 360ms ease;
+}
+
+body.reader-epub .reader-stage.turn-next .epub-reader,
+body.reader-epub .reader-stage.turn-prev .epub-reader {
+  animation: epubReaderSettle 680ms cubic-bezier(.2,.72,.18,1);
+}
+
+body.reader-epub .reader-stage.turn-next .epub-reader::before {
+  animation: epubPageFlipNext 680ms cubic-bezier(.2,.72,.18,1);
+}
+
+body.reader-epub .reader-stage.turn-prev .epub-reader::before {
+  left: 0;
+  right: auto;
+  border-left: 0;
+  border-right: 1px solid rgba(95, 61, 30, 0.18);
+  transform-origin: right center;
+  animation: epubPageFlipPrev 680ms cubic-bezier(.2,.72,.18,1);
+}
+
+body.reader-epub .reader-stage.turn-next .epub-reader::after,
+body.reader-epub .reader-stage.turn-prev .epub-reader::after {
+  animation: epubPageShadow 680ms ease;
 }
 
 @keyframes pageNudgeNext {
@@ -1336,6 +1438,67 @@ body.reader-epub .epub-reader .epub-container {
   100% {
     transform: rotateY(0deg) translateX(0);
     filter: brightness(1);
+  }
+}
+
+@keyframes epubReaderSettle {
+  0% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+  42% {
+    transform: translateX(-4px);
+    filter: brightness(0.98);
+  }
+  100% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+}
+
+@keyframes epubPageFlipNext {
+  0% {
+    opacity: 0;
+    transform: perspective(1400px) rotateY(0deg) translateX(0);
+  }
+  18% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0.98;
+    transform: perspective(1400px) rotateY(-74deg) translateX(-4%);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(1400px) rotateY(-118deg) translateX(-18%);
+  }
+}
+
+@keyframes epubPageFlipPrev {
+  0% {
+    opacity: 0;
+    transform: perspective(1400px) rotateY(0deg) translateX(0);
+  }
+  18% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0.98;
+    transform: perspective(1400px) rotateY(74deg) translateX(4%);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(1400px) rotateY(118deg) translateX(18%);
+  }
+}
+
+@keyframes epubPageShadow {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
   }
 }
 

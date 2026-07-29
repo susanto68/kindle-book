@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v60-single-page-reader';
+const CACHE_NAME = 'kindle-reader-v61-epub-page-curl';
 const urlsToCache = [
   '/',
   '/index.html',

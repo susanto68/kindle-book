@@ -1335,16 +1335,24 @@ function createBookCard(book, options = {}) {
   card.className = "book-card";
   card.tabIndex = 0;
   card.dataset.bookId = book.id;
+  const isOnlineBook = isOnlineReadableBook(book);
+  card.classList.toggle("is-online-book", isOnlineBook);
+  card.classList.toggle("is-external-source-book", book.storageMode === "external-link" || isExternalSourceOnlyBook(book));
 
   const cover = document.createElement("div");
   cover.className = "book-cover-wrap";
+  cover.classList.toggle("is-online-cover", isOnlineBook);
   const colors = getCoverColors(book.id);
   cover.style.setProperty("--cover-a", colors[0]);
   cover.style.setProperty("--cover-b", colors[1]);
   cover.appendChild(createCoverFallback(book));
+  const sourceBadge = createBookSourceBadge(book, isOnlineBook);
+  if (sourceBadge) {
+    cover.appendChild(sourceBadge);
+  }
   if (book.cover) {
     const coverImage = document.createElement("img");
-    coverImage.alt = "";
+    coverImage.alt = `${book.title} cover`;
     coverImage.loading = "lazy";
     coverImage.decoding = "async";
     coverImage.src = toAssetUrl(book.cover);
@@ -1362,7 +1370,11 @@ function createBookCard(book, options = {}) {
 
   const meta = document.createElement("p");
   meta.className = "book-meta";
-  meta.textContent = `${book.author || "Unknown"} | ${book.className} | ${book.format?.toUpperCase() || ""}`;
+  meta.textContent = [
+    book.author || "Unknown",
+    isOnlineBook ? "Online Gutenberg" : book.className,
+    book.format?.toUpperCase() || getBookFormat(getReadableBookFile(book)).toUpperCase()
+  ].filter(Boolean).join(" | ");
 
   const actions = document.createElement("div");
   actions.className = "book-card-actions";
@@ -1398,6 +1410,7 @@ function createBookCard(book, options = {}) {
 function createCoverFallback(book) {
   const fallback = document.createElement("div");
   fallback.className = "cover-fallback";
+  fallback.classList.toggle("is-online-fallback", isOnlineReadableBook(book));
 
   const icon = document.createElement("div");
   icon.className = "cover-icon";
@@ -1411,6 +1424,29 @@ function createCoverFallback(book) {
 
   fallback.append(icon, title, meta);
   return fallback;
+}
+
+function createBookSourceBadge(book, isOnlineBook) {
+  if (!isOnlineBook) {
+    return null;
+  }
+
+  const badge = document.createElement("span");
+  badge.className = "book-source-badge";
+  badge.textContent = isOnlineBook
+    ? (book.storageMode === "external-link" || isExternalSourceOnlyBook(book) ? "ONLINE" : "EPUB")
+    : "";
+  return badge;
+}
+
+function isOnlineReadableBook(book) {
+  const readableFile = getReadableBookFile(book);
+  return Boolean(
+    book?.storageMode === "external-link" ||
+    /^https?:/i.test(readableFile) ||
+    /^https?:/i.test(book?.cover || "") ||
+    /^gutenberg/i.test(book?.source || "")
+  );
 }
 
 function inferBookIcon(book) {
@@ -2407,7 +2443,7 @@ function updatePageTurnHint(current, total) {
   const isLastPage = total > 1 && current >= total;
   dom.pageTurnHint.hidden = total <= 1;
   dom.pageTurnHint.dataset.direction = isLastPage ? "prev" : "next";
-  dom.pageTurnHint.querySelector(".hint-arrow").textContent = isLastPage ? "‹" : "›";
+  dom.pageTurnHint.querySelector(".hint-arrow").textContent = isLastPage ? "<" : ">";
   dom.pageTurnHint.querySelector(".hint-text").textContent = isLastPage ? "Swipe back" : "Swipe or tap corner";
 
   const hasMultiplePages = total > 1;
@@ -2429,7 +2465,7 @@ function animatePageTurn(direction) {
   dom.readerStage.classList.add(direction < 0 ? "turn-prev" : "turn-next");
   setTimeout(() => {
     dom.readerStage.classList.remove("turn-next", "turn-prev");
-  }, 420);
+  }, state.currentFormat === "epub" ? 720 : 420);
 }
 
 function applyInitialSoundPreference() {
@@ -3154,13 +3190,23 @@ function applyEpubTheme() {
   const color = isDark ? "#ebdcc5" : "#0c0a09";
 
   state.epubRendition.themes.default({
+    html: {
+      background: `${bg} !important`,
+      color: `${color} !important`,
+      margin: "0 !important",
+      padding: "0 !important"
+    },
     body: {
       background: `${bg} !important`,
       color: `${color} !important`,
       "font-family": "Georgia, serif",
-      "line-height": "1.55",
+      "line-height": "1.62",
       "font-size": "112%",
-      margin: "0 !important"
+      margin: "0 !important",
+      padding: "0.2em 0.15em !important",
+      "box-sizing": "border-box",
+      "overflow-wrap": "break-word",
+      hyphens: "auto"
     },
     p: {
       color: `${color} !important`,
@@ -3180,6 +3226,10 @@ function applyEpubTheme() {
     },
     h3: {
       color: `${color} !important`
+    },
+    img: {
+      "max-width": "100% !important",
+      height: "auto !important"
     },
     a: {
       color: `${isDark ? "#f0c99b" : "#7a4f2b"} !important`
