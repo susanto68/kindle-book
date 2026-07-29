@@ -218,6 +218,7 @@ async function init() {
     const firebaseLibrary = await fetchFirebaseLibrary();
     const generatedLibrary = await fetchOptionalLibrary("books.gutenberg.json");
     const quickLibraryRaw = await fetchOptionalLibrary("books.quick.json");
+    const sourceLibrary = await fetchOptionalLibrary("books.sources.json");
     const quickLibrary = quickLibraryRaw.map((group) => {
       if (group && Array.isArray(group.books)) {
         group.books = group.books.map((book) => {
@@ -234,7 +235,8 @@ async function init() {
       ...firebaseLibrary,
       ...configuredLibrary,
       ...generatedLibrary,
-      ...quickLibrary
+      ...quickLibrary,
+      ...sourceLibrary
     ]);
     flattenLibrary(state.rawLibrary);
     renderLibrary();
@@ -621,6 +623,10 @@ function normalizeText(value) {
 }
 
 function createBookKey(book) {
+  if (book.storageMode === "source-directory" && book.id) {
+    return `${book.className || ""}:${book.id}`;
+  }
+
   return `${book.className || ""}:${titleFromFilePath(book.file || book.title).toLowerCase().replace(/[^a-z0-9]+/g, "")}`;
 }
 
@@ -1433,9 +1439,13 @@ function createBookSourceBadge(book, isOnlineBook) {
 
   const badge = document.createElement("span");
   badge.className = "book-source-badge";
-  badge.textContent = isOnlineBook
-    ? (book.storageMode === "external-link" || isExternalSourceOnlyBook(book) ? "ONLINE" : "EPUB")
-    : "";
+  if (book.storageMode === "source-directory") {
+    badge.textContent = "LIBRARY";
+  } else if (book.storageMode === "external-link" || isExternalSourceOnlyBook(book)) {
+    badge.textContent = "ONLINE";
+  } else {
+    badge.textContent = "EPUB";
+  }
   return badge;
 }
 
@@ -1443,6 +1453,7 @@ function isOnlineReadableBook(book) {
   const readableFile = getReadableBookFile(book);
   return Boolean(
     book?.storageMode === "external-link" ||
+    book?.storageMode === "source-directory" ||
     /^https?:/i.test(readableFile) ||
     /^https?:/i.test(book?.cover || "") ||
     /^gutenberg/i.test(book?.source || "")

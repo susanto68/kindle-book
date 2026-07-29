@@ -1,0 +1,246 @@
+[
+  {
+    "class": "Free Online Libraries",
+    "books": [
+      {
+        "id": "source-standard-ebooks",
+        "title": "Standard Ebooks",
+        "author": "Carefully edited public-domain ebooks",
+        "file": "https://standardebooks.org/ebooks",
+        "sourceUrl": "https://standardebooks.org/ebooks",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "html",
+        "source": "standard-ebooks",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["public domain", "classic literature", "epub", "kindle"]
+      },
+      {
+        "id": "source-open-library",
+        "title": "Open Library",
+        "author": "Internet Archive",
+        "file": "https://openlibrary.org/subjects",
+        "sourceUrl": "https://openlibrary.org/subjects",
+        "year": "Free read/borrow links",
+        "category": "General Knowledge",
+        "format": "html",
+        "source": "open-library",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["borrowable books", "read online", "library catalog"]
+      },
+      {
+        "id": "source-internet-archive-texts",
+        "title": "Internet Archive Texts",
+        "author": "Internet Archive",
+        "file": "https://archive.org/details/texts",
+        "sourceUrl": "https://archive.org/details/texts",
+        "year": "Open digital archive",
+        "category": "General Knowledge",
+        "format": "html",
+        "source": "internet-archive",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["books", "texts", "scanned books", "public domain"]
+      },
+      {
+        "id": "source-wikisource",
+        "title": "Wikisource",
+        "author": "Wikimedia Foundation",
+        "file": "https://en.wikisource.org/wiki/Main_Page",
+        "sourceUrl": "https://en.wikisource.org/wiki/Main_Page",
+        "year": "Free source texts",
+        "category": "Literature",
+        "format": "html",
+        "source": "wikisource",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["source texts", "public domain", "history", "literature"]
+      }
+    ]
+  },
+  {
+    "class": "Open Textbooks",
+    "books": [
+      {
+        "id": "source-openstax",
+        "title": "OpenStax Free Textbooks",
+        "author": "Rice University",
+        "file": "https://openstax.org/subjects",
+        "sourceUrl": "https://openstax.org/subjects",
+        "year": "Free digital textbooks",
+        "category": "College Learning",
+        "format": "html",
+        "source": "openstax",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["textbooks", "science", "math", "college", "school"]
+      },
+      {
+        "id": "source-libretexts",
+        "title": "LibreTexts Commons",
+        "author": "LibreTexts",
+        "file": "https://commons.libretexts.org/",
+        "sourceUrl": "https://commons.libretexts.org/",
+        "year": "Open education",
+        "category": "College Learning",
+        "format": "html",
+        "source": "libretexts",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["open textbooks", "oer", "science", "math", "humanities"]
+      },
+      {
+        "id": "source-bccampus",
+        "title": "BCcampus Open Collection",
+        "author": "BCcampus",
+        "file": "https://collection.bccampus.ca/",
+        "sourceUrl": "https://collection.bccampus.ca/",
+        "year": "Open textbooks and courses",
+        "category": "College Learning",
+        "format": "html",
+        "source": "bccampus",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["open textbooks", "courses", "oer", "pdf", "epub"]
+      },
+      {
+        "id": "source-open-textbook-library",
+        "title": "Open Textbook Library",
+        "author": "University of Minnesota",
+        "file": "https://open.umn.edu/opentextbooks/",
+        "sourceUrl": "https://open.umn.edu/opentextbooks/",
+        "year": "Open licensed textbooks",
+        "category": "College Learning",
+        "format": "html",
+        "source": "open-textbook-library",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["open textbooks", "reviewed textbooks", "college"]
+      },
+      {
+        "id": "source-saylor-books",
+        "title": "Saylor Academy Free Books",
+        "author": "Saylor Academy",
+        "file": "https://www.saylor.org/books/",
+        "sourceUrl": "https://www.saylor.org/books/",
+        "year": "Free learning materials",
+        "category": "Study Skills",
+        "format": "html",
+        "source": "saylor",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["study", "college", "business", "computer science"]
+      }
+    ]
+  },
+  {
+    "class": "Open Access Research Books",
+    "books": [
+      {
+        "id": "source-doab",
+        "title": "Directory of Open Access Books",
+        "author": "DOAB Foundation",
+        "file": "https://www.doabooks.org/",
+        "sourceUrl": "https://www.doabooks.org/",
+        "year": "Peer-reviewed open access",
+        "category": "General Knowledge",
+        "format": "html",
+        "source": "doab",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["scholarly books", "open access", "research", "peer reviewed"]
+      },
+      {
+        "id": "source-oapen",
+        "title": "OAPEN Library",
+        "author": "OAPEN Foundation",
+        "file": "https://library.oapen.org/",
+        "sourceUrl": "https://library.oapen.org/",
+        "year": "Open access academic books",
+        "category": "College Learning",
+        "format": "html",
+        "source": "oapen",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["open access", "academic books", "research", "scholarly"]
+      },
+      {
+        "id": "source-ncbi-bookshelf",
+        "title": "NCBI Bookshelf",
+        "author": "National Library of Medicine",
+        "file": "https://www.ncbi.nlm.nih.gov/books/",
+        "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/",
+        "year": "Biomedical and life sciences",
+        "category": "Biology",
+        "format": "html",
+        "source": "ncbi-bookshelf",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["biology", "medicine", "health", "life sciences", "reference"]
+      },
+      {
+        "id": "source-national-academies-press",
+        "title": "National Academies Press",
+        "author": "National Academies",
+        "file": "https://nap.nationalacademies.org/",
+        "sourceUrl": "https://nap.nationalacademies.org/",
+        "year": "Research reports and books",
+        "category": "Science",
+        "format": "html",
+        "source": "national-academies-press",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["science", "engineering", "medicine", "research"]
+      }
+    ]
+  },
+  {
+    "class": "History and Government eBooks",
+    "books": [
+      {
+        "id": "source-office-historian-ebooks",
+        "title": "Office of the Historian eBooks",
+        "author": "U.S. Department of State",
+        "file": "https://history.state.gov/historicaldocuments",
+        "sourceUrl": "https://history.state.gov/historicaldocuments",
+        "year": "Government history documents",
+        "category": "History",
+        "format": "html",
+        "source": "office-historian",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["history", "foreign relations", "government documents"]
+      },
+      {
+        "id": "source-library-of-congress-books",
+        "title": "Library of Congress Digital Collections",
+        "author": "Library of Congress",
+        "file": "https://www.loc.gov/collections/?fa=original-format:book",
+        "sourceUrl": "https://www.loc.gov/collections/?fa=original-format:book",
+        "year": "Digitized books and collections",
+        "category": "History",
+        "format": "html",
+        "source": "library-of-congress",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["history", "primary sources", "books", "archives"]
+      },
+      {
+        "id": "source-world-digital-library",
+        "title": "World Digital Library Collection",
+        "author": "Library of Congress and UNESCO partners",
+        "file": "https://www.loc.gov/collections/world-digital-library/about-this-collection/",
+        "sourceUrl": "https://www.loc.gov/collections/world-digital-library/about-this-collection/",
+        "year": "Global cultural history",
+        "category": "History",
+        "format": "html",
+        "source": "world-digital-library",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["world history", "culture", "primary sources", "maps"]
+      }
+    ]
+  }
+]

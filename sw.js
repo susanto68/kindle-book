@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v61-epub-page-curl';
+const CACHE_NAME = 'kindle-reader-v62-free-source-catalog';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -13,6 +13,7 @@ const urlsToCache = [
   '/books.json',
   '/books.quick.json',
   '/books.gutenberg.json',
+  '/books.sources.json',
   '/favicon.svg',
   '/profile-avatar.png',
   '/icons/library-icon-180.png',
@@ -41,6 +42,8 @@ self.addEventListener('fetch', (event) => {
     '/index.html',
     '/books.json',
     '/books.gutenberg.json',
+    '/books.quick.json',
+    '/books.sources.json',
     '/app.js',
     '/firebase-library.js',
     '/style.css',
