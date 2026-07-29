@@ -1,6 +1,6 @@
 (function () {
   const FIREBASE_CDN = "https://www.gstatic.com/firebasejs/10.12.5";
-  const MAX_FIREBASE_BOOKS = 400;
+  const MAX_FIREBASE_BOOKS = 1200;
 
   function hasConfig() {
     return Boolean(window.KINDLE_FIREBASE_CONFIG && window.KINDLE_FIREBASE_CONFIG.projectId);

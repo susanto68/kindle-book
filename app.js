@@ -33,6 +33,8 @@ const STORAGE_KEYS = {
 
 const RENDER_RADIUS = 1;
 const MAX_COVER_CACHE = 80;
+const SHELF_INITIAL_BOOK_LIMIT = 24;
+const SHELF_LOAD_MORE_COUNT = 48;
 const SUPPORTED_BOOK_FORMATS = [".epub", ".pdf"];
 const DISCOVERY_FOLDERS = ["C++ Books", "ShreeMadBhagawadGeeta"];
 const FORMAT_PRIORITY = {
@@ -151,6 +153,9 @@ const state = {
   gutenbergSearchRequest: null,
   gutenbergSearchBooks: [],
   searchTimer: null,
+  renderTimer: null,
+  shelfRenderLimits: new Map(),
+  currentRenderKey: "",
   categoryCardsReady: false,
   coverCache: new Map(),
   activeDetailsBookId: null,
@@ -364,12 +369,17 @@ function flattenLibrary(groups) {
     const className = group.class || `Shelf ${groupIndex + 1}`;
 
     (group.books || []).forEach((book, index) => {
+      const readableFile = getReadableBookFile(book);
+      if (!readableFile && !book.sourceUrl) {
+        return;
+      }
       const normalized = {
         ...book,
-        format: getBookFormat(book.file),
-        cover: book.cover || findLikelyCoverPath(book.file),
+        file: readableFile,
+        format: book.format || getBookFormat(readableFile),
+        cover: book.cover || findLikelyCoverPath(readableFile),
         category: canonicalCategory(book.category || inferCategory({ ...book, className })),
-        id: createBookId(book.file),
+        id: book.id || createBookId(readableFile || `${className}-${book.title || index}`),
         className,
         classIndex: groupIndex,
         orderInClass: index
@@ -591,10 +601,15 @@ function isSupportedBookFile(fileName) {
 
 function getBookFormat(filePath) {
   const lower = String(filePath || "").toLowerCase();
+  if (!lower) return "html";
   if (lower.endsWith(".html") || lower.endsWith(".htm") || lower.includes("text/html")) return "html";
   if (lower.endsWith(".txt") || lower.includes("text/plain")) return "text";
   if (lower.endsWith(".epub") || lower.includes(".epub") || lower.includes("application/epub")) return "epub";
   return "pdf";
+}
+
+function getReadableBookFile(book) {
+  return book?.file || book?.epubFile || book?.htmlFile || book?.textFile || book?.sourceUrl || "";
 }
 
 function getFormatPriority(book) {
@@ -1015,6 +1030,11 @@ function setupCornerArrow(button, direction) {
 function renderLibrary(query = "") {
   const cleanQuery = query.trim().toLowerCase();
   const selectedCategory = canonicalCategory(state.activeCategory);
+  const renderKey = `${selectedCategory || "all"}|${cleanQuery}`;
+  if (renderKey !== state.currentRenderKey) {
+    state.currentRenderKey = renderKey;
+    state.shelfRenderLimits.clear();
+  }
   const groupMap = new Map();
   const remoteBooks = getVisibleGutenbergBooks(selectedCategory, cleanQuery);
 
@@ -1054,11 +1074,18 @@ function renderLibrary(query = "") {
     const row = document.createElement("div");
     row.className = "class-books";
 
-    group.books.forEach((book) => {
+    const shelfKey = getShelfRenderKey(renderKey, group.class);
+    const renderLimit = state.shelfRenderLimits.get(shelfKey) || SHELF_INITIAL_BOOK_LIMIT;
+    const visibleBooks = group.books.slice(0, renderLimit);
+
+    visibleBooks.forEach((book) => {
       row.appendChild(createBookCard(book, { compact: false }));
     });
 
     shelf.append(title, row);
+    if (group.books.length > visibleBooks.length) {
+      shelf.appendChild(createShelfLoadMoreButton(shelfKey, group.books.length, visibleBooks.length, cleanQuery));
+    }
     dom.bookGrid.appendChild(shelf);
   });
 
@@ -1078,6 +1105,27 @@ function renderLibrary(query = "") {
     dom.recentSection.hidden = true;
   }
   setupCoverObserver();
+}
+
+function getShelfRenderKey(renderKey, className) {
+  return `${renderKey}|${className}`;
+}
+
+function createShelfLoadMoreButton(shelfKey, totalCount, visibleCount, query) {
+  const footer = document.createElement("div");
+  footer.className = "shelf-load-more";
+
+  const button = document.createElement("button");
+  button.className = "primary-btn";
+  button.type = "button";
+  button.textContent = `Load more (${visibleCount} of ${totalCount})`;
+  button.addEventListener("click", () => {
+    state.shelfRenderLimits.set(shelfKey, visibleCount + SHELF_LOAD_MORE_COUNT);
+    renderLibrary(query);
+  });
+
+  footer.appendChild(button);
+  return footer;
 }
 
 function getVisibleGutenbergBooks(selectedCategory, cleanQuery) {
@@ -1548,7 +1596,9 @@ async function openBook(bookId, pageNumber = 1) {
     setReaderLoading("Fetching Book...", false, { progress: 0.14, estimateMs: 5200 });
     await yieldToBrowser();
     state.currentPageIndex = Math.max(0, pageNumber - 1);
-    if (state.currentFormat === "epub") {
+    if (isExternalSourceOnlyBook(book)) {
+      await openExternalSourceBook(book);
+    } else if (state.currentFormat === "epub") {
       await openEpubBook(book);
     } else if (state.currentFormat === "html" || state.currentFormat === "text") {
       await openTextBook(book);
@@ -1566,6 +1616,36 @@ async function openBook(bookId, pageNumber = 1) {
     console.error(error);
     setReaderLoading("This book could not be opened. Please try another book.", true);
   }
+}
+
+async function openExternalSourceBook(book) {
+  destroyPageFlip();
+  dom.epubReader.hidden = true;
+  ensureFlipbookElement();
+  dom.flipbook.hidden = false;
+  state.currentFormat = "html";
+  state.currentPageIndex = 0;
+  state.totalPages = 1;
+  const page = document.createElement("div");
+  page.className = "text-page external-source-page";
+
+  const title = document.createElement("h2");
+  title.textContent = book.title;
+
+  const meta = document.createElement("p");
+  meta.textContent = `${book.author || "Unknown"} | ${book.category || book.className || "Open Library"}`;
+
+  const link = document.createElement("a");
+  link.className = "primary-btn external-source-link";
+  link.href = book.sourceUrl || book.file;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.textContent = "Open Online Source";
+
+  page.append(title, meta, link);
+  state.pageElements = [page];
+  await buildPageFlip(0, state.pageElements);
+  updateReaderStatus();
 }
 
 async function openPdfBook(book) {
@@ -1669,7 +1749,7 @@ async function openTextBook(book) {
 
   const readUrl = book.textFile || book.htmlFile || book.file;
   setReaderLoading("Fetching Book...", false, { progress: 0.18, estimateMs: book.source === "gutendex" ? 3200 : 5200 });
-  state.currentFormat = readUrl === book.htmlFile ? "html" : "text";
+  state.currentFormat = book.format === "html" || readUrl === book.htmlFile || getBookFormat(readUrl) === "html" ? "html" : "text";
   document.body.classList.toggle("reader-text", true);
   document.body.classList.toggle("reader-epub", false);
 
@@ -1702,8 +1782,8 @@ async function openGutenbergReadableBook(book, readUrl) {
     }
   }
 
-  if (book.htmlFile) {
-    await openGutenbergFrameBook(book, book.htmlFile);
+  if (book.htmlFile || state.currentFormat === "html") {
+    await openGutenbergFrameBook(book, book.htmlFile || readUrl);
     return;
   }
 
@@ -2438,7 +2518,7 @@ function openSearch() {
 
 function handleSearchInput() {
   const query = dom.searchInput.value.trim();
-  renderLibrary(query);
+  scheduleLibraryRender(query);
   clearTimeout(state.searchTimer);
 
   if (query.length < 3) {
@@ -2451,6 +2531,11 @@ function handleSearchInput() {
   state.searchTimer = setTimeout(() => {
     fetchGutendexSearch(query);
   }, 520);
+}
+
+function scheduleLibraryRender(query) {
+  clearTimeout(state.renderTimer);
+  state.renderTimer = setTimeout(() => renderLibrary(query), 90);
 }
 
 function trackSearchTerm(query) {
@@ -2482,6 +2567,7 @@ function showBookDetails(bookId) {
   dom.modalClass.textContent = `${book.className} (${(book.format || getBookFormat(book.file)).toUpperCase()})`;
 
   dom.readBook.onclick = () => openBook(bookId, 1);
+  dom.downloadBook.textContent = isExternalOnlyBook(book) ? "Open Source" : "Download";
   dom.downloadBook.onclick = () => downloadBook(book);
   dom.bookModal.hidden = false;
 }
@@ -2492,6 +2578,11 @@ function closeBookModal() {
 }
 
 function downloadBook(book) {
+  if (isExternalOnlyBook(book)) {
+    window.open(book.sourceUrl || book.file, "_blank", "noopener");
+    return;
+  }
+
   const link = document.createElement("a");
   const format = book.epubFile ? "epub" : (book.format || getBookFormat(book.file));
   const extension = format === "epub" ? "epub" : format === "html" ? "html" : format === "text" ? "txt" : "pdf";
@@ -2500,6 +2591,17 @@ function downloadBook(book) {
   document.body.appendChild(link);
   link.click();
   link.remove();
+}
+
+function isExternalOnlyBook(book) {
+  const readableFile = getReadableBookFile(book);
+  const format = book.format || getBookFormat(readableFile);
+  return Boolean(/^https?:/i.test(readableFile) && (readableFile === book.sourceUrl || format === "html" || format === "text"));
+}
+
+function isExternalSourceOnlyBook(book) {
+  const readableFile = getReadableBookFile(book);
+  return Boolean(book.sourceUrl && readableFile === book.sourceUrl && /^https?:/i.test(readableFile));
 }
 
 function openIndexModal() {

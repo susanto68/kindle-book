@@ -102,7 +102,6 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
 
     const epubUrl = findFormatUrl(item.formats, "application/epub+zip");
     if (!epubUrl) continue;
-    if (cache.failed?.[item.id]?.reason === "too-large") continue;
 
     const title = item.title || `Gutenberg Book ${item.id}`;
     const titleKey = normalizeKey(title);
@@ -111,7 +110,12 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
     const epubSize = await getRemoteFileSize(epubUrl);
     if (epubSize && epubSize > MAX_GITHUB_FILE_BYTES) {
       rememberFailed(cache, item, "too-large", `EPUB is ${formatBytes(epubSize)}; GitHub limit guard is ${formatBytes(MAX_GITHUB_FILE_BYTES)}.`);
-      console.warn(`Skipping ${item.id}: ${title} (${formatBytes(epubSize)} exceeds GitHub file limit guard).`);
+      if (addExternalGutenbergBook({ item, metadata, category, knownIds, knownTitles })) {
+        console.warn(`Added online-only ${item.id}: ${title} (${formatBytes(epubSize)} exceeds GitHub file limit guard).`);
+        added += 1;
+      } else {
+        console.warn(`Skipping ${item.id}: ${title} (${formatBytes(epubSize)} exceeds GitHub file limit guard and no online reader was found).`);
+      }
       continue;
     }
 
@@ -129,7 +133,12 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
         await downloadFile(epubUrl, epubPath, { maxBytes: MAX_GITHUB_FILE_BYTES });
       } catch (error) {
         rememberFailed(cache, item, error.code === "ERR_FILE_TOO_LARGE" ? "too-large" : "download-failed", error.message);
-        console.warn(`Skipping ${item.id}: ${title} (${error.message})`);
+        if (error.code === "ERR_FILE_TOO_LARGE" && addExternalGutenbergBook({ item, metadata, category, knownIds, knownTitles })) {
+          console.warn(`Added online-only ${item.id}: ${title} (${error.message})`);
+          added += 1;
+        } else {
+          console.warn(`Skipping ${item.id}: ${title} (${error.message})`);
+        }
         continue;
       }
       if (coverUrl) {
@@ -159,6 +168,45 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
   }
 
   return added;
+}
+
+function addExternalGutenbergBook({ item, metadata, category, knownIds, knownTitles }) {
+  const formats = item.formats || {};
+  const htmlUrl = findFormatUrl(formats, "text/html");
+  const textUrl = findFormatUrl(formats, "text/plain");
+  const sourceUrl = `https://www.gutenberg.org/ebooks/${item.id}`;
+  const file = htmlUrl || textUrl || sourceUrl;
+  if (!file) {
+    return false;
+  }
+
+  const title = item.title || `Gutenberg Book ${item.id}`;
+  const author = (item.authors || []).map((person) => person.name).filter(Boolean).join(", ") || "Project Gutenberg";
+  const group = getMetadataGroup(metadata, category);
+  const format = htmlUrl ? "html" : (textUrl ? "text" : "html");
+
+  group.books.push({
+    id: `gutenberg-online-${item.id}`,
+    title,
+    file,
+    cover: findFormatUrl(formats, "image/jpeg"),
+    author,
+    year: "Public domain",
+    category: category.name,
+    format,
+    source: "gutendex",
+    sourceUrl,
+    gutenbergId: item.id,
+    subjects: [...(item.subjects || []), ...(item.bookshelves || [])].filter(Boolean),
+    language: (item.languages || ["en"])[0] || "en",
+    downloadedAt: new Date().toISOString(),
+    storageMode: "external-link",
+    canDownload: false
+  });
+
+  knownIds.add(item.id);
+  knownTitles.add(normalizeKey(title));
+  return true;
 }
 
 function rememberFailed(cache, item, reason, message) {

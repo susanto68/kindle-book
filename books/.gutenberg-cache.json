@@ -271,11 +271,20 @@
     73996,
     74764,
     74864,
+    75948,
     77092,
     78050,
     78586,
-    78681
+    78681,
+    79080
   ],
-  "failed": {},
-  "updatedAt": "2026-07-27T07:35:00.673Z"
+  "failed": {
+    "75948": {
+      "reason": "too-large",
+      "message": "EPUB is 109.47 MB; GitHub limit guard is 95.00 MB.",
+      "title": "The book of wonders : $b gives plain and simple answers to the thousands of everyday questions that are asked and which all should be able to, but cannot answer...",
+      "updatedAt": "2026-07-29T16:06:14.590Z"
+    }
+  },
+  "updatedAt": "2026-07-29T16:06:14.632Z"
 }

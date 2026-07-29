@@ -769,6 +769,32 @@ body.reader-open .visitor-panel {
   gap: 18px;
 }
 
+.shelf-load-more {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.external-source-page {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 18px;
+  min-height: 100%;
+  padding: 42px;
+  text-align: center;
+}
+
+.external-source-page h2,
+.external-source-page p {
+  max-width: 38rem;
+  margin: 0;
+}
+
+.external-source-link {
+  text-decoration: none;
+}
+
 .book-card {
   display: grid;
   gap: 12px;

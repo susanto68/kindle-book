@@ -3311,6 +3311,23 @@
         "downloadedAt": "2026-05-31T22:05:27.935Z"
       },
       {
+        "title": "Curiosa mathematica, part II : $b Pillow-problems thought out during wakeful hours",
+        "file": "books/Gutenberg/Mathematics/79080-curiosa-mathematica-part-ii-b-pillow-problems-thought-out-during-wakeful.epub",
+        "cover": "books/Gutenberg/Mathematics/79080-curiosa-mathematica-part-ii-b-pillow-problems-thought-out-during-wakeful.jpg",
+        "author": "Carroll, Lewis",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79080,
+        "subjects": [
+          "Mathematics -- Problems, exercises, etc.",
+          "Parallels (Geometry)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T16:06:13.253Z"
+      },
+      {
         "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3)",
         "file": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.epub",
         "cover": "books/Gutenberg/Mathematics/65030-eminent-literary-and-scientific-men-of-italy-spain-and-portugal-vol-1-of.jpg",
@@ -4995,6 +5012,37 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-14T12:15:15.207Z"
+      },
+      {
+        "id": "gutenberg-online-75948",
+        "title": "The book of wonders : $b gives plain and simple answers to the thousands of everyday questions that are asked and which all should be able to, but cannot answer...",
+        "file": "https://www.gutenberg.org/ebooks/75948.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/75948/pg75948.cover.medium.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/75948",
+        "gutenbergId": 75948,
+        "subjects": [
+          "Curiosities and wonders",
+          "Encyclopedias and dictionaries",
+          "Questions and answers",
+          "Science -- Miscellanea",
+          "Technology -- Miscellanea",
+          "Category: Children & Young Adult Reading",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Engineering & Technology",
+          "Category: Language & Communication",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T16:06:14.591Z",
+        "storageMode": "external-link",
+        "canDownload": false
       },
       {
         "title": "The Martyrs of Science, or, The lives of Galileo, Tycho Brahe, and Kepler",
