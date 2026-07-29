@@ -10,6 +10,7 @@ const CACHE_PATH = path.join(ROOT, "books", ".gutenberg-cache.json");
 const DEFAULT_MAX_PER_CATEGORY = Number.parseInt(process.env.GUTENBERG_MAX_PER_CATEGORY || "1", 10);
 const DEFAULT_MAX_TOTAL = Number.parseInt(process.env.GUTENBERG_MAX_TOTAL || "2", 10);
 const DEFAULT_MIN_TOTAL_BOOKS = Number.parseInt(process.env.GUTENBERG_MIN_TOTAL_BOOKS || "50", 10);
+const MAX_GITHUB_FILE_BYTES = Number.parseInt(process.env.GUTENBERG_MAX_FILE_BYTES || String(95 * 1024 * 1024), 10);
 const REQUEST_HEADERS = {
   accept: "application/json",
   "user-agent": "SirGangulyDigitalLibrary/1.0 (+https://books.sirganguly.com)"
@@ -101,10 +102,18 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
 
     const epubUrl = findFormatUrl(item.formats, "application/epub+zip");
     if (!epubUrl) continue;
+    if (cache.failed?.[item.id]?.reason === "too-large") continue;
 
     const title = item.title || `Gutenberg Book ${item.id}`;
     const titleKey = normalizeKey(title);
     if (knownTitles.has(titleKey)) continue;
+
+    const epubSize = await getRemoteFileSize(epubUrl);
+    if (epubSize && epubSize > MAX_GITHUB_FILE_BYTES) {
+      rememberFailed(cache, item, "too-large", `EPUB is ${formatBytes(epubSize)}; GitHub limit guard is ${formatBytes(MAX_GITHUB_FILE_BYTES)}.`);
+      console.warn(`Skipping ${item.id}: ${title} (${formatBytes(epubSize)} exceeds GitHub file limit guard).`);
+      continue;
+    }
 
     const author = (item.authors || []).map((person) => person.name).filter(Boolean).join(", ") || "Project Gutenberg";
     const baseName = `${item.id}-${slugify(title).slice(0, 72)}`;
@@ -116,7 +125,13 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
     console.log(`Downloading ${item.id}: ${title}`);
     if (!options.dryRun) {
       await mkdir(categoryDir, { recursive: true });
-      await downloadFile(epubUrl, epubPath);
+      try {
+        await downloadFile(epubUrl, epubPath, { maxBytes: MAX_GITHUB_FILE_BYTES });
+      } catch (error) {
+        rememberFailed(cache, item, error.code === "ERR_FILE_TOO_LARGE" ? "too-large" : "download-failed", error.message);
+        console.warn(`Skipping ${item.id}: ${title} (${error.message})`);
+        continue;
+      }
       if (coverUrl) {
         await downloadFile(coverUrl, coverPath);
       }
@@ -144,6 +159,16 @@ async function updateCategory(category, metadata, cache, knownIds, knownTitles, 
   }
 
   return added;
+}
+
+function rememberFailed(cache, item, reason, message) {
+  cache.failed ||= {};
+  cache.failed[item.id] = {
+    reason,
+    message,
+    title: item.title || `Gutenberg Book ${item.id}`,
+    updatedAt: new Date().toISOString()
+  };
 }
 
 async function fetchCategoryBooks(category) {
@@ -189,7 +214,20 @@ async function fetchJson(url) {
   throw new Error(`Request failed: ${url}`);
 }
 
-async function downloadFile(url, targetPath) {
+async function getRemoteFileSize(url) {
+  try {
+    const response = await fetch(url, { headers: REQUEST_HEADERS, method: "HEAD" });
+    if (!response.ok) {
+      return 0;
+    }
+    return Number.parseInt(response.headers.get("content-length") || "0", 10) || 0;
+  } catch (error) {
+    console.warn(`Could not check file size for ${url}: ${error.message}`);
+    return 0;
+  }
+}
+
+async function downloadFile(url, targetPath, options = {}) {
   if (await hasUsableFile(targetPath)) {
     console.log(`Skipping existing file: ${toRepoPath(targetPath)}`);
     return;
@@ -201,12 +239,32 @@ async function downloadFile(url, targetPath) {
     if (!response.ok || !response.body) {
       throw new Error(`Download failed ${response.status}: ${url}`);
     }
+    const contentLength = Number.parseInt(response.headers.get("content-length") || "0", 10) || 0;
+    if (options.maxBytes && contentLength > options.maxBytes) {
+      throw tooLargeError(contentLength, options.maxBytes);
+    }
     await pipeline(response.body, createWriteStream(tmpPath));
+    if (options.maxBytes) {
+      const info = await stat(tmpPath);
+      if (info.size > options.maxBytes) {
+        throw tooLargeError(info.size, options.maxBytes);
+      }
+    }
     await rename(tmpPath, targetPath);
   } catch (error) {
     await unlink(tmpPath).catch(() => {});
     throw error;
   }
+}
+
+function tooLargeError(size, maxBytes) {
+  const error = new Error(`Downloaded file is ${formatBytes(size)}; max allowed is ${formatBytes(maxBytes)}.`);
+  error.code = "ERR_FILE_TOO_LARGE";
+  return error;
+}
+
+function formatBytes(bytes) {
+  return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
 }
 
 function sleep(ms) {
