@@ -878,6 +878,29 @@
         "downloadedAt": "2026-06-03T23:51:06.376Z"
       },
       {
+        "title": "How to Use the Popular Science Library; History of Science; General Index",
+        "file": "books/Gutenberg/Chemistry/51133-how-to-use-the-popular-science-library-history-of-science-general-index.epub",
+        "cover": "books/Gutenberg/Chemistry/51133-how-to-use-the-popular-science-library-history-of-science-general-index.jpg",
+        "author": "Serviss, Garrett Putman, Selwyn-Brown, Arthur",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51133,
+        "subjects": [
+          "Popular science library",
+          "Science -- History",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - Other",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T18:09:35.359Z"
+      },
+      {
         "title": "Of Natural and Supernatural Things: Also of the first Tincture, Root, and Spirit of Metals and Minerals, how the same are Conceived, Generated, Brought forth, Changed, and Augmented.",
         "file": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.epub",
         "cover": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.jpg",
@@ -5144,6 +5167,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-24T21:06:01.824Z"
+      },
+      {
+        "title": "The reason why : $b a careful collection of many hundreds of reasons for things which, though generally believed, are imperfectly understood. A book of condensed scientific knowledge for the million",
+        "file": "books/Gutenberg/Physics/47748-the-reason-why-b-a-careful-collection-of-many-hundreds-of-reasons-for-th.epub",
+        "cover": "books/Gutenberg/Physics/47748-the-reason-why-b-a-careful-collection-of-many-hundreds-of-reasons-for-th.jpg",
+        "author": "Philp, Robert Kemp",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47748,
+        "subjects": [
+          "Science",
+          "Category: Health & Medicine",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T18:08:51.098Z"
       },
       {
         "title": "The Story of the Heavens",
