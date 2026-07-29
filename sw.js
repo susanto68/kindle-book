@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v63-free-book-apis';
+const CACHE_NAME = 'kindle-reader-v64-free-book-api-timeouts';
 const urlsToCache = [
   '/',
   '/index.html',

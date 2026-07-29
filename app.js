@@ -740,12 +740,7 @@ async function fetchGutendexPage(category, pageUrl = "") {
     return cached;
   }
 
-  const response = await fetch(buildGutendexUrl(category, pageUrl), { cache: "default" });
-  if (!response.ok) {
-    throw new Error(`Gutendex request failed with ${response.status}`);
-  }
-
-  let data = await response.json();
+  let data = await fetchJsonWithTimeout(buildGutendexUrl(category, pageUrl), {}, 9500);
   if (!pageUrl && (!Array.isArray(data.results) || data.results.length === 0)) {
     const config = getCategoryConfig(category);
     const fallbackParams = new URLSearchParams({
@@ -754,9 +749,10 @@ async function fetchGutendexPage(category, pageUrl = "") {
       search: config.search || config.name,
       sort: "popular"
     });
-    const fallbackResponse = await fetch(`${GUTENDEX_API}?${fallbackParams.toString()}`, { cache: "default" });
-    if (fallbackResponse.ok) {
-      data = await fallbackResponse.json();
+    try {
+      data = await fetchJsonWithTimeout(`${GUTENDEX_API}?${fallbackParams.toString()}`, {}, 8500);
+    } catch (error) {
+      console.info("Gutendex fallback search skipped.", error);
     }
   }
 
@@ -779,11 +775,7 @@ async function fetchGutendexSearch(query) {
   });
 
   try {
-    const response = await fetch(`${GUTENDEX_API}?${params.toString()}`, { cache: "default" });
-    if (!response.ok) {
-      throw new Error(`Gutendex search failed with ${response.status}`);
-    }
-    const data = await response.json();
+    const data = await fetchJsonWithTimeout(`${GUTENDEX_API}?${params.toString()}`, {}, 9000);
     if (state.gutenbergSearchRequest !== requestId) {
       return;
     }
