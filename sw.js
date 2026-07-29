@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kindle-reader-v62-free-source-catalog';
+const CACHE_NAME = 'kindle-reader-v63-free-book-apis';
 const urlsToCache = [
   '/',
   '/index.html',

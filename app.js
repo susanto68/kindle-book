@@ -28,7 +28,8 @@ const STORAGE_KEYS = {
   progress: "kindleReader.progressByBook",
   tutorialSeen: "kindleReader.readerTutorialSeen",
   soundMuted: "kindleReader.soundMuted",
-  gutenbergCache: "kindleReader.gutendexCache.v2"
+  gutenbergCache: "kindleReader.gutendexCache.v2",
+  freeBookApiCache: "kindleReader.freeBookApiCache.v1"
 };
 
 const RENDER_RADIUS = 1;
@@ -45,6 +46,12 @@ const FORMAT_PRIORITY = {
 };
 const GUTENDEX_API = "https://gutendex.com/books/";
 const GUTENDEX_CACHE_TTL = 1000 * 60 * 60 * 6;
+const FREE_BOOK_API_CACHE_TTL = 1000 * 60 * 60 * 12;
+const FREE_BOOK_API_LIMIT = 18;
+const FREE_BOOK_SEARCH_LIMIT = 24;
+const OPENSTAX_API = "https://openstax.org/apps/cms/api/books";
+const OPEN_LIBRARY_SEARCH_API = "https://openlibrary.org/search.json";
+const OAPEN_SEARCH_API = "https://library.oapen.org/rest/search";
 const STUDENT_CATEGORIES = [
   { name: "Literature", icon: "Lit", desc: "Classic novels, poems, drama", topic: "literature", search: "classic literature" },
   { name: "English Language", icon: "Eng", desc: "Grammar, vocabulary, reading", topic: "english language", search: "english grammar language" },
@@ -152,6 +159,14 @@ const state = {
   gutenbergLoadedByCategory: new Set(),
   gutenbergSearchRequest: null,
   gutenbergSearchBooks: [],
+  freeApiBooksByCategory: new Map(),
+  freeApiLoadingByCategory: new Set(),
+  freeApiLoadedByCategory: new Set(),
+  freeApiSearchRequest: null,
+  freeApiSearchBooks: [],
+  openStaxBooks: [],
+  openStaxLoaded: false,
+  openStaxLoading: false,
   searchTimer: null,
   renderTimer: null,
   shelfRenderLimits: new Map(),
@@ -241,6 +256,11 @@ async function init() {
     flattenLibrary(state.rawLibrary);
     renderLibrary();
     hideLoadingScreen();
+    scheduleIdleTask(() => {
+      ensureOpenStaxBooksLoaded()
+        .then(() => renderLibrary(dom.searchInput.value))
+        .catch((error) => console.info("OpenStax textbook preload skipped.", error));
+    }, 1200);
   } catch (error) {
     console.error(error);
     showMessage("Failed to load the library. Please refresh the page.", true);
@@ -901,6 +921,381 @@ function rememberGutendexCache(category) {
   }
 }
 
+async function ensureOpenStaxBooksLoaded() {
+  if (state.openStaxLoaded || state.openStaxLoading) {
+    return state.openStaxBooks;
+  }
+
+  const cached = readFreeBookApiCache("openstax:all");
+  if (cached) {
+    state.openStaxBooks = cached;
+    state.openStaxLoaded = true;
+    return state.openStaxBooks;
+  }
+
+  state.openStaxLoading = true;
+  try {
+    const data = await fetchJsonWithTimeout(OPENSTAX_API, {}, 9000);
+    const books = dedupeBooks((Array.isArray(data?.books) ? data.books : [])
+      .map(normalizeOpenStaxBook)
+      .filter(Boolean));
+    state.openStaxBooks = books;
+    state.openStaxLoaded = true;
+    rememberFreeBookApiCache("openstax:all", books);
+    return books;
+  } finally {
+    state.openStaxLoading = false;
+  }
+}
+
+async function ensureFreeApiCategoryLoaded(category) {
+  const safeCategory = canonicalCategory(category);
+  if (!safeCategory || state.freeApiLoadingByCategory.has(safeCategory)) {
+    return;
+  }
+  if (state.freeApiLoadedByCategory.has(safeCategory)) {
+    return;
+  }
+
+  const cacheKey = `category:${safeCategory}`;
+  const cached = readFreeBookApiCache(cacheKey);
+  if (cached) {
+    state.freeApiBooksByCategory.set(safeCategory, cached);
+    state.freeApiLoadedByCategory.add(safeCategory);
+    renderLibrary(dom.searchInput.value);
+    return;
+  }
+
+  state.freeApiLoadingByCategory.add(safeCategory);
+  renderLibrary(dom.searchInput.value);
+
+  try {
+    const config = getCategoryConfig(safeCategory);
+    const query = config.search || safeCategory;
+    const [openStaxResult, openLibraryResult, oapenResult] = await Promise.allSettled([
+      withApiFallback(ensureOpenStaxBooksLoaded(), "OpenStax", 9500),
+      withApiFallback(fetchOpenLibraryBooks(query, safeCategory, FREE_BOOK_API_LIMIT), "Open Library", 8500),
+      withApiFallback(fetchOapenBooks(query, safeCategory, Math.max(8, Math.floor(FREE_BOOK_API_LIMIT / 2))), "OAPEN", 10000)
+    ]);
+
+    const openStaxBooks = openStaxResult.status === "fulfilled"
+      ? filterBooksForQuery(openStaxResult.value, query, safeCategory).slice(0, FREE_BOOK_API_LIMIT)
+      : [];
+    const openLibraryBooks = openLibraryResult.status === "fulfilled" ? openLibraryResult.value : [];
+    const oapenBooks = oapenResult.status === "fulfilled" ? oapenResult.value : [];
+    const books = dedupeBooks([...openStaxBooks, ...openLibraryBooks, ...oapenBooks]);
+
+    state.freeApiBooksByCategory.set(safeCategory, books);
+    state.freeApiLoadedByCategory.add(safeCategory);
+    rememberFreeBookApiCache(cacheKey, books);
+  } catch (error) {
+    console.warn(`Free book API load failed for ${safeCategory}`, error);
+    showInlineShelfMessage(`Extra free-book APIs for ${safeCategory} are not available right now. Your local and Gutenberg books still work.`);
+  } finally {
+    state.freeApiLoadingByCategory.delete(safeCategory);
+    renderLibrary(dom.searchInput.value);
+  }
+}
+
+async function fetchFreeBookApiSearch(query) {
+  const cleanQuery = query.trim();
+  if (cleanQuery.length < 3) {
+    state.freeApiSearchBooks = [];
+    return;
+  }
+
+  const requestId = `${Date.now()}-${cleanQuery}`;
+  state.freeApiSearchRequest = requestId;
+  const cacheKey = `search:${cleanQuery.toLowerCase()}`;
+  const cached = readFreeBookApiCache(cacheKey);
+  if (cached) {
+    state.freeApiSearchBooks = cached;
+    renderLibrary(dom.searchInput.value);
+    return;
+  }
+
+  try {
+    const [openStaxResult, openLibraryResult, oapenResult] = await Promise.allSettled([
+      withApiFallback(ensureOpenStaxBooksLoaded(), "OpenStax", 9500),
+      withApiFallback(fetchOpenLibraryBooks(cleanQuery, "General Knowledge", FREE_BOOK_SEARCH_LIMIT), "Open Library", 8500),
+      withApiFallback(fetchOapenBooks(cleanQuery, "College Learning", Math.floor(FREE_BOOK_SEARCH_LIMIT / 2)), "OAPEN", 10000)
+    ]);
+
+    if (state.freeApiSearchRequest !== requestId) {
+      return;
+    }
+
+    const openStaxBooks = openStaxResult.status === "fulfilled"
+      ? filterBooksForQuery(openStaxResult.value, cleanQuery).slice(0, FREE_BOOK_SEARCH_LIMIT)
+      : [];
+    const openLibraryBooks = openLibraryResult.status === "fulfilled" ? openLibraryResult.value : [];
+    const oapenBooks = oapenResult.status === "fulfilled" ? oapenResult.value : [];
+    const books = dedupeBooks([...openStaxBooks, ...openLibraryBooks, ...oapenBooks]);
+    state.freeApiSearchBooks = books;
+    rememberFreeBookApiCache(cacheKey, books);
+    renderLibrary(dom.searchInput.value);
+  } catch (error) {
+    console.warn("Free book API search failed", error);
+  }
+}
+
+async function fetchOpenLibraryBooks(query, category, limit = FREE_BOOK_API_LIMIT) {
+  const params = new URLSearchParams({
+    q: query,
+    lang: "en",
+    has_fulltext: "true",
+    fields: "key,title,author_name,first_publish_year,cover_i,has_fulltext,public_scan_b,ia,ebook_access,subject",
+    limit: String(limit)
+  });
+  const data = await fetchJsonWithTimeout(`${OPEN_LIBRARY_SEARCH_API}?${params.toString()}`, {}, 7000);
+
+  return (Array.isArray(data?.docs) ? data.docs : [])
+    .map((item) => normalizeOpenLibraryBook(item, category))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+async function fetchOapenBooks(query, category, limit = 10) {
+  const params = new URLSearchParams({
+    query: `dc.type:"book" AND ${query}`,
+    expand: "metadata"
+  });
+  const data = await fetchJsonWithTimeout(`${OAPEN_SEARCH_API}?${params.toString()}`, {
+    headers: { Accept: "application/json" }
+  }, 9500);
+
+  const items = Array.isArray(data) ? data : (Array.isArray(data?.value) ? data.value : []);
+  return items
+    .map((item) => normalizeOapenBook(item, category))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+async function fetchJsonWithTimeout(url, options = {}, timeoutMs = 8000) {
+  const controller = "AbortController" in window ? new AbortController() : null;
+  const timeoutId = controller ? setTimeout(() => controller.abort(), timeoutMs) : null;
+
+  try {
+    const response = await fetch(url, {
+      cache: "default",
+      ...options,
+      signal: controller?.signal
+    });
+    if (!response.ok) {
+      throw new Error(`API request failed with ${response.status}`);
+    }
+    return await response.json();
+  } finally {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  }
+}
+
+function withApiFallback(promise, label, timeoutMs) {
+  const timeout = new Promise((resolve) => {
+    setTimeout(() => {
+      console.info(`${label} API timed out; showing other free sources.`);
+      resolve([]);
+    }, timeoutMs);
+  });
+
+  return Promise.race([promise, timeout]).catch((error) => {
+    console.info(`${label} API skipped.`, error);
+    return [];
+  });
+}
+
+function normalizeOpenStaxBook(item) {
+  if (!item || item.book_state !== "live") {
+    return null;
+  }
+
+  const sourceUrl = item.webview_rex_link || item.webview_link || `https://openstax.org/${String(item.slug || "").replace(/^\/+/, "")}`;
+  const subjects = [
+    ...(Array.isArray(item.subjects) ? item.subjects : []),
+    ...(Array.isArray(item.subject_categories) ? item.subject_categories : []),
+    ...(Array.isArray(item.k12subject) ? item.k12subject : [])
+  ].filter(Boolean);
+
+  return {
+    id: `openstax-${item.id || createBookId(item.title)}`,
+    title: item.title || "OpenStax Textbook",
+    author: "OpenStax, Rice University",
+    year: "Free textbook",
+    className: "OpenStax Textbooks",
+    category: mapApiCategory(subjects, item.title || "College Learning"),
+    file: sourceUrl,
+    sourceUrl,
+    source: "openstax-api",
+    sourceLabel: "OpenStax",
+    sourceBadge: "OPENSTAX",
+    storageMode: "external-link",
+    format: "html",
+    cover: item.cover_url || "",
+    pdfUrl: item.pdf_url || "",
+    canDownload: false,
+    subjects
+  };
+}
+
+function normalizeOpenLibraryBook(item, category) {
+  const hasFreeFullText = item?.has_fulltext && (
+    item.public_scan_b === true ||
+    item.ebook_access === "public" ||
+    (Array.isArray(item.ia) && item.ia.length > 0)
+  );
+  if (!item?.title || !item?.key || !hasFreeFullText) {
+    return null;
+  }
+
+  const subjects = Array.isArray(item.subject) ? item.subject.slice(0, 12) : [];
+  const sourceUrl = `https://openlibrary.org${item.key}`;
+
+  return {
+    id: `openlibrary-${String(item.key).replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}`,
+    title: item.title,
+    author: Array.isArray(item.author_name) && item.author_name.length ? item.author_name.slice(0, 3).join(", ") : "Open Library",
+    year: item.first_publish_year || "Free full text",
+    className: "Open Library Free Books",
+    category: mapApiCategory(subjects, category),
+    file: sourceUrl,
+    sourceUrl,
+    source: "open-library-api",
+    sourceLabel: "Open Library",
+    sourceBadge: "OPEN LIB",
+    storageMode: "external-link",
+    format: "html",
+    cover: item.cover_i ? `https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg` : "",
+    canDownload: false,
+    subjects
+  };
+}
+
+function normalizeOapenBook(item, category) {
+  const metadata = Array.isArray(item?.metadata) ? item.metadata : [];
+  const title = getOapenMetadataValue(metadata, ["dc.title", "title"]);
+  if (!title) {
+    return null;
+  }
+
+  const handleUrl = getOapenMetadataValue(metadata, ["dc.identifier.uri"]) ||
+    (item.handle ? `https://library.oapen.org/handle/${item.handle}` : "");
+  if (!handleUrl) {
+    return null;
+  }
+
+  const subjects = getOapenMetadataValues(metadata, [
+    "dc.subject",
+    "dc.subject.classification",
+    "dc.subject.other"
+  ]).slice(0, 12);
+
+  return {
+    id: `oapen-${item.uuid || createBookId(handleUrl)}`,
+    title,
+    author: getOapenMetadataValues(metadata, ["dc.creator", "dc.contributor.author"]).slice(0, 3).join(", ") || "OAPEN Library",
+    year: getOapenMetadataValue(metadata, ["dc.date.issued", "dc.date.available"]) || "Open access",
+    className: "OAPEN Open Access Books",
+    category: mapApiCategory(subjects, category),
+    file: handleUrl.replace(/^http:\/\//i, "https://"),
+    sourceUrl: handleUrl.replace(/^http:\/\//i, "https://"),
+    source: "oapen-api",
+    sourceLabel: "OAPEN",
+    sourceBadge: "OAPEN",
+    storageMode: "external-link",
+    format: "html",
+    canDownload: false,
+    subjects
+  };
+}
+
+function getOapenMetadataValue(metadata, keys) {
+  const match = metadata.find((entry) => keys.includes(entry.key) && entry.value);
+  return match ? String(match.value).trim() : "";
+}
+
+function getOapenMetadataValues(metadata, keys) {
+  return metadata
+    .filter((entry) => keys.includes(entry.key) && entry.value)
+    .map((entry) => String(entry.value).trim())
+    .filter(Boolean);
+}
+
+function mapApiCategory(subjects, fallbackCategory) {
+  const text = `${Array.isArray(subjects) ? subjects.join(" ") : subjects} ${fallbackCategory || ""}`.toLowerCase();
+  const rules = [
+    ["Computer Science", ["computer", "computing", "information systems", "software"]],
+    ["Programming", ["programming", "python", "java", "coding"]],
+    ["Artificial Intelligence", ["artificial intelligence", "ai ethics"]],
+    ["Machine Learning", ["machine learning", "data science"]],
+    ["Mathematics", ["mathematics", "math", "algebra", "calculus", "statistics"]],
+    ["Physics", ["physics", "astronomy"]],
+    ["Chemistry", ["chemistry"]],
+    ["Biology", ["biology", "life sciences", "medicine", "nursing", "anatomy"]],
+    ["Science", ["science", "engineering", "technology"]],
+    ["History", ["history", "humanities"]],
+    ["Civics", ["law", "government", "political science", "social sciences"]],
+    ["Geography", ["geography", "earth"]],
+    ["English Language", ["writing", "english", "language", "composition"]],
+    ["Study Skills", ["college success", "education", "teaching", "learning"]],
+    ["Career Guidance", ["business", "management", "economics", "career"]],
+    ["Philosophy", ["philosophy", "ethics"]],
+    ["College Learning", ["textbook", "open access", "research", "university"]]
+  ];
+  const match = rules.find(([, keywords]) => keywords.some((keyword) => text.includes(keyword)));
+  return match ? match[0] : canonicalCategory(fallbackCategory || "College Learning");
+}
+
+function filterBooksForQuery(books, query, category = "") {
+  const cleanQuery = String(query || "").toLowerCase();
+  const safeCategory = canonicalCategory(category);
+  return books.filter((book) => {
+    const haystack = `${book.title} ${book.author} ${book.className} ${(book.subjects || []).join(" ")}`.toLowerCase();
+    const matchesQuery = !cleanQuery || haystack.includes(cleanQuery);
+    const matchesCategory = !safeCategory || canonicalCategory(book.category) === safeCategory || haystack.includes(safeCategory.toLowerCase());
+    return safeCategory ? matchesCategory && matchesQuery : matchesQuery;
+  });
+}
+
+function dedupeBooks(books) {
+  const seen = new Set();
+  return books.filter((book) => {
+    const key = `${book.source || book.className}:${book.id || book.sourceUrl || normalizeText(book.title)}`;
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
+}
+
+function readFreeBookApiCache(key) {
+  try {
+    const cache = JSON.parse(localStorage.getItem(STORAGE_KEYS.freeBookApiCache) || "{}");
+    const entry = cache[key];
+    if (!entry || Date.now() - entry.savedAt > FREE_BOOK_API_CACHE_TTL) {
+      return null;
+    }
+    return Array.isArray(entry.books) ? entry.books : null;
+  } catch {
+    return null;
+  }
+}
+
+function rememberFreeBookApiCache(key, books) {
+  try {
+    const cache = JSON.parse(localStorage.getItem(STORAGE_KEYS.freeBookApiCache) || "{}");
+    cache[key] = {
+      savedAt: Date.now(),
+      books: books.slice(0, 80)
+    };
+    localStorage.setItem(STORAGE_KEYS.freeBookApiCache, JSON.stringify(cache));
+  } catch {
+    // Free provider APIs are still available when storage cannot be used.
+  }
+}
+
 function findLikelyCoverPath(filePath) {
   const normalized = String(filePath || "");
   if (!normalized) {
@@ -1043,8 +1438,9 @@ function renderLibrary(query = "") {
   }
   const groupMap = new Map();
   const remoteBooks = getVisibleGutenbergBooks(selectedCategory, cleanQuery);
+  const freeApiBooks = getVisibleFreeApiBooks(selectedCategory, cleanQuery);
 
-  [...state.books, ...remoteBooks].forEach((book) => {
+  [...state.books, ...remoteBooks, ...freeApiBooks].forEach((book) => {
     state.booksById.set(book.id, book);
     const haystack = `${book.title} ${book.author} ${book.year} ${book.className} ${book.category} ${book.format} ${(book.subjects || []).join(" ")}`.toLowerCase();
     const matchesSearch = !cleanQuery || haystack.includes(cleanQuery);
@@ -1096,10 +1492,13 @@ function renderLibrary(query = "") {
   });
 
   const visibleCount = filteredGroups.reduce((total, group) => total + group.books.length, 0);
-  const loadingRemote = selectedCategory && state.gutenbergLoadingByCategory.has(selectedCategory);
+  const loadingRemote = selectedCategory && (
+    state.gutenbergLoadingByCategory.has(selectedCategory) ||
+    state.freeApiLoadingByCategory.has(selectedCategory)
+  );
   const hasMoreRemote = selectedCategory && state.gutenbergNextByCategory.get(selectedCategory);
   dom.libraryCount.textContent = loadingRemote
-    ? `${visibleCount} books • loading free books...`
+    ? `${visibleCount} books | loading free books...`
     : `${visibleCount} books`;
 
   renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote, loadingRemote);
@@ -1155,6 +1554,21 @@ function getVisibleGutenbergBooks(selectedCategory, cleanQuery) {
   return state.gutenbergByCategory.get(selectedCategory) || [];
 }
 
+function getVisibleFreeApiBooks(selectedCategory, cleanQuery) {
+  if (cleanQuery) {
+    const loaded = Array.from(state.freeApiBooksByCategory.values()).flat();
+    return dedupeBooks([...state.openStaxBooks, ...loaded, ...state.freeApiSearchBooks]);
+  }
+
+  if (selectedCategory) {
+    return state.freeApiBooksByCategory.get(selectedCategory) ||
+      filterBooksForQuery(state.openStaxBooks, "", selectedCategory).slice(0, FREE_BOOK_API_LIMIT);
+  }
+
+  const loaded = Array.from(state.freeApiBooksByCategory.values()).flat();
+  return dedupeBooks([...state.openStaxBooks, ...loaded]);
+}
+
 function renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote, loadingRemote) {
   const oldFooter = dom.bookGrid.querySelector(".gutenberg-footer");
   oldFooter?.remove();
@@ -1167,7 +1581,7 @@ function renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote,
   footer.className = "gutenberg-footer";
 
   if (loadingRemote) {
-    footer.textContent = "Fetching free public-domain books...";
+    footer.textContent = "Fetching free public-domain and open-access books...";
   } else if (hasMoreRemote) {
     const button = document.createElement("button");
     button.className = "primary-btn";
@@ -1178,7 +1592,7 @@ function renderGutenbergShelfFooter(selectedCategory, cleanQuery, hasMoreRemote,
   } else if (selectedCategory && state.gutenbergLoadedByCategory.has(selectedCategory)) {
     footer.textContent = "End of this free-books shelf for now.";
   } else if (cleanQuery && cleanQuery.length < 3) {
-    footer.textContent = "Type at least 3 letters to search free Gutenberg books online.";
+    footer.textContent = "Type at least 3 letters to search Gutenberg, Open Library, OpenStax and OAPEN online.";
   }
 
   if (footer.childNodes.length) {
@@ -1299,6 +1713,7 @@ function openCategory(category) {
   dom.searchInput.value = "";
   renderLibrary();
   ensureGutenbergCategoryLoaded(state.activeCategory);
+  ensureFreeApiCategoryLoaded(state.activeCategory);
   dom.bookGrid.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -1378,7 +1793,7 @@ function createBookCard(book, options = {}) {
   meta.className = "book-meta";
   meta.textContent = [
     book.author || "Unknown",
-    isOnlineBook ? "Online Gutenberg" : book.className,
+    book.sourceLabel || (isOnlineBook ? book.className : book.className),
     book.format?.toUpperCase() || getBookFormat(getReadableBookFile(book)).toUpperCase()
   ].filter(Boolean).join(" | ");
 
@@ -1439,7 +1854,9 @@ function createBookSourceBadge(book, isOnlineBook) {
 
   const badge = document.createElement("span");
   badge.className = "book-source-badge";
-  if (book.storageMode === "source-directory") {
+  if (book.sourceBadge) {
+    badge.textContent = book.sourceBadge;
+  } else if (book.storageMode === "source-directory") {
     badge.textContent = "LIBRARY";
   } else if (book.storageMode === "external-link" || isExternalSourceOnlyBook(book)) {
     badge.textContent = "ONLINE";
@@ -1680,14 +2097,14 @@ async function openExternalSourceBook(book) {
   title.textContent = book.title;
 
   const meta = document.createElement("p");
-  meta.textContent = `${book.author || "Unknown"} | ${book.category || book.className || "Open Library"}`;
+  meta.textContent = `${book.author || "Unknown"} | ${book.sourceLabel || book.category || book.className || "Open Library"}`;
 
   const link = document.createElement("a");
   link.className = "primary-btn external-source-link";
   link.href = book.sourceUrl || book.file;
   link.target = "_blank";
   link.rel = "noopener";
-  link.textContent = "Open Online Source";
+  link.textContent = book.sourceLabel ? `Open ${book.sourceLabel}` : "Open Online Source";
 
   page.append(title, meta, link);
   state.pageElements = [page];
@@ -2598,12 +3015,15 @@ function handleSearchInput() {
   if (query.length < 3) {
     state.gutenbergSearchRequest = null;
     state.gutenbergSearchBooks = [];
+    state.freeApiSearchRequest = null;
+    state.freeApiSearchBooks = [];
     return;
   }
 
   trackSearchTerm(query);
   state.searchTimer = setTimeout(() => {
     fetchGutendexSearch(query);
+    fetchFreeBookApiSearch(query);
   }, 520);
 }
 
@@ -2625,6 +3045,8 @@ function closeSearch() {
   dom.searchInput.value = "";
   state.gutenbergSearchRequest = null;
   state.gutenbergSearchBooks = [];
+  state.freeApiSearchRequest = null;
+  state.freeApiSearchBooks = [];
   renderLibrary();
 }
 
