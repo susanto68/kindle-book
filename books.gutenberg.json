@@ -1139,6 +1139,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:19.512Z"
+      },
+      {
+        "title": "The works of the highly experienced and famous chymist, John Rudolph Glauber : $b containing, great variety of choice secrets in medicine and alchymy in the working of metallick mines, and the separation of metals: also, various cheap and easie ways of making salt-petre, and improving of barren-land, and the fruits of the earth.",
+        "file": "books/Gutenberg/Chemistry/74240-the-works-of-the-highly-experienced-and-famous-chymist-john-rudolph-glau.epub",
+        "cover": "books/Gutenberg/Chemistry/74240-the-works-of-the-highly-experienced-and-famous-chymist-john-rudolph-glau.jpg",
+        "author": "Glauber, Johann Rudolf",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74240,
+        "subjects": [
+          "Alchemy -- Early works to 1800",
+          "Chemistry -- Early works to 1800",
+          "Medicine, Magic, mystic, and spagiric -- Early works to 1800",
+          "Category: Engineering & Technology",
+          "Category: Health & Medicine",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T22:02:04.049Z"
       }
     ]
   },
@@ -4754,6 +4775,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T14:52:33.902Z"
+      },
+      {
+        "title": "Experiments with Alternate Currents of High Potential and High Frequency: A Lecture Delivered before the Institution of Electrical Engineers, London",
+        "file": "books/Gutenberg/Physics/13476-experiments-with-alternate-currents-of-high-potential-and-high-frequency.epub",
+        "cover": "books/Gutenberg/Physics/13476-experiments-with-alternate-currents-of-high-potential-and-high-frequency.jpg",
+        "author": "Tesla, Nikola",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 13476,
+        "subjects": [
+          "Electric currents, Alternating",
+          "Electric discharges",
+          "Incandescent lamps",
+          "Telegraph, Wireless",
+          "Category: Biographies",
+          "Category: Engineering & Technology",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T22:02:01.738Z"
       },
       {
         "title": "Galileo Galilei and the Roman Curia: From Authentic Sources",
