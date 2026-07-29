@@ -956,6 +956,24 @@
         "downloadedAt": "2026-06-03T09:37:36.791Z"
       },
       {
+        "title": "The chemistry, properties and tests of precious stones",
+        "file": "books/Gutenberg/Chemistry/23626-the-chemistry-properties-and-tests-of-precious-stones.epub",
+        "cover": "books/Gutenberg/Chemistry/23626-the-chemistry-properties-and-tests-of-precious-stones.jpg",
+        "author": "Mastin, John",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23626,
+        "subjects": [
+          "Precious stones",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T16:26:57.800Z"
+      },
+      {
         "title": "The Dyeing of Cotton Fabrics: A Practical Handbook for the Dyer and Student",
         "file": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.epub",
         "cover": "books/Gutenberg/Chemistry/21224-the-dyeing-of-cotton-fabrics-a-practical-handbook-for-the-dyer-and-stude.jpg",
@@ -4891,6 +4909,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T16:18:45.276Z"
+      },
+      {
+        "title": "Radio-Activity",
+        "file": "books/Gutenberg/Physics/64693-radio-activity.epub",
+        "cover": "books/Gutenberg/Physics/64693-radio-activity.jpg",
+        "author": "Rutherford, Ernest",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 64693,
+        "subjects": [
+          "Radioactivity",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-29T16:25:50.561Z"
       },
       {
         "title": "Relativity : the Special and General Theory",
