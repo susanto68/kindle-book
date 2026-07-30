@@ -3089,6 +3089,27 @@
         "downloadedAt": "2026-05-21T13:57:17.318Z"
       },
       {
+        "title": "The Countess of Pembroke's Arcadia",
+        "file": "books/Gutenberg/Literature/70854-the-countess-of-pembrokes-arcadia.epub",
+        "cover": "books/Gutenberg/Literature/70854-the-countess-of-pembrokes-arcadia.jpg",
+        "author": "Sidney, Philip",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70854,
+        "subjects": [
+          "Pastoral literature, English",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T14:06:05.334Z"
+      },
+      {
         "title": "The Enchanted April",
         "file": "books/Gutenberg/Literature/16389-the-enchanted-april.epub",
         "cover": "books/Gutenberg/Literature/16389-the-enchanted-april.jpg",
@@ -5080,6 +5101,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T18:10:08.519Z"
+      },
+      {
+        "title": "Index of the Project Gutenberg Works of Benjamin Franklin",
+        "file": "books/Gutenberg/Physics/58676-index-of-the-project-gutenberg-works-of-benjamin-franklin.epub",
+        "cover": "books/Gutenberg/Physics/58676-index-of-the-project-gutenberg-works-of-benjamin-franklin.jpg",
+        "author": "Franklin, Benjamin",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58676,
+        "subjects": [
+          "Indexes",
+          "Category: Biographies",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - American",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T14:11:53.321Z"
       },
       {
         "title": "Kant's Prolegomena to Any Future Metaphysics",
