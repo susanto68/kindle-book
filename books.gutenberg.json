@@ -572,6 +572,28 @@
     "class": "Gutenberg - Biology",
     "books": [
       {
+        "title": "Letters of Asa Gray; Vol. 2",
+        "file": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.epub",
+        "cover": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.jpg",
+        "author": "Gray, Asa",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55987,
+        "subjects": [
+          "Botanists -- United States -- Correspondence",
+          "Gray, Asa, 1810-1888 -- Correspondence",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches",
+          "Category: Science - Biology",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T04:03:47.680Z"
+      },
+      {
         "title": "Life and Letters of Charles Darwin — Volume 1",
         "file": "books/Gutenberg/Biology/2087-life-and-letters-of-charles-darwin-volume-1.epub",
         "cover": "books/Gutenberg/Biology/2087-life-and-letters-of-charles-darwin-volume-1.jpg",
@@ -1078,6 +1100,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T14:54:27.238Z"
+      },
+      {
+        "title": "The Magic and Science of Jewels and Stones",
+        "file": "books/Gutenberg/Chemistry/57980-the-magic-and-science-of-jewels-and-stones.epub",
+        "cover": "books/Gutenberg/Chemistry/57980-the-magic-and-science-of-jewels-and-stones.jpg",
+        "author": "Kozminsky, Isidore",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57980,
+        "subjects": [
+          "Gems -- Miscellanea",
+          "Occultism -- Miscellanea",
+          "Precious stones -- Psychic aspects",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Other",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T04:03:11.180Z"
       },
       {
         "title": "The Principles of Chemistry, Volume I",
