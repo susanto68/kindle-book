@@ -798,6 +798,27 @@
         "downloadedAt": "2026-05-21T13:58:26.849Z"
       },
       {
+        "title": "The Variation of Animals and Plants Under Domestication, Vol. I.",
+        "file": "books/Gutenberg/Biology/24923-the-variation-of-animals-and-plants-under-domestication-vol-i.epub",
+        "cover": "books/Gutenberg/Biology/24923-the-variation-of-animals-and-plants-under-domestication-vol-i.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24923,
+        "subjects": [
+          "Domestic animals",
+          "Plants, Cultivated",
+          "Variation (Biology)",
+          "Animals-Domestic",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T20:20:21.755Z"
+      },
+      {
         "title": "Vegetable Teratology: An Account of the Principal Deviations from the Usual Construction of Plants",
         "file": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.epub",
         "cover": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.jpg",
@@ -1277,6 +1298,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T14:54:27.238Z"
+      },
+      {
+        "title": "The History of Chemistry, Volume 1 (of 2)",
+        "file": "books/Gutenberg/Chemistry/50565-the-history-of-chemistry-volume-1-of-2.epub",
+        "cover": "books/Gutenberg/Chemistry/50565-the-history-of-chemistry-volume-1-of-2.jpg",
+        "author": "Thomson, Thomas",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50565,
+        "subjects": [
+          "Chemistry -- History",
+          "Category: History - Other",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T20:19:51.094Z"
       },
       {
         "title": "The Magic and Science of Jewels and Stones",
