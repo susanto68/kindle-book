@@ -572,6 +572,25 @@
     "class": "Gutenberg - Biology",
     "books": [
       {
+        "title": "Contributions to the Theory of Natural Selection: A Series of Essays",
+        "file": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.epub",
+        "cover": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.jpg",
+        "author": "Wallace, Alfred Russel",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22428,
+        "subjects": [
+          "Natural selection",
+          "Biology",
+          "Category: Essays, Letters & Speeches",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T06:40:44.000Z"
+      },
+      {
         "title": "Letters of Asa Gray; Vol. 2",
         "file": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.epub",
         "cover": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.jpg",
@@ -898,6 +917,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:19.263Z"
+      },
+      {
+        "title": "Elements of Chemistry,: In a New Systematic Order, Containing all the Modern Discoveries",
+        "file": "books/Gutenberg/Chemistry/30775-elements-of-chemistry-in-a-new-systematic-order-containing-all-the-moder.epub",
+        "cover": "books/Gutenberg/Chemistry/30775-elements-of-chemistry-in-a-new-systematic-order-containing-all-the-moder.jpg",
+        "author": "Lavoisier, Antoine Laurent",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30775,
+        "subjects": [
+          "Chemistry -- Early works to 1800",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T06:39:54.948Z"
       },
       {
         "title": "Henley's Twentieth Century Formulas, Recipes and Processes",
