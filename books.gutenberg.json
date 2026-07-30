@@ -1017,6 +1017,26 @@
         "downloadedAt": "2026-07-30T09:39:49.616Z"
       },
       {
+        "title": "Foods and Their Adulteration: Origin, Manufacture, and Composition of Food Products; Description of Common Adulterations, Food Standards, and National Food Laws and Regulations",
+        "file": "books/Gutenberg/Chemistry/66164-foods-and-their-adulteration-origin-manufacture-and-composition-of-food-.epub",
+        "cover": "books/Gutenberg/Chemistry/66164-foods-and-their-adulteration-origin-manufacture-and-composition-of-food-.jpg",
+        "author": "Wiley, Harvey Washington",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 66164,
+        "subjects": [
+          "Food",
+          "Food adulteration and inspection",
+          "Category: Health & Medicine",
+          "Category: Nutrition",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T16:34:33.170Z"
+      },
+      {
         "title": "Henley's Twentieth Century Formulas, Recipes and Processes",
         "file": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.epub",
         "cover": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.jpg",
@@ -3350,6 +3370,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-07T13:25:32.698Z"
+      },
+      {
+        "title": "The murder of Roger Ackroyd",
+        "file": "books/Gutenberg/Literature/69087-the-murder-of-roger-ackroyd.epub",
+        "cover": "books/Gutenberg/Literature/69087-the-murder-of-roger-ackroyd.jpg",
+        "author": "Christie, Agatha",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69087,
+        "subjects": [
+          "Belgians -- England -- Fiction",
+          "Detective and mystery stories",
+          "Murder -- Investigation -- Fiction",
+          "Poirot, Hercule (Fictitious character) -- Fiction",
+          "Private investigators -- England -- Fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T16:28:43.983Z"
       },
       {
         "title": "The Secret of Chimneys",
