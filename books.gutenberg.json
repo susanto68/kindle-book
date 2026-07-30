@@ -572,6 +572,26 @@
     "class": "Gutenberg - Biology",
     "books": [
       {
+        "title": "\"Wee Tim'rous Beasties\": Studies of Animal life and Character",
+        "file": "books/Gutenberg/Biology/22129-wee-timrous-beasties-studies-of-animal-life-and-character.epub",
+        "cover": "books/Gutenberg/Biology/22129-wee-timrous-beasties-studies-of-animal-life-and-character.jpg",
+        "author": "English, Douglas",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22129,
+        "subjects": [
+          "Animals",
+          "Biology",
+          "Category: Humour",
+          "Category: Literature - Other",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T18:18:36.430Z"
+      },
+      {
         "title": "Anecdotes of the Habits and Instinct of Animals",
         "file": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.epub",
         "cover": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.jpg",
@@ -1137,6 +1157,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-07T21:27:42.211Z"
+      },
+      {
+        "title": "Popular Scientific Recreations: in Natural Philosphy, Astronomy, Geology, Chemistry, etc., etc., etc.",
+        "file": "books/Gutenberg/Chemistry/52709-popular-scientific-recreations-in-natural-philosphy-astronomy-geology-ch.epub",
+        "cover": "books/Gutenberg/Chemistry/52709-popular-scientific-recreations-in-natural-philosphy-astronomy-geology-ch.jpg",
+        "author": "Tissandier, Gaston",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52709,
+        "subjects": [
+          "Scientific recreations",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T18:17:33.805Z"
       },
       {
         "title": "Reports of Trials for Murder by Poisoning;: by Prussic Acid, Strychnia, Antimony, Arsenic, and Aconita. Including the trials of Tawell, W. Palmer, Dove, Madeline Smith, Dr. Pritchard, Smethurst, and Dr. Lamson, with chemical introduction and notes on the poisons used",
