@@ -632,6 +632,27 @@
         "downloadedAt": "2026-07-30T06:40:44.000Z"
       },
       {
+        "title": "Evolution, Old & New: Or, the Theories of Buffon, Dr. Erasmus Darwin and Lamarck,; as compared with that of Charles Darwin",
+        "file": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.epub",
+        "cover": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.jpg",
+        "author": "Butler, Samuel",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23427,
+        "subjects": [
+          "Evolution (Biology) -- History",
+          "Biology",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Modern (1750+)",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T22:08:11.722Z"
+      },
+      {
         "title": "Letters of Asa Gray; Vol. 2",
         "file": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.epub",
         "cover": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.jpg",
@@ -1237,6 +1258,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T09:37:36.791Z"
+      },
+      {
+        "title": "The Chemical History of a Candle",
+        "file": "books/Gutenberg/Chemistry/14474-the-chemical-history-of-a-candle.epub",
+        "cover": "books/Gutenberg/Chemistry/14474-the-chemical-history-of-a-candle.jpg",
+        "author": "Faraday, Michael",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14474,
+        "subjects": [
+          "Candles",
+          "Chemistry",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T22:08:11.300Z"
       },
       {
         "title": "The chemistry, properties and tests of precious stones",
