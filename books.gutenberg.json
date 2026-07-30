@@ -840,6 +840,25 @@
         "downloadedAt": "2026-05-21T13:09:23.323Z"
       },
       {
+        "title": "Discoveries and Inventions of the Nineteenth Century",
+        "file": "books/Gutenberg/Chemistry/54475-discoveries-and-inventions-of-the-nineteenth-century.epub",
+        "cover": "books/Gutenberg/Chemistry/54475-discoveries-and-inventions-of-the-nineteenth-century.jpg",
+        "author": "Routledge, Robert",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54475,
+        "subjects": [
+          "Inventions -- History -- 19th century",
+          "Category: Engineering & Technology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T00:07:56.948Z"
+      },
+      {
         "title": "Elements of Agricultural Chemistry",
         "file": "books/Gutenberg/Chemistry/24931-elements-of-agricultural-chemistry.epub",
         "cover": "books/Gutenberg/Chemistry/24931-elements-of-agricultural-chemistry.jpg",
@@ -5089,6 +5108,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T23:50:24.114Z"
+      },
+      {
+        "title": "Six metaphysical meditations: $b Wherein it is proved that there is a God and that mans mind is really distinct from his body",
+        "file": "books/Gutenberg/Physics/70091-six-metaphysical-meditations-b-wherein-it-is-proved-that-there-is-a-god-.epub",
+        "cover": "books/Gutenberg/Physics/70091-six-metaphysical-meditations-b-wherein-it-is-proved-that-there-is-a-god-.jpg",
+        "author": "Descartes, René",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70091,
+        "subjects": [
+          "Descartes, René, 1596-1650",
+          "First philosophy",
+          "God -- Proof, Ontological",
+          "Knowledge, Theory of",
+          "Metaphysics",
+          "Methodology",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T00:06:56.611Z"
       },
       {
         "title": "Steam, Its Generation and Use",
