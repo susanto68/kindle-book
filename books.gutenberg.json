@@ -572,6 +572,27 @@
     "class": "Gutenberg - Biology",
     "books": [
       {
+        "title": "Anecdotes of the Habits and Instinct of Animals",
+        "file": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.epub",
+        "cover": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.jpg",
+        "author": "Lee, R., Mrs.",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21973,
+        "subjects": [
+          "Animal behavior -- Juvenile literature",
+          "Animals-Wild",
+          "Biology",
+          "Category: Essays, Letters & Speeches",
+          "Category: Nature/Gardening/Animals",
+          "Children's Instructional Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T12:04:19.892Z"
+      },
+      {
         "title": "Contributions to the Theory of Natural Selection: A Series of Essays",
         "file": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.epub",
         "cover": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.jpg",
@@ -883,6 +904,26 @@
   {
     "class": "Gutenberg - Chemistry",
     "books": [
+      {
+        "title": "Alchemy: Ancient and Modern: Being a Brief Account of the Alchemistic Doctrines, and Their Relations, to Mysticism on the One Hand, and to Recent Discoveries in Physical Science on the Other Hand; Together with Some Particulars Regarding the Lives and Teachings of the Most Noted Alchemists",
+        "file": "books/Gutenberg/Chemistry/43240-alchemy-ancient-and-modern-being-a-brief-account-of-the-alchemistic-doct.epub",
+        "cover": "books/Gutenberg/Chemistry/43240-alchemy-ancient-and-modern-being-a-brief-account-of-the-alchemistic-doct.jpg",
+        "author": "Redgrove, H. Stanley (Herbert Stanley)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43240,
+        "subjects": [
+          "Alchemy -- History",
+          "Category: History - Ancient",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-30T12:02:28.050Z"
+      },
       {
         "title": "An Elementary Study of Chemistry",
         "file": "books/Gutenberg/Chemistry/20848-an-elementary-study-of-chemistry.epub",
