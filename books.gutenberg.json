@@ -919,6 +919,28 @@
         "downloadedAt": "2026-05-21T13:58:26.849Z"
       },
       {
+        "title": "The Origin of Species by Means of Natural Selection: Or, the Preservation of Favoured Races in the Struggle for Life, 6th Edition",
+        "file": "books/Gutenberg/Biology/2009-the-origin-of-species-by-means-of-natural-selection-or-the-preservation-.epub",
+        "cover": "books/Gutenberg/Biology/2009-the-origin-of-species-by-means-of-natural-selection-or-the-preservation-.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2009,
+        "subjects": [
+          "Evolution (Biology)",
+          "Natural selection",
+          "Biology",
+          "Category: Environmental Issues",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T21:07:38.926Z"
+      },
+      {
         "title": "The Theories of Darwin and Their Relation to Philosophy, Religion, and Morality",
         "file": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.epub",
         "cover": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.jpg",
@@ -2692,6 +2714,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:40.576Z"
+      },
+      {
+        "title": "The Hero of the People: A Historical Romance of Love, Liberty and Loyalty",
+        "file": "books/Gutenberg/History/42681-the-hero-of-the-people-a-historical-romance-of-love-liberty-and-loyalty.epub",
+        "cover": "books/Gutenberg/History/42681-the-hero-of-the-people-a-historical-romance-of-love-liberty-and-loyalty.jpg",
+        "author": "Dumas, Alexandre",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42681,
+        "subjects": [
+          "France -- History -- Revolution, 1789-1799 -- Fiction",
+          "Historical fiction",
+          "Marie Antoinette, Queen, consort of Louis XVI, King of France, 1755-1793 -- Fiction",
+          "Category: French Literature",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T21:07:40.288Z"
       },
       {
         "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
