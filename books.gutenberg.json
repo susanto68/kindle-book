@@ -2843,6 +2843,36 @@
         "downloadedAt": "2026-05-23T00:09:27.755Z"
       },
       {
+        "title": "A farewell to arms",
+        "file": "books/Gutenberg/Literature/75201-a-farewell-to-arms.epub",
+        "cover": "books/Gutenberg/Literature/75201-a-farewell-to-arms.jpg",
+        "author": "Hemingway, Ernest",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 75201,
+        "subjects": [
+          "Man-woman relationships -- Fiction",
+          "Military deserters -- Fiction",
+          "Military hospitals -- Fiction",
+          "Soldiers -- United States -- Fiction",
+          "War stories",
+          "War wounds -- Fiction",
+          "World War, 1914-1918 -- Campaigns -- Italy -- Fiction",
+          "World War, 1914-1918 -- Fiction",
+          "World War, 1914-1918 -- Medical care -- Fiction",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: History - Warfare",
+          "Category: Novels",
+          "Category: Romance",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T15:24:30.095Z"
+      },
+      {
         "title": "A Room with a View",
         "file": "books/Gutenberg/Literature/2641-a-room-with-a-view.epub",
         "cover": "books/Gutenberg/Literature/2641-a-room-with-a-view.jpg",
@@ -5360,6 +5390,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T14:52:33.902Z"
+      },
+      {
+        "title": "Experimental Researches in Electricity, Volume 1",
+        "file": "books/Gutenberg/Physics/14986-experimental-researches-in-electricity-volume-1.epub",
+        "cover": "books/Gutenberg/Physics/14986-experimental-researches-in-electricity-volume-1.jpg",
+        "author": "Faraday, Michael",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14986,
+        "subjects": [
+          "Electricity",
+          "Electricity -- Early works to 1850",
+          "Best Books Ever Listings",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T15:27:34.148Z"
       },
       {
         "title": "Experiments with Alternate Currents of High Potential and High Frequency: A Lecture Delivered before the Institution of Electrical Engineers, London",
