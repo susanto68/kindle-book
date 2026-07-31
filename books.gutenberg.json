@@ -716,6 +716,27 @@
         "downloadedAt": "2026-05-21T13:58:27.445Z"
       },
       {
+        "title": "On the Origin of Species by Means of Natural Selection: or the Preservation of Favoured Races in the Struggle for Life. (2nd edition)",
+        "file": "books/Gutenberg/Biology/22764-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.epub",
+        "cover": "books/Gutenberg/Biology/22764-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22764,
+        "subjects": [
+          "Evolution (Biology)",
+          "Natural selection",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Biology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T04:31:25.989Z"
+      },
+      {
         "title": "On the Origin of Species By Means of Natural Selection: Or, the Preservation of Favoured Races in the Struggle for Life",
         "file": "books/Gutenberg/Biology/1228-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.epub",
         "cover": "books/Gutenberg/Biology/1228-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.jpg",
@@ -1377,6 +1398,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T14:54:27.238Z"
+      },
+      {
+        "title": "The History and Practice of the Art of Photography",
+        "file": "books/Gutenberg/Chemistry/168-the-history-and-practice-of-the-art-of-photography.epub",
+        "cover": "books/Gutenberg/Chemistry/168-the-history-and-practice-of-the-art-of-photography.jpg",
+        "author": "Snelling, Henry Hunt",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 168,
+        "subjects": [
+          "Daguerreotype",
+          "Photography",
+          "Art",
+          "Category: Art",
+          "Category: History - Modern (1750+)",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Photography"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T04:30:33.171Z"
       },
       {
         "title": "The History of Chemistry, Volume 1 (of 2)",
