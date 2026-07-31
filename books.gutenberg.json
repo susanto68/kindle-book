@@ -896,6 +896,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:27.120Z"
+      },
+      {
+        "title": "Zoonomia; Or, the Laws of Organic Life, Vol. II",
+        "file": "books/Gutenberg/Biology/27600-zoonomia-or-the-laws-of-organic-life-vol-ii.epub",
+        "cover": "books/Gutenberg/Biology/27600-zoonomia-or-the-laws-of-organic-life-vol-ii.jpg",
+        "author": "Darwin, Erasmus",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27600,
+        "subjects": [
+          "Evolution (Biology) -- Early works to 1800",
+          "Medicine -- Early works to 1800",
+          "Pathology -- Early works to 1800",
+          "Physiology -- Early works to 1800",
+          "Category: Health & Medicine",
+          "Physiology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T08:00:53.597Z"
       }
     ]
   },
@@ -2456,6 +2477,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
+      {
+        "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+        "file": "books/Gutenberg/History/23-narrative-of-the-life-of-frederick-douglass-an-american-slave.epub",
+        "cover": "books/Gutenberg/History/23-narrative-of-the-life-of-frederick-douglass-an-american-slave.jpg",
+        "author": "Douglass, Frederick",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23,
+        "subjects": [
+          "Abolitionists -- United States -- Biography",
+          "African American abolitionists -- Biography",
+          "Douglass, Frederick, 1818-1895",
+          "Enslaved persons -- United States -- Biography",
+          "African American Writers",
+          "Category: Biographies",
+          "Category: History - American",
+          "Slavery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T08:02:08.025Z"
       },
       {
         "title": "Report of the President's Commission on the Assassination of President John F. Kennedy",
