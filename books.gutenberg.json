@@ -613,6 +613,26 @@
         "downloadedAt": "2026-07-30T12:04:19.892Z"
       },
       {
+        "title": "Cattle and Their Diseases: Embracing Their History and Breeds, Crossing and Breeding, and Feeding and Management; with the Diseases to Which They Are Subject, and the Remedies Best Adapted to Their Cure",
+        "file": "books/Gutenberg/Biology/22771-cattle-and-their-diseases-embracing-their-history-and-breeds-crossing-an.epub",
+        "cover": "books/Gutenberg/Biology/22771-cattle-and-their-diseases-embracing-their-history-and-breeds-crossing-an.jpg",
+        "author": "Jennings, Robert",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22771,
+        "subjects": [
+          "Cattle -- Diseases",
+          "Category: Health & Medicine",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Zoology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T00:04:25.174Z"
+      },
+      {
         "title": "Contributions to the Theory of Natural Selection: A Series of Essays",
         "file": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.epub",
         "cover": "books/Gutenberg/Biology/22428-contributions-to-the-theory-of-natural-selection-a-series-of-essays.jpg",
@@ -1219,6 +1239,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-30T18:17:33.805Z"
+      },
+      {
+        "title": "Porcelain",
+        "file": "books/Gutenberg/Chemistry/55118-porcelain.epub",
+        "cover": "books/Gutenberg/Chemistry/55118-porcelain.jpg",
+        "author": "Dillon, Edward",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55118,
+        "subjects": [
+          "Pottery",
+          "Category: Art",
+          "Category: History - Other",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T00:04:19.309Z"
       },
       {
         "title": "Reports of Trials for Murder by Poisoning;: by Prussic Acid, Strychnia, Antimony, Arsenic, and Aconita. Including the trials of Tawell, W. Palmer, Dove, Madeline Smith, Dr. Pritchard, Smethurst, and Dr. Lamson, with chemical introduction and notes on the poisons used",
