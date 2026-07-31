@@ -839,6 +839,24 @@
         "downloadedAt": "2026-05-21T13:09:27.152Z"
       },
       {
+        "title": "Sir Jagadis Chunder Bose, His Life and Speeches",
+        "file": "books/Gutenberg/Biology/22085-sir-jagadis-chunder-bose-his-life-and-speeches.epub",
+        "cover": "books/Gutenberg/Biology/22085-sir-jagadis-chunder-bose-his-life-and-speeches.jpg",
+        "author": "Bose, Jagadis Chandra",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22085,
+        "subjects": [
+          "Science",
+          "Category: Biographies",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T23:02:51.682Z"
+      },
+      {
         "title": "Studies of American Fungi. Mushrooms, Edible, Poisonous, etc.",
         "file": "books/Gutenberg/Biology/26492-studies-of-american-fungi-mushrooms-edible-poisonous-etc.epub",
         "cover": "books/Gutenberg/Biology/26492-studies-of-american-fungi-mushrooms-edible-poisonous-etc.jpg",
@@ -2578,6 +2596,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
+      {
+        "title": "Forest Days: A Romance of Old Times",
+        "file": "books/Gutenberg/History/49987-forest-days-a-romance-of-old-times.epub",
+        "cover": "books/Gutenberg/History/49987-forest-days-a-romance-of-old-times.jpg",
+        "author": "James, G. P. R. (George Payne Rainsford)",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 49987,
+        "subjects": [
+          "Adventure stories",
+          "Great Britain -- History -- Richard I, 1189-1199 -- Fiction",
+          "Historical fiction",
+          "Outlaws -- Fiction",
+          "Robin Hood (Legendary character) -- Fiction",
+          "Sherwood Forest (England) -- Fiction",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T23:02:59.874Z"
       },
       {
         "title": "Narrative of the Life of Frederick Douglass, an American Slave",
