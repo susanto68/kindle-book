@@ -613,6 +613,27 @@
         "downloadedAt": "2026-07-30T12:04:19.892Z"
       },
       {
+        "title": "Birds of the Rockies",
+        "file": "books/Gutenberg/Biology/25973-birds-of-the-rockies.epub",
+        "cover": "books/Gutenberg/Biology/25973-birds-of-the-rockies.jpg",
+        "author": "Keyser, Leander S. (Leander Sylvester)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25973,
+        "subjects": [
+          "Birds",
+          "Birds -- Colorado",
+          "Animals-Wild-Birds",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology",
+          "Natural History"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T17:43:23.992Z"
+      },
+      {
         "title": "Cattle and Their Diseases: Embracing Their History and Breeds, Crossing and Breeding, and Feeding and Management; with the Diseases to Which They Are Subject, and the Remedies Best Adapted to Their Cure",
         "file": "books/Gutenberg/Biology/22771-cattle-and-their-diseases-embracing-their-history-and-breeds-crossing-an.epub",
         "cover": "books/Gutenberg/Biology/22771-cattle-and-their-diseases-embracing-their-history-and-breeds-crossing-an.jpg",
@@ -3074,6 +3095,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T11:14:42.486Z"
+      },
+      {
+        "title": "I am a woman",
+        "file": "books/Gutenberg/Literature/76178-i-am-a-woman.epub",
+        "cover": "books/Gutenberg/Literature/76178-i-am-a-woman.jpg",
+        "author": "Bannon, Ann",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76178,
+        "subjects": [
+          "Lesbians -- Fiction",
+          "Love stories",
+          "New York (N.Y.) -- Fiction",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T17:40:02.392Z"
       },
       {
         "title": "Jane Eyre: An Autobiography",
