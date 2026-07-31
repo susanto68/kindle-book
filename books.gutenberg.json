@@ -694,6 +694,25 @@
         "downloadedAt": "2026-07-30T22:08:11.722Z"
       },
       {
+        "title": "Insects and Diseases: A Popular Account of the Way in Which Insects may Spread or Cause some of our Common Diseases",
+        "file": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.epub",
+        "cover": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.jpg",
+        "author": "Doane, Rennie Wilbur",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28177,
+        "subjects": [
+          "Insect pests",
+          "Insects as carriers of disease",
+          "Category: Health & Medicine",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T19:29:49.590Z"
+      },
+      {
         "title": "Letters of Asa Gray; Vol. 2",
         "file": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.epub",
         "cover": "books/Gutenberg/Biology/55987-letters-of-asa-gray-vol-2.jpg",
@@ -2673,6 +2692,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:40.576Z"
+      },
+      {
+        "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
+        "file": "books/Gutenberg/History/75883-the-roll-of-honour-volume-1-b-a-biographical-record-of-all-members-of-hi.epub",
+        "cover": "books/Gutenberg/History/75883-the-roll-of-honour-volume-1-b-a-biographical-record-of-all-members-of-hi.jpg",
+        "author": "Ruvigny et Raineval, Melville Henry Massue, marquis de",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 75883,
+        "subjects": [
+          "Soldiers -- Great Britain -- Biography",
+          "World War, 1914-1918 -- Registers of dead -- Great Britain",
+          "Category: Biographies",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - British",
+          "Category: History - Modern (1750+)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T19:30:47.291Z"
       },
       {
         "title": "Twenty years after",
