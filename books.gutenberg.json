@@ -716,6 +716,25 @@
         "downloadedAt": "2026-05-21T13:58:27.445Z"
       },
       {
+        "title": "Mysteries of Bee-keeping Explained",
+        "file": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.epub",
+        "cover": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.jpg",
+        "author": "Quinby, M. (Moses)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25185,
+        "subjects": [
+          "Bees",
+          "Category: How To ...",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T13:05:58.038Z"
+      },
+      {
         "title": "On the Origin of Species by Means of Natural Selection: or the Preservation of Favoured Races in the Struggle for Life. (2nd edition)",
         "file": "books/Gutenberg/Biology/22764-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.epub",
         "cover": "books/Gutenberg/Biology/22764-on-the-origin-of-species-by-means-of-natural-selection-or-the-preservati.jpg",
@@ -3703,6 +3722,40 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-06T10:26:34.034Z"
+      },
+      {
+        "title": "The String of Pearls; Or, The Barber of Fleet Street. A Domestic Romance.",
+        "file": "books/Gutenberg/Literature/59828-the-string-of-pearls-or-the-barber-of-fleet-street-a-domestic-romance.epub",
+        "cover": "books/Gutenberg/Literature/59828-the-string-of-pearls-or-the-barber-of-fleet-street-a-domestic-romance.jpg",
+        "author": "Prest, Thomas Peckett, Rymer, James Malcolm",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59828,
+        "subjects": [
+          "Bakers -- Fiction",
+          "Barbers -- Fiction",
+          "Cannibalism -- Fiction",
+          "Fleet Street (London, England) -- Fiction",
+          "Historical fiction",
+          "Horror tales",
+          "London (England) -- Social life and customs -- 18th century -- Fiction",
+          "Missing persons -- Fiction",
+          "Murder -- Fiction",
+          "Mystery fiction",
+          "Penny dreadfuls",
+          "Revenge -- Fiction",
+          "Suspense fiction",
+          "Todd, Sweeney (Legendary character) -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T12:58:43.619Z"
       },
       {
         "title": "The Turn of the Screw",
