@@ -860,6 +860,26 @@
         "downloadedAt": "2026-05-21T13:58:26.849Z"
       },
       {
+        "title": "The Theories of Darwin and Their Relation to Philosophy, Religion, and Morality",
+        "file": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.epub",
+        "cover": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.jpg",
+        "author": "Schmid, Rudolf",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22150,
+        "subjects": [
+          "Evolution",
+          "Religion and science",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T10:49:38.510Z"
+      },
+      {
         "title": "The Variation of Animals and Plants Under Domestication, Vol. I.",
         "file": "books/Gutenberg/Biology/24923-the-variation-of-animals-and-plants-under-domestication-vol-i.epub",
         "cover": "books/Gutenberg/Biology/24923-the-variation-of-animals-and-plants-under-domestication-vol-i.jpg",
@@ -2520,6 +2540,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:40.996Z"
+      },
+      {
+        "title": "The Anabasis of Alexander : $b or, The history of the wars and conquests of Alexander the Great",
+        "file": "books/Gutenberg/History/46976-the-anabasis-of-alexander-b-or-the-history-of-the-wars-and-conquests-of-.epub",
+        "cover": "books/Gutenberg/History/46976-the-anabasis-of-alexander-b-or-the-history-of-the-wars-and-conquests-of-.jpg",
+        "author": "Arrian",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46976,
+        "subjects": [
+          "Alexander, the Great, 356 B.C.-323 B.C.",
+          "India -- History -- To 324 B.C.",
+          "Iran -- History -- To 640",
+          "Category: Biographies",
+          "Category: History - Ancient",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-07-31T10:51:11.217Z"
       },
       {
         "title": "The Blue Castle: a novel",
