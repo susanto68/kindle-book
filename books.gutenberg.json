@@ -2685,6 +2685,24 @@
         "downloadedAt": "2026-05-21T13:58:47.196Z"
       },
       {
+        "title": "The Geography of Strabo, Volume 3 (of 3): Literally Translated, with Notes",
+        "file": "books/Gutenberg/Geography/44886-the-geography-of-strabo-volume-3-of-3-literally-translated-with-notes.epub",
+        "cover": "books/Gutenberg/Geography/44886-the-geography-of-strabo-volume-3-of-3-literally-translated-with-notes.jpg",
+        "author": "Strabo",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44886,
+        "subjects": [
+          "Geography -- Early works to 1800",
+          "Category: History - Ancient",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T23:07:24.323Z"
+      },
+      {
         "title": "This Giddy Globe",
         "file": "books/Gutenberg/Geography/26053-this-giddy-globe.epub",
         "cover": "books/Gutenberg/Geography/26053-this-giddy-globe.jpg",
@@ -3026,6 +3044,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T10:51:11.217Z"
+      },
+      {
+        "title": "The Belle of Bowling Green",
+        "file": "books/Gutenberg/History/76576-the-belle-of-bowling-green.epub",
+        "cover": "books/Gutenberg/History/76576-the-belle-of-bowling-green.jpg",
+        "author": "Barr, Amelia E.",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76576,
+        "subjects": [
+          "New York (N.Y.) -- Social life and customs -- 19th century -- Fiction",
+          "United States -- History -- War of 1812 -- Fiction",
+          "Category: American Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T23:06:57.446Z"
       },
       {
         "title": "The Blue Castle: a novel",
