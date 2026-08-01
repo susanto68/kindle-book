@@ -2685,6 +2685,24 @@
         "downloadedAt": "2026-05-21T13:58:47.196Z"
       },
       {
+        "title": "This Giddy Globe",
+        "file": "books/Gutenberg/Geography/26053-this-giddy-globe.epub",
+        "cover": "books/Gutenberg/Geography/26053-this-giddy-globe.jpg",
+        "author": "Herford, Oliver",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26053,
+        "subjects": [
+          "American wit and humor",
+          "Geography -- Humor",
+          "Category: Humour"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T21:58:06.506Z"
+      },
+      {
         "title": "Views of nature: or Contemplations on the sublime phenomena of creation: with scientific illustrations",
         "file": "books/Gutenberg/Geography/67684-views-of-nature-or-contemplations-on-the-sublime-phenomena-of-creation-w.epub",
         "cover": "books/Gutenberg/Geography/67684-views-of-nature-or-contemplations-on-the-sublime-phenomena-of-creation-w.jpg",
@@ -3120,6 +3138,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T14:34:18.715Z"
+      },
+      {
+        "title": "The Love Letters of Henry VIII to Anne Boleyn; With Notes",
+        "file": "books/Gutenberg/History/32155-the-love-letters-of-henry-viii-to-anne-boleyn-with-notes.epub",
+        "cover": "books/Gutenberg/History/32155-the-love-letters-of-henry-viii-to-anne-boleyn-with-notes.jpg",
+        "author": "Henry VIII, King of England",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32155,
+        "subjects": [
+          "Anne Boleyn, Queen, consort of Henry VIII, King of England, 1507-1536 -- Correspondence",
+          "Great Britain -- Kings and rulers -- Correspondence",
+          "Henry VIII, King of England, 1491-1547 -- Correspondence",
+          "Love-letters -- Early works to 1800",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - British",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - Royalty",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T21:58:05.232Z"
       },
       {
         "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
