@@ -673,6 +673,25 @@
         "downloadedAt": "2026-07-30T06:40:44.000Z"
       },
       {
+        "title": "Darwin, and After Darwin, Volumes 1 and 3: An Exposition of the Darwinian Theory and a Discussion of Post-Darwinian Questions",
+        "file": "books/Gutenberg/Biology/24800-darwin-and-after-darwin-volumes-1-and-3-an-exposition-of-the-darwinian-t.epub",
+        "cover": "books/Gutenberg/Biology/24800-darwin-and-after-darwin-volumes-1-and-3-an-exposition-of-the-darwinian-t.jpg",
+        "author": "Romanes, George John",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24800,
+        "subjects": [
+          "Evolution (Biology)",
+          "Heredity",
+          "Biology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T08:33:07.101Z"
+      },
+      {
         "title": "Evolution, Old & New: Or, the Theories of Buffon, Dr. Erasmus Darwin and Lamarck,; as compared with that of Charles Darwin",
         "file": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.epub",
         "cover": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.jpg",
@@ -2878,6 +2897,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T19:30:47.291Z"
+      },
+      {
+        "title": "The Waterloo Roll Call: With Biographical Notes and Anecdotes",
+        "file": "books/Gutenberg/History/51143-the-waterloo-roll-call-with-biographical-notes-and-anecdotes.epub",
+        "cover": "books/Gutenberg/History/51143-the-waterloo-roll-call-with-biographical-notes-and-anecdotes.jpg",
+        "author": "Dalton, Charles",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51143,
+        "subjects": [
+          "Great Britain. Army -- Registers",
+          "Waterloo, Battle of, Waterloo, Belgium, 1815",
+          "Category: Biographies",
+          "Category: History - British",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T08:34:24.124Z"
       },
       {
         "title": "Twenty years after",
