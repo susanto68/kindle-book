@@ -1017,6 +1017,25 @@
         "downloadedAt": "2026-05-21T13:58:27.120Z"
       },
       {
+        "title": "Wild Nature Won By Kindness",
+        "file": "books/Gutenberg/Biology/21111-wild-nature-won-by-kindness.epub",
+        "cover": "books/Gutenberg/Biology/21111-wild-nature-won-by-kindness.jpg",
+        "author": "Brightwen, Mrs. (Eliza Elder)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21111,
+        "subjects": [
+          "Animals -- Anecdotes",
+          "Animals-Wild",
+          "Biology",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T02:58:40.334Z"
+      },
+      {
         "title": "Zoonomia; Or, the Laws of Organic Life, Vol. II",
         "file": "books/Gutenberg/Biology/27600-zoonomia-or-the-laws-of-organic-life-vol-ii.epub",
         "cover": "books/Gutenberg/Biology/27600-zoonomia-or-the-laws-of-organic-life-vol-ii.jpg",
@@ -2663,6 +2682,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:40.996Z"
+      },
+      {
+        "title": "Rizal's own story of his life",
+        "file": "books/Gutenberg/History/48438-rizals-own-story-of-his-life.epub",
+        "cover": "books/Gutenberg/History/48438-rizals-own-story-of-his-life.jpg",
+        "author": "Rizal, José",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 48438,
+        "subjects": [
+          "Philippines -- Biography",
+          "Rizal, José, 1861-1896",
+          "Category: Biographies",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T02:59:46.840Z"
       },
       {
         "title": "The Anabasis of Alexander : $b or, The history of the wars and conquests of Alexander the Great",
