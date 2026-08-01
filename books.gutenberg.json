@@ -793,6 +793,26 @@
         "downloadedAt": "2026-08-01T10:52:14.482Z"
       },
       {
+        "title": "My Studio Neighbors",
+        "file": "books/Gutenberg/Biology/22165-my-studio-neighbors.epub",
+        "cover": "books/Gutenberg/Biology/22165-my-studio-neighbors.jpg",
+        "author": "Gibson, W. Hamilton (William Hamilton)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22165,
+        "subjects": [
+          "Natural history",
+          "Natural history -- Outdoor books",
+          "Biology",
+          "Category: Essays, Letters & Speeches",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T12:09:55.958Z"
+      },
+      {
         "title": "Mysteries of Bee-keeping Explained",
         "file": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.epub",
         "cover": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.jpg",
@@ -2628,6 +2648,25 @@
   {
     "class": "Gutenberg - History",
     "books": [
+      {
+        "title": "A Little English Gallery",
+        "file": "books/Gutenberg/History/54219-a-little-english-gallery.epub",
+        "cover": "books/Gutenberg/History/54219-a-little-english-gallery.jpg",
+        "author": "Guiney, Louise Imogen",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54219,
+        "subjects": [
+          "Authors, English -- Biography",
+          "Category: Biographies",
+          "Category: British Literature",
+          "Category: History - British"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T12:11:15.104Z"
+      },
       {
         "title": "A Tale of Two Cities",
         "file": "books/Gutenberg/History/98-a-tale-of-two-cities.epub",
