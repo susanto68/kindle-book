@@ -692,6 +692,26 @@
         "downloadedAt": "2026-08-01T08:33:07.101Z"
       },
       {
+        "title": "Evolution in Modern Thought",
+        "file": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.epub",
+        "cover": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22430,
+        "subjects": [
+          "Evolution (Biology)",
+          "Biology",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T16:02:13.515Z"
+      },
+      {
         "title": "Evolution, Old & New: Or, the Theories of Buffon, Dr. Erasmus Darwin and Lamarck,; as compared with that of Charles Darwin",
         "file": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.epub",
         "cover": "books/Gutenberg/Biology/23427-evolution-old-new-or-the-theories-of-buffon-dr-erasmus-darwin-and-lamarc.jpg",
@@ -2862,6 +2882,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T02:59:46.840Z"
+      },
+      {
+        "title": "Some Jewish Witnesses For Christ",
+        "file": "books/Gutenberg/History/37734-some-jewish-witnesses-for-christ.epub",
+        "cover": "books/Gutenberg/History/37734-some-jewish-witnesses-for-christ.jpg",
+        "author": "Bernstein, Aaron",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37734,
+        "subjects": [
+          "Christian converts from Judaism -- Biography",
+          "Missions to Jews",
+          "Category: Biographies",
+          "Category: History - Religious"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T16:02:14.851Z"
       },
       {
         "title": "The Anabasis of Alexander : $b or, The history of the wars and conquests of Alexander the Great",
