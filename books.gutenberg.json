@@ -775,6 +775,24 @@
         "downloadedAt": "2026-05-21T13:58:27.445Z"
       },
       {
+        "title": "Man And His Ancestor: A Study In Evolution",
+        "file": "books/Gutenberg/Biology/28471-man-and-his-ancestor-a-study-in-evolution.epub",
+        "cover": "books/Gutenberg/Biology/28471-man-and-his-ancestor-a-study-in-evolution.jpg",
+        "author": "Morris, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28471,
+        "subjects": [
+          "Human beings -- Origin",
+          "Category: Archaeology & Anthropology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T10:52:14.482Z"
+      },
+      {
         "title": "Mysteries of Bee-keeping Explained",
         "file": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.epub",
         "cover": "books/Gutenberg/Biology/25185-mysteries-of-bee-keeping-explained.jpg",
@@ -2700,6 +2718,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T23:02:59.874Z"
+      },
+      {
+        "title": "Napoleon's Letters to Josephine, 1796-1812: For the First Time Collected and Translated, with Notes Social, Historical, and Chronological, from Contemporary Sources",
+        "file": "books/Gutenberg/History/37499-napoleons-letters-to-josephine-1796-1812-for-the-first-time-collected-an.epub",
+        "cover": "books/Gutenberg/History/37499-napoleons-letters-to-josephine-1796-1812-for-the-first-time-collected-an.jpg",
+        "author": "Napoleon I, Emperor of the French",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37499,
+        "subjects": [
+          "Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence",
+          "Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - European",
+          "Category: History - Modern (1750+)",
+          "Napoleonic(Bookshelf)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T10:54:20.916Z"
       },
       {
         "title": "Narrative of the Life of Frederick Douglass, an American Slave",
