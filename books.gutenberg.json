@@ -692,6 +692,29 @@
         "downloadedAt": "2026-08-01T08:33:07.101Z"
       },
       {
+        "title": "Delineations of the Ox Tribe: The Natural History of Bulls, Bisons, and Buffaloes.: Exhibiting all the Known Species and the More Remarkable Varieties of the Genus Bos.",
+        "file": "books/Gutenberg/Biology/27975-delineations-of-the-ox-tribe-the-natural-history-of-bulls-bisons-and-buf.epub",
+        "cover": "books/Gutenberg/Biology/27975-delineations-of-the-ox-tribe-the-natural-history-of-bulls-bisons-and-buf.jpg",
+        "author": "Vasey, George",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27975,
+        "subjects": [
+          "American bison",
+          "Buffaloes",
+          "Cattle",
+          "Oxen",
+          "Animal",
+          "Animals-Wild-Mammals",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T18:09:49.763Z"
+      },
+      {
         "title": "Evolution in Modern Thought",
         "file": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.epub",
         "cover": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.jpg",
@@ -2773,6 +2796,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
+      {
+        "title": "Emily Brontë",
+        "file": "books/Gutenberg/History/25789-emily-bronte.epub",
+        "cover": "books/Gutenberg/History/25789-emily-bronte.jpg",
+        "author": "Robinson, A. Mary F. (Agnes Mary Frances)",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25789,
+        "subjects": [
+          "Authors, English -- 19th century -- Biography",
+          "Brontë, Emily, 1818-1848",
+          "Women and literature -- England -- History -- 19th century",
+          "Category: Biographies"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T18:10:43.751Z"
       },
       {
         "title": "Forest Days: A Romance of Old Times",
