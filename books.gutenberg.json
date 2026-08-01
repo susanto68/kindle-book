@@ -936,6 +936,26 @@
         "downloadedAt": "2026-05-21T13:58:26.714Z"
       },
       {
+        "title": "The Dawn of Reason; or, Mental Traits in the Lower Animals",
+        "file": "books/Gutenberg/Biology/21608-the-dawn-of-reason-or-mental-traits-in-the-lower-animals.epub",
+        "cover": "books/Gutenberg/Biology/21608-the-dawn-of-reason-or-mental-traits-in-the-lower-animals.jpg",
+        "author": "Weir, James, Jr.",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21608,
+        "subjects": [
+          "Psychology, Comparative",
+          "Reason",
+          "Biology",
+          "Category: Psychiatry/Psychology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T14:33:27.911Z"
+      },
+      {
         "title": "The Elements of Bacteriological Technique: A Laboratory Guide for Medical, Dental, and Technical Students. Second Edition Rewritten and Enlarged.",
         "file": "books/Gutenberg/Biology/27713-the-elements-of-bacteriological-technique-a-laboratory-guide-for-medical.epub",
         "cover": "books/Gutenberg/Biology/27713-the-elements-of-bacteriological-technique-a-laboratory-guide-for-medical.jpg",
@@ -2956,6 +2976,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T21:07:40.288Z"
+      },
+      {
+        "title": "The Life of Florence Nightingale, vol. 2 of 2",
+        "file": "books/Gutenberg/History/40058-the-life-of-florence-nightingale-vol-2-of-2.epub",
+        "cover": "books/Gutenberg/History/40058-the-life-of-florence-nightingale-vol-2-of-2.jpg",
+        "author": "Cook, Edward Tyas, Sir",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40058,
+        "subjects": [
+          "Nightingale, Florence, 1820-1910",
+          "Category: Biographies",
+          "Category: Health & Medicine",
+          "Category: History - British"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T14:34:18.715Z"
       },
       {
         "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
