@@ -898,6 +898,27 @@
         "downloadedAt": "2026-05-21T13:58:27.305Z"
       },
       {
+        "title": "The Medicinal Plants of the Philippines",
+        "file": "books/Gutenberg/Biology/26393-the-medicinal-plants-of-the-philippines.epub",
+        "cover": "books/Gutenberg/Biology/26393-the-medicinal-plants-of-the-philippines.jpg",
+        "author": "Pardo de Tavera, T. H. (Trinidad Hermenegildo)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26393,
+        "subjects": [
+          "Botany -- Philippines",
+          "Medicinal plants -- Philippines",
+          "Botany",
+          "Category: Health & Medicine",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T06:05:37.191Z"
+      },
+      {
         "title": "The Natural History of Pliny, Volume 3 (of 6)",
         "file": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.epub",
         "cover": "books/Gutenberg/Biology/59131-the-natural-history-of-pliny-volume-3-of-6.jpg",
@@ -2597,6 +2618,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:41.304Z"
+      },
+      {
+        "title": "Autobiography of Benjamin Franklin",
+        "file": "books/Gutenberg/History/20203-autobiography-of-benjamin-franklin.epub",
+        "cover": "books/Gutenberg/History/20203-autobiography-of-benjamin-franklin.jpg",
+        "author": "Franklin, Benjamin",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20203,
+        "subjects": [
+          "Franklin, Benjamin, 1706-1790",
+          "Statesmen -- United States -- Biography",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: History - American",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T06:07:00.585Z"
       },
       {
         "title": "Charles Bradlaugh: a Record of His Life and Work, Volume 1 (of 2): With an Account of his Parliamentary Struggle, Politics and Teachings. Seventh Edition",
