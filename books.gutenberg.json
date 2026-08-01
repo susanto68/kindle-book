@@ -2705,6 +2705,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:46.027Z"
+      },
+      {
+        "title": "Where We Live: A Home Geography",
+        "file": "books/Gutenberg/Geography/22911-where-we-live-a-home-geography.epub",
+        "cover": "books/Gutenberg/Geography/22911-where-we-live-a-home-geography.jpg",
+        "author": "Jacobs, Emilie Van Beil",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22911,
+        "subjects": [
+          "Geography -- Textbooks",
+          "Category: Children & Young Adult Reading",
+          "Category: Teaching & Education",
+          "Children's Instructional Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T20:21:21.662Z"
       }
     ]
   },
@@ -2796,6 +2815,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:19:44.604Z"
+      },
+      {
+        "title": "Eloisa : $b or, A series of original letters",
+        "file": "books/Gutenberg/History/76639-eloisa-b-or-a-series-of-original-letters.epub",
+        "cover": "books/Gutenberg/History/76639-eloisa-b-or-a-series-of-original-letters.jpg",
+        "author": "Rousseau, Jean-Jacques",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76639,
+        "subjects": [
+          "Alps Region -- History -- 18th century -- Fiction",
+          "Epistolary fiction",
+          "French fiction -- Translations into English",
+          "Man-woman relationships -- Fiction",
+          "Psychological fiction",
+          "Women -- Fiction",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-01T20:20:24.445Z"
       },
       {
         "title": "Emily Brontë",
