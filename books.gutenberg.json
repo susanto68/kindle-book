@@ -1456,6 +1456,26 @@
         "downloadedAt": "2026-07-30T16:34:33.170Z"
       },
       {
+        "title": "Gunpowder and Ammunition, Their Origin and Progress",
+        "file": "books/Gutenberg/Chemistry/54411-gunpowder-and-ammunition-their-origin-and-progress.epub",
+        "cover": "books/Gutenberg/Chemistry/54411-gunpowder-and-ammunition-their-origin-and-progress.jpg",
+        "author": "Hime, H. W. L. (Henry William Lovett)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54411,
+        "subjects": [
+          "Ammunition",
+          "Gunpowder",
+          "Category: Engineering & Technology",
+          "Category: History - Other",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T15:03:43.172Z"
+      },
+      {
         "title": "Henley's Twentieth Century Formulas, Recipes and Processes",
         "file": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.epub",
         "cover": "books/Gutenberg/Chemistry/53143-henleys-twentieth-century-formulas-recipes-and-processes.jpg",
@@ -3001,6 +3021,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T10:54:20.916Z"
+      },
+      {
+        "title": "Narrative of the Captivity and Restoration of Mrs. Mary Rowlandson",
+        "file": "books/Gutenberg/History/851-narrative-of-the-captivity-and-restoration-of-mrs-mary-rowlandson.epub",
+        "cover": "books/Gutenberg/History/851-narrative-of-the-captivity-and-restoration-of-mrs-mary-rowlandson.jpg",
+        "author": "Rowlandson, Mary White",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 851,
+        "subjects": [
+          "Indian captivities -- Massachusetts",
+          "King Philip's War, 1675-1676",
+          "Lancaster (Mass.) -- History -- Colonial period, ca. 1600-1775",
+          "Massachusetts -- Biography",
+          "Rowlandson, Mary White, approximately 1635-1711",
+          "Category: Biographies",
+          "Category: History - American"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T15:05:08.963Z"
       },
       {
         "title": "Narrative of the Life of Frederick Douglass, an American Slave",
