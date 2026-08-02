@@ -2664,6 +2664,27 @@
         "downloadedAt": "2026-05-21T13:09:44.646Z"
       },
       {
+        "title": "The 2004 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27559-the-2004-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27559-the-2004-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27559,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T20:18:26.522Z"
+      },
+      {
         "title": "The 2006 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.jpg",
@@ -3039,6 +3060,34 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T00:05:46.406Z"
+      },
+      {
+        "title": "Kidnapped",
+        "file": "books/Gutenberg/History/421-kidnapped.epub",
+        "cover": "books/Gutenberg/History/421-kidnapped.jpg",
+        "author": "Stevenson, Robert Louis",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 421,
+        "subjects": [
+          "Adventure and adventurers -- Fiction",
+          "Historical fiction",
+          "Kidnapping -- Fiction",
+          "Scotland -- History -- 18th century -- Fiction",
+          "Adventure",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Children's Literature",
+          "Historical Fiction",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T20:17:44.082Z"
       },
       {
         "title": "Napoleon's Letters to Josephine, 1796-1812: For the First Time Collected and Translated, with Notes Social, Historical, and Chronological, from Contemporary Sources",
