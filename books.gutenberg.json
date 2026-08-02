@@ -4035,6 +4035,32 @@
         "downloadedAt": "2026-05-22T20:45:12.249Z"
       },
       {
+        "title": "The Blue Lagoon: A Romance",
+        "file": "books/Gutenberg/Literature/393-the-blue-lagoon-a-romance.epub",
+        "cover": "books/Gutenberg/Literature/393-the-blue-lagoon-a-romance.jpg",
+        "author": "Stacpoole, H. De Vere (Henry De Vere)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 393,
+        "subjects": [
+          "Adventure stories",
+          "Bildungsromans",
+          "Castaways -- Fiction",
+          "Cousins -- Fiction",
+          "Islands -- Fiction",
+          "Love stories",
+          "Shipwrecks -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T09:59:05.706Z"
+      },
+      {
         "title": "The Book of the Thousand Nights and a Night — Volume 01 (of 10)",
         "file": "books/Gutenberg/Literature/51252-the-book-of-the-thousand-nights-and-a-night-volume-01-of-10.epub",
         "cover": "books/Gutenberg/Literature/51252-the-book-of-the-thousand-nights-and-a-night-volume-01-of-10.jpg",
@@ -7404,6 +7430,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:18:36.877Z"
+      },
+      {
+        "title": "The Lost World",
+        "file": "books/Gutenberg/Science/139-the-lost-world.epub",
+        "cover": "books/Gutenberg/Science/139-the-lost-world.jpg",
+        "author": "Doyle, Arthur Conan",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 139,
+        "subjects": [
+          "Challenger, Professor (Fictitious character) -- Fiction",
+          "Dinosaurs -- Fiction",
+          "Fantasy fiction",
+          "Prehistoric peoples -- Fiction",
+          "South America -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T09:59:32.126Z"
       },
       {
         "title": "The Misplaced Battleship",
