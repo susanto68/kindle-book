@@ -2762,6 +2762,25 @@
         "downloadedAt": "2026-08-01T23:07:24.323Z"
       },
       {
+        "title": "The Japanese Empire : $b a geographical reader",
+        "file": "books/Gutenberg/Geography/79183-the-japanese-empire-b-a-geographical-reader.epub",
+        "cover": "books/Gutenberg/Geography/79183-the-japanese-empire-b-a-geographical-reader.jpg",
+        "author": "Franck, Harry Alverson",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79183,
+        "subjects": [
+          "Japan -- Colonies -- East Asia -- History -- 20th century",
+          "Japan -- Description and travel",
+          "Japan -- Social life and customs",
+          "Readers -- Geography"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T17:07:50.087Z"
+      },
+      {
         "title": "This Giddy Globe",
         "file": "books/Gutenberg/Geography/26053-this-giddy-globe.epub",
         "cover": "books/Gutenberg/Geography/26053-this-giddy-globe.jpg",
@@ -3323,6 +3342,33 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T19:30:47.291Z"
+      },
+      {
+        "title": "The three musketeers",
+        "file": "books/Gutenberg/History/1257-the-three-musketeers.epub",
+        "cover": "books/Gutenberg/History/1257-the-three-musketeers.jpg",
+        "author": "Dumas, Alexandre, Maquet, Auguste",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1257,
+        "subjects": [
+          "Adventure and adventurers -- Fiction",
+          "France -- History -- Louis XIII, 1610-1643 -- Fiction",
+          "Historical fiction",
+          "Swordsmen -- Fiction",
+          "Adventure",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Historical Fiction",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T17:06:58.101Z"
       },
       {
         "title": "The Waterloo Roll Call: With Biographical Notes and Anecdotes",
