@@ -3806,6 +3806,28 @@
         "downloadedAt": "2026-06-02T05:51:40.402Z"
       },
       {
+        "title": "Manon Lescaut",
+        "file": "books/Gutenberg/Literature/468-manon-lescaut.epub",
+        "cover": "books/Gutenberg/Literature/468-manon-lescaut.jpg",
+        "author": "Prévost, abbé",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 468,
+        "subjects": [
+          "Adventure stories",
+          "Lescaut, Manon, 1689-1721 -- Fiction",
+          "Man-woman relationships -- Fiction",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T04:25:05.687Z"
+      },
+      {
         "title": "Middlemarch",
         "file": "books/Gutenberg/Literature/145-middlemarch.epub",
         "cover": "books/Gutenberg/Literature/145-middlemarch.jpg",
@@ -6772,6 +6794,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T09:56:01.115Z"
+      },
+      {
+        "title": "A princess of Mars",
+        "file": "books/Gutenberg/Science/62-a-princess-of-mars.epub",
+        "cover": "books/Gutenberg/Science/62-a-princess-of-mars.jpg",
+        "author": "Burroughs, Edgar Rice",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 62,
+        "subjects": [
+          "Carter, John (Fictitious character) -- Fiction",
+          "Dejah Thoris (Fictitious character) -- Fiction",
+          "Mars (Planet) -- Fiction",
+          "Princesses -- Fiction",
+          "Science fiction",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T04:25:40.864Z"
       },
       {
         "title": "At the mountains of madness",
