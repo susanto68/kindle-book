@@ -2781,6 +2781,28 @@
         "downloadedAt": "2026-08-02T17:07:50.087Z"
       },
       {
+        "title": "The Travels of Sir John Mandeville",
+        "file": "books/Gutenberg/Geography/782-the-travels-of-sir-john-mandeville.epub",
+        "cover": "books/Gutenberg/Geography/782-the-travels-of-sir-john-mandeville.jpg",
+        "author": "Mandeville, John, Sir",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 782,
+        "subjects": [
+          "Geography, Medieval",
+          "Mandeville, John, Sir -- Travel",
+          "Orient -- Description and travel -- Early works to 1800",
+          "Palestine -- Description and travel -- Early works to 1800",
+          "Voyages and travels -- Early works to 1800",
+          "Category: History - Medieval/Middle Ages",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T18:07:50.129Z"
+      },
+      {
         "title": "This Giddy Globe",
         "file": "books/Gutenberg/Geography/26053-this-giddy-globe.epub",
         "cover": "books/Gutenberg/Geography/26053-this-giddy-globe.jpg",
@@ -3278,6 +3300,39 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T21:07:40.288Z"
+      },
+      {
+        "title": "The Jungle Book",
+        "file": "books/Gutenberg/History/236-the-jungle-book.epub",
+        "cover": "books/Gutenberg/History/236-the-jungle-book.jpg",
+        "author": "Kipling, Rudyard",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 236,
+        "subjects": [
+          "Adventure stories, English",
+          "Animals -- Fiction",
+          "Feral children -- Fiction",
+          "India -- Fiction",
+          "India -- History -- 19th century -- Fiction",
+          "Jungle animals -- Fiction",
+          "Jungles -- Fiction",
+          "Mowgli (Fictitious character) -- Fiction",
+          "Short stories",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Short Stories",
+          "Children's Literature",
+          "Contemporary Reviews",
+          "Movie Books",
+          "Nobel Prizes in Literature",
+          "Scouts"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T18:07:49.346Z"
       },
       {
         "title": "The Life of Florence Nightingale, vol. 2 of 2",
