@@ -4407,6 +4407,34 @@
         "downloadedAt": "2026-07-30T16:28:43.983Z"
       },
       {
+        "title": "The Mystery of Edwin Drood",
+        "file": "books/Gutenberg/Literature/564-the-mystery-of-edwin-drood.epub",
+        "cover": "books/Gutenberg/Literature/564-the-mystery-of-edwin-drood.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 564,
+        "subjects": [
+          "Cathedrals -- Fiction",
+          "Choral conductors -- Fiction",
+          "England -- Fiction",
+          "Missing persons -- Fiction",
+          "Mystery fiction",
+          "Psychological fiction",
+          "Separation (Psychology) -- Fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T07:33:16.757Z"
+      },
+      {
         "title": "The Secret of Chimneys",
         "file": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.epub",
         "cover": "books/Gutenberg/Literature/65238-the-secret-of-chimneys.jpg",
@@ -7400,6 +7428,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T16:28:39.778Z"
+      },
+      {
+        "title": "The Mysterious Island",
+        "file": "books/Gutenberg/Science/1268-the-mysterious-island.epub",
+        "cover": "books/Gutenberg/Science/1268-the-mysterious-island.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1268,
+        "subjects": [
+          "Adventure stories",
+          "Castaways -- Fiction",
+          "Islands of the Pacific -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T07:34:15.056Z"
       },
       {
         "title": "The Natural History of Pliny, Volume 2 (of 6)",
