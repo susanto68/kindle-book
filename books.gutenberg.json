@@ -2643,6 +2643,27 @@
         "downloadedAt": "2026-08-02T00:05:47.152Z"
       },
       {
+        "title": "The 1991 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/25-the-1991-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/25-the-1991-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T21:58:06.762Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -2933,6 +2954,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:41.304Z"
+      },
+      {
+        "title": "Anabasis",
+        "file": "books/Gutenberg/History/1170-anabasis.epub",
+        "cover": "books/Gutenberg/History/1170-anabasis.jpg",
+        "author": "Xenophon",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1170,
+        "subjects": [
+          "Classical literature",
+          "Cyrus, the Younger, approximately 423 B.C.-401 B.C.",
+          "Greece -- History -- Expedition of Cyrus, 401 B.C.",
+          "Iran -- History -- To 640",
+          "Category: Adventure",
+          "Category: History - Ancient"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T21:58:05.666Z"
       },
       {
         "title": "Autobiography of Benjamin Franklin",
