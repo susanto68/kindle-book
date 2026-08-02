@@ -1346,6 +1346,22 @@
         "downloadedAt": "2026-05-21T13:09:23.323Z"
       },
       {
+        "title": "Chemistry : $b developed by facts and principles drawn chiefly from the non-metals",
+        "file": "books/Gutenberg/Chemistry/79181-chemistry-b-developed-by-facts-and-principles-drawn-chiefly-from-the-non.epub",
+        "cover": "books/Gutenberg/Chemistry/79181-chemistry-b-developed-by-facts-and-principles-drawn-chiefly-from-the-non.jpg",
+        "author": "Appleton, John Howard",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79181,
+        "subjects": [
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T13:28:51.176Z"
+      },
+      {
         "title": "Discoveries and Inventions of the Nineteenth Century",
         "file": "books/Gutenberg/Chemistry/54475-discoveries-and-inventions-of-the-nineteenth-century.epub",
         "cover": "books/Gutenberg/Chemistry/54475-discoveries-and-inventions-of-the-nineteenth-century.jpg",
@@ -6423,6 +6439,22 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T16:18:45.276Z"
+      },
+      {
+        "title": "Problems in astrophysics",
+        "file": "books/Gutenberg/Physics/79177-problems-in-astrophysics.epub",
+        "cover": "books/Gutenberg/Physics/79177-problems-in-astrophysics.jpg",
+        "author": "Clerke, Agnes M. (Agnes Mary)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79177,
+        "subjects": [
+          "Astrophysics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T13:28:11.172Z"
       },
       {
         "title": "Radio-Activity",
