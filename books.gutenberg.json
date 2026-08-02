@@ -3574,6 +3574,30 @@
         "downloadedAt": "2026-07-05T18:28:36.424Z"
       },
       {
+        "title": "Catriona",
+        "file": "books/Gutenberg/Literature/589-catriona.epub",
+        "cover": "books/Gutenberg/Literature/589-catriona.jpg",
+        "author": "Stevenson, Robert Louis",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 589,
+        "subjects": [
+          "Adventure stories",
+          "Scotland -- History -- 18th century -- Fiction",
+          "Adventure",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Romance",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T11:22:26.157Z"
+      },
+      {
         "title": "Cranford",
         "file": "books/Gutenberg/Literature/394-cranford.epub",
         "cover": "books/Gutenberg/Literature/394-cranford.jpg",
@@ -7314,6 +7338,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-29T15:42:00.397Z"
+      },
+      {
+        "title": "The Chessmen of Mars",
+        "file": "books/Gutenberg/Science/1153-the-chessmen-of-mars.epub",
+        "cover": "books/Gutenberg/Science/1153-the-chessmen-of-mars.jpg",
+        "author": "Burroughs, Edgar Rice",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1153,
+        "subjects": [
+          "Mars (Planet) -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T11:22:27.165Z"
       },
       {
         "title": "The Crack of Doom",
