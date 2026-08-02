@@ -2620,6 +2620,24 @@
         "downloadedAt": "2026-05-21T13:58:45.619Z"
       },
       {
+        "title": "Mexico and Central America : $b a geographical reader",
+        "file": "books/Gutenberg/Geography/79021-mexico-and-central-america-b-a-geographical-reader.epub",
+        "cover": "books/Gutenberg/Geography/79021-mexico-and-central-america-b-a-geographical-reader.jpg",
+        "author": "Franck, Harry Alverson",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79021,
+        "subjects": [
+          "Central America -- Description and travel",
+          "Mexico -- Description and travel",
+          "Readers -- Geography"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T23:08:00.110Z"
+      },
+      {
         "title": "The 1990 CIA World Factbook",
         "file": "books/Gutenberg/Geography/14-the-1990-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/14-the-1990-cia-world-factbook.jpg",
@@ -3443,6 +3461,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T14:34:18.715Z"
+      },
+      {
+        "title": "The Lives of the Twelve Caesars, Complete",
+        "file": "books/Gutenberg/History/6400-the-lives-of-the-twelve-caesars-complete.epub",
+        "cover": "books/Gutenberg/History/6400-the-lives-of-the-twelve-caesars-complete.jpg",
+        "author": "Suetonius",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6400,
+        "subjects": [
+          "Emperors -- Rome -- Biography -- Early works to 1800",
+          "Rome -- History -- Empire, 30 B.C.-284 A.D.",
+          "Category: Biographies",
+          "Category: History - Ancient"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T23:07:24.484Z"
       },
       {
         "title": "The Love Letters of Henry VIII to Anne Boleyn; With Notes",
