@@ -2584,6 +2584,29 @@
         "downloadedAt": "2026-05-21T13:58:45.619Z"
       },
       {
+        "title": "The 1990 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/14-the-1990-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/14-the-1990-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Economics",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T00:05:47.152Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -2919,6 +2942,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T23:02:59.874Z"
+      },
+      {
+        "title": "Harriet Martineau",
+        "file": "books/Gutenberg/History/36965-harriet-martineau.epub",
+        "cover": "books/Gutenberg/History/36965-harriet-martineau.jpg",
+        "author": "Miller, Florence Fenwick",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 36965,
+        "subjects": [
+          "Authors, English -- 19th century -- Biography",
+          "Martineau, Harriet, 1802-1876",
+          "Women and literature -- England -- History -- 19th century",
+          "Women social reformers -- Great Britain -- Biography",
+          "Category: Biographies"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-02T00:05:46.406Z"
       },
       {
         "title": "Napoleon's Letters to Josephine, 1796-1812: For the First Time Collected and Translated, with Notes Social, Historical, and Chronological, from Contemporary Sources",
