@@ -2621,6 +2621,29 @@
     "class": "Gutenberg - Geography",
     "books": [
       {
+        "title": "Christopher Columbus and How He Received and Imparted the Spirit of Discovery",
+        "file": "books/Gutenberg/Geography/42059-christopher-columbus-and-how-he-received-and-imparted-the-spirit-of-disc.epub",
+        "cover": "books/Gutenberg/Geography/42059-christopher-columbus-and-how-he-received-and-imparted-the-spirit-of-disc.jpg",
+        "author": "Winsor, Justin",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42059,
+        "subjects": [
+          "America -- Discovery and exploration",
+          "Columbus, Christopher, 1451-1506",
+          "Columbus, Christopher, 1451-1506 -- Bibliography",
+          "Columbus, Christopher, 1451-1506 -- Pictorial works",
+          "Discoveries in geography",
+          "Category: Biographies",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T18:59:30.778Z"
+      },
+      {
         "title": "Home Geography for Primary Grades",
         "file": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.epub",
         "cover": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.jpg",
@@ -3272,6 +3295,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T20:17:44.082Z"
+      },
+      {
+        "title": "Love-at-arms : $b being a narrative excerpted from the chronicles of Urbino, during the dominion of the high and mighty Messer Guidobaldo da Montefeltro",
+        "file": "books/Gutenberg/History/3530-love-at-arms-b-being-a-narrative-excerpted-from-the-chronicles-of-urbino.epub",
+        "cover": "books/Gutenberg/History/3530-love-at-arms-b-being-a-narrative-excerpted-from-the-chronicles-of-urbino.jpg",
+        "author": "Sabatini, Rafael",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3530,
+        "subjects": [
+          "Arranged marriage -- Fiction",
+          "Borgia, Cesare, 1476?-1507 -- Fiction",
+          "Italy -- History -- 1492-1559 -- Fiction",
+          "Urbino (Italy) -- Fiction",
+          "Category: Adventure",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T18:58:35.770Z"
       },
       {
         "title": "Napoleon's Letters to Josephine, 1796-1812: For the First Time Collected and Translated, with Notes Social, Historical, and Chronological, from Contemporary Sources",
