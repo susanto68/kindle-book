@@ -2704,6 +2704,27 @@
         "downloadedAt": "2026-08-02T21:58:06.762Z"
       },
       {
+        "title": "The 2000 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3672,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T10:51:12.321Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -3431,6 +3452,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:40.576Z"
+      },
+      {
+        "title": "The Diary of Samuel Pepys — Complete",
+        "file": "books/Gutenberg/History/4200-the-diary-of-samuel-pepys-complete.epub",
+        "cover": "books/Gutenberg/History/4200-the-diary-of-samuel-pepys-complete.jpg",
+        "author": "Pepys, Samuel",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4200,
+        "subjects": [
+          "Cabinet officers -- Great Britain -- Diaries",
+          "Diarists -- Great Britain -- Diaries",
+          "Great Britain -- History -- Charles II, 1660-1685 -- Sources",
+          "Great Britain -- Social life and customs -- 17th century -- Sources",
+          "Pepys, Samuel, 1633-1703 -- Diaries",
+          "Category: Biographies",
+          "Category: History - British"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T10:50:12.819Z"
       },
       {
         "title": "The Hero of the People: A Historical Romance of Love, Liberty and Loyalty",
