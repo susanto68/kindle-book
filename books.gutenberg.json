@@ -592,6 +592,28 @@
         "downloadedAt": "2026-07-30T18:18:36.430Z"
       },
       {
+        "title": "An Elementary Study of Insects",
+        "file": "books/Gutenberg/Biology/23434-an-elementary-study-of-insects.epub",
+        "cover": "books/Gutenberg/Biology/23434-an-elementary-study-of-insects.jpg",
+        "author": "Haseman, Leonard",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23434,
+        "subjects": [
+          "Insects",
+          "Animals-Wild-Insects",
+          "Biology",
+          "Category: Children & Young Adult Reading",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T06:30:47.625Z"
+      },
+      {
         "title": "Anecdotes of the Habits and Instinct of Animals",
         "file": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.epub",
         "cover": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.jpg",
@@ -4811,6 +4833,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T07:33:16.757Z"
+      },
+      {
+        "title": "The Odyssey: Rendered into English prose for the use of those who cannot read the original",
+        "file": "books/Gutenberg/Literature/1727-the-odyssey-rendered-into-english-prose-for-the-use-of-those-who-cannot-.epub",
+        "cover": "books/Gutenberg/Literature/1727-the-odyssey-rendered-into-english-prose-for-the-use-of-those-who-cannot-.jpg",
+        "author": "Homer",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1727,
+        "subjects": [
+          "Epic poetry, Greek -- Translations into English",
+          "Homer -- Translations into English",
+          "Odysseus, King of Ithaca (Mythological character)",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Classical Antiquity",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T06:26:49.672Z"
       },
       {
         "title": "The Secret of Chimneys",
