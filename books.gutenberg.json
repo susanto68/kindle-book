@@ -2621,6 +2621,24 @@
     "class": "Gutenberg - Geography",
     "books": [
       {
+        "title": "Home Geography for Primary Grades",
+        "file": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.epub",
+        "cover": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.jpg",
+        "author": "Long, C. C.",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 12228,
+        "subjects": [
+          "Geography -- Outlines, syllabi, etc.",
+          "Category: Children & Young Adult Reading",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T13:47:11.395Z"
+      },
+      {
         "title": "Influences of Geographic Environment: On the Basis of Ratzel's System of Anthropo-Geography",
         "file": "books/Gutenberg/Geography/15293-influences-of-geographic-environment-on-the-basis-of-ratzels-system-of-a.epub",
         "cover": "books/Gutenberg/Geography/15293-influences-of-geographic-environment-on-the-basis-of-ratzels-system-of-a.jpg",
@@ -3078,6 +3096,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T06:07:00.585Z"
+      },
+      {
+        "title": "Celebrated Crimes (Complete)",
+        "file": "books/Gutenberg/History/2760-celebrated-crimes-complete.epub",
+        "cover": "books/Gutenberg/History/2760-celebrated-crimes-complete.jpg",
+        "author": "Dumas, Alexandre",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2760,
+        "subjects": [
+          "Crime",
+          "Criminals -- Biography",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: History - European",
+          "Category: History - Other",
+          "Crime Nonfiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T13:46:29.615Z"
       },
       {
         "title": "Charles Bradlaugh: a Record of His Life and Work, Volume 1 (of 2): With an Account of his Parliamentary Struggle, Politics and Teachings. Seventh Edition",
