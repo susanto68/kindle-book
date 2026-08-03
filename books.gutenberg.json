@@ -2745,6 +2745,27 @@
         "downloadedAt": "2026-08-02T21:58:06.762Z"
       },
       {
+        "title": "The 1993 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/87-the-1993-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/87-the-1993-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 87,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T20:28:23.368Z"
+      },
+      {
         "title": "The 2000 CIA World Factbook",
         "file": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.jpg",
@@ -6274,6 +6295,35 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:20:37.248Z"
+      },
+      {
+        "title": "The Portrait of a Lady — Volume 1",
+        "file": "books/Gutenberg/Motivation/2833-the-portrait-of-a-lady-volume-1.epub",
+        "cover": "books/Gutenberg/Motivation/2833-the-portrait-of-a-lady-volume-1.jpg",
+        "author": "James, Henry",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2833,
+        "subjects": [
+          "Americans -- Italy -- Fiction",
+          "Archer, Isabel (Fictitious character) -- Fiction",
+          "Fathers and daughters -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Italy -- Fiction",
+          "Love stories",
+          "Married women -- Fiction",
+          "Psychological fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Harvard Classics",
+          "Italy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T20:28:54.320Z"
       },
       {
         "title": "The Woman in White",
