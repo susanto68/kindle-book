@@ -2743,6 +2743,27 @@
         "downloadedAt": "2026-08-03T10:51:12.321Z"
       },
       {
+        "title": "The 2001 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27638-the-2001-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27638-the-2001-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27638,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T16:33:38.299Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -3649,6 +3670,33 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-03T02:57:45.397Z"
+      },
+      {
+        "title": "The Riddle of the Sands",
+        "file": "books/Gutenberg/History/2360-the-riddle-of-the-sands.epub",
+        "cover": "books/Gutenberg/History/2360-the-riddle-of-the-sands.jpg",
+        "author": "Childers, Erskine",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2360,
+        "subjects": [
+          "Adventure stories",
+          "Alternative histories (Fiction)",
+          "Frisian Islands -- Fiction",
+          "Great Britain -- History -- Invasions -- Fiction",
+          "Sailing -- Fiction",
+          "Sea stories",
+          "Secret service -- Fiction",
+          "Spy stories",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T16:33:11.736Z"
       },
       {
         "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
