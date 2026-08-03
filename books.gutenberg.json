@@ -2745,6 +2745,27 @@
         "downloadedAt": "2026-05-21T13:19:52.845Z"
       },
       {
+        "title": "The 2008 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/29233-the-2008-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/29233-the-2008-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29233,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T02:58:21.672Z"
+      },
+      {
         "title": "The 2010 CIA World Factbook",
         "file": "books/Gutenberg/Geography/35830-the-2010-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/35830-the-2010-cia-world-factbook.jpg",
@@ -3504,6 +3525,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T21:58:05.232Z"
+      },
+      {
+        "title": "The Memoirs of the Conquistador Bernal Diaz del Castillo, Vol 1 (of 2): Written by Himself Containing a True and Full Account of the Discovery and Conquest of Mexico and New Spain.",
+        "file": "books/Gutenberg/History/32474-the-memoirs-of-the-conquistador-bernal-diaz-del-castillo-vol-1-of-2-writ.epub",
+        "cover": "books/Gutenberg/History/32474-the-memoirs-of-the-conquistador-bernal-diaz-del-castillo-vol-1-of-2-writ.jpg",
+        "author": "Díaz del Castillo, Bernal",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32474,
+        "subjects": [
+          "Mexico -- History -- Conquest, 1519-1540",
+          "Category: Biographies",
+          "Category: History - European",
+          "Category: History - Other",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T02:57:45.397Z"
       },
       {
         "title": "The Roll of Honour, Volume 1 : $b A biographical record of all members of His Majesty's naval  and military forces who have fallen in the war",
