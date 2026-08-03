@@ -2745,6 +2745,27 @@
         "downloadedAt": "2026-08-02T21:58:06.762Z"
       },
       {
+        "title": "The 1992 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/48-the-1992-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/48-the-1992-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 48,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T22:18:31.171Z"
+      },
+      {
         "title": "The 1993 CIA World Factbook",
         "file": "books/Gutenberg/Geography/87-the-1993-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/87-the-1993-cia-world-factbook.jpg",
@@ -6353,6 +6374,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:57.041Z"
+      },
+      {
+        "title": "Three millions! : $b or, The way of the world",
+        "file": "books/Gutenberg/Motivation/76553-three-millions-b-or-the-way-of-the-world.epub",
+        "cover": "books/Gutenberg/Motivation/76553-three-millions-b-or-the-way-of-the-world.jpg",
+        "author": "Optic, Oliver",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76553,
+        "subjects": [
+          "Inheritance and succession -- Juvenile fiction",
+          "Millionaires -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-03T22:18:31.845Z"
       }
     ]
   },
