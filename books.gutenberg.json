@@ -2990,6 +2990,28 @@
         "downloadedAt": "2026-08-01T23:07:24.323Z"
       },
       {
+        "title": "The Itinerary of Benjamin of Tudela",
+        "file": "books/Gutenberg/Geography/14981-the-itinerary-of-benjamin-of-tudela.epub",
+        "cover": "books/Gutenberg/Geography/14981-the-itinerary-of-benjamin-of-tudela.jpg",
+        "author": "Benjamin, of Tudela, active 12th century",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14981,
+        "subjects": [
+          "Benjamin, of Tudela, active 12th century",
+          "Geography, Medieval",
+          "Jews -- Social life and customs -- Early works to 1800",
+          "Voyages and travels",
+          "Category: History - Medieval/Middle Ages",
+          "Category: Religion/Spirituality",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T00:11:08.232Z"
+      },
+      {
         "title": "The Japanese Empire : $b a geographical reader",
         "file": "books/Gutenberg/Geography/79183-the-japanese-empire-b-a-geographical-reader.epub",
         "cover": "books/Gutenberg/Geography/79183-the-japanese-empire-b-a-geographical-reader.jpg",
@@ -6345,6 +6367,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-03T20:28:54.320Z"
+      },
+      {
+        "title": "The trail of deception",
+        "file": "books/Gutenberg/Motivation/77016-the-trail-of-deception.epub",
+        "cover": "books/Gutenberg/Motivation/77016-the-trail-of-deception.jpg",
+        "author": "Tuttle, W. C. (Wilbur C.)",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 77016,
+        "subjects": [
+          "Adventure stories",
+          "Impostors and imposture -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Mystery fiction",
+          "Ranch life -- Fiction",
+          "Western stories",
+          "Wills -- Fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T00:12:06.734Z"
       },
       {
         "title": "The Woman in White",
