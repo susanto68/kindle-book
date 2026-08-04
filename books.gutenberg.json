@@ -2687,6 +2687,25 @@
         "downloadedAt": "2026-08-04T18:39:47.894Z"
       },
       {
+        "title": "Holinshed's Chronicles, vol. 1 of 6, complete: England, geography and early history to 1066",
+        "file": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.epub",
+        "cover": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.jpg",
+        "author": "Holinshed, Raphael, Harrison, William",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44700,
+        "subjects": [
+          "Great Britain -- Geography",
+          "Great Britain -- History -- To 1066",
+          "Category: History - British",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T20:28:03.597Z"
+      },
+      {
         "title": "Home Geography for Primary Grades",
         "file": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.epub",
         "cover": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.jpg",
@@ -6707,6 +6726,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-03T22:18:31.845Z"
+      },
+      {
+        "title": "Tristram of Blent: An Episode in the Story of an Ancient House",
+        "file": "books/Gutenberg/Motivation/20981-tristram-of-blent-an-episode-in-the-story-of-an-ancient-house.epub",
+        "cover": "books/Gutenberg/Motivation/20981-tristram-of-blent-an-episode-in-the-story-of-an-ancient-house.jpg",
+        "author": "Hope, Anthony",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20981,
+        "subjects": [
+          "England -- Social life and customs -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Young men -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T20:28:05.754Z"
       }
     ]
   },
