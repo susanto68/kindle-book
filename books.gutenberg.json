@@ -2810,6 +2810,27 @@
         "downloadedAt": "2026-08-03T20:28:23.368Z"
       },
       {
+        "title": "The 1997 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1662,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T13:11:20.694Z"
+      },
+      {
         "title": "The 2000 CIA World Factbook",
         "file": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.jpg",
@@ -6288,6 +6309,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:56.870Z"
+      },
+      {
+        "title": "Daisy",
+        "file": "books/Gutenberg/Motivation/27949-daisy.epub",
+        "cover": "books/Gutenberg/Motivation/27949-daisy.jpg",
+        "author": "Warner, Susan",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27949,
+        "subjects": [
+          "African Americans -- Juvenile fiction",
+          "Bildungsromans",
+          "Christian life -- Juvenile fiction",
+          "Conduct of life -- Juvenile fiction",
+          "Cousins -- Juvenile fiction",
+          "Governesses -- Juvenile fiction",
+          "Inheritance and succession -- Juvenile fiction",
+          "Plantation life -- Juvenile fiction",
+          "Slavery -- Juvenile fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T13:12:35.509Z"
       },
       {
         "title": "Hamlet",
