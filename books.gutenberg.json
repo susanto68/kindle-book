@@ -3175,6 +3175,26 @@
         "downloadedAt": "2026-08-02T17:07:50.087Z"
       },
       {
+        "title": "The Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation — Volume 09: Asia, Part II",
+        "file": "books/Gutenberg/Geography/10673-the-principal-navigations-voyages-traffiques-and-discoveries-of-the-engl.epub",
+        "cover": "books/Gutenberg/Geography/10673-the-principal-navigations-voyages-traffiques-and-discoveries-of-the-engl.jpg",
+        "author": "Hakluyt, Richard",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10673,
+        "subjects": [
+          "Discoveries in geography -- English",
+          "Voyages and travels",
+          "Category: History - British",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T22:22:57.763Z"
+      },
+      {
         "title": "The Travels of Sir John Mandeville",
         "file": "books/Gutenberg/Geography/782-the-travels-of-sir-john-mandeville.epub",
         "cover": "books/Gutenberg/Geography/782-the-travels-of-sir-john-mandeville.jpg",
@@ -6344,6 +6364,34 @@
   {
     "class": "Gutenberg - Motivation",
     "books": [
+      {
+        "title": "Baseball Joe in the Big League; or, A Young Pitcher's Hardest Struggles",
+        "file": "books/Gutenberg/Motivation/27584-baseball-joe-in-the-big-league-or-a-young-pitchers-hardest-struggles.epub",
+        "cover": "books/Gutenberg/Motivation/27584-baseball-joe-in-the-big-league-or-a-young-pitchers-hardest-struggles.jpg",
+        "author": "Chadwick, Lester",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27584,
+        "subjects": [
+          "Baseball players -- Juvenile fiction",
+          "Baseball stories",
+          "Conduct of life -- Juvenile fiction",
+          "Diligence -- Juvenile fiction",
+          "Kidnapping -- Juvenile fiction",
+          "Rescues -- Juvenile fiction",
+          "St. Louis Cardinals (Baseball team) -- Juvenile fiction",
+          "Success -- Juvenile fiction",
+          "Young men -- Conduct of life -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels",
+          "Category: Sports/Hobbies"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T22:24:22.066Z"
+      },
       {
         "title": "Bleak House",
         "file": "books/Gutenberg/Motivation/1023-bleak-house.epub",
