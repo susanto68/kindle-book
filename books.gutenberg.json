@@ -2892,6 +2892,27 @@
         "downloadedAt": "2026-05-21T13:19:52.845Z"
       },
       {
+        "title": "The 2007 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27348-the-2007-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27348-the-2007-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27348,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T04:24:25.099Z"
+      },
+      {
         "title": "The 2008 CIA World Factbook",
         "file": "books/Gutenberg/Geography/29233-the-2008-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/29233-the-2008-cia-world-factbook.jpg",
@@ -3287,6 +3308,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T18:10:43.751Z"
+      },
+      {
+        "title": "Famous Affinities of History: The Romance of Devotion. Vol 1-4, Complete",
+        "file": "books/Gutenberg/History/4693-famous-affinities-of-history-the-romance-of-devotion-vol-1-4-complete.epub",
+        "cover": "books/Gutenberg/History/4693-famous-affinities-of-history-the-romance-of-devotion-vol-1-4-complete.jpg",
+        "author": "Orr, Lyndon",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4693,
+        "subjects": [
+          "Biography",
+          "Love",
+          "Women -- Biography",
+          "Biographies",
+          "Category: History - Other",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T04:23:41.750Z"
       },
       {
         "title": "Forest Days: A Romance of Old Times",
