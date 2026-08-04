@@ -3016,6 +3016,25 @@
         "downloadedAt": "2026-05-21T13:58:47.196Z"
       },
       {
+        "title": "The Geography of Strabo, Volume 2 (of 3): Literally Translated, with Notes",
+        "file": "books/Gutenberg/Geography/44885-the-geography-of-strabo-volume-2-of-3-literally-translated-with-notes.epub",
+        "cover": "books/Gutenberg/Geography/44885-the-geography-of-strabo-volume-2-of-3-literally-translated-with-notes.jpg",
+        "author": "Strabo",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44885,
+        "subjects": [
+          "Geography -- Early works to 1800",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Ancient",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T10:50:04.573Z"
+      },
+      {
         "title": "The Geography of Strabo, Volume 3 (of 3): Literally Translated, with Notes",
         "file": "books/Gutenberg/Geography/44886-the-geography-of-strabo-volume-3-of-3-literally-translated-with-notes.epub",
         "cover": "books/Gutenberg/Geography/44886-the-geography-of-strabo-volume-3-of-3-literally-translated-with-notes.jpg",
@@ -6454,6 +6473,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-03T20:28:54.320Z"
+      },
+      {
+        "title": "The Scourge of God: A Romance of Religious Persecution",
+        "file": "books/Gutenberg/Motivation/52734-the-scourge-of-god-a-romance-of-religious-persecution.epub",
+        "cover": "books/Gutenberg/Motivation/52734-the-scourge-of-god-a-romance-of-religious-persecution.jpg",
+        "author": "Bloundelle-Burton, John",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52734,
+        "subjects": [
+          "France -- History -- Insurrection of the Camisards, 1702-1710 -- Fiction",
+          "France -- History -- Louis XIV, 1643-1715 -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Persecution -- Fiction",
+          "Religious fiction",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T10:51:43.681Z"
       },
       {
         "title": "The trail of deception",
