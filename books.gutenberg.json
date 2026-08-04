@@ -2667,6 +2667,26 @@
         "downloadedAt": "2026-08-04T07:51:40.653Z"
       },
       {
+        "title": "Early Voyages to Terra Australis, Now Called Australia:: A Collection of Documents, and Extracts from Early Manuscript Maps, Illustrative of the History of Discovery on the Coasts of That Vast Island, from the Beginning of the Sixteenth Century to the Time of Captain Cook.",
+        "file": "books/Gutenberg/Geography/58933-early-voyages-to-terra-australis-now-called-australia-a-collection-of-do.epub",
+        "cover": "books/Gutenberg/Geography/58933-early-voyages-to-terra-australis-now-called-australia-a-collection-of-do.jpg",
+        "author": "Major, Richard Henry",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58933,
+        "subjects": [
+          "Australia -- Discovery and exploration",
+          "Discoveries in geography -- Portuguese",
+          "Voyages and travels",
+          "Category: History - Other",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T18:39:47.894Z"
+      },
+      {
         "title": "Home Geography for Primary Grades",
         "file": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.epub",
         "cover": "books/Gutenberg/Geography/12228-home-geography-for-primary-grades.jpg",
@@ -6610,6 +6630,34 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T00:12:06.734Z"
+      },
+      {
+        "id": "gutenberg-online-3350",
+        "title": "The Wandering Jew — Complete",
+        "file": "https://www.gutenberg.org/ebooks/3350.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/3350/pg3350.cover.medium.jpg",
+        "author": "Sue, Eugène",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/3350",
+        "gutenbergId": 3350,
+        "subjects": [
+          "France -- History -- Louis Philippe, 1830-1848 -- Fiction",
+          "Historical fiction",
+          "Inheritance and succession -- Fiction",
+          "Jesuits -- Fiction",
+          "Wandering Jew -- Fiction",
+          "Category: Adventure",
+          "Category: French Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T18:40:37.371Z",
+        "storageMode": "external-link",
+        "canDownload": false
       },
       {
         "title": "The Woman in White",
