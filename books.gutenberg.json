@@ -2831,6 +2831,27 @@
         "downloadedAt": "2026-08-04T13:11:20.694Z"
       },
       {
+        "title": "The 1998 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/2016-the-1998-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/2016-the-1998-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2016,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T16:21:28.621Z"
+      },
+      {
         "title": "The 2000 CIA World Factbook",
         "file": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/3672-the-2000-cia-world-factbook.jpg",
@@ -6437,6 +6458,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:57.307Z"
+      },
+      {
+        "title": "The Golden Shoemaker: or 'Cobbler' Horn",
+        "file": "books/Gutenberg/Motivation/22124-the-golden-shoemaker-or-cobbler-horn.epub",
+        "cover": "books/Gutenberg/Motivation/22124-the-golden-shoemaker-or-cobbler-horn.jpg",
+        "author": "Keyworth, J. W.",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22124,
+        "subjects": [
+          "Christian life -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Missing children -- Fiction",
+          "Philanthropists -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-04T16:22:30.462Z"
       },
       {
         "title": "The Missing Will",
