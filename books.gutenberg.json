@@ -443,6 +443,26 @@
         "downloadedAt": "2026-05-21T13:20:57.067Z"
       },
       {
+        "title": "Autobiography of a Yogi",
+        "file": "books/Gutenberg/Bhagavad_Gita/7452-autobiography-of-a-yogi.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/7452-autobiography-of-a-yogi.jpg",
+        "author": "Yogananda, Paramahansa",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 7452,
+        "subjects": [
+          "Yogananda, Paramahansa, 1893-1952",
+          "Yogis -- India -- Biography",
+          "Category: Biographies",
+          "Category: Religion/Spirituality",
+          "Hinduism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T00:05:16.130Z"
+      },
+      {
         "title": "Jesus the Christ: A Study of the Messiah and His Mission According to Holy; Scriptures Both Ancient and Modern",
         "file": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.jpg",
@@ -6471,6 +6491,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:57.174Z"
+      },
+      {
+        "title": "How It All Came Round",
+        "file": "books/Gutenberg/Motivation/23653-how-it-all-came-round.epub",
+        "cover": "books/Gutenberg/Motivation/23653-how-it-all-came-round.jpg",
+        "author": "Meade, L. T.",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23653,
+        "subjects": [
+          "England -- Social life and customs -- 19th century -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T00:04:47.672Z"
       },
       {
         "title": "In Jeopardy",
