@@ -571,6 +571,26 @@
         "downloadedAt": "2026-05-21T13:09:57.383Z"
       },
       {
+        "title": "The Consolation of Philosophy",
+        "file": "books/Gutenberg/Bhagavad_Gita/14328-the-consolation-of-philosophy.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/14328-the-consolation-of-philosophy.jpg",
+        "author": "Boethius",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14328,
+        "subjects": [
+          "Happiness",
+          "Philosophy and religion",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T15:27:50.491Z"
+      },
+      {
         "title": "The Egyptian Book of the dead",
         "file": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.jpg",
@@ -6616,6 +6636,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T07:53:00.078Z"
+      },
+      {
+        "title": "Make or Break; or, The Rich Man's Daughter",
+        "file": "books/Gutenberg/Motivation/26695-make-or-break-or-the-rich-mans-daughter.epub",
+        "cover": "books/Gutenberg/Motivation/26695-make-or-break-or-the-rich-mans-daughter.jpg",
+        "author": "Optic, Oliver",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26695,
+        "subjects": [
+          "Adopted children -- Juvenile fiction",
+          "Conduct of life -- Juvenile fiction",
+          "Inheritance and succession -- Juvenile fiction",
+          "Merchants -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T15:26:39.934Z"
       },
       {
         "title": "Seek and Find; or, The Adventures of a Smart Boy",
