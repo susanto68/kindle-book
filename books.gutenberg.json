@@ -443,6 +443,27 @@
         "downloadedAt": "2026-05-21T13:20:57.067Z"
       },
       {
+        "title": "Apologia pro vita sua : $b being a history of his religious opinions",
+        "file": "books/Gutenberg/Bhagavad_Gita/22088-apologia-pro-vita-sua-b-being-a-history-of-his-religious-opinions.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/22088-apologia-pro-vita-sua-b-being-a-history-of-his-religious-opinions.jpg",
+        "author": "Newman, John Henry",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22088,
+        "subjects": [
+          "Cardinals -- England -- Biography",
+          "Catholic Church -- Apologetic works",
+          "Catholic Church -- Doctrines",
+          "Newman, John Henry, Saint, 1801-1890",
+          "Category: Biographies",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T13:08:47.095Z"
+      },
+      {
         "title": "Autobiography of a Yogi",
         "file": "books/Gutenberg/Bhagavad_Gita/7452-autobiography-of-a-yogi.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/7452-autobiography-of-a-yogi.jpg",
@@ -6916,6 +6937,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:57.041Z"
+      },
+      {
+        "title": "The Young Bridge-Tender; or, Ralph Nelson's Upward Struggle",
+        "file": "books/Gutenberg/Motivation/21344-the-young-bridge-tender-or-ralph-nelsons-upward-struggle.epub",
+        "cover": "books/Gutenberg/Motivation/21344-the-young-bridge-tender-or-ralph-nelsons-upward-struggle.jpg",
+        "author": "Stratemeyer, Edward",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21344,
+        "subjects": [
+          "City and town life -- Juvenile fiction",
+          "Conduct of life -- Juvenile fiction",
+          "Inheritance and succession -- Juvenile fiction",
+          "Mothers and sons -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T13:07:26.351Z"
       },
       {
         "title": "Three millions! : $b or, The way of the world",
