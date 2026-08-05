@@ -563,6 +563,25 @@
         "downloadedAt": "2026-05-21T13:59:03.214Z"
       },
       {
+        "title": "Tancred; Or, The New Crusade",
+        "file": "books/Gutenberg/Bhagavad_Gita/20004-tancred-or-the-new-crusade.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/20004-tancred-or-the-new-crusade.jpg",
+        "author": "Disraeli, Benjamin, Earl of Beaconsfield",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20004,
+        "subjects": [
+          "Christianity and other religions -- Judaism -- Fiction",
+          "Judaism -- Relations -- Christianity -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T23:00:46.173Z"
+      },
+      {
         "title": "The Confessions of St. Augustine",
         "file": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.jpg",
@@ -6903,6 +6922,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:20:37.248Z"
+      },
+      {
+        "title": "The Mystics: A Novel",
+        "file": "books/Gutenberg/Motivation/21127-the-mystics-a-novel.epub",
+        "cover": "books/Gutenberg/Motivation/21127-the-mystics-a-novel.jpg",
+        "author": "Thurston, Katherine Cecil",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21127,
+        "subjects": [
+          "Cults -- Fiction",
+          "Impostors and imposture -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Man-woman relationships -- Fiction",
+          "Uncles -- Fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T23:00:45.646Z"
       },
       {
         "title": "The Portrait of a Lady — Volume 1",
