@@ -484,6 +484,27 @@
         "downloadedAt": "2026-05-21T13:59:03.340Z"
       },
       {
+        "title": "Main currents in American thought : $b An interpretation of American literature from the beginnings to 1920",
+        "file": "books/Gutenberg/Bhagavad_Gita/78025-main-currents-in-american-thought-b-an-interpretation-of-american-litera.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/78025-main-currents-in-american-thought-b-an-interpretation-of-american-litera.jpg",
+        "author": "Parrington, Vernon Louis",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78025,
+        "subjects": [
+          "American literature -- History and criticism",
+          "Philosophy, American",
+          "United States -- Civilization",
+          "United States -- Intellectual life",
+          "United States -- Politics and government",
+          "United States -- Religion"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T10:50:39.955Z"
+      },
+      {
         "title": "Roman Stoicism: being lectures on the history of the Stoic philosophy with special reference to its development within the Roman Empire",
         "file": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.jpg",
@@ -6645,6 +6666,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T07:50:35.349Z"
+      },
+      {
+        "title": "The Birthright",
+        "file": "books/Gutenberg/Motivation/27591-the-birthright.epub",
+        "cover": "books/Gutenberg/Motivation/27591-the-birthright.jpg",
+        "author": "Hocking, Joseph",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27591,
+        "subjects": [
+          "Inheritance and succession -- Fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T10:49:35.166Z"
       },
       {
         "title": "The Castle of Otranto",
