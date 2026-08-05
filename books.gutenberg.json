@@ -631,6 +631,25 @@
         "downloadedAt": "2026-05-21T13:59:03.087Z"
       },
       {
+        "title": "The King James Version of the Bible",
+        "file": "books/Gutenberg/Bhagavad_Gita/10-the-king-james-version-of-the-bible.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/10-the-king-james-version-of-the-bible.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10,
+        "subjects": [
+          "Bible",
+          "Banned Books List from the American Library Association",
+          "Category: Classics of Literature",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T19:38:51.251Z"
+      },
+      {
         "title": "The lesser Key of Solomon, Goetia, the book of evil spirits : $b contains two hundred diagrams and seals for invocation and convocation of spirits, necromancy, witchcraft and black art",
         "file": "books/Gutenberg/Bhagavad_Gita/72679-the-lesser-key-of-solomon-goetia-the-book-of-evil-spirits-b-contains-two.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/72679-the-lesser-key-of-solomon-goetia-the-book-of-evil-spirits-b-contains-two.jpg",
@@ -6937,6 +6956,35 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T10:51:43.681Z"
+      },
+      {
+        "title": "The Telegraph Messenger Boy; Or, The Straight Road to Success",
+        "file": "books/Gutenberg/Motivation/25859-the-telegraph-messenger-boy-or-the-straight-road-to-success.epub",
+        "cover": "books/Gutenberg/Motivation/25859-the-telegraph-messenger-boy-or-the-straight-road-to-success.jpg",
+        "author": "Ellis, Edward Sylvester",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25859,
+        "subjects": [
+          "Adventure stories",
+          "Children -- Conduct of life -- Juvenile fiction",
+          "Conduct of life -- Juvenile fiction",
+          "Courage -- Juvenile fiction",
+          "Diligence -- Juvenile fiction",
+          "Mothers and sons -- Juvenile fiction",
+          "Poverty -- Juvenile fiction",
+          "Success -- Juvenile fiction",
+          "Telegraph -- Employees -- Juvenile fiction",
+          "Youth -- Conduct of life -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T19:38:50.668Z"
       },
       {
         "title": "The trail of deception",
