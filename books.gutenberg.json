@@ -649,6 +649,28 @@
         "downloadedAt": "2026-05-21T13:59:02.957Z"
       },
       {
+        "title": "The Story of Genesis and Exodus: An Early English Song, about 1250 A.D.",
+        "file": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50685,
+        "subjects": [
+          "Bible. Exodus -- History of Biblical events -- Poetry",
+          "Bible. Genesis -- History of Biblical events -- Poetry",
+          "Christian poetry, English (Middle)",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T17:54:42.326Z"
+      },
+      {
         "title": "The Works of Mr. George Gillespie (Vol. 1 of 2)",
         "file": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.jpg",
@@ -6873,6 +6895,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-03T20:28:54.320Z"
+      },
+      {
+        "title": "The Science of Getting Rich",
+        "file": "books/Gutenberg/Motivation/59844-the-science-of-getting-rich.epub",
+        "cover": "books/Gutenberg/Motivation/59844-the-science-of-getting-rich.jpg",
+        "author": "Wattles, W. D. (Wallace Delois)",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59844,
+        "subjects": [
+          "New Thought",
+          "Success",
+          "Wealth",
+          "Category: Business/Management",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T17:53:48.618Z"
       },
       {
         "title": "The Scourge of God: A Romance of Religious Persecution",
