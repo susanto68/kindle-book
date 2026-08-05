@@ -529,6 +529,26 @@
         "downloadedAt": "2026-05-21T13:09:57.383Z"
       },
       {
+        "title": "The Egyptian Book of the dead",
+        "file": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69566,
+        "subjects": [
+          "Future life",
+          "Incantations, Egyptian",
+          "Category: History - Ancient",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T04:23:14.551Z"
+      },
+      {
         "title": "The Great Controversy Between Christ and Satan",
         "file": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.jpg",
@@ -6532,6 +6552,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T07:53:00.078Z"
+      },
+      {
+        "title": "Seek and Find; or, The Adventures of a Smart Boy",
+        "file": "books/Gutenberg/Motivation/27666-seek-and-find-or-the-adventures-of-a-smart-boy.epub",
+        "cover": "books/Gutenberg/Motivation/27666-seek-and-find-or-the-adventures-of-a-smart-boy.jpg",
+        "author": "Optic, Oliver",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27666,
+        "subjects": [
+          "Children -- Conduct of life -- Fiction",
+          "Conduct of life -- Juvenile fiction",
+          "Inheritance and succession -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T04:22:09.500Z"
       },
       {
         "title": "Sense and Sensibility",
