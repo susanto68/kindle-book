@@ -3870,6 +3870,28 @@
         "downloadedAt": "2026-08-03T10:50:12.819Z"
       },
       {
+        "title": "The Germany and the Agricola of Tacitus",
+        "file": "books/Gutenberg/History/7524-the-germany-and-the-agricola-of-tacitus.epub",
+        "cover": "books/Gutenberg/History/7524-the-germany-and-the-agricola-of-tacitus.jpg",
+        "author": "Tacitus, Cornelius",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 7524,
+        "subjects": [
+          "Agricola, Gnaeus Julius, 40-93",
+          "Germanic peoples -- Early works to 1800",
+          "Statesmen -- Rome -- Biography -- Early works to 1800",
+          "Category: Biographies",
+          "Category: History - Ancient",
+          "Classical Antiquity",
+          "Germany"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T07:47:39.285Z"
+      },
+      {
         "title": "The Hero of the People: A Historical Romance of Love, Liberty and Loyalty",
         "file": "books/Gutenberg/History/42681-the-hero-of-the-people-a-historical-romance-of-love-liberty-and-loyalty.epub",
         "cover": "books/Gutenberg/History/42681-the-hero-of-the-people-a-historical-romance-of-love-liberty-and-loyalty.jpg",
@@ -6604,6 +6626,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:09:53.798Z"
+      },
+      {
+        "title": "The art of money getting : $b or, golden rules for making money",
+        "file": "books/Gutenberg/Motivation/8581-the-art-of-money-getting-b-or-golden-rules-for-making-money.epub",
+        "cover": "books/Gutenberg/Motivation/8581-the-art-of-money-getting-b-or-golden-rules-for-making-money.jpg",
+        "author": "Barnum, P. T. (Phineas Taylor)",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8581,
+        "subjects": [
+          "Success",
+          "Success in business",
+          "Category: Business/Management",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-05T07:50:35.349Z"
       },
       {
         "title": "The Castle of Otranto",
