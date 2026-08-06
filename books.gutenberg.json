@@ -2966,6 +2966,27 @@
         "downloadedAt": "2026-05-21T13:58:45.619Z"
       },
       {
+        "title": "Man and Nature; Or, Physical Geography as Modified by Human Action",
+        "file": "books/Gutenberg/Geography/37957-man-and-nature-or-physical-geography-as-modified-by-human-action.epub",
+        "cover": "books/Gutenberg/Geography/37957-man-and-nature-or-physical-geography-as-modified-by-human-action.jpg",
+        "author": "Marsh, George P. (George Perkins)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37957,
+        "subjects": [
+          "Conservation of natural resources",
+          "Human geography",
+          "Nature -- Effect of human beings on",
+          "Physical geography",
+          "Category: Environmental Issues",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T07:51:54.987Z"
+      },
+      {
         "title": "Mexico and Central America : $b a geographical reader",
         "file": "books/Gutenberg/Geography/79021-mexico-and-central-america-b-a-geographical-reader.epub",
         "cover": "books/Gutenberg/Geography/79021-mexico-and-central-america-b-a-geographical-reader.jpg",
@@ -4125,6 +4146,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T18:07:49.346Z"
+      },
+      {
+        "title": "The Knights of the Cross, or, Krzyzacy: Historical Romance",
+        "file": "books/Gutenberg/History/9473-the-knights-of-the-cross-or-krzyzacy-historical-romance.epub",
+        "cover": "books/Gutenberg/History/9473-the-knights-of-the-cross-or-krzyzacy-historical-romance.jpg",
+        "author": "Sienkiewicz, Henryk",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 9473,
+        "subjects": [
+          "Poland -- History -- Jagellons, 1386-1572 -- Fiction",
+          "Teutonic Knights -- History -- Fiction",
+          "Category: Adventure",
+          "Category: Historical Novels",
+          "Category: Romance",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T07:50:46.483Z"
       },
       {
         "title": "The Life of Florence Nightingale, vol. 2 of 2",
