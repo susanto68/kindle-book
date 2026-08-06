@@ -602,6 +602,35 @@
         "downloadedAt": "2026-08-05T23:00:46.173Z"
       },
       {
+        "title": "The Choctaw Freedmen and the Story of Oak Hill Industrial Academy",
+        "file": "books/Gutenberg/Bhagavad_Gita/23321-the-choctaw-freedmen-and-the-story-of-oak-hill-industrial-academy.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/23321-the-choctaw-freedmen-and-the-story-of-oak-hill-industrial-academy.jpg",
+        "author": "Flickinger, Robert Elliott",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23321,
+        "subjects": [
+          "African Americans -- Education -- Oklahoma -- History",
+          "African Americans -- Oklahoma -- History",
+          "Alice Lee Elliott Memorial School -- History",
+          "Five Civilized Tribes -- History",
+          "Freed persons -- Oklahoma -- History",
+          "Presbyterian Church in the U.S.A. Board of Missions for Freedmen -- History",
+          "Religion in the public schools -- United States -- History",
+          "Valliant (Okla.) -- Biography",
+          "Valliant (Okla.) -- Church history",
+          "Valliant (Okla.) -- History",
+          "Category: History - American",
+          "Category: History - Religious",
+          "Category: History - Schools & Universities",
+          "Native America"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T13:12:09.813Z"
+      },
+      {
         "title": "The Confessions of St. Augustine",
         "file": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/3296-the-confessions-of-st-augustine.jpg",
@@ -7407,6 +7436,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.804Z"
+      },
+      {
+        "title": "Ecce Homo: Complete Works, Volume Seventeen",
+        "file": "books/Gutenberg/Philosophy/52190-ecce-homo-complete-works-volume-seventeen.epub",
+        "cover": "books/Gutenberg/Philosophy/52190-ecce-homo-complete-works-volume-seventeen.jpg",
+        "author": "Nietzsche, Friedrich Wilhelm",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 52190,
+        "subjects": [
+          "Nietzsche, Friedrich Wilhelm, 1844-1900",
+          "Philosophers -- Germany -- Biography",
+          "Category: Biographies",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T13:13:14.566Z"
       },
       {
         "title": "Meditations",
