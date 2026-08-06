@@ -4326,6 +4326,28 @@
         "downloadedAt": "2026-08-02T17:06:58.101Z"
       },
       {
+        "title": "The Travels of Marco Polo — Volume 1",
+        "file": "books/Gutenberg/History/10636-the-travels-of-marco-polo-volume-1.epub",
+        "cover": "books/Gutenberg/History/10636-the-travels-of-marco-polo-volume-1.jpg",
+        "author": "Polo, Marco, Rusticiano, da Pisa",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10636,
+        "subjects": [
+          "Asia -- Description and travel -- Early works to 1800",
+          "Mongols -- History",
+          "Polo, Marco, 1254-1323?",
+          "Voyages and travels",
+          "Category: Adventure",
+          "Category: History - Medieval/Middle Ages",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T10:48:00.604Z"
+      },
+      {
         "title": "The Waterloo Roll Call: With Biographical Notes and Anecdotes",
         "file": "books/Gutenberg/History/51143-the-waterloo-roll-call-with-biographical-notes-and-anecdotes.epub",
         "cover": "books/Gutenberg/History/51143-the-waterloo-roll-call-with-biographical-notes-and-anecdotes.jpg",
@@ -6837,6 +6859,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T15:26:39.934Z"
+      },
+      {
+        "title": "Our Mutual Friend",
+        "file": "books/Gutenberg/Motivation/883-our-mutual-friend.epub",
+        "cover": "books/Gutenberg/Motivation/883-our-mutual-friend.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 883,
+        "subjects": [
+          "Deception -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "London (England) -- Fiction",
+          "Love stories",
+          "Poor families -- Fiction",
+          "Satire",
+          "Social classes -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T10:50:27.537Z"
       },
       {
         "title": "Seek and Find; or, The Adventures of a Smart Boy",
