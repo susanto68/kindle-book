@@ -523,6 +523,26 @@
         "downloadedAt": "2026-05-21T13:59:03.340Z"
       },
       {
+        "title": "Life of St. Francis of Assisi",
+        "file": "books/Gutenberg/Bhagavad_Gita/18787-life-of-st-francis-of-assisi.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/18787-life-of-st-francis-of-assisi.jpg",
+        "author": "Sabatier, Paul",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18787,
+        "subjects": [
+          "Christian saints -- Biography",
+          "Francis, of Assisi, Saint, 1182-1226",
+          "Category: Biographies",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T00:12:51.949Z"
+      },
+      {
         "title": "Main currents in American thought : $b An interpretation of American literature from the beginnings to 1920",
         "file": "books/Gutenberg/Bhagavad_Gita/78025-main-currents-in-american-thought-b-an-interpretation-of-american-litera.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/78025-main-currents-in-american-thought-b-an-interpretation-of-american-litera.jpg",
@@ -6566,6 +6586,25 @@
   {
     "class": "Gutenberg - Motivation",
     "books": [
+      {
+        "title": "A Cousin's Conspiracy; Or, A Boy's Struggle for an Inheritance",
+        "file": "books/Gutenberg/Motivation/26630-a-cousins-conspiracy-or-a-boys-struggle-for-an-inheritance.epub",
+        "cover": "books/Gutenberg/Motivation/26630-a-cousins-conspiracy-or-a-boys-struggle-for-an-inheritance.jpg",
+        "author": "Alger, Horatio, Jr.",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26630,
+        "subjects": [
+          "Inheritance and succession -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T00:12:16.420Z"
+      },
       {
         "title": "Baseball Joe in the Big League; or, A Young Pitcher's Hardest Struggles",
         "file": "books/Gutenberg/Motivation/27584-baseball-joe-in-the-big-league-or-a-young-pitchers-hardest-struggles.epub",
