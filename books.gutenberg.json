@@ -776,6 +776,28 @@
         "downloadedAt": "2026-08-05T17:54:42.326Z"
       },
       {
+        "title": "The Tribes and Castes of the Central Provinces of India, Volume 2",
+        "file": "books/Gutenberg/Bhagavad_Gita/22010-the-tribes-and-castes-of-the-central-provinces-of-india-volume-2.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/22010-the-tribes-and-castes-of-the-central-provinces-of-india-volume-2.jpg",
+        "author": "Russell, R. V. (Robert Vane)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22010,
+        "subjects": [
+          "Caste -- India -- Madhya Pradesh",
+          "Ethnology -- India -- Madhya Pradesh",
+          "Madhya Pradesh (India) -- Religion",
+          "Madhya Pradesh (India) -- Scheduled tribes",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Other",
+          "India"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T15:35:51.292Z"
+      },
+      {
         "title": "The Will to Believe, and Other Essays in Popular Philosophy",
         "file": "books/Gutenberg/Bhagavad_Gita/26659-the-will-to-believe-and-other-essays-in-popular-philosophy.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26659-the-will-to-believe-and-other-essays-in-popular-philosophy.jpg",
@@ -7417,6 +7439,27 @@
   {
     "class": "Gutenberg - Philosophy",
     "books": [
+      {
+        "title": "A Pickle for the Knowing Ones",
+        "file": "books/Gutenberg/Philosophy/43453-a-pickle-for-the-knowing-ones.epub",
+        "cover": "books/Gutenberg/Philosophy/43453-a-pickle-for-the-knowing-ones.jpg",
+        "author": "Dexter, Timothy",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43453,
+        "subjects": [
+          "Dexter, Timothy, 1747-1806",
+          "Newburyport (Mass.) -- Biography",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: Humour",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T15:37:05.854Z"
+      },
       {
         "title": "Beyond Good and Evil",
         "file": "books/Gutenberg/Philosophy/4363-beyond-good-and-evil.epub",
