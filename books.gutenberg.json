@@ -747,6 +747,27 @@
         "downloadedAt": "2026-08-05T17:54:42.326Z"
       },
       {
+        "title": "The Will to Believe, and Other Essays in Popular Philosophy",
+        "file": "books/Gutenberg/Bhagavad_Gita/26659-the-will-to-believe-and-other-essays-in-popular-philosophy.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26659-the-will-to-believe-and-other-essays-in-popular-philosophy.jpg",
+        "author": "James, William",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26659,
+        "subjects": [
+          "Belief and doubt",
+          "Essays",
+          "Philosophy",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T04:25:23.135Z"
+      },
+      {
         "title": "The Works of Mr. George Gillespie (Vol. 1 of 2)",
         "file": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26849-the-works-of-mr-george-gillespie-vol-1-of-2.jpg",
@@ -6886,6 +6907,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:57.307Z"
+      },
+      {
+        "title": "The game of life and how to play it",
+        "file": "books/Gutenberg/Motivation/74878-the-game-of-life-and-how-to-play-it.epub",
+        "cover": "books/Gutenberg/Motivation/74878-the-game-of-life-and-how-to-play-it.jpg",
+        "author": "Shinn, Florence Scovel",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74878,
+        "subjects": [
+          "Conduct of life",
+          "New Thought",
+          "Spirituality",
+          "Success -- Psychological aspects",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-06T04:24:28.571Z"
       },
       {
         "title": "The Golden Shoemaker: or 'Cobbler' Horn",
