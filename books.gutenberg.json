@@ -8003,6 +8003,26 @@
         "downloadedAt": "2026-07-31T15:27:34.148Z"
       },
       {
+        "title": "Experiments and Considerations Touching Colours (1664)",
+        "file": "books/Gutenberg/Physics/14504-experiments-and-considerations-touching-colours-1664.epub",
+        "cover": "books/Gutenberg/Physics/14504-experiments-and-considerations-touching-colours-1664.jpg",
+        "author": "Boyle, Robert",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14504,
+        "subjects": [
+          "Color -- Early works to 1800",
+          "Colors -- Early works to 1800",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T07:20:26.534Z"
+      },
+      {
         "title": "Experiments with Alternate Currents of High Potential and High Frequency: A Lecture Delivered before the Institution of Electrical Engineers, London",
         "file": "books/Gutenberg/Physics/13476-experiments-with-alternate-currents-of-high-potential-and-high-frequency.epub",
         "cover": "books/Gutenberg/Physics/13476-experiments-with-alternate-currents-of-high-potential-and-high-frequency.jpg",
@@ -8675,6 +8695,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-22T13:34:34.737Z"
+      },
+      {
+        "title": "A Journey into the Interior of the Earth",
+        "file": "books/Gutenberg/Science/3748-a-journey-into-the-interior-of-the-earth.epub",
+        "cover": "books/Gutenberg/Science/3748-a-journey-into-the-interior-of-the-earth.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3748,
+        "subjects": [
+          "Adventure stories",
+          "Earth (Planet) -- Core -- Fiction",
+          "Science fiction",
+          "Voyages, Imaginary -- Fiction",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: French Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T07:18:49.145Z"
       },
       {
         "title": "A Journey to the Centre of the Earth",
