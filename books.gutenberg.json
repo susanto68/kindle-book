@@ -666,6 +666,29 @@
         "downloadedAt": "2026-08-07T14:59:05.417Z"
       },
       {
+        "title": "Paradise Lost",
+        "file": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.jpg",
+        "author": "Milton, John",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26,
+        "subjects": [
+          "Adam (Biblical figure) -- Poetry",
+          "Bible. Genesis -- History of Biblical events -- Poetry",
+          "Eve (Biblical figure) -- Poetry",
+          "Fall of man -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T19:08:05.914Z"
+      },
+      {
         "title": "Pascal's Pensées",
         "file": "books/Gutenberg/Bhagavad_Gita/18269-pascals-pensees.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/18269-pascals-pensees.jpg",
@@ -7932,6 +7955,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T16:59:58.116Z"
+      },
+      {
+        "title": "The Enchiridion",
+        "file": "books/Gutenberg/Philosophy/45109-the-enchiridion.epub",
+        "cover": "books/Gutenberg/Philosophy/45109-the-enchiridion.jpg",
+        "author": "Epictetus",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45109,
+        "subjects": [
+          "Conduct of life -- Early works to 1800",
+          "Ethics, Ancient",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T19:08:29.347Z"
       },
       {
         "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
