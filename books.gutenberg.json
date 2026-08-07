@@ -648,6 +648,24 @@
         "downloadedAt": "2026-08-05T10:50:39.955Z"
       },
       {
+        "title": "My Daily Meditation for the Circling Year",
+        "file": "books/Gutenberg/Bhagavad_Gita/23241-my-daily-meditation-for-the-circling-year.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/23241-my-daily-meditation-for-the-circling-year.jpg",
+        "author": "Jowett, John Henry",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23241,
+        "subjects": [
+          "Calendars",
+          "Devotional exercises",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T14:59:05.417Z"
+      },
+      {
         "title": "Roman Stoicism: being lectures on the history of the Stoic philosophy with special reference to its development within the Roman Empire",
         "file": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.jpg",
@@ -7730,6 +7748,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.157Z"
+      },
+      {
+        "title": "Phaedo",
+        "file": "books/Gutenberg/Philosophy/1658-phaedo.epub",
+        "cover": "books/Gutenberg/Philosophy/1658-phaedo.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1658,
+        "subjects": [
+          "Classical literature",
+          "Immortality (Philosophy) -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T14:59:05.933Z"
       },
       {
         "title": "Phaedrus",
