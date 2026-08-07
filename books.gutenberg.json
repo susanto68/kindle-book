@@ -898,6 +898,23 @@
         "downloadedAt": "2026-08-07T00:11:35.674Z"
       },
       {
+        "title": "The Ordinance of Covenanting",
+        "file": "books/Gutenberg/Bhagavad_Gita/25353-the-ordinance-of-covenanting.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/25353-the-ordinance-of-covenanting.jpg",
+        "author": "Cunningham, John",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25353,
+        "subjects": [
+          "Covenant theology",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T16:59:56.151Z"
+      },
+      {
         "title": "The Parables of Our Lord",
         "file": "books/Gutenberg/Bhagavad_Gita/21328-the-parables-of-our-lord.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/21328-the-parables-of-our-lord.jpg",
@@ -7872,6 +7889,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T10:14:05.566Z"
+      },
+      {
+        "title": "The Confessions of Jean Jacques Rousseau — Complete",
+        "file": "books/Gutenberg/Philosophy/3913-the-confessions-of-jean-jacques-rousseau-complete.epub",
+        "cover": "books/Gutenberg/Philosophy/3913-the-confessions-of-jean-jacques-rousseau-complete.jpg",
+        "author": "Rousseau, Jean-Jacques",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3913,
+        "subjects": [
+          "Authors, French -- 18th century -- Biography",
+          "Rousseau, Jean-Jacques, 1712-1778",
+          "Category: Biographies",
+          "Category: French Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T16:59:58.116Z"
       },
       {
         "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
