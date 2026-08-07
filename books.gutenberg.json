@@ -915,6 +915,26 @@
         "downloadedAt": "2026-08-07T05:41:29.195Z"
       },
       {
+        "title": "The Religious Experience of the Roman People: From the Earliest Times to the Age of Augustus",
+        "file": "books/Gutenberg/Bhagavad_Gita/23349-the-religious-experience-of-the-roman-people-from-the-earliest-times-to-.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/23349-the-religious-experience-of-the-roman-people-from-the-earliest-times-to-.jpg",
+        "author": "Fowler, W. Warde (William Warde)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23349,
+        "subjects": [
+          "Cults -- Rome",
+          "Rome -- Religion",
+          "Category: History - Ancient",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T16:05:42.668Z"
+      },
+      {
         "title": "The Story of Genesis and Exodus: An Early English Song, about 1250 A.D.",
         "file": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.jpg",
@@ -7748,6 +7768,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.157Z"
+      },
+      {
+        "title": "On the Nature of Things",
+        "file": "books/Gutenberg/Philosophy/785-on-the-nature-of-things.epub",
+        "cover": "books/Gutenberg/Philosophy/785-on-the-nature-of-things.jpg",
+        "author": "Lucretius Carus, Titus",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 785,
+        "subjects": [
+          "Didactic poetry, Latin -- Translations into English",
+          "Philosophy, Ancient -- Poetry",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T16:06:42.121Z"
       },
       {
         "title": "Phaedo",
