@@ -686,6 +686,29 @@
         "downloadedAt": "2026-08-05T23:00:46.173Z"
       },
       {
+        "title": "The Chautauqua Girls At Home",
+        "file": "books/Gutenberg/Bhagavad_Gita/26742-the-chautauqua-girls-at-home.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26742-the-chautauqua-girls-at-home.jpg",
+        "author": "Pansy",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26742,
+        "subjects": [
+          "Christian life -- Fiction",
+          "Conduct of life -- Fiction",
+          "Physicians -- Fiction",
+          "Sisters -- Fiction",
+          "Soldiers -- Fiction",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T13:08:03.019Z"
+      },
+      {
         "title": "The Choctaw Freedmen and the Story of Oak Hill Industrial Academy",
         "file": "books/Gutenberg/Bhagavad_Gita/23321-the-choctaw-freedmen-and-the-story-of-oak-hill-industrial-academy.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/23321-the-choctaw-freedmen-and-the-story-of-oak-hill-industrial-academy.jpg",
@@ -7603,6 +7626,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-06T15:37:05.854Z"
+      },
+      {
+        "title": "Apology",
+        "file": "books/Gutenberg/Philosophy/1656-apology.epub",
+        "cover": "books/Gutenberg/Philosophy/1656-apology.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1656,
+        "subjects": [
+          "Classical literature",
+          "Philosophy, Ancient",
+          "Socrates, 470 BC-399 BC",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T13:08:23.475Z"
       },
       {
         "title": "Beyond Good and Evil",
