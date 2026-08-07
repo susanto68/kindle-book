@@ -422,6 +422,29 @@
     "class": "Gutenberg - Bhagavad Gita & Spiritual Wisdom",
     "books": [
       {
+        "title": "A Critical Exposition of the Popular 'Jihád': Showing that all the Wars of Mohammad Were Defensive; and; that Aggressive War, or Compulsory Conversion, is not; Allowed in The Koran - 1885",
+        "file": "books/Gutenberg/Bhagavad_Gita/20927-a-critical-exposition-of-the-popular-jihad-showing-that-all-the-wars-of-.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/20927-a-critical-exposition-of-the-popular-jihad-showing-that-all-the-wars-of-.jpg",
+        "author": "Cherágh Ali",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20927,
+        "subjects": [
+          "Islam -- Apologetic works",
+          "Islam -- Relations",
+          "Jihad",
+          "War -- Religious aspects -- Islam",
+          "Category: History - Ancient",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality",
+          "Islam"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T03:59:59.945Z"
+      },
+      {
         "title": "A History of Magic and Experimental Science, Volume 1 (of 2): During the First Thirteen Centuries of Our Era",
         "file": "books/Gutenberg/Bhagavad_Gita/67792-a-history-of-magic-and-experimental-science-volume-1-of-2-during-the-fir.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/67792-a-history-of-magic-and-experimental-science-volume-1-of-2-during-the-fir.jpg",
@@ -7582,6 +7605,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.673Z"
+      },
+      {
+        "title": "The Lives and Opinions of Eminent Philosophers",
+        "file": "books/Gutenberg/Philosophy/57342-the-lives-and-opinions-of-eminent-philosophers.epub",
+        "cover": "books/Gutenberg/Philosophy/57342-the-lives-and-opinions-of-eminent-philosophers.jpg",
+        "author": "Diogenes Laertius",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57342,
+        "subjects": [
+          "Philosophers, Ancient -- Biography",
+          "Philosophy, Ancient",
+          "Category: Biographies",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T04:00:49.233Z"
       },
       {
         "title": "The origin and development of the moral ideas",
