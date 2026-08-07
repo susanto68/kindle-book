@@ -527,6 +527,25 @@
         "downloadedAt": "2026-08-05T00:05:16.130Z"
       },
       {
+        "title": "Esoteric Christianity, or The Lesser Mysteries",
+        "file": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.jpg",
+        "author": "Besant, Annie",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26938,
+        "subjects": [
+          "Christianity -- Miscellanea",
+          "Mysticism",
+          "Theosophy",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T10:13:03.940Z"
+      },
+      {
         "title": "Expositions of Holy Scripture: Second Corinthians, Galatians, and Philippians Chapters; I to End. Colossians, Thessalonians, and First Timothy.",
         "file": "books/Gutenberg/Bhagavad_Gita/21190-expositions-of-holy-scripture-second-corinthians-galatians-and-philippia.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/21190-expositions-of-holy-scripture-second-corinthians-galatians-and-philippia.jpg",
@@ -7664,6 +7683,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T00:12:16.857Z"
+      },
+      {
+        "title": "Symposium",
+        "file": "books/Gutenberg/Philosophy/1600-symposium.epub",
+        "cover": "books/Gutenberg/Philosophy/1600-symposium.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1600,
+        "subjects": [
+          "Classical literature",
+          "Love -- Early works to 1800",
+          "Philosophy, Ancient",
+          "Socrates, 470 BC-399 BC",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T10:14:05.566Z"
       },
       {
         "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
