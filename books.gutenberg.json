@@ -3207,6 +3207,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:21:27.512Z"
+      },
+      {
+        "title": "The World as Will and Idea (Vol. 1 of 3)",
+        "file": "books/Gutenberg/General_Knowledge/38427-the-world-as-will-and-idea-vol-1-of-3.epub",
+        "cover": "books/Gutenberg/General_Knowledge/38427-the-world-as-will-and-idea-vol-1-of-3.jpg",
+        "author": "Schopenhauer, Arthur",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38427,
+        "subjects": [
+          "Idea (Philosophy)",
+          "Knowledge, Theory of",
+          "Philosophy",
+          "Will",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T23:35:20.998Z"
       }
     ]
   },
@@ -7908,6 +7928,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-06T13:13:14.566Z"
+      },
+      {
+        "title": "Humanism and America : $b Essays on the outlook of modern civilisation",
+        "file": "books/Gutenberg/Philosophy/78119-humanism-and-america-b-essays-on-the-outlook-of-modern-civilisation.epub",
+        "cover": "books/Gutenberg/Philosophy/78119-humanism-and-america-b-essays-on-the-outlook-of-modern-civilisation.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78119,
+        "subjects": [
+          "Humanism",
+          "Literature -- Philosophy",
+          "Philosophy, Modern",
+          "United States -- Civilization -- 20th century"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T23:35:19.382Z"
       },
       {
         "title": "Meditations",
