@@ -3027,6 +3027,27 @@
     "class": "Gutenberg - General Knowledge",
     "books": [
       {
+        "title": "A System of Logic, Ratiocinative and Inductive",
+        "file": "books/Gutenberg/General_Knowledge/27942-a-system-of-logic-ratiocinative-and-inductive.epub",
+        "cover": "books/Gutenberg/General_Knowledge/27942-a-system-of-logic-ratiocinative-and-inductive.jpg",
+        "author": "Mill, John Stuart",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27942,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Logic",
+          "Science -- Methodology",
+          "Banned Books from Anne Haight's list",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T21:43:47.480Z"
+      },
+      {
         "title": "A System of Logic, Ratiocinative and Inductive (Vol. 1 of 2)",
         "file": "books/Gutenberg/General_Knowledge/26495-a-system-of-logic-ratiocinative-and-inductive-vol-1-of-2.epub",
         "cover": "books/Gutenberg/General_Knowledge/26495-a-system-of-logic-ratiocinative-and-inductive-vol-1-of-2.jpg",
@@ -7992,6 +8013,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T10:14:05.566Z"
+      },
+      {
+        "title": "The Birth of Tragedy; or, Hellenism and Pessimism",
+        "file": "books/Gutenberg/Philosophy/51356-the-birth-of-tragedy-or-hellenism-and-pessimism.epub",
+        "cover": "books/Gutenberg/Philosophy/51356-the-birth-of-tragedy-or-hellenism-and-pessimism.jpg",
+        "author": "Nietzsche, Friedrich Wilhelm",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51356,
+        "subjects": [
+          "Aesthetics",
+          "Greek drama (Tragedy) -- History and criticism -- Theory, etc.",
+          "Music -- Philosophy and aesthetics",
+          "Mythology, Greek, in literature",
+          "Tragedy",
+          "Tragic, The",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T21:43:30.580Z"
       },
       {
         "title": "The Confessions of Jean Jacques Rousseau — Complete",
