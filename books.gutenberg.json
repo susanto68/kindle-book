@@ -3068,6 +3068,24 @@
         "downloadedAt": "2026-05-21T13:59:21.041Z"
       },
       {
+        "title": "A Treatise of Human Nature",
+        "file": "books/Gutenberg/General_Knowledge/4705-a-treatise-of-human-nature.epub",
+        "cover": "books/Gutenberg/General_Knowledge/4705-a-treatise-of-human-nature.jpg",
+        "author": "Hume, David",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4705,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T22:37:00.377Z"
+      },
+      {
         "title": "An Enquiry Concerning Human Understanding",
         "file": "books/Gutenberg/General_Knowledge/9662-an-enquiry-concerning-human-understanding.epub",
         "cover": "books/Gutenberg/General_Knowledge/9662-an-enquiry-concerning-human-understanding.jpg",
@@ -7808,6 +7826,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T13:08:23.475Z"
+      },
+      {
+        "title": "Bacon's Essays, and Wisdom of the Ancients",
+        "file": "books/Gutenberg/Philosophy/56463-bacons-essays-and-wisdom-of-the-ancients.epub",
+        "cover": "books/Gutenberg/Philosophy/56463-bacons-essays-and-wisdom-of-the-ancients.jpg",
+        "author": "Bacon, Francis",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 56463,
+        "subjects": [
+          "Bacon, Francis, 1561-1626",
+          "English essays -- Early modern, 1500-1700",
+          "Mythology, Classical",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T22:36:59.748Z"
       },
       {
         "title": "Beyond Good and Evil",
