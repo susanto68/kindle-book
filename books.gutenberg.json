@@ -564,6 +564,28 @@
         "downloadedAt": "2026-08-05T21:25:29.621Z"
       },
       {
+        "title": "India, Its Life and Thought",
+        "file": "books/Gutenberg/Bhagavad_Gita/28117-india-its-life-and-thought.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/28117-india-its-life-and-thought.jpg",
+        "author": "Jones, John P. (John Peter)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28117,
+        "subjects": [
+          "India -- Civilization",
+          "India -- Religion",
+          "Missions -- India",
+          "Category: History - Modern (1750+)",
+          "Category: Politics",
+          "Category: Religion/Spirituality",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T11:53:05.164Z"
+      },
+      {
         "title": "Jesus the Christ: A Study of the Messiah and His Mission According to Holy; Scriptures Both Ancient and Modern",
         "file": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.jpg",
@@ -7663,6 +7685,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.157Z"
+      },
+      {
+        "title": "Phaedrus",
+        "file": "books/Gutenberg/Philosophy/1636-phaedrus.epub",
+        "cover": "books/Gutenberg/Philosophy/1636-phaedrus.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1636,
+        "subjects": [
+          "Classical literature",
+          "Love -- Early works to 1800",
+          "Lysias",
+          "Rhetoric -- Early works to 1800",
+          "Rhetoric, Ancient",
+          "Socrates, 470 BC-399 BC",
+          "Soul -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T11:53:06.334Z"
       },
       {
         "title": "Selected Works of Voltairine de Cleyre",
