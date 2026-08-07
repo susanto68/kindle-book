@@ -796,6 +796,23 @@
         "downloadedAt": "2026-08-07T00:11:35.674Z"
       },
       {
+        "title": "The Parables of Our Lord",
+        "file": "books/Gutenberg/Bhagavad_Gita/21328-the-parables-of-our-lord.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/21328-the-parables-of-our-lord.jpg",
+        "author": "Arnot, William",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21328,
+        "subjects": [
+          "Jesus Christ -- Parables",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T05:41:29.195Z"
+      },
+      {
         "title": "The Story of Genesis and Exodus: An Early English Song, about 1250 A.D.",
         "file": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.jpg",
@@ -7521,6 +7538,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.804Z"
+      },
+      {
+        "title": "Chaucer's Works, Volume 2 — Boethius and Troilus",
+        "file": "books/Gutenberg/Philosophy/44833-chaucers-works-volume-2-boethius-and-troilus.epub",
+        "cover": "books/Gutenberg/Philosophy/44833-chaucers-works-volume-2-boethius-and-troilus.jpg",
+        "author": "Chaucer, Geoffrey",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44833,
+        "subjects": [
+          "English poetry -- Middle English, 1100-1500",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Category: Poetry",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T05:41:30.413Z"
       },
       {
         "title": "Ecce Homo: Complete Works, Volume Seventeen",
