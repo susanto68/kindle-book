@@ -754,6 +754,25 @@
         "downloadedAt": "2026-05-21T13:59:02.957Z"
       },
       {
+        "title": "The Life of Trust: Being a Narrative of the Lord's Dealings With George Müller",
+        "file": "books/Gutenberg/Bhagavad_Gita/27288-the-life-of-trust-being-a-narrative-of-the-lords-dealings-with-george-mu.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/27288-the-life-of-trust-being-a-narrative-of-the-lords-dealings-with-george-mu.jpg",
+        "author": "Müller, George",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27288,
+        "subjects": [
+          "Orphanages -- Great Britain",
+          "Prayer",
+          "Category: Biographies",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T00:11:35.674Z"
+      },
+      {
         "title": "The Story of Genesis and Exodus: An Early English Song, about 1250 A.D.",
         "file": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/50685-the-story-of-genesis-and-exodus-an-early-english-song-about-1250-ad.jpg",
@@ -7520,6 +7539,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.157Z"
+      },
+      {
+        "title": "Selected Works of Voltairine de Cleyre",
+        "file": "books/Gutenberg/Philosophy/43098-selected-works-of-voltairine-de-cleyre.epub",
+        "cover": "books/Gutenberg/Philosophy/43098-selected-works-of-voltairine-de-cleyre.jpg",
+        "author": "De Cleyre, Voltairine",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43098,
+        "subjects": [
+          "Anarchism -- Literary collections",
+          "Feminism -- Literary collections",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T00:12:16.857Z"
       },
       {
         "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
