@@ -666,6 +666,29 @@
         "downloadedAt": "2026-08-07T14:59:05.417Z"
       },
       {
+        "title": "Pascal's Pensées",
+        "file": "books/Gutenberg/Bhagavad_Gita/18269-pascals-pensees.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/18269-pascals-pensees.jpg",
+        "author": "Pascal, Blaise",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18269,
+        "subjects": [
+          "Apologetics -- Early works to 1800",
+          "Catholic Church -- Apologetic works -- Early works to 1800",
+          "Catholic Church -- Doctrines -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T17:54:21.528Z"
+      },
+      {
         "title": "Roman Stoicism: being lectures on the history of the Stoic philosophy with special reference to its development within the Roman Empire",
         "file": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.jpg",
@@ -8022,6 +8045,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:09.367Z"
+      },
+      {
+        "title": "Utopia",
+        "file": "books/Gutenberg/Philosophy/2130-utopia.epub",
+        "cover": "books/Gutenberg/Philosophy/2130-utopia.jpg",
+        "author": "More, Thomas, Saint",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2130,
+        "subjects": [
+          "Utopias -- Early works to 1800",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Harvard Classics",
+          "Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T17:54:22.515Z"
       },
       {
         "title": "Walden, and On The Duty Of Civil Disobedience",
