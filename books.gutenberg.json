@@ -868,6 +868,24 @@
         "downloadedAt": "2026-08-05T04:23:14.551Z"
       },
       {
+        "title": "The Faith of Our Fathers",
+        "file": "books/Gutenberg/Bhagavad_Gita/27435-the-faith-of-our-fathers.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/27435-the-faith-of-our-fathers.jpg",
+        "author": "Gibbons, James",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27435,
+        "subjects": [
+          "Catholic Church -- Controversial literature",
+          "Catholic Church -- Doctrines",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T19:55:13.636Z"
+      },
+      {
         "title": "The Great Controversy Between Christ and Satan",
         "file": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.jpg",
@@ -7894,6 +7912,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T11:53:06.334Z"
+      },
+      {
+        "title": "Plutarch's Morals",
+        "file": "books/Gutenberg/Philosophy/23639-plutarchs-morals.epub",
+        "cover": "books/Gutenberg/Philosophy/23639-plutarchs-morals.jpg",
+        "author": "Plutarch",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23639,
+        "subjects": [
+          "Ethics -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-07T19:55:14.575Z"
       },
       {
         "title": "Selected Works of Voltairine de Cleyre",
