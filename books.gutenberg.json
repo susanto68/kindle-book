@@ -2534,6 +2534,24 @@
         "downloadedAt": "2026-05-21T13:59:30.667Z"
       },
       {
+        "title": "Aesop's Fables; a new translation",
+        "file": "books/Gutenberg/Children_Books/11339-aesops-fables-a-new-translation.epub",
+        "cover": "books/Gutenberg/Children_Books/11339-aesops-fables-a-new-translation.jpg",
+        "author": "Aesop",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 11339,
+        "subjects": [
+          "Fables, Greek -- Translations into English",
+          "Category: Children & Young Adult Reading",
+          "Category: Mythology, Legends & Folklore"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T16:35:39.896Z"
+      },
+      {
         "title": "Alice's Adventures in Wonderland",
         "file": "books/Gutenberg/Children_Books/11-alices-adventures-in-wonderland.epub",
         "cover": "books/Gutenberg/Children_Books/11-alices-adventures-in-wonderland.jpg",
@@ -3281,6 +3299,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:21.041Z"
+      },
+      {
+        "title": "A Treatise Concerning the Principles of Human Knowledge",
+        "file": "books/Gutenberg/General_Knowledge/4723-a-treatise-concerning-the-principles-of-human-knowledge.epub",
+        "cover": "books/Gutenberg/General_Knowledge/4723-a-treatise-concerning-the-principles-of-human-knowledge.jpg",
+        "author": "Berkeley, George",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4723,
+        "subjects": [
+          "Idealism",
+          "Knowledge, Theory of",
+          "Soul",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T16:35:01.029Z"
       },
       {
         "title": "A Treatise of Human Nature",
