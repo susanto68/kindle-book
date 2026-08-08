@@ -3167,6 +3167,30 @@
         "downloadedAt": "2026-05-21T13:59:21.771Z"
       },
       {
+        "title": "The Advancement of Learning",
+        "file": "books/Gutenberg/General_Knowledge/5500-the-advancement-of-learning.epub",
+        "cover": "books/Gutenberg/General_Knowledge/5500-the-advancement-of-learning.jpg",
+        "author": "Bacon, Francis",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5500,
+        "subjects": [
+          "Knowledge, Theory of -- Early works to 1800",
+          "Learning -- Philosophy -- Early works to 1800",
+          "Logic -- Early works to 1800",
+          "Science -- Methodology -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Philosophy & Ethics",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T06:55:53.369Z"
+      },
+      {
         "title": "The Critique of Pure Reason",
         "file": "books/Gutenberg/General_Knowledge/4280-the-critique-of-pure-reason.epub",
         "cover": "books/Gutenberg/General_Knowledge/4280-the-critique-of-pure-reason.jpg",
@@ -8393,6 +8417,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T01:44:49.147Z"
+      },
+      {
+        "title": "Thoughts of Marcus Aurelius Antoninus",
+        "file": "books/Gutenberg/Philosophy/15877-thoughts-of-marcus-aurelius-antoninus.epub",
+        "cover": "books/Gutenberg/Philosophy/15877-thoughts-of-marcus-aurelius-antoninus.jpg",
+        "author": "Marcus Aurelius, Emperor of Rome",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15877,
+        "subjects": [
+          "Ethics",
+          "Life",
+          "Marcus Aurelius, Emperor of Rome, 121-180",
+          "Stoics",
+          "Category: Biographies",
+          "Category: Classics of Literature",
+          "Category: History - Ancient",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T06:55:02.258Z"
       },
       {
         "title": "Thus Spake Zarathustra: A Book for All and None",
