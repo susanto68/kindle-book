@@ -2790,6 +2790,29 @@
         "downloadedAt": "2026-08-08T11:30:58.465Z"
       },
       {
+        "title": "The Rover Boys on the Farm; or, Last Days at Putnam Hall",
+        "file": "books/Gutenberg/Children_Books/22163-the-rover-boys-on-the-farm-or-last-days-at-putnam-hall.epub",
+        "cover": "books/Gutenberg/Children_Books/22163-the-rover-boys-on-the-farm-or-last-days-at-putnam-hall.jpg",
+        "author": "Stratemeyer, Edward",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22163,
+        "subjects": [
+          "Brothers -- Juvenile fiction",
+          "Military education -- Juvenile fiction",
+          "Schools -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Category: Crime, Thrillers and Mystery",
+          "Children's Book Series",
+          "School Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T15:32:58.129Z"
+      },
+      {
         "title": "The Tale of Peter Rabbit",
         "file": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.epub",
         "cover": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.jpg",
@@ -3334,6 +3357,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T11:30:34.035Z"
+      },
+      {
+        "title": "Charmides",
+        "file": "books/Gutenberg/General_Knowledge/1580-charmides.epub",
+        "cover": "books/Gutenberg/General_Knowledge/1580-charmides.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1580,
+        "subjects": [
+          "Classical literature",
+          "Ethics -- Early works to 1800",
+          "Knowledge, Theory of -- Early works to 1800",
+          "Socrates, 470 BC-399 BC",
+          "Temperance -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T15:32:56.858Z"
       },
       {
         "title": "Dante and the early astronomers",
