@@ -2601,6 +2601,31 @@
         "downloadedAt": "2026-08-08T19:31:20.742Z"
       },
       {
+        "title": "Black Beauty : $b The autobiography of a horse",
+        "file": "books/Gutenberg/Children_Books/271-black-beauty-b-the-autobiography-of-a-horse.epub",
+        "cover": "books/Gutenberg/Children_Books/271-black-beauty-b-the-autobiography-of-a-horse.jpg",
+        "author": "Sewell, Anna",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 271,
+        "subjects": [
+          "Great Britain -- History -- 19th century -- Juvenile fiction",
+          "Historical fiction",
+          "Horses -- Juvenile fiction",
+          "Human-animal relationships -- Juvenile fiction",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T20:33:45.130Z"
+      },
+      {
         "title": "Grimms' Fairy Tales",
         "file": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.epub",
         "cover": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.jpg",
@@ -3408,6 +3433,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T22:37:00.377Z"
+      },
+      {
+        "title": "Academica",
+        "file": "books/Gutenberg/General_Knowledge/14970-academica.epub",
+        "cover": "books/Gutenberg/General_Knowledge/14970-academica.jpg",
+        "author": "Cicero, Marcus Tullius",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14970,
+        "subjects": [
+          "Knowledge, Theory of -- Early works to 1800",
+          "Philosophy -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T20:33:43.932Z"
       },
       {
         "title": "An Enquiry Concerning Human Understanding",
