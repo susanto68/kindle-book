@@ -3227,6 +3227,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T23:35:20.998Z"
+      },
+      {
+        "title": "Theaetetus",
+        "file": "books/Gutenberg/General_Knowledge/1726-theaetetus.epub",
+        "cover": "books/Gutenberg/General_Knowledge/1726-theaetetus.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1726,
+        "subjects": [
+          "Classical literature",
+          "Knowledge, Theory of -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T01:45:22.613Z"
       }
     ]
   },
@@ -8270,6 +8290,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:21:01.213Z"
+      },
+      {
+        "title": "The Republic of Plato",
+        "file": "books/Gutenberg/Philosophy/55201-the-republic-of-plato.epub",
+        "cover": "books/Gutenberg/Philosophy/55201-the-republic-of-plato.jpg",
+        "author": "Plato",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55201,
+        "subjects": [
+          "Justice -- Early works to 1800",
+          "Political science -- Early works to 1800",
+          "Utopias -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T01:44:49.147Z"
       },
       {
         "title": "Thus Spake Zarathustra: A Book for All and None",
