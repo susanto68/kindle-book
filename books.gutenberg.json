@@ -2690,6 +2690,32 @@
         "downloadedAt": "2026-05-21T13:59:31.084Z"
       },
       {
+        "title": "The Camp Fire Girls Solve a Mystery; Or, The Christmas Adventure at Carver House",
+        "file": "books/Gutenberg/Children_Books/38983-the-camp-fire-girls-solve-a-mystery-or-the-christmas-adventure-at-carver.epub",
+        "cover": "books/Gutenberg/Children_Books/38983-the-camp-fire-girls-solve-a-mystery-or-the-christmas-adventure-at-carver.jpg",
+        "author": "Frey, Hildegard G.",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38983,
+        "subjects": [
+          "Camp Fire Girls -- Juvenile fiction",
+          "Clubs -- Juvenile fiction",
+          "Family -- Juvenile fiction",
+          "Mystery and detective stories",
+          "Prudence -- Juvenile fiction",
+          "Thoughtfulness -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Christmas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T12:55:35.096Z"
+      },
+      {
         "title": "The Home Book of Verse — Volume 2",
         "file": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.epub",
         "cover": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.jpg",
@@ -3388,6 +3414,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:19.645Z"
+      },
+      {
+        "title": "The plant-lore & garden-craft of Shakespeare",
+        "file": "books/Gutenberg/General_Knowledge/28407-the-plant-lore-garden-craft-of-shakespeare.epub",
+        "cover": "books/Gutenberg/General_Knowledge/28407-the-plant-lore-garden-craft-of-shakespeare.jpg",
+        "author": "Ellacombe, Henry Nicholson",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28407,
+        "subjects": [
+          "Gardens in literature",
+          "Plants in literature",
+          "Shakespeare, William, 1564-1616 -- Knowledge -- Botany",
+          "Category: British Literature",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T12:55:34.674Z"
       },
       {
         "title": "The Problems of Philosophy",
