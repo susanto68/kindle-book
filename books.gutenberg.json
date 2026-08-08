@@ -2727,6 +2727,27 @@
         "downloadedAt": "2026-08-08T09:41:15.338Z"
       },
       {
+        "title": "The Adventures of Pinocchio",
+        "file": "books/Gutenberg/Children_Books/500-the-adventures-of-pinocchio.epub",
+        "cover": "books/Gutenberg/Children_Books/500-the-adventures-of-pinocchio.jpg",
+        "author": "Collodi, Carlo",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 500,
+        "subjects": [
+          "Fairy tales",
+          "Pinocchio (Fictitious character) -- Juvenile fiction",
+          "Puppets -- Juvenile fiction",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T21:31:58.316Z"
+      },
+      {
         "title": "The Adventures of Tom Sawyer, Complete",
         "file": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.epub",
         "cover": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.jpg",
@@ -3575,6 +3596,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T09:41:14.475Z"
+      },
+      {
+        "title": "First Principles",
+        "file": "books/Gutenberg/General_Knowledge/55046-first-principles.epub",
+        "cover": "books/Gutenberg/General_Knowledge/55046-first-principles.jpg",
+        "author": "Spencer, Herbert",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55046,
+        "subjects": [
+          "Evolution",
+          "Knowledge, Theory of",
+          "Philosophy and religion",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T21:31:40.257Z"
       },
       {
         "title": "Illustrations of Shakspeare, and of Ancient Manners:: with Dissertations on the Clowns and Fools of Shakspeare; on a Collection of Popular Tales Entitled Gesta Romanorum; and on the English Morris dance.",
