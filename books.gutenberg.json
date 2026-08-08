@@ -2831,6 +2831,30 @@
         "downloadedAt": "2026-08-08T15:32:58.129Z"
       },
       {
+        "title": "The Secret Garden",
+        "file": "books/Gutenberg/Children_Books/113-the-secret-garden.epub",
+        "cover": "books/Gutenberg/Children_Books/113-the-secret-garden.jpg",
+        "author": "Burnett, Frances Hodgson",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 113,
+        "subjects": [
+          "Gardens -- Juvenile fiction",
+          "Orphans -- Juvenile fiction",
+          "People with disabilities -- Juvenile fiction",
+          "Yorkshire (England) -- Juvenile fiction",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T17:39:56.459Z"
+      },
+      {
         "title": "The Tale of Peter Rabbit",
         "file": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.epub",
         "cover": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.jpg",
@@ -3554,6 +3578,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T08:42:47.734Z"
+      },
+      {
+        "title": "The Concept of Nature: The Tarner Lectures Delivered in Trinity College, November 1919",
+        "file": "books/Gutenberg/General_Knowledge/18835-the-concept-of-nature-the-tarner-lectures-delivered-in-trinity-college-n.epub",
+        "cover": "books/Gutenberg/General_Knowledge/18835-the-concept-of-nature-the-tarner-lectures-delivered-in-trinity-college-n.jpg",
+        "author": "Whitehead, Alfred North",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18835,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Nature",
+          "Science -- Philosophy",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T17:39:55.467Z"
       },
       {
         "title": "The Critique of Pure Reason",
