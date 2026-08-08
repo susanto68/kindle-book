@@ -3523,6 +3523,27 @@
         "downloadedAt": "2026-08-03T20:28:23.368Z"
       },
       {
+        "title": "The 1995 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/571-the-1995-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/571-the-1995-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 571,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T05:48:17.489Z"
+      },
+      {
         "title": "The 1997 CIA World Factbook",
         "file": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.jpg",
@@ -4569,6 +4590,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-31T21:07:40.288Z"
+      },
+      {
+        "title": "The Interesting Narrative of the Life of Olaudah Equiano, Or Gustavus Vassa, The African: Written By Himself",
+        "file": "books/Gutenberg/History/15399-the-interesting-narrative-of-the-life-of-olaudah-equiano-or-gustavus-vas.epub",
+        "cover": "books/Gutenberg/History/15399-the-interesting-narrative-of-the-life-of-olaudah-equiano-or-gustavus-vas.jpg",
+        "author": "Equiano, Olaudah",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15399,
+        "subjects": [
+          "Enslaved persons -- Great Britain -- Biography",
+          "Enslaved persons -- United States -- Biography",
+          "Equiano, Olaudah, 1745-1797",
+          "Africa",
+          "Category: Biographies",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T05:48:16.875Z"
       },
       {
         "title": "The Jungle Book",
