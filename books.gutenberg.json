@@ -2736,6 +2736,35 @@
         "downloadedAt": "2026-08-08T08:44:19.445Z"
       },
       {
+        "title": "The Prince and the Pauper",
+        "file": "books/Gutenberg/Children_Books/1837-the-prince-and-the-pauper.epub",
+        "cover": "books/Gutenberg/Children_Books/1837-the-prince-and-the-pauper.jpg",
+        "author": "Twain, Mark",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1837,
+        "subjects": [
+          "Boys -- Fiction",
+          "Edward VI, King of England, 1537-1553 -- Fiction",
+          "Historical fiction",
+          "Impostors and imposture -- Fiction",
+          "London (England) -- Fiction",
+          "Lookalikes -- Fiction",
+          "Poor children -- Fiction",
+          "Princes -- Fiction",
+          "Social classes -- Fiction",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Historical Novels",
+          "Historical Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T13:47:16.107Z"
+      },
+      {
         "title": "The Railway Children",
         "file": "books/Gutenberg/Children_Books/1874-the-railway-children.epub",
         "cover": "books/Gutenberg/Children_Books/1874-the-railway-children.jpg",
@@ -3414,6 +3443,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:19.645Z"
+      },
+      {
+        "title": "The Officer's Manual: Napoleon's Maxims of War",
+        "file": "books/Gutenberg/General_Knowledge/50750-the-officers-manual-napoleons-maxims-of-war.epub",
+        "cover": "books/Gutenberg/General_Knowledge/50750-the-officers-manual-napoleons-maxims-of-war.jpg",
+        "author": "Napoleon I, Emperor of the French",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50750,
+        "subjects": [
+          "Military art and science",
+          "Military art and science -- Quotations, maxims, etc.",
+          "Napoleon I, Emperor of the French, 1769-1821 -- Knowledge -- Military art and science",
+          "Napoleon I, Emperor of the French, 1769-1821 -- Quotations",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T13:46:56.640Z"
       },
       {
         "title": "The plant-lore & garden-craft of Shakespeare",
