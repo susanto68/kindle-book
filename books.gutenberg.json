@@ -2094,6 +2094,25 @@
         "downloadedAt": "2026-07-29T18:09:35.359Z"
       },
       {
+        "title": "Occult Chemistry: Clairvoyant Observations on the Chemical Elements",
+        "file": "books/Gutenberg/Chemistry/16058-occult-chemistry-clairvoyant-observations-on-the-chemical-elements.epub",
+        "cover": "books/Gutenberg/Chemistry/16058-occult-chemistry-clairvoyant-observations-on-the-chemical-elements.jpg",
+        "author": "Besant, Annie, Leadbeater, C. W. (Charles Webster)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16058,
+        "subjects": [
+          "Chemical elements",
+          "Occultism",
+          "Category: Religion/Spirituality",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T07:54:07.736Z"
+      },
+      {
         "title": "Of Natural and Supernatural Things: Also of the first Tincture, Root, and Spirit of Metals and Minerals, how the same are Conceived, Generated, Brought forth, Changed, and Augmented.",
         "file": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.epub",
         "cover": "books/Gutenberg/Chemistry/26340-of-natural-and-supernatural-things-also-of-the-first-tincture-root-and-s.jpg",
@@ -8016,6 +8035,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T05:41:30.413Z"
+      },
+      {
+        "title": "Cicero's Tusculan Disputations: Also, Treatises On The Nature Of The Gods, And On The Commonwealth",
+        "file": "books/Gutenberg/Philosophy/14988-ciceros-tusculan-disputations-also-treatises-on-the-nature-of-the-gods-a.epub",
+        "cover": "books/Gutenberg/Philosophy/14988-ciceros-tusculan-disputations-also-treatises-on-the-nature-of-the-gods-a.jpg",
+        "author": "Cicero, Marcus Tullius",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14988,
+        "subjects": [
+          "Gods, Roman -- Early works to 1800",
+          "Happiness -- Early works to 1800",
+          "Political science -- Early works to 1800",
+          "Rome -- Politics and government -- 265-30 B.C.",
+          "State, The -- Early works to 1800",
+          "Theology -- Early works to 1800",
+          "Category: Classics of Literature",
+          "Category: Philosophy & Ethics",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T07:55:28.934Z"
       },
       {
         "title": "Ecce Homo: Complete Works, Volume Seventeen",
