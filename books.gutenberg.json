@@ -2576,6 +2576,31 @@
         "downloadedAt": "2026-05-21T13:10:26.730Z"
       },
       {
+        "title": "Andersen's Fairy Tales",
+        "file": "books/Gutenberg/Children_Books/1597-andersens-fairy-tales.epub",
+        "cover": "books/Gutenberg/Children_Books/1597-andersens-fairy-tales.jpg",
+        "author": "Andersen, H. C. (Hans Christian)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1597,
+        "subjects": [
+          "Children's stories, Danish -- Translations into English",
+          "Fairy tales",
+          "Fairy tales -- Denmark",
+          "Best Books Ever Listings",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Short Stories",
+          "Children's Myths, Fairy Tales, etc.",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T19:31:20.742Z"
+      },
+      {
         "title": "Grimms' Fairy Tales",
         "file": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.epub",
         "cover": "books/Gutenberg/Children_Books/2591-grimms-fairy-tales.jpg",
@@ -3572,6 +3597,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:21.771Z"
+      },
+      {
+        "title": "Philosophical Works, v. 1 (of 4): Including All the Essays, and Exhibiting the More Important Alterations and Corrections in the Successive Editions Published by the Author",
+        "file": "books/Gutenberg/General_Knowledge/53791-philosophical-works-v-1-of-4-including-all-the-essays-and-exhibiting-the.epub",
+        "cover": "books/Gutenberg/General_Knowledge/53791-philosophical-works-v-1-of-4-including-all-the-essays-and-exhibiting-the.jpg",
+        "author": "Hume, David",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53791,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Philosophy, English -- 18th century",
+          "Category: Biographies",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T19:31:19.635Z"
       },
       {
         "title": "The Advancement of Learning",
