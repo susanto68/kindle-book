@@ -2606,6 +2606,32 @@
         "downloadedAt": "2026-05-21T13:21:45.003Z"
       },
       {
+        "title": "Personal Memoirs of U. S. Grant, Complete",
+        "file": "books/Gutenberg/Children_Books/4367-personal-memoirs-of-u-s-grant-complete.epub",
+        "cover": "books/Gutenberg/Children_Books/4367-personal-memoirs-of-u-s-grant-complete.jpg",
+        "author": "Grant, Ulysses S. (Ulysses Simpson)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4367,
+        "subjects": [
+          "Generals -- United States -- Biography",
+          "Grant, Ulysses S. (Ulysses Simpson), 1822-1885",
+          "Mexican War, 1846-1848 -- Personal narratives",
+          "Presidents -- United States -- Biography",
+          "United States -- History -- Civil War, 1861-1865 -- Campaigns",
+          "United States. Army -- Biography",
+          "Category: Biographies",
+          "Category: History - American",
+          "Category: History - Warfare",
+          "Children's History",
+          "US Civil War"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T10:39:21.638Z"
+      },
+      {
         "title": "Peter Pan : $b [Peter and Wendy]",
         "file": "books/Gutenberg/Children_Books/16-peter-pan-b-peter-and-wendy.epub",
         "cover": "books/Gutenberg/Children_Books/16-peter-pan-b-peter-and-wendy.jpg",
@@ -3359,6 +3385,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T23:35:20.998Z"
+      },
+      {
+        "title": "The World as Will and Idea (Vol. 2 of 3)",
+        "file": "books/Gutenberg/General_Knowledge/40097-the-world-as-will-and-idea-vol-2-of-3.epub",
+        "cover": "books/Gutenberg/General_Knowledge/40097-the-world-as-will-and-idea-vol-2-of-3.jpg",
+        "author": "Schopenhauer, Arthur",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40097,
+        "subjects": [
+          "Idea (Philosophy)",
+          "Knowledge, Theory of",
+          "Philosophy",
+          "Will",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T10:39:21.141Z"
       },
       {
         "title": "The World as Will and Idea (Vol. 3 of 3)",
