@@ -2790,6 +2790,26 @@
         "downloadedAt": "2026-08-08T11:30:58.465Z"
       },
       {
+        "title": "The Tale of Peter Rabbit",
+        "file": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.epub",
+        "cover": "books/Gutenberg/Children_Books/14838-the-tale-of-peter-rabbit.jpg",
+        "author": "Potter, Beatrix",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14838,
+        "subjects": [
+          "Rabbits -- Juvenile fiction",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Children's Picture Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T14:33:13.646Z"
+      },
+      {
         "title": "The Two Magics: The Turn of the Screw, Covering End",
         "file": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.epub",
         "cover": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.jpg",
@@ -3356,6 +3376,35 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T09:41:14.475Z"
+      },
+      {
+        "title": "Illustrations of Shakspeare, and of Ancient Manners:: with Dissertations on the Clowns and Fools of Shakspeare; on a Collection of Popular Tales Entitled Gesta Romanorum; and on the English Morris dance.",
+        "file": "books/Gutenberg/General_Knowledge/50228-illustrations-of-shakspeare-and-of-ancient-manners-with-dissertations-on.epub",
+        "cover": "books/Gutenberg/General_Knowledge/50228-illustrations-of-shakspeare-and-of-ancient-manners-with-dissertations-on.jpg",
+        "author": "Douce, Francis",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50228,
+        "subjects": [
+          "Clowns -- England -- History -- 16th century",
+          "Clowns in literature",
+          "Exempla in literature",
+          "Fools and jesters -- England -- History -- 16th century",
+          "Fools and jesters in literature",
+          "Gesta Romanorum",
+          "Manners and customs in literature",
+          "Morris dance",
+          "Shakespeare, William, 1564-1616 -- Characters -- Clowns",
+          "Shakespeare, William, 1564-1616 -- Characters -- Fools",
+          "Shakespeare, William, 1564-1616 -- Criticism and interpretation",
+          "Shakespeare, William, 1564-1616 -- Knowledge -- Manners and customs",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T14:33:11.901Z"
       },
       {
         "title": "Our Knowledge of the External World as a Field for Scientific Method in Philosophy",
