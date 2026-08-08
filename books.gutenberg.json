@@ -2754,6 +2754,28 @@
         "downloadedAt": "2026-08-08T08:44:19.445Z"
       },
       {
+        "title": "The Legend of Sleepy Hollow",
+        "file": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.epub",
+        "cover": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.jpg",
+        "author": "Irving, Washington",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41,
+        "subjects": [
+          "Ghosts -- Fiction",
+          "New York (State) -- History -- 1775-1865 -- Fiction",
+          "Category: American Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Short Stories",
+          "Children's Literature",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T18:39:41.755Z"
+      },
+      {
         "title": "The Prince and the Pauper",
         "file": "books/Gutenberg/Children_Books/1837-the-prince-and-the-pauper.epub",
         "cover": "books/Gutenberg/Children_Books/1837-the-prince-and-the-pauper.jpg",
@@ -3512,6 +3534,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T14:33:11.901Z"
+      },
+      {
+        "title": "Kant's Theory of Knowledge",
+        "file": "books/Gutenberg/General_Knowledge/32701-kants-theory-of-knowledge.epub",
+        "cover": "books/Gutenberg/General_Knowledge/32701-kants-theory-of-knowledge.jpg",
+        "author": "Prichard, H. A. (Harold Arthur)",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32701,
+        "subjects": [
+          "Kant, Immanuel, 1724-1804",
+          "Knowledge, Theory of",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T18:39:20.515Z"
       },
       {
         "title": "Our Knowledge of the External World as a Field for Scientific Method in Philosophy",
