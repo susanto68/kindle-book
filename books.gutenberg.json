@@ -2606,6 +2606,33 @@
         "downloadedAt": "2026-05-21T13:21:45.003Z"
       },
       {
+        "title": "Peter Pan : $b [Peter and Wendy]",
+        "file": "books/Gutenberg/Children_Books/16-peter-pan-b-peter-and-wendy.epub",
+        "cover": "books/Gutenberg/Children_Books/16-peter-pan-b-peter-and-wendy.jpg",
+        "author": "Barrie, J. M. (James Matthew)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16,
+        "subjects": [
+          "Fairies -- Fiction",
+          "Fantasy literature",
+          "Never-Never Land (Imaginary place) -- Fiction",
+          "Peter Pan (Fictitious character) -- Fiction",
+          "Pirates -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T09:41:15.338Z"
+      },
+      {
         "title": "The Adventures of Tom Sawyer, Complete",
         "file": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.epub",
         "cover": "books/Gutenberg/Children_Books/74-the-adventures-of-tom-sawyer-complete.jpg",
@@ -3184,6 +3211,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:21.639Z"
+      },
+      {
+        "title": "Essays Towards a Theory of Knowledge",
+        "file": "books/Gutenberg/General_Knowledge/23422-essays-towards-a-theory-of-knowledge.epub",
+        "cover": "books/Gutenberg/General_Knowledge/23422-essays-towards-a-theory-of-knowledge.jpg",
+        "author": "Philip, Alexander",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23422,
+        "subjects": [
+          "Cycles",
+          "Force and energy",
+          "Knowledge, Theory of",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T09:41:14.475Z"
       },
       {
         "title": "Our Knowledge of the External World as a Field for Scientific Method in Philosophy",
