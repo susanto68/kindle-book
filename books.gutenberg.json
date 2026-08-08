@@ -2710,6 +2710,31 @@
         "downloadedAt": "2026-08-08T08:44:19.445Z"
       },
       {
+        "title": "The Railway Children",
+        "file": "books/Gutenberg/Children_Books/1874-the-railway-children.epub",
+        "cover": "books/Gutenberg/Children_Books/1874-the-railway-children.jpg",
+        "author": "Nesbit, E. (Edith)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1874,
+        "subjects": [
+          "Country life -- England -- Fiction",
+          "England -- Fiction",
+          "Family life -- Fiction",
+          "Railroads -- Fiction",
+          "Siblings -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Children's Fiction",
+          "Children's Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T11:30:58.465Z"
+      },
+      {
         "title": "The Two Magics: The Turn of the Screw, Covering End",
         "file": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.epub",
         "cover": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.jpg",
@@ -3215,6 +3240,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:21.212Z"
+      },
+      {
+        "title": "An Essay Concerning Humane Understanding, Volume 2: MDCXC, Based on the 2nd Edition, Books 3 and 4",
+        "file": "books/Gutenberg/General_Knowledge/10616-an-essay-concerning-humane-understanding-volume-2-mdcxc-based-on-the-2nd.epub",
+        "cover": "books/Gutenberg/General_Knowledge/10616-an-essay-concerning-humane-understanding-volume-2-mdcxc-based-on-the-2nd.jpg",
+        "author": "Locke, John",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10616,
+        "subjects": [
+          "Knowledge, Theory of -- Early works to 1800",
+          "Banned Books from Anne Haight's list",
+          "Category: Language & Communication",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T11:30:34.035Z"
       },
       {
         "title": "Dante and the early astronomers",
