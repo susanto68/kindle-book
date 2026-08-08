@@ -2601,6 +2601,37 @@
         "downloadedAt": "2026-08-08T19:31:20.742Z"
       },
       {
+        "title": "Baron Trump's Marvellous Underground Journey",
+        "file": "books/Gutenberg/Children_Books/57426-baron-trumps-marvellous-underground-journey.epub",
+        "cover": "books/Gutenberg/Children_Books/57426-baron-trumps-marvellous-underground-journey.jpg",
+        "author": "Lockwood, Ingersoll",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57426,
+        "subjects": [
+          "Adventure stories",
+          "Conduct of life -- Juvenile fiction",
+          "Courtship -- Juvenile fiction",
+          "Dogs -- Juvenile fiction",
+          "Fantasy fiction",
+          "Kings and rulers -- Juvenile fiction",
+          "Queens -- Juvenile fiction",
+          "Voyages and travels -- Juvenile fiction",
+          "Voyages, Imaginary -- Juvenile fiction",
+          "Wit and humor, Juvenile",
+          "Youth -- Conduct of life -- Juvenile fiction",
+          "Youth and death -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T23:38:27.653Z"
+      },
+      {
         "title": "Black Beauty : $b The autobiography of a horse",
         "file": "books/Gutenberg/Children_Books/271-black-beauty-b-the-autobiography-of-a-horse.epub",
         "cover": "books/Gutenberg/Children_Books/271-black-beauty-b-the-autobiography-of-a-horse.jpg",
@@ -3711,6 +3742,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T18:39:20.515Z"
+      },
+      {
+        "title": "Mr. Bennett and Mrs. Brown",
+        "file": "books/Gutenberg/General_Knowledge/63022-mr-bennett-and-mrs-brown.epub",
+        "cover": "books/Gutenberg/General_Knowledge/63022-mr-bennett-and-mrs-brown.jpg",
+        "author": "Woolf, Virginia",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 63022,
+        "subjects": [
+          "Bennett, Arnold, 1867-1931 -- Knowledge -- Literature",
+          "Characters and characteristics in literature",
+          "English fiction -- 20th century -- History and criticism",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T23:38:02.310Z"
       },
       {
         "title": "Our Knowledge of the External World as a Field for Scientific Method in Philosophy",
