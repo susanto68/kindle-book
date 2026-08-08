@@ -2637,6 +2637,26 @@
         "downloadedAt": "2026-05-21T13:59:31.084Z"
       },
       {
+        "title": "The Home Book of Verse — Volume 2",
+        "file": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.epub",
+        "cover": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.jpg",
+        "author": "Stevenson, Burton Egbert",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2620,
+        "subjects": [
+          "American poetry",
+          "Children's poetry",
+          "English poetry",
+          "Category: Poetry",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T08:44:19.445Z"
+      },
+      {
         "title": "The Two Magics: The Turn of the Screw, Covering End",
         "file": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.epub",
         "cover": "books/Gutenberg/Children_Books/42486-the-two-magics-the-turn-of-the-screw-covering-end.jpg",
@@ -3208,6 +3228,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T06:55:53.369Z"
+      },
+      {
+        "title": "The Analysis of Mind",
+        "file": "books/Gutenberg/General_Knowledge/2529-the-analysis-of-mind.epub",
+        "cover": "books/Gutenberg/General_Knowledge/2529-the-analysis-of-mind.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2529,
+        "subjects": [
+          "Consciousness",
+          "Knowledge, Theory of",
+          "Psychology",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology",
+          "Nobel Prizes in Literature",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T08:42:47.734Z"
       },
       {
         "title": "The Critique of Pure Reason",
