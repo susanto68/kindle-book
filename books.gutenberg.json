@@ -2825,6 +2825,34 @@
         "downloadedAt": "2026-08-08T08:44:19.445Z"
       },
       {
+        "title": "The Journals of Lewis and Clark, 1804-1806",
+        "file": "books/Gutenberg/Children_Books/8419-the-journals-of-lewis-and-clark-1804-1806.epub",
+        "cover": "books/Gutenberg/Children_Books/8419-the-journals-of-lewis-and-clark-1804-1806.jpg",
+        "author": "Lewis, Meriwether, Clark, William",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8419,
+        "subjects": [
+          "Clark, William, 1770-1838",
+          "Columbia River -- Description and travel",
+          "Lewis and Clark Expedition (1804-1806)",
+          "Lewis, Meriwether, 1774-1809",
+          "Missouri River -- Description and travel",
+          "West (U.S.) -- Description and travel",
+          "West (U.S.) -- History -- To 1848",
+          "Category: Adventure",
+          "Category: Biographies",
+          "Category: History - American",
+          "Category: Travel Writing",
+          "Children's History",
+          "Travel"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T22:30:40.605Z"
+      },
+      {
         "title": "The Legend of Sleepy Hollow",
         "file": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.epub",
         "cover": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.jpg",
@@ -3532,6 +3560,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T11:30:34.035Z"
+      },
+      {
+        "title": "Charles Dickens and Music",
+        "file": "books/Gutenberg/General_Knowledge/16595-charles-dickens-and-music.epub",
+        "cover": "books/Gutenberg/General_Knowledge/16595-charles-dickens-and-music.jpg",
+        "author": "Lightwood, James T. (James Thomas)",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16595,
+        "subjects": [
+          "Dickens, Charles, 1812-1870 -- Knowledge -- Music",
+          "Music and literature",
+          "Category: British Literature",
+          "Category: Music",
+          "Music"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-08T22:30:40.025Z"
       },
       {
         "title": "Charmides",
