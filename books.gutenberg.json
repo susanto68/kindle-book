@@ -527,6 +527,30 @@
         "downloadedAt": "2026-08-05T00:05:16.130Z"
       },
       {
+        "title": "Cathedrals and Cloisters of the South of France, Volume 1",
+        "file": "books/Gutenberg/Bhagavad_Gita/22718-cathedrals-and-cloisters-of-the-south-of-france-volume-1.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/22718-cathedrals-and-cloisters-of-the-south-of-france-volume-1.jpg",
+        "author": "Rose, Elise Whitlock",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22718,
+        "subjects": [
+          "Cathedrals -- France",
+          "France -- Description and travel",
+          "Architecture",
+          "Category: Architecture",
+          "Category: Art",
+          "Category: History - European",
+          "Category: Religion/Spirituality",
+          "Category: Travel Writing",
+          "France"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T08:53:03.123Z"
+      },
+      {
         "title": "Esoteric Christianity, or The Lesser Mysteries",
         "file": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.jpg",
@@ -2702,6 +2726,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-09T07:00:47.627Z"
+      },
+      {
+        "title": "Golden Days for Boys and Girls, Vol. XII, Jan. 3, 1891",
+        "file": "books/Gutenberg/Children_Books/17199-golden-days-for-boys-and-girls-vol-xii-jan-3-1891.epub",
+        "cover": "books/Gutenberg/Children_Books/17199-golden-days-for-boys-and-girls-vol-xii-jan-3-1891.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 17199,
+        "subjects": [
+          "Children's literature -- Periodicals",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Golden Days for Boys and Girls"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T08:54:45.715Z"
       },
       {
         "title": "Grimms' Fairy Tales",
