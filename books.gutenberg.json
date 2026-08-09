@@ -6289,6 +6289,29 @@
         "downloadedAt": "2026-06-02T05:51:40.402Z"
       },
       {
+        "title": "Lorna Doone: A Romance of Exmoor",
+        "file": "books/Gutenberg/Literature/17460-lorna-doone-a-romance-of-exmoor.epub",
+        "cover": "books/Gutenberg/Literature/17460-lorna-doone-a-romance-of-exmoor.jpg",
+        "author": "Blackmore, R. D. (Richard Doddridge)",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 17460,
+        "subjects": [
+          "Exmoor (England) -- Fiction",
+          "Historical fiction",
+          "Love stories",
+          "Monmouth's Rebellion, 1685 -- Fiction",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T07:57:21.800Z"
+      },
+      {
         "title": "Manon Lescaut",
         "file": "books/Gutenberg/Literature/468-manon-lescaut.epub",
         "cover": "books/Gutenberg/Literature/468-manon-lescaut.jpg",
@@ -11162,6 +11185,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-23T07:35:04.237Z"
+      },
+      {
+        "title": "The Revolt on Venus",
+        "file": "books/Gutenberg/Science/19027-the-revolt-on-venus.epub",
+        "cover": "books/Gutenberg/Science/19027-the-revolt-on-venus.jpg",
+        "author": "Rockwell, Carey",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 19027,
+        "subjects": [
+          "Astronauts -- Juvenile fiction",
+          "Corbett, Tom (Fictitious character) -- Juvenile fiction",
+          "Interplanetary voyages -- Juvenile fiction",
+          "Science fiction",
+          "Space colonies -- Juvenile fiction",
+          "Venus (Planet) -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T07:57:35.794Z"
       },
       {
         "title": "The Sex Life of the Gods",
