@@ -2884,6 +2884,31 @@
         "downloadedAt": "2026-08-08T22:30:40.605Z"
       },
       {
+        "title": "The last dragon",
+        "file": "books/Gutenberg/Children_Books/76411-the-last-dragon.epub",
+        "cover": "books/Gutenberg/Children_Books/76411-the-last-dragon.jpg",
+        "author": "Totheroh, Dan",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76411,
+        "subjects": [
+          "Adventure and adventurers -- Juvenile fiction",
+          "Children -- Juvenile fiction",
+          "Dragons -- Juvenile fiction",
+          "Fantasy fiction",
+          "Grandmothers -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T01:54:35.216Z"
+      },
+      {
         "title": "The Legend of Sleepy Hollow",
         "file": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.epub",
         "cover": "books/Gutenberg/Children_Books/41-the-legend-of-sleepy-hollow.jpg",
@@ -3695,6 +3720,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T21:31:40.257Z"
+      },
+      {
+        "title": "Folk-lore of Shakespeare",
+        "file": "books/Gutenberg/General_Knowledge/32183-folk-lore-of-shakespeare.epub",
+        "cover": "books/Gutenberg/General_Knowledge/32183-folk-lore-of-shakespeare.jpg",
+        "author": "Thiselton-Dyer, T. F. (Thomas Firminger)",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32183,
+        "subjects": [
+          "Folklore in literature",
+          "Literature and folklore -- England -- History -- 16th century",
+          "Literature and folklore -- England -- History -- 17th century",
+          "Oral tradition -- England",
+          "Shakespeare, William, 1564-1616 -- Knowledge -- Folklore",
+          "Category: British Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-09T01:54:25.838Z"
       },
       {
         "title": "Illustrations of Shakspeare, and of Ancient Manners:: with Dissertations on the Clowns and Fools of Shakspeare; on a Collection of Popular Tales Entitled Gesta Romanorum; and on the English Morris dance.",
