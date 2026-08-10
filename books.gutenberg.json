@@ -4302,6 +4302,27 @@
         "downloadedAt": "2026-08-04T18:39:47.894Z"
       },
       {
+        "title": "From Pole to Pole: A Book for Young People",
+        "file": "books/Gutenberg/Geography/20709-from-pole-to-pole-a-book-for-young-people.epub",
+        "cover": "books/Gutenberg/Geography/20709-from-pole-to-pole-a-book-for-young-people.jpg",
+        "author": "Hedin, Sven Anders",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20709,
+        "subjects": [
+          "Geography -- Juvenile literature",
+          "Voyages and travels -- Juvenile literature",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Category: Travel Writing",
+          "Travel"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T11:23:36.314Z"
+      },
+      {
         "title": "Holinshed's Chronicles, vol. 1 of 6, complete: England, geography and early history to 1066",
         "file": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.epub",
         "cover": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.jpg",
@@ -5373,6 +5394,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T16:02:14.851Z"
+      },
+      {
+        "title": "Susan B. Anthony: Rebel, Crusader, Humanitarian",
+        "file": "books/Gutenberg/History/20439-susan-b-anthony-rebel-crusader-humanitarian.epub",
+        "cover": "books/Gutenberg/History/20439-susan-b-anthony-rebel-crusader-humanitarian.jpg",
+        "author": "Lutz, Alma",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20439,
+        "subjects": [
+          "Anthony, Susan B. (Susan Brownell), 1820-1906",
+          "Biographies",
+          "Category: Biographies",
+          "Category: Gender & Sexuality Studies",
+          "Category: History - American"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T11:21:34.350Z"
       },
       {
         "title": "The Anabasis of Alexander : $b or, The history of the wars and conquests of Alexander the Great",
