@@ -750,6 +750,25 @@
         "downloadedAt": "2026-08-07T14:59:05.417Z"
       },
       {
+        "title": "Natural Law in the Spiritual World",
+        "file": "books/Gutenberg/Bhagavad_Gita/23334-natural-law-in-the-spiritual-world.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/23334-natural-law-in-the-spiritual-world.jpg",
+        "author": "Drummond, Henry",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23334,
+        "subjects": [
+          "Natural theology",
+          "Religion and science",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T18:01:29.390Z"
+      },
+      {
         "title": "Paradise Lost",
         "file": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.jpg",
@@ -3047,6 +3066,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T12:55:35.096Z"
+      },
+      {
+        "title": "The Colors of Space",
+        "file": "books/Gutenberg/Children_Books/20796-the-colors-of-space.epub",
+        "cover": "books/Gutenberg/Children_Books/20796-the-colors-of-space.jpg",
+        "author": "Bradley, Marion Zimmer",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20796,
+        "subjects": [
+          "Science fiction",
+          "Category: Adventure",
+          "Category: Children & Young Adult Reading",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction",
+          "Science Fiction by Women"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T18:05:07.421Z"
       },
       {
         "title": "The Home Book of Verse — Volume 2",
