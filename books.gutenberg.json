@@ -551,6 +551,26 @@
         "downloadedAt": "2026-08-09T08:53:03.123Z"
       },
       {
+        "title": "Egyptian Literature: Comprising Egyptian tales, hymns, litanies, invocations, the Book of the Dead, and cuneiform writings",
+        "file": "books/Gutenberg/Bhagavad_Gita/28282-egyptian-literature-comprising-egyptian-tales-hymns-litanies-invocations.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/28282-egyptian-literature-comprising-egyptian-tales-hymns-litanies-invocations.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28282,
+        "subjects": [
+          "Egyptian literature -- Translations into English",
+          "Category: Archaeology & Anthropology",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T15:08:14.677Z"
+      },
+      {
         "title": "Esoteric Christianity, or The Lesser Mysteries",
         "file": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26938-esoteric-christianity-or-the-lesser-mysteries.jpg",
@@ -8516,6 +8536,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T07:50:35.349Z"
+      },
+      {
+        "title": "The Beautiful and Damned",
+        "file": "books/Gutenberg/Motivation/9830-the-beautiful-and-damned.epub",
+        "cover": "books/Gutenberg/Motivation/9830-the-beautiful-and-damned.jpg",
+        "author": "Fitzgerald, F. Scott (Francis Scott)",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 9830,
+        "subjects": [
+          "Alcoholics -- Fiction",
+          "Domestic fiction",
+          "Inheritance and succession -- Fiction",
+          "Married people -- Fiction",
+          "New York (N.Y.) -- Fiction",
+          "Psychological fiction",
+          "Socialites -- Fiction",
+          "Young men -- Fiction",
+          "Category: American Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T15:08:13.341Z"
       },
       {
         "title": "The Birthright",
