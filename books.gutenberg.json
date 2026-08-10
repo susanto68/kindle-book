@@ -3111,6 +3111,29 @@
         "downloadedAt": "2026-08-10T18:05:07.421Z"
       },
       {
+        "title": "The Girl on the Boat",
+        "file": "books/Gutenberg/Children_Books/20717-the-girl-on-the-boat.epub",
+        "cover": "books/Gutenberg/Children_Books/20717-the-girl-on-the-boat.jpg",
+        "author": "Wodehouse, P. G. (Pelham Grenville)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20717,
+        "subjects": [
+          "Children of the rich -- Fiction",
+          "Golf stories",
+          "Humorous stories",
+          "Man-woman relationships -- Fiction",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T20:06:51.257Z"
+      },
+      {
         "title": "The Home Book of Verse — Volume 2",
         "file": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.epub",
         "cover": "books/Gutenberg/Children_Books/2620-the-home-book-of-verse-volume-2.jpg",
