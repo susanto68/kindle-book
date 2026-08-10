@@ -1356,6 +1356,27 @@
         "downloadedAt": "2026-07-30T22:08:11.722Z"
       },
       {
+        "title": "Freedom in Science and Teaching.: from the German of Ernst Haeckel",
+        "file": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.epub",
+        "cover": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.jpg",
+        "author": "Haeckel, Ernst",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25711,
+        "subjects": [
+          "Evolution (Biology)",
+          "Science -- Study and teaching",
+          "Teaching, Freedom of",
+          "Virchow, Rudolf Ludwig Karl, 1821-1902. Freiheit der Wissenschaft im modernen Staat",
+          "Category: Science - Biology",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T09:24:48.064Z"
+      },
+      {
         "title": "Insects and Diseases: A Popular Account of the Way in Which Insects may Spread or Cause some of our Common Diseases",
         "file": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.epub",
         "cover": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.jpg",
@@ -10839,6 +10860,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-21T08:33:17.820Z"
+      },
+      {
+        "title": "Supermind",
+        "file": "books/Gutenberg/Science/22342-supermind.epub",
+        "cover": "books/Gutenberg/Science/22342-supermind.jpg",
+        "author": "Garrett, Randall, Janifer, Laurence M.",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22342,
+        "subjects": [
+          "Psychic ability -- Fiction",
+          "Science fiction",
+          "Telepathy -- Fiction",
+          "United States. Federal Bureau of Investigation -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T09:24:46.175Z"
       },
       {
         "title": "Tarrano the Conqueror",
