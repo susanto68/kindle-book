@@ -796,6 +796,26 @@
         "downloadedAt": "2026-08-07T17:54:21.528Z"
       },
       {
+        "title": "Public School Education",
+        "file": "books/Gutenberg/Bhagavad_Gita/28036-public-school-education.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/28036-public-school-education.jpg",
+        "author": "Müller, Michael",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28036,
+        "subjects": [
+          "Catholic Church -- Education -- United States",
+          "Education -- United States",
+          "Category: History - American",
+          "Category: Religion/Spirituality",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T16:08:45.570Z"
+      },
+      {
         "title": "Roman Stoicism: being lectures on the history of the Stoic philosophy with special reference to its development within the Roman Empire",
         "file": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/64488-roman-stoicism-being-lectures-on-the-history-of-the-stoic-philosophy-wit.jpg",
@@ -8403,6 +8423,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T07:53:00.078Z"
+      },
+      {
+        "title": "Little Dorrit",
+        "file": "books/Gutenberg/Motivation/963-little-dorrit.epub",
+        "cover": "books/Gutenberg/Motivation/963-little-dorrit.jpg",
+        "author": "Dickens, Charles",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 963,
+        "subjects": [
+          "Children of prisoners -- Fiction",
+          "Debt, Imprisonment for -- Fiction",
+          "Domestic fiction",
+          "Fathers and daughters -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "London (England) -- Fiction",
+          "Love stories",
+          "Marshalsea Prison (Southwark, London, England) -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T16:08:00.272Z"
       },
       {
         "title": "Make or Break; or, The Rich Man's Daughter",
