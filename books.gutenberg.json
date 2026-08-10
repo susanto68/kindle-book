@@ -551,6 +551,28 @@
         "downloadedAt": "2026-08-09T08:53:03.123Z"
       },
       {
+        "title": "Chips from a German Workshop, Volume 3: Essays on Literature, Biography, and Antiquities",
+        "file": "books/Gutenberg/Bhagavad_Gita/26572-chips-from-a-german-workshop-volume-3-essays-on-literature-biography-and.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26572-chips-from-a-german-workshop-volume-3-essays-on-literature-biography-and.jpg",
+        "author": "Müller, F. Max (Friedrich Max)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26572,
+        "subjects": [
+          "Comparative linguistics",
+          "Folklore",
+          "Literature -- History and criticism",
+          "Mythology",
+          "Religions",
+          "Category: Essays, Letters & Speeches",
+          "Category: German Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T19:01:55.338Z"
+      },
+      {
         "title": "Egyptian Literature: Comprising Egyptian tales, hymns, litanies, invocations, the Book of the Dead, and cuneiform writings",
         "file": "books/Gutenberg/Bhagavad_Gita/28282-egyptian-literature-comprising-egyptian-tales-hymns-litanies-invocations.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/28282-egyptian-literature-comprising-egyptian-tales-hymns-litanies-invocations.jpg",
@@ -3327,6 +3349,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:30.791Z"
+      },
+      {
+        "title": "The Young Visiters or, Mr. Salteena's Plan",
+        "file": "books/Gutenberg/Children_Books/21415-the-young-visiters-or-mr-salteenas-plan.epub",
+        "cover": "books/Gutenberg/Children_Books/21415-the-young-visiters-or-mr-salteenas-plan.jpg",
+        "author": "Ashford, Daisy",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21415,
+        "subjects": [
+          "Children's writings, English",
+          "Humorous stories",
+          "Love stories",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T19:01:56.991Z"
       },
       {
         "title": "Treasure Island",
