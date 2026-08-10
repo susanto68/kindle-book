@@ -610,6 +610,26 @@
         "downloadedAt": "2026-08-07T11:53:05.164Z"
       },
       {
+        "title": "Jeremiah : Being The Baird Lecture for 1922",
+        "file": "books/Gutenberg/Bhagavad_Gita/27351-jeremiah-being-the-baird-lecture-for-1922.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/27351-jeremiah-being-the-baird-lecture-for-1922.jpg",
+        "author": "Smith, George Adam",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27351,
+        "subjects": [
+          "Bible. Jeremiah -- Criticism, interpretation, etc.",
+          "Jeremiah (Biblical prophet)",
+          "Category: History - Religious",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T13:13:08.485Z"
+      },
+      {
         "title": "Jesus the Christ: A Study of the Messiah and His Mission According to Holy; Scriptures Both Ancient and Modern",
         "file": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22542-jesus-the-christ-a-study-of-the-messiah-and-his-mission-according-to-hol.jpg",
@@ -8408,6 +8428,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-06T10:50:27.537Z"
+      },
+      {
+        "title": "Pushing to the Front",
+        "file": "books/Gutenberg/Motivation/21291-pushing-to-the-front.epub",
+        "cover": "books/Gutenberg/Motivation/21291-pushing-to-the-front.jpg",
+        "author": "Marden, Orison Swett",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21291,
+        "subjects": [
+          "Success",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T13:12:14.985Z"
       },
       {
         "title": "Seek and Find; or, The Adventures of a Smart Boy",
