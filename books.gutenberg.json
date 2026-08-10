@@ -1517,6 +1517,25 @@
         "downloadedAt": "2026-07-30T09:40:53.234Z"
       },
       {
+        "title": "Outlines of Dairy Bacteriology, 8th edition: A Concise Manual for the Use of Students in Dairying",
+        "file": "books/Gutenberg/Biology/27778-outlines-of-dairy-bacteriology-8th-edition-a-concise-manual-for-the-use-.epub",
+        "cover": "books/Gutenberg/Biology/27778-outlines-of-dairy-bacteriology-8th-edition-a-concise-manual-for-the-use-.jpg",
+        "author": "Russell, H. L. (Harry Luman)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27778,
+        "subjects": [
+          "Dairy microbiology",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Microbiology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T07:49:55.774Z"
+      },
+      {
         "title": "Pharmacographia: A history of the principal drugs of vegetable origin, met with in Great Britain and British India",
         "file": "books/Gutenberg/Biology/67691-pharmacographia-a-history-of-the-principal-drugs-of-vegetable-origin-met.epub",
         "cover": "books/Gutenberg/Biology/67691-pharmacographia-a-history-of-the-principal-drugs-of-vegetable-origin-met.jpg",
@@ -10820,6 +10839,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-21T08:33:17.820Z"
+      },
+      {
+        "title": "Tarrano the Conqueror",
+        "file": "books/Gutenberg/Science/21638-tarrano-the-conqueror.epub",
+        "cover": "books/Gutenberg/Science/21638-tarrano-the-conqueror.jpg",
+        "author": "Cummings, Ray",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21638,
+        "subjects": [
+          "Science fiction",
+          "Category: Adventure",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-10T07:44:47.094Z"
       },
       {
         "title": "The Air Pirate",
