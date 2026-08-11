@@ -1457,6 +1457,26 @@
         "downloadedAt": "2026-07-30T22:08:11.722Z"
       },
       {
+        "title": "Explanation of Terms Used in Entomology",
+        "file": "books/Gutenberg/Biology/22748-explanation-of-terms-used-in-entomology.epub",
+        "cover": "books/Gutenberg/Biology/22748-explanation-of-terms-used-in-entomology.jpg",
+        "author": "Smith, John Bernhard",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22748,
+        "subjects": [
+          "Insects -- Nomenclature",
+          "Animals-Wild-Insects",
+          "Biology",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-11T10:06:42.110Z"
+      },
+      {
         "title": "Freedom in Science and Teaching.: from the German of Ernst Haeckel",
         "file": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.epub",
         "cover": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.jpg",
@@ -4423,6 +4443,25 @@
   {
     "class": "Gutenberg - Geography",
     "books": [
+      {
+        "title": "A Book of Discovery: The History of the World's Exploration, From the Earliest Times to the Finding of the South Pole",
+        "file": "books/Gutenberg/Geography/23107-a-book-of-discovery-the-history-of-the-worlds-exploration-from-the-earli.epub",
+        "cover": "books/Gutenberg/Geography/23107-a-book-of-discovery-the-history-of-the-worlds-exploration-from-the-earli.jpg",
+        "author": "Synge, M. B. (Margaret Bertha)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23107,
+        "subjects": [
+          "Discoveries in geography",
+          "Category: Adventure",
+          "Category: History - Other",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-11T10:07:32.949Z"
+      },
       {
         "title": "Christopher Columbus and How He Received and Imparted the Spirit of Discovery",
         "file": "books/Gutenberg/Geography/42059-christopher-columbus-and-how-he-received-and-imparted-the-spirit-of-disc.epub",
