@@ -422,6 +422,24 @@
     "class": "Gutenberg - Bhagavad Gita & Spiritual Wisdom",
     "books": [
       {
+        "title": "A Brief Commentary on the Apocalypse",
+        "file": "books/Gutenberg/Bhagavad_Gita/26639-a-brief-commentary-on-the-apocalypse.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/26639-a-brief-commentary-on-the-apocalypse.jpg",
+        "author": "Bliss, Sylvester",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26639,
+        "subjects": [
+          "Bible. Revelation -- Criticism, interpretation, etc.",
+          "Revelation",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-11T13:08:58.956Z"
+      },
+      {
         "title": "A Critical Exposition of the Popular 'Jihád': Showing that all the Wars of Mohammad Were Defensive; and; that Aggressive War, or Compulsory Conversion, is not; Allowed in The Koran - 1885",
         "file": "books/Gutenberg/Bhagavad_Gita/20927-a-critical-exposition-of-the-popular-jihad-showing-that-all-the-wars-of-.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/20927-a-critical-exposition-of-the-popular-jihad-showing-that-all-the-wars-of-.jpg",
