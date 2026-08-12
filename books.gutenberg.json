@@ -1053,6 +1053,24 @@
         "downloadedAt": "2026-08-05T15:27:50.491Z"
       },
       {
+        "title": "The Doré Bible Gallery, Complete: Containing One Hundred Superb Illustrations, and a Page of Explanatory Letter-press Facing Each",
+        "file": "books/Gutenberg/Bhagavad_Gita/8710-the-dore-bible-gallery-complete-containing-one-hundred-superb-illustrati.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/8710-the-dore-bible-gallery-complete-containing-one-hundred-superb-illustrati.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8710,
+        "subjects": [
+          "Bible -- Illustrations",
+          "Category: Art",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T16:14:45.592Z"
+      },
+      {
         "title": "The Egyptian Book of the dead",
         "file": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/69566-the-egyptian-book-of-the-dead.jpg",
@@ -4941,6 +4959,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T16:21:28.621Z"
+      },
+      {
+        "title": "The 1999 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27676-the-1999-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27676-the-1999-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27676,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T16:10:26.007Z"
       },
       {
         "title": "The 2000 CIA World Factbook",
