@@ -1962,6 +1962,31 @@
         "downloadedAt": "2026-07-30T20:20:21.755Z"
       },
       {
+        "title": "The Voyage of the Beagle",
+        "file": "books/Gutenberg/Biology/944-the-voyage-of-the-beagle.epub",
+        "cover": "books/Gutenberg/Biology/944-the-voyage-of-the-beagle.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 944,
+        "subjects": [
+          "Beagle Expedition (1831-1836)",
+          "Geology",
+          "Natural history",
+          "South America -- Discovery and exploration",
+          "Voyages around the world -- History -- 19th century",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Travel Writing",
+          "Harvard Classics",
+          "Travel"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T10:09:51.568Z"
+      },
+      {
         "title": "Vegetable Teratology: An Account of the Principal Deviations from the Usual Construction of Plants",
         "file": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.epub",
         "cover": "books/Gutenberg/Biology/23354-vegetable-teratology-an-account-of-the-principal-deviations-from-the-usu.jpg",
@@ -5662,6 +5687,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T02:59:46.840Z"
+      },
+      {
+        "title": "Shakespeare's family",
+        "file": "books/Gutenberg/History/26315-shakespeares-family.epub",
+        "cover": "books/Gutenberg/History/26315-shakespeares-family.jpg",
+        "author": "Stopes, C. C. (Charlotte Carmichael)",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26315,
+        "subjects": [
+          "Arden family",
+          "Shakespeare family",
+          "Shakespeare, William, 1564-1616 -- Family",
+          "Category: Biographies",
+          "Category: History - British"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T10:10:55.692Z"
       },
       {
         "title": "Some Jewish Witnesses For Christ",
