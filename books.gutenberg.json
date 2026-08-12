@@ -4880,6 +4880,27 @@
         "downloadedAt": "2026-08-08T05:48:17.489Z"
       },
       {
+        "title": "The 1996 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27675-the-1996-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27675-the-1996-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27675,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T15:05:25.089Z"
+      },
+      {
         "title": "The 1997 CIA World Factbook",
         "file": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/1662-the-1997-cia-world-factbook.jpg",
@@ -8775,6 +8796,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T00:04:47.672Z"
+      },
+      {
+        "title": "Howards End",
+        "file": "books/Gutenberg/Motivation/2946-howards-end.epub",
+        "cover": "books/Gutenberg/Motivation/2946-howards-end.jpg",
+        "author": "Forster, E. M. (Edward Morgan)",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2946,
+        "subjects": [
+          "Country homes -- Fiction",
+          "Domestic fiction",
+          "England -- Fiction",
+          "Illegitimate children -- Fiction",
+          "Inheritance and succession -- Fiction",
+          "Remarried people -- Fiction",
+          "Sisters -- Fiction",
+          "Social classes -- Fiction",
+          "Category: British Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T15:05:25.591Z"
       },
       {
         "title": "In Jeopardy",
