@@ -1921,6 +1921,25 @@
         "downloadedAt": "2026-07-31T21:07:38.926Z"
       },
       {
+        "title": "The Plants of Michigan: Simple Keys for the Identification of the Native Seed Plants of the State",
+        "file": "books/Gutenberg/Biology/32050-the-plants-of-michigan-simple-keys-for-the-identification-of-the-native-.epub",
+        "cover": "books/Gutenberg/Biology/32050-the-plants-of-michigan-simple-keys-for-the-identification-of-the-native-.jpg",
+        "author": "Gleason, Henry A. (Henry Allan)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32050,
+        "subjects": [
+          "Plants -- Michigan",
+          "Category: How To ...",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T11:51:59.989Z"
+      },
+      {
         "title": "The Theories of Darwin and Their Relation to Philosophy, Religion, and Morality",
         "file": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.epub",
         "cover": "books/Gutenberg/Biology/22150-the-theories-of-darwin-and-their-relation-to-philosophy-religion-and-mor.jpg",
@@ -4546,6 +4565,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-11T10:07:32.949Z"
+      },
+      {
+        "title": "Celebrated Travels and Travellers, Part 1.: The Exploration of the World",
+        "file": "books/Gutenberg/Geography/24777-celebrated-travels-and-travellers-part-1-the-exploration-of-the-world.epub",
+        "cover": "books/Gutenberg/Geography/24777-celebrated-travels-and-travellers-part-1-the-exploration-of-the-world.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24777,
+        "subjects": [
+          "Discoveries in geography",
+          "Explorers",
+          "Voyages and travels",
+          "Category: History - Ancient",
+          "Category: History - Medieval/Middle Ages",
+          "Category: Travel Writing",
+          "Travel"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T11:52:36.104Z"
       },
       {
         "title": "Christopher Columbus and How He Received and Imparted the Spirit of Discovery",
