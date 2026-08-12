@@ -1236,6 +1236,26 @@
         "downloadedAt": "2026-08-07T05:41:29.195Z"
       },
       {
+        "title": "The Prophet",
+        "file": "books/Gutenberg/Bhagavad_Gita/58585-the-prophet.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/58585-the-prophet.jpg",
+        "author": "Gibran, Kahlil",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58585,
+        "subjects": [
+          "Mysticism -- Poetry",
+          "Prose poems, American",
+          "Category: Philosophy & Ethics",
+          "Category: Poetry",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T19:12:31.460Z"
+      },
+      {
         "title": "The Religious Experience of the Roman People: From the Earliest Times to the Age of Augustus",
         "file": "books/Gutenberg/Bhagavad_Gita/23349-the-religious-experience-of-the-roman-people-from-the-earliest-times-to-.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/23349-the-religious-experience-of-the-roman-people-from-the-earliest-times-to-.jpg",
