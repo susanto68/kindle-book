@@ -6422,6 +6422,27 @@
         "downloadedAt": "2026-06-11T10:30:52.817Z"
       },
       {
+        "title": "Blow The Man Down: A Romance Of The Coast",
+        "file": "books/Gutenberg/Literature/24793-blow-the-man-down-a-romance-of-the-coast.epub",
+        "cover": "books/Gutenberg/Literature/24793-blow-the-man-down-a-romance-of-the-coast.jpg",
+        "author": "Day, Holman",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24793,
+        "subjects": [
+          "Love stories",
+          "Ship captains -- Fiction",
+          "Yachts -- Fiction",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T08:19:50.340Z"
+      },
+      {
         "title": "Carmen",
         "file": "books/Gutenberg/Literature/2465-carmen.epub",
         "cover": "books/Gutenberg/Literature/2465-carmen.jpg",
@@ -7660,6 +7681,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-02T05:55:25.396Z"
+      },
+      {
+        "title": "Conversations on Chemistry, V. 1-2: In Which the Elements of that Science Are Familiarly Explained and Illustrated by Experiments",
+        "file": "books/Gutenberg/Mathematics/26908-conversations-on-chemistry-v-1-2-in-which-the-elements-of-that-science-a.epub",
+        "cover": "books/Gutenberg/Mathematics/26908-conversations-on-chemistry-v-1-2-in-which-the-elements-of-that-science-a.jpg",
+        "author": "Marcet, Mrs. (Jane Haldimand)",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26908,
+        "subjects": [
+          "Chemistry",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T08:23:29.153Z"
       },
       {
         "title": "Curiosa mathematica, Part 1 : $b A new theory of parallels",
