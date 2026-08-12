@@ -5006,6 +5006,27 @@
         "downloadedAt": "2026-08-02T20:18:26.522Z"
       },
       {
+        "title": "The 2005 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/27560-the-2005-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/27560-the-2005-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27560,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T13:14:25.265Z"
+      },
+      {
         "title": "The 2006 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27509-the-2006-cia-world-factbook.jpg",
@@ -8823,6 +8844,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T15:26:39.934Z"
+      },
+      {
+        "title": "One Thousand Ways to Make Money",
+        "file": "books/Gutenberg/Motivation/56006-one-thousand-ways-to-make-money.epub",
+        "cover": "books/Gutenberg/Motivation/56006-one-thousand-ways-to-make-money.jpg",
+        "author": "Fox, Page",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 56006,
+        "subjects": [
+          "Business",
+          "Formulas, recipes, etc.",
+          "Occupations",
+          "Success",
+          "Category: Business/Management",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-12T13:15:46.498Z"
       },
       {
         "title": "Our Mutual Friend",
