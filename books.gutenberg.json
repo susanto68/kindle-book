@@ -864,6 +864,27 @@
         "downloadedAt": "2026-08-10T18:01:29.390Z"
       },
       {
+        "title": "Nature",
+        "file": "books/Gutenberg/Bhagavad_Gita/29433-nature.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/29433-nature.jpg",
+        "author": "Emerson, Ralph Waldo",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29433,
+        "subjects": [
+          "Nature",
+          "Philosophy, American",
+          "Category: American Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-13T08:32:08.936Z"
+      },
+      {
         "title": "Paradise Lost",
         "file": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/26-paradise-lost.jpg",
