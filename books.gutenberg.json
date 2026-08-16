@@ -27,6 +27,26 @@
         "downloadedAt": "2026-08-16T21:33:51.787Z"
       },
       {
+        "title": "Blue-grass and Broadway",
+        "file": "books/Gutenberg/Adventure_Mystery/29391-blue-grass-and-broadway.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/29391-blue-grass-and-broadway.jpg",
+        "author": "Daviess, Maria Thompson",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29391,
+        "subjects": [
+          "Broadway (New York, N.Y.) -- Fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:23:02.952Z"
+      },
+      {
         "title": "Complete Short Works of George Meredith",
         "file": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.jpg",
@@ -4568,6 +4588,28 @@
         "downloadedAt": "2026-08-16T18:40:43.947Z"
       },
       {
+        "title": "Shakespearean Playhouses: A History of English Theatres from the Beginnings to the Restoration",
+        "file": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.jpg",
+        "author": "Adams, Joseph Quincy",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22397,
+        "subjects": [
+          "Shakespeare, William, 1564-1616 -- Stage history -- To 1625",
+          "Theaters -- England -- London -- History",
+          "Architecture",
+          "Category: History - British",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Plays/Films/Dramas",
+          "United Kingdom"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:23:00.608Z"
+      },
+      {
         "title": "The corsair; or, the little fairy at the bottom of the sea : $b A new Christmas burlesque and pantomime, founded upon the ballet of \"Le corsair\"",
         "file": "books/Gutenberg/Drama_Fiction/76960-the-corsair-or-the-little-fairy-at-the-bottom-of-the-sea-b-a-new-christm.epub",
         "cover": "books/Gutenberg/Drama_Fiction/76960-the-corsair-or-the-little-fairy-at-the-bottom-of-the-sea-b-a-new-christm.jpg",
@@ -4613,6 +4655,26 @@
         "downloadedAt": "2026-08-16T21:33:10.723Z"
       },
       {
+        "title": "The Works of Christopher Marlowe, Vol. 3 (of 3)",
+        "file": "books/Gutenberg/Drama_Fiction/21262-the-works-of-christopher-marlowe-vol-3-of-3.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/21262-the-works-of-christopher-marlowe-vol-3-of-3.jpg",
+        "author": "Marlowe, Christopher",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21262,
+        "subjects": [
+          "English poetry",
+          "Banned Books from Anne Haight's list",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:23:01.764Z"
+      },
+      {
         "title": "The Works of William Shakespeare [Cambridge Edition] [Vol. 3 of 9]",
         "file": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.epub",
         "cover": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.jpg",
@@ -4630,6 +4692,34 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T20:24:05.258Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Fantasy",
+    "books": [
+      {
+        "title": "The Green Mouse",
+        "file": "books/Gutenberg/Fantasy/10441-the-green-mouse.epub",
+        "cover": "books/Gutenberg/Fantasy/10441-the-green-mouse.jpg",
+        "author": "Chambers, Robert W. (Robert William)",
+        "year": "Public domain",
+        "category": "Fantasy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10441,
+        "subjects": [
+          "Courtship -- Fiction",
+          "Fantasy fiction",
+          "Magic -- Fiction",
+          "New York (N.Y.) -- Fiction",
+          "Category: American Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:23:29.828Z"
       }
     ]
   },
@@ -11764,6 +11854,25 @@
         "downloadedAt": "2026-08-16T19:22:18.058Z"
       },
       {
+        "title": "Don Juan",
+        "file": "books/Gutenberg/Poetry/21700-don-juan.epub",
+        "cover": "books/Gutenberg/Poetry/21700-don-juan.jpg",
+        "author": "Byron, George Gordon Byron, Baron",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21700,
+        "subjects": [
+          "Juan, Don (Legendary character) -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:22:58.647Z"
+      },
+      {
         "title": "Erotica Romana",
         "file": "books/Gutenberg/Poetry/7889-erotica-romana.epub",
         "cover": "books/Gutenberg/Poetry/7889-erotica-romana.jpg",
@@ -11932,6 +12041,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:26.598Z"
+      },
+      {
+        "title": "The Works of Edgar Allan Poe, The Raven Edition: Table Of Contents And Index Of The Five Volumes",
+        "file": "books/Gutenberg/Poetry/25525-the-works-of-edgar-allan-poe-the-raven-edition-table-of-contents-and-ind.epub",
+        "cover": "books/Gutenberg/Poetry/25525-the-works-of-edgar-allan-poe-the-raven-edition-table-of-contents-and-ind.jpg",
+        "author": "Poe, Edgar Allan",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25525,
+        "subjects": [
+          "American fiction -- 19th century",
+          "Fantasy fiction",
+          "Horror tales, American",
+          "Indexes",
+          "Poe, Edgar Allan, 1809-1849",
+          "Short stories",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Poetry",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T22:22:57.189Z"
       }
     ]
   },
