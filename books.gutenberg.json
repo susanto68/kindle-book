@@ -4588,6 +4588,31 @@
         "downloadedAt": "2026-08-16T18:40:43.947Z"
       },
       {
+        "title": "Pygmalion",
+        "file": "books/Gutenberg/Drama_Fiction/3825-pygmalion.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/3825-pygmalion.jpg",
+        "author": "Shaw, Bernard",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3825,
+        "subjects": [
+          "Comedy plays",
+          "Flower vending -- Drama",
+          "Linguistics teachers -- Drama",
+          "London (England) -- Drama",
+          "Social classes -- Drama",
+          "Speech and social status -- Drama",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "Nobel Prizes in Literature",
+          "Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:06.608Z"
+      },
+      {
         "title": "Shakespearean Playhouses: A History of English Theatres from the Beginnings to the Restoration",
         "file": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.epub",
         "cover": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.jpg",
@@ -4675,6 +4700,28 @@
         "downloadedAt": "2026-08-16T22:23:01.764Z"
       },
       {
+        "title": "The Works of Lord Byron. Vol. 5: Poetry",
+        "file": "books/Gutenberg/Drama_Fiction/23475-the-works-of-lord-byron-vol-5-poetry.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/23475-the-works-of-lord-byron-vol-5-poetry.jpg",
+        "author": "Byron, George Gordon Byron, Baron",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23475,
+        "subjects": [
+          "English drama",
+          "English poetry",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Poetry",
+          "Opera",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:05.698Z"
+      },
+      {
         "title": "The Works of William Shakespeare [Cambridge Edition] [Vol. 3 of 9]",
         "file": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.epub",
         "cover": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.jpg",
@@ -4720,6 +4767,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T22:23:29.828Z"
+      },
+      {
+        "title": "The Works of Edgar Allan Poe — Volume 2",
+        "file": "books/Gutenberg/Fantasy/2148-the-works-of-edgar-allan-poe-volume-2.epub",
+        "cover": "books/Gutenberg/Fantasy/2148-the-works-of-edgar-allan-poe-volume-2.jpg",
+        "author": "Poe, Edgar Allan",
+        "year": "Public domain",
+        "category": "Fantasy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2148,
+        "subjects": [
+          "American fiction -- 19th century",
+          "Fantasy fiction",
+          "Horror tales, American",
+          "Short stories",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Short Stories",
+          "Detective Fiction",
+          "Gothic Fiction",
+          "Horror",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:07.947Z"
       }
     ]
   },
@@ -11912,6 +11985,29 @@
         "downloadedAt": "2026-08-16T18:40:25.600Z"
       },
       {
+        "title": "Sir Gawayne and the Green Knight: An Alliterative Romance-Poem (c. 1360 A.D.)",
+        "file": "books/Gutenberg/Poetry/14568-sir-gawayne-and-the-green-knight-an-alliterative-romance-poem-c-1360-ad.epub",
+        "cover": "books/Gutenberg/Poetry/14568-sir-gawayne-and-the-green-knight-an-alliterative-romance-poem-c-1360-ad.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14568,
+        "subjects": [
+          "Arthurian romances",
+          "Gawain (Legendary character) -- Romances",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Early English Text Society",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:04.493Z"
+      },
+      {
         "title": "Sonnets from the Portuguese",
         "file": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.epub",
         "cover": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.jpg",
@@ -11930,6 +12026,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:42.600Z"
+      },
+      {
+        "title": "Spenser's The Faerie Queene, Book I",
+        "file": "books/Gutenberg/Poetry/15272-spensers-the-faerie-queene-book-i.epub",
+        "cover": "books/Gutenberg/Poetry/15272-spensers-the-faerie-queene-book-i.jpg",
+        "author": "Spenser, Edmund",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15272,
+        "subjects": [
+          "English poetry -- Early modern, 1500-1700",
+          "Knights and knighthood -- Poetry",
+          "Virtues -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:03.564Z"
       },
       {
         "title": "The Bakhtyār Nāma: A Persian Romance",
@@ -13319,6 +13437,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-29T23:16:52.123Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Self-Help",
+    "books": [
+      {
+        "title": "Self Help; with Illustrations of Conduct and Perseverance",
+        "file": "books/Gutenberg/Self_Help/935-self-help-with-illustrations-of-conduct-and-perseverance.epub",
+        "cover": "books/Gutenberg/Self_Help/935-self-help-with-illustrations-of-conduct-and-perseverance.jpg",
+        "author": "Smiles, Samuel",
+        "year": "Public domain",
+        "category": "Self-Help",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 935,
+        "subjects": [
+          "Conduct of life",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T23:21:21.757Z"
       }
     ]
   }
