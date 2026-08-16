@@ -4388,6 +4388,27 @@
         "downloadedAt": "2026-05-21T13:59:21.639Z"
       },
       {
+        "title": "Dickens As an Educator",
+        "file": "books/Gutenberg/General_Knowledge/37284-dickens-as-an-educator.epub",
+        "cover": "books/Gutenberg/General_Knowledge/37284-dickens-as-an-educator.jpg",
+        "author": "Hughes, James L. (James Laughlin)",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37284,
+        "subjects": [
+          "Dickens, Charles, 1812-1870 -- Knowledge -- Education",
+          "Didactic fiction, English -- History and criticism",
+          "Education -- Great Britain -- History -- 19th century",
+          "Education in literature",
+          "Category: Biographies",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T06:51:40.896Z"
+      },
+      {
         "title": "Essays Towards a Theory of Knowledge",
         "file": "books/Gutenberg/General_Knowledge/23422-essays-towards-a-theory-of-knowledge.epub",
         "cover": "books/Gutenberg/General_Knowledge/23422-essays-towards-a-theory-of-knowledge.jpg",
