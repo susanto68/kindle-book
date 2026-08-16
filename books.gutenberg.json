@@ -48,6 +48,26 @@
         "downloadedAt": "2026-08-16T18:40:57.310Z"
       },
       {
+        "title": "Peter the Brazen: A Mystery Story of Modern China",
+        "file": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.jpg",
+        "author": "Worts, George F. (George Frank)",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28780,
+        "subjects": [
+          "China -- Fiction",
+          "Detective and mystery stories",
+          "Category: Adventure",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:25.118Z"
+      },
+      {
         "title": "The Boy with Wings",
         "file": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.jpg",
@@ -70,6 +90,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:58.297Z"
+      },
+      {
+        "title": "The Merry Adventures of Robin Hood",
+        "file": "books/Gutenberg/Adventure_Mystery/10148-the-merry-adventures-of-robin-hood.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/10148-the-merry-adventures-of-robin-hood.jpg",
+        "author": "Pyle, Howard",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10148,
+        "subjects": [
+          "Folklore -- England",
+          "Robin Hood (Legendary character) -- Legends",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Historical Novels",
+          "Category: Mythology, Legends & Folklore",
+          "Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:23.830Z"
       },
       {
         "title": "The Silent Barrier",
@@ -4303,6 +4346,27 @@
         "downloadedAt": "2026-08-16T17:20:43.706Z"
       },
       {
+        "title": "How joy was found : $b a fantasy",
+        "file": "books/Gutenberg/Drama_Fiction/76247-how-joy-was-found-b-a-fantasy.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/76247-how-joy-was-found-b-a-fantasy.jpg",
+        "author": "Hutchison, Isobel Wylie",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76247,
+        "subjects": [
+          "English drama -- Scottish authors",
+          "Verse drama",
+          "Category: British Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Plays/Films/Dramas",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:21.023Z"
+      },
+      {
         "title": "Love's Labour's Lost",
         "file": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.epub",
         "cover": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.jpg",
@@ -4373,6 +4437,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:43.947Z"
+      },
+      {
+        "title": "The corsair; or, the little fairy at the bottom of the sea : $b A new Christmas burlesque and pantomime, founded upon the ballet of \"Le corsair\"",
+        "file": "books/Gutenberg/Drama_Fiction/76960-the-corsair-or-the-little-fairy-at-the-bottom-of-the-sea-b-a-new-christm.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/76960-the-corsair-or-the-little-fairy-at-the-bottom-of-the-sea-b-a-new-christm.jpg",
+        "author": "Brough, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76960,
+        "subjects": [
+          "Burlesques",
+          "English drama -- 19th century",
+          "Pantomime (Christmas entertainment)",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Plays/Films/Dramas",
+          "Category: Science-Fiction & Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:22.134Z"
       }
     ]
   },
@@ -11462,6 +11548,28 @@
     "class": "Gutenberg - Poetry",
     "books": [
       {
+        "title": "Biographia Literaria",
+        "file": "books/Gutenberg/Poetry/6081-biographia-literaria.epub",
+        "cover": "books/Gutenberg/Poetry/6081-biographia-literaria.jpg",
+        "author": "Coleridge, Samuel Taylor",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6081,
+        "subjects": [
+          "Aesthetics",
+          "Criticism",
+          "Poetry",
+          "Wordsworth, William, 1770-1850. Lyrical ballads",
+          "Category: Biographies",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:18.058Z"
+      },
+      {
         "title": "Erotica Romana",
         "file": "books/Gutenberg/Poetry/7889-erotica-romana.epub",
         "cover": "books/Gutenberg/Poetry/7889-erotica-romana.jpg",
@@ -11519,6 +11627,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:42.600Z"
+      },
+      {
+        "title": "The Iliad",
+        "file": "books/Gutenberg/Poetry/6130-the-iliad.epub",
+        "cover": "books/Gutenberg/Poetry/6130-the-iliad.jpg",
+        "author": "Homer",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6130,
+        "subjects": [
+          "Achilles (Mythological character) -- Poetry",
+          "Classical literature",
+          "Epic poetry, Greek -- Translations into English",
+          "Trojan War -- Poetry",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T19:22:19.604Z"
       },
       {
         "title": "The Works of Edgar Allan Poe — Volume 1",
