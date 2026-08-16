@@ -3,6 +3,26 @@
     "class": "Gutenberg - Adventure & Mystery",
     "books": [
       {
+        "title": "Complete Short Works of George Meredith",
+        "file": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.jpg",
+        "author": "Meredith, George",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4499,
+        "subjects": [
+          "English fiction -- 19th century",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Romance",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:07.708Z"
+      },
+      {
         "title": "Cynthia's Chauffeur",
         "file": "books/Gutenberg/Adventure_Mystery/31472-cynthias-chauffeur.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/31472-cynthias-chauffeur.jpg",
@@ -46,6 +66,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:57.310Z"
+      },
+      {
+        "title": "Monte-Cristo's Daughter",
+        "file": "books/Gutenberg/Adventure_Mystery/23184-monte-cristos-daughter.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/23184-monte-cristos-daughter.jpg",
+        "author": "Flagg, Edmund",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23184,
+        "subjects": [
+          "Dantès, Edmond (Fictitious character) -- Fiction",
+          "Domestic fiction",
+          "Fathers and daughters -- Fiction",
+          "France -- Fiction",
+          "Category: Adventure",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:08.836Z"
       },
       {
         "title": "Peter the Brazen: A Mystery Story of Modern China",
@@ -4367,6 +4409,23 @@
         "downloadedAt": "2026-08-16T19:22:21.023Z"
       },
       {
+        "title": "Jeremiah: A Drama in Nine Scenes",
+        "file": "books/Gutenberg/Drama_Fiction/39402-jeremiah-a-drama-in-nine-scenes.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/39402-jeremiah-a-drama-in-nine-scenes.jpg",
+        "author": "Zweig, Stefan",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39402,
+        "subjects": [
+          "Jeremiah (Biblical prophet) -- Drama",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:06.362Z"
+      },
+      {
         "title": "Love's Labour's Lost",
         "file": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.epub",
         "cover": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.jpg",
@@ -4459,6 +4518,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T19:22:22.134Z"
+      },
+      {
+        "title": "The Works of William Shakespeare [Cambridge Edition] [Vol. 3 of 9]",
+        "file": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/50559-the-works-of-william-shakespeare-cambridge-edition-vol-3-of-9.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 50559,
+        "subjects": [
+          "English drama",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:05.258Z"
       }
     ]
   },
@@ -11548,6 +11626,29 @@
     "class": "Gutenberg - Poetry",
     "books": [
       {
+        "title": "Beowulf: An Anglo-Saxon Epic Poem",
+        "file": "books/Gutenberg/Poetry/16328-beowulf-an-anglo-saxon-epic-poem.epub",
+        "cover": "books/Gutenberg/Poetry/16328-beowulf-an-anglo-saxon-epic-poem.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16328,
+        "subjects": [
+          "Dragons -- Poetry",
+          "Epic poetry, English (Old)",
+          "Monsters -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:03.899Z"
+      },
+      {
         "title": "Biographia Literaria",
         "file": "books/Gutenberg/Poetry/6081-biographia-literaria.epub",
         "cover": "books/Gutenberg/Poetry/6081-biographia-literaria.jpg",
@@ -11627,6 +11728,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:42.600Z"
+      },
+      {
+        "title": "The Bakhtyār Nāma: A Persian Romance",
+        "file": "books/Gutenberg/Poetry/60316-the-bakhtyar-nama-a-persian-romance.epub",
+        "cover": "books/Gutenberg/Poetry/60316-the-bakhtyar-nama-a-persian-romance.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60316,
+        "subjects": [
+          "Persian poetry -- Translations into English",
+          "Category: Historical Novels",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T20:24:02.721Z"
       },
       {
         "title": "The Iliad",
