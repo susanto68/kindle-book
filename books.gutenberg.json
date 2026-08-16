@@ -1,5 +1,56 @@
 [
   {
+    "class": "Gutenberg - Adventure & Mystery",
+    "books": [
+      {
+        "title": "Cynthia's Chauffeur",
+        "file": "books/Gutenberg/Adventure_Mystery/31472-cynthias-chauffeur.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/31472-cynthias-chauffeur.jpg",
+        "author": "Tracy, Louis",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31472,
+        "subjects": [
+          "Americans -- England -- Fiction",
+          "Chauffeurs -- Fiction",
+          "Love stories",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:47.195Z"
+      },
+      {
+        "title": "The Silent Barrier",
+        "file": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.jpg",
+        "author": "Tracy, Louis",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31635,
+        "subjects": [
+          "Adventure stories",
+          "Mystery fiction",
+          "Switzerland -- Fiction",
+          "Voyages and travels -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:46.137Z"
+      }
+    ]
+  },
+  {
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
@@ -4177,6 +4228,57 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:57:48.160Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Drama & Fiction",
+    "books": [
+      {
+        "title": "As You Like It",
+        "file": "books/Gutenberg/Drama_Fiction/1523-as-you-like-it.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/1523-as-you-like-it.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1523,
+        "subjects": [
+          "Comedy plays",
+          "Exiles -- Drama",
+          "Fathers and daughters -- Drama",
+          "Pastoral drama",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:43.706Z"
+      },
+      {
+        "title": "Love's Labour's Lost",
+        "file": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/1510-loves-labours-lost.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1510,
+        "subjects": [
+          "Comedy plays",
+          "Courts and courtiers -- Drama",
+          "Navarre (Kingdom) -- Drama",
+          "Princesses -- Drama",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Humour",
+          "Category: Plays/Films/Dramas",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:44.632Z"
       }
     ]
   },
@@ -11259,6 +11361,52 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-01T12:47:24.665Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Poetry",
+    "books": [
+      {
+        "title": "Erotica Romana",
+        "file": "books/Gutenberg/Poetry/7889-erotica-romana.epub",
+        "cover": "books/Gutenberg/Poetry/7889-erotica-romana.jpg",
+        "author": "Goethe, Johann Wolfgang von",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 7889,
+        "subjects": [
+          "German poetry -- Translations into English",
+          "Category: German Literature",
+          "Category: Poetry",
+          "Category: Romance",
+          "Category: Sexuality & Erotica",
+          "Erotic Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:41.726Z"
+      },
+      {
+        "title": "Sonnets from the Portuguese",
+        "file": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.epub",
+        "cover": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.jpg",
+        "author": "Browning, Elizabeth Barrett",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2002,
+        "subjects": [
+          "Love poetry, English",
+          "Sonnets, English",
+          "Category: British Literature",
+          "Category: Poetry",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T17:20:42.600Z"
       }
     ]
   },
