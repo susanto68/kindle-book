@@ -3,6 +3,30 @@
     "class": "Gutenberg - Adventure & Mystery",
     "books": [
       {
+        "title": "Around the World in Eighty Days",
+        "file": "books/Gutenberg/Adventure_Mystery/103-around-the-world-in-eighty-days.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/103-around-the-world-in-eighty-days.jpg",
+        "author": "Verne, Jules",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 103,
+        "subjects": [
+          "Adventure stories",
+          "Voyages around the world -- Fiction",
+          "Adventure",
+          "Best Books Ever Listings",
+          "Category: Adventure",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Category: Novels",
+          "Movie Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:33:51.787Z"
+      },
+      {
         "title": "Complete Short Works of George Meredith",
         "file": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/4499-complete-short-works-of-george-meredith.jpg",
@@ -132,6 +156,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:58.297Z"
+      },
+      {
+        "title": "The Landloper: The Romance of a Man on Foot",
+        "file": "books/Gutenberg/Adventure_Mystery/4712-the-landloper-the-romance-of-a-man-on-foot.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/4712-the-landloper-the-romance-of-a-man-on-foot.jpg",
+        "author": "Day, Holman",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4712,
+        "subjects": [
+          "Political corruption -- Fiction",
+          "Water-supply -- Fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:33:52.481Z"
       },
       {
         "title": "The Merry Adventures of Robin Hood",
@@ -4388,6 +4433,31 @@
         "downloadedAt": "2026-08-16T17:20:43.706Z"
       },
       {
+        "title": "Faust [part 1]. Translated Into English in the Original Metres",
+        "file": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.jpg",
+        "author": "Goethe, Johann Wolfgang von",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14591,
+        "subjects": [
+          "Faust, -approximately 1540 -- Drama",
+          "German poetry -- Translations into English",
+          "Legends -- Germany -- Drama",
+          "Magicians -- Drama",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: German Literature",
+          "Category: Plays/Films/Dramas",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:33:10.101Z"
+      },
+      {
         "title": "How joy was found : $b a fantasy",
         "file": "books/Gutenberg/Drama_Fiction/76247-how-joy-was-found-b-a-fantasy.epub",
         "cover": "books/Gutenberg/Drama_Fiction/76247-how-joy-was-found-b-a-fantasy.jpg",
@@ -4518,6 +4588,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T19:22:22.134Z"
+      },
+      {
+        "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
+        "file": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.jpg",
+        "author": "Marlowe, Christopher",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 779,
+        "subjects": [
+          "Faust, -approximately 1540 -- Drama",
+          "Germany -- Drama",
+          "Magicians -- Drama",
+          "Tragedies (Drama)",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:33:10.723Z"
       },
       {
         "title": "The Works of William Shakespeare [Cambridge Edition] [Vol. 3 of 9]",
@@ -11770,6 +11863,49 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T19:22:19.604Z"
+      },
+      {
+        "title": "The Lovers Assistant; Or, New Art of Love",
+        "file": "books/Gutenberg/Poetry/31036-the-lovers-assistant-or-new-art-of-love.epub",
+        "cover": "books/Gutenberg/Poetry/31036-the-lovers-assistant-or-new-art-of-love.jpg",
+        "author": "Fielding, Henry, Ovid",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31036,
+        "subjects": [
+          "Seduction -- Poetry",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:32:20.228Z"
+      },
+      {
+        "title": "The Metamorphoses of Ovid, Books I-VII",
+        "file": "books/Gutenberg/Poetry/21765-the-metamorphoses-of-ovid-books-i-vii.epub",
+        "cover": "books/Gutenberg/Poetry/21765-the-metamorphoses-of-ovid-books-i-vii.jpg",
+        "author": "Ovid",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21765,
+        "subjects": [
+          "Classical literature",
+          "Fables, Latin -- Translations into English",
+          "Latin poetry -- Translations into English",
+          "Metamorphosis -- Mythology -- Poetry",
+          "Mythology, Classical -- Poetry",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T21:32:19.611Z"
       },
       {
         "title": "The Works of Edgar Allan Poe — Volume 1",
