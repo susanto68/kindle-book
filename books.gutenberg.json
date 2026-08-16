@@ -26,6 +26,52 @@
         "downloadedAt": "2026-08-16T17:20:47.195Z"
       },
       {
+        "title": "Dainty's Cruel Rivals; Or, The Fatal Birthday",
+        "file": "books/Gutenberg/Adventure_Mystery/31257-daintys-cruel-rivals-or-the-fatal-birthday.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/31257-daintys-cruel-rivals-or-the-fatal-birthday.jpg",
+        "author": "Miller, Alex. McVeigh, Mrs.",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31257,
+        "subjects": [
+          "Adventure stories",
+          "Aunts -- Fiction",
+          "Cousins -- Fiction",
+          "Love stories",
+          "Young women -- Fiction",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:57.310Z"
+      },
+      {
+        "title": "The Boy with Wings",
+        "file": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.jpg",
+        "author": "Ruck, Berta",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 36223,
+        "subjects": [
+          "Air pilots, Military -- Fiction",
+          "England -- Social life and customs -- 20th century -- Fiction",
+          "Love stories",
+          "World War, 1914-1918 -- England -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:58.297Z"
+      },
+      {
         "title": "The Silent Barrier",
         "file": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.jpg",
@@ -4279,6 +4325,54 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:44.632Z"
+      },
+      {
+        "title": "Lysistrata",
+        "file": "books/Gutenberg/Drama_Fiction/7700-lysistrata.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/7700-lysistrata.jpg",
+        "author": "Aristophanes",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 7700,
+        "subjects": [
+          "Aristophanes -- Translations into English",
+          "Comedy plays",
+          "Greece -- History -- Peloponnesian War, 431-404 B.C. -- Drama",
+          "Greek drama (Comedy) -- Translations into English",
+          "Lysistrata (Fictitious character) -- Drama",
+          "Peace movements -- Drama",
+          "Women and peace -- Drama",
+          "Banned Books from Anne Haight's list",
+          "Category: Classics of Literature",
+          "Category: History - Ancient",
+          "Category: Humour",
+          "Category: Plays/Films/Dramas",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:45.080Z"
+      },
+      {
+        "title": "Oedipus King of Thebes: Translated into English Rhyming Verse with Explanatory Notes",
+        "file": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.jpg",
+        "author": "Sophocles",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27673,
+        "subjects": [
+          "Oedipus (Greek mythological figure) -- Drama",
+          "Tragedies (Drama)",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:43.947Z"
       }
     ]
   },
@@ -11389,6 +11483,24 @@
         "downloadedAt": "2026-08-16T17:20:41.726Z"
       },
       {
+        "title": "India's Love Lyrics",
+        "file": "books/Gutenberg/Poetry/8197-indias-love-lyrics.epub",
+        "cover": "books/Gutenberg/Poetry/8197-indias-love-lyrics.jpg",
+        "author": "Hope, Laurence",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8197,
+        "subjects": [
+          "India -- Poetry",
+          "Category: Poetry",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:25.600Z"
+      },
+      {
         "title": "Sonnets from the Portuguese",
         "file": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.epub",
         "cover": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.jpg",
@@ -11407,6 +11519,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:42.600Z"
+      },
+      {
+        "title": "The Works of Edgar Allan Poe — Volume 1",
+        "file": "books/Gutenberg/Poetry/2147-the-works-of-edgar-allan-poe-volume-1.epub",
+        "cover": "books/Gutenberg/Poetry/2147-the-works-of-edgar-allan-poe-volume-1.jpg",
+        "author": "Poe, Edgar Allan",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2147,
+        "subjects": [
+          "American fiction -- 19th century",
+          "Fantasy fiction",
+          "Horror tales, American",
+          "Poe, Edgar Allan, 1809-1849",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Poetry",
+          "Category: Short Stories",
+          "Detective Fiction",
+          "Horror",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-16T18:40:26.598Z"
       }
     ]
   },
