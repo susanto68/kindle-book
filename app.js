@@ -29,8 +29,16 @@ const STORAGE_KEYS = {
   tutorialSeen: "kindleReader.readerTutorialSeen",
   soundMuted: "kindleReader.soundMuted",
   gutenbergCache: "kindleReader.gutendexCache.v2",
-  freeBookApiCache: "kindleReader.freeBookApiCache.v1"
+  freeBookApiCache: "kindleReader.freeBookApiCache.v1",
+  fontScale: "kindleReader.readerFontScale",
+  lineSpacing: "kindleReader.readerLineSpacing",
+  sortOrder: "kindleReader.shelfSortOrder"
 };
+
+const FONT_SCALE_MIN = 0.85;
+const FONT_SCALE_MAX = 1.45;
+const FONT_SCALE_STEP = 0.1;
+const LINE_SPACING_PRESETS = [1.4, 1.62, 1.9];
 
 const RENDER_RADIUS = 1;
 const MAX_COVER_CACHE = 80;
@@ -130,6 +138,10 @@ const dom = {
   themeBtn: document.getElementById("themeBtn"),
   indexBtn: document.getElementById("indexBtn"),
   goToBtn: document.getElementById("goToBtn"),
+  fontDecreaseBtn: document.getElementById("fontDecreaseBtn"),
+  fontIncreaseBtn: document.getElementById("fontIncreaseBtn"),
+  lineSpacingBtn: document.getElementById("lineSpacingBtn"),
+  sortSelect: document.getElementById("sortSelect"),
   bookModal: document.getElementById("bookModal"),
   modalTitle: document.getElementById("modalTitle"),
   modalAuthor: document.getElementById("modalAuthor"),
@@ -218,6 +230,7 @@ document.addEventListener("DOMContentLoaded", init);
 async function init() {
   configurePdfJs();
   applyInitialTheme();
+  applyReaderTypographyVars();
   applyInitialSoundPreference();
   renderCategoryCards();
   setupEventListeners();
@@ -1378,6 +1391,22 @@ function setupEventListeners() {
   dom.themeBtn.addEventListener("click", toggleTheme);
   dom.indexBtn.addEventListener("click", openIndexModal);
   dom.goToBtn.addEventListener("click", openGoToModal);
+  if (dom.fontDecreaseBtn) {
+    dom.fontDecreaseBtn.addEventListener("click", () => adjustFontScale(-FONT_SCALE_STEP));
+  }
+  if (dom.fontIncreaseBtn) {
+    dom.fontIncreaseBtn.addEventListener("click", () => adjustFontScale(FONT_SCALE_STEP));
+  }
+  if (dom.lineSpacingBtn) {
+    dom.lineSpacingBtn.addEventListener("click", cycleLineSpacing);
+  }
+  if (dom.sortSelect) {
+    dom.sortSelect.value = localStorage.getItem(STORAGE_KEYS.sortOrder) || "default";
+    dom.sortSelect.addEventListener("change", () => {
+      localStorage.setItem(STORAGE_KEYS.sortOrder, dom.sortSelect.value);
+      renderLibrary();
+    });
+  }
   dom.allCategoriesBtn.addEventListener("click", showAllCategories);
   dom.tutorialDismiss.addEventListener("click", hideReaderTutorial);
   dom.categorySection.addEventListener("click", (event) => {
@@ -1450,6 +1479,9 @@ function renderLibrary(query = "") {
     }
     groupMap.get(book.className).books.push(book);
   });
+
+  const sortOrder = getShelfSortOrder();
+  groupMap.forEach((group) => sortBooksInPlace(group.books, sortOrder));
 
   const filteredGroups = Array.from(groupMap.values());
 
@@ -2339,10 +2371,11 @@ function extractReadableText(html) {
 function getTextPageLength() {
   const width = window.visualViewport?.width || window.innerWidth;
   const size = getPageSize();
-  const fontSize = width <= 420 ? 17 : width <= 760 ? 18 : 20;
+  const baseFontSize = width <= 420 ? 17 : width <= 760 ? 18 : 20;
+  const fontSize = baseFontSize * getFontScale();
   const horizontalPadding = width <= 760 ? 44 : 72;
   const verticalReserve = width <= 760 ? 190 : 230;
-  const lineHeight = fontSize * 1.62;
+  const lineHeight = fontSize * getLineSpacing();
   const usableWidth = Math.max(180, size.width - horizontalPadding);
   const usableHeight = Math.max(180, size.height - verticalReserve);
   const charsPerLine = Math.max(24, Math.floor(usableWidth / (fontSize * 0.54)));
@@ -3582,6 +3615,61 @@ function wakeReaderControls() {
   }, 2600);
 }
 
+function getFontScale() {
+  const stored = Number.parseFloat(localStorage.getItem(STORAGE_KEYS.fontScale));
+  return Number.isFinite(stored) ? clamp(stored, FONT_SCALE_MIN, FONT_SCALE_MAX) : 1;
+}
+
+function getLineSpacing() {
+  const stored = Number.parseFloat(localStorage.getItem(STORAGE_KEYS.lineSpacing));
+  return LINE_SPACING_PRESETS.includes(stored) ? stored : LINE_SPACING_PRESETS[1];
+}
+
+function applyReaderTypographyVars() {
+  document.documentElement.style.setProperty("--reader-font-scale", String(getFontScale()));
+  document.documentElement.style.setProperty("--reader-line-height", String(getLineSpacing()));
+}
+
+function adjustFontScale(delta) {
+  const next = clamp(Number((getFontScale() + delta).toFixed(2)), FONT_SCALE_MIN, FONT_SCALE_MAX);
+  localStorage.setItem(STORAGE_KEYS.fontScale, String(next));
+  applyReaderTypographyVars();
+  applyEpubTheme();
+}
+
+function cycleLineSpacing() {
+  const current = getLineSpacing();
+  const index = LINE_SPACING_PRESETS.indexOf(current);
+  const next = LINE_SPACING_PRESETS[(index + 1) % LINE_SPACING_PRESETS.length];
+  localStorage.setItem(STORAGE_KEYS.lineSpacing, String(next));
+  applyReaderTypographyVars();
+  applyEpubTheme();
+}
+
+function getShelfSortOrder() {
+  return (dom.sortSelect && dom.sortSelect.value) || localStorage.getItem(STORAGE_KEYS.sortOrder) || "default";
+}
+
+function sortBooksInPlace(books, order) {
+  switch (order) {
+    case "title-asc":
+      books.sort((a, b) => (a.title || "").localeCompare(b.title || ""));
+      break;
+    case "title-desc":
+      books.sort((a, b) => (b.title || "").localeCompare(a.title || ""));
+      break;
+    case "author-asc":
+      books.sort((a, b) => (a.author || "").localeCompare(b.author || ""));
+      break;
+    case "recent":
+      books.reverse();
+      break;
+    default:
+      break;
+  }
+  return books;
+}
+
 function applyInitialTheme() {
   const savedTheme = localStorage.getItem(STORAGE_KEYS.theme);
   const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -3625,8 +3713,8 @@ function applyEpubTheme() {
       background: `${bg} !important`,
       color: `${color} !important`,
       "font-family": "Georgia, serif",
-      "line-height": "1.62",
-      "font-size": "112%",
+      "line-height": String(getLineSpacing()),
+      "font-size": `${Math.round(112 * getFontScale())}%`,
       margin: "0 !important",
       padding: "0.2em 0.15em !important",
       "box-sizing": "border-box",
@@ -3635,7 +3723,7 @@ function applyEpubTheme() {
     },
     p: {
       color: `${color} !important`,
-      "line-height": "1.62",
+      "line-height": String(getLineSpacing()),
       margin: "0 0 0.9em !important",
       "text-align": "justify",
       "text-indent": "1.25em"

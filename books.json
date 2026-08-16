@@ -31,6 +31,12 @@
         "file": "books/class 12/CLASS 12 CH-5.pdf",
         "author": "Class 12",
         "year": "2025"
+      },
+      {
+        "title": "Std. 12 - Inter Nobilian Syllabus 2025-26",
+        "file": "books/class 12/Std. 12 - Inter Nobilian Syllabus 2025-26.pdf",
+        "author": "Class 12",
+        "year": "2025"
       }
     ]
   },
@@ -66,6 +72,12 @@
         "file": "books/class 10/CLASS 10 CH-5.pdf",
         "author": "Class 10",
         "year": "2025"
+      },
+      {
+        "title": "Std. 10 - Inter Nobilian Syllabus 2025-26",
+        "file": "books/class 10/Std. 10 - Inter Nobilian Syllabus 2025-26.pdf",
+        "author": "Class 10",
+        "year": "2025"
       }
     ]
   },
@@ -89,6 +101,12 @@
         "file": "books/class 9/Class 9 ch-3 _ Elementary concept of object and class.pdf",
         "author": "Class 9",
         "year": "2025"
+      },
+      {
+        "title": "Std. 9 - Inter Nobilian Syllabus 2025-26",
+        "file": "books/class 9/Std. 9 - Inter Nobilian Syllabus 2025-26.pdf",
+        "author": "Class 9",
+        "year": "2025"
       }
     ]
   },
@@ -104,6 +122,12 @@
       {
         "title": "Class 8 Chapter 2 - MS Excel Formulas and Functions",
         "file": "books/class 8/Class 8 ch-2 _ Ms Excel formula and functions I.pdf",
+        "author": "Class 8",
+        "year": "2025"
+      },
+      {
+        "title": "Std. 8 - Inter Nobilian Syllabus 2025-26",
+        "file": "books/class 8/Std. 8 - Inter Nobilian Syllabus 2025-26 (1).pdf",
         "author": "Class 8",
         "year": "2025"
       }
@@ -123,6 +147,12 @@
         "file": "books/class 6/class 6 math ch-6.pdf",
         "author": "Class 6",
         "year": "2025"
+      },
+      {
+        "title": "Std. 6 - Inter Nobilian Syllabus 2025-26",
+        "file": "books/class 6/Std. 6 - Inter Nobilian Syllabus 2025-26.pdf",
+        "author": "Class 6",
+        "year": "2025"
       }
     ]
   },
@@ -139,6 +169,18 @@
         "title": "Modern C++ Handbooks",
         "file": "books/C++ Books/Modern C++ Handbooks.pdf",
         "author": "C++ Books",
+        "year": ""
+      },
+      {
+        "title": "Modern C++ Handbooks (EPUB)",
+        "file": "books/C++ Books/Unknown/Modern C__ Handbooks/Modern C__ Handbooks - Unknown.epub",
+        "author": "C++ Books",
+        "year": ""
+      },
+      {
+        "title": "The C++ Language Tutorial",
+        "file": "books/C++ Books/Soulie, Juan/C__ Language Tutorial, The/C__ Language Tutorial, The - Juan Soulie.epub",
+        "author": "Juan Soulie",
         "year": ""
       }
     ]
@@ -173,6 +215,17 @@
         "title": "Introduction to Python Programming WEB",
         "file": "books/Python Books/Introduction_to_Python_Programming_-_WEB.pdf",
         "author": "Python Books",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "class": "Spiritual Texts",
+    "books": [
+      {
+        "title": "Shreemad Bhagawad Geeta",
+        "file": "books/ShreeMadBhagawadGeeta/ShreemadBhagawatgeeta.pdf",
+        "author": "Spiritual Texts",
         "year": ""
       }
     ]

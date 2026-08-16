@@ -735,6 +735,31 @@ body.reader-open .visitor-panel {
   font: 600 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+.shelf-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: -6px 0 16px;
+}
+
+.sort-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--muted);
+}
+
+.sort-control select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--text);
+  padding: 6px 10px;
+  font: 700 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
 .library-shelves {
   display: grid;
   gap: 34px;
@@ -1257,7 +1282,10 @@ body.reader-text .page-shell {
 
 .text-page-body {
   color: var(--reader-ink);
-  font: 600 clamp(17px, 2.2vw, 20px)/1.62 Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: calc(clamp(17px, 2.2vw, 20px) * var(--reader-font-scale, 1));
+  line-height: var(--reader-line-height, 1.62);
   text-align: justify;
 }
 
@@ -1911,6 +1939,16 @@ body.reader-epub .reader-stage.turn-prev .epub-reader::after {
 .reader-hidden-control,
 .reader-hidden-control[hidden] {
   display: none;
+}
+
+.reader-text-controls {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.pill-btn.icon-only {
+  min-width: 44px;
+  padding: 8px 10px;
 }
 
 .pill-btn:disabled {

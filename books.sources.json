@@ -57,12 +57,82 @@
         "storageMode": "source-directory",
         "canDownload": false,
         "subjects": ["source texts", "public domain", "history", "literature"]
+      },
+      {
+        "id": "source-manybooks",
+        "title": "ManyBooks",
+        "author": "ManyBooks.net",
+        "file": "https://manybooks.net/",
+        "sourceUrl": "https://manybooks.net/",
+        "year": "Free ebooks",
+        "category": "Literature",
+        "format": "html",
+        "source": "manybooks",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["free ebooks", "epub", "kindle", "public domain"]
+      },
+      {
+        "id": "source-feedbooks-public-domain",
+        "title": "Feedbooks Public Domain",
+        "author": "Feedbooks",
+        "file": "https://www.feedbooks.com/publicdomain",
+        "sourceUrl": "https://www.feedbooks.com/publicdomain",
+        "year": "Public domain",
+        "category": "Literature",
+        "format": "html",
+        "source": "feedbooks",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["public domain", "classic literature", "epub"]
+      },
+      {
+        "id": "source-dpla",
+        "title": "Digital Public Library of America",
+        "author": "DPLA",
+        "file": "https://dp.la/",
+        "sourceUrl": "https://dp.la/",
+        "year": "Free digital collections",
+        "category": "General Knowledge",
+        "format": "html",
+        "source": "dpla",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["digital library", "archives", "public domain", "history"]
+      },
+      {
+        "id": "source-europeana",
+        "title": "Europeana Collections",
+        "author": "Europeana Foundation",
+        "file": "https://www.europeana.eu/en",
+        "sourceUrl": "https://www.europeana.eu/en",
+        "year": "Free cultural heritage",
+        "category": "History and Culture",
+        "format": "html",
+        "source": "europeana",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["world history", "culture", "art", "literature"]
       }
     ]
   },
   {
     "class": "Open Textbooks",
     "books": [
+      {
+        "id": "source-ncert",
+        "title": "NCERT Textbooks (India)",
+        "author": "National Council of Educational Research and Training",
+        "file": "https://ncert.nic.in/textbook.php",
+        "sourceUrl": "https://ncert.nic.in/textbook.php",
+        "year": "Free official PDFs",
+        "category": "School Learning",
+        "format": "html",
+        "source": "ncert",
+        "storageMode": "source-directory",
+        "canDownload": false,
+        "subjects": ["ncert", "school textbooks", "india", "cbse", "class 1-12", "free pdf"]
+      },
       {
         "id": "source-openstax",
         "title": "OpenStax Free Textbooks",

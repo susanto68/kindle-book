@@ -35,7 +35,17 @@ const CATEGORIES = [
   { name: "General Knowledge", folder: "General_Knowledge", topic: "knowledge", search: "general knowledge" },
   { name: "Children Books", folder: "Children_Books", topic: "children", search: "children books" },
   { name: "Programming", folder: "Programming", topic: "programming", search: "computer programming" },
-  { name: "Career Guidance", folder: "Career_Guidance", topic: "career", search: "career guidance" }
+  { name: "Career Guidance", folder: "Career_Guidance", topic: "career", search: "career guidance" },
+  { name: "Poetry", folder: "Poetry", topic: "poetry", search: "poetry" },
+  { name: "Drama & Fiction", folder: "Drama_Fiction", topic: "drama", search: "drama fiction" },
+  { name: "Adventure & Mystery", folder: "Adventure_Mystery", topic: "adventure", search: "adventure mystery" },
+  { name: "Fantasy", folder: "Fantasy", topic: "fantasy", search: "fantasy" },
+  { name: "Self-Help", folder: "Self_Help", topic: "self-help", search: "self help" },
+  { name: "Economics", folder: "Economics", topic: "economics", search: "economics" },
+  { name: "Psychology", folder: "Psychology", topic: "psychology", search: "psychology" },
+  { name: "Astronomy", folder: "Astronomy", topic: "astronomy", search: "astronomy" },
+  { name: "Art & Music", folder: "Art_Music", topic: "art", search: "art music" },
+  { name: "Language Learning", folder: "Language_Learning", topic: "language", search: "language learning" }
 ];
 
 const args = new Map(process.argv.slice(2).map((arg) => {

@@ -142,7 +142,19 @@
           <h3 id="bookshelfTitle">Library</h3>
           <span id="libraryCount"></span>
         </div>
-        <button id="allCategoriesBtn" class="small-link all-categories-btn" type="button" hidden>All categories</button>
+        <div class="shelf-toolbar">
+          <button id="allCategoriesBtn" class="small-link all-categories-btn" type="button" hidden>All categories</button>
+          <label class="sort-control">
+            <span>Sort</span>
+            <select id="sortSelect" aria-label="Sort books">
+              <option value="default">Featured</option>
+              <option value="title-asc">Title A-Z</option>
+              <option value="title-desc">Title Z-A</option>
+              <option value="author-asc">Author A-Z</option>
+              <option value="recent">Recently Added</option>
+            </select>
+          </label>
+        </div>
         <div id="bookGrid" class="library-shelves"></div>
       </section>
     </section>
@@ -178,6 +190,11 @@
         <button id="indexBtn" class="pill-btn" type="button">Index</button>
         <button id="goToBtn" class="pill-btn" type="button">Go To</button>
         <button id="soundBtn" class="pill-btn" type="button" aria-label="Toggle page sound">Sound</button>
+        <div class="reader-text-controls" role="group" aria-label="Text size and spacing">
+          <button id="fontDecreaseBtn" class="pill-btn icon-only" type="button" aria-label="Decrease text size">A-</button>
+          <button id="fontIncreaseBtn" class="pill-btn icon-only" type="button" aria-label="Increase text size">A+</button>
+          <button id="lineSpacingBtn" class="pill-btn icon-only" type="button" aria-label="Cycle line spacing">Spacing</button>
+        </div>
         <span id="pageInfo" class="page-info">Page 1 of 1</span>
         <button id="prevPage" class="pill-btn reader-hidden-control" type="button" aria-label="Previous page" hidden>Prev</button>
         <button id="playPause" class="pill-btn reader-hidden-control" type="button" aria-label="Play or pause speech" hidden>Play</button>
