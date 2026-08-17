@@ -272,6 +272,29 @@
         "downloadedAt": "2026-08-17T19:31:13.781Z"
       },
       {
+        "title": "Le Morte d'Arthur: Volume 1",
+        "file": "books/Gutenberg/Art_Music/1251-le-morte-darthur-volume-1.epub",
+        "cover": "books/Gutenberg/Art_Music/1251-le-morte-darthur-volume-1.jpg",
+        "author": "Malory, Thomas, Sir",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1251,
+        "subjects": [
+          "Arthur, King -- Legends",
+          "Arthurian romances",
+          "Arthurian Legends",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Historical Novels",
+          "Category: Mythology, Legends & Folklore",
+          "Fantasy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T20:31:20.560Z"
+      },
+      {
         "title": "Lives of the Most Eminent Painters Sculptors and Architects, Vol. 01 (of 10): Cimabue to Agnolo Gaddi",
         "file": "books/Gutenberg/Art_Music/25326-lives-of-the-most-eminent-painters-sculptors-and-architects-vol-01-of-10.epub",
         "cover": "books/Gutenberg/Art_Music/25326-lives-of-the-most-eminent-painters-sculptors-and-architects-vol-01-of-10.jpg",
@@ -339,6 +362,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T18:41:52.634Z"
+      },
+      {
+        "title": "The warlord of Mars",
+        "file": "books/Gutenberg/Art_Music/68-the-warlord-of-mars.epub",
+        "cover": "books/Gutenberg/Art_Music/68-the-warlord-of-mars.jpg",
+        "author": "Burroughs, Edgar Rice",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68,
+        "subjects": [
+          "Carter, John (Fictitious character) -- Fiction",
+          "Dejah Thoris (Fictitious character) -- Fiction",
+          "Mars (Planet) -- Fiction",
+          "Science fiction",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T20:31:21.118Z"
       }
     ]
   },
@@ -8781,6 +8826,47 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T19:31:19.444Z"
+      },
+      {
+        "title": "The Comic English Grammar: A New And Facetious Introduction To The English Tongue",
+        "file": "books/Gutenberg/Language_Learning/44802-the-comic-english-grammar-a-new-and-facetious-introduction-to-the-englis.epub",
+        "cover": "books/Gutenberg/Language_Learning/44802-the-comic-english-grammar-a-new-and-facetious-introduction-to-the-englis.jpg",
+        "author": "Leigh, Percival",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44802,
+        "subjects": [
+          "English language -- Grammar -- Humor",
+          "English wit and humor",
+          "Category: Humour",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T20:31:21.746Z"
+      },
+      {
+        "title": "The Elements of Style",
+        "file": "books/Gutenberg/Language_Learning/37134-the-elements-of-style.epub",
+        "cover": "books/Gutenberg/Language_Learning/37134-the-elements-of-style.jpg",
+        "author": "Strunk, William",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37134,
+        "subjects": [
+          "English language -- Rhetoric",
+          "English language -- Style",
+          "Report writing",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: How To ...",
+          "Category: Journalism/Media/Writing",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T20:31:21.996Z"
       }
     ]
   },
