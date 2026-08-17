@@ -666,6 +666,46 @@
     ]
   },
   {
+    "class": "Gutenberg - Astronomy",
+    "books": [
+      {
+        "title": "Astronomy for beginners",
+        "file": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.epub",
+        "cover": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.jpg",
+        "author": "Carrington, Hereward",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78112,
+        "subjects": [
+          "Astronomy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:57:21.516Z"
+      },
+      {
+        "title": "The Book of the Damned",
+        "file": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.epub",
+        "cover": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.jpg",
+        "author": "Fort, Charles",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22472,
+        "subjects": [
+          "Astronomy -- Miscellanea",
+          "Meteorology -- Miscellanea",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:57:22.377Z"
+      }
+    ]
+  },
+  {
     "class": "Gutenberg - Bhagavad Gita & Spiritual Wisdom",
     "books": [
       {
@@ -4938,6 +4978,28 @@
     "class": "Gutenberg - Economics",
     "books": [
       {
+        "title": "A Treatise on Domestic Economy; For the Use of Young Ladies at Home and at School",
+        "file": "books/Gutenberg/Economics/21829-a-treatise-on-domestic-economy-for-the-use-of-young-ladies-at-home-and-a.epub",
+        "cover": "books/Gutenberg/Economics/21829-a-treatise-on-domestic-economy-for-the-use-of-young-ladies-at-home-and-a.jpg",
+        "author": "Beecher, Catharine Esther",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21829,
+        "subjects": [
+          "Home economics",
+          "Category: American Literature",
+          "Category: Health & Medicine",
+          "Category: How To ...",
+          "Category: Parenthood & Family Relations",
+          "Category: Teaching & Education",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:56:34.469Z"
+      },
+      {
         "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
         "file": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.epub",
         "cover": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.jpg",
@@ -5047,6 +5109,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:56:47.806Z"
+      },
+      {
+        "title": "Socialism: A Summary and Interpretation of Socialist Principles",
+        "file": "books/Gutenberg/Economics/22733-socialism-a-summary-and-interpretation-of-socialist-principles.epub",
+        "cover": "books/Gutenberg/Economics/22733-socialism-a-summary-and-interpretation-of-socialist-principles.jpg",
+        "author": "Spargo, John",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22733,
+        "subjects": [
+          "Socialism",
+          "Category: Economics",
+          "Category: History - Modern (1750+)",
+          "Category: Politics",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:56:33.164Z"
       },
       {
         "title": "The Communist Manifesto",
@@ -12783,6 +12865,66 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:10:29.672Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Psychology",
+    "books": [
+      {
+        "title": "A pair of blue eyes",
+        "file": "books/Gutenberg/Psychology/224-a-pair-of-blue-eyes.epub",
+        "cover": "books/Gutenberg/Psychology/224-a-pair-of-blue-eyes.jpg",
+        "author": "Hardy, Thomas",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 224,
+        "subjects": [
+          "Didactic fiction",
+          "Elopement -- Fiction",
+          "Separation (Psychology) -- Fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Wessex (England) -- Fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:56:54.433Z"
+      },
+      {
+        "title": "Ulysses",
+        "file": "books/Gutenberg/Psychology/4300-ulysses.epub",
+        "cover": "books/Gutenberg/Psychology/4300-ulysses.jpg",
+        "author": "Joyce, James",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4300,
+        "subjects": [
+          "Alienation (Social psychology) -- Fiction",
+          "Artists -- Fiction",
+          "City and town life -- Fiction",
+          "Domestic fiction",
+          "Dublin (Ireland) -- Fiction",
+          "Epic literature",
+          "Jewish men -- Fiction",
+          "Male friendship -- Fiction",
+          "Married people -- Fiction",
+          "Psychological fiction",
+          "Banned Books List from the American Library Association",
+          "Banned Books from Anne Haight's list",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Erotic Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:56:55.525Z"
       }
     ]
   },
