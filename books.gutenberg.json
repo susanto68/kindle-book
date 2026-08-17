@@ -741,6 +741,24 @@
         "downloadedAt": "2026-08-17T10:00:28.032Z"
       },
       {
+        "title": "History of Astronomy",
+        "file": "books/Gutenberg/Astronomy/8172-history-of-astronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/8172-history-of-astronomy.jpg",
+        "author": "Forbes, George",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8172,
+        "subjects": [
+          "Astronomy -- History",
+          "Astronomy",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:58:29.111Z"
+      },
+      {
         "title": "The Book of the Damned",
         "file": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.epub",
         "cover": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.jpg",
@@ -778,6 +796,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T11:27:50.235Z"
+      },
+      {
+        "title": "The Physiology of Taste; Or, Transcendental Gastronomy",
+        "file": "books/Gutenberg/Astronomy/5434-the-physiology-of-taste-or-transcendental-gastronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/5434-the-physiology-of-taste-or-transcendental-gastronomy.jpg",
+        "author": "Brillat-Savarin",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5434,
+        "subjects": [
+          "Gastronomy",
+          "Category: Cooking & Drinking",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:58:29.411Z"
       },
       {
         "title": "The Pleasures of the Table: An Account of Gastronomy from Ancient Days to Present Times. With a History of Its Literature, Schools, and Most Distinguished Artists; Together With Some Special Recipes, and Views Concerning the Aesthetics of Dinners and Dinner-giving",
@@ -5154,6 +5190,27 @@
         "downloadedAt": "2026-08-17T07:56:34.469Z"
       },
       {
+        "title": "American Cookery: November, 1921",
+        "file": "books/Gutenberg/Economics/26032-american-cookery-november-1921.epub",
+        "cover": "books/Gutenberg/Economics/26032-american-cookery-november-1921.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26032,
+        "subjects": [
+          "Cooking -- Periodicals",
+          "Home economics -- Periodicals",
+          "Category: American Literature",
+          "Category: Cooking & Drinking",
+          "Category: How To ...",
+          "Cookbooks and Cooking"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:56:25.425Z"
+      },
+      {
         "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
         "file": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.epub",
         "cover": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.jpg",
@@ -5247,6 +5304,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:14:41.236Z"
+      },
+      {
+        "title": "Monopolies and the People",
+        "file": "books/Gutenberg/Economics/21837-monopolies-and-the-people.epub",
+        "cover": "books/Gutenberg/Economics/21837-monopolies-and-the-people.jpg",
+        "author": "Baker, Charles Whiting",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21837,
+        "subjects": [
+          "Competition",
+          "Monopolies -- United States",
+          "Trusts, Industrial",
+          "Category: Economics",
+          "Category: History - American",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:56:25.734Z"
       },
       {
         "title": "Principles of Political Economy, Vol. 1",
@@ -13210,6 +13288,25 @@
         "downloadedAt": "2026-08-17T07:56:54.433Z"
       },
       {
+        "title": "How We Think",
+        "file": "books/Gutenberg/Psychology/37423-how-we-think.epub",
+        "cover": "books/Gutenberg/Psychology/37423-how-we-think.jpg",
+        "author": "Dewey, John",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37423,
+        "subjects": [
+          "Educational psychology",
+          "Thought and thinking",
+          "Category: Philosophy & Ethics",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:57:14.794Z"
+      },
+      {
         "title": "Persuasion",
         "file": "books/Gutenberg/Psychology/105-persuasion.epub",
         "cover": "books/Gutenberg/Psychology/105-persuasion.jpg",
@@ -13303,6 +13400,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.089Z"
+      },
+      {
+        "title": "The Interpretation of Dreams",
+        "file": "books/Gutenberg/Psychology/66048-the-interpretation-of-dreams.epub",
+        "cover": "books/Gutenberg/Psychology/66048-the-interpretation-of-dreams.jpg",
+        "author": "Freud, Sigmund",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 66048,
+        "subjects": [
+          "Dream interpretation",
+          "Psychoanalysis",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T12:57:15.176Z"
       },
       {
         "title": "The Mind and the Brain: Being the Authorised Translation of L'Âme et le Corps",
