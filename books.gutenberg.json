@@ -247,6 +247,60 @@
     ]
   },
   {
+    "class": "Gutenberg - Art & Music",
+    "books": [
+      {
+        "title": "The Hound of the Baskervilles",
+        "file": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.epub",
+        "cover": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.jpg",
+        "author": "Doyle, Arthur Conan",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2852,
+        "subjects": [
+          "Blessing and cursing -- Fiction",
+          "Dartmoor (England) -- Fiction",
+          "Detective and mystery stories",
+          "Dogs -- Fiction",
+          "Holmes, Sherlock (Fictitious character) -- Fiction",
+          "Private investigators -- England -- Fiction",
+          "Bestsellers, American, 1895-1923",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Detective Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:53.907Z"
+      },
+      {
+        "title": "The Romance of Tristan and Iseult",
+        "file": "books/Gutenberg/Art_Music/14244-the-romance-of-tristan-and-iseult.epub",
+        "cover": "books/Gutenberg/Art_Music/14244-the-romance-of-tristan-and-iseult.jpg",
+        "author": "Bédier, Joseph",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14244,
+        "subjects": [
+          "Arthurian romances -- Adaptations",
+          "Iseult (Legendary character) -- Romances -- Adaptations",
+          "Tristan (Legendary character) -- Romances -- Adaptations",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:52.634Z"
+      }
+    ]
+  },
+  {
     "class": "Gutenberg - Artificial Intelligence",
     "books": [
       {
@@ -891,6 +945,46 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T12:58:29.111Z"
+      },
+      {
+        "title": "Pioneers of Science",
+        "file": "books/Gutenberg/Astronomy/28613-pioneers-of-science.epub",
+        "cover": "books/Gutenberg/Astronomy/28613-pioneers-of-science.jpg",
+        "author": "Lodge, Oliver, Sir",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28613,
+        "subjects": [
+          "Astronomers",
+          "Astronomy -- History",
+          "Tides",
+          "Astronomy",
+          "Category: History - Other",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:37.850Z"
+      },
+      {
+        "title": "Recreations in Astronomy: With Directions for Practical Experiments and Telescopic Work",
+        "file": "books/Gutenberg/Astronomy/15620-recreations-in-astronomy-with-directions-for-practical-experiments-and-t.epub",
+        "cover": "books/Gutenberg/Astronomy/15620-recreations-in-astronomy-with-directions-for-practical-experiments-and-t.jpg",
+        "author": "Warren, Henry White",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15620,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: Religion/Spirituality",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:39.781Z"
       },
       {
         "title": "Sir William Herschel: His Life and Works",
@@ -13869,6 +13963,27 @@
         "downloadedAt": "2026-08-17T10:33:41.129Z"
       },
       {
+        "title": "Seen and Unseen",
+        "file": "books/Gutenberg/Psychology/21041-seen-and-unseen.epub",
+        "cover": "books/Gutenberg/Psychology/21041-seen-and-unseen.jpg",
+        "author": "Bates, E. Katherine (Emily Katherine)",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21041,
+        "subjects": [
+          "Bates, E. Katherine (Emily Katherine)",
+          "Parapsychology",
+          "Psychics -- Biography",
+          "Spiritualism",
+          "Category: Biographies",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:35.902Z"
+      },
+      {
         "title": "Sibylla : $b or, The revival of prophecy",
         "file": "books/Gutenberg/Psychology/76731-sibylla-b-or-the-revival-of-prophecy.epub",
         "cover": "books/Gutenberg/Psychology/76731-sibylla-b-or-the-revival-of-prophecy.jpg",
@@ -14089,6 +14204,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.463Z"
+      },
+      {
+        "title": "Three Contributions to the Theory of Sex",
+        "file": "books/Gutenberg/Psychology/14969-three-contributions-to-the-theory-of-sex.epub",
+        "cover": "books/Gutenberg/Psychology/14969-three-contributions-to-the-theory-of-sex.jpg",
+        "author": "Freud, Sigmund",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14969,
+        "subjects": [
+          "Sex",
+          "Category: Psychiatry/Psychology",
+          "Category: Sexuality & Erotica",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T18:41:34.697Z"
       },
       {
         "title": "Three Thousand Years of Mental Healing",
