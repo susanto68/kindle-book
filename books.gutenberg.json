@@ -689,6 +689,24 @@
         "downloadedAt": "2026-08-17T10:33:42.088Z"
       },
       {
+        "title": "A Short History of Astronomy",
+        "file": "books/Gutenberg/Astronomy/59212-a-short-history-of-astronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/59212-a-short-history-of-astronomy.jpg",
+        "author": "Berry, Arthur",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59212,
+        "subjects": [
+          "Astronomy -- History",
+          "Category: History - Other",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:37:22.369Z"
+      },
+      {
         "title": "A Text-Book of Astronomy",
         "file": "books/Gutenberg/Astronomy/34834-a-text-book-of-astronomy.epub",
         "cover": "books/Gutenberg/Astronomy/34834-a-text-book-of-astronomy.jpg",
@@ -816,6 +834,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T12:58:29.111Z"
+      },
+      {
+        "title": "Sir William Herschel: His Life and Works",
+        "file": "books/Gutenberg/Astronomy/29031-sir-william-herschel-his-life-and-works.epub",
+        "cover": "books/Gutenberg/Astronomy/29031-sir-william-herschel-his-life-and-works.jpg",
+        "author": "Holden, Edward S. (Edward Singleton)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29031,
+        "subjects": [
+          "Astronomers -- Great Britain -- Biography",
+          "Astronomy -- Great Britain -- History -- 18th century",
+          "Astronomy -- Great Britain -- History -- 19th century",
+          "Herschel, William, 1738-1822",
+          "Astronomy",
+          "Category: Biographies",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:37:22.877Z"
       },
       {
         "title": "The Book of the Damned",
@@ -5498,6 +5539,27 @@
         "downloadedAt": "2026-08-17T07:56:33.164Z"
       },
       {
+        "title": "The Arena, Volume 4, No. 24, November, 1891",
+        "file": "books/Gutenberg/Economics/25909-the-arena-volume-4-no-24-november-1891.epub",
+        "cover": "books/Gutenberg/Economics/25909-the-arena-volume-4-no-24-november-1891.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25909,
+        "subjects": [
+          "American literature -- Periodicals",
+          "Category: American Literature",
+          "Category: Economics",
+          "Category: Essays, Letters & Speeches",
+          "Category: Politics",
+          "The Arena"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:35:28.162Z"
+      },
+      {
         "title": "The Book of Household Management",
         "file": "books/Gutenberg/Economics/10136-the-book-of-household-management.epub",
         "cover": "books/Gutenberg/Economics/10136-the-book-of-household-management.jpg",
@@ -5605,6 +5667,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:17.606Z"
+      },
+      {
+        "title": "The Great Illusion: A Study of the Relation of Military Power to National Advantage",
+        "file": "books/Gutenberg/Economics/38535-the-great-illusion-a-study-of-the-relation-of-military-power-to-national.epub",
+        "cover": "books/Gutenberg/Economics/38535-the-great-illusion-a-study-of-the-relation-of-military-power-to-national.jpg",
+        "author": "Angell, Norman",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38535,
+        "subjects": [
+          "Commercial policy",
+          "Disarmament",
+          "Imperialism",
+          "War",
+          "War, Cost of",
+          "Category: Economics",
+          "Category: History - Modern (1750+)",
+          "Category: History - Warfare",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:35:27.668Z"
       },
       {
         "title": "The Settlement of Wage Disputes",
@@ -13421,6 +13507,23 @@
     "class": "Gutenberg - Psychology",
     "books": [
       {
+        "title": "A General Introduction to Psychoanalysis",
+        "file": "books/Gutenberg/Psychology/38219-a-general-introduction-to-psychoanalysis.epub",
+        "cover": "books/Gutenberg/Psychology/38219-a-general-introduction-to-psychoanalysis.jpg",
+        "author": "Freud, Sigmund",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38219,
+        "subjects": [
+          "Psychoanalysis",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:36:22.562Z"
+      },
+      {
         "title": "A pair of blue eyes",
         "file": "books/Gutenberg/Psychology/224-a-pair-of-blue-eyes.epub",
         "cover": "books/Gutenberg/Psychology/224-a-pair-of-blue-eyes.jpg",
@@ -13442,6 +13545,32 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:56:54.433Z"
+      },
+      {
+        "title": "Anthem",
+        "file": "books/Gutenberg/Psychology/1250-anthem.epub",
+        "cover": "books/Gutenberg/Psychology/1250-anthem.jpg",
+        "author": "Rand, Ayn",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1250,
+        "subjects": [
+          "Individuality -- Fiction",
+          "Love stories",
+          "Men -- Psychology -- Fiction",
+          "Psychological fiction",
+          "Science fiction",
+          "Time travel -- Fiction",
+          "Category: American Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction",
+          "Science Fiction by Women"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T15:36:22.997Z"
       },
       {
         "title": "Essay on the Creative Imagination",
