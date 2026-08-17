@@ -689,6 +689,25 @@
         "downloadedAt": "2026-08-17T10:33:42.088Z"
       },
       {
+        "title": "A Text-Book of Astronomy",
+        "file": "books/Gutenberg/Astronomy/34834-a-text-book-of-astronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/34834-a-text-book-of-astronomy.jpg",
+        "author": "Comstock, George C. (George Cary)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34834,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:41:01.309Z"
+      },
+      {
         "title": "Astronomical Curiosities: Facts and Fallacies",
         "file": "books/Gutenberg/Astronomy/39263-astronomical-curiosities-facts-and-fallacies.epub",
         "cover": "books/Gutenberg/Astronomy/39263-astronomical-curiosities-facts-and-fallacies.jpg",
@@ -739,6 +758,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T10:00:28.032Z"
+      },
+      {
+        "title": "Great Astronomers",
+        "file": "books/Gutenberg/Astronomy/2298-great-astronomers.epub",
+        "cover": "books/Gutenberg/Astronomy/2298-great-astronomers.jpg",
+        "author": "Ball, Robert S. (Robert Stawell)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2298,
+        "subjects": [
+          "Astronomers",
+          "Astronomy -- History",
+          "Category: Biographies",
+          "Category: History - Ancient",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:40:59.912Z"
       },
       {
         "title": "History of Astronomy",
@@ -5470,6 +5510,29 @@
         "downloadedAt": "2026-08-17T09:59:21.642Z"
       },
       {
+        "title": "The Economic Consequences of the Peace",
+        "file": "books/Gutenberg/Economics/15776-the-economic-consequences-of-the-peace.epub",
+        "cover": "books/Gutenberg/Economics/15776-the-economic-consequences-of-the-peace.jpg",
+        "author": "Keynes, John Maynard",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15776,
+        "subjects": [
+          "Economic history -- 1918-1945",
+          "Treaty of Versailles (1919 June 28)",
+          "World War, 1914-1918 -- Economic aspects",
+          "Bestsellers, American, 1895-1923",
+          "Category: Economics",
+          "Category: History - Modern (1750+)",
+          "Category: Politics",
+          "World War I"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:40:56.079Z"
+      },
+      {
         "title": "The Evolution of Modern Capitalism: A Study of Machine Production",
         "file": "books/Gutenberg/Economics/28284-the-evolution-of-modern-capitalism-a-study-of-machine-production.epub",
         "cover": "books/Gutenberg/Economics/28284-the-evolution-of-modern-capitalism-a-study-of-machine-production.jpg",
@@ -5547,6 +5610,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:17.035Z"
+      },
+      {
+        "title": "Usury : $b a scriptural, ethical and economic view",
+        "file": "books/Gutenberg/Economics/21623-usury-b-a-scriptural-ethical-and-economic-view.epub",
+        "cover": "books/Gutenberg/Economics/21623-usury-b-a-scriptural-ethical-and-economic-view.jpg",
+        "author": "Elliott, Calvin",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21623,
+        "subjects": [
+          "Usury",
+          "Category: Economics",
+          "Category: History - Other",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:40:56.699Z"
       }
     ]
   },
@@ -13288,6 +13371,24 @@
         "downloadedAt": "2026-08-17T07:56:54.433Z"
       },
       {
+        "title": "Essay on the Creative Imagination",
+        "file": "books/Gutenberg/Psychology/26430-essay-on-the-creative-imagination.epub",
+        "cover": "books/Gutenberg/Psychology/26430-essay-on-the-creative-imagination.jpg",
+        "author": "Ribot, Th. (Théodule)",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26430,
+        "subjects": [
+          "Creation (Literary, artistic, etc.)",
+          "Imagination",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:40:57.551Z"
+      },
+      {
         "title": "How We Think",
         "file": "books/Gutenberg/Psychology/37423-how-we-think.epub",
         "cover": "books/Gutenberg/Psychology/37423-how-we-think.jpg",
@@ -13332,6 +13433,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T09:59:56.685Z"
+      },
+      {
+        "title": "Psychology of the Unconscious: A Study of the Transformations and Symbolisms of the Libido. A Contribution to the History of the Evolution of Thought",
+        "file": "books/Gutenberg/Psychology/65903-psychology-of-the-unconscious-a-study-of-the-transformations-and-symboli.epub",
+        "cover": "books/Gutenberg/Psychology/65903-psychology-of-the-unconscious-a-study-of-the-transformations-and-symboli.jpg",
+        "author": "Jung, C. G. (Carl Gustav)",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65903,
+        "subjects": [
+          "Libido (Psychology)",
+          "Mother and child",
+          "Psychoanalysis",
+          "Subconsciousness",
+          "Symbolism (Psychology)",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T13:40:58.425Z"
       },
       {
         "title": "Psychotherapy",
