@@ -4568,6 +4568,29 @@
         "downloadedAt": "2026-08-16T18:40:45.080Z"
       },
       {
+        "title": "Macbeth",
+        "file": "books/Gutenberg/Drama_Fiction/1533-macbeth.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/1533-macbeth.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1533,
+        "subjects": [
+          "Macbeth, King of Scotland, active 11th century -- Drama",
+          "Regicides -- Drama",
+          "Scotland -- Kings and rulers -- Drama",
+          "Tragedies (Drama)",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Opera"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:23:59.402Z"
+      },
+      {
         "title": "Oedipus King of Thebes: Translated into English Rhyming Verse with Explanatory Notes",
         "file": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.epub",
         "cover": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.jpg",
@@ -4586,6 +4609,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:43.947Z"
+      },
+      {
+        "id": "gutenberg-online-44520",
+        "title": "Pamphlets and Parodies on Political Subjects",
+        "file": "https://www.gutenberg.org/ebooks/44520.html.images",
+        "cover": "https://www.gutenberg.org/cache/epub/44520/pg44520.cover.medium.jpg",
+        "author": "Hone, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "html",
+        "source": "gutendex",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/44520",
+        "gutenbergId": 44520,
+        "subjects": [
+          "Political satire, English",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Plays/Films/Dramas",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:23:59.530Z",
+        "storageMode": "external-link",
+        "canDownload": false
       },
       {
         "title": "Pygmalion",
@@ -12135,6 +12182,26 @@
         "downloadedAt": "2026-08-16T21:32:19.611Z"
       },
       {
+        "title": "The Works of Alexander Pope, Volume 1: Poetry - Volume 1",
+        "file": "books/Gutenberg/Poetry/32190-the-works-of-alexander-pope-volume-1-poetry-volume-1.epub",
+        "cover": "books/Gutenberg/Poetry/32190-the-works-of-alexander-pope-volume-1-poetry-volume-1.jpg",
+        "author": "Pope, Alexander",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32190,
+        "subjects": [
+          "English poetry -- 18th century",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:23:53.757Z"
+      },
+      {
         "title": "The Works of Edgar Allan Poe — Volume 1",
         "file": "books/Gutenberg/Poetry/2147-the-works-of-edgar-allan-poe-volume-1.epub",
         "cover": "books/Gutenberg/Poetry/2147-the-works-of-edgar-allan-poe-volume-1.jpg",
@@ -12185,6 +12252,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T22:22:57.189Z"
+      },
+      {
+        "title": "The Works of Lord Byron. Vol. 4",
+        "file": "books/Gutenberg/Poetry/20158-the-works-of-lord-byron-vol-4.epub",
+        "cover": "books/Gutenberg/Poetry/20158-the-works-of-lord-byron-vol-4.jpg",
+        "author": "Byron, George Gordon Byron, Baron",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20158,
+        "subjects": [
+          "Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Harvard Classics",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:23:54.731Z"
       }
     ]
   },
@@ -13444,6 +13532,28 @@
     "class": "Gutenberg - Self-Help",
     "books": [
       {
+        "title": "Helping Himself; Or, Grant Thornton's Ambition",
+        "file": "books/Gutenberg/Self_Help/5833-helping-himself-or-grant-thorntons-ambition.epub",
+        "cover": "books/Gutenberg/Self_Help/5833-helping-himself-or-grant-thorntons-ambition.jpg",
+        "author": "Alger, Horatio, Jr.",
+        "year": "Public domain",
+        "category": "Self-Help",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5833,
+        "subjects": [
+          "Conduct of life -- Juvenile fiction",
+          "Kidnapping -- Juvenile fiction",
+          "New York (N.Y.) -- History -- 19th century -- Juvenile fiction",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Novels",
+          "Children's Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:24:30.598Z"
+      },
+      {
         "title": "Self Help; with Illustrations of Conduct and Perseverance",
         "file": "books/Gutenberg/Self_Help/935-self-help-with-illustrations-of-conduct-and-perseverance.epub",
         "cover": "books/Gutenberg/Self_Help/935-self-help-with-illustrations-of-conduct-and-perseverance.jpg",
@@ -13459,6 +13569,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T23:21:21.757Z"
+      },
+      {
+        "title": "Self-Help Mechanical Drawing: An Educational Treatise",
+        "file": "books/Gutenberg/Self_Help/67166-self-help-mechanical-drawing-an-educational-treatise.epub",
+        "cover": "books/Gutenberg/Self_Help/67166-self-help-mechanical-drawing-an-educational-treatise.jpg",
+        "author": "Hawkins, N. (Nehemiah)",
+        "year": "Public domain",
+        "category": "Self-Help",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67166,
+        "subjects": [
+          "Mechanical drawing",
+          "Category: Engineering & Technology",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T01:24:32.148Z"
       }
     ]
   }
