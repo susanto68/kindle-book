@@ -250,6 +250,48 @@
     "class": "Gutenberg - Art & Music",
     "books": [
       {
+        "title": "Helen Vardon's confession",
+        "file": "books/Gutenberg/Art_Music/76728-helen-vardons-confession.epub",
+        "cover": "books/Gutenberg/Art_Music/76728-helen-vardons-confession.jpg",
+        "author": "Freeman, R. Austin (Richard Austin)",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76728,
+        "subjects": [
+          "Artists -- Fiction",
+          "Detective and mystery stories",
+          "England -- Fiction",
+          "Married women -- Fiction",
+          "Thorndyke, Doctor (Fictitious character) -- Fiction",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T19:31:13.781Z"
+      },
+      {
+        "title": "Lives of the Most Eminent Painters Sculptors and Architects, Vol. 01 (of 10): Cimabue to Agnolo Gaddi",
+        "file": "books/Gutenberg/Art_Music/25326-lives-of-the-most-eminent-painters-sculptors-and-architects-vol-01-of-10.epub",
+        "cover": "books/Gutenberg/Art_Music/25326-lives-of-the-most-eminent-painters-sculptors-and-architects-vol-01-of-10.jpg",
+        "author": "Vasari, Giorgio",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25326,
+        "subjects": [
+          "Art, Italian",
+          "Artists -- Italy -- Biography",
+          "Category: Art",
+          "Category: Biographies",
+          "Category: History - Early Modern (c. 1450-1750)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T19:31:14.328Z"
+      },
+      {
         "title": "The Hound of the Baskervilles",
         "file": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.epub",
         "cover": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.jpg",
@@ -8702,6 +8744,47 @@
     ]
   },
   {
+    "class": "Gutenberg - Language Learning",
+    "books": [
+      {
+        "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
+        "file": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.epub",
+        "cover": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 37683,
+        "subjects": [
+          "English language -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T19:31:19.121Z"
+      },
+      {
+        "title": "Moby Multiple Language Lists of Common Words",
+        "file": "books/Gutenberg/Language_Learning/3206-moby-multiple-language-lists-of-common-words.epub",
+        "cover": "books/Gutenberg/Language_Learning/3206-moby-multiple-language-lists-of-common-words.jpg",
+        "author": "Ward, Grady",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3206,
+        "subjects": [
+          "Words and phrase lists -- English",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T19:31:19.444Z"
+      }
+    ]
+  },
+  {
     "class": "Gutenberg - Literature",
     "books": [
       {
@@ -13854,6 +13937,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T16:29:20.864Z"
+      },
+      {
+        "title": "Dream Psychology: Psychoanalysis for Beginners",
+        "file": "books/Gutenberg/Psychology/15489-dream-psychology-psychoanalysis-for-beginners.epub",
+        "cover": "books/Gutenberg/Psychology/15489-dream-psychology-psychoanalysis-for-beginners.jpg",
+        "author": "Freud, Sigmund",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15489,
+        "subjects": [
+          "Dreams",
+          "Psychoanalysis",
+          "Category: Psychiatry/Psychology",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T19:31:13.155Z"
       },
       {
         "title": "Essay on the Creative Imagination",
