@@ -4722,6 +4722,29 @@
         "downloadedAt": "2026-08-16T23:21:06.608Z"
       },
       {
+        "title": "Shakespeare, Ben Jonson, Beaumont and Fletcher",
+        "file": "books/Gutenberg/Drama_Fiction/25585-shakespeare-ben-jonson-beaumont-and-fletcher.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/25585-shakespeare-ben-jonson-beaumont-and-fletcher.jpg",
+        "author": "Coleridge, Samuel Taylor",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25585,
+        "subjects": [
+          "Beaumont, Francis, 1584-1616",
+          "English drama -- Early modern and Elizabethan, 1500-1600 -- History and criticism",
+          "Fletcher, John, 1579-1625",
+          "Jonson, Ben, 1573?-1637",
+          "Shakespeare, William, 1564-1616",
+          "Category: British Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:36.584Z"
+      },
+      {
         "title": "Shakespearean Playhouses: A History of English Theatres from the Beginnings to the Restoration",
         "file": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.epub",
         "cover": "books/Gutenberg/Drama_Fiction/22397-shakespearean-playhouses-a-history-of-english-theatres-from-the-beginnin.jpg",
@@ -4870,12 +4893,51 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T20:24:05.258Z"
+      },
+      {
+        "title": "Theft: A Play In Four Acts",
+        "file": "books/Gutenberg/Drama_Fiction/21936-theft-a-play-in-four-acts.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/21936-theft-a-play-in-four-acts.jpg",
+        "author": "London, Jack",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21936,
+        "subjects": [
+          "Drama",
+          "Category: American Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:35.616Z"
       }
     ]
   },
   {
     "class": "Gutenberg - Economics",
     "books": [
+      {
+        "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+        "file": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.epub",
+        "cover": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.jpg",
+        "author": "Smith, Adam",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3300,
+        "subjects": [
+          "Economics",
+          "Best Books Ever Listings",
+          "Category: Economics",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:38.589Z"
+      },
       {
         "title": "Fifty years in Wall Street",
         "file": "books/Gutenberg/Economics/70377-fifty-years-in-wall-street.epub",
@@ -4917,6 +4979,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:56:47.806Z"
+      },
+      {
+        "title": "The Communist Manifesto",
+        "file": "books/Gutenberg/Economics/61-the-communist-manifesto.epub",
+        "cover": "books/Gutenberg/Economics/61-the-communist-manifesto.jpg",
+        "author": "Marx, Karl, Engels, Friedrich",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61,
+        "subjects": [
+          "Communism",
+          "Socialism",
+          "Banned Books from Anne Haight's list",
+          "Category: Economics",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Modern (1750+)",
+          "Category: Philosophy & Ethics",
+          "Category: Politics",
+          "Philosophy",
+          "Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:39.413Z"
       }
     ]
   },
@@ -12103,6 +12190,48 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T19:22:18.058Z"
+      },
+      {
+        "title": "Childe Harold's Pilgrimage",
+        "file": "books/Gutenberg/Poetry/5131-childe-harolds-pilgrimage.epub",
+        "cover": "books/Gutenberg/Poetry/5131-childe-harolds-pilgrimage.jpg",
+        "author": "Byron, George Gordon Byron, Baron",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5131,
+        "subjects": [
+          "English poetry",
+          "Pilgrims and pilgrimages -- Europe -- Poetry",
+          "Voyages and travels -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:34.690Z"
+      },
+      {
+        "title": "Divine Comedy, Longfellow's Translation, Hell",
+        "file": "books/Gutenberg/Poetry/1001-divine-comedy-longfellows-translation-hell.epub",
+        "cover": "books/Gutenberg/Poetry/1001-divine-comedy-longfellows-translation-hell.jpg",
+        "author": "Dante Alighieri",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1001,
+        "subjects": [
+          "Epic poetry, Italian -- Translations into English",
+          "Hell -- Poetry",
+          "Italian poetry -- To 1400 -- Translations into English",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Italy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T05:36:33.875Z"
       },
       {
         "title": "Don Juan",
