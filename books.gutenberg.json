@@ -342,6 +342,27 @@
         "downloadedAt": "2026-08-17T18:41:53.907Z"
       },
       {
+        "title": "The Letters of Wolfgang Amadeus Mozart — Volume 01",
+        "file": "books/Gutenberg/Art_Music/5307-the-letters-of-wolfgang-amadeus-mozart-volume-01.epub",
+        "cover": "books/Gutenberg/Art_Music/5307-the-letters-of-wolfgang-amadeus-mozart-volume-01.jpg",
+        "author": "Mozart, Wolfgang Amadeus",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 5307,
+        "subjects": [
+          "Composers -- Austria -- Correspondence",
+          "Mozart, Wolfgang Amadeus, 1756-1791 -- Correspondence",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches",
+          "Category: Music",
+          "Music"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T21:28:07.363Z"
+      },
+      {
         "title": "The Romance of Tristan and Iseult",
         "file": "books/Gutenberg/Art_Music/14244-the-romance-of-tristan-and-iseult.epub",
         "cover": "books/Gutenberg/Art_Music/14244-the-romance-of-tristan-and-iseult.jpg",
@@ -362,6 +383,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T18:41:52.634Z"
+      },
+      {
+        "title": "The Sailor's Word-Book: An Alphabetical Digest of Nautical Terms, including Some More Especially Military and Scientific, but Useful to Seamen; as well as Archaisms of Early Voyagers, etc.",
+        "file": "books/Gutenberg/Art_Music/26000-the-sailors-word-book-an-alphabetical-digest-of-nautical-terms-including.epub",
+        "cover": "books/Gutenberg/Art_Music/26000-the-sailors-word-book-an-alphabetical-digest-of-nautical-terms-including.jpg",
+        "author": "Smyth, W. H. (William Henry)",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26000,
+        "subjects": [
+          "Military art and science -- Dictionaries",
+          "Naval art and science -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T21:28:06.982Z"
       },
       {
         "title": "The warlord of Mars",
@@ -8826,6 +8865,44 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T19:31:19.444Z"
+      },
+      {
+        "title": "Phrases and Names, Their Origins and Meanings",
+        "file": "books/Gutenberg/Language_Learning/54657-phrases-and-names-their-origins-and-meanings.epub",
+        "cover": "books/Gutenberg/Language_Learning/54657-phrases-and-names-their-origins-and-meanings.jpg",
+        "author": "Johnson, Trench H.",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54657,
+        "subjects": [
+          "English language -- Etymology -- Dictionaries",
+          "English language -- Terms and phrases",
+          "Names, English -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T21:28:08.316Z"
+      },
+      {
+        "title": "Roget's Thesaurus of English Words and Phrases",
+        "file": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.epub",
+        "cover": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.jpg",
+        "author": "Roget, Peter Mark",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10681,
+        "subjects": [
+          "English language -- Synonyms and antonyms",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T21:28:07.938Z"
       },
       {
         "title": "The Comic English Grammar: A New And Facetious Introduction To The English Tongue",
