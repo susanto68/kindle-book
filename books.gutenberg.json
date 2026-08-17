@@ -250,6 +250,42 @@
     "class": "Gutenberg - Art & Music",
     "books": [
       {
+        "title": "Boston : $b a novel",
+        "file": "books/Gutenberg/Art_Music/78039-boston-b-a-novel.epub",
+        "cover": "books/Gutenberg/Art_Music/78039-boston-b-a-novel.jpg",
+        "author": "Sinclair, Upton",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78039,
+        "subjects": [
+          "Historical fiction",
+          "Legal stories",
+          "Sacco, Nicola, 1891-1927 -- Fiction",
+          "Sacco-Vanzetti Trial, Dedham, Mass., 1921 -- Fiction",
+          "Vanzetti, Bartolomeo, 1888-1927 -- Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T22:27:21.078Z"
+      },
+      {
+        "title": "Field Artillery Training. 1914",
+        "file": "books/Gutenberg/Art_Music/78053-field-artillery-training-1914.epub",
+        "cover": "books/Gutenberg/Art_Music/78053-field-artillery-training-1914.jpg",
+        "author": "Great Britain. War Office",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78053,
+        "subjects": [
+          "Great Britain. Army. Royal Field Artillery"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T22:27:20.709Z"
+      },
+      {
         "title": "Helen Vardon's confession",
         "file": "books/Gutenberg/Art_Music/76728-helen-vardons-confession.epub",
         "cover": "books/Gutenberg/Art_Music/76728-helen-vardons-confession.jpg",
@@ -8849,6 +8885,26 @@
         "downloadedAt": "2026-08-17T19:31:19.121Z"
       },
       {
+        "title": "Language of Flowers",
+        "file": "books/Gutenberg/Language_Learning/31591-language-of-flowers.epub",
+        "cover": "books/Gutenberg/Language_Learning/31591-language-of-flowers.jpg",
+        "author": "Greenaway, Kate",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31591,
+        "subjects": [
+          "Flower language",
+          "Flowers -- Poetry",
+          "Category: Art",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T22:27:47.467Z"
+      },
+      {
         "title": "Moby Multiple Language Lists of Common Words",
         "file": "books/Gutenberg/Language_Learning/3206-moby-multiple-language-lists-of-common-words.epub",
         "cover": "books/Gutenberg/Language_Learning/3206-moby-multiple-language-lists-of-common-words.jpg",
@@ -8922,6 +8978,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T20:31:21.746Z"
+      },
+      {
+        "title": "The Devil's Dictionary",
+        "file": "books/Gutenberg/Language_Learning/972-the-devils-dictionary.epub",
+        "cover": "books/Gutenberg/Language_Learning/972-the-devils-dictionary.jpg",
+        "author": "Bierce, Ambrose",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 972,
+        "subjects": [
+          "English language -- Dictionaries -- Humor",
+          "English language -- Semantics -- Humor",
+          "Vocabulary -- Humor",
+          "Category: American Literature",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Humour",
+          "Humor",
+          "Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T22:27:46.961Z"
       },
       {
         "title": "The Elements of Style",
