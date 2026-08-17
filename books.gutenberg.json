@@ -742,6 +742,25 @@
         "downloadedAt": "2026-08-17T07:57:21.516Z"
       },
       {
+        "title": "Curiosities of the Sky",
+        "file": "books/Gutenberg/Astronomy/6630-curiosities-of-the-sky.epub",
+        "cover": "books/Gutenberg/Astronomy/6630-curiosities-of-the-sky.jpg",
+        "author": "Serviss, Garrett Putman",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6630,
+        "subjects": [
+          "Astronomy",
+          "Astronomy",
+          "Category: Science - Physics",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:43.521Z"
+      },
+      {
         "title": "Food and Flavor: A Gastronomic Guide to Health and Good Living",
         "file": "books/Gutenberg/Astronomy/61719-food-and-flavor-a-gastronomic-guide-to-health-and-good-living.epub",
         "cover": "books/Gutenberg/Astronomy/61719-food-and-flavor-a-gastronomic-guide-to-health-and-good-living.jpg",
@@ -816,6 +835,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:57:22.377Z"
+      },
+      {
+        "title": "The music of the spheres : $b A nature lover's astronomy",
+        "file": "books/Gutenberg/Astronomy/70382-the-music-of-the-spheres-b-a-nature-lovers-astronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/70382-the-music-of-the-spheres-b-a-nature-lovers-astronomy.jpg",
+        "author": "Grondal, Florence Armstrong",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70382,
+        "subjects": [
+          "Astronomy",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:41.595Z"
       },
       {
         "title": "The Pantropheon; Or, History of Food, Its Preparation, from the Earliest Ages of the World",
@@ -5367,6 +5404,23 @@
         "downloadedAt": "2026-08-17T12:56:25.734Z"
       },
       {
+        "title": "On The Principles of Political Economy, and Taxation",
+        "file": "books/Gutenberg/Economics/33310-on-the-principles-of-political-economy-and-taxation.epub",
+        "cover": "books/Gutenberg/Economics/33310-on-the-principles-of-political-economy-and-taxation.jpg",
+        "author": "Ricardo, David",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33310,
+        "subjects": [
+          "Economics",
+          "Category: Economics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:36.277Z"
+      },
+      {
         "title": "Principles of Political Economy, Vol. 1",
         "file": "books/Gutenberg/Economics/27698-principles-of-political-economy-vol-1.epub",
         "cover": "books/Gutenberg/Economics/27698-principles-of-political-economy-vol-1.jpg",
@@ -5551,6 +5605,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:17.606Z"
+      },
+      {
+        "title": "The Settlement of Wage Disputes",
+        "file": "books/Gutenberg/Economics/27519-the-settlement-of-wage-disputes.epub",
+        "cover": "books/Gutenberg/Economics/27519-the-settlement-of-wage-disputes.jpg",
+        "author": "Feis, Herbert",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27519,
+        "subjects": [
+          "Economics",
+          "Wages -- United States",
+          "Category: Economics",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:35.033Z"
       },
       {
         "title": "The social contract & discourses",
@@ -13501,6 +13574,25 @@
         "downloadedAt": "2026-08-17T09:59:55.378Z"
       },
       {
+        "title": "The Anatomy of Melancholy",
+        "file": "books/Gutenberg/Psychology/10800-the-anatomy-of-melancholy.epub",
+        "cover": "books/Gutenberg/Psychology/10800-the-anatomy-of-melancholy.jpg",
+        "author": "Burton, Robert",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10800,
+        "subjects": [
+          "Melancholy -- Early works to 1800",
+          "Category: British Literature",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:39.614Z"
+      },
+      {
         "title": "The Awakening, and Selected Short Stories",
         "file": "books/Gutenberg/Psychology/160-the-awakening-and-selected-short-stories.epub",
         "cover": "books/Gutenberg/Psychology/160-the-awakening-and-selected-short-stories.jpg",
@@ -13623,6 +13715,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.463Z"
+      },
+      {
+        "title": "Three Thousand Years of Mental Healing",
+        "file": "books/Gutenberg/Psychology/23101-three-thousand-years-of-mental-healing.epub",
+        "cover": "books/Gutenberg/Psychology/23101-three-thousand-years-of-mental-healing.jpg",
+        "author": "Cutten, George Barton",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23101,
+        "subjects": [
+          "Mental healing",
+          "Category: Health & Medicine",
+          "Category: History - Other",
+          "Category: History - Religious",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T14:29:38.132Z"
       },
       {
         "title": "Ulysses",
