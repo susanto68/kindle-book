@@ -4453,6 +4453,26 @@
         "downloadedAt": "2026-08-16T17:20:43.706Z"
       },
       {
+        "title": "Charles Frohman: Manager and Man",
+        "file": "books/Gutenberg/Drama_Fiction/26146-charles-frohman-manager-and-man.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/26146-charles-frohman-manager-and-man.jpg",
+        "author": "Marcosson, Isaac Frederick, Frohman, Daniel",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26146,
+        "subjects": [
+          "Frohman, Charles, 1860-1915",
+          "Theater -- United States",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:09.476Z"
+      },
+      {
         "title": "Faust [part 1]. Translated Into English in the Original Metres",
         "file": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.epub",
         "cover": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.jpg",
@@ -4633,6 +4653,26 @@
         "downloadedAt": "2026-08-17T01:23:59.530Z",
         "storageMode": "external-link",
         "canDownload": false
+      },
+      {
+        "title": "Plays",
+        "file": "books/Gutenberg/Drama_Fiction/10623-plays.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/10623-plays.jpg",
+        "author": "Glaspell, Susan",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10623,
+        "subjects": [
+          "American drama",
+          "Category: American Literature",
+          "Category: Gender & Sexuality Studies",
+          "Category: Plays/Films/Dramas",
+          "One Act Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:07.901Z"
       },
       {
         "title": "Pygmalion",
@@ -12055,6 +12095,26 @@
         "downloadedAt": "2026-08-16T23:21:04.493Z"
       },
       {
+        "title": "Songs of Innocence and of Experience",
+        "file": "books/Gutenberg/Poetry/1934-songs-of-innocence-and-of-experience.epub",
+        "cover": "books/Gutenberg/Poetry/1934-songs-of-innocence-and-of-experience.jpg",
+        "author": "Blake, William",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1934,
+        "subjects": [
+          "English poetry -- 18th century",
+          "Pastoral poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:05.644Z"
+      },
+      {
         "title": "Sonnets from the Portuguese",
         "file": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.epub",
         "cover": "books/Gutenberg/Poetry/2002-sonnets-from-the-portuguese.jpg",
@@ -12095,6 +12155,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T23:21:03.564Z"
+      },
+      {
+        "title": "The Aeneid",
+        "file": "books/Gutenberg/Poetry/228-the-aeneid.epub",
+        "cover": "books/Gutenberg/Poetry/228-the-aeneid.jpg",
+        "author": "Virgil",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 228,
+        "subjects": [
+          "Aeneas (Legendary character) -- Poetry",
+          "Epic poetry, Latin -- Translations into English",
+          "Legends -- Rome -- Poetry",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Classical Antiquity",
+          "Harvard Classics",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:06.745Z"
       },
       {
         "title": "The Bakhtyār Nāma: A Persian Romance",
@@ -13532,6 +13617,27 @@
     "class": "Gutenberg - Self-Help",
     "books": [
       {
+        "title": "Emergency Childbirth: A Reference Guide for Students of the Medical Self-help Training Course, Lesson No. 11",
+        "file": "books/Gutenberg/Self_Help/26923-emergency-childbirth-a-reference-guide-for-students-of-the-medical-self-.epub",
+        "cover": "books/Gutenberg/Self_Help/26923-emergency-childbirth-a-reference-guide-for-students-of-the-medical-self-.jpg",
+        "author": "United States. Office of Civil Defense, United States. Public Health Service",
+        "year": "Public domain",
+        "category": "Self-Help",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26923,
+        "subjects": [
+          "Childbirth -- Handbooks, manuals, etc.",
+          "Delivery (Obstetrics) -- Handbooks, manuals, etc.",
+          "Labor (Obstetrics) -- Handbooks, manuals, etc.",
+          "Category: Health & Medicine",
+          "Category: How To ...",
+          "Category: Parenthood & Family Relations"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:11.278Z"
+      },
+      {
         "title": "Helping Himself; Or, Grant Thornton's Ambition",
         "file": "books/Gutenberg/Self_Help/5833-helping-himself-or-grant-thorntons-ambition.epub",
         "cover": "books/Gutenberg/Self_Help/5833-helping-himself-or-grant-thorntons-ambition.jpg",
@@ -13587,6 +13693,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T01:24:32.148Z"
+      },
+      {
+        "title": "Self-Help: Sailor's Knots, Part 3.",
+        "file": "books/Gutenberg/Self_Help/10783-self-help-sailors-knots-part-3.epub",
+        "cover": "books/Gutenberg/Self_Help/10783-self-help-sailors-knots-part-3.jpg",
+        "author": "Jacobs, W. W. (William Wymark)",
+        "year": "Public domain",
+        "category": "Self-Help",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10783,
+        "subjects": [
+          "England -- Social life and customs -- Fiction",
+          "Humorous stories, English",
+          "Category: British Literature",
+          "Category: Humour",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T03:02:12.433Z"
       }
     ]
   }
