@@ -702,6 +702,46 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:57:22.377Z"
+      },
+      {
+        "title": "The sidereal messenger of Galileo Galilei : $b and a part of the preface to Kepler's Dioptrics containing the original account of Galileo's astronomical discoveries",
+        "file": "books/Gutenberg/Astronomy/46036-the-sidereal-messenger-of-galileo-galilei-b-and-a-part-of-the-preface-to.epub",
+        "cover": "books/Gutenberg/Astronomy/46036-the-sidereal-messenger-of-galileo-galilei-b-and-a-part-of-the-preface-to.jpg",
+        "author": "Galilei, Galileo, Kepler, Johannes",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46036,
+        "subjects": [
+          "Astronomy -- Early works to 1800",
+          "Jupiter (Planet) -- Satellites",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:18.974Z"
+      },
+      {
+        "title": "The Witness of the Stars",
+        "file": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.epub",
+        "cover": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.jpg",
+        "author": "Bullinger, E. W. (Ethelbert William)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 49018,
+        "subjects": [
+          "Astronomy",
+          "Astronomy in the Bible",
+          "Bible and science",
+          "Constellations",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:19.521Z"
       }
     ]
   },
@@ -5154,6 +5194,46 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T05:36:39.413Z"
+      },
+      {
+        "title": "The Evolution of Modern Capitalism: A Study of Machine Production",
+        "file": "books/Gutenberg/Economics/28284-the-evolution-of-modern-capitalism-a-study-of-machine-production.epub",
+        "cover": "books/Gutenberg/Economics/28284-the-evolution-of-modern-capitalism-a-study-of-machine-production.jpg",
+        "author": "Hobson, J. A. (John Atkinson)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28284,
+        "subjects": [
+          "Capitalism",
+          "Industries -- History",
+          "Machinery in the workplace",
+          "Category: Economics",
+          "Category: History - Modern (1750+)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:17.606Z"
+      },
+      {
+        "title": "The World's Greatest Books — Volume 14 — Philosophy and Economics",
+        "file": "books/Gutenberg/Economics/25009-the-worlds-greatest-books-volume-14-philosophy-and-economics.epub",
+        "cover": "books/Gutenberg/Economics/25009-the-worlds-greatest-books-volume-14-philosophy-and-economics.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25009,
+        "subjects": [
+          "Economics",
+          "Philosophy",
+          "Category: Economics",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:17.035Z"
       }
     ]
   },
@@ -12893,6 +12973,54 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:56:54.433Z"
+      },
+      {
+        "title": "The Awakening, and Selected Short Stories",
+        "file": "books/Gutenberg/Psychology/160-the-awakening-and-selected-short-stories.epub",
+        "cover": "books/Gutenberg/Psychology/160-the-awakening-and-selected-short-stories.jpg",
+        "author": "Chopin, Kate",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 160,
+        "subjects": [
+          "Adultery -- Fiction",
+          "Louisiana -- Social life and customs -- Fiction",
+          "New Orleans (La.) -- Fiction",
+          "Self-actualization (Psychology) -- Fiction",
+          "Women -- Louisiana -- New Orleans -- Social conditions -- Fiction",
+          "Banned Books List from the American Library Association",
+          "Banned Books from Anne Haight's list",
+          "Category: American Literature",
+          "Category: Classics of Literature",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:18.089Z"
+      },
+      {
+        "title": "The Yellow Wallpaper",
+        "file": "books/Gutenberg/Psychology/1952-the-yellow-wallpaper.epub",
+        "cover": "books/Gutenberg/Psychology/1952-the-yellow-wallpaper.jpg",
+        "author": "Gilman, Charlotte Perkins",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1952,
+        "subjects": [
+          "Feminist fiction",
+          "Married women -- Psychology -- Fiction",
+          "Mentally ill women -- Fiction",
+          "Psychological fiction",
+          "Sex role -- Fiction",
+          "Category: American Literature",
+          "Category: Short Stories",
+          "Gothic Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T08:45:18.463Z"
       },
       {
         "title": "Ulysses",
