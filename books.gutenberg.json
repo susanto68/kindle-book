@@ -4453,6 +4453,28 @@
         "downloadedAt": "2026-08-16T17:20:43.706Z"
       },
       {
+        "title": "Bussy D'Ambois and The Revenge of Bussy D'Ambois",
+        "file": "books/Gutenberg/Drama_Fiction/20890-bussy-dambois-and-the-revenge-of-bussy-dambois.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/20890-bussy-dambois-and-the-revenge-of-bussy-dambois.jpg",
+        "author": "Chapman, George",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20890,
+        "subjects": [
+          "Bussy d'Amboise, 1549?-1579 -- Drama",
+          "English drama -- 17th century",
+          "Revenge -- Drama",
+          "Tragedies (Drama)",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:55:14.360Z"
+      },
+      {
         "title": "Charles Frohman: Manager and Man",
         "file": "books/Gutenberg/Drama_Fiction/26146-charles-frohman-manager-and-man.epub",
         "cover": "books/Gutenberg/Drama_Fiction/26146-charles-frohman-manager-and-man.jpg",
@@ -4744,6 +4766,28 @@
         "downloadedAt": "2026-08-16T19:22:22.134Z"
       },
       {
+        "title": "The Grand Inquisitor",
+        "file": "books/Gutenberg/Drama_Fiction/8578-the-grand-inquisitor.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/8578-the-grand-inquisitor.jpg",
+        "author": "Dostoyevsky, Fyodor",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8578,
+        "subjects": [
+          "Christian fiction",
+          "Jesus Christ -- Fiction",
+          "Category: Philosophy & Ethics",
+          "Category: Plays/Films/Dramas",
+          "Category: Religion/Spirituality",
+          "Category: Russian Literature",
+          "Racism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:55:14.647Z"
+      },
+      {
         "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
         "file": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.epub",
         "cover": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.jpg",
@@ -4826,6 +4870,53 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T20:24:05.258Z"
+      }
+    ]
+  },
+  {
+    "class": "Gutenberg - Economics",
+    "books": [
+      {
+        "title": "Fifty years in Wall Street",
+        "file": "books/Gutenberg/Economics/70377-fifty-years-in-wall-street.epub",
+        "cover": "books/Gutenberg/Economics/70377-fifty-years-in-wall-street.jpg",
+        "author": "Clews, Henry",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 70377,
+        "subjects": [
+          "Business",
+          "Capitalists and financiers -- United States",
+          "Speculation",
+          "Wall Street (New York, N.Y.)",
+          "Category: Biographies",
+          "Category: Economics",
+          "Category: History - American"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:56:48.634Z"
+      },
+      {
+        "title": "Reminiscences of a Stock Operator",
+        "file": "books/Gutenberg/Economics/60979-reminiscences-of-a-stock-operator.epub",
+        "cover": "books/Gutenberg/Economics/60979-reminiscences-of-a-stock-operator.jpg",
+        "author": "Lefevre, Edwin",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60979,
+        "subjects": [
+          "Investments",
+          "New York Stock Exchange",
+          "Speculation",
+          "Category: Biographies",
+          "Category: Economics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:56:47.806Z"
       }
     ]
   },
@@ -12199,6 +12290,52 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T20:24:02.721Z"
+      },
+      {
+        "title": "The Ballad of the White Horse",
+        "file": "books/Gutenberg/Poetry/1719-the-ballad-of-the-white-horse.epub",
+        "cover": "books/Gutenberg/Poetry/1719-the-ballad-of-the-white-horse.jpg",
+        "author": "Chesterton, G. K. (Gilbert Keith)",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1719,
+        "subjects": [
+          "Alfred, King of England, 849-899 -- Poetry",
+          "Christian poetry",
+          "Epic poetry",
+          "Great Britain -- History -- Alfred, 871-899 -- Poetry",
+          "Historical poetry",
+          "White Horse, Vale of (England) -- Poetry",
+          "Category: British Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:54:56.057Z"
+      },
+      {
+        "title": "The Canterbury Tales, and Other Poems",
+        "file": "books/Gutenberg/Poetry/2383-the-canterbury-tales-and-other-poems.epub",
+        "cover": "books/Gutenberg/Poetry/2383-the-canterbury-tales-and-other-poems.jpg",
+        "author": "Chaucer, Geoffrey",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2383,
+        "subjects": [
+          "Chaucer, Geoffrey, -1400",
+          "Christian pilgrims and pilgrimages -- Poetry",
+          "English poetry -- Middle English, 1100-1500",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T04:54:56.441Z"
       },
       {
         "title": "The Iliad",
