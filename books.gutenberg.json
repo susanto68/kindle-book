@@ -351,6 +351,28 @@
         "downloadedAt": "2026-08-17T19:31:14.328Z"
       },
       {
+        "title": "The black kiss",
+        "file": "books/Gutenberg/Art_Music/76435-the-black-kiss.epub",
+        "cover": "books/Gutenberg/Art_Music/76435-the-black-kiss.jpg",
+        "author": "Bloch, Robert, Kuttner, Henry",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76435,
+        "subjects": [
+          "Artists -- Fiction",
+          "California -- Fiction",
+          "Horror tales",
+          "Short stories",
+          "Category: American Literature",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T23:38:56.797Z"
+      },
+      {
         "title": "The Hound of the Baskervilles",
         "file": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.epub",
         "cover": "books/Gutenberg/Art_Music/2852-the-hound-of-the-baskervilles.jpg",
@@ -459,6 +481,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T20:31:21.118Z"
+      },
+      {
+        "title": "Things near & far",
+        "file": "books/Gutenberg/Art_Music/78106-things-near-far.epub",
+        "cover": "books/Gutenberg/Art_Music/78106-things-near-far.jpg",
+        "author": "Machen, Arthur",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78106,
+        "subjects": [
+          "Authors, English -- 20th century -- Biography",
+          "Authors, Welsh -- 20th century -- Biography",
+          "Autobiography",
+          "Fantasy fiction -- Authorship",
+          "Horror tales -- Authorship",
+          "Machen, Arthur, 1863-1947"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T23:38:55.731Z"
       }
     ]
   },
@@ -9023,6 +9066,40 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T20:31:21.996Z"
+      },
+      {
+        "title": "The Principles of English Versification",
+        "file": "books/Gutenberg/Language_Learning/21342-the-principles-of-english-versification.epub",
+        "cover": "books/Gutenberg/Language_Learning/21342-the-principles-of-english-versification.jpg",
+        "author": "Baum, Paull F. (Paull Franklin)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21342,
+        "subjects": [
+          "English language -- Versification",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T23:38:59.500Z"
+      },
+      {
+        "title": "Webster's Unabridged Dictionary",
+        "file": "books/Gutenberg/Language_Learning/29765-websters-unabridged-dictionary.epub",
+        "cover": "books/Gutenberg/Language_Learning/29765-websters-unabridged-dictionary.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 29765,
+        "subjects": [
+          "English language -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T23:38:58.625Z"
       }
     ]
   },
