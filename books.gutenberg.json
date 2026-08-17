@@ -669,6 +669,44 @@
     "class": "Gutenberg - Astronomy",
     "books": [
       {
+        "title": "A Field Book of the Stars",
+        "file": "books/Gutenberg/Astronomy/20769-a-field-book-of-the-stars.epub",
+        "cover": "books/Gutenberg/Astronomy/20769-a-field-book-of-the-stars.jpg",
+        "author": "Olcott, William Tyler",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20769,
+        "subjects": [
+          "Astronomy",
+          "Constellations",
+          "Astronomy",
+          "Category: How To ...",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:42.088Z"
+      },
+      {
+        "title": "Astronomical Curiosities: Facts and Fallacies",
+        "file": "books/Gutenberg/Astronomy/39263-astronomical-curiosities-facts-and-fallacies.epub",
+        "cover": "books/Gutenberg/Astronomy/39263-astronomical-curiosities-facts-and-fallacies.jpg",
+        "author": "Gore, J. Ellard (John Ellard)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39263,
+        "subjects": [
+          "Astronomy -- Miscellanea",
+          "Solar system -- Miscellanea",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:41.614Z"
+      },
+      {
         "title": "Astronomy for beginners",
         "file": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.epub",
         "cover": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.jpg",
@@ -5190,6 +5228,24 @@
         "downloadedAt": "2026-08-17T07:14:40.574Z"
       },
       {
+        "title": "Principles of Political Economy: Abridged with Critical, Bibliographical, and Explanatory Notes, and a Sketch of the History of Political Economy",
+        "file": "books/Gutenberg/Economics/30107-principles-of-political-economy-abridged-with-critical-bibliographical-a.epub",
+        "cover": "books/Gutenberg/Economics/30107-principles-of-political-economy-abridged-with-critical-bibliographical-a.jpg",
+        "author": "Mill, John Stuart",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30107,
+        "subjects": [
+          "Economics",
+          "Banned Books from Anne Haight's list",
+          "Category: Economics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:40.405Z"
+      },
+      {
         "title": "Reminiscences of a Stock Operator",
         "file": "books/Gutenberg/Economics/60979-reminiscences-of-a-stock-operator.epub",
         "cover": "books/Gutenberg/Economics/60979-reminiscences-of-a-stock-operator.jpg",
@@ -5291,6 +5347,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:17.606Z"
+      },
+      {
+        "title": "The social contract & discourses",
+        "file": "books/Gutenberg/Economics/46333-the-social-contract-discourses.epub",
+        "cover": "books/Gutenberg/Economics/46333-the-social-contract-discourses.jpg",
+        "author": "Rousseau, Jean-Jacques",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46333,
+        "subjects": [
+          "Economics",
+          "Political science -- Early works to 1800",
+          "Social contract",
+          "Category: Philosophy & Ethics",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:39.964Z"
       },
       {
         "title": "The World's Greatest Books — Volume 14 — Philosophy and Economics",
@@ -13079,6 +13155,26 @@
         "downloadedAt": "2026-08-17T09:59:56.685Z"
       },
       {
+        "title": "Psychotherapy",
+        "file": "books/Gutenberg/Psychology/22775-psychotherapy.epub",
+        "cover": "books/Gutenberg/Psychology/22775-psychotherapy.jpg",
+        "author": "Münsterberg, Hugo",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22775,
+        "subjects": [
+          "Mental healing",
+          "Mind and body",
+          "Category: Health & Medicine",
+          "Category: Psychiatry/Psychology",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:41.129Z"
+      },
+      {
         "title": "Sibylla : $b or, The revival of prophecy",
         "file": "books/Gutenberg/Psychology/76731-sibylla-b-or-the-revival-of-prophecy.epub",
         "cover": "books/Gutenberg/Psychology/76731-sibylla-b-or-the-revival-of-prophecy.jpg",
@@ -13125,6 +13221,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.089Z"
+      },
+      {
+        "title": "The Psychology of Singing: A Rational Method of Voice Culture Based on a Scientific Analysis of All Systems, Ancient and Modern",
+        "file": "books/Gutenberg/Psychology/21957-the-psychology-of-singing-a-rational-method-of-voice-culture-based-on-a-.epub",
+        "cover": "books/Gutenberg/Psychology/21957-the-psychology-of-singing-a-rational-method-of-voice-culture-based-on-a-.jpg",
+        "author": "Taylor, David C. (David Clark)",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21957,
+        "subjects": [
+          "Singing",
+          "Voice culture",
+          "Category: Health & Medicine",
+          "Category: Music",
+          "Category: Psychiatry/Psychology",
+          "Music"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T10:33:40.820Z"
       },
       {
         "title": "The Yellow Wallpaper",
