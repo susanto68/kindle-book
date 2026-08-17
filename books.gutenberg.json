@@ -760,6 +760,26 @@
         "downloadedAt": "2026-08-17T07:57:22.377Z"
       },
       {
+        "title": "The Pantropheon; Or, History of Food, Its Preparation, from the Earliest Ages of the World",
+        "file": "books/Gutenberg/Astronomy/51259-the-pantropheon-or-history-of-food-its-preparation-from-the-earliest-age.epub",
+        "cover": "books/Gutenberg/Astronomy/51259-the-pantropheon-or-history-of-food-its-preparation-from-the-earliest-age.jpg",
+        "author": "Soyer, Alexis",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51259,
+        "subjects": [
+          "Cooking",
+          "Food",
+          "Gastronomy",
+          "Category: Cooking & Drinking",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:50.235Z"
+      },
+      {
         "title": "The Pleasures of the Table: An Account of Gastronomy from Ancient Days to Present Times. With a History of Its Literature, Schools, and Most Distinguished Artists; Together With Some Special Recipes, and Views Concerning the Aesthetics of Dinners and Dinner-giving",
         "file": "books/Gutenberg/Astronomy/62354-the-pleasures-of-the-table-an-account-of-gastronomy-from-ancient-days-to.epub",
         "cover": "books/Gutenberg/Astronomy/62354-the-pleasures-of-the-table-an-account-of-gastronomy-from-ancient-days-to.jpg",
@@ -796,6 +816,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.974Z"
+      },
+      {
+        "title": "The Story of Eclipses",
+        "file": "books/Gutenberg/Astronomy/24222-the-story-of-eclipses.epub",
+        "cover": "books/Gutenberg/Astronomy/24222-the-story-of-eclipses.jpg",
+        "author": "Chambers, George F. (George Frederick)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24222,
+        "subjects": [
+          "Eclipses",
+          "Astronomy",
+          "Category: History - Other",
+          "Category: Science - Physics",
+          "Children's Instructional Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:49.726Z"
       },
       {
         "title": "The Witness of the Stars",
@@ -5286,6 +5326,29 @@
         "downloadedAt": "2026-08-17T07:56:33.164Z"
       },
       {
+        "title": "The Book of Household Management",
+        "file": "books/Gutenberg/Economics/10136-the-book-of-household-management.epub",
+        "cover": "books/Gutenberg/Economics/10136-the-book-of-household-management.jpg",
+        "author": "Beeton, Mrs. (Isabella Mary)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10136,
+        "subjects": [
+          "Cooking, English",
+          "Home economics",
+          "Category: Cooking & Drinking",
+          "Category: Health & Medicine",
+          "Category: How To ...",
+          "Category: Parenthood & Family Relations",
+          "Cookbooks and Cooking",
+          "Technology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:48.622Z"
+      },
+      {
         "title": "The Communist Manifesto",
         "file": "books/Gutenberg/Economics/61-the-communist-manifesto.epub",
         "cover": "books/Gutenberg/Economics/61-the-communist-manifesto.jpg",
@@ -5367,6 +5430,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T10:33:39.964Z"
+      },
+      {
+        "title": "The Theory of the Leisure Class",
+        "file": "books/Gutenberg/Economics/833-the-theory-of-the-leisure-class.epub",
+        "cover": "books/Gutenberg/Economics/833-the-theory-of-the-leisure-class.jpg",
+        "author": "Veblen, Thorstein",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 833,
+        "subjects": [
+          "Leisure class",
+          "Sociology",
+          "Category: Economics",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:48.206Z"
       },
       {
         "title": "The World's Greatest Books — Volume 14 — Philosophy and Economics",
@@ -13221,6 +13303,43 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:18.089Z"
+      },
+      {
+        "title": "The Mind and the Brain: Being the Authorised Translation of L'Âme et le Corps",
+        "file": "books/Gutenberg/Psychology/21077-the-mind-and-the-brain-being-the-authorised-translation-of-lame-et-le-co.epub",
+        "cover": "books/Gutenberg/Psychology/21077-the-mind-and-the-brain-being-the-authorised-translation-of-lame-et-le-co.jpg",
+        "author": "Binet, Alfred",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21077,
+        "subjects": [
+          "Mind and body",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:49.315Z"
+      },
+      {
+        "title": "The Principles of Psychology, Volume 1 (of 2)",
+        "file": "books/Gutenberg/Psychology/57628-the-principles-of-psychology-volume-1-of-2.epub",
+        "cover": "books/Gutenberg/Psychology/57628-the-principles-of-psychology-volume-1-of-2.jpg",
+        "author": "James, William",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57628,
+        "subjects": [
+          "Psychology",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T11:27:49.020Z"
       },
       {
         "title": "The Psychology of Singing: A Rational Method of Voice Culture Based on a Scientific Analysis of All Systems, Ancient and Modern",
