@@ -4495,6 +4495,25 @@
         "downloadedAt": "2026-08-17T03:02:09.476Z"
       },
       {
+        "title": "Dramatic Reader for Lower Grades",
+        "file": "books/Gutenberg/Drama_Fiction/27764-dramatic-reader-for-lower-grades.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/27764-dramatic-reader-for-lower-grades.jpg",
+        "author": "Holbrook, Florence",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27764,
+        "subjects": [
+          "Children's plays",
+          "Readers",
+          "Category: Children & Young Adult Reading",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:12:45.397Z"
+      },
+      {
         "title": "Faust [part 1]. Translated Into English in the Original Metres",
         "file": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.epub",
         "cover": "books/Gutenberg/Drama_Fiction/14591-faust-part-1-translated-into-english-in-the-original-metres.jpg",
@@ -4959,6 +4978,55 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:56:48.634Z"
+      },
+      {
+        "title": "Memoirs of Extraordinary Popular Delusions and the Madness of Crowds",
+        "file": "books/Gutenberg/Economics/24518-memoirs-of-extraordinary-popular-delusions-and-the-madness-of-crowds.epub",
+        "cover": "books/Gutenberg/Economics/24518-memoirs-of-extraordinary-popular-delusions-and-the-madness-of-crowds.jpg",
+        "author": "Mackay, Charles",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24518,
+        "subjects": [
+          "Alchemy",
+          "Common fallacies",
+          "Delusions",
+          "Hallucinations and illusions",
+          "Impostors and imposture",
+          "Investments -- Psychological aspects",
+          "Occultism -- Early works to 1900",
+          "Social psychology",
+          "Stock exchanges -- Psychological aspects",
+          "Swindlers and swindling",
+          "Category: Economics",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other",
+          "Psychology",
+          "Witchcraft"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:14:41.236Z"
+      },
+      {
+        "title": "Principles of Political Economy, Vol. 1",
+        "file": "books/Gutenberg/Economics/27698-principles-of-political-economy-vol-1.epub",
+        "cover": "books/Gutenberg/Economics/27698-principles-of-political-economy-vol-1.jpg",
+        "author": "Roscher, Wilhelm",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27698,
+        "subjects": [
+          "Economics",
+          "Category: Economics",
+          "Category: German Literature",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:14:40.574Z"
       },
       {
         "title": "Reminiscences of a Stock Operator",
@@ -5931,6 +5999,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T23:08:00.110Z"
+      },
+      {
+        "title": "Terrestrial and Celestial Globes Volume 2: Their History and Construction Including a Consideration of their Value as Aids in the Study of Geography and Astronomy",
+        "file": "books/Gutenberg/Geography/39867-terrestrial-and-celestial-globes-volume-2-their-history-and-construction.epub",
+        "cover": "books/Gutenberg/Geography/39867-terrestrial-and-celestial-globes-volume-2-their-history-and-construction.jpg",
+        "author": "Stevenson, Edward Luther",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39867,
+        "subjects": [
+          "Geography -- History",
+          "Globes",
+          "Category: Art",
+          "Category: Engineering & Technology",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:05:56.942Z"
       },
       {
         "title": "The 1990 CIA World Factbook",
@@ -12272,6 +12362,51 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:41.726Z"
+      },
+      {
+        "title": "Hesiod, the Homeric Hymns, and Homerica",
+        "file": "books/Gutenberg/Poetry/348-hesiod-the-homeric-hymns-and-homerica.epub",
+        "cover": "books/Gutenberg/Poetry/348-hesiod-the-homeric-hymns-and-homerica.jpg",
+        "author": "Hesiod",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 348,
+        "subjects": [
+          "Epic poetry, Greek",
+          "Epic poetry, Greek -- Translations into English",
+          "Gods, Greek -- Poetry",
+          "Hesiod -- Translations into English",
+          "Hymns, Greek (Classical) -- Translations into English",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry",
+          "Classical Antiquity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-17T07:11:58.112Z"
+      },
+      {
+        "title": "I. Beowulf: an Anglo-Saxon poem. II. The fight at Finnsburh: a fragment.",
+        "file": "books/Gutenberg/Poetry/9701-i-beowulf-an-anglo-saxon-poem-ii-the-fight-at-finnsburh-a-fragment.epub",
+        "cover": "books/Gutenberg/Poetry/9701-i-beowulf-an-anglo-saxon-poem-ii-the-fight-at-finnsburh-a-fragment.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 9701,
+        "subjects": [
+          "Dragons -- Poetry",
+          "Epic poetry, English (Old)",
+          "Monsters -- Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "ang",
+        "downloadedAt": "2026-08-17T07:11:58.550Z"
       },
       {
         "title": "India's Love Lyrics",
