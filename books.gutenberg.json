@@ -270,6 +270,29 @@
         "downloadedAt": "2026-08-17T22:27:21.078Z"
       },
       {
+        "title": "Dancing Devil range",
+        "file": "books/Gutenberg/Art_Music/76049-dancing-devil-range.epub",
+        "cover": "books/Gutenberg/Art_Music/76049-dancing-devil-range.jpg",
+        "author": "Tuttle, W. C. (Wilbur C.)",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76049,
+        "subjects": [
+          "Bank robberies -- Fiction",
+          "Detective and mystery stories",
+          "Hartley, Hashknife (Fictitious character) -- Fiction",
+          "Stevens, Sleepy (Fictitious character) -- Fiction",
+          "Western stories",
+          "Category: Adventure",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T01:19:05.630Z"
+      },
+      {
         "title": "Field Artillery Training. 1914",
         "file": "books/Gutenberg/Art_Music/78053-field-artillery-training-1914.epub",
         "cover": "books/Gutenberg/Art_Music/78053-field-artillery-training-1914.jpg",
@@ -502,6 +525,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T23:38:55.731Z"
+      },
+      {
+        "title": "This star shall be free",
+        "file": "books/Gutenberg/Art_Music/76849-this-star-shall-be-free.epub",
+        "cover": "books/Gutenberg/Art_Music/76849-this-star-shall-be-free.jpg",
+        "author": "Leinster, Murray",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76849,
+        "subjects": [
+          "Earth (Planet) -- Fiction",
+          "Experiments -- Fiction",
+          "Human-alien encounters -- Fiction",
+          "Prehistoric peoples -- Fiction",
+          "Science fiction",
+          "Short stories",
+          "Category: American Literature",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T01:19:05.256Z"
       }
     ]
   },
@@ -8910,6 +8957,24 @@
     "class": "Gutenberg - Language Learning",
     "books": [
       {
+        "title": "A Concise Anglo-Saxon Dictionary: For the Use of Students",
+        "file": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.epub",
+        "cover": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.jpg",
+        "author": "Hall, J. R. Clark (John R. Clark)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31543,
+        "subjects": [
+          "English language -- Old English, ca. 450-1100 -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T01:19:21.313Z"
+      },
+      {
         "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
         "file": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.epub",
         "cover": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.jpg",
@@ -9066,6 +9131,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T20:31:21.996Z"
+      },
+      {
+        "title": "The Ontario High School Reader",
+        "file": "books/Gutenberg/Language_Learning/22795-the-ontario-high-school-reader.epub",
+        "cover": "books/Gutenberg/Language_Learning/22795-the-ontario-high-school-reader.jpg",
+        "author": "Marty, Aletta E.",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22795,
+        "subjects": [
+          "Readers",
+          "Recitations",
+          "Category: Language & Communication",
+          "Category: Teaching & Education",
+          "Children's Instructional Books"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T01:19:21.626Z"
       },
       {
         "title": "The Principles of English Versification",
