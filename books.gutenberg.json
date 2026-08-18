@@ -251,6 +251,34 @@
         "downloadedAt": "2026-08-16T19:22:23.830Z"
       },
       {
+        "title": "The Pirate: Andrew Lang Edition",
+        "file": "books/Gutenberg/Adventure_Mystery/42389-the-pirate-andrew-lang-edition.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/42389-the-pirate-andrew-lang-edition.jpg",
+        "author": "Scott, Walter",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42389,
+        "subjects": [
+          "Domestic fiction",
+          "Historical fiction",
+          "Kidnapping -- Fiction",
+          "Landlord and tenant -- Fiction",
+          "Love stories",
+          "Orkney (Scotland) -- Fiction",
+          "Pirates -- Fiction",
+          "Shetland (Scotland) -- Fiction",
+          "Shipwreck survival -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:50:52.067Z"
+      },
+      {
         "title": "The Silent Barrier",
         "file": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.jpg",
@@ -1254,6 +1282,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T12:58:29.111Z"
+      },
+      {
+        "title": "Letters on Astronomy: in which the Elements of the Science are Familiarly Explained in Connection with Biographical Sketches of the Most Eminent Astronomers",
+        "file": "books/Gutenberg/Astronomy/40240-letters-on-astronomy-in-which-the-elements-of-the-science-are-familiarly.epub",
+        "cover": "books/Gutenberg/Astronomy/40240-letters-on-astronomy-in-which-the-elements-of-the-science-are-familiarly.jpg",
+        "author": "Olmsted, Denison",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40240,
+        "subjects": [
+          "Astronomy",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:56:27.600Z"
       },
       {
         "title": "Pioneers of Science",
@@ -6941,6 +6987,27 @@
         "downloadedAt": "2026-08-08T13:46:56.640Z"
       },
       {
+        "title": "The Ornithology of Shakespeare: Critically examined, explained and illustrated",
+        "file": "books/Gutenberg/General_Knowledge/41860-the-ornithology-of-shakespeare-critically-examined-explained-and-illustr.epub",
+        "cover": "books/Gutenberg/General_Knowledge/41860-the-ornithology-of-shakespeare-critically-examined-explained-and-illustr.jpg",
+        "author": "Harting, James Edmund",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41860,
+        "subjects": [
+          "Birds -- England -- History -- 16th century",
+          "Birds in literature",
+          "Ornithology -- England -- History -- 16th century",
+          "Shakespeare, William, 1564-1616 -- Knowledge -- Ornithology",
+          "Category: Journalism/Media/Writing",
+          "Category: Nature/Gardening/Animals"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:47:31.513Z"
+      },
+      {
         "title": "The plant-lore & garden-craft of Shakespeare",
         "file": "books/Gutenberg/General_Knowledge/28407-the-plant-lore-garden-craft-of-shakespeare.epub",
         "cover": "books/Gutenberg/General_Knowledge/28407-the-plant-lore-garden-craft-of-shakespeare.jpg",
@@ -7084,6 +7151,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-11T10:07:32.949Z"
+      },
+      {
+        "title": "Bible Atlas: A Manual of Biblical Geography and History",
+        "file": "books/Gutenberg/Geography/41140-bible-atlas-a-manual-of-biblical-geography-and-history.epub",
+        "cover": "books/Gutenberg/Geography/41140-bible-atlas-a-manual-of-biblical-geography-and-history.jpg",
+        "author": "Hurlbut, Jesse Lyman",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41140,
+        "subjects": [
+          "Bible -- Geography",
+          "Bible -- Geography -- Maps",
+          "Bible -- History of Biblical events",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:43:49.438Z"
       },
       {
         "title": "Celebrated Travels and Travellers, Part 1.: The Exploration of the World",
@@ -11008,6 +11096,24 @@
         "downloadedAt": "2026-05-24T22:08:00.747Z"
       },
       {
+        "title": "Introduction to Mathematical Philosophy",
+        "file": "books/Gutenberg/Mathematics/41654-introduction-to-mathematical-philosophy.epub",
+        "cover": "books/Gutenberg/Mathematics/41654-introduction-to-mathematical-philosophy.jpg",
+        "author": "Russell, Bertrand",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41654,
+        "subjects": [
+          "Mathematics -- Philosophy",
+          "Mathematics",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:40:33.573Z"
+      },
+      {
         "title": "Jerome Cardan: A Biographical Study",
         "file": "books/Gutenberg/Mathematics/19600-jerome-cardan-a-biographical-study.epub",
         "cover": "books/Gutenberg/Mathematics/19600-jerome-cardan-a-biographical-study.jpg",
@@ -14317,6 +14423,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:54:56.441Z"
+      },
+      {
+        "title": "The Divine Comedy of Dante Alighieri: The Inferno",
+        "file": "books/Gutenberg/Poetry/41537-the-divine-comedy-of-dante-alighieri-the-inferno.epub",
+        "cover": "books/Gutenberg/Poetry/41537-the-divine-comedy-of-dante-alighieri-the-inferno.jpg",
+        "author": "Dante Alighieri",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41537,
+        "subjects": [
+          "Epic poetry, Italian -- Translations into English",
+          "Hell",
+          "Italian poetry -- To 1400 -- Translations into English",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Italy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T07:49:59.345Z"
       },
       {
         "title": "The Iliad",
