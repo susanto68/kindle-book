@@ -9462,6 +9462,24 @@
         "downloadedAt": "2026-08-18T04:37:41.150Z"
       },
       {
+        "title": "Roget's Thesaurus",
+        "file": "books/Gutenberg/Language_Learning/22-rogets-thesaurus.epub",
+        "cover": "books/Gutenberg/Language_Learning/22-rogets-thesaurus.jpg",
+        "author": "Roget, Peter Mark",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22,
+        "subjects": [
+          "English language -- Synonyms and antonyms",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T13:06:14.479Z"
+      },
+      {
         "title": "Roget's Thesaurus of English Words and Phrases",
         "file": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.epub",
         "cover": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.jpg",
