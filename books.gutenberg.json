@@ -9107,6 +9107,24 @@
         "downloadedAt": "2026-08-18T03:52:21.063Z"
       },
       {
+        "title": "A Spelling-Book for Advanced Classes",
+        "file": "books/Gutenberg/Language_Learning/26513-a-spelling-book-for-advanced-classes.epub",
+        "cover": "books/Gutenberg/Language_Learning/26513-a-spelling-book-for-advanced-classes.jpg",
+        "author": "Optic, Oliver",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 26513,
+        "subjects": [
+          "Spellers",
+          "Category: Language & Communication",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T06:49:08.941Z"
+      },
+      {
         "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
         "file": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.epub",
         "cover": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.jpg",
@@ -9146,6 +9164,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T05:44:26.404Z"
+      },
+      {
+        "title": "English Past and Present",
+        "file": "books/Gutenberg/Language_Learning/20900-english-past-and-present.epub",
+        "cover": "books/Gutenberg/Language_Learning/20900-english-past-and-present.jpg",
+        "author": "Trench, Richard Chenevix",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20900,
+        "subjects": [
+          "English language -- History",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T06:49:09.456Z"
       },
       {
         "title": "Language of Flowers",
