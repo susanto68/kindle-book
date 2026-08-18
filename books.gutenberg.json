@@ -134,6 +134,35 @@
         "downloadedAt": "2026-08-16T20:24:08.836Z"
       },
       {
+        "title": "Mr. Standfast",
+        "file": "books/Gutenberg/Adventure_Mystery/560-mr-standfast.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/560-mr-standfast.jpg",
+        "author": "Buchan, John",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 560,
+        "subjects": [
+          "Hannay, Richard (Fictitious character) -- Fiction",
+          "Intelligence service -- Great Britain -- Fiction",
+          "Spy stories",
+          "War stories",
+          "World War, 1914-1918 -- Fiction",
+          "Adventure",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Contemporary Reviews",
+          "Movie Books",
+          "World War I"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T05:41:23.198Z"
+      },
+      {
         "title": "Peter the Brazen: A Mystery Story of Modern China",
         "file": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.jpg",
@@ -9041,6 +9070,23 @@
         "downloadedAt": "2026-08-18T03:05:42.377Z"
       },
       {
+        "title": "A Manual of the Malay language: With an Introductory Sketch of the Sanskrit Element in Malay",
+        "file": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.epub",
+        "cover": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.jpg",
+        "author": "Maxwell, William Edward, Sir",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25604,
+        "subjects": [
+          "Malay language -- Grammar",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T05:44:25.964Z"
+      },
+      {
         "title": "A Middle High German Primer: Third Edition",
         "file": "books/Gutenberg/Language_Learning/22636-a-middle-high-german-primer-third-edition.epub",
         "cover": "books/Gutenberg/Language_Learning/22636-a-middle-high-german-primer-third-edition.jpg",
@@ -9077,6 +9123,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T19:31:19.121Z"
+      },
+      {
+        "title": "Doctrina Christiana: The first book printed in the Philippines, Manila, 1593.",
+        "file": "books/Gutenberg/Language_Learning/16119-doctrina-christiana-the-first-book-printed-in-the-philippines-manila-159.epub",
+        "cover": "books/Gutenberg/Language_Learning/16119-doctrina-christiana-the-first-book-printed-in-the-philippines-manila-159.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16119,
+        "subjects": [
+          "Block books -- Facsimiles",
+          "Catholic Church -- Catechisms -- Spanish",
+          "Catholic Church -- Catechisms -- Tagalog",
+          "Tagalog language -- Texts",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - Religious",
+          "Category: Religion/Spirituality",
+          "Christianity"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T05:44:26.404Z"
       },
       {
         "title": "Language of Flowers",
