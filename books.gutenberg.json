@@ -9345,6 +9345,43 @@
         "downloadedAt": "2026-08-18T06:49:09.456Z"
       },
       {
+        "title": "English: Composition and Literature",
+        "file": "books/Gutenberg/Language_Learning/28097-english-composition-and-literature.epub",
+        "cover": "books/Gutenberg/Language_Learning/28097-english-composition-and-literature.jpg",
+        "author": "Webster, W. F. (William Franklin)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28097,
+        "subjects": [
+          "English language -- Rhetoric",
+          "Category: Language & Communication",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T11:28:19.891Z"
+      },
+      {
+        "title": "How to Write Letters (Formerly The Book of Letters): A Complete Guide to Correct Business and Personal Correspondence",
+        "file": "books/Gutenberg/Language_Learning/22222-how-to-write-letters-formerly-the-book-of-letters-a-complete-guide-to-co.epub",
+        "cover": "books/Gutenberg/Language_Learning/22222-how-to-write-letters-formerly-the-book-of-letters-a-complete-guide-to-co.jpg",
+        "author": "Crowther, Mary Owens",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22222,
+        "subjects": [
+          "Etiquette",
+          "Letter writing",
+          "Category: How To ...",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T11:28:19.570Z"
+      },
+      {
         "title": "Language of Flowers",
         "file": "books/Gutenberg/Language_Learning/31591-language-of-flowers.epub",
         "cover": "books/Gutenberg/Language_Learning/31591-language-of-flowers.jpg",
