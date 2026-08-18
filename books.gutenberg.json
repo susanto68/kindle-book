@@ -9140,6 +9140,24 @@
         "downloadedAt": "2026-08-18T01:19:21.313Z"
       },
       {
+        "title": "A Concise Dictionary of Middle English from A.D. 1150 to 1580",
+        "file": "books/Gutenberg/Language_Learning/10625-a-concise-dictionary-of-middle-english-from-ad-1150-to-1580.epub",
+        "cover": "books/Gutenberg/Language_Learning/10625-a-concise-dictionary-of-middle-english-from-ad-1150-to-1580.jpg",
+        "author": "Mayhew, A. L. (Anthony Lawson), Skeat, Walter W. (Walter William)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10625,
+        "subjects": [
+          "English language -- Middle English, 1100-1500 -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T10:03:55.871Z"
+      },
+      {
         "title": "A Dictionary of Cebuano Visayan",
         "file": "books/Gutenberg/Language_Learning/40074-a-dictionary-of-cebuano-visayan.epub",
         "cover": "books/Gutenberg/Language_Learning/40074-a-dictionary-of-cebuano-visayan.jpg",
@@ -9385,6 +9403,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T21:28:07.938Z"
+      },
+      {
+        "title": "Stories from Tagore",
+        "file": "books/Gutenberg/Language_Learning/33525-stories-from-tagore.epub",
+        "cover": "books/Gutenberg/Language_Learning/33525-stories-from-tagore.jpg",
+        "author": "Tagore, Rabindranath",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33525,
+        "subjects": [
+          "English language -- Textbooks for foreign speakers -- Indic",
+          "India -- Social life and customs -- Fiction",
+          "Short stories, Bengali -- Translations into English",
+          "Tagore, Rabindranath, 1861-1941 -- Translations into English",
+          "Category: Short Stories",
+          "Nobel Prizes in Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T10:03:56.317Z"
       },
       {
         "title": "The Art of Public Speaking",
