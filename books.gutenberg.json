@@ -9213,6 +9213,24 @@
         "downloadedAt": "2026-08-18T06:49:08.941Z"
       },
       {
+        "title": "An Advanced English Grammar with Exercises",
+        "file": "books/Gutenberg/Language_Learning/45814-an-advanced-english-grammar-with-exercises.epub",
+        "cover": "books/Gutenberg/Language_Learning/45814-an-advanced-english-grammar-with-exercises.jpg",
+        "author": "Kittredge, George Lyman, Farley, Frank Edgar",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45814,
+        "subjects": [
+          "English language -- Grammar",
+          "Category: Language & Communication",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T08:39:44.800Z"
+      },
+      {
         "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
         "file": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.epub",
         "cover": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.jpg",
@@ -9486,6 +9504,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T23:38:59.500Z"
+      },
+      {
+        "title": "The slang dictionary : $b Etymological, historical and anecdotal",
+        "file": "books/Gutenberg/Language_Learning/42108-the-slang-dictionary-b-etymological-historical-and-anecdotal.epub",
+        "cover": "books/Gutenberg/Language_Learning/42108-the-slang-dictionary-b-etymological-historical-and-anecdotal.jpg",
+        "author": "Hotten, John Camden",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42108,
+        "subjects": [
+          "English language -- Dialects -- England -- London -- Glossaries, vocabularies, etc.",
+          "English language -- England -- London -- Slang -- Dictionaries",
+          "London (England) -- Languages -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - British",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T08:39:46.310Z"
       },
       {
         "title": "The Verbalist: A Manual Devoted to Brief Discussions of the Right and the Wrong Use of Words and to Some Other Matters of Interest to Those Who Would Speak and Write with Propriety.",
