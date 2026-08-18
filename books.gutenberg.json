@@ -484,6 +484,34 @@
         "downloadedAt": "2026-08-17T21:28:06.982Z"
       },
       {
+        "title": "The war of the worlds",
+        "file": "books/Gutenberg/Art_Music/36-the-war-of-the-worlds.epub",
+        "cover": "books/Gutenberg/Art_Music/36-the-war-of-the-worlds.jpg",
+        "author": "Wells, H. G. (Herbert George)",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 36,
+        "subjects": [
+          "Imaginary wars and battles -- Fiction",
+          "Life on other planets -- Fiction",
+          "Mars (Planet) -- Fiction",
+          "Martians -- Fiction",
+          "Science fiction",
+          "Space warfare -- Fiction",
+          "War stories",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Science-Fiction & Fantasy",
+          "Movie Books",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T03:05:41.605Z"
+      },
+      {
         "title": "The warlord of Mars",
         "file": "books/Gutenberg/Art_Music/68-the-warlord-of-mars.epub",
         "cover": "books/Gutenberg/Art_Music/68-the-warlord-of-mars.jpg",
@@ -8975,6 +9003,24 @@
         "downloadedAt": "2026-08-18T01:19:21.313Z"
       },
       {
+        "title": "A Dictionary of Cebuano Visayan",
+        "file": "books/Gutenberg/Language_Learning/40074-a-dictionary-of-cebuano-visayan.epub",
+        "cover": "books/Gutenberg/Language_Learning/40074-a-dictionary-of-cebuano-visayan.jpg",
+        "author": "Wolff, John U.",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40074,
+        "subjects": [
+          "Cebuano language -- Dictionaries -- English",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T03:05:42.377Z"
+      },
+      {
         "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
         "file": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.epub",
         "cover": "books/Gutenberg/Language_Learning/37683-chamberss-twentieth-century-dictionary-part-1-of-4-a-d.jpg",
@@ -9067,6 +9113,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T21:28:07.938Z"
+      },
+      {
+        "title": "The Art of Public Speaking",
+        "file": "books/Gutenberg/Language_Learning/16317-the-art-of-public-speaking.epub",
+        "cover": "books/Gutenberg/Language_Learning/16317-the-art-of-public-speaking.jpg",
+        "author": "Esenwein, J. Berg (Joseph Berg), Carnegie, Dale",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16317,
+        "subjects": [
+          "Public speaking",
+          "Category: How To ...",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T03:05:42.868Z"
       },
       {
         "title": "The Comic English Grammar: A New And Facetious Introduction To The English Tongue",
