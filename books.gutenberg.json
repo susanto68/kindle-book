@@ -8985,6 +8985,26 @@
     "class": "Gutenberg - Language Learning",
     "books": [
       {
+        "title": "A Brief History of the English Language and Literature, Vol. 2",
+        "file": "books/Gutenberg/Language_Learning/21665-a-brief-history-of-the-english-language-and-literature-vol-2.epub",
+        "cover": "books/Gutenberg/Language_Learning/21665-a-brief-history-of-the-english-language-and-literature-vol-2.jpg",
+        "author": "Meiklejohn, J. M. D. (John Miller Dow)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21665,
+        "subjects": [
+          "English language -- History",
+          "English literature -- History and criticism",
+          "Category: British Literature",
+          "Category: History - British",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T03:52:21.891Z"
+      },
+      {
         "title": "A Concise Anglo-Saxon Dictionary: For the Use of Students",
         "file": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.epub",
         "cover": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.jpg",
@@ -9019,6 +9039,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T03:05:42.377Z"
+      },
+      {
+        "title": "A Middle High German Primer: Third Edition",
+        "file": "books/Gutenberg/Language_Learning/22636-a-middle-high-german-primer-third-edition.epub",
+        "cover": "books/Gutenberg/Language_Learning/22636-a-middle-high-german-primer-third-edition.jpg",
+        "author": "Wright, Joseph",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22636,
+        "subjects": [
+          "German language -- Middle High German, 1050-1500 -- Grammar",
+          "German language -- Middle High German, 1050-1500 -- Readers",
+          "Category: Language & Communication",
+          "Category: Teaching & Education",
+          "Language Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T03:52:21.063Z"
       },
       {
         "title": "Chambers's Twentieth Century Dictionary (part 1 of 4: A-D)",
