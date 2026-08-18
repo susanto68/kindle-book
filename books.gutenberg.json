@@ -9267,6 +9267,25 @@
         "downloadedAt": "2026-08-17T19:31:19.121Z"
       },
       {
+        "title": "Classic French Course in English",
+        "file": "books/Gutenberg/Language_Learning/23033-classic-french-course-in-english.epub",
+        "cover": "books/Gutenberg/Language_Learning/23033-classic-french-course-in-english.jpg",
+        "author": "Wilkinson, William Cleaver",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23033,
+        "subjects": [
+          "French literature -- History and criticism",
+          "Category: Classics of Literature",
+          "Category: French Literature",
+          "Language Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T10:31:17.112Z"
+      },
+      {
         "title": "Doctrina Christiana: The first book printed in the Philippines, Manila, 1593.",
         "file": "books/Gutenberg/Language_Learning/16119-doctrina-christiana-the-first-book-printed-in-the-philippines-manila-159.epub",
         "cover": "books/Gutenberg/Language_Learning/16119-doctrina-christiana-the-first-book-printed-in-the-philippines-manila-159.jpg",
@@ -9288,6 +9307,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T05:44:26.404Z"
+      },
+      {
+        "title": "Early Theories of Translation",
+        "file": "books/Gutenberg/Language_Learning/22353-early-theories-of-translation.epub",
+        "cover": "books/Gutenberg/Language_Learning/22353-early-theories-of-translation.jpg",
+        "author": "Amos, Flora Ross",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22353,
+        "subjects": [
+          "Translating and interpreting",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - Medieval/Middle Ages",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T10:31:17.849Z"
       },
       {
         "title": "English Past and Present",
