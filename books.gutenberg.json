@@ -9137,6 +9137,28 @@
         "downloadedAt": "2026-08-17T21:28:08.316Z"
       },
       {
+        "title": "Poems of Rural Life in the Dorset Dialect",
+        "file": "books/Gutenberg/Language_Learning/21785-poems-of-rural-life-in-the-dorset-dialect.epub",
+        "cover": "books/Gutenberg/Language_Learning/21785-poems-of-rural-life-in-the-dorset-dialect.jpg",
+        "author": "Barnes, William",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21785,
+        "subjects": [
+          "Country life -- Poetry",
+          "Dialect poetry, English -- England -- Dorset",
+          "Dorset (England) -- Languages -- Dictionaries",
+          "Dorset (England) -- Poetry",
+          "English language -- Dialects -- England -- Dorset -- Texts",
+          "Category: British Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T04:37:41.150Z"
+      },
+      {
         "title": "Roget's Thesaurus of English Words and Phrases",
         "file": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.epub",
         "cover": "books/Gutenberg/Language_Learning/10681-rogets-thesaurus-of-english-words-and-phrases.jpg",
@@ -9272,6 +9294,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T23:38:59.500Z"
+      },
+      {
+        "title": "The Verbalist: A Manual Devoted to Brief Discussions of the Right and the Wrong Use of Words and to Some Other Matters of Interest to Those Who Would Speak and Write with Propriety.",
+        "file": "books/Gutenberg/Language_Learning/22457-the-verbalist-a-manual-devoted-to-brief-discussions-of-the-right-and-the.epub",
+        "cover": "books/Gutenberg/Language_Learning/22457-the-verbalist-a-manual-devoted-to-brief-discussions-of-the-right-and-the.jpg",
+        "author": "Ayres, Alfred",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22457,
+        "subjects": [
+          "English language -- Errors of usage",
+          "Category: How To ...",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-18T04:37:41.910Z"
       },
       {
         "title": "Webster's Unabridged Dictionary",
