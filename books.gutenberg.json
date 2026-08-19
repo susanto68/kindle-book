@@ -1208,6 +1208,29 @@
         "downloadedAt": "2026-08-17T17:45:53.476Z"
       },
       {
+        "title": "Cakes & Ale: A Dissertation on Banquets Interspersed with Various Recipes, More or Less Original, and anecdotes, mainly veracious",
+        "file": "books/Gutenberg/Astronomy/43278-cakes-ale-a-dissertation-on-banquets-interspersed-with-various-recipes-m.epub",
+        "cover": "books/Gutenberg/Astronomy/43278-cakes-ale-a-dissertation-on-banquets-interspersed-with-various-recipes-m.jpg",
+        "author": "Spencer, Edward",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43278,
+        "subjects": [
+          "Cooking, English",
+          "Dinners and dining",
+          "Entertaining",
+          "Gastronomy",
+          "Category: British Literature",
+          "Category: Cooking & Drinking",
+          "Category: Essays, Letters & Speeches",
+          "Category: Humour"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-19T10:05:56.874Z"
+      },
+      {
         "title": "Curiosities of the Sky",
         "file": "books/Gutenberg/Astronomy/6630-curiosities-of-the-sky.epub",
         "cover": "books/Gutenberg/Astronomy/6630-curiosities-of-the-sky.jpg",
@@ -3552,6 +3575,23 @@
         "downloadedAt": "2026-07-30T12:02:28.050Z"
       },
       {
+        "title": "Alcoholic Fermentation: Second Edition, 1914",
+        "file": "books/Gutenberg/Chemistry/44985-alcoholic-fermentation-second-edition-1914.epub",
+        "cover": "books/Gutenberg/Chemistry/44985-alcoholic-fermentation-second-edition-1914.jpg",
+        "author": "Harden, Arthur",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44985,
+        "subjects": [
+          "Fermentation",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-19T09:43:59.408Z"
+      },
+      {
         "title": "An Elementary Study of Chemistry",
         "file": "books/Gutenberg/Chemistry/20848-an-elementary-study-of-chemistry.epub",
         "cover": "books/Gutenberg/Chemistry/20848-an-elementary-study-of-chemistry.jpg",
@@ -5725,6 +5765,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T21:33:10.723Z"
+      },
+      {
+        "title": "The Works of Aphra Behn, Volume I",
+        "file": "books/Gutenberg/Drama_Fiction/21339-the-works-of-aphra-behn-volume-i.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/21339-the-works-of-aphra-behn-volume-i.jpg",
+        "author": "Behn, Aphra",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21339,
+        "subjects": [
+          "English drama -- 17th century",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-19T09:58:47.658Z"
       },
       {
         "title": "The Works of Christopher Marlowe, Vol. 3 (of 3)",
@@ -12016,6 +12074,24 @@
         "downloadedAt": "2026-08-04T13:12:35.509Z"
       },
       {
+        "title": "Franklin's Way to Wealth; or, \"Poor Richard Improved\"",
+        "file": "books/Gutenberg/Motivation/43855-franklins-way-to-wealth-or-poor-richard-improved.epub",
+        "cover": "books/Gutenberg/Motivation/43855-franklins-way-to-wealth-or-poor-richard-improved.jpg",
+        "author": "Franklin, Benjamin",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43855,
+        "subjects": [
+          "Maxims, American",
+          "Success",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-19T09:49:38.601Z"
+      },
+      {
         "title": "Hamlet",
         "file": "books/Gutenberg/Motivation/1524-hamlet.epub",
         "cover": "books/Gutenberg/Motivation/1524-hamlet.jpg",
@@ -14274,6 +14350,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T19:22:18.058Z"
+      },
+      {
+        "title": "Chaucer's Works, Volume 3 — The House of Fame; The Legend of Good Women; The Treatise on the Astrolabe; The Sources of the Canterbury Tales",
+        "file": "books/Gutenberg/Poetry/45027-chaucers-works-volume-3-the-house-of-fame-the-legend-of-good-women-the-t.epub",
+        "cover": "books/Gutenberg/Poetry/45027-chaucers-works-volume-3-the-house-of-fame-the-legend-of-good-women-the-t.jpg",
+        "author": "Chaucer, Geoffrey",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45027,
+        "subjects": [
+          "English poetry -- Middle English, 1100-1500",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-19T09:57:31.315Z"
       },
       {
         "title": "Childe Harold's Pilgrimage",
