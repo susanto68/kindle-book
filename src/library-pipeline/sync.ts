@@ -43,8 +43,6 @@ async function processCandidate(candidate: SourceCandidate, context: PipelineRun
 
   const summary = await generateAISummary(candidate, {
     openAiApiKey: PIPELINE_CONFIG.openAiApiKey,
-    geminiApiKey: PIPELINE_CONFIG.geminiApiKey,
-    geminiModel: PIPELINE_CONFIG.geminiModel,
     groqApiKey: PIPELINE_CONFIG.groqApiKey,
     groqFallbackModels: PIPELINE_CONFIG.groqFallbackModels
   });

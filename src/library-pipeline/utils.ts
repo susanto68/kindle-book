@@ -126,45 +126,12 @@ export function buildSearchKeywords(book: Pick<NormalizedBook, "title" | "author
 
 type AISummaryOptions = {
   openAiApiKey?: string;
-  geminiApiKey?: string;
-  geminiModel?: string;
   groqApiKey?: string;
   groqFallbackModels?: string[];
 };
 
 function buildSummaryPrompt(candidate: SourceCandidate): string {
   return `Write a 2 sentence student-friendly summary for this public-domain/open-access book. Title: ${candidate.title}. Author: ${candidate.author || "Unknown"}. Subjects: ${(candidate.subjects || []).join(", ")}. Description: ${candidate.description || ""}`;
-}
-
-async function summarizeWithGemini(candidate: SourceCandidate, apiKey: string, model: string): Promise<string> {
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        contents: [
-          {
-            role: "user",
-            parts: [{ text: buildSummaryPrompt(candidate) }]
-          }
-        ],
-        generationConfig: {
-          temperature: 0.35,
-          maxOutputTokens: 180
-        }
-      })
-    }
-  );
-  if (!response.ok) {
-    throw new Error(`Gemini summary failed with ${response.status}`);
-  }
-  const json = (await response.json()) as {
-    candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
-  };
-  return json.candidates?.[0]?.content?.parts?.map((part) => part.text || "").join(" ").trim().slice(0, 900) || "";
 }
 
 async function summarizeWithGroq(candidate: SourceCandidate, apiKey: string, model: string): Promise<string> {
@@ -226,17 +193,6 @@ export async function generateAISummary(candidate: SourceCandidate, options?: AI
   const fallback = candidate.description?.replace(/\s+/g, " ").trim().slice(0, 600);
   const deterministicSummary =
     fallback || `${candidate.title} is a legally free ${candidate.categoryHint || "learning"} book for digital library readers.`;
-
-  if (aiOptions.geminiApiKey) {
-    try {
-      const summary = await summarizeWithGemini(candidate, aiOptions.geminiApiKey, aiOptions.geminiModel || "gemini-1.5-flash");
-      if (summary) {
-        return summary;
-      }
-    } catch (error) {
-      console.warn(`Gemini summary failed for ${candidate.title}; trying Groq fallback.`, error);
-    }
-  }
 
   if (aiOptions.groqApiKey) {
     for (const model of aiOptions.groqFallbackModels || ["llama-3.3-70b-versatile", "deepseek-r1-distill-llama-70b"]) {

@@ -9,7 +9,7 @@ This extension keeps the existing static Kindle reader, GitHub deployment, Verce
 - Optional Firebase Storage uploads under `books/`, `covers/`, `audio/`, `videos/`, and `metadata/` when `LIBRARY_METADATA_ONLY=false` and a Storage bucket is configured.
 - Firestore metadata under `books`, `authors`, `categories`, `trending_searches`, `user_history`, `recommendations`, and `automation_logs`.
 - Duplicate detection by source id, title/author key, and checksum.
-- Optional AI summaries through `GEMINI_API_KEY`, `GROQ_API_KEY`, or `OPENAI_API_KEY`; otherwise summaries are generated from source descriptions.
+- Optional AI summaries through `GROQ_API_KEY` (Llama models) or `OPENAI_API_KEY`; otherwise summaries are generated from source descriptions.
 - Hidden dashboard at `admin.html`.
 - Browser catalog fallback: the website tries Firebase metadata first and then keeps using `books.json` and `books.gutenberg.json`.
 
@@ -50,12 +50,11 @@ Add these repository secrets before enabling the workflow on the Spark/free plan
 FIREBASE_PROJECT_ID
 FIREBASE_CLIENT_EMAIL
 FIREBASE_PRIVATE_KEY
-GEMINI_API_KEY
 GROQ_API_KEY
 OPENAI_API_KEY
 ```
 
-AI keys are optional. When configured, summaries try Gemini first, then Groq fallback models `llama-3.3-70b-versatile` and `deepseek-r1-distill-llama-70b`, then OpenAI, then deterministic summaries.
+AI keys are optional. When configured, summaries try Groq fallback models `llama-3.1-8b-instant`, `llama-3.3-70b-versatile`, and `deepseek-r1-distill-llama-70b` first, then OpenAI, then deterministic summaries.
 
 `FIREBASE_STORAGE_BUCKET` is optional and should be left unused on Spark/free plan. New Firebase Storage buckets require the Blaze plan, so the default workflow uses `LIBRARY_METADATA_ONLY=true`.
 
