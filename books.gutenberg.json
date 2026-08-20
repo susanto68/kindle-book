@@ -300,6 +300,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T17:20:46.137Z"
+      },
+      {
+        "title": "The Treasure of Pearls: A Romance of Adventures in California",
+        "file": "books/Gutenberg/Adventure_Mystery/46276-the-treasure-of-pearls-a-romance-of-adventures-in-california.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/46276-the-treasure-of-pearls-a-romance-of-adventures-in-california.jpg",
+        "author": "Aimard, Gustave",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46276,
+        "subjects": [
+          "California -- Fiction",
+          "Western stories",
+          "Category: Adventure",
+          "Category: Historical Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T13:09:57.389Z"
       }
     ]
   },
@@ -3980,6 +4000,29 @@
         "downloadedAt": "2026-08-15T10:29:32.230Z"
       },
       {
+        "title": "Studies in the History and Method of Science, vol. 1 (of 2)",
+        "file": "books/Gutenberg/Chemistry/46572-studies-in-the-history-and-method-of-science-vol-1-of-2.epub",
+        "cover": "books/Gutenberg/Chemistry/46572-studies-in-the-history-and-method-of-science-vol-1-of-2.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46572,
+        "subjects": [
+          "Medicine -- History",
+          "Science -- History",
+          "Category: History - Other",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Category: Science - Biology",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T12:57:48.430Z"
+      },
+      {
         "title": "The Chemical History of a Candle",
         "file": "books/Gutenberg/Chemistry/14474-the-chemical-history-of-a-candle.epub",
         "cover": "books/Gutenberg/Chemistry/14474-the-chemical-history-of-a-candle.jpg",
@@ -4122,6 +4165,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-30T04:03:11.180Z"
+      },
+      {
+        "title": "The Manufacture of Paper: With Illustrations, and a Bibliography of Works Relating to Cellulose and Paper-Making",
+        "file": "books/Gutenberg/Chemistry/46449-the-manufacture-of-paper-with-illustrations-and-a-bibliography-of-works-.epub",
+        "cover": "books/Gutenberg/Chemistry/46449-the-manufacture-of-paper-with-illustrations-and-a-bibliography-of-works-.jpg",
+        "author": "Sindall, R. W. (Robert Walter)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46449,
+        "subjects": [
+          "Papermaking",
+          "Category: Engineering & Technology",
+          "Category: History - Other",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T12:57:48.901Z"
       },
       {
         "title": "The Principles of Chemistry, Volume I",
@@ -4470,6 +4532,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:31.207Z"
+      },
+      {
+        "title": "Infatuation",
+        "file": "books/Gutenberg/Children_Books/47434-infatuation.epub",
+        "cover": "books/Gutenberg/Children_Books/47434-infatuation.jpg",
+        "author": "Osbourne, Lloyd",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47434,
+        "subjects": [
+          "Actors -- Fiction",
+          "Children of the rich -- Fiction",
+          "Fathers and daughters -- Fiction",
+          "Husband and wife -- Fiction",
+          "Mate selection -- Fiction",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T13:06:00.040Z"
       },
       {
         "title": "Joan and Co.",
@@ -5869,6 +5953,26 @@
   {
     "class": "Gutenberg - Economics",
     "books": [
+      {
+        "title": "A Contribution to the Critique of Political Economy",
+        "file": "books/Gutenberg/Economics/46423-a-contribution-to-the-critique-of-political-economy.epub",
+        "cover": "books/Gutenberg/Economics/46423-a-contribution-to-the-critique-of-political-economy.jpg",
+        "author": "Marx, Karl",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46423,
+        "subjects": [
+          "Economics",
+          "Marxian economics",
+          "Category: Economics",
+          "Category: Philosophy & Ethics",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T13:12:25.304Z"
+      },
       {
         "title": "A Treatise on Domestic Economy; For the Use of Young Ladies at Home and at School",
         "file": "books/Gutenberg/Economics/21829-a-treatise-on-domestic-economy-for-the-use-of-young-ladies-at-home-and-a.epub",
@@ -7436,6 +7540,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T23:08:00.110Z"
+      },
+      {
+        "title": "Ocean's Story; or, Triumphs of Thirty Centuries: Maritime Adventures, Achievements, Explorations, Discoveries and Inventions; and of the Rise and Progress of Ship-Building and Ocean Navigation, from the Ark to the Iron Steamships",
+        "file": "books/Gutenberg/Geography/46372-oceans-story-or-triumphs-of-thirty-centuries-maritime-adventures-achieve.epub",
+        "cover": "books/Gutenberg/Geography/46372-oceans-story-or-triumphs-of-thirty-centuries-maritime-adventures-achieve.jpg",
+        "author": "Goodrich, Frank B. (Frank Boott)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46372,
+        "subjects": [
+          "Discoveries in geography",
+          "Voyages and travels",
+          "Category: Adventure",
+          "Category: History - Ancient",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other",
+          "Category: History - Warfare"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-20T13:00:35.517Z"
       },
       {
         "title": "Terrestrial and Celestial Globes Volume 2: Their History and Construction Including a Consideration of their Value as Aids in the Study of Geography and Astronomy",
