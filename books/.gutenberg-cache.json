@@ -601,6 +601,7 @@
     46333,
     46976,
     46998,
+    47221,
     47384,
     47530,
     47748,
@@ -792,37 +793,43 @@
       "reason": "download-failed",
       "message": "Download failed 503: https://www.gutenberg.org/ebooks/46276.epub3.images",
       "title": "The Treasure of Pearls: A Romance of Adventures in California",
-      "updatedAt": "2026-08-20T10:02:51.024Z"
+      "updatedAt": "2026-08-20T10:39:44.592Z"
+    },
+    "46372": {
+      "reason": "download-failed",
+      "message": "Download failed 504: https://www.gutenberg.org/ebooks/46372.epub3.images",
+      "title": "Ocean's Story; or, Triumphs of Thirty Centuries: Maritime Adventures, Achievements, Explorations, Discoveries and Inventions; and of the Rise and Progress of Ship-Building and Ocean Navigation, from the Ark to the Iron Steamships",
+      "updatedAt": "2026-08-20T10:36:51.474Z"
     },
     "46423": {
       "reason": "download-failed",
-      "message": "Download failed 504: https://www.gutenberg.org/ebooks/46423.epub3.images",
+      "message": "Download failed 503: https://www.gutenberg.org/ebooks/46423.epub3.images",
       "title": "A Contribution to the Critique of Political Economy",
-      "updatedAt": "2026-08-20T10:06:41.755Z"
+      "updatedAt": "2026-08-20T10:39:45.576Z"
     },
     "46449": {
       "reason": "download-failed",
       "message": "Download failed 503: https://www.gutenberg.org/ebooks/46449.epub3.images",
       "title": "The Manufacture of Paper: With Illustrations, and a Bibliography of Works Relating to Cellulose and Paper-Making",
-      "updatedAt": "2026-08-20T09:47:57.639Z"
+      "updatedAt": "2026-08-20T10:32:37.992Z"
     },
     "46572": {
       "reason": "download-failed",
-      "message": "Download failed 504: https://www.gutenberg.org/ebooks/46572.epub3.images",
+      "message": "Download failed 503: https://www.gutenberg.org/ebooks/46572.epub3.images",
       "title": "Studies in the History and Method of Science, vol. 1 (of 2)",
-      "updatedAt": "2026-08-20T09:47:38.836Z"
+      "updatedAt": "2026-08-20T10:32:10.217Z"
     },
     "47018": {
       "reason": "download-failed",
       "message": "Download failed 503: https://www.gutenberg.org/ebooks/47018.epub3.images",
       "title": "A Dictionary of Slang, Cant, and Vulgar Words: Used at the Present Day in the Streets of London; the Universities of Oxford and Cambridge; the Houses of Parliament; the Dens of St. Giles; and the Palaces of St. James.",
-      "updatedAt": "2026-08-20T10:12:25.031Z"
+      "updatedAt": "2026-08-20T10:39:46.519Z"
     },
     "47434": {
       "reason": "download-failed",
       "message": "Download failed 503: https://www.gutenberg.org/ebooks/47434.epub3.images",
       "title": "Infatuation",
-      "updatedAt": "2026-08-20T09:56:51.498Z"
+      "updatedAt": "2026-08-20T10:39:34.348Z"
     },
     "75948": {
       "reason": "too-large",
@@ -831,5 +838,5 @@
       "updatedAt": "2026-07-29T16:06:14.590Z"
     }
   },
-  "updatedAt": "2026-08-20T10:12:25.043Z"
+  "updatedAt": "2026-08-20T10:39:46.533Z"
 }
