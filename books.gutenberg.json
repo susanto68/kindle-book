@@ -1387,6 +1387,27 @@
         "downloadedAt": "2026-08-17T18:41:37.850Z"
       },
       {
+        "title": "Preliminary Discourse on the Study of Natural Philosophy",
+        "file": "books/Gutenberg/Astronomy/54897-preliminary-discourse-on-the-study-of-natural-philosophy.epub",
+        "cover": "books/Gutenberg/Astronomy/54897-preliminary-discourse-on-the-study-of-natural-philosophy.jpg",
+        "author": "Herschel, John F. W. (John Frederick William)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54897,
+        "subjects": [
+          "Astronomy -- History",
+          "Physics -- History",
+          "Science -- History",
+          "Science -- Philosophy",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T14:00:03.293Z"
+      },
+      {
         "title": "Recreations in Astronomy: With Directions for Practical Experiments and Telescopic Work",
         "file": "books/Gutenberg/Astronomy/15620-recreations-in-astronomy-with-directions-for-practical-experiments-and-t.epub",
         "cover": "books/Gutenberg/Astronomy/15620-recreations-in-astronomy-with-directions-for-practical-experiments-and-t.jpg",
@@ -1540,6 +1561,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T10:00:29.787Z"
+      },
+      {
+        "title": "The Practical Astronomer: Comprising illustrations of light and colours--practical descriptions of all kinds of telescopes--the use of the equatorial-transit--circular, and other astronomical instruments, a particular account of the Earl of Rosse's large telescopes, and other topics connected with astronomy",
+        "file": "books/Gutenberg/Astronomy/54420-the-practical-astronomer-comprising-illustrations-of-light-and-colours-p.epub",
+        "cover": "books/Gutenberg/Astronomy/54420-the-practical-astronomer-comprising-illustrations-of-light-and-colours-p.jpg",
+        "author": "Dick, Thomas",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 54420,
+        "subjects": [
+          "Astronomical instruments",
+          "Astronomy",
+          "Telescopes",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T14:00:02.903Z"
       },
       {
         "title": "The sidereal messenger of Galileo Galilei : $b and a part of the preface to Kepler's Dioptrics containing the original account of Galileo's astronomical discoveries",
