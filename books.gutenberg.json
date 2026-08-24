@@ -15365,6 +15365,25 @@
         "downloadedAt": "2026-08-17T12:57:14.794Z"
       },
       {
+        "title": "Human Nature and Conduct: An introduction to social psychology",
+        "file": "books/Gutenberg/Psychology/41386-human-nature-and-conduct-an-introduction-to-social-psychology.epub",
+        "cover": "books/Gutenberg/Psychology/41386-human-nature-and-conduct-an-introduction-to-social-psychology.jpg",
+        "author": "Dewey, John",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41386,
+        "subjects": [
+          "Habit",
+          "Social psychology",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T16:02:42.756Z"
+      },
+      {
         "title": "Persuasion",
         "file": "books/Gutenberg/Psychology/105-persuasion.epub",
         "cover": "books/Gutenberg/Psychology/105-persuasion.jpg",
@@ -15515,6 +15534,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T16:29:19.734Z"
+      },
+      {
+        "title": "Talks To Teachers On Psychology; And To Students On Some Of Life's Ideals",
+        "file": "books/Gutenberg/Psychology/16287-talks-to-teachers-on-psychology-and-to-students-on-some-of-lifes-ideals.epub",
+        "cover": "books/Gutenberg/Psychology/16287-talks-to-teachers-on-psychology-and-to-students-on-some-of-lifes-ideals.jpg",
+        "author": "James, William",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 16287,
+        "subjects": [
+          "College students -- Conduct of life",
+          "Educational psychology",
+          "Teachers -- Professional ethics",
+          "Category: American Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: Psychiatry/Psychology",
+          "Category: Teaching & Education",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T16:02:42.006Z"
       },
       {
         "title": "The Anatomy of Melancholy",
