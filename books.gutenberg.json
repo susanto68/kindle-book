@@ -163,6 +163,27 @@
         "downloadedAt": "2026-08-18T05:41:23.198Z"
       },
       {
+        "title": "One of the Six Hundred: A Novel",
+        "file": "books/Gutenberg/Adventure_Mystery/55179-one-of-the-six-hundred-a-novel.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/55179-one-of-the-six-hundred-a-novel.jpg",
+        "author": "Grant, James",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55179,
+        "subjects": [
+          "Crimean War, 1853-1856 -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:20:41.435Z"
+      },
+      {
         "title": "Peter the Brazen: A Mystery Story of Modern China",
         "file": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/28780-peter-the-brazen-a-mystery-story-of-modern-china.jpg",
@@ -5650,6 +5671,24 @@
         "downloadedAt": "2026-08-17T01:23:59.402Z"
       },
       {
+        "title": "Motion pictures, 1912-1939 : $b Catalog of copyright entries",
+        "file": "books/Gutenberg/Drama_Fiction/51836-motion-pictures-1912-1939-b-catalog-of-copyright-entries.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/51836-motion-pictures-1912-1939-b-catalog-of-copyright-entries.jpg",
+        "author": "Library of Congress. Copyright Office",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51836,
+        "subjects": [
+          "Motion pictures -- Catalogs",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:19:26.820Z"
+      },
+      {
         "title": "Oedipus King of Thebes: Translated into English Rhyming Verse with Explanatory Notes",
         "file": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.epub",
         "cover": "books/Gutenberg/Drama_Fiction/27673-oedipus-king-of-thebes-translated-into-english-rhyming-verse-with-explan.jpg",
@@ -6210,6 +6249,25 @@
         "downloadedAt": "2026-08-17T10:33:40.405Z"
       },
       {
+        "title": "Progress and Poverty, Volumes I and II: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth",
+        "file": "books/Gutenberg/Economics/55308-progress-and-poverty-volumes-i-and-ii-an-inquiry-into-the-cause-of-indus.epub",
+        "cover": "books/Gutenberg/Economics/55308-progress-and-poverty-volumes-i-and-ii-an-inquiry-into-the-cause-of-indus.jpg",
+        "author": "George, Henry",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55308,
+        "subjects": [
+          "Economics",
+          "Single tax",
+          "Category: Economics",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:24:07.469Z"
+      },
+      {
         "title": "Random Reminiscences of Men and Events",
         "file": "books/Gutenberg/Economics/17090-random-reminiscences-of-men-and-events.epub",
         "cover": "books/Gutenberg/Economics/17090-random-reminiscences-of-men-and-events.jpg",
@@ -6271,6 +6329,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T07:56:33.164Z"
+      },
+      {
+        "title": "Spons' Household Manual: A treasury of domestic receipts and a guide for home management",
+        "file": "books/Gutenberg/Economics/57630-spons-household-manual-a-treasury-of-domestic-receipts-and-a-guide-for-h.epub",
+        "cover": "books/Gutenberg/Economics/57630-spons-household-manual-a-treasury-of-domestic-receipts-and-a-guide-for-h.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57630,
+        "subjects": [
+          "Home economics",
+          "Category: Cooking & Drinking",
+          "Category: How To ..."
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:24:08.469Z"
       },
       {
         "title": "Successful Stock Speculation",
@@ -7040,6 +7116,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T19:31:19.635Z"
+      },
+      {
+        "title": "Philosophical Works, v. 2 (of 4): Including All the Essays, and Exhibiting the More Important Alterations and Corrections in the Successive Editions Published by the Author",
+        "file": "books/Gutenberg/General_Knowledge/53792-philosophical-works-v-2-of-4-including-all-the-essays-and-exhibiting-the.epub",
+        "cover": "books/Gutenberg/General_Knowledge/53792-philosophical-works-v-2-of-4-including-all-the-essays-and-exhibiting-the.jpg",
+        "author": "Hume, David",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53792,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Philosophy, English -- 18th century",
+          "Category: Philosophy & Ethics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:13:33.074Z"
       },
       {
         "title": "The Advancement of Learning",
@@ -15277,6 +15372,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T13:40:58.425Z"
+      },
+      {
+        "title": "Psychology: Briefer Course",
+        "file": "books/Gutenberg/Psychology/55262-psychology-briefer-course.epub",
+        "cover": "books/Gutenberg/Psychology/55262-psychology-briefer-course.jpg",
+        "author": "James, William",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 55262,
+        "subjects": [
+          "Psychology",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-24T13:25:04.478Z"
       },
       {
         "title": "Psychotherapy",
