@@ -1197,6 +1197,23 @@
         "downloadedAt": "2026-08-17T10:33:41.614Z"
       },
       {
+        "title": "Astronomy Explained Upon Sir Isaac Newton's Principles: And made easy to those who have not studied mathematics",
+        "file": "books/Gutenberg/Astronomy/60619-astronomy-explained-upon-sir-isaac-newtons-principles-and-made-easy-to-t.epub",
+        "cover": "books/Gutenberg/Astronomy/60619-astronomy-explained-upon-sir-isaac-newtons-principles-and-made-easy-to-t.jpg",
+        "author": "Ferguson, James",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60619,
+        "subjects": [
+          "Astronomy -- Early works to 1800",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-25T13:18:50.210Z"
+      },
+      {
         "title": "Astronomy for beginners",
         "file": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.epub",
         "cover": "books/Gutenberg/Astronomy/78112-astronomy-for-beginners.jpg",
@@ -8177,6 +8194,23 @@
         "downloadedAt": "2026-08-01T23:07:24.323Z"
       },
       {
+        "title": "The Historical Geography of Europe, Vol. I, Text",
+        "file": "books/Gutenberg/Geography/61375-the-historical-geography-of-europe-vol-i-text.epub",
+        "cover": "books/Gutenberg/Geography/61375-the-historical-geography-of-europe-vol-i-text.jpg",
+        "author": "Freeman, Edward A. (Edward Augustus)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61375,
+        "subjects": [
+          "Europe -- Historical geography",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-25T13:00:42.016Z"
+      },
+      {
         "title": "The Itinerary of Benjamin of Tudela",
         "file": "books/Gutenberg/Geography/14981-the-itinerary-of-benjamin-of-tudela.epub",
         "cover": "books/Gutenberg/Geography/14981-the-itinerary-of-benjamin-of-tudela.jpg",
@@ -11968,6 +12002,33 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-25T17:13:48.262Z"
+      },
+      {
+        "title": "Ten Days in a Mad-House; or, Nellie Bly's Experience on Blackwell's Island.: Feigning Insanity in Order to Reveal Asylum Horrors. The Trying Ordeal of the New York World's Girl Correspondent.",
+        "file": "books/Gutenberg/Mathematics/59899-ten-days-in-a-mad-house-or-nellie-blys-experience-on-blackwells-island-f.epub",
+        "cover": "books/Gutenberg/Mathematics/59899-ten-days-in-a-mad-house-or-nellie-blys-experience-on-blackwells-island-f.jpg",
+        "author": "Bly, Nellie",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59899,
+        "subjects": [
+          "Bly, Nellie, 1864-1922",
+          "Mentally ill -- Commitment and detention -- New York (State) -- History -- 19th century",
+          "N.Y. City Lunatic Asylum",
+          "Psychiatric hospital care -- New York (State) -- History -- 19th century",
+          "Psychiatric hospitals -- New York (State) -- History -- 19th century",
+          "Women -- Mental health services -- New York (State) -- History -- 19th century",
+          "Women patients -- New York (State) -- History -- 19th century",
+          "Category: Biographies",
+          "Category: History - American",
+          "Category: Journalism/Media/Writing",
+          "Category: Psychiatry/Psychology",
+          "Women in Science, Technology, Engineering, and Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-25T12:55:18.627Z"
       },
       {
         "title": "The Canterbury Puzzles, and Other Curious Problems",
