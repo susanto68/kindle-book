@@ -14542,6 +14542,26 @@
         "canDownload": false
       },
       {
+        "title": "The Boy Electrician",
+        "file": "books/Gutenberg/Physics/63207-the-boy-electrician.epub",
+        "cover": "books/Gutenberg/Physics/63207-the-boy-electrician.jpg",
+        "author": "Morgan, Alfred Powell",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 63207,
+        "subjects": [
+          "Electrical engineering -- Juvenile literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Engineering & Technology",
+          "Category: How To ...",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-26T13:01:40.550Z"
+      },
+      {
         "title": "The Martyrs of Science, or, The lives of Galileo, Tycho Brahe, and Kepler",
         "file": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.epub",
         "cover": "books/Gutenberg/Physics/25992-the-martyrs-of-science-or-the-lives-of-galileo-tycho-brahe-and-kepler.jpg",
