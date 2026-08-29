@@ -10057,6 +10057,24 @@
         "downloadedAt": "2026-08-18T08:39:46.310Z"
       },
       {
+        "title": "The Theory of Moral Sentiments: Or, an Essay Towards an Analysis of the Principles by Which Men Naturally Judge Concerning the Conduct and Character, First of Their Neighbours, and Afterwards of Themselves. to Which Is Added, a Dissertation on the Origin of Languages.",
+        "file": "books/Gutenberg/Language_Learning/67363-the-theory-of-moral-sentiments-or-an-essay-towards-an-analysis-of-the-pr.epub",
+        "cover": "books/Gutenberg/Language_Learning/67363-the-theory-of-moral-sentiments-or-an-essay-towards-an-analysis-of-the-pr.jpg",
+        "author": "Smith, Adam",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67363,
+        "subjects": [
+          "Ethics -- Early works to 1800",
+          "Language and languages -- Early works to 1800",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-29T13:36:16.850Z"
+      },
+      {
         "title": "The Verbalist: A Manual Devoted to Brief Discussions of the Right and the Wrong Use of Words and to Some Other Matters of Interest to Those Who Would Speak and Write with Propriety.",
         "file": "books/Gutenberg/Language_Learning/22457-the-verbalist-a-manual-devoted-to-brief-discussions-of-the-right-and-the.epub",
         "cover": "books/Gutenberg/Language_Learning/22457-the-verbalist-a-manual-devoted-to-brief-discussions-of-the-right-and-the.jpg",
@@ -13937,6 +13955,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-03T09:36:07.947Z"
+      },
+      {
+        "title": "Chance, Love, and Logic: Philosophical Essays",
+        "file": "books/Gutenberg/Physics/65274-chance-love-and-logic-philosophical-essays.epub",
+        "cover": "books/Gutenberg/Physics/65274-chance-love-and-logic-philosophical-essays.jpg",
+        "author": "Peirce, Charles S. (Charles Sanders)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 65274,
+        "subjects": [
+          "Metaphysics",
+          "Peirce, Charles S. (Charles Sanders), 1839-1914 -- Bibliography",
+          "Pragmatism",
+          "Science -- Philosophy",
+          "Category: Essays, Letters & Speeches",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-29T13:07:32.720Z"
       },
       {
         "title": "Creative Evolution",
