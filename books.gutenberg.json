@@ -1640,6 +1640,24 @@
         "downloadedAt": "2026-08-17T11:27:49.726Z"
       },
       {
+        "title": "The story of the universe. Volume 1 (of 4) : $b The starry skies",
+        "file": "books/Gutenberg/Astronomy/74571-the-story-of-the-universe-volume-1-of-4-b-the-starry-skies.epub",
+        "cover": "books/Gutenberg/Astronomy/74571-the-story-of-the-universe-volume-1-of-4-b-the-starry-skies.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74571,
+        "subjects": [
+          "Astronomy",
+          "Earth (Planet)",
+          "Natural history"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-31T17:15:21.434Z"
+      },
+      {
         "title": "The Witness of the Stars",
         "file": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.epub",
         "cover": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.jpg",
@@ -6324,6 +6342,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-24T13:24:07.469Z"
+      },
+      {
+        "title": "Psychology of the stock market",
+        "file": "books/Gutenberg/Economics/75570-psychology-of-the-stock-market.epub",
+        "cover": "books/Gutenberg/Economics/75570-psychology-of-the-stock-market.jpg",
+        "author": "Selden, G. C. (George Charles)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 75570,
+        "subjects": [
+          "Investments -- Psychological aspects",
+          "Speculation",
+          "Category: Business/Management",
+          "Category: Economics",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-31T17:13:35.683Z"
       },
       {
         "title": "Random Reminiscences of Men and Events",
@@ -13339,6 +13377,26 @@
         "downloadedAt": "2026-08-08T07:55:28.934Z"
       },
       {
+        "title": "Democracy and Education: An Introduction to the Philosophy of Education",
+        "file": "books/Gutenberg/Philosophy/852-democracy-and-education-an-introduction-to-the-philosophy-of-education.epub",
+        "cover": "books/Gutenberg/Philosophy/852-democracy-and-education-an-introduction-to-the-philosophy-of-education.jpg",
+        "author": "Dewey, John",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 852,
+        "subjects": [
+          "Education -- Philosophy",
+          "Education -- Social aspects",
+          "Category: Philosophy & Ethics",
+          "Category: Teaching & Education",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-31T17:00:20.651Z"
+      },
+      {
         "title": "Ecce Homo: Complete Works, Volume Seventeen",
         "file": "books/Gutenberg/Philosophy/52190-ecce-homo-complete-works-volume-seventeen.epub",
         "cover": "books/Gutenberg/Philosophy/52190-ecce-homo-complete-works-volume-seventeen.jpg",
@@ -13520,6 +13578,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T10:14:05.566Z"
+      },
+      {
+        "title": "The Approach to Philosophy",
+        "file": "books/Gutenberg/Philosophy/25110-the-approach-to-philosophy.epub",
+        "cover": "books/Gutenberg/Philosophy/25110-the-approach-to-philosophy.jpg",
+        "author": "Perry, Ralph Barton",
+        "year": "Public domain",
+        "category": "Philosophy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25110,
+        "subjects": [
+          "Philosophy",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-08-31T17:00:21.374Z"
       },
       {
         "title": "The Birth of Tragedy; or, Hellenism and Pessimism",
