@@ -7636,6 +7636,27 @@
         "downloadedAt": "2026-08-10T11:23:36.314Z"
       },
       {
+        "title": "Geography and Plays",
+        "file": "books/Gutenberg/Geography/33403-geography-and-plays.epub",
+        "cover": "books/Gutenberg/Geography/33403-geography-and-plays.jpg",
+        "author": "Stein, Gertrude",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33403,
+        "subjects": [
+          "American drama -- 20th century",
+          "Experimental fiction, American",
+          "Prose poems",
+          "Category: American Literature",
+          "Category: Plays/Films/Dramas",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-01T20:55:04.409Z"
+      },
+      {
         "title": "Holinshed's Chronicles, vol. 1 of 6, complete: England, geography and early history to 1066",
         "file": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.epub",
         "cover": "books/Gutenberg/Geography/44700-holinsheds-chronicles-vol-1-of-6-complete-england-geography-and-early-hi.jpg",
@@ -8288,6 +8309,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T17:07:50.087Z"
+      },
+      {
+        "title": "The Middle Kingdom, Volume 1 (of 2): A Survey of the Geography, Government, Literature, Social Life, Arts, and History of the Chinese Empire and its Inhabitants",
+        "file": "books/Gutenberg/Geography/57868-the-middle-kingdom-volume-1-of-2-a-survey-of-the-geography-government-li.epub",
+        "cover": "books/Gutenberg/Geography/57868-the-middle-kingdom-volume-1-of-2-a-survey-of-the-geography-government-li.jpg",
+        "author": "Williams, S. Wells (Samuel Wells)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57868,
+        "subjects": [
+          "China",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-01T20:55:03.379Z"
       },
       {
         "title": "The Principal Navigations, Voyages, Traffiques and Discoveries of the English Nation — Volume 09: Asia, Part II",
