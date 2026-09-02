@@ -4680,6 +4680,48 @@
         "downloadedAt": "2026-08-08T20:33:45.130Z"
       },
       {
+        "title": "Children's books and reading",
+        "file": "books/Gutenberg/Children_Books/71774-childrens-books-and-reading.epub",
+        "cover": "books/Gutenberg/Children_Books/71774-childrens-books-and-reading.jpg",
+        "author": "Moses, Montrose Jonas",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 71774,
+        "subjects": [
+          "Children -- Books and reading",
+          "Children's literature -- Bibliography",
+          "Children's literature -- History and criticism",
+          "Category: Children & Young Adult Reading",
+          "Category: History - Other",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T21:02:20.301Z"
+      },
+      {
+        "title": "Children's Books and Their Illustrators",
+        "file": "books/Gutenberg/Children_Books/27112-childrens-books-and-their-illustrators.epub",
+        "cover": "books/Gutenberg/Children_Books/27112-childrens-books-and-their-illustrators.jpg",
+        "author": "White, Gleeson",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27112,
+        "subjects": [
+          "Children's literature",
+          "Illustrated books",
+          "Illustration of books",
+          "Illustrators",
+          "Category: Art",
+          "Category: Children & Young Adult Reading"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T21:02:19.473Z"
+      },
+      {
         "title": "Fairy dreams : $b or, Wanderings in Elf-land",
         "file": "books/Gutenberg/Children_Books/76391-fairy-dreams-b-or-wanderings-in-elf-land.epub",
         "cover": "books/Gutenberg/Children_Books/76391-fairy-dreams-b-or-wanderings-in-elf-land.jpg",
