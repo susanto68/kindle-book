@@ -204,6 +204,25 @@
         "downloadedAt": "2026-08-16T19:22:25.118Z"
       },
       {
+        "title": "The Albert Gate Mystery: Being Further Adventures of Reginald Brett, Barrister Detective",
+        "file": "books/Gutenberg/Adventure_Mystery/23150-the-albert-gate-mystery-being-further-adventures-of-reginald-brett-barri.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/23150-the-albert-gate-mystery-being-further-adventures-of-reginald-brett-barri.jpg",
+        "author": "Tracy, Louis",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23150,
+        "subjects": [
+          "Detective and mystery stories",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:50:54.593Z"
+      },
+      {
         "title": "The Boy with Wings",
         "file": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/36223-the-boy-with-wings.jpg",
@@ -226,6 +245,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:58.297Z"
+      },
+      {
+        "title": "The Girl and the Bill: An American Story of Mystery, Romance and Adventure",
+        "file": "books/Gutenberg/Adventure_Mystery/25799-the-girl-and-the-bill-an-american-story-of-mystery-romance-and-adventure.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/25799-the-girl-and-the-bill-an-american-story-of-mystery-romance-and-adventure.jpg",
+        "author": "Merwin, Bannister",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 25799,
+        "subjects": [
+          "Adventure stories",
+          "Chicago (Ill.) -- Fiction",
+          "Love stories",
+          "Mystery fiction",
+          "Spy stories",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Category: Romance"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:50:53.948Z"
       },
       {
         "title": "The Landloper: The Romance of a Man on Foot",
@@ -2838,6 +2882,26 @@
         "downloadedAt": "2026-07-30T18:18:36.430Z"
       },
       {
+        "title": "A Civic Biology, Presented in Problems",
+        "file": "books/Gutenberg/Biology/39969-a-civic-biology-presented-in-problems.epub",
+        "cover": "books/Gutenberg/Biology/39969-a-civic-biology-presented-in-problems.jpg",
+        "author": "Hunter, George W. (George William)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39969,
+        "subjects": [
+          "Biology",
+          "Sanitation",
+          "Category: Health & Medicine",
+          "Category: Science - Biology",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:32:27.503Z"
+      },
+      {
         "title": "An Elementary Study of Insects",
         "file": "books/Gutenberg/Biology/23434-an-elementary-study-of-insects.epub",
         "cover": "books/Gutenberg/Biology/23434-an-elementary-study-of-insects.jpg",
@@ -3462,6 +3526,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T12:45:59.311Z"
+      },
+      {
+        "title": "The Principles of Biology, Volume 2 (of 2)",
+        "file": "books/Gutenberg/Biology/67282-the-principles-of-biology-volume-2-of-2.epub",
+        "cover": "books/Gutenberg/Biology/67282-the-principles-of-biology-volume-2-of-2.jpg",
+        "author": "Spencer, Herbert",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 67282,
+        "subjects": [
+          "Biology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:32:28.503Z"
       },
       {
         "title": "The Theories of Darwin and Their Relation to Philosophy, Religion, and Morality",
@@ -6253,6 +6334,34 @@
         "downloadedAt": "2026-08-17T05:36:38.589Z"
       },
       {
+        "title": "Business Administration: Theory, Practice and Application. [Vol. 1] Business Economics",
+        "file": "books/Gutenberg/Economics/56018-business-administration-theory-practice-and-application-vol-1-business-e.epub",
+        "cover": "books/Gutenberg/Economics/56018-business-administration-theory-practice-and-application-vol-1-business-e.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 56018,
+        "subjects": [
+          "Accounting",
+          "Advertising",
+          "Auditing",
+          "Banks and banking -- United States",
+          "Business",
+          "Commerce",
+          "Commercial law -- United States",
+          "Economics",
+          "Insurance",
+          "Investments",
+          "Railroads -- United States",
+          "Selling",
+          "Category: Business/Management"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:58:40.057Z"
+      },
+      {
         "title": "Early English Meals and Manners",
         "file": "books/Gutenberg/Economics/24790-early-english-meals-and-manners.epub",
         "cover": "books/Gutenberg/Economics/24790-early-english-meals-and-manners.jpg",
@@ -6746,6 +6855,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T15:35:27.668Z"
+      },
+      {
+        "title": "The Principles of Economics, with Applications to Practical Problems",
+        "file": "books/Gutenberg/Economics/40077-the-principles-of-economics-with-applications-to-practical-problems.epub",
+        "cover": "books/Gutenberg/Economics/40077-the-principles-of-economics-with-applications-to-practical-problems.jpg",
+        "author": "Fetter, Frank A. (Frank Albert)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40077,
+        "subjects": [
+          "Economics",
+          "Category: Economics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T13:58:40.846Z"
       },
       {
         "title": "The Settlement of Wage Disputes",
