@@ -4514,6 +4514,35 @@
         "downloadedAt": "2026-08-08T19:31:20.742Z"
       },
       {
+        "title": "Anne of Green Gables",
+        "file": "books/Gutenberg/Children_Books/45-anne-of-green-gables.epub",
+        "cover": "books/Gutenberg/Children_Books/45-anne-of-green-gables.jpg",
+        "author": "Montgomery, L. M. (Lucy Maud)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45,
+        "subjects": [
+          "Bildungsromans",
+          "Canada -- History -- 1867-1914 -- Fiction",
+          "Country life -- Prince Edward Island -- Fiction",
+          "Friendship -- Fiction",
+          "Girls -- Fiction",
+          "Islands -- Fiction",
+          "Orphans -- Fiction",
+          "Prince Edward Island -- History -- 20th century -- Fiction",
+          "Shirley, Anne (Fictitious character) -- Fiction",
+          "Canada",
+          "Category: Children & Young Adult Reading",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Children's Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T08:51:41.037Z"
+      },
+      {
         "title": "Baron Trump's Marvellous Underground Journey",
         "file": "books/Gutenberg/Children_Books/57426-baron-trumps-marvellous-underground-journey.epub",
         "cover": "books/Gutenberg/Children_Books/57426-baron-trumps-marvellous-underground-journey.jpg",
@@ -5901,6 +5930,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T23:21:06.608Z"
+      },
+      {
+        "title": "Riders to the Sea",
+        "file": "books/Gutenberg/Drama_Fiction/994-riders-to-the-sea.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/994-riders-to-the-sea.jpg",
+        "author": "Synge, J. M. (John Millington)",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 994,
+        "subjects": [
+          "Drowning victims -- Drama",
+          "Ireland -- Drama",
+          "Mothers and sons -- Drama",
+          "Seafaring life -- Drama",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas",
+          "One Act Plays",
+          "Opera"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T08:56:37.956Z"
       },
       {
         "title": "Shakespeare, Ben Jonson, Beaumont and Fletcher",
@@ -12696,6 +12748,32 @@
         "downloadedAt": "2026-08-04T07:53:00.078Z"
       },
       {
+        "title": "King Lear",
+        "file": "books/Gutenberg/Motivation/1532-king-lear.epub",
+        "cover": "books/Gutenberg/Motivation/1532-king-lear.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1532,
+        "subjects": [
+          "Aging parents -- Drama",
+          "Britons -- Drama",
+          "Fathers and daughters -- Drama",
+          "Inheritance and succession -- Drama",
+          "Kings and rulers -- Drama",
+          "Lear, King (Legendary character) -- Drama",
+          "Tragedies (Drama)",
+          "Best Books Ever Listings",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T08:45:25.367Z"
+      },
+      {
         "title": "Little Dorrit",
         "file": "books/Gutenberg/Motivation/963-little-dorrit.epub",
         "cover": "books/Gutenberg/Motivation/963-little-dorrit.jpg",
@@ -15665,6 +15743,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-24T16:02:42.756Z"
+      },
+      {
+        "title": "Much Ado about Nothing",
+        "file": "books/Gutenberg/Psychology/1519-much-ado-about-nothing.epub",
+        "cover": "books/Gutenberg/Psychology/1519-much-ado-about-nothing.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1519,
+        "subjects": [
+          "Comedy plays",
+          "Conspiracies -- Drama",
+          "Courtship -- Drama",
+          "Messina (Italy) -- Drama",
+          "Rejection (Psychology) -- Drama",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T09:02:53.884Z"
       },
       {
         "title": "Persuasion",
