@@ -249,6 +249,31 @@
         "downloadedAt": "2026-08-16T21:33:52.481Z"
       },
       {
+        "title": "The Man in the Brown Suit",
+        "file": "books/Gutenberg/Adventure_Mystery/61168-the-man-in-the-brown-suit.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/61168-the-man-in-the-brown-suit.jpg",
+        "author": "Christie, Agatha",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 61168,
+        "subjects": [
+          "Detective and mystery stories",
+          "London (England) -- Fiction",
+          "Murder -- Investigation -- Fiction",
+          "South Africa -- Fiction",
+          "Women adventurers -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Detective Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T03:45:04.470Z"
+      },
+      {
         "title": "The Merry Adventures of Robin Hood",
         "file": "books/Gutenberg/Adventure_Mystery/10148-the-merry-adventures-of-robin-hood.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/10148-the-merry-adventures-of-robin-hood.jpg",
@@ -5827,6 +5852,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T03:02:07.901Z"
+      },
+      {
+        "title": "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
+        "file": "books/Gutenberg/Drama_Fiction/31-plays-of-sophocles-oedipus-the-king-oedipus-at-colonus-antigone.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/31-plays-of-sophocles-oedipus-the-king-oedipus-at-colonus-antigone.jpg",
+        "author": "Sophocles",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31,
+        "subjects": [
+          "Antigone (Mythological character) -- Drama",
+          "Greek drama (Tragedy) -- Translations into English",
+          "Oedipus (Greek mythological figure) -- Drama",
+          "Tragedies (Drama)",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas",
+          "Harvard Classics",
+          "Plays"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T03:43:40.795Z"
       },
       {
         "title": "Pygmalion",
