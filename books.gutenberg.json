@@ -2945,6 +2945,24 @@
         "downloadedAt": "2026-07-30T12:04:19.892Z"
       },
       {
+        "title": "Biology and Its Makers: With Portraits and Other Illustrations",
+        "file": "books/Gutenberg/Biology/58867-biology-and-its-makers-with-portraits-and-other-illustrations.epub",
+        "cover": "books/Gutenberg/Biology/58867-biology-and-its-makers-with-portraits-and-other-illustrations.jpg",
+        "author": "Locy, William A. (William Albert)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58867,
+        "subjects": [
+          "Biology -- History",
+          "Category: History - Other",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T23:11:43.097Z"
+      },
+      {
         "title": "Birds of the Rockies",
         "file": "books/Gutenberg/Biology/25973-birds-of-the-rockies.epub",
         "cover": "books/Gutenberg/Biology/25973-birds-of-the-rockies.jpg",
@@ -3369,6 +3387,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:26.714Z"
+      },
+      {
+        "title": "The Biology, Physiology and Sociology of Reproduction: Also Sexual Hygiene with Special Reference to the Male",
+        "file": "books/Gutenberg/Biology/24708-the-biology-physiology-and-sociology-of-reproduction-also-sexual-hygiene.epub",
+        "cover": "books/Gutenberg/Biology/24708-the-biology-physiology-and-sociology-of-reproduction-also-sexual-hygiene.jpg",
+        "author": "Hall, Winfield Scott",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 24708,
+        "subjects": [
+          "Reproduction",
+          "Sexual ethics -- Early 20th century",
+          "Category: Parenthood & Family Relations",
+          "Category: Psychiatry/Psychology",
+          "Category: Science - Biology",
+          "Category: Sociology",
+          "Category: Teaching & Education",
+          "Medicine",
+          "Physiology",
+          "Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T23:11:42.172Z"
       },
       {
         "title": "The Dawn of Reason; or, Mental Traits in the Lower Animals",
@@ -14669,6 +14712,27 @@
         "downloadedAt": "2026-07-30T14:11:53.321Z"
       },
       {
+        "title": "International Congress of Arts and Science, Volume 1: Philosophy and Metaphysics",
+        "file": "books/Gutenberg/Physics/38267-international-congress-of-arts-and-science-volume-1-philosophy-and-metap.epub",
+        "cover": "books/Gutenberg/Physics/38267-international-congress-of-arts-and-science-volume-1-philosophy-and-metap.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38267,
+        "subjects": [
+          "Conference proceedings",
+          "Medicine -- Congresses",
+          "Science and the humanities -- Congresses",
+          "Technology -- Congresses",
+          "Category: Philosophy & Ethics",
+          "Category: Reports & Conference Proceedings"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T23:09:07.539Z"
+      },
+      {
         "title": "Kant's Prolegomena to Any Future Metaphysics",
         "file": "books/Gutenberg/Physics/52821-kants-prolegomena-to-any-future-metaphysics.epub",
         "cover": "books/Gutenberg/Physics/52821-kants-prolegomena-to-any-future-metaphysics.jpg",
@@ -14781,6 +14845,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-31T16:18:45.276Z"
+      },
+      {
+        "title": "Physics",
+        "file": "books/Gutenberg/Physics/40175-physics.epub",
+        "cover": "books/Gutenberg/Physics/40175-physics.jpg",
+        "author": "Tower, Willis E. (Willis Eugene), Cope, Thomas D. (Thomas Darlington), Smith, Charles H. (Charles Henry), Turton, Charles M. (Charles Mark)",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40175,
+        "subjects": [
+          "Physics",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-02T23:09:06.717Z"
       },
       {
         "title": "Problems in astrophysics",
