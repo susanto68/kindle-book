@@ -799,6 +799,7 @@
     75883,
     75948,
     76049,
+    76084,
     76178,
     76247,
     76391,
@@ -814,6 +815,7 @@
     76960,
     77016,
     77092,
+    77827,
     78025,
     78039,
     78046,
@@ -848,7 +850,13 @@
       "message": "EPUB is 109.47 MB; GitHub limit guard is 95.00 MB.",
       "title": "The book of wonders : $b gives plain and simple answers to the thousands of everyday questions that are asked and which all should be able to, but cannot answer...",
       "updatedAt": "2026-07-29T16:06:14.590Z"
+    },
+    "79345": {
+      "reason": "download-failed",
+      "message": "fetch failed",
+      "title": "Stories of adventure, as told by adventurers",
+      "updatedAt": "2026-09-03T17:50:46.294Z"
     }
   },
-  "updatedAt": "2026-09-03T14:04:45.057Z"
+  "updatedAt": "2026-09-03T18:13:45.195Z"
 }

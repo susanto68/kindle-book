@@ -1751,6 +1751,24 @@
         "downloadedAt": "2026-08-31T17:15:21.434Z"
       },
       {
+        "title": "The story of the universe. Volume 3 (of 4) : $b The earth's garment : flora",
+        "file": "books/Gutenberg/Astronomy/77827-the-story-of-the-universe-volume-3-of-4-b-the-earths-garment-flora.epub",
+        "cover": "books/Gutenberg/Astronomy/77827-the-story-of-the-universe-volume-3-of-4-b-the-earths-garment-flora.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 77827,
+        "subjects": [
+          "Astronomy",
+          "Earth (Planet)",
+          "Natural history"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T18:10:45.087Z"
+      },
+      {
         "title": "The Witness of the Stars",
         "file": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.epub",
         "cover": "books/Gutenberg/Astronomy/49018-the-witness-of-the-stars.jpg",
@@ -5238,6 +5256,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T18:39:41.755Z"
+      },
+      {
+        "title": "The Nowadays Girls in the Adirondacks : $b or, The deserted bungalow on Saranac Lake",
+        "file": "books/Gutenberg/Children_Books/76084-the-nowadays-girls-in-the-adirondacks-b-or-the-deserted-bungalow-on-sara.epub",
+        "cover": "books/Gutenberg/Children_Books/76084-the-nowadays-girls-in-the-adirondacks-b-or-the-deserted-bungalow-on-sara.jpg",
+        "author": "Brownell, Gertrude Hall",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76084,
+        "subjects": [
+          "Adirondack Mountains (N.Y.) -- Juvenile fiction",
+          "Teenage girls -- Societies and clubs -- Juvenile fiction",
+          "Vacations -- Juvenile fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T18:00:47.379Z"
       },
       {
         "title": "The Prince and the Pauper",
