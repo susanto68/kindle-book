@@ -1513,6 +1513,30 @@
         "downloadedAt": "2026-08-17T18:41:39.781Z"
       },
       {
+        "title": "Side-Lights on Astronomy and Kindred Fields of Popular Science",
+        "file": "books/Gutenberg/Astronomy/4065-side-lights-on-astronomy-and-kindred-fields-of-popular-science.epub",
+        "cover": "books/Gutenberg/Astronomy/4065-side-lights-on-astronomy-and-kindred-fields-of-popular-science.jpg",
+        "author": "Newcomb, Simon",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4065,
+        "subjects": [
+          "Astronomy",
+          "Compass",
+          "Flying-machines",
+          "Hyperspace",
+          "Learning and scholarship",
+          "Rain-making",
+          "Astronomy",
+          "Category: Essays, Letters & Speeches",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T09:16:12.043Z"
+      },
+      {
         "title": "Sir William Herschel: His Life and Works",
         "file": "books/Gutenberg/Astronomy/29031-sir-william-herschel-his-life-and-works.epub",
         "cover": "books/Gutenberg/Astronomy/29031-sir-william-herschel-his-life-and-works.jpg",
@@ -3432,6 +3456,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T14:33:27.911Z"
+      },
+      {
+        "title": "The Descent of Man, and Selection in Relation to Sex",
+        "file": "books/Gutenberg/Biology/2300-the-descent-of-man-and-selection-in-relation-to-sex.epub",
+        "cover": "books/Gutenberg/Biology/2300-the-descent-of-man-and-selection-in-relation-to-sex.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2300,
+        "subjects": [
+          "Evolution (Biology)",
+          "Human beings -- Origin",
+          "Sex differences",
+          "Sexual dimorphism (Animals)",
+          "Sexual selection in animals",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T08:49:21.795Z"
       },
       {
         "title": "The Elements of Bacteriological Technique: A Laboratory Guide for Medical, Dental, and Technical Students. Second Edition Rewritten and Enlarged.",
@@ -11881,6 +11927,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-02T05:55:25.396Z"
+      },
+      {
+        "title": "Calculus Made Easy: Being a very-simplest introduction to those beautiful methods which are generally called by the terrifying names of the Differential Calculus and the Integral Calculus",
+        "file": "books/Gutenberg/Mathematics/33283-calculus-made-easy-being-a-very-simplest-introduction-to-those-beautiful.epub",
+        "cover": "books/Gutenberg/Mathematics/33283-calculus-made-easy-being-a-very-simplest-introduction-to-those-beautiful.jpg",
+        "author": "Thompson, Silvanus P. (Silvanus Phillips)",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33283,
+        "subjects": [
+          "Calculus",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T08:44:44.211Z"
       },
       {
         "title": "Conversations on Chemistry, V. 1-2: In Which the Elements of that Science Are Familiarly Explained and Illustrated by Experiments",
