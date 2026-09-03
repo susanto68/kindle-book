@@ -4602,6 +4602,25 @@
     "class": "Gutenberg - Children Books",
     "books": [
       {
+        "title": "A Mother's List of Books for Children",
+        "file": "books/Gutenberg/Children_Books/19157-a-mothers-list-of-books-for-children.epub",
+        "cover": "books/Gutenberg/Children_Books/19157-a-mothers-list-of-books-for-children.jpg",
+        "author": "Arnold, Gertrude Weld",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 19157,
+        "subjects": [
+          "Children -- Books and reading",
+          "Children's literature -- Bibliography",
+          "Category: Children & Young Adult Reading",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T21:03:27.780Z"
+      },
+      {
         "title": "Adventures of Huckleberry Finn",
         "file": "books/Gutenberg/Children_Books/76-adventures-of-huckleberry-finn.epub",
         "cover": "books/Gutenberg/Children_Books/76-adventures-of-huckleberry-finn.jpg",
@@ -4986,6 +5005,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:21:45.003Z"
+      },
+      {
+        "title": "One thousand books for children",
+        "file": "books/Gutenberg/Children_Books/74556-one-thousand-books-for-children.epub",
+        "cover": "books/Gutenberg/Children_Books/74556-one-thousand-books-for-children.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 74556,
+        "subjects": [
+          "Children -- Books and reading",
+          "Children's literature -- Bibliography"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T21:03:28.475Z"
       },
       {
         "title": "Personal Memoirs of U. S. Grant, Complete",
@@ -5875,6 +5911,45 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:55:14.360Z"
+      },
+      {
+        "title": "Character Sketches of Romance, Fiction and the Drama, Vol. 3: A Revised American Edition of the Reader's Handbook",
+        "file": "books/Gutenberg/Drama_Fiction/20851-character-sketches-of-romance-fiction-and-the-drama-vol-3-a-revised-amer.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/20851-character-sketches-of-romance-fiction-and-the-drama-vol-3-a-revised-amer.jpg",
+        "author": "Brewer, Ebenezer Cobham",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 20851,
+        "subjects": [
+          "Allusions",
+          "Fiction -- Dictionaries",
+          "Literature -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T21:08:19.768Z"
+      },
+      {
+        "title": "Character Sketches of Romance, Fiction, and the Drama, Vol. 2: A Revised American Edition of the Reader's Handbook",
+        "file": "books/Gutenberg/Drama_Fiction/58596-character-sketches-of-romance-fiction-and-the-drama-vol-2-a-revised-amer.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/58596-character-sketches-of-romance-fiction-and-the-drama-vol-2-a-revised-amer.jpg",
+        "author": "Brewer, Ebenezer Cobham",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58596,
+        "subjects": [
+          "Allusions",
+          "Fiction -- Dictionaries",
+          "Literature -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T21:08:20.586Z"
       },
       {
         "title": "Charles Frohman: Manager and Man",
@@ -8194,6 +8269,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-20T13:00:35.517Z"
+      },
+      {
+        "title": "Stories of adventure, as told by adventurers",
+        "file": "books/Gutenberg/Geography/79345-stories-of-adventure-as-told-by-adventurers.epub",
+        "cover": "books/Gutenberg/Geography/79345-stories-of-adventure-as-told-by-adventurers.jpg",
+        "author": "Hale, Edward Everett",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79345,
+        "subjects": [
+          "Adventure and adventurers",
+          "Discoveries in geography"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T20:54:22.324Z"
       },
       {
         "title": "Terrestrial and Celestial Globes Volume 2: Their History and Construction Including a Consideration of their Value as Aids in the Study of Geography and Astronomy",
