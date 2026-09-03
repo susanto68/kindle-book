@@ -6210,6 +6210,27 @@
         "downloadedAt": "2026-08-17T04:55:14.647Z"
       },
       {
+        "title": "The sea-gull",
+        "file": "books/Gutenberg/Drama_Fiction/1754-the-sea-gull.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/1754-the-sea-gull.jpg",
+        "author": "Chekhov, Anton Pavlovich",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1754,
+        "subjects": [
+          "Authors, Russian -- 19th century -- Drama",
+          "Man-woman relationships -- Drama",
+          "Russia -- Social life and customs -- Drama",
+          "Russian drama -- Translations into English",
+          "Category: Plays/Films/Dramas",
+          "Category: Russian Literature"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-03T03:51:53.493Z"
+      },
+      {
         "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
         "file": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.epub",
         "cover": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.jpg",
