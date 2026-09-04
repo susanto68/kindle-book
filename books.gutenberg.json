@@ -8543,6 +8543,27 @@
         "downloadedAt": "2026-08-03T16:33:38.299Z"
       },
       {
+        "title": "The 2002 CIA World Factbook",
+        "file": "books/Gutenberg/Geography/6344-the-2002-cia-world-factbook.epub",
+        "cover": "books/Gutenberg/Geography/6344-the-2002-cia-world-factbook.jpg",
+        "author": "United States. Central Intelligence Agency",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6344,
+        "subjects": [
+          "Geography -- Handbooks, manuals, etc.",
+          "Political science -- Handbooks, manuals, etc.",
+          "Political statistics -- Handbooks, manuals, etc.",
+          "World politics -- Handbooks, manuals, etc.",
+          "CIA World Factbooks",
+          "Category: Encyclopedias/Dictionaries/Reference"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-04T08:49:32.950Z"
+      },
+      {
         "title": "The 2003 CIA World Factbook",
         "file": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.epub",
         "cover": "books/Gutenberg/Geography/27558-the-2003-cia-world-factbook.jpg",
@@ -16487,6 +16508,34 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T12:57:15.176Z"
+      },
+      {
+        "title": "The Mill on the Floss",
+        "file": "books/Gutenberg/Psychology/6688-the-mill-on-the-floss.epub",
+        "cover": "books/Gutenberg/Psychology/6688-the-mill-on-the-floss.jpg",
+        "author": "Eliot, George",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 6688,
+        "subjects": [
+          "Conflict of generations -- Fiction",
+          "Domestic fiction",
+          "England -- Fiction",
+          "Loss (Psychology) -- Fiction",
+          "Love stories",
+          "Psychological fiction",
+          "Siblings -- Fiction",
+          "Vendetta -- Fiction",
+          "Water mills -- Fiction",
+          "Young women -- Fiction",
+          "Category: British Literature",
+          "Category: Novels",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-04T09:11:33.576Z"
       },
       {
         "title": "The Mind and the Brain: Being the Authorised Translation of L'Âme et le Corps",
