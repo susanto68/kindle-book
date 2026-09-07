@@ -541,6 +541,25 @@
         "downloadedAt": "2026-08-17T19:31:14.328Z"
       },
       {
+        "title": "On War",
+        "file": "books/Gutenberg/Art_Music/1946-on-war.epub",
+        "cover": "books/Gutenberg/Art_Music/1946-on-war.jpg",
+        "author": "Clausewitz, Carl von",
+        "year": "Public domain",
+        "category": "Art & Music",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1946,
+        "subjects": [
+          "Military art and science",
+          "War",
+          "Category: History - Warfare",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-07T09:39:51.457Z"
+      },
+      {
         "title": "The black kiss",
         "file": "books/Gutenberg/Art_Music/76435-the-black-kiss.epub",
         "cover": "books/Gutenberg/Art_Music/76435-the-black-kiss.jpg",
@@ -10487,6 +10506,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T04:37:41.150Z"
+      },
+      {
+        "title": "Putnam's Word Book: A Practical Aid in Expressing Ideas Through the Use of an Exact and Varied Vocabulary",
+        "file": "books/Gutenberg/Language_Learning/13188-putnams-word-book-a-practical-aid-in-expressing-ideas-through-the-use-of.epub",
+        "cover": "books/Gutenberg/Language_Learning/13188-putnams-word-book-a-practical-aid-in-expressing-ideas-through-the-use-of.jpg",
+        "author": "Flemming, Louis A. (Louis Andrew)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 13188,
+        "subjects": [
+          "English language -- Synonyms and antonyms",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-07T09:41:01.865Z"
       },
       {
         "title": "Roget's Thesaurus",
