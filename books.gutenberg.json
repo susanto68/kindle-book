@@ -4391,6 +4391,24 @@
         "downloadedAt": "2026-07-30T22:08:11.300Z"
       },
       {
+        "title": "The Chemistry of Cookery",
+        "file": "books/Gutenberg/Chemistry/53458-the-chemistry-of-cookery.epub",
+        "cover": "books/Gutenberg/Chemistry/53458-the-chemistry-of-cookery.jpg",
+        "author": "Williams, W. Mattieu (William Mattieu)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53458,
+        "subjects": [
+          "Cooking",
+          "Category: Cooking & Drinking",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:09:24.469Z"
+      },
+      {
         "title": "The chemistry, properties and tests of precious stones",
         "file": "books/Gutenberg/Chemistry/23626-the-chemistry-properties-and-tests-of-precious-stones.epub",
         "cover": "books/Gutenberg/Chemistry/23626-the-chemistry-properties-and-tests-of-precious-stones.jpg",
@@ -4571,6 +4589,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:19.138Z"
+      },
+      {
+        "title": "The Propaganda for Reform in Proprietary Medicines, Vol. 2 of 2",
+        "file": "books/Gutenberg/Chemistry/47767-the-propaganda-for-reform-in-proprietary-medicines-vol-2-of-2.epub",
+        "cover": "books/Gutenberg/Chemistry/47767-the-propaganda-for-reform-in-proprietary-medicines-vol-2-of-2.jpg",
+        "author": "Council on Pharmacy and Chemistry (American Medical Association)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47767,
+        "subjects": [
+          "Patent medicines",
+          "Category: Drugs/Alcohol/Pharmacology",
+          "Category: Health & Medicine",
+          "Category: Reports & Conference Proceedings"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:09:23.455Z"
       },
       {
         "title": "The Sceptical Chymist: or Chymico-Physical Doubts & Paradoxes, Touching the Spagyrist's Principles Commonly call'd Hypostatical; As they are wont to be Propos'd and Defended by the Generality of Alchymists. Whereunto is præmis'd Part of another Discourse relating to the same Subject.",
@@ -16099,6 +16136,25 @@
         "downloadedAt": "2026-08-16T22:22:57.189Z"
       },
       {
+        "title": "The Works of Lord Byron, Vol. 7. Poetry",
+        "file": "books/Gutenberg/Poetry/27577-the-works-of-lord-byron-vol-7-poetry.epub",
+        "cover": "books/Gutenberg/Poetry/27577-the-works-of-lord-byron-vol-7-poetry.jpg",
+        "author": "Byron, George Gordon Byron, Baron",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 27577,
+        "subjects": [
+          "Poetry",
+          "Category: British Literature",
+          "Category: Poetry",
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:31:53.497Z"
+      },
+      {
         "title": "The Works of Lord Byron. Vol. 4",
         "file": "books/Gutenberg/Poetry/20158-the-works-of-lord-byron-vol-4.epub",
         "cover": "books/Gutenberg/Poetry/20158-the-works-of-lord-byron-vol-4.jpg",
@@ -16118,6 +16174,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T01:23:54.731Z"
+      },
+      {
+        "title": "The Writings of James Russell Lowell in Prose and Poetry, Volume V: Political Essays",
+        "file": "books/Gutenberg/Poetry/22609-the-writings-of-james-russell-lowell-in-prose-and-poetry-volume-v-politi.epub",
+        "cover": "books/Gutenberg/Poetry/22609-the-writings-of-james-russell-lowell-in-prose-and-poetry-volume-v-politi.jpg",
+        "author": "Lowell, James Russell",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22609,
+        "subjects": [
+          "United States -- Politics and government -- 1861-1865",
+          "United States -- Politics and government -- 1865-1869",
+          "Category: American Literature",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - American",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:31:54.261Z"
       }
     ]
   },
@@ -16231,6 +16308,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T16:29:20.864Z"
+      },
+      {
+        "title": "Criminal Psychology: A Manual for Judges, Practitioners, and Students",
+        "file": "books/Gutenberg/Psychology/1320-criminal-psychology-a-manual-for-judges-practitioners-and-students.epub",
+        "cover": "books/Gutenberg/Psychology/1320-criminal-psychology-a-manual-for-judges-practitioners-and-students.jpg",
+        "author": "Gross, Hans",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1320,
+        "subjects": [
+          "Criminal anthropology",
+          "Criminal psychology",
+          "Evidence (Law)",
+          "Psychology, Pathological",
+          "Category: Law & Criminology",
+          "Category: Psychiatry/Psychology",
+          "Crime Nonfiction",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:38:58.680Z"
       },
       {
         "title": "Dream Psychology: Psychoanalysis for Beginners",
@@ -16649,6 +16749,23 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T11:27:49.020Z"
+      },
+      {
+        "title": "The Principles of Psychology, Volume 2 (of 2)",
+        "file": "books/Gutenberg/Psychology/57634-the-principles-of-psychology-volume-2-of-2.epub",
+        "cover": "books/Gutenberg/Psychology/57634-the-principles-of-psychology-volume-2-of-2.jpg",
+        "author": "James, William",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57634,
+        "subjects": [
+          "Psychology",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-08T15:38:59.620Z"
       },
       {
         "title": "The Problems of Psychical Research: Experiments and Theories in the Realm of the Supernormal",
