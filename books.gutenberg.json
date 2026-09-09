@@ -8410,6 +8410,27 @@
         "downloadedAt": "2026-09-03T20:54:22.324Z"
       },
       {
+        "title": "Studies on Homer and the Homeric Age, Vol. 3 of 3: I. Agorè: Polities of the Homeric Age. II. Ilios: Trojans and Greeks Compared. III. Thalassa: The Outer Geography. IV. Aoidos: Some Points of the Poetry of Homer.",
+        "file": "books/Gutenberg/Geography/53004-studies-on-homer-and-the-homeric-age-vol-3-of-3-i-agore-polities-of-the-.epub",
+        "cover": "books/Gutenberg/Geography/53004-studies-on-homer-and-the-homeric-age-vol-3-of-3-i-agore-polities-of-the-.jpg",
+        "author": "Gladstone, W. E. (William Ewart)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 53004,
+        "subjects": [
+          "Civilization, Homeric",
+          "Epic poetry, Greek -- History and criticism",
+          "Homer",
+          "Category: Classics of Literature",
+          "Category: History - Ancient",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-09T17:54:15.692Z"
+      },
+      {
         "title": "Terrestrial and Celestial Globes Volume 2: Their History and Construction Including a Consideration of their Value as Aids in the Study of Geography and Astronomy",
         "file": "books/Gutenberg/Geography/39867-terrestrial-and-celestial-globes-volume-2-their-history-and-construction.epub",
         "cover": "books/Gutenberg/Geography/39867-terrestrial-and-celestial-globes-volume-2-their-history-and-construction.jpg",
@@ -8906,6 +8927,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T23:07:24.323Z"
+      },
+      {
+        "title": "The geology and geography of Northern Nigeria",
+        "file": "books/Gutenberg/Geography/79349-the-geology-and-geography-of-northern-nigeria.epub",
+        "cover": "books/Gutenberg/Geography/79349-the-geology-and-geography-of-northern-nigeria.jpg",
+        "author": "Falconer, J. D. (John Downie)",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 79349,
+        "subjects": [
+          "Geology -- Nigeria",
+          "Nigeria -- Geography",
+          "Paleontology -- Cretaceous",
+          "Paleontology -- Nigeria"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-09T17:54:16.271Z"
       },
       {
         "title": "The Historical Geography of Europe, Vol. I, Text",
