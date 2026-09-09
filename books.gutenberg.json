@@ -369,6 +369,33 @@
         "downloadedAt": "2026-08-18T07:50:52.067Z"
       },
       {
+        "title": "The Secret Adversary",
+        "file": "books/Gutenberg/Adventure_Mystery/1155-the-secret-adversary.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/1155-the-secret-adversary.jpg",
+        "author": "Christie, Agatha",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1155,
+        "subjects": [
+          "Beresford, Tommy (Fictitious character) -- Fiction",
+          "Beresford, Tuppence (Fictitious character) -- Fiction",
+          "Detective and mystery stories",
+          "Domestic fiction",
+          "Married people -- Fiction",
+          "Missing persons -- Fiction",
+          "Private investigators -- England -- Fiction",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Detective Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-09T09:19:23.117Z"
+      },
+      {
         "title": "The Silent Barrier",
         "file": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/31635-the-silent-barrier.jpg",
@@ -3923,6 +3950,25 @@
   {
     "class": "Gutenberg - Chemistry",
     "books": [
+      {
+        "title": "A text-book of assaying : $b for the use of those connected with mines.",
+        "file": "books/Gutenberg/Chemistry/18751-a-text-book-of-assaying-b-for-the-use-of-those-connected-with-mines.epub",
+        "cover": "books/Gutenberg/Chemistry/18751-a-text-book-of-assaying-b-for-the-use-of-those-connected-with-mines.jpg",
+        "author": "Beringer, C. (Cornelius), Beringer, J. J. (John Jacob)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18751,
+        "subjects": [
+          "Assaying",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Chemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-09T08:57:30.767Z"
+      },
       {
         "title": "Alchemy: Ancient and Modern: Being a Brief Account of the Alchemistic Doctrines, and Their Relations, to Mysticism on the One Hand, and to Recent Discoveries in Physical Science on the Other Hand; Together with Some Particulars Regarding the Lives and Teachings of the Most Noted Alchemists",
         "file": "books/Gutenberg/Chemistry/43240-alchemy-ancient-and-modern-being-a-brief-account-of-the-alchemistic-doct.epub",
@@ -10483,6 +10529,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T22:27:47.467Z"
+      },
+      {
+        "title": "Latin for Beginners",
+        "file": "books/Gutenberg/Language_Learning/18251-latin-for-beginners.epub",
+        "cover": "books/Gutenberg/Language_Learning/18251-latin-for-beginners.jpg",
+        "author": "D'Ooge, Benjamin L. (Benjamin Leonard)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 18251,
+        "subjects": [
+          "Latin language -- Grammar -- Problems, exercises, etc.",
+          "Category: How To ...",
+          "Category: Language & Communication",
+          "Category: Teaching & Education",
+          "Language Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-09T09:28:13.270Z"
       },
       {
         "title": "Moby Multiple Language Lists of Common Words",
