@@ -419,6 +419,32 @@
         "downloadedAt": "2026-08-16T17:20:46.137Z"
       },
       {
+        "title": "The Thirty-Nine Steps",
+        "file": "books/Gutenberg/Adventure_Mystery/558-the-thirty-nine-steps.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/558-the-thirty-nine-steps.jpg",
+        "author": "Buchan, John",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 558,
+        "subjects": [
+          "Hannay, Richard (Fictitious character) -- Fiction",
+          "Intelligence service -- Great Britain -- Fiction",
+          "Spy stories",
+          "World War, 1914-1918 -- Fiction",
+          "Adventure",
+          "Category: Adventure",
+          "Category: British Literature",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels",
+          "Movie Books",
+          "Mystery Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T15:22:15.160Z"
+      },
+      {
         "title": "The Treasure of Pearls: A Romance of Adventures in California",
         "file": "books/Gutenberg/Adventure_Mystery/46276-the-treasure-of-pearls-a-romance-of-adventures-in-california.epub",
         "cover": "books/Gutenberg/Adventure_Mystery/46276-the-treasure-of-pearls-a-romance-of-adventures-in-california.jpg",
@@ -2745,6 +2771,25 @@
         "downloadedAt": "2026-08-07T00:11:35.674Z"
       },
       {
+        "title": "The Life Radiant",
+        "file": "books/Gutenberg/Bhagavad_Gita/23820-the-life-radiant.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/23820-the-life-radiant.jpg",
+        "author": "Whiting, Lilian",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23820,
+        "subjects": [
+          "New Thought",
+          "Spiritual life",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T15:12:12.153Z"
+      },
+      {
         "title": "The Menorah Journal, Volume 1, 1915",
         "file": "books/Gutenberg/Bhagavad_Gita/22300-the-menorah-journal-volume-1-1915.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22300-the-menorah-journal-volume-1-1915.jpg",
@@ -2800,6 +2845,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T05:41:29.195Z"
+      },
+      {
+        "title": "The Pilgrim's Progress from this world to that which is to come: Delivered under the similitude of a dream, by John Bunyan",
+        "file": "books/Gutenberg/Bhagavad_Gita/131-the-pilgrims-progress-from-this-world-to-that-which-is-to-come-delivered.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/131-the-pilgrims-progress-from-this-world-to-that-which-is-to-come-delivered.jpg",
+        "author": "Bunyan, John",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 131,
+        "subjects": [
+          "Christian fiction",
+          "Christian pilgrims and pilgrimages -- Fiction",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Novels",
+          "Category: Religion/Spirituality",
+          "Christianity",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T15:12:13.234Z"
       },
       {
         "title": "The Prophet",
@@ -3035,6 +3103,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-02T13:32:27.503Z"
+      },
+      {
+        "title": "American Weasels",
+        "file": "books/Gutenberg/Biology/43272-american-weasels.epub",
+        "cover": "books/Gutenberg/Biology/43272-american-weasels.jpg",
+        "author": "Hall, E. Raymond (Eugene Raymond)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43272,
+        "subjects": [
+          "Mammals -- America",
+          "Weasels",
+          "Category: Environmental Issues",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T15:06:22.886Z"
       },
       {
         "title": "An Elementary Study of Insects",
@@ -16020,6 +16108,26 @@
         "downloadedAt": "2026-08-16T18:40:25.600Z"
       },
       {
+        "title": "Poems and Songs of Robert Burns",
+        "file": "books/Gutenberg/Poetry/1279-poems-and-songs-of-robert-burns.epub",
+        "cover": "books/Gutenberg/Poetry/1279-poems-and-songs-of-robert-burns.jpg",
+        "author": "Burns, Robert",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1279,
+        "subjects": [
+          "Scotland -- Poetry",
+          "Songs, Scots -- Scotland -- Texts",
+          "Category: Classics of Literature",
+          "Category: Poetry",
+          "Harvard Classics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T15:20:01.931Z"
+      },
+      {
         "title": "Shakespeare's Sonnets",
         "file": "books/Gutenberg/Poetry/1041-shakespeares-sonnets.epub",
         "cover": "books/Gutenberg/Poetry/1041-shakespeares-sonnets.jpg",
@@ -17161,6 +17269,30 @@
   {
     "class": "Gutenberg - Science",
     "books": [
+      {
+        "title": "\"And That's How It Was, Officer\"",
+        "file": "books/Gutenberg/Science/32562-and-thats-how-it-was-officer.epub",
+        "cover": "books/Gutenberg/Science/32562-and-thats-how-it-was-officer.jpg",
+        "author": "Sholto, Ralph",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32562,
+        "subjects": [
+          "Epistolary fiction",
+          "Gangsters -- Fiction",
+          "Inventors -- Fiction",
+          "Science fiction",
+          "Scientists -- Fiction",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Humour",
+          "Category: Novels",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T14:58:24.086Z"
+      },
       {
         "title": "A Connecticut Yankee in King Arthur's Court",
         "file": "books/Gutenberg/Science/86-a-connecticut-yankee-in-king-arthurs-court.epub",
