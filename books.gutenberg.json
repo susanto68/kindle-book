@@ -2745,6 +2745,29 @@
         "downloadedAt": "2026-08-07T00:11:35.674Z"
       },
       {
+        "title": "The Menorah Journal, Volume 1, 1915",
+        "file": "books/Gutenberg/Bhagavad_Gita/22300-the-menorah-journal-volume-1-1915.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/22300-the-menorah-journal-volume-1-1915.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22300,
+        "subjects": [
+          "Jews -- Periodicals",
+          "Jews -- United States -- Periodicals",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - American",
+          "Category: History - Modern (1750+)",
+          "Category: Journalism/Media/Writing",
+          "Category: Religion/Spirituality",
+          "The Menorah Journal"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T11:02:42.927Z"
+      },
+      {
         "title": "The Ordinance of Covenanting",
         "file": "books/Gutenberg/Bhagavad_Gita/25353-the-ordinance-of-covenanting.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/25353-the-ordinance-of-covenanting.jpg",
@@ -2835,6 +2858,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T16:05:42.668Z"
+      },
+      {
+        "title": "The Song Celestial; Or, Bhagavad-Gîtâ (from the Mahâbhârata): Being a discourse between Arjuna, Prince of India, and the Supreme Being under the form of Krishna",
+        "file": "books/Gutenberg/Bhagavad_Gita/2388-the-song-celestial-or-bhagavad-gita-from-the-mahabharata-being-a-discour.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/2388-the-song-celestial-or-bhagavad-gita-from-the-mahabharata-being-a-discour.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2388,
+        "subjects": [
+          "Epic poetry",
+          "Hinduism -- Sacred books",
+          "Sanskrit poetry -- Translations into English",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Philosophy & Ethics",
+          "Category: Poetry",
+          "Category: Religion/Spirituality",
+          "Harvard Classics",
+          "Hinduism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T11:02:43.226Z"
       },
       {
         "title": "The Story of Genesis and Exodus: An Early English Song, about 1250 A.D.",
@@ -3581,6 +3628,48 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:27.305Z"
+      },
+      {
+        "title": "The Expression of the Emotions in Man and Animals",
+        "file": "books/Gutenberg/Biology/1227-the-expression-of-the-emotions-in-man-and-animals.epub",
+        "cover": "books/Gutenberg/Biology/1227-the-expression-of-the-emotions-in-man-and-animals.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1227,
+        "subjects": [
+          "Emotions",
+          "Expression",
+          "Instinct",
+          "Psychology, Comparative",
+          "Category: Psychiatry/Psychology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T10:57:26.527Z"
+      },
+      {
+        "title": "The Foundations of the Origin of Species: Two Essays written in 1842 and 1844",
+        "file": "books/Gutenberg/Biology/22728-the-foundations-of-the-origin-of-species-two-essays-written-in-1842-and-.epub",
+        "cover": "books/Gutenberg/Biology/22728-the-foundations-of-the-origin-of-species-two-essays-written-in-1842-and-.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 22728,
+        "subjects": [
+          "Evolution (Biology)",
+          "Natural selection",
+          "Biology",
+          "Category: History - Modern (1750+)",
+          "Category: Philosophy & Ethics",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T10:57:26.860Z"
       },
       {
         "title": "The Medicinal Plants of the Philippines",
@@ -5436,6 +5525,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-08T18:39:41.755Z"
+      },
+      {
+        "title": "The mystery of the missing eyebrows",
+        "file": "books/Gutenberg/Children_Books/76914-the-mystery-of-the-missing-eyebrows.epub",
+        "cover": "books/Gutenberg/Children_Books/76914-the-mystery-of-the-missing-eyebrows.jpg",
+        "author": "Rudd, Stephen",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76914,
+        "subjects": [
+          "Detective and mystery stories",
+          "Newspaper carriers -- Juvenile fiction",
+          "Category: Children & Young Adult Reading",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Novels"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T11:07:47.264Z"
       },
       {
         "title": "The Nowadays Girls in the Adirondacks : $b or, The deserted bungalow on Saranac Lake",
@@ -15909,6 +16018,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T18:40:25.600Z"
+      },
+      {
+        "title": "Shakespeare's Sonnets",
+        "file": "books/Gutenberg/Poetry/1041-shakespeares-sonnets.epub",
+        "cover": "books/Gutenberg/Poetry/1041-shakespeares-sonnets.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 1041,
+        "subjects": [
+          "English poetry",
+          "Sonnets, English",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T11:10:41.879Z"
       },
       {
         "title": "Sir Gawayne and the Green Knight: An Alliterative Romance-Poem (c. 1360 A.D.)",
