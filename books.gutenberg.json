@@ -16757,6 +16757,26 @@
         "downloadedAt": "2026-08-17T13:40:57.551Z"
       },
       {
+        "title": "Hedda Gabler",
+        "file": "books/Gutenberg/Psychology/4093-hedda-gabler.epub",
+        "cover": "books/Gutenberg/Psychology/4093-hedda-gabler.jpg",
+        "author": "Ibsen, Henrik",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4093,
+        "subjects": [
+          "Identity (Psychology) -- Drama",
+          "Man-woman relationships -- Drama",
+          "Norwegian drama -- Translations into English",
+          "Women -- Social conditions -- Drama",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-10T22:00:35.657Z"
+      },
+      {
         "title": "How We Think",
         "file": "books/Gutenberg/Psychology/37423-how-we-think.epub",
         "cover": "books/Gutenberg/Psychology/37423-how-we-think.jpg",
