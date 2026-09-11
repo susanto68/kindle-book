@@ -2974,6 +2974,27 @@
         "downloadedAt": "2026-08-05T17:54:42.326Z"
       },
       {
+        "title": "The Tao Teh King, or the Tao and its Characteristics",
+        "file": "books/Gutenberg/Bhagavad_Gita/216-the-tao-teh-king-or-the-tao-and-its-characteristics.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/216-the-tao-teh-king-or-the-tao-and-its-characteristics.jpg",
+        "author": "Laozi",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 216,
+        "subjects": [
+          "Philosophy, Chinese",
+          "Taoism -- Sacred books",
+          "Category: Philosophy & Ethics",
+          "Category: Poetry",
+          "Category: Religion/Spirituality",
+          "Paganism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T08:53:51.801Z"
+      },
+      {
         "title": "The Tribes and Castes of the Central Provinces of India, Volume 2",
         "file": "books/Gutenberg/Bhagavad_Gita/22010-the-tribes-and-castes-of-the-central-provinces-of-india-volume-2.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22010-the-tribes-and-castes-of-the-central-provinces-of-india-volume-2.jpg",
@@ -3452,6 +3473,26 @@
         "downloadedAt": "2026-05-21T13:58:27.445Z"
       },
       {
+        "title": "Makers of British Botany; a collection of biographies by living botanists",
+        "file": "books/Gutenberg/Biology/46415-makers-of-british-botany-a-collection-of-biographies-by-living-botanists.epub",
+        "cover": "books/Gutenberg/Biology/46415-makers-of-british-botany-a-collection-of-biographies-by-living-botanists.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46415,
+        "subjects": [
+          "Botanists -- Great Britain -- Biography",
+          "Botany -- Great Britain -- History",
+          "Category: Biographies",
+          "Category: History - British",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T08:49:33.386Z"
+      },
+      {
         "title": "Man And His Ancestor: A Study In Evolution",
         "file": "books/Gutenberg/Biology/28471-man-and-his-ancestor-a-study-in-evolution.epub",
         "cover": "books/Gutenberg/Biology/28471-man-and-his-ancestor-a-study-in-evolution.jpg",
@@ -3716,6 +3757,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:27.305Z"
+      },
+      {
+        "title": "The Evolution of Man",
+        "file": "books/Gutenberg/Biology/8700-the-evolution-of-man.epub",
+        "cover": "books/Gutenberg/Biology/8700-the-evolution-of-man.jpg",
+        "author": "Haeckel, Ernst",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 8700,
+        "subjects": [
+          "Anatomy, Comparative",
+          "Embryology, Human",
+          "Evolution",
+          "Human beings -- Origin",
+          "Anthropology",
+          "Category: Archaeology & Anthropology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T08:49:34.769Z"
       },
       {
         "title": "The Expression of the Emotions in Man and Animals",
@@ -6734,6 +6797,31 @@
         "downloadedAt": "2026-09-03T03:51:53.493Z"
       },
       {
+        "title": "The Tempest: The Works of William Shakespeare [Cambridge Edition] [9 vols.]",
+        "file": "books/Gutenberg/Drama_Fiction/23042-the-tempest-the-works-of-william-shakespeare-cambridge-edition-9-vols.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/23042-the-tempest-the-works-of-william-shakespeare-cambridge-edition-9-vols.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 23042,
+        "subjects": [
+          "Fathers and daughters -- Drama",
+          "Islands -- Drama",
+          "Magicians -- Drama",
+          "Political refugees -- Drama",
+          "Shipwreck victims -- Drama",
+          "Spirits -- Drama",
+          "Tragicomedy",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T09:00:47.964Z"
+      },
+      {
         "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
         "file": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.epub",
         "cover": "books/Gutenberg/Drama_Fiction/779-the-tragical-history-of-doctor-faustus-from-the-quarto-of-1604.jpg",
@@ -7717,6 +7805,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-07T22:37:00.377Z"
+      },
+      {
+        "title": "A Treatise of Human Nature: Being an Attempt to Introduce the Experimental Method Into Moral Subjects; and Dialogues Concerning Natural Religion",
+        "file": "books/Gutenberg/General_Knowledge/62856-a-treatise-of-human-nature-being-an-attempt-to-introduce-the-experimenta.epub",
+        "cover": "books/Gutenberg/General_Knowledge/62856-a-treatise-of-human-nature-being-an-attempt-to-introduce-the-experimenta.jpg",
+        "author": "Hume, David",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 62856,
+        "subjects": [
+          "Emotions",
+          "Ethics",
+          "Knowledge, Theory of",
+          "Philosophy, English",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T08:55:56.609Z"
       },
       {
         "title": "Academica",
@@ -14314,6 +14422,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-04T20:28:05.754Z"
+      },
+      {
+        "title": "Volpone; Or, The Fox",
+        "file": "books/Gutenberg/Motivation/4039-volpone-or-the-fox.epub",
+        "cover": "books/Gutenberg/Motivation/4039-volpone-or-the-fox.jpg",
+        "author": "Jonson, Ben",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4039,
+        "subjects": [
+          "English drama (Comedy)",
+          "English drama -- 17th century",
+          "Extortion -- Drama",
+          "Inheritance and succession -- Drama",
+          "Satire, English",
+          "Venice (Italy) -- Drama",
+          "Category: British Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T08:52:58.231Z"
       }
     ]
   },
