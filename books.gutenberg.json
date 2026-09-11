@@ -3411,6 +3411,26 @@
         "downloadedAt": "2026-09-05T10:17:52.271Z"
       },
       {
+        "title": "Identification of the Larger Fungi",
+        "file": "books/Gutenberg/Biology/60159-identification-of-the-larger-fungi.epub",
+        "cover": "books/Gutenberg/Biology/60159-identification-of-the-larger-fungi.jpg",
+        "author": "Watling, Roy",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 60159,
+        "subjects": [
+          "Fungi -- Great Britain -- Identification",
+          "Mushrooms -- Identification",
+          "Category: How To ...",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T13:30:23.691Z"
+      },
+      {
         "title": "Insects and Diseases: A Popular Account of the Way in Which Insects may Spread or Cause some of our Common Diseases",
         "file": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.epub",
         "cover": "books/Gutenberg/Biology/28177-insects-and-diseases-a-popular-account-of-the-way-in-which-insects-may-s.jpg",
@@ -7674,6 +7694,28 @@
     "class": "Gutenberg - Fantasy",
     "books": [
       {
+        "title": "Astounding Stories, June, 1931",
+        "file": "books/Gutenberg/Fantasy/31893-astounding-stories-june-1931.epub",
+        "cover": "books/Gutenberg/Fantasy/31893-astounding-stories-june-1931.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Fantasy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31893,
+        "subjects": [
+          "Science fiction -- Periodicals",
+          "Science fiction, American -- Periodicals",
+          "Astounding Stories",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T13:45:34.330Z"
+      },
+      {
         "title": "The Green Mouse",
         "file": "books/Gutenberg/Fantasy/10441-the-green-mouse.epub",
         "cover": "books/Gutenberg/Fantasy/10441-the-green-mouse.jpg",
@@ -10672,6 +10714,27 @@
         "downloadedAt": "2026-08-20T13:52:34.993Z"
       },
       {
+        "title": "A First Spanish Reader",
+        "file": "books/Gutenberg/Language_Learning/15353-a-first-spanish-reader.epub",
+        "cover": "books/Gutenberg/Language_Learning/15353-a-first-spanish-reader.jpg",
+        "author": "Roessler, Erwin W. (Erwin William), Remy, Alfred",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15353,
+        "subjects": [
+          "Spanish language -- Readers",
+          "Spanish language -- Textbooks for foreign speakers -- English",
+          "Category: Language & Communication",
+          "Category: Teaching & Education",
+          "Children's Instructional Books",
+          "Language Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T13:52:40.500Z"
+      },
+      {
         "title": "A Manual of the Malay language: With an Introductory Sketch of the Sanskrit Element in Malay",
         "file": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.epub",
         "cover": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.jpg",
@@ -10879,6 +10942,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T11:28:19.891Z"
+      },
+      {
+        "title": "Helps to Latin Translation at Sight",
+        "file": "books/Gutenberg/Language_Learning/28890-helps-to-latin-translation-at-sight.epub",
+        "cover": "books/Gutenberg/Language_Learning/28890-helps-to-latin-translation-at-sight.jpg",
+        "author": "Luce, Edmund",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28890,
+        "subjects": [
+          "Latin language -- Readers",
+          "Category: History - Ancient",
+          "Category: How To ...",
+          "Category: Language & Communication",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T13:52:40.896Z"
       },
       {
         "title": "How to Write Letters (Formerly The Book of Letters): A Complete Guide to Correct Business and Personal Correspondence",
@@ -16994,6 +17077,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T09:59:56.685Z"
+      },
+      {
+        "title": "Psychological Warfare",
+        "file": "books/Gutenberg/Psychology/48612-psychological-warfare.epub",
+        "cover": "books/Gutenberg/Psychology/48612-psychological-warfare.jpg",
+        "author": "Linebarger, Paul Myron Anthony",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 48612,
+        "subjects": [
+          "Psychological warfare",
+          "Category: History - Warfare",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-11T13:49:11.698Z"
       },
       {
         "title": "Psychology of the Unconscious: A Study of the Transformations and Symbolisms of the Libido. A Contribution to the History of the Evolution of Thought",
