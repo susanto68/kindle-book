@@ -3904,6 +3904,28 @@
         "downloadedAt": "2026-09-10T10:57:26.860Z"
       },
       {
+        "title": "The Journal of a Disappointed Man",
+        "file": "books/Gutenberg/Biology/39585-the-journal-of-a-disappointed-man.epub",
+        "cover": "books/Gutenberg/Biology/39585-the-journal-of-a-disappointed-man.jpg",
+        "author": "Barbellion, W. N. P.",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39585,
+        "subjects": [
+          "Authors, English -- 20th century -- Diaries",
+          "Barbellion, W. N. P., 1889-1919 -- Diaries",
+          "Multiple sclerosis -- Patients -- Diaries",
+          "Naturalists -- Great Britain -- Diaries",
+          "Category: Biographies",
+          "Category: Psychiatry/Psychology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T16:12:33.400Z"
+      },
+      {
         "title": "The Medicinal Plants of the Philippines",
         "file": "books/Gutenberg/Biology/26393-the-medicinal-plants-of-the-philippines.epub",
         "cover": "books/Gutenberg/Biology/26393-the-medicinal-plants-of-the-philippines.jpg",
@@ -10806,6 +10828,22 @@
         "downloadedAt": "2026-08-18T03:52:21.891Z"
       },
       {
+        "title": "A Complete Dictionary of Synonyms and Antonyms: or, Synonyms and Words of Opposite Meaning",
+        "file": "books/Gutenberg/Language_Learning/51155-a-complete-dictionary-of-synonyms-and-antonyms-or-synonyms-and-words-of-.epub",
+        "cover": "books/Gutenberg/Language_Learning/51155-a-complete-dictionary-of-synonyms-and-antonyms-or-synonyms-and-words-of-.jpg",
+        "author": "Fallows, Samuel",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 51155,
+        "subjects": [
+          "English language -- 19th century -- Synonyms and antonyms"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T16:30:49.425Z"
+      },
+      {
         "title": "A Concise Anglo-Saxon Dictionary: For the Use of Students",
         "file": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.epub",
         "cover": "books/Gutenberg/Language_Learning/31543-a-concise-anglo-saxon-dictionary-for-the-use-of-students.jpg",
@@ -11133,6 +11171,31 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-11T13:52:40.896Z"
+      },
+      {
+        "title": "Hobson-Jobson: A Glossary of Colloquial Anglo-Indian Words and Phrases, and of Kindred Terms, Etymological, Historical, Geographical and Discursive",
+        "file": "books/Gutenberg/Language_Learning/58529-hobson-jobson-a-glossary-of-colloquial-anglo-indian-words-and-phrases-an.epub",
+        "cover": "books/Gutenberg/Language_Learning/58529-hobson-jobson-a-glossary-of-colloquial-anglo-indian-words-and-phrases-an.jpg",
+        "author": "Yule, Henry, Sir, Burnell, A. C. (Arthur Coke)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 58529,
+        "subjects": [
+          "English language -- Foreign words and phrases -- Indic -- Dictionaries",
+          "English language -- India -- Dictionaries",
+          "English language -- India -- Etymology -- Dictionaries",
+          "India -- Civilization -- Dictionaries",
+          "India -- Languages -- Influence on English -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - British",
+          "Category: History - European",
+          "Category: History - Modern (1750+)",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T16:30:48.449Z"
       },
       {
         "title": "How to Write Letters (Formerly The Book of Letters): A Complete Guide to Correct Business and Personal Correspondence",
@@ -17545,6 +17608,30 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T17:44:45.179Z"
+      },
+      {
+        "title": "The Fairy-Faith in Celtic Countries",
+        "file": "books/Gutenberg/Psychology/34853-the-fairy-faith-in-celtic-countries.epub",
+        "cover": "books/Gutenberg/Psychology/34853-the-fairy-faith-in-celtic-countries.jpg",
+        "author": "Evans-Wentz, W. Y. (Walter Yeeling)",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34853,
+        "subjects": [
+          "Celts -- Folklore",
+          "Celts -- Religion",
+          "Fairies",
+          "Mythology, Celtic",
+          "Category: Archaeology & Anthropology",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Psychiatry/Psychology",
+          "Category: Religion/Spirituality",
+          "Paganism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T16:28:34.369Z"
       },
       {
         "title": "The Interpretation of Dreams",
