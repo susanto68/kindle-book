@@ -3330,6 +3330,24 @@
         "downloadedAt": "2026-08-01T18:09:49.763Z"
       },
       {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Ichthyology\" to \"Independence\": Volume 14, Slice 3",
+        "file": "books/Gutenberg/Biology/40156-encyclopaedia-britannica-11th-edition-ichthyology-to-independence-volume.epub",
+        "cover": "books/Gutenberg/Biology/40156-encyclopaedia-britannica-11th-edition-ichthyology-to-independence-volume.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 40156,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T12:51:05.046Z"
+      },
+      {
         "title": "Evolution in Modern Thought",
         "file": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.epub",
         "cover": "books/Gutenberg/Biology/22430-evolution-in-modern-thought.jpg",
@@ -3550,6 +3568,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T10:52:14.482Z"
+      },
+      {
+        "title": "Micrographia: Some Physiological Descriptions of Minute Bodies Made by Magnifying Glasses with Observations and Inquiries Thereupon",
+        "file": "books/Gutenberg/Biology/15491-micrographia-some-physiological-descriptions-of-minute-bodies-made-by-ma.epub",
+        "cover": "books/Gutenberg/Biology/15491-micrographia-some-physiological-descriptions-of-minute-bodies-made-by-ma.jpg",
+        "author": "Hooke, Robert",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 15491,
+        "subjects": [
+          "Magnifying glasses -- Early works to 1800",
+          "Microscopy -- Early works to 1800",
+          "Natural history -- Pre-Linnean works",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming",
+          "Microscopy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T12:51:04.041Z"
       },
       {
         "title": "My Studio Neighbors",
@@ -7123,6 +7163,25 @@
         "downloadedAt": "2026-08-17T12:56:25.425Z"
       },
       {
+        "title": "An Essay on the Principle of Population",
+        "file": "books/Gutenberg/Economics/4239-an-essay-on-the-principle-of-population.epub",
+        "cover": "books/Gutenberg/Economics/4239-an-essay-on-the-principle-of-population.jpg",
+        "author": "Malthus, T. R. (Thomas Robert)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 4239,
+        "subjects": [
+          "Population",
+          "Category: Economics",
+          "Category: Philosophy & Ethics",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T13:09:51.084Z"
+      },
+      {
         "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
         "file": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.epub",
         "cover": "books/Gutenberg/Economics/3300-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations.jpg",
@@ -7779,6 +7838,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T13:40:56.699Z"
+      },
+      {
+        "title": "What is Property? An Inquiry into the Principle of Right and of Government",
+        "file": "books/Gutenberg/Economics/360-what-is-property-an-inquiry-into-the-principle-of-right-and-of-governmen.epub",
+        "cover": "books/Gutenberg/Economics/360-what-is-property-an-inquiry-into-the-principle-of-right-and-of-governmen.jpg",
+        "author": "Proudhon, P.-J. (Pierre-Joseph)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 360,
+        "subjects": [
+          "Economics",
+          "Property",
+          "Anarchism",
+          "Category: Philosophy & Ethics",
+          "Category: Politics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T13:09:50.438Z"
       }
     ]
   },
@@ -14040,6 +14119,27 @@
         "downloadedAt": "2026-09-12T08:45:45.796Z"
       },
       {
+        "title": "Little Visits with Great Americans, Vol. 2 (of 2): Or Success, Ideals and How to Attain Them",
+        "file": "books/Gutenberg/Motivation/48175-little-visits-with-great-americans-vol-2-of-2-or-success-ideals-and-how-.epub",
+        "cover": "books/Gutenberg/Motivation/48175-little-visits-with-great-americans-vol-2-of-2-or-success-ideals-and-how-.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 48175,
+        "subjects": [
+          "Success",
+          "United States -- Biography",
+          "United States -- History -- 19th century -- Biography",
+          "Category: American Literature",
+          "Category: Biographies",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T12:55:28.261Z"
+      },
+      {
         "title": "Make or Break; or, The Rich Man's Daughter",
         "file": "books/Gutenberg/Motivation/26695-make-or-break-or-the-rich-mans-daughter.epub",
         "cover": "books/Gutenberg/Motivation/26695-make-or-break-or-the-rich-mans-daughter.jpg",
@@ -17645,6 +17745,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T14:29:38.132Z"
+      },
+      {
+        "title": "Totem and taboo : $b Resemblances between the psychic lives of savages and neurotics",
+        "file": "books/Gutenberg/Psychology/41214-totem-and-taboo-b-resemblances-between-the-psychic-lives-of-savages-and-.epub",
+        "cover": "books/Gutenberg/Psychology/41214-totem-and-taboo-b-resemblances-between-the-psychic-lives-of-savages-and-.jpg",
+        "author": "Freud, Sigmund",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41214,
+        "subjects": [
+          "Ethnopsychology",
+          "Neuroses",
+          "Psychoanalysis",
+          "Taboo",
+          "Totemism",
+          "Category: Archaeology & Anthropology",
+          "Category: Psychiatry/Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-12T13:11:06.243Z"
       },
       {
         "title": "Ulysses",
