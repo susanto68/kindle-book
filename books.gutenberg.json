@@ -1632,6 +1632,27 @@
         "downloadedAt": "2026-08-17T15:37:22.877Z"
       },
       {
+        "title": "The Beauties of Nature, and the Wonders of the World We Live In",
+        "file": "books/Gutenberg/Astronomy/28274-the-beauties-of-nature-and-the-wonders-of-the-world-we-live-in.epub",
+        "cover": "books/Gutenberg/Astronomy/28274-the-beauties-of-nature-and-the-wonders-of-the-world-we-live-in.jpg",
+        "author": "Lubbock, John, Sir",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 28274,
+        "subjects": [
+          "Astronomy",
+          "Natural history",
+          "Physical geography",
+          "Category: Environmental Issues",
+          "Category: Nature/Gardening/Animals",
+          "Category: Philosophy & Ethics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:40:20.341Z"
+      },
+      {
         "title": "The Book of the Damned",
         "file": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.epub",
         "cover": "books/Gutenberg/Astronomy/22472-the-book-of-the-damned.jpg",
@@ -2694,6 +2715,31 @@
         "downloadedAt": "2026-08-07T19:55:13.636Z"
       },
       {
+        "title": "The Golden Bough: A Study of Magic and Religion",
+        "file": "books/Gutenberg/Bhagavad_Gita/3623-the-golden-bough-a-study-of-magic-and-religion.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/3623-the-golden-bough-a-study-of-magic-and-religion.jpg",
+        "author": "Frazer, James George",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 3623,
+        "subjects": [
+          "Magic",
+          "Mythology",
+          "Religion",
+          "Superstition",
+          "Anthropology",
+          "Category: Archaeology & Anthropology",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Religion/Spirituality",
+          "Mythology",
+          "Paganism"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:24:25.159Z"
+      },
+      {
         "title": "The Great Controversy Between Christ and Satan",
         "file": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/25833-the-great-controversy-between-christ-and-satan.jpg",
@@ -2753,6 +2799,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-05T19:38:51.251Z"
+      },
+      {
+        "title": "The Kybalion: A Study of The Hermetic Philosophy of Ancient Egypt and Greece",
+        "file": "books/Gutenberg/Bhagavad_Gita/14209-the-kybalion-a-study-of-the-hermetic-philosophy-of-ancient-egypt-and-gre.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/14209-the-kybalion-a-study-of-the-hermetic-philosophy-of-ancient-egypt-and-gre.jpg",
+        "author": "Three Initiates",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 14209,
+        "subjects": [
+          "Hermetism",
+          "Occultism",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality",
+          "Egypt"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:24:24.731Z"
       },
       {
         "title": "The lesser Key of Solomon, Goetia, the book of evil spirits : $b contains two hundred diagrams and seals for invocation and convocation of spirits, necromancy, witchcraft and black art",
@@ -3208,6 +3274,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-30T12:04:19.892Z"
+      },
+      {
+        "title": "Aristotle's History of Animals: In Ten Books",
+        "file": "books/Gutenberg/Biology/59058-aristotles-history-of-animals-in-ten-books.epub",
+        "cover": "books/Gutenberg/Biology/59058-aristotles-history-of-animals-in-ten-books.jpg",
+        "author": "Aristotle",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 59058,
+        "subjects": [
+          "Zoology -- Pre-Linnaean works",
+          "Category: History - Ancient",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:18:14.576Z"
       },
       {
         "title": "Biology and Its Makers: With Portraits and Other Illustrations",
@@ -3752,6 +3836,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:26.714Z"
+      },
+      {
+        "title": "The Animal Parasites of Man",
+        "file": "books/Gutenberg/Biology/57713-the-animal-parasites-of-man.epub",
+        "cover": "books/Gutenberg/Biology/57713-the-animal-parasites-of-man.jpg",
+        "author": "Fantham, Harold Benjamin, Braun, Max, Stephens, J. W. W. (John William Watson), Theobald, Fred. V. (Frederick Vincent)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 57713,
+        "subjects": [
+          "Medical parasitology",
+          "Category: Health & Medicine",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:18:14.180Z"
       },
       {
         "title": "The Biology, Physiology and Sociology of Reproduction: Also Sexual Hygiene with Special Reference to the Male",
@@ -11151,6 +11253,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T11:28:19.891Z"
+      },
+      {
+        "title": "Geographical etymology: a dictionary of place-names giving their derivations",
+        "file": "books/Gutenberg/Language_Learning/69018-geographical-etymology-a-dictionary-of-place-names-giving-their-derivati.epub",
+        "cover": "books/Gutenberg/Language_Learning/69018-geographical-etymology-a-dictionary-of-place-names-giving-their-derivati.jpg",
+        "author": "Blackie, Christina",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69018,
+        "subjects": [
+          "Names, Geographical",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: History - Other",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-13T14:42:44.693Z"
       },
       {
         "title": "Helps to Latin Translation at Sight",
