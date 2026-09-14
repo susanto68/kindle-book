@@ -2028,6 +2028,27 @@
         "downloadedAt": "2026-08-05T00:05:16.130Z"
       },
       {
+        "title": "Bible Myths and their Parallels in other Religions: Being a Comparison of the Old and New Testament Myths and Miracles with those of the Heathen Nations of Antiquity Considering also their Origin and Meaning",
+        "file": "books/Gutenberg/Bhagavad_Gita/31885-bible-myths-and-their-parallels-in-other-religions-being-a-comparison-of.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/31885-bible-myths-and-their-parallels-in-other-religions-being-a-comparison-of.jpg",
+        "author": "Doane, T. W. (Thomas William)",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 31885,
+        "subjects": [
+          "Bible -- Criticism, interpretation, etc.",
+          "Mythology",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Religious",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T12:19:41.785Z"
+      },
+      {
         "title": "Cathedrals and Cloisters of the South of France, Volume 1",
         "file": "books/Gutenberg/Bhagavad_Gita/22718-cathedrals-and-cloisters-of-the-south-of-france-volume-1.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/22718-cathedrals-and-cloisters-of-the-south-of-france-volume-1.jpg",
@@ -7988,6 +8009,28 @@
   {
     "class": "Gutenberg - Fantasy",
     "books": [
+      {
+        "title": "Astounding Stories,  August, 1931",
+        "file": "books/Gutenberg/Fantasy/33016-astounding-stories-august-1931.epub",
+        "cover": "books/Gutenberg/Fantasy/33016-astounding-stories-august-1931.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Fantasy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33016,
+        "subjects": [
+          "Science fiction -- Periodicals",
+          "Science fiction, American -- Periodicals",
+          "Astounding Stories",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Category: Short Stories",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T12:37:00.241Z"
+      },
       {
         "title": "Astounding Stories, June, 1931",
         "file": "books/Gutenberg/Fantasy/31893-astounding-stories-june-1931.epub",
@@ -16604,6 +16647,28 @@
         "downloadedAt": "2026-08-16T19:22:18.058Z"
       },
       {
+        "title": "Chambers's Journal of Popular Literature, Science, and Art, fifth series, no. 153, vol. III, December 4, 1886",
+        "file": "books/Gutenberg/Poetry/75937-chamberss-journal-of-popular-literature-science-and-art-fifth-series-no-.epub",
+        "cover": "books/Gutenberg/Poetry/75937-chamberss-journal-of-popular-literature-science-and-art-fifth-series-no-.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 75937,
+        "subjects": [
+          "Periodicals",
+          "Category: Crime, Thrillers and Mystery",
+          "Category: Essays, Letters & Speeches",
+          "Category: Journals",
+          "Category: Poetry",
+          "Category: Romance",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T12:31:10.981Z"
+      },
+      {
         "title": "Chaucer's Works, Volume 3 — The House of Fame; The Legend of Good Women; The Treatise on the Astrolabe; The Sources of the Canterbury Tales",
         "file": "books/Gutenberg/Poetry/45027-chaucers-works-volume-3-the-house-of-fame-the-legend-of-good-women-the-t.epub",
         "cover": "books/Gutenberg/Poetry/45027-chaucers-works-volume-3-the-house-of-fame-the-legend-of-good-women-the-t.jpg",
@@ -16981,6 +17046,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T04:54:56.441Z"
+      },
+      {
+        "title": "The complete works of John Gower, volume 2 : $b The English works",
+        "file": "books/Gutenberg/Poetry/71162-the-complete-works-of-john-gower-volume-2-b-the-english-works.epub",
+        "cover": "books/Gutenberg/Poetry/71162-the-complete-works-of-john-gower-volume-2-b-the-english-works.jpg",
+        "author": "Gower, John",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 71162,
+        "subjects": [
+          "Poetry",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T12:31:10.625Z"
       },
       {
         "title": "The Divine Comedy of Dante Alighieri: The Inferno",
@@ -18493,6 +18577,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-06-08T09:27:16.719Z"
+      },
+      {
+        "title": "Red Nails",
+        "file": "books/Gutenberg/Science/32759-red-nails.epub",
+        "cover": "books/Gutenberg/Science/32759-red-nails.jpg",
+        "author": "Howard, Robert E. (Robert Ervin)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 32759,
+        "subjects": [
+          "Conan (Fictitious character) -- Fiction",
+          "Fantasy fiction, American",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T12:06:18.399Z"
       },
       {
         "title": "Second Treatise of Government",
