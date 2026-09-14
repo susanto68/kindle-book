@@ -3535,6 +3535,24 @@
         "downloadedAt": "2026-08-10T09:24:48.064Z"
       },
       {
+        "title": "Fungi: Their Nature and Uses",
+        "file": "books/Gutenberg/Biology/30181-fungi-their-nature-and-uses.epub",
+        "cover": "books/Gutenberg/Biology/30181-fungi-their-nature-and-uses.jpg",
+        "author": "Cooke, M. C. (Mordecai Cubitt)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 30181,
+        "subjects": [
+          "Fungi",
+          "Category: Science - Biology",
+          "Mycology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-14T22:28:34.241Z"
+      },
+      {
         "title": "Herbal simples approved for modern uses of cure",
         "file": "books/Gutenberg/Biology/19352-herbal-simples-approved-for-modern-uses-of-cure.epub",
         "cover": "books/Gutenberg/Biology/19352-herbal-simples-approved-for-modern-uses-of-cure.jpg",
