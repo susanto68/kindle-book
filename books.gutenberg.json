@@ -5104,6 +5104,25 @@
         "downloadedAt": "2026-08-20T12:57:48.901Z"
       },
       {
+        "title": "The Phase Rule and Its Applications",
+        "file": "books/Gutenberg/Chemistry/34457-the-phase-rule-and-its-applications.epub",
+        "cover": "books/Gutenberg/Chemistry/34457-the-phase-rule-and-its-applications.jpg",
+        "author": "Findlay, Alexander",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34457,
+        "subjects": [
+          "Chemistry, Physical and theoretical",
+          "Phase rule and equilibrium",
+          "Solution (Chemistry)",
+          "Category: Science - Chemistry/Biochemistry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-15T18:08:59.384Z"
+      },
+      {
         "title": "The Principles of Chemistry, Volume I",
         "file": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.epub",
         "cover": "books/Gutenberg/Chemistry/51326-the-principles-of-chemistry-volume-i.jpg",
@@ -11568,6 +11587,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T21:28:07.938Z"
+      },
+      {
+        "title": "Selections from Viri Romae",
+        "file": "books/Gutenberg/Language_Learning/33311-selections-from-viri-romae.epub",
+        "cover": "books/Gutenberg/Language_Learning/33311-selections-from-viri-romae.jpg",
+        "author": "L'Homond, C. F.",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 33311,
+        "subjects": [
+          "Latin language -- Readers -- Biography",
+          "Category: Children & Young Adult Reading",
+          "Category: Mythology, Legends & Folklore"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-15T18:32:44.690Z"
       },
       {
         "title": "Stories from Tagore",
