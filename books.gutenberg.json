@@ -7963,6 +7963,23 @@
         "downloadedAt": "2026-08-17T11:27:48.206Z"
       },
       {
+        "title": "The Value of Money",
+        "file": "books/Gutenberg/Economics/34823-the-value-of-money.epub",
+        "cover": "books/Gutenberg/Economics/34823-the-value-of-money.jpg",
+        "author": "Anderson, Benjamin M. (Benjamin McAlester)",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34823,
+        "subjects": [
+          "Money",
+          "Category: Economics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-15T13:58:29.446Z"
+      },
+      {
         "title": "The World's Greatest Books — Volume 14 — Philosophy and Economics",
         "file": "books/Gutenberg/Economics/25009-the-worlds-greatest-books-volume-14-philosophy-and-economics.epub",
         "cover": "books/Gutenberg/Economics/25009-the-worlds-greatest-books-volume-14-philosophy-and-economics.jpg",
@@ -18932,6 +18949,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-27T07:35:00.663Z"
+      },
+      {
+        "title": "The Hour of the Dragon",
+        "file": "books/Gutenberg/Science/42243-the-hour-of-the-dragon.epub",
+        "cover": "books/Gutenberg/Science/42243-the-hour-of-the-dragon.jpg",
+        "author": "Howard, Robert E. (Robert Ervin)",
+        "year": "Public domain",
+        "category": "Science",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42243,
+        "subjects": [
+          "Conan (Fictitious character) -- Fiction",
+          "Fantasy fiction, American",
+          "Category: Adventure",
+          "Category: Science-Fiction & Fantasy",
+          "Science Fiction"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-15T13:18:50.821Z"
       },
       {
         "title": "The House on the Borderland",
