@@ -1692,6 +1692,28 @@
         "downloadedAt": "2026-08-17T17:45:52.801Z"
       },
       {
+        "title": "The gradual acceptance of the Copernican theory of the universe",
+        "file": "books/Gutenberg/Astronomy/35744-the-gradual-acceptance-of-the-copernican-theory-of-the-universe.epub",
+        "cover": "books/Gutenberg/Astronomy/35744-the-gradual-acceptance-of-the-copernican-theory-of-the-universe.jpg",
+        "author": "Stimson, Dorothy",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35744,
+        "subjects": [
+          "Astronomy -- History",
+          "Copernicus, Nicolaus, 1473-1543",
+          "Solar system",
+          "Astronomy",
+          "Category: History - Modern (1750+)",
+          "Category: History - Other",
+          "Category: History - Religious"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T10:27:31.778Z"
+      },
+      {
         "title": "The music of the spheres : $b A nature lover's astronomy",
         "file": "books/Gutenberg/Astronomy/70382-the-music-of-the-spheres-b-a-nature-lovers-astronomy.epub",
         "cover": "books/Gutenberg/Astronomy/70382-the-music-of-the-spheres-b-a-nature-lovers-astronomy.jpg",
@@ -3938,6 +3960,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-01T14:33:27.911Z"
+      },
+      {
+        "title": "The Descent of Man and Selection in Relation to Sex, Vol. I",
+        "file": "books/Gutenberg/Biology/34967-the-descent-of-man-and-selection-in-relation-to-sex-vol-i.epub",
+        "cover": "books/Gutenberg/Biology/34967-the-descent-of-man-and-selection-in-relation-to-sex-vol-i.jpg",
+        "author": "Darwin, Charles",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 34967,
+        "subjects": [
+          "Evolution (Biology)",
+          "Human beings -- Origin",
+          "Sex differences",
+          "Sexual dimorphism (Animals)",
+          "Sexual selection in animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T09:58:46.561Z"
       },
       {
         "title": "The Descent of Man, and Selection in Relation to Sex",
@@ -6847,6 +6890,26 @@
         "downloadedAt": "2026-08-17T01:23:59.402Z"
       },
       {
+        "title": "Medea of Euripides",
+        "file": "books/Gutenberg/Drama_Fiction/35451-medea-of-euripides.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/35451-medea-of-euripides.jpg",
+        "author": "Euripides",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35451,
+        "subjects": [
+          "Medea, consort of Aegeus, King of Athens (Mythological character) -- Drama",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T10:17:33.804Z"
+      },
+      {
         "title": "Motion pictures, 1912-1939 : $b Catalog of copyright entries",
         "file": "books/Gutenberg/Drama_Fiction/51836-motion-pictures-1912-1939-b-catalog-of-copyright-entries.epub",
         "cover": "books/Gutenberg/Drama_Fiction/51836-motion-pictures-1912-1939-b-catalog-of-copyright-entries.jpg",
@@ -8201,6 +8264,48 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:21.041Z"
+      },
+      {
+        "title": "A System of Logic: Ratiocinative and Inductive, 7th Edition, Vol. I",
+        "file": "books/Gutenberg/General_Knowledge/35420-a-system-of-logic-ratiocinative-and-inductive-7th-edition-vol-i.epub",
+        "cover": "books/Gutenberg/General_Knowledge/35420-a-system-of-logic-ratiocinative-and-inductive-7th-edition-vol-i.jpg",
+        "author": "Mill, John Stuart",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35420,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Logic",
+          "Science -- Methodology",
+          "Category: Language & Communication",
+          "Category: Philosophy & Ethics",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T10:10:33.442Z"
+      },
+      {
+        "title": "A System of Logic: Ratiocinative and Inductive, 7th Edition, Vol. II",
+        "file": "books/Gutenberg/General_Knowledge/35421-a-system-of-logic-ratiocinative-and-inductive-7th-edition-vol-ii.epub",
+        "cover": "books/Gutenberg/General_Knowledge/35421-a-system-of-logic-ratiocinative-and-inductive-7th-edition-vol-ii.jpg",
+        "author": "Mill, John Stuart",
+        "year": "Public domain",
+        "category": "General Knowledge",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 35421,
+        "subjects": [
+          "Knowledge, Theory of",
+          "Logic",
+          "Science -- Methodology",
+          "Category: Philosophy & Ethics",
+          "Category: Research Methods/Statistics/Information Sys",
+          "Philosophy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T10:10:33.968Z"
       },
       {
         "title": "A Treatise Concerning the Principles of Human Knowledge",
