@@ -463,6 +463,29 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-20T13:09:57.389Z"
+      },
+      {
+        "title": "Trial by water",
+        "file": "books/Gutenberg/Adventure_Mystery/76668-trial-by-water.epub",
+        "cover": "books/Gutenberg/Adventure_Mystery/76668-trial-by-water.jpg",
+        "author": "Wright, Sewell Peaslee",
+        "year": "Public domain",
+        "category": "Adventure & Mystery",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76668,
+        "subjects": [
+          "Canoes and canoeing -- Fiction",
+          "Short stories",
+          "Spouses -- Fiction",
+          "Triangles (Interpersonal relations) -- Fiction",
+          "Category: Adventure",
+          "Category: American Literature",
+          "Category: Romance",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T15:12:06.214Z"
       }
     ]
   },
@@ -5291,6 +5314,26 @@
     "class": "Gutenberg - Children Books",
     "books": [
       {
+        "title": "A century of children's books",
+        "file": "books/Gutenberg/Children_Books/68873-a-century-of-childrens-books.epub",
+        "cover": "books/Gutenberg/Children_Books/68873-a-century-of-childrens-books.jpg",
+        "author": "Barry, Florence V. (Florence Valentine)",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 68873,
+        "subjects": [
+          "Children -- Books and reading -- Great Britain",
+          "Children's literature -- Bibliography",
+          "Children's literature -- History and criticism",
+          "Category: Children & Young Adult Reading",
+          "Category: History - Other"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T15:04:51.584Z"
+      },
+      {
         "title": "A Mother's List of Books for Children",
         "file": "books/Gutenberg/Children_Books/19157-a-mothers-list-of-books-for-children.epub",
         "cover": "books/Gutenberg/Children_Books/19157-a-mothers-list-of-books-for-children.jpg",
@@ -6221,6 +6264,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:30.791Z"
+      },
+      {
+        "title": "The Works of Charles and Mary Lamb — Volume 3: Books for Children",
+        "file": "books/Gutenberg/Children_Books/10130-the-works-of-charles-and-mary-lamb-volume-3-books-for-children.epub",
+        "cover": "books/Gutenberg/Children_Books/10130-the-works-of-charles-and-mary-lamb-volume-3-books-for-children.jpg",
+        "author": "Lamb, Charles, Lamb, Mary",
+        "year": "Public domain",
+        "category": "Children Books",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 10130,
+        "subjects": [
+          "Children's poetry",
+          "Children's stories",
+          "Category: British Literature",
+          "Category: Children & Young Adult Reading",
+          "Category: Short Stories"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T15:04:52.326Z"
       },
       {
         "title": "The Young Visiters or, Mr. Salteena's Plan",
@@ -14086,6 +14149,25 @@
         "downloadedAt": "2026-05-31T14:52:12.462Z"
       },
       {
+        "title": "The philosophy of mathematics",
+        "file": "books/Gutenberg/Mathematics/39702-the-philosophy-of-mathematics.epub",
+        "cover": "books/Gutenberg/Mathematics/39702-the-philosophy-of-mathematics.jpg",
+        "author": "Comte, Auguste",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39702,
+        "subjects": [
+          "Mathematics -- Philosophy",
+          "Category: Mathematics",
+          "Category: Philosophy & Ethics",
+          "Mathematics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T14:51:32.735Z"
+      },
+      {
         "title": "The puzzle king : $b Amusing arithmetic, book-keeping blunders, commercial comicalities, curious \"catches\", peculiar problems, perplexing paradoxes, quaint questions, queer quibbles, school stories, interesting items, tricks with figures, cards, draughts, dice, dominoes, etc., etc., etc.",
         "file": "books/Gutenberg/Mathematics/52052-the-puzzle-king-b-amusing-arithmetic-book-keeping-blunders-commercial-co.epub",
         "cover": "books/Gutenberg/Mathematics/52052-the-puzzle-king-b-amusing-arithmetic-book-keeping-blunders-commercial-co.jpg",
@@ -14205,6 +14287,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:05.230Z"
+      },
+      {
+        "title": "William Oughtred: A Great Seventeenth-Century Teacher of Mathematics",
+        "file": "books/Gutenberg/Mathematics/46815-william-oughtred-a-great-seventeenth-century-teacher-of-mathematics.epub",
+        "cover": "books/Gutenberg/Mathematics/46815-william-oughtred-a-great-seventeenth-century-teacher-of-mathematics.jpg",
+        "author": "Cajori, Florian",
+        "year": "Public domain",
+        "category": "Mathematics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46815,
+        "subjects": [
+          "Mathematicians -- Biography",
+          "Mathematics -- Study and teaching -- History -- 17th century",
+          "Oughtred, William, 1575-1660",
+          "Category: Biographies",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Mathematics",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T14:51:32.051Z"
       }
     ]
   },
@@ -17905,6 +18009,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T16:29:19.734Z"
+      },
+      {
+        "title": "Studies in the Psychology of Sex, Volume 2: Sexual Inversion",
+        "file": "books/Gutenberg/Psychology/13611-studies-in-the-psychology-of-sex-volume-2-sexual-inversion.epub",
+        "cover": "books/Gutenberg/Psychology/13611-studies-in-the-psychology-of-sex-volume-2-sexual-inversion.jpg",
+        "author": "Ellis, Havelock",
+        "year": "Public domain",
+        "category": "Psychology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 13611,
+        "subjects": [
+          "Sex",
+          "Sex (Psychology)",
+          "Banned Books from Anne Haight's list",
+          "Category: Gender & Sexuality Studies",
+          "Category: Psychiatry/Psychology",
+          "Category: Sexuality & Erotica",
+          "Psychology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-16T15:19:13.528Z"
       },
       {
         "title": "Talks To Teachers On Psychology; And To Students On Some Of Life's Ideals",
