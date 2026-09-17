@@ -3232,6 +3232,26 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:59:02.563Z"
+      },
+      {
+        "title": "The Works of Robert G. Ingersoll, Complete Contents: Dresden Edition—Twelve Volumes",
+        "file": "books/Gutenberg/Bhagavad_Gita/38813-the-works-of-robert-g-ingersoll-complete-contents-dresden-editiontwelve-.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/38813-the-works-of-robert-g-ingersoll-complete-contents-dresden-editiontwelve-.jpg",
+        "author": "Ingersoll, Robert Green",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38813,
+        "subjects": [
+          "Free thought",
+          "Category: Essays, Letters & Speeches",
+          "Category: History - Other",
+          "Category: Philosophy & Ethics",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-17T20:14:28.597Z"
       }
     ]
   },
@@ -11462,6 +11482,24 @@
         "downloadedAt": "2026-08-17T19:31:19.121Z"
       },
       {
+        "title": "Chambers's Twentieth Century Dictionary (part 3 of 4: N-R)",
+        "file": "books/Gutenberg/Language_Learning/38699-chamberss-twentieth-century-dictionary-part-3-of-4-n-r.epub",
+        "cover": "books/Gutenberg/Language_Learning/38699-chamberss-twentieth-century-dictionary-part-3-of-4-n-r.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 38699,
+        "subjects": [
+          "English language -- Dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-17T20:29:37.084Z"
+      },
+      {
         "title": "Classic French Course in English",
         "file": "books/Gutenberg/Language_Learning/23033-classic-french-course-in-english.epub",
         "cover": "books/Gutenberg/Language_Learning/23033-classic-french-course-in-english.jpg",
@@ -11991,6 +12029,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T08:39:46.310Z"
+      },
+      {
+        "title": "The Spanish American Reader",
+        "file": "books/Gutenberg/Language_Learning/39647-the-spanish-american-reader.epub",
+        "cover": "books/Gutenberg/Language_Learning/39647-the-spanish-american-reader.jpg",
+        "author": "Nelson, Ernesto",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 39647,
+        "subjects": [
+          "Spanish language -- Readers",
+          "Category: Language & Communication",
+          "Category: Teaching & Education",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-17T20:29:36.277Z"
       },
       {
         "title": "The Theory of Moral Sentiments: Or, an Essay Towards an Analysis of the Principles by Which Men Naturally Judge Concerning the Conduct and Character, First of Their Neighbours, and Afterwards of Themselves. to Which Is Added, a Dissertation on the Origin of Languages.",
