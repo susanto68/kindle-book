@@ -1361,6 +1361,22 @@
         "downloadedAt": "2026-08-17T10:33:41.614Z"
       },
       {
+        "title": "Astronomy",
+        "file": "books/Gutenberg/Astronomy/77516-astronomy.epub",
+        "cover": "books/Gutenberg/Astronomy/77516-astronomy.jpg",
+        "author": "Clerke, Agnes M. (Agnes Mary), Gore, J. Ellard (John Ellard), Fowler, A. (Alfred)",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 77516,
+        "subjects": [
+          "Astronomy"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T18:08:28.720Z"
+      },
+      {
         "title": "Astronomy Explained Upon Sir Isaac Newton's Principles: And made easy to those who have not studied mathematics",
         "file": "books/Gutenberg/Astronomy/60619-astronomy-explained-upon-sir-isaac-newtons-principles-and-made-easy-to-t.epub",
         "cover": "books/Gutenberg/Astronomy/60619-astronomy-explained-upon-sir-isaac-newtons-principles-and-made-easy-to-t.jpg",
@@ -1925,6 +1941,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-17T08:45:19.521Z"
+      },
+      {
+        "title": "Zetetic astronomy: Earth not a globe!: An experimental inquiry into the true figure of the earth etc.",
+        "file": "books/Gutenberg/Astronomy/69892-zetetic-astronomy-earth-not-a-globe-an-experimental-inquiry-into-the-tru.epub",
+        "cover": "books/Gutenberg/Astronomy/69892-zetetic-astronomy-earth-not-a-globe-an-experimental-inquiry-into-the-tru.jpg",
+        "author": "Parallax",
+        "year": "Public domain",
+        "category": "Astronomy",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 69892,
+        "subjects": [
+          "Earth (Planet) -- Figure",
+          "Earth (Planet) -- Miscellanea",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T18:08:26.961Z"
       }
     ]
   },
@@ -4043,6 +4077,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-02T23:11:42.172Z"
+      },
+      {
+        "title": "The Common Spiders of the United States",
+        "file": "books/Gutenberg/Biology/42576-the-common-spiders-of-the-united-states.epub",
+        "cover": "books/Gutenberg/Biology/42576-the-common-spiders-of-the-united-states.jpg",
+        "author": "Emerton, J. H. (James Henry)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42576,
+        "subjects": [
+          "Spiders -- United States",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T17:46:09.076Z"
       },
       {
         "title": "The Dawn of Reason; or, Mental Traits in the Lower Animals",
@@ -16341,6 +16393,24 @@
         "downloadedAt": "2026-06-01T00:10:46.896Z"
       },
       {
+        "title": "Encyclopaedia Britannica, 11th Edition, \"Liquid Gases\" to \"Logar\": Volume 16, Slice 7",
+        "file": "books/Gutenberg/Physics/42173-encyclopaedia-britannica-11th-edition-liquid-gases-to-logar-volume-16-sl.epub",
+        "cover": "books/Gutenberg/Physics/42173-encyclopaedia-britannica-11th-edition-liquid-gases-to-logar-volume-16-sl.jpg",
+        "author": "Various",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42173,
+        "subjects": [
+          "Encyclopedias and dictionaries",
+          "Category: Encyclopedias/Dictionaries/Reference",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T17:43:26.729Z"
+      },
+      {
         "title": "Encyclopaedia Britannica, 11th Edition, \"Magnetite\" to \"Malt\": Volume 17, Slice 4",
         "file": "books/Gutenberg/Physics/42854-encyclopaedia-britannica-11th-edition-magnetite-to-malt-volume-17-slice-.epub",
         "cover": "books/Gutenberg/Physics/42854-encyclopaedia-britannica-11th-edition-magnetite-to-malt-volume-17-slice-.jpg",
@@ -17030,6 +17100,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-29T18:08:51.098Z"
+      },
+      {
+        "title": "The Steam Engine Explained and Illustrated (Seventh Edition): With an Account of Its Invention and Progressive Improvement, and Its Application to Navigation and Railways; Including Also a Memoir of Watt",
+        "file": "books/Gutenberg/Physics/42602-the-steam-engine-explained-and-illustrated-seventh-edition-with-an-accou.epub",
+        "cover": "books/Gutenberg/Physics/42602-the-steam-engine-explained-and-illustrated-seventh-edition-with-an-accou.jpg",
+        "author": "Lardner, Dionysius",
+        "year": "Public domain",
+        "category": "Physics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 42602,
+        "subjects": [
+          "Steam-engines",
+          "Watt, James, 1736-1819",
+          "Category: Biographies",
+          "Category: Engineering & Technology",
+          "Category: History - Modern (1750+)",
+          "Category: Science - Physics"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T17:43:25.201Z"
       },
       {
         "title": "The Story of the Heavens",
