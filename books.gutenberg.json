@@ -2763,6 +2763,28 @@
         "downloadedAt": "2026-08-05T04:23:14.551Z"
       },
       {
+        "title": "The Elementary Forms of the Religious Life",
+        "file": "books/Gutenberg/Bhagavad_Gita/41360-the-elementary-forms-of-the-religious-life.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/41360-the-elementary-forms-of-the-religious-life.jpg",
+        "author": "Durkheim, Émile",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41360,
+        "subjects": [
+          "Cults",
+          "Religion",
+          "Religion -- Philosophy",
+          "Rites and ceremonies",
+          "Totemism",
+          "Category: Religion/Spirituality",
+          "Category: Sociology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T13:42:43.866Z"
+      },
+      {
         "title": "The Faith of Our Fathers",
         "file": "books/Gutenberg/Bhagavad_Gita/27435-the-faith-of-our-fathers.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/27435-the-faith-of-our-fathers.jpg",
@@ -3579,6 +3601,25 @@
         "downloadedAt": "2026-08-11T10:06:42.110Z"
       },
       {
+        "title": "First course in biology",
+        "file": "books/Gutenberg/Biology/76851-first-course-in-biology.epub",
+        "cover": "books/Gutenberg/Biology/76851-first-course-in-biology.jpg",
+        "author": "Bailey, L. H. (Liberty Hyde), Coleman, Walter Moore",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 76851,
+        "subjects": [
+          "Biology -- Laboratory manuals",
+          "Biology -- Textbooks",
+          "Category: Science - Biology",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T13:35:43.594Z"
+      },
+      {
         "title": "Freedom in Science and Teaching.: from the German of Ernst Haeckel",
         "file": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.epub",
         "cover": "books/Gutenberg/Biology/25711-freedom-in-science-and-teaching-from-the-german-of-ernst-haeckel.jpg",
@@ -3940,6 +3981,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:26.714Z"
+      },
+      {
+        "title": "Text Book of Biology, Part 1: Vertebrata",
+        "file": "books/Gutenberg/Biology/21781-text-book-of-biology-part-1-vertebrata.epub",
+        "cover": "books/Gutenberg/Biology/21781-text-book-of-biology-part-1-vertebrata.jpg",
+        "author": "Wells, H. G. (Herbert George)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 21781,
+        "subjects": [
+          "Biology -- Textbooks",
+          "Biology",
+          "Category: Science - Biology",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T13:35:45.046Z"
       },
       {
         "title": "The Animal Parasites of Man",
@@ -10050,6 +10110,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-02T18:07:50.129Z"
+      },
+      {
+        "title": "The Voyages of Pedro Fernandez de Quiros, 1595 to 1606. Volume 1",
+        "file": "books/Gutenberg/Geography/41200-the-voyages-of-pedro-fernandez-de-quiros-1595-to-1606-volume-1.epub",
+        "cover": "books/Gutenberg/Geography/41200-the-voyages-of-pedro-fernandez-de-quiros-1595-to-1606-volume-1.jpg",
+        "author": "Queirós, Pedro Fernandes de",
+        "year": "Public domain",
+        "category": "Geography",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 41200,
+        "subjects": [
+          "Discoveries in geography -- Spanish",
+          "Early maps",
+          "Mendaña de Neira, Alvaro de, 1542?-1595",
+          "Oceania -- Discovery and exploration",
+          "Category: Adventure",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: Travel Writing"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T13:39:29.460Z"
       },
       {
         "title": "This Giddy Globe",
@@ -17698,6 +17780,22 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-08T15:31:54.261Z"
+      },
+      {
+        "title": "Verses",
+        "file": "books/Gutenberg/Poetry/78110-verses.epub",
+        "cover": "books/Gutenberg/Poetry/78110-verses.jpg",
+        "author": "Jacob, Violet",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78110,
+        "subjects": [
+          "English poetry -- Scottish authors"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-18T13:53:15.889Z"
       }
     ]
   },
