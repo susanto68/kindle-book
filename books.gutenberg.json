@@ -3397,6 +3397,30 @@
         "downloadedAt": "2026-08-03T06:30:47.625Z"
       },
       {
+        "title": "An Introduction to Entomology: Vol. 1: or Elements of the Natural History of the Insects",
+        "file": "books/Gutenberg/Biology/43576-an-introduction-to-entomology-vol-1-or-elements-of-the-natural-history-o.epub",
+        "cover": "books/Gutenberg/Biology/43576-an-introduction-to-entomology-vol-1-or-elements-of-the-natural-history-o.jpg",
+        "author": "Kirby, William, Spence, William",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43576,
+        "subjects": [
+          "Beneficial insects",
+          "Insect pests",
+          "Insect societies",
+          "Insects",
+          "Insects -- Habitations",
+          "Insects -- History",
+          "Insects -- Host plants",
+          "Insects -- Life cycles",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T16:27:44.896Z"
+      },
+      {
         "title": "An Introduction to Entomology: Vol. 3: or Elements of the Natural History of the Insects",
         "file": "books/Gutenberg/Biology/43578-an-introduction-to-entomology-vol-3-or-elements-of-the-natural-history-o.epub",
         "cover": "books/Gutenberg/Biology/43578-an-introduction-to-entomology-vol-3-or-elements-of-the-natural-history-o.jpg",
@@ -4547,6 +4571,24 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-12T10:09:51.568Z"
+      },
+      {
+        "title": "The works of Francis Maitland Balfour, Volume 2 (of 4) : $b A treatise on comparative embryology: Invertebrata",
+        "file": "books/Gutenberg/Biology/45018-the-works-of-francis-maitland-balfour-volume-2-of-4-b-a-treatise-on-comp.epub",
+        "cover": "books/Gutenberg/Biology/45018-the-works-of-francis-maitland-balfour-volume-2-of-4-b-a-treatise-on-comp.jpg",
+        "author": "Balfour, Francis M. (Francis Maitland)",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45018,
+        "subjects": [
+          "Embryology",
+          "Zoology",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T16:27:45.913Z"
       },
       {
         "title": "Vegetable Teratology: An Account of the Principal Deviations from the Usual Construction of Plants",
