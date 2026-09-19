@@ -4025,6 +4025,41 @@
         "downloadedAt": "2026-05-21T13:09:27.152Z"
       },
       {
+        "title": "Report on the Radiolaria Collected by H.M.S. Challenger During the Years 1873-1876, First Part: Porulosa (Spumellaria and Acantharia): Report on the Scientific Results of the Voyage of H.M.S. Challenger During the Years 1873-76, Vol. XVIII",
+        "file": "books/Gutenberg/Biology/44525-report-on-the-radiolaria-collected-by-hms-challenger-during-the-years-18.epub",
+        "cover": "books/Gutenberg/Biology/44525-report-on-the-radiolaria-collected-by-hms-challenger-during-the-years-18.jpg",
+        "author": "Haeckel, Ernst",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44525,
+        "subjects": [
+          "Radiolaria",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T13:07:22.726Z"
+      },
+      {
+        "title": "Report on the Radiolaria Collected by H.M.S. Challenger During the Years 1873-1876, Second Part: Subclass Osculosa; Index: Report on the Scientific Results of the Voyage of H.M.S. Challenger During the Years 1873-76, Vol. XVIII",
+        "file": "books/Gutenberg/Biology/44526-report-on-the-radiolaria-collected-by-hms-challenger-during-the-years-18.epub",
+        "cover": "books/Gutenberg/Biology/44526-report-on-the-radiolaria-collected-by-hms-challenger-during-the-years-18.jpg",
+        "author": "Haeckel, Ernst",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44526,
+        "subjects": [
+          "Radiolaria",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T13:07:23.322Z"
+      },
+      {
         "title": "Sir Jagadis Chunder Bose, His Life and Speeches",
         "file": "books/Gutenberg/Biology/22085-sir-jagadis-chunder-bose-his-life-and-speeches.epub",
         "cover": "books/Gutenberg/Biology/22085-sir-jagadis-chunder-bose-his-life-and-speeches.jpg",
@@ -12110,6 +12145,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T10:03:56.317Z"
+      },
+      {
+        "title": "The American Language: A Preliminary Inquiry into the Development of English in the United States",
+        "file": "books/Gutenberg/Language_Learning/43376-the-american-language-a-preliminary-inquiry-into-the-development-of-engl.epub",
+        "cover": "books/Gutenberg/Language_Learning/43376-the-american-language-a-preliminary-inquiry-into-the-development-of-engl.jpg",
+        "author": "Mencken, H. L. (Henry Louis)",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43376,
+        "subjects": [
+          "Americanisms",
+          "English language",
+          "Names -- United States",
+          "Names, Personal -- United States",
+          "Category: American Literature",
+          "Category: Language & Communication"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T13:34:47.601Z"
       },
       {
         "title": "The Art of Public Speaking",
