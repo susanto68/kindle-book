@@ -3397,6 +3397,54 @@
         "downloadedAt": "2026-08-03T06:30:47.625Z"
       },
       {
+        "title": "An Introduction to Entomology: Vol. 3: or Elements of the Natural History of the Insects",
+        "file": "books/Gutenberg/Biology/43578-an-introduction-to-entomology-vol-3-or-elements-of-the-natural-history-o.epub",
+        "cover": "books/Gutenberg/Biology/43578-an-introduction-to-entomology-vol-3-or-elements-of-the-natural-history-o.jpg",
+        "author": "Kirby, William, Spence, William",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43578,
+        "subjects": [
+          "Beneficial insects",
+          "Insect pests",
+          "Insect societies",
+          "Insects",
+          "Insects -- Habitations",
+          "Insects -- History",
+          "Insects -- Host plants",
+          "Insects -- Life cycles",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T08:47:51.736Z"
+      },
+      {
+        "title": "An Introduction to Entomology: Vol. 4: or Elements of the Natural History of the Insects",
+        "file": "books/Gutenberg/Biology/43579-an-introduction-to-entomology-vol-4-or-elements-of-the-natural-history-o.epub",
+        "cover": "books/Gutenberg/Biology/43579-an-introduction-to-entomology-vol-4-or-elements-of-the-natural-history-o.jpg",
+        "author": "Kirby, William, Spence, William",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43579,
+        "subjects": [
+          "Beneficial insects",
+          "Insect pests",
+          "Insect societies",
+          "Insects",
+          "Insects -- Habitations",
+          "Insects -- History",
+          "Insects -- Host plants",
+          "Insects -- Life cycles",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T08:47:52.984Z"
+      },
+      {
         "title": "Anecdotes of the Habits and Instinct of Animals",
         "file": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.epub",
         "cover": "books/Gutenberg/Biology/21973-anecdotes-of-the-habits-and-instinct-of-animals.jpg",
@@ -7693,6 +7741,28 @@
         "downloadedAt": "2026-08-17T16:29:16.923Z"
       },
       {
+        "title": "English Economic History: Select Documents",
+        "file": "books/Gutenberg/Economics/43211-english-economic-history-select-documents.epub",
+        "cover": "books/Gutenberg/Economics/43211-english-economic-history-select-documents.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Economics",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43211,
+        "subjects": [
+          "Great Britain -- Economic conditions",
+          "Great Britain -- Social conditions",
+          "Category: Economics",
+          "Category: History - British",
+          "Category: History - Early Modern (c. 1450-1750)",
+          "Category: History - Medieval/Middle Ages",
+          "Category: History - Modern (1750+)"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T09:05:05.802Z"
+      },
+      {
         "title": "Fifty years in Wall Street",
         "file": "books/Gutenberg/Economics/70377-fifty-years-in-wall-street.epub",
         "cover": "books/Gutenberg/Economics/70377-fifty-years-in-wall-street.jpg",
@@ -11503,6 +11573,24 @@
         "downloadedAt": "2026-09-11T13:52:40.500Z"
       },
       {
+        "title": "A Latin Grammar for Schools and Colleges",
+        "file": "books/Gutenberg/Language_Learning/44653-a-latin-grammar-for-schools-and-colleges.epub",
+        "cover": "books/Gutenberg/Language_Learning/44653-a-latin-grammar-for-schools-and-colleges.jpg",
+        "author": "Lane, George Martin",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 44653,
+        "subjects": [
+          "Latin language -- Grammar",
+          "Category: Language & Communication",
+          "Category: Teaching & Education"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T09:07:30.812Z"
+      },
+      {
         "title": "A Manual of the Malay language: With an Introductory Sketch of the Sanskrit Element in Malay",
         "file": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.epub",
         "cover": "books/Gutenberg/Language_Learning/25604-a-manual-of-the-malay-language-with-an-introductory-sketch-of-the-sanskr.jpg",
@@ -12123,6 +12211,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-06T11:10:38.233Z"
+      },
+      {
+        "title": "The Native Races [of the Pacific states], Volume 3, Myths and Languages: The Works of Hubert Howe Bancroft, Volume 3",
+        "file": "books/Gutenberg/Language_Learning/43123-the-native-races-of-the-pacific-states-volume-3-myths-and-languages-the-.epub",
+        "cover": "books/Gutenberg/Language_Learning/43123-the-native-races-of-the-pacific-states-volume-3-myths-and-languages-the-.jpg",
+        "author": "Bancroft, Hubert Howe",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 43123,
+        "subjects": [
+          "Indians -- Bibliography",
+          "Indians of Central America",
+          "Indians of Mexico",
+          "Indians of North America -- Pacific Coast of North America",
+          "Category: Archaeology & Anthropology",
+          "Category: Language & Communication",
+          "Category: Mythology, Legends & Folklore"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T09:07:31.642Z"
       },
       {
         "title": "The Ontario High School Reader",
@@ -17168,6 +17278,22 @@
   {
     "class": "Gutenberg - Poetry",
     "books": [
+      {
+        "title": "Ash-Wednesday",
+        "file": "books/Gutenberg/Poetry/78023-ash-wednesday.epub",
+        "cover": "books/Gutenberg/Poetry/78023-ash-wednesday.jpg",
+        "author": "Eliot, T. S. (Thomas Stearns)",
+        "year": "Public domain",
+        "category": "Poetry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 78023,
+        "subjects": [
+          "Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-19T08:59:06.503Z"
+      },
       {
         "title": "Beowulf: An Anglo-Saxon Epic Poem",
         "file": "books/Gutenberg/Poetry/16328-beowulf-an-anglo-saxon-epic-poem.epub",
