@@ -4758,6 +4758,27 @@
     "class": "Gutenberg - Chemistry",
     "books": [
       {
+        "title": "A Practical Handbook on the Distillation of Alcohol from Farm Products",
+        "file": "books/Gutenberg/Chemistry/46377-a-practical-handbook-on-the-distillation-of-alcohol-from-farm-products.epub",
+        "cover": "books/Gutenberg/Chemistry/46377-a-practical-handbook-on-the-distillation-of-alcohol-from-farm-products.jpg",
+        "author": "Wright, F. B. (Frederic B.)",
+        "year": "Public domain",
+        "category": "Chemistry",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46377,
+        "subjects": [
+          "Alcohol",
+          "Alcohol, Denatured",
+          "Category: Drugs/Alcohol/Pharmacology",
+          "Category: How To ...",
+          "Category: Science - Chemistry/Biochemistry",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:04:13.679Z"
+      },
+      {
         "title": "A text-book of assaying : $b for the use of those connected with mines.",
         "file": "books/Gutenberg/Chemistry/18751-a-text-book-of-assaying-b-for-the-use-of-those-connected-with-mines.epub",
         "cover": "books/Gutenberg/Chemistry/18751-a-text-book-of-assaying-b-for-the-use-of-those-connected-with-mines.jpg",
@@ -7639,6 +7660,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-16T20:24:05.258Z"
+      },
+      {
+        "title": "The Works of William Shakespeare [Cambridge Edition] [Vol. 7 of 9]",
+        "file": "books/Gutenberg/Drama_Fiction/47715-the-works-of-william-shakespeare-cambridge-edition-vol-7-of-9.epub",
+        "cover": "books/Gutenberg/Drama_Fiction/47715-the-works-of-william-shakespeare-cambridge-edition-vol-7-of-9.jpg",
+        "author": "Shakespeare, William",
+        "year": "Public domain",
+        "category": "Drama & Fiction",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47715,
+        "subjects": [
+          "English drama",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Plays/Films/Dramas"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:29:57.702Z"
       },
       {
         "title": "Theft: A Play In Four Acts",
@@ -11368,6 +11408,35 @@
         ],
         "language": "en",
         "downloadedAt": "2026-05-21T13:58:41.123Z"
+      },
+      {
+        "title": "War and Peace",
+        "file": "books/Gutenberg/History/2600-war-and-peace.epub",
+        "cover": "books/Gutenberg/History/2600-war-and-peace.jpg",
+        "author": "Tolstoy, Leo, graf",
+        "year": "Public domain",
+        "category": "History",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 2600,
+        "subjects": [
+          "Aristocracy (Social class) -- Russia -- Fiction",
+          "Historical fiction",
+          "Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction",
+          "Russia -- History -- Alexander I, 1801-1825 -- Fiction",
+          "War stories",
+          "Best Books Ever Listings",
+          "Category: Classics of Literature",
+          "Category: Historical Novels",
+          "Category: Novels",
+          "Category: Russian Literature",
+          "Historical Fiction",
+          "Movie Books",
+          "Napoleonic(Bookshelf)",
+          "Opera"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:07:05.986Z"
       }
     ]
   },
@@ -12112,6 +12181,52 @@
         ],
         "language": "en",
         "downloadedAt": "2026-09-07T09:41:01.865Z"
+      },
+      {
+        "title": "Reliques of Ancient English Poetry, Volume 1 (of 3): Consisting of Old Heroic Ballads, Songs and Other Pieces of Our Earlier Poets Together With Some Few of Later Date",
+        "file": "books/Gutenberg/Language_Learning/45939-reliques-of-ancient-english-poetry-volume-1-of-3-consisting-of-old-heroi.epub",
+        "cover": "books/Gutenberg/Language_Learning/45939-reliques-of-ancient-english-poetry-volume-1-of-3-consisting-of-old-heroi.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45939,
+        "subjects": [
+          "Ballads, English -- Texts",
+          "English language -- Early modern, 1500-1700 -- Glossaries, vocabularies, etc.",
+          "English poetry -- Early modern, 1500-1700",
+          "Minstrels",
+          "Romances, English -- History and criticism",
+          "Category: British Literature",
+          "Category: Classics of Literature",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:50:26.952Z"
+      },
+      {
+        "title": "Reliques of Ancient English Poetry, Volume 2 (of 3): Consisting of Old Heroic Ballads, Songs and Other Pieces of Our Earlier Poets Together With Some Few of Later Date",
+        "file": "books/Gutenberg/Language_Learning/45940-reliques-of-ancient-english-poetry-volume-2-of-3-consisting-of-old-heroi.epub",
+        "cover": "books/Gutenberg/Language_Learning/45940-reliques-of-ancient-english-poetry-volume-2-of-3-consisting-of-old-heroi.jpg",
+        "author": "Project Gutenberg",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45940,
+        "subjects": [
+          "Ballads, English -- Texts",
+          "English language -- Early modern, 1500-1700 -- Glossaries, vocabularies, etc.",
+          "English poetry -- Early modern, 1500-1700",
+          "Minstrels",
+          "Romances, English -- History and criticism",
+          "Category: British Literature",
+          "Category: Mythology, Legends & Folklore",
+          "Category: Poetry"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:50:27.836Z"
       },
       {
         "title": "Roget's Thesaurus",
@@ -14788,6 +14903,25 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-06T00:12:16.420Z"
+      },
+      {
+        "title": "A Message to Garcia: Being a Preachment",
+        "file": "books/Gutenberg/Motivation/17195-a-message-to-garcia-being-a-preachment.epub",
+        "cover": "books/Gutenberg/Motivation/17195-a-message-to-garcia-being-a-preachment.jpg",
+        "author": "Hubbard, Elbert",
+        "year": "Public domain",
+        "category": "Motivation",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 17195,
+        "subjects": [
+          "Rowan, Andrew Summers",
+          "Spanish-American War, 1898",
+          "Success",
+          "Category: Essays, Letters & Speeches"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T11:12:54.134Z"
       },
       {
         "title": "Acres of Diamonds: Our Every-day Opportunities",
