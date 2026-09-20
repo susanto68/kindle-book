@@ -3079,6 +3079,27 @@
         "downloadedAt": "2026-09-10T15:12:13.234Z"
       },
       {
+        "title": "The Poetical Works of William Wordsworth — Volume 7 (of 8)",
+        "file": "books/Gutenberg/Bhagavad_Gita/47143-the-poetical-works-of-william-wordsworth-volume-7-of-8.epub",
+        "cover": "books/Gutenberg/Bhagavad_Gita/47143-the-poetical-works-of-william-wordsworth-volume-7-of-8.jpg",
+        "author": "Wordsworth, William",
+        "year": "Public domain",
+        "category": "Bhagavad Gita & Spiritual Wisdom",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 47143,
+        "subjects": [
+          "English poetry -- 18th century",
+          "English poetry -- 19th century",
+          "Category: British Literature",
+          "Category: History - Religious",
+          "Category: Poetry",
+          "Category: Religion/Spirituality"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T14:51:41.018Z"
+      },
+      {
         "title": "The Prophet",
         "file": "books/Gutenberg/Bhagavad_Gita/58585-the-prophet.epub",
         "cover": "books/Gutenberg/Bhagavad_Gita/58585-the-prophet.jpg",
@@ -3905,6 +3926,24 @@
         "downloadedAt": "2026-08-01T10:52:14.482Z"
       },
       {
+        "title": "Manual of the Trees of North America (Exclusive of Mexico) 2nd ed.",
+        "file": "books/Gutenberg/Biology/46450-manual-of-the-trees-of-north-america-exclusive-of-mexico-2nd-ed.epub",
+        "cover": "books/Gutenberg/Biology/46450-manual-of-the-trees-of-north-america-exclusive-of-mexico-2nd-ed.jpg",
+        "author": "Sargent, Charles Sprague",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46450,
+        "subjects": [
+          "Trees -- North America",
+          "Category: Nature/Gardening/Animals",
+          "Category: Science - Biology"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T14:46:05.867Z"
+      },
+      {
         "title": "Micrographia: Some Physiological Descriptions of Minute Bodies Made by Magnifying Glasses with Observations and Inquiries Thereupon",
         "file": "books/Gutenberg/Biology/15491-micrographia-some-physiological-descriptions-of-minute-bodies-made-by-ma.epub",
         "cover": "books/Gutenberg/Biology/15491-micrographia-some-physiological-descriptions-of-minute-bodies-made-by-ma.jpg",
@@ -4006,6 +4045,27 @@
         ],
         "language": "en",
         "downloadedAt": "2026-07-30T09:40:53.234Z"
+      },
+      {
+        "title": "Origin of Cultivated Plants: The International Scientific Series Volume XLVIII",
+        "file": "books/Gutenberg/Biology/45917-origin-of-cultivated-plants-the-international-scientific-series-volume-x.epub",
+        "cover": "books/Gutenberg/Biology/45917-origin-of-cultivated-plants-the-international-scientific-series-volume-x.jpg",
+        "author": "Candolle, Alphonse de",
+        "year": "Public domain",
+        "category": "Biology",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 45917,
+        "subjects": [
+          "Botany, Economic",
+          "Plants, Cultivated",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Other",
+          "Category: Science - Biology",
+          "Category: Science - Earth/Agricultural/Farming"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T14:46:05.232Z"
       },
       {
         "title": "Outlines of Dairy Bacteriology, 8th edition: A Concise Manual for the Use of Students in Dairying",
@@ -12341,6 +12401,28 @@
         ],
         "language": "en",
         "downloadedAt": "2026-08-18T03:05:42.868Z"
+      },
+      {
+        "title": "The Bronze Age and the Celtic World",
+        "file": "books/Gutenberg/Language_Learning/46924-the-bronze-age-and-the-celtic-world.epub",
+        "cover": "books/Gutenberg/Language_Learning/46924-the-bronze-age-and-the-celtic-world.jpg",
+        "author": "Peake, Harold",
+        "year": "Public domain",
+        "category": "Language Learning",
+        "format": "epub",
+        "source": "gutenberg-downloaded",
+        "gutenbergId": 46924,
+        "subjects": [
+          "Bronze age",
+          "Celtic languages",
+          "Celts",
+          "Indo-Europeans",
+          "Category: Archaeology & Anthropology",
+          "Category: History - Ancient",
+          "Category: History - European"
+        ],
+        "language": "en",
+        "downloadedAt": "2026-09-20T15:14:32.742Z"
       },
       {
         "title": "The Comic English Grammar: A New And Facetious Introduction To The English Tongue",
