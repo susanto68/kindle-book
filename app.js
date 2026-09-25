@@ -142,6 +142,9 @@ const dom = {
   fontIncreaseBtn: document.getElementById("fontIncreaseBtn"),
   lineSpacingBtn: document.getElementById("lineSpacingBtn"),
   sortSelect: document.getElementById("sortSelect"),
+  whatsappWidget: document.getElementById("whatsappWidget"),
+  whatsappFab: document.getElementById("whatsappFab"),
+  whatsappMenu: document.getElementById("whatsappMenu"),
   bookModal: document.getElementById("bookModal"),
   modalTitle: document.getElementById("modalTitle"),
   modalAuthor: document.getElementById("modalAuthor"),
@@ -1407,6 +1410,7 @@ function setupEventListeners() {
       renderLibrary();
     });
   }
+  setupWhatsAppWidget();
   dom.allCategoriesBtn.addEventListener("click", showAllCategories);
   dom.tutorialDismiss.addEventListener("click", hideReaderTutorial);
   dom.categorySection.addEventListener("click", (event) => {
@@ -3644,6 +3648,43 @@ function cycleLineSpacing() {
   localStorage.setItem(STORAGE_KEYS.lineSpacing, String(next));
   applyReaderTypographyVars();
   applyEpubTheme();
+}
+
+function setupWhatsAppWidget() {
+  if (!dom.whatsappFab || !dom.whatsappMenu || !dom.whatsappWidget) {
+    return;
+  }
+
+  const closeMenu = () => {
+    dom.whatsappMenu.hidden = true;
+    dom.whatsappFab.setAttribute("aria-expanded", "false");
+  };
+
+  const openMenu = () => {
+    dom.whatsappMenu.hidden = false;
+    dom.whatsappFab.setAttribute("aria-expanded", "true");
+  };
+
+  dom.whatsappFab.addEventListener("click", () => {
+    if (dom.whatsappMenu.hidden) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!dom.whatsappMenu.hidden && !dom.whatsappWidget.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !dom.whatsappMenu.hidden) {
+      closeMenu();
+      dom.whatsappFab.focus();
+    }
+  });
 }
 
 function getShelfSortOrder() {

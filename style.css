@@ -1958,19 +1958,26 @@ body.reader-epub .reader-stage.turn-prev .epub-reader::after {
   box-shadow: none;
 }
 
-.whatsapp-fab {
+.whatsapp-widget {
   position: fixed;
   right: max(16px, env(safe-area-inset-right));
   bottom: max(20px, calc(10px + env(safe-area-inset-bottom)));
   z-index: 135;
-  width: 56px;
-  height: 56px;
+  transition: bottom 220ms ease, right 220ms ease, top 220ms ease;
+}
+
+.whatsapp-fab {
+  position: relative;
   display: grid;
   place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 0;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.18);
-  transition: transform 180ms ease, box-shadow 180ms ease, bottom 220ms ease, right 220ms ease, top 220ms ease;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .whatsapp-fab-icon {
@@ -2015,19 +2022,65 @@ body.reader-epub .reader-stage.turn-prev .epub-reader::after {
 
 /* Reader view: bottom edge is busy with page controls, so dock the button
    mid-right instead of stacking it over corner-page-btn / reader-controls. */
-body.reader-open .whatsapp-fab {
+body.reader-open .whatsapp-widget {
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
 }
 
-body.reader-open .whatsapp-fab:hover,
-body.reader-open .whatsapp-fab:focus-visible {
-  transform: translateY(-50%) translateX(-3px) scale(1.05);
+.whatsapp-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 14px);
+  z-index: 1;
+  display: grid;
+  gap: 6px;
+  min-width: 216px;
+  padding: 8px;
+  border-radius: 16px;
+  background: var(--surface-solid);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+  animation: whatsappMenuIn 160ms ease both;
 }
 
-body.reader-open .whatsapp-fab:active {
-  transform: translateY(-50%) scale(0.96);
+.whatsapp-menu[hidden] {
+  display: none;
+}
+
+@keyframes whatsappMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.whatsapp-menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  color: var(--text);
+  transition: background 140ms ease;
+}
+
+.whatsapp-menu-item:hover,
+.whatsapp-menu-item:focus-visible {
+  background: rgba(37, 211, 102, 0.14);
+}
+
+.whatsapp-menu-name {
+  font: 700 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.whatsapp-menu-number {
+  font: 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--muted);
 }
 
 @media (max-width: 480px) {
@@ -2040,12 +2093,20 @@ body.reader-open .whatsapp-fab:active {
     width: 30px;
     height: 30px;
   }
+
+  .whatsapp-menu {
+    min-width: 190px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .whatsapp-fab-ring {
     animation: none;
     display: none;
+  }
+
+  .whatsapp-menu {
+    animation: none;
   }
 }
 
