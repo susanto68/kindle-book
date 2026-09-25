@@ -1958,6 +1958,97 @@ body.reader-epub .reader-stage.turn-prev .epub-reader::after {
   box-shadow: none;
 }
 
+.whatsapp-fab {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(20px, calc(10px + env(safe-area-inset-bottom)));
+  z-index: 135;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease, bottom 220ms ease, right 220ms ease, top 220ms ease;
+}
+
+.whatsapp-fab-icon {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  z-index: 1;
+}
+
+.whatsapp-fab-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.55);
+  animation: whatsappPulse 2.4s ease-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  70% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+.whatsapp-fab:hover,
+.whatsapp-fab:focus-visible {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.32), 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-fab:active {
+  transform: scale(0.96);
+}
+
+/* Reader view: bottom edge is busy with page controls, so dock the button
+   mid-right instead of stacking it over corner-page-btn / reader-controls. */
+body.reader-open .whatsapp-fab {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+body.reader-open .whatsapp-fab:hover,
+body.reader-open .whatsapp-fab:focus-visible {
+  transform: translateY(-50%) translateX(-3px) scale(1.05);
+}
+
+body.reader-open .whatsapp-fab:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+@media (max-width: 480px) {
+  .whatsapp-fab {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-fab-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-fab-ring {
+    animation: none;
+    display: none;
+  }
+}
+
 .page-info {
   min-width: max-content;
   padding: 0 6px;
